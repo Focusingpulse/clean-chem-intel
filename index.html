@@ -229,13 +229,124 @@
     color: var(--muted);
     font-size: 0.75rem;
   }
+  .geno-panel {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 16px 8px;
+  }
+  .geno-toggle {
+    width: 100%;
+    padding: 10px 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .geno-toggle:hover { border-color: var(--accent); }
+  .geno-toggle .arrow { transition: transform 0.2s; font-size: 0.7rem; color: var(--muted); }
+  .geno-toggle.open .arrow { transform: rotate(180deg); }
+  .geno-body {
+    display: none;
+    margin-top: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+  }
+  .geno-body.show { display: block; }
+  .geno-intro {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  .geno-intro strong { color: var(--accent); }
+  .geno-card {
+    background: var(--surface2);
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.2s;
+  }
+  .geno-card.active { border-color: var(--accent); }
+  .geno-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .geno-card-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .geno-card-prevalence {
+    font-size: 0.7rem;
+    color: var(--accent);
+    background: rgba(108,191,132,0.12);
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+  .geno-card-desc {
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-top: 4px;
+    line-height: 1.4;
+  }
+  .geno-card-evidence {
+    font-size: 0.65rem;
+    margin-top: 6px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  .ev-strong { background: rgba(76,175,80,0.15); color: #81c784; }
+  .ev-moderate { background: rgba(255,193,7,0.15); color: #ffd54f; }
+  .ev-plausible { background: rgba(255,152,0,0.15); color: #ffb74d; }
+  .ev-weak { background: rgba(244,67,54,0.12); color: #ef9a9a; }
+  .geno-affected {
+    margin-top: 6px;
+    font-size: 0.7rem;
+    color: var(--muted);
+  }
+  .geno-affected span { color: var(--text); font-weight: 500; }
+  .grade-shift {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 6px;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: rgba(244,67,54,0.12);
+    color: var(--flag);
+  }
+  .grade-shift.up {
+    background: rgba(76,175,80,0.12);
+    color: var(--accent);
+  }
+  .disclaimer {
+    max-width: 700px;
+    margin: 12px auto 0;
+    padding: 10px 16px;
+    font-size: 0.65rem;
+    color: var(--muted);
+    line-height: 1.5;
+    border-top: 1px solid var(--border);
+  }
 </style>
 </head>
 <body>
 
 <div class="header">
   <h1>Clean Chem Intel</h1>
-  <p>146 Products — Mainstream + EWG/EPA/MADE SAFE Recommended</p>
+  <p>146 Products — with Genetic Sensitivity Layer</p>
 </div>
 
 <div class="controls">
@@ -248,9 +359,61 @@
   </div>
 </div>
 
+<div class="geno-panel">
+  <button class="geno-toggle" id="geno-toggle-btn" onclick="toggleGenoPanel()">
+    <span>🧬 Genetic Sensitivity Layer</span>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="geno-body" id="geno-body">
+    <div class="geno-intro">
+      These are <strong>normal human genetic variations</strong>, not defects. ~75–90% of people carry at least one. Toggle the ones that apply to you and watch how product grades shift.
+    </div>
+    <div class="geno-card" id="gcard-gstm1" onclick="toggleGene('gstm1')">
+      <div class="geno-card-header">
+        <div class="geno-card-title">GSTM1 Deletion</div>
+        <div class="geno-card-prevalence">~50% of population</div>
+      </div>
+      <div class="geno-card-desc">Reduced glutathione detoxification. Your body clears certain chemicals more slowly through the glutathione pathway.</div>
+      <div class="geno-affected">Affects: <span>Isothiazolinone preservatives (MI, MCI, BIT)</span></div>
+      <div class="geno-card-evidence ev-moderate">Moderate evidence — strong for glutathione mechanism, indirect for cleaning chemicals specifically</div>
+    </div>
+    <div class="geno-card" id="gcard-tnf" onclick="toggleGene('tnf')">
+      <div class="geno-card-header">
+        <div class="geno-card-title">TNF-α -308A Variant</div>
+        <div class="geno-card-prevalence">~25–28% of population</div>
+      </div>
+      <div class="geno-card-desc">Higher inflammatory cytokine production. Your immune system mounts a stronger inflammatory response to irritants.</div>
+      <div class="geno-affected">Affects: <span>SLS, benzalkonium chloride, NaOH, strong irritants</span></div>
+      <div class="geno-card-evidence ev-strong">Strong evidence — directly demonstrated lower irritation threshold in gene-environment studies</div>
+    </div>
+    <div class="geno-card" id="gcard-mhc" onclick="toggleGene('mhc')">
+      <div class="geno-card-header">
+        <div class="geno-card-title">MHC Immune Response Variants</div>
+        <div class="geno-card-prevalence">~20–30% of population</div>
+      </div>
+      <div class="geno-card-desc">Variants in the MHC region (HLA-DP, HLA-DR) affect how your immune system identifies and responds to chemical sensitizers. May lower the threshold for developing contact allergies.</div>
+      <div class="geno-affected">Affects: <span>Benzalkonium chloride, strong sensitizers, fragrances</span></div>
+      <div class="geno-card-evidence ev-plausible">Plausible mechanism — MHC region associated with irritant response in occupational studies, but not yet linked to specific cleaning chemicals</div>
+    </div>
+    <div class="geno-card" id="gcard-dao" onclick="toggleGene('dao')">
+      <div class="geno-card-header">
+        <div class="geno-card-title">Reduced Histamine Clearance (DAO/HNMT)</div>
+        <div class="geno-card-prevalence">~66–80% carry a DAO variant</div>
+      </div>
+      <div class="geno-card-desc">Slower breakdown of histamine. When a chemical triggers histamine release (surfactants, QACs, VOCs), your body takes longer to clear it, amplifying the response.</div>
+      <div class="geno-affected">Affects: <span>Surfactants (SLS), benzalkonium chloride, VOCs, chlorinated solvents</span></div>
+      <div class="geno-card-evidence ev-plausible">Plausible mechanism — strong evidence for reduced enzyme function, but the link to cleaning product exposure is biologically inferred, not directly tested</div>
+    </div>
+  </div>
+</div>
+
 <div class="stats" id="stats"></div>
 
 <div class="results" id="results"></div>
+
+<div class="disclaimer">
+  <strong>Not medical advice.</strong> Genetic sensitivity ratings are based on published, peer-reviewed research on gene-environment interactions. Evidence strength is labeled honestly — see each variant card. Genetic variations shown are common human diversity, not defects. Your personal experience with a product is valid data and should not be dismissed as "anecdotal." If a product bothers you, it bothers you — regardless of what any rating says.
+</div>
 
 <div class="legend">
   <div class="legend-row">
@@ -463,6 +626,53 @@ const INGS = {
 function gradeClass(g){ return g ? "grade-"+g.toLowerCase() : "grade-unknown"; }
 function gradeOrder(g){ return {A:0,B:1,C:2,D:3,F:4}[g] ?? 5; }
 
+// Genetic sensitivity: which ingredients are affected by which variants
+const GENE_ING_MAP = {
+  gstm1: ["Methylisothiazolinone","Methylchloroisothiazolinone","Benzisothiazolinone"],
+  tnf: ["Sodium Lauryl Sulfate","Sodium Laureth Sulfate","Benzalkonium Chloride","Sodium Hydroxide","Hydrochloric Acid","Fragrance","Lauramine Oxide"],
+  mhc: ["Benzalkonium Chloride","Fragrance","Methylisothiazolinone","Methylchloroisothiazolinone"],
+  dao: ["Sodium Lauryl Sulfate","Benzalkonium Chloride","Fragrance","Limonene","Butyloxyethanol"],
+};
+
+// How many grade steps to drop per variant (only if ingredient is present)
+const GENE_PENALTY = { gstm1: 1, tnf: 1, mhc: 1, dao: 1 };
+
+let activeGenes = new Set();
+
+function toggleGenoPanel(){
+  const btn = document.getElementById("geno-toggle-btn");
+  const body = document.getElementById("geno-body");
+  btn.classList.toggle("open");
+  body.classList.toggle("show");
+}
+
+function toggleGene(id){
+  const card = document.getElementById("gcard-"+id);
+  if(activeGenes.has(id)){ activeGenes.delete(id); card.classList.remove("active"); }
+  else { activeGenes.add(id); card.classList.add("active"); }
+  render();
+}
+
+function geneAdjustedGrade(ings, baseGrade){
+  if(activeGenes.size === 0) return { grade: baseGrade, shifts: [] };
+  let totalPenalty = 0;
+  let reasons = [];
+  for(const gene of activeGenes){
+    const affected = GENE_ING_MAP[gene] || [];
+    const matchCount = ings.filter(i => affected.some(a => i.toLowerCase().includes(a.toLowerCase()))).length;
+    if(matchCount > 0){
+      totalPenalty += GENE_PENALTY[gene];
+      const names = { gstm1: "GSTM1", tnf: "TNF-α -308A", mhc: "MHC", dao: "DAO/HNMT" };
+      reasons.push(names[gene]);
+    }
+  }
+  // Cap penalty — don't go below F
+  const grades = ["A","B","C","D","F"];
+  let idx = gradeOrder(baseGrade);
+  idx = Math.min(idx + totalPenalty, 4);
+  return { grade: grades[idx], shifts: reasons };
+}
+
 function productGrade(ings){
   let worst = "A";
   for(const n of ings){
@@ -488,7 +698,10 @@ function render(){
   document.getElementById("stats").textContent = `Showing ${list.length} of ${PRODUCTS.length} products`;
 
   const html = list.map((p,i)=>{
-    const grade = productGrade(p.ings);
+    const baseGrade = productGrade(p.ings);
+    const { grade: adjGrade, shifts } = geneAdjustedGrade(p.ings, baseGrade);
+    const grade = adjGrade;
+    const shifted = baseGrade !== adjGrade;
     const ingChips = p.ings.map(n=>{
       const d = INGS[n];
       const known = !!d;
@@ -496,10 +709,11 @@ function render(){
       return `<span class="ing-chip ${known?"":"unknown"}" onclick="toggleDetail(${i})">${n} ${d?`<span class="grade-dot ${gradeClass(g)}">${g||"?"}</span>`:""}</span>`;
     }).join("");
     const safeBadge = p.safe ? `<div style="margin-top:4px;font-size:0.65rem;color:var(--accent);background:rgba(108,191,132,0.15);padding:2px 6px;border-radius:4px;display:inline-block">✓ ${p.safe}</div>` : "";
+    const shiftBadge = shifted ? `<span class="grade-shift">${baseGrade}→${adjGrade} (${shifts.join(", ")})</span>` : "";
     return `<div class="product-card">
       <div class="product-header">
-        <div><div class="product-title">${p.name}</div><div class="product-brand">${p.brand}</div><span class="product-category">${p.cat}</span>${safeBadge}</div>
-        <div class="grade-badge"><div class="grade-circle ${gradeClass(grade)}">${grade}</div><div class="grade-label">Overall</div></div>
+        <div><div class="product-title">${p.name}</div><div class="product-brand">${p.brand}</div><span class="product-category">${p.cat}</span>${safeBadge}${shiftBadge}</div>
+        <div class="grade-badge"><div class="grade-circle ${gradeClass(grade)}">${grade}</div><div class="grade-label">${shifted?"Adjusted":"Overall"}</div></div>
       </div>
       <div class="ingredients-section"><div class="ingredients-label">Ingredients (${p.ings.length})</div><div class="ingredient-chips">${ingChips}</div></div>
       <div class="product-detail" id="det-${i}">${p.ings.map(n=>{const d=INGS[n];return d?`<div class="detail-row"><span>${n}</span><span>${d.s||""}</span></div>`:`<div class="detail-row" style="color:var(--flag)"><span>${n}</span><span>Unknown ingredient</span></div>`;}).join("")}</div>
