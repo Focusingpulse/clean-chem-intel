@@ -235,7 +235,7 @@
 
 <div class="header">
   <h1>Clean Chem Intel</h1>
-  <p>47 Popular Cleaning Products — Ingredient Analysis</p>
+  <p>146 Products — Mainstream + EWG/EPA/MADE SAFE Recommended</p>
 </div>
 
 <div class="controls">
@@ -243,6 +243,9 @@
     <input type="text" class="search-box" id="search" placeholder="Search products or ingredients..." oninput="render()">
   </div>
   <div class="filter-row" id="filters"></div>
+  <div class="filter-row" style="margin-top:6px;">
+    <button class="filter-btn" id="safe-only" onclick="toggleSafeOnly(this)">✓ Recommended Safe Only</button>
+  </div>
 </div>
 
 <div class="stats" id="stats"></div>
@@ -309,6 +312,71 @@ const PRODUCTS = [
   {name:"Essential Oil Spray (BMVC)",brand:"Homemade",cat:"All-Purpose",ings:["Spring Water","Isopropyl Alcohol","Tea Tree Oil","Lavender Oil","Lemon Oil","Peppermint Oil","Eucalyptus Oil"]},
   {name:"Norwex + Water (BMVC)",brand:"Norwex",cat:"Physical",ings:["Norwex Cloth","Spring Water"]},
   {name:"Pumice Stone (BMVC)",brand:"N/A",cat:"Physical",ings:["Pumice Stone"]},
+  // === RECOMMENDED SAFE PRODUCTS ===
+  {name:"Dishwasher Pods Zero Plastic, Unscented",brand:"AspenClean",cat:"Dishwasher",safe:"EWG Verified",ings:["Sodium Citrate","Sodium Carbonate","Sodium Carbonate Peroxide","Decyl Glucoside","Enzymes","Sodium Chloride"]},
+  {name:"Zero Plastic Dishwasher Powder",brand:"AspenClean",cat:"Dishwasher",safe:"EWG Verified",ings:["Sodium Citrate","Sodium Carbonate","Sodium Carbonate Peroxide","Decyl Glucoside","Enzymes"]},
+  {name:"Dishwasher Detergent, Fragrance-free",brand:"Blueland",cat:"Dishwasher",safe:"EWG Verified, EPA Safer Choice, MADE SAFE",ings:["Plant-based surfactants","Sodium Carbonate"]},
+  {name:"Dishwasher Tablets, Fragrance Free",brand:"Branch Basics",cat:"Dishwasher",safe:"EWG Verified, MADE SAFE",ings:["Sodium Carbonate","Sodium Carbonate Peroxide","Sodium Bicarbonate","Plant-based surfactants"]},
+  {name:"UltraWash Dishwasher Pods",brand:"Dropps",cat:"Dishwasher",safe:"EWG Verified",ings:["Sodium Carbonate","Sodium Carbonate Peroxide","Plant-based surfactants"]},
+  {name:"Dishwasher Gel, Free & Clear",brand:"ECOS",cat:"Dishwasher",safe:"EWG Grade A, EPA Safer Choice",ings:["Plant-based surfactants","Sodium Carbonate"]},
+  {name:"Laundry Detergent Pods, Eucalyptus & Rosemary",brand:"AspenClean",cat:"Laundry",safe:"EWG Verified",ings:["Plant-based surfactants","Sodium Carbonate","Sodium Carbonate Peroxide","Enzymes","Essential Oils"]},
+  {name:"Laundry Detergent Pods, Unscented",brand:"AspenClean",cat:"Laundry",safe:"EWG Verified",ings:["Plant-based surfactants","Sodium Carbonate","Sodium Carbonate Peroxide","Enzymes"]},
+  {name:"Laundry Detergent, Unscented",brand:"AspenClean",cat:"Laundry",safe:"EWG Verified",ings:["Plant-based surfactants","Sodium Carbonate","Enzymes"]},
+  {name:"Baby Laundry Detergent, Unscented",brand:"ATTITUDE",cat:"Laundry",safe:"EWG Verified",ings:["Water","Plant-based surfactants","Sodium Citrate","Oatmeal extract"]},
+  {name:"Liquid Laundry Detergent, Unscented",brand:"ATTITUDE",cat:"Laundry",safe:"EWG Verified",ings:["Water","Plant-based surfactants"]},
+  {name:"Oxi Booster Pods",brand:"Dropps",cat:"Laundry",safe:"EWG Verified",ings:["Sodium Carbonate Peroxide","Sodium Carbonate"]},
+  {name:"Laundry Powder",brand:"Meliora",cat:"Laundry",safe:"MADE SAFE",ings:["Sodium Carbonate","Sodium Percarbonate","Sodium Bicarbonate"]},
+  {name:"Free & Clear Laundry Detergent",brand:"Seventh Generation",cat:"Laundry",safe:"EPA Safer Choice, EWG Grade A",ings:["Plant-based surfactants","Water","Sodium Citrate"]},
+  {name:"Chlorine Free Bleach",brand:"Seventh Generation",cat:"Laundry",safe:"EWG top-rated",ings:["Hydrogen Peroxide","Water"]},
+  {name:"Super Washing Soda",brand:"Arm & Hammer",cat:"Laundry",safe:"EWG top-rated",ings:["Sodium Carbonate"]},
+  {name:"Castile Soap, Peppermint",brand:"Dr. Bronner's",cat:"All-Purpose",safe:"EWG Verified, USDA Organic",ings:["Water","Saponified Coconut Oil","Saponified Olive Oil","Organic Hemp Oil","Organic Peppermint Oil","Citric Acid"]},
+  {name:"Castile Soap, Lavender",brand:"Dr. Bronner's",cat:"All-Purpose",safe:"EWG Verified, USDA Organic",ings:["Water","Saponified Coconut Oil","Saponified Olive Oil","Organic Hemp Oil","Organic Lavender Oil","Citric Acid"]},
+  {name:"Sal Suds Liquid Cleaner",brand:"Dr. Bronner's",cat:"All-Purpose",safe:"EWG top-rated",ings:["Water","Potassium Hydroxide","Lauric Acid","Sodium Lauryl Sulfate","Rosemary Extract"]},
+  {name:"All-Purpose Cleaner, Geranium & Lemongrass",brand:"ATTITUDE",cat:"All-Purpose",safe:"EWG Verified",ings:["Water","Sodium Bicarbonate","Sodium Hydroxide","Myristyl Glucoside","Caprylyl Glucoside","Citric Acid","Tea Tree Oil","Geranium Oil"]},
+  {name:"Daily Shower & Tile Cleaner, Citrus Zest",brand:"ATTITUDE",cat:"Bathroom",safe:"EWG Verified",ings:["Water","Plant-based surfactants","Citrus essential oils"]},
+  {name:"Bathroom Cleaner Spray, Citrus Zest",brand:"ATTITUDE",cat:"Bathroom",safe:"EWG Verified",ings:["Water","Plant-based surfactants","Citrus essential oils"]},
+  {name:"Bathroom Cleaner Spray, Unscented",brand:"ATTITUDE",cat:"Bathroom",safe:"EWG Verified",ings:["Water","Plant-based surfactants"]},
+  {name:"Floor Surface Cleaner, Citrus Zest",brand:"ATTITUDE",cat:"Floor",safe:"EWG Verified",ings:["Water","Plant-based surfactants","Citrus essential oils"]},
+  {name:"Concentrate, Fragrance-Free",brand:"Branch Basics",cat:"All-Purpose",safe:"EWG Verified, MADE SAFE",ings:["Water","Sodium Citrate","Decyl Glucoside","Lauramine Oxide","Sodium Phytate","Citric Acid"]},
+  {name:"Oxygen Boost",brand:"Branch Basics",cat:"Laundry",safe:"EWG Verified, MADE SAFE",ings:["Sodium Carbonate Peroxide","Sodium Carbonate"]},
+  {name:"Gel Hand Soap",brand:"Branch Basics",cat:"Hand Soap",safe:"EWG Verified",ings:["Water","Plant-based surfactants","Aloe Vera"]},
+  {name:"Bathroom Cleaner, Fresh",brand:"Green Shield Organic",cat:"Bathroom",safe:"EWG top-rated",ings:["Plant-based surfactants","Citric Acid"]},
+  {name:"Toilet Bowl Cleaner",brand:"Green Shield Organic",cat:"Toilet",safe:"EWG top-rated",ings:["Plant-based surfactants","Citric Acid"]},
+  {name:"All-Purpose Degreaser, Fresh",brand:"Green Shield Organic",cat:"All-Purpose",safe:"EWG top-rated",ings:["Plant-based surfactants","Citric Acid"]},
+  {name:"Glass Cleaner Fresh",brand:"Green Shield Organic",cat:"Glass",safe:"EWG top-rated",ings:["Plant-based surfactants","Water"]},
+  {name:"Toilet Bowl Cleaner, Emerald Cypress & Fir",brand:"Seventh Generation",cat:"Toilet",safe:"EWG top-rated, EPA Safer Choice",ings:["Plant-based surfactants","Citric Acid","Essential Oils"]},
+  {name:"Tub & Tile Cleaner, Emerald Cypress & Fir",brand:"Seventh Generation",cat:"Bathroom",safe:"EWG top-rated",ings:["Plant-based surfactants","Citric Acid","Essential Oils"]},
+  {name:"Shower Kleener",brand:"ECOS",cat:"Bathroom",safe:"EWG top-rated",ings:["Water","Plant-based surfactants","Citric Acid"]},
+  {name:"Toilet Kleener, Natural Cedar",brand:"ECOS",cat:"Toilet",safe:"EWG top-rated",ings:["Water","Plant-based surfactants","Cedar essential oil"]},
+  {name:"Toilet Bowl Cleaner Pine Fresh",brand:"Ecover",cat:"Toilet",safe:"EWG top-rated, EPA Safer Choice",ings:["Water","Plant-based surfactants","Pine essential oil"]},
+  {name:"Cream Scrub",brand:"Ecover",cat:"Abrasive",safe:"EWG top-rated",ings:["Calcium Carbonate","Plant-based surfactants","Water"]},
+  {name:"Glass Cleaner, Unscented",brand:"Whole Foods",cat:"Glass",safe:"EWG top-rated",ings:["Water","Plant-based surfactants"]},
+  {name:"All-Purpose Spray, Lemon Zest",brand:"Whole Foods",cat:"All-Purpose",safe:"EWG top-rated",ings:["Plant-based surfactants","Water"]},
+  {name:"All-Purpose Surface Cleaner, Ginger Yuzu",brand:"Method",cat:"All-Purpose",safe:"EWG top-rated, EPA Safer Choice",ings:["Water","Decyl Glucoside","Citric Acid"]},
+  {name:"Powder Cleanser",brand:"Bon Ami",cat:"Abrasive",safe:"EWG top-rated",ings:["Limestone","Feldspar","Sodium Carbonate","Sodium Bicarbonate"]},
+  {name:"Dishwashing Liquid, Hypo-Allergenic",brand:"Planet",cat:"Dish Soap",safe:"EWG top-rated",ings:["Plant-based surfactants","Water"]},
+  {name:"Dish Liquid, Unscented",brand:"Better Life",cat:"Dish Soap",safe:"EWG top-rated",ings:["Plant-based surfactants","Water"]},
+  {name:"Dish Liquid, Free & Clear",brand:"Seventh Generation",cat:"Dish Soap",safe:"EPA Safer Choice",ings:["Plant-based surfactants","Water"]},
+  {name:"All-Purpose Cleaner, Free & Clear",brand:"Seventh Generation",cat:"All-Purpose",safe:"EPA Safer Choice, EWG Grade B",ings:["Plant-based surfactants","Water"]},
+  {name:"All-Purpose Home Cleaner",brand:"Meliora",cat:"All-Purpose",safe:"MADE SAFE",ings:["Water","Potassium Oleate","Potassium Citrate","Glycerin"]},
+  {name:"Dish Soap",brand:"Meliora",cat:"Dish Soap",safe:"MADE SAFE",ings:["Water","Potassium Oleate","Potassium Citrate","Glycerin"]},
+  {name:"Laundry Detergent, Free & Clear",brand:"Pure Natural",cat:"Laundry",safe:"MADE SAFE, USDA Biobased",ings:["Botanical surfactant"]},
+  {name:"Multi-Purpose Cleaner, Free & Clear",brand:"Pure Natural",cat:"All-Purpose",safe:"MADE SAFE, USDA Biobased",ings:["Botanical surfactant"]},
+  {name:"Hand Soap, Meyer Lemon Mandarin",brand:"Everyone",cat:"Hand Soap",safe:"EWG Verified",ings:["Water","Plant-based surfactants","Essential Oils"]},
+  {name:"Floor Cleaner",brand:"Bona",cat:"Floor",safe:"EPA Safer Choice",ings:["Water","Plant-based surfactants"]},
+  {name:"Concentrated All-Purpose",brand:"Simple Green",cat:"All-Purpose",safe:"EPA Safer Choice",ings:["Water","Surfactant","Tetrasodium Glutamate Diacetate"]},
+  {name:"Calcium Lime Rust Cleaner",brand:"CLR",cat:"Specialty",safe:"EWG top-rated, EPA Safer Choice",ings:["Lactic Acid","Gluconic Acid","Water"]},
+  {name:"OxiClean Baby Stain Soaker",brand:"OxiClean",cat:"Laundry",safe:"EWG top-rated",ings:["Sodium Carbonate Peroxide","Sodium Carbonate"]},
+  {name:"Dishwasher Pacs, Free & Clear",brand:"Seventh Generation",cat:"Dishwasher",safe:"EWG top-rated",ings:["Plant-based surfactants","Sodium Carbonate","Enzymes"]},
+  {name:"Dishwasher Powder, Free & Clear",brand:"Seventh Generation",cat:"Dishwasher",safe:"EWG top-rated",ings:["Plant-based surfactants","Sodium Carbonate","Enzymes"]},
+  {name:"Wave Dishwashing Gel Lavender",brand:"ECOS",cat:"Dishwasher",safe:"EWG top-rated",ings:["Plant-based surfactants","Lavender essential oil"]},
+  // Commercial Green Seal
+  {name:"Glass Cleaner Concentrate 1A",brand:"3M",cat:"Glass (Commercial)",safe:"Green Seal",ings:[]},
+  {name:"Focus MP 11 Multi-Purpose",brand:"Focus",cat:"All-Purpose (Commercial)",safe:"Green Seal",ings:[]},
+  {name:"Green Link Multi-Clean Degreaser",brand:"Zep",cat:"All-Purpose (Commercial)",safe:"Green Seal",ings:[]},
+  {name:"Green Link Neutral Floor Cleaner",brand:"Zep",cat:"Floor (Commercial)",safe:"Green Seal",ings:[]},
+  {name:"HOST Dry Carpet Cleaner",brand:"HOST",cat:"Carpet",safe:"Green Seal",ings:[]},
+  {name:"Carpet & Upholstery Concentrate",brand:"Procyon",cat:"Carpet",safe:"Green Seal",ings:[]},
 ];
 
 const INGS = {
@@ -359,6 +427,37 @@ const INGS = {
   "Tetrasodium Glutamate Diacetate":{g:null,s:"Chelating agent, low hazard",ev:"Low"},
   "Norwex Cloth":{g:null,s:"Microfiber cloth, no chemicals",ev:"High"},
   "Pumice Stone":{g:null,s:"Natural volcanic rock, no chemicals",ev:"High"},
+  // Safe product ingredients
+  "Sodium Carbonate Peroxide":{g:"H271,H302,H318",s:"Oxidizer, harmful if swallowed, severe eye damage",ev:"High",gr:{derm:"D",work:"C"}},
+  "Sodium Citrate":{g:null,s:"Food-grade preservative, low hazard",ev:"High",gr:{derm:"A"}},
+  "Sodium Phytate":{g:null,s:"Plant-derived chelating agent, low hazard",ev:"Low"},
+  "Myristyl Glucoside":{g:null,s:"Plant-derived surfactant, biodegradable",ev:"Low",gr:{derm:"B"}},
+  "Caprylyl Glucoside":{g:null,s:"Plant-derived surfactant, biodegradable",ev:"Low",gr:{derm:"B"}},
+  "Coco-Glucoside":{g:null,s:"Plant-derived surfactant, biodegradable",ev:"Low",gr:{derm:"B"}},
+  "Potassium Oleate":{g:"H315,H319",s:"Potassium salt of oleic acid, mild irritant",ev:"Low",gr:{derm:"C"}},
+  "Potassium Citrate":{g:null,s:"Food-grade, low hazard",ev:"High"},
+  "Glycerin":{g:null,s:"Plant-derived humectant, low hazard",ev:"High",gr:{derm:"A"}},
+  "Saponified Coconut Oil":{g:null,s:"Saponified oils, mild soap",ev:"Low",gr:{derm:"B"}},
+  "Saponified Olive Oil":{g:null,s:"Saponified oils, mild soap",ev:"Low",gr:{derm:"B"}},
+  "Organic Hemp Oil":{g:null,s:"Natural oil, no hazard",ev:"High"},
+  "Organic Peppermint Oil":{g:"H315,H317",s:"May cause skin sensitization",ev:"Low",gr:{derm:"C"}},
+  "Organic Lavender Oil":{g:"H315,H317",s:"May cause skin sensitization",ev:"Low",gr:{derm:"C"}},
+  "Rosemary Extract":{g:null,s:"Natural antioxidant, no hazard",ev:"High"},
+  "Aloe Vera":{g:null,s:"Natural soothing agent, no hazard",ev:"High"},
+  "Botanical surfactant":{g:null,s:"Plant-derived saponins, low hazard",ev:"Low",gr:{derm:"B"}},
+  "Plant-based surfactants":{g:null,s:"Plant-derived, biodegradable",ev:"Low",gr:{derm:"B"}},
+  "Essential Oils":{g:"H315,H317",s:"May cause skin sensitization. Varies by oil type.",ev:"Low",gr:{derm:"C"}},
+  "Citrus essential oils":{g:"H315,H317",s:"May cause skin sensitization. Contains limonene.",ev:"Low",gr:{derm:"C"}},
+  "Cedar essential oil":{g:"H315,H317",s:"May cause skin sensitization",ev:"Low",gr:{derm:"C"}},
+  "Pine essential oil":{g:"H315,H317",s:"May cause skin sensitization",ev:"Low",gr:{derm:"C"}},
+  "Lavender essential oil":{g:"H315,H317",s:"May cause skin sensitization",ev:"Low",gr:{derm:"C"}},
+  "Geranium Oil":{g:"H315,H317",s:"May cause skin sensitization",ev:"Low",gr:{derm:"C"}},
+  "Oatmeal extract":{g:null,s:"Soothing skin protectant, no hazard",ev:"High"},
+  "Vitamin E":{g:null,s:"Natural antioxidant, no hazard",ev:"High"},
+  "Potassium Hydroxide":{g:"H290,H314,H318",s:"Corrosive in pure form, but neutralized in final product",ev:"High",gr:{derm:"B"}},
+  "Lauric Acid":{g:"H315,H319",s:"Fatty acid, mild irritant",ev:"High",gr:{derm:"B"}},
+  "Sodium Chloride":{g:null,s:"Table salt, no hazard in cleaning context",ev:"High"},
+  "Alkaline Silicate":{g:"H319",s:"Eye irritant, low overall hazard",ev:"High",gr:{derm:"B"}},
 };
 
 function gradeClass(g){ return g ? "grade-"+g.toLowerCase() : "grade-unknown"; }
@@ -382,6 +481,7 @@ function render(){
   const q = document.getElementById("search").value.toLowerCase();
   const activeFilters = [...document.querySelectorAll(".filter-btn.active")].map(b=>b.dataset.cat);
   let list = PRODUCTS;
+  if(safeOnly) list = list.filter(p=> p.safe);
   if(q) list = list.filter(p=> p.name.toLowerCase().includes(q) || p.brand.toLowerCase().includes(q) || p.ings.some(i=>i.toLowerCase().includes(q)));
   if(activeFilters.length) list = list.filter(p=> activeFilters.includes(p.cat));
 
@@ -395,9 +495,10 @@ function render(){
       const g = d?.gr?.derm || d?.gr?.resp || null;
       return `<span class="ing-chip ${known?"":"unknown"}" onclick="toggleDetail(${i})">${n} ${d?`<span class="grade-dot ${gradeClass(g)}">${g||"?"}</span>`:""}</span>`;
     }).join("");
+    const safeBadge = p.safe ? `<div style="margin-top:4px;font-size:0.65rem;color:var(--accent);background:rgba(108,191,132,0.15);padding:2px 6px;border-radius:4px;display:inline-block">✓ ${p.safe}</div>` : "";
     return `<div class="product-card">
       <div class="product-header">
-        <div><div class="product-title">${p.name}</div><div class="product-brand">${p.brand}</div><span class="product-category">${p.cat}</span></div>
+        <div><div class="product-title">${p.name}</div><div class="product-brand">${p.brand}</div><span class="product-category">${p.cat}</span>${safeBadge}</div>
         <div class="grade-badge"><div class="grade-circle ${gradeClass(grade)}">${grade}</div><div class="grade-label">Overall</div></div>
       </div>
       <div class="ingredients-section"><div class="ingredients-label">Ingredients (${p.ings.length})</div><div class="ingredient-chips">${ingChips}</div></div>
@@ -420,6 +521,13 @@ function buildFilters(){
 function toggleFilter(btn){
   if(btn.dataset.cat===""){ document.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("active")); btn.classList.add("active"); }
   else { btn.classList.toggle("active"); document.querySelector(".filter-btn[data-cat='']").classList.remove("active"); }
+  render();
+}
+
+let safeOnly = false;
+function toggleSafeOnly(btn){
+  safeOnly = !safeOnly;
+  btn.classList.toggle("active");
   render();
 }
 
