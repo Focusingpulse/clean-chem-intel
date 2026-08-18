@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clean Chem Intel — BMVC</title>
+<style>
+  :root {
+    --bg: #1a1d24;
+    --surface: #232830;
+    --surface2: #2d333d;
+    --border: #3a4049;
+    --text: #e8e6e3;
+    --muted: #8b8d91;
+    --accent: #6cbf84;
+    --accent-dim: #4a8a5e;
+    --grade-a: #4caf50;
+    --grade-b: #8bc34a;
+    --grade-c: #ffc107;
+    --grade-d: #ff9800;
+    --grade-f: #f44336;
+    --flag: #ff6b6b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding-bottom: 60px;
+  }
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #2d333d, #1a1d24);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 16px 16px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--accent);
+  }
+  .header p {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  /* Search */
+  .search-section {
+    padding: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .search-box {
+    width: 100%;
+    padding: 14px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--text);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .search-box:focus {
+    border-color: var(--accent);
+  }
+  .search-box::placeholder {
+    color: var(--muted);
+  }
+  .mode-toggle {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    justify-content: center;
+  }
+  .mode-btn {
+    padding: 8px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .mode-btn.active {
+    background: var(--accent-dim);
+    color: var(--text);
+    border-color: var(--accent);
+  }
+  /* Results */
+  .results {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .product-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  .product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+  .product-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .product-brand {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .product-category {
+    font-size: 0.75rem;
+    color: var(--muted);
+    background: var(--surface2);
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-top: 4px;
+    display: inline-block;
+  }
+  .overall-grade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 60px;
+  }
+  .grade-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+  }
+  .grade-label {
+    font-size: 0.65rem;
+    color: var(--muted);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  /* Ingredient list */
+  .ingredients-title {
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+  .ingredient-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .ingredient-row:last-child {
+    border-bottom: none;
+  }
+  .ingredient-name {
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  .ingredient-cas {
+    font-size: 0.7rem;
+    color: var(--muted);
+  }
+  .ingredient-grades {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .grade-chip {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+  }
+  .grade-chip.dim-resp { background: #5c9cb5; }
+  .grade-chip.dim-derm { background: #b5745c; }
+  .grade-chip.dim-endo { background: #9c5cb5; }
+  .grade-chip.dim-organ { background: #b5a55c; }
+  .grade-chip.dim-env { background: #5cb574; }
+  .grade-chip.dim-work { background: #5c6cb5; }
+  /* Expandable ingredient detail */
+  .ingredient-detail {
+    display: none;
+    padding: 12px 0 4px;
+    background: var(--surface2);
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 4px;
+  }
+  .ingredient-detail.show {
+    display: block;
+  }
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    font-size: 0.85rem;
+  }
+  .detail-label {
+    color: var(--muted);
+  }
+  .detail-value {
+    font-weight: 500;
+  }
+  .detail-summary {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+  .evidence-badge {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  .evidence-high { background: #2e7d32; }
+  .evidence-medium { background: #558b2f; }
+  .evidence-low { background: #795548; }
+  .evidence-extrapolated { background: #6d4c41; }
+  /* Interaction flags */
+  .interaction-flag {
+    background: rgba(255, 107, 107, 0.15);
+    border: 1px solid var(--flag);
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-top: 12px;
+    font-size: 0.85rem;
+  }
+  .interaction-flag .flag-name {
+    color: var(--flag);
+    font-weight: 600;
+  }
+  .interaction-flag .flag-concern {
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  /* No results */
+  .no-results {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--muted);
+  }
+  .no-results h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  /* Paste mode */
+  .paste-area {
+    width: 100%;
+    min-height: 100px;
+    padding: 14px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--text);
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .paste-area:focus {
+    border-color: var(--accent);
+  }
+  .analyze-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    background: var(--accent-dim);
+    border: none;
+    border-radius: 12px;
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .analyze-btn:hover {
+    background: var(--accent);
+  }
+  .analyze-btn:active {
+    transform: scale(0.98);
+  }
+  /* Grade legend */
+  .legend {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  .legend-title {
+    font-size: 0.75rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+  .legend-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+  .legend-chip {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+  }
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+  .footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  /* Grade colors */
+  .grade-A { background: var(--grade-a); }
+  .grade-B { background: var(--grade-b); }
+  .grade-C { background: var(--grade-c); color: #333; }
+  .grade-D { background: var(--grade-d); }
+  .grade-E { background: var(--grade-d); }
+  .grade-F { background: var(--grade-f); }
+  .grade-unknown { background: var(--border); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Clean Chem Intel</h1>
+  <p>Bella's Mountain Vacation Cleaning — Product Analysis</p>
+</div>
+
+<div class="search-section">
+  <div class="mode-toggle">
+    <button class="mode-btn active" onclick="setMode('search')">Search Products</button>
+    <button class="mode-btn" onclick="setMode('paste')">Paste Ingredients</button>
+  </div>
+
+  <div id="search-mode" style="margin-top:12px;">
+    <input type="text" class="search-box" id="search-input"
+      placeholder="Search by product name or ingredient..."
+      oninput="searchProducts()">
+  </div>
+
+  <div id="paste-mode" style="display:none; margin-top:12px;">
+    <textarea class="paste-area" id="paste-input"
+      placeholder="Paste ingredient list here, e.g.&#10;Water, Sodium Laureth Sulfate, Fragrance, Limonene"></textarea>
+    <button class="analyze-btn" onclick="analyzePasted()">Analyze Ingredients</button>
+  </div>
+</div>
+
+<div class="results" id="results"></div>
+
+<div class="legend">
+  <div class="legend-title">Grade Legend</div>
+  <div class="legend-row">
+    <div class="legend-item"><div class="legend-chip grade-A"></div> A — No hazard</div>
+    <div class="legend-item"><div class="legend-chip grade-B"></div> B — Minimal</div>
+    <div class="legend-item"><div class="legend-chip grade-C"></div> C — Moderate</div>
+    <div class="legend-item"><div class="legend-chip grade-D"></div> D — Significant</div>
+    <div class="legend-item"><div class="legend-chip grade-F"></div> F — Serious</div>
+  </div>
+  <div class="legend-row" style="margin-top:8px;">
+    <div class="legend-item"><div class="legend-chip" style="background:#5c9cb5"></div> Resp</div>
+    <div class="legend-item"><div class="legend-chip" style="background:#b5745c"></div> Derm</div>
+    <div class="legend-item"><div class="legend-chip" style="background:#9c5cb5"></div> Endo</div>
+    <div class="legend-item"><div class="legend-chip" style="background:#b5a55c"></div> Organ</div>
+    <div class="legend-item"><div class="legend-chip" style="background:#5cb574"></div> Env</div>
+    <div class="legend-item"><div class="legend-chip" style="background:#5c6cb5"></div> Work</div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Clean Chem Intel — Open data from PubChem (NIH), EPA CompTox, ACI C3</p>
+  <p>Not a substitute for professional toxicological advice.</p>
+</div>
+
+<script>
+// === DATA: Ingredients ===
+const INGREDIENTS = {
+  "Water": { cas: "7732-18-5", cid: 962, ghs: null, summary: "Universal solvent. No hazard.", grades: {}, evidence: "Medium" },
+  "Spring Water": { cas: "7732-18-5", cid: 962, ghs: null, summary: "Natural spring water used as solvent base. No hazard.", grades: {}, evidence: "Medium" },
+  "Sodium Laureth Sulfate": { cas: "9004-82-4", cid: 23667758, ghs: "H315,H319", summary: "Skin and eye irritant. Widely used surfactant. Moderate dermal irritant with repeated exposure.", grades: { dermal: "C" }, evidence: "Medium" },
+  "Sodium Lauryl Sulfate": { cas: "151-21-3", cid: 3426, ghs: "H228,H302,H315,H319,H335", summary: "Flammable solid. Harmful if swallowed. Skin/eye/respiratory irritant. Strong surfactant.", grades: { dermal: "C", respiratory: "C", organ: "C", worker: "C" }, evidence: "Medium" },
+  "Fragrance": { cas: null, cid: null, ghs: "H317", summary: "May cause allergic skin reaction. Undisclosed blend — cannot assess specific hazards without full breakdown.", grades: { dermal: "D" }, evidence: "Low" },
+  "Citric Acid": { cas: "77-92-9", cid: 311, ghs: "H319", summary: "Eye irritant. Mild acid, naturally occurring. Low overall hazard.", grades: { dermal: "C" }, evidence: "Medium" },
+  "Sodium Hydroxide": { cas: "1310-73-2", cid: 14798, ghs: "H290,H314,H318", summary: "Corrosive. Severe skin burns and eye damage. Common drain cleaner ingredient.", grades: { dermal: "F", worker: "D" }, evidence: "Medium" },
+  "Limonene": { cas: "5989-27-5", cid: 22311, ghs: "H226,H304,H315,H317,H400", summary: "Flammable. Skin sensitizer. Aspiration hazard. Aquatic toxicity. Common citrus-scented fragrance.", grades: { respiratory: "D", dermal: "D", environmental: "F", worker: "B" }, evidence: "Medium" },
+  "Ethanol": { cas: "64-17-5", cid: 702, ghs: "H225,H319", summary: "Highly flammable. Eye irritant. Low toxicity otherwise.", grades: { dermal: "C", worker: "C" }, evidence: "Medium" },
+  "Isopropyl Alcohol": { cas: "67-63-0", cid: 3776, ghs: "H225,H319,H336", summary: "Highly flammable. Eye irritant. May cause drowsiness or dizziness. Common disinfectant.", grades: { dermal: "C", worker: "C" }, evidence: "Medium" },
+  "Hydrogen Peroxide": { cas: "7722-84-1", cid: 784, ghs: "H314,H318,H412", summary: "Corrosive. Severe eye damage. Aquatic toxicity. Common disinfectant.", grades: { dermal: "F", environmental: "C" }, evidence: "Medium" },
+  "Quaternary Ammonium Compounds (DDAC)": { cas: "139-07-1", cid: 6121, ghs: "H302,H314,H400", summary: "Harmful if swallowed. Corrosive. Very toxic to aquatic life. Common disinfectant.", grades: { dermal: "F", organ: "C", environmental: "F", worker: "D" }, evidence: "Medium" },
+  "Castile Soap": { cas: null, cid: null, ghs: "H315,H319", summary: "Saponified vegetable oils. Mild skin and eye irritant. Biodegradable. One of the safest cleaning surfactants.", grades: { dermal: "C" }, evidence: "Low" },
+  "Tea Tree Oil": { cas: "85085-48-9", cid: null, ghs: "H304,H315,H317,H335,H412", summary: "Tea tree essential oil. Skin sensitizer. Aspiration hazard. Respiratory irritant. Mild aquatic toxicity. Antimicrobial.", grades: { respiratory: "C", dermal: "D", environmental: "C" }, evidence: "Low" },
+  "Lavender Oil": { cas: "8000-28-0", cid: null, ghs: "H315,H317,H319", summary: "Lavender essential oil. Skin sensitizer and eye irritant. Can cause allergic dermatitis in sensitive individuals.", grades: { dermal: "D" }, evidence: "Low" },
+  "Lemon Oil": { cas: "8008-56-8", cid: null, ghs: "H226,H304,H315,H317,H400", summary: "Lemon essential oil. Contains limonene. Flammable. Skin sensitizer. Very toxic to aquatic life.", grades: { respiratory: "D", dermal: "D", environmental: "F" }, evidence: "Low" },
+  "Peppermint Oil": { cas: "8006-90-4", cid: null, ghs: "H315,H317,H319,H335", summary: "Peppermint essential oil. Skin and eye irritant. Respiratory irritant. Can cause sensitization.", grades: { respiratory: "C", dermal: "D" }, evidence: "Low" },
+  "Eucalyptus Oil": { cas: "8000-48-4", cid: null, ghs: "H304,H315,H317,H335", summary: "Eucalyptus essential oil. Skin sensitizer. Aspiration hazard. Respiratory irritant. Toxic to pets — especially cats.", grades: { respiratory: "C", dermal: "D" }, evidence: "Low" },
+  "Norwex Microfiber Cloth": { cas: null, cid: null, ghs: null, summary: "Microfiber cleaning cloth. No chemical hazard — physical cleaning only. Reduces need for chemical cleaners.", grades: {}, evidence: "High" },
+  "Pumice Stone": { cas: null, cid: null, ghs: null, summary: "Natural volcanic rock used as abrasive. No chemical hazard — physical scrubbing only.", grades: {}, evidence: "High" },
+};
+
+// === DATA: Products ===
+const PRODUCTS = [
+  {
+    name: "Isopropyl Alcohol",
+    brand: "TBD",
+    category: "Disinfectant",
+    notes: "BMVC uses isopropyl alcohol for disinfection.",
+    ingredients: ["Isopropyl Alcohol"]
+  },
+  {
+    name: "Castile Soap Cleaning Mixture",
+    brand: "Dr. Bronner's",
+    category: "All-Purpose Cleaner",
+    notes: "Homemade mixture with Dr. Bronner's castile soap and spring water.",
+    ingredients: ["Castile Soap", "Spring Water"]
+  },
+  {
+    name: "Essential Oil Cleaning Spray",
+    brand: "Homemade (Now Brand Oils)",
+    category: "All-Purpose Cleaner",
+    notes: "Homemade mixture with spring water, isopropyl alcohol, and Now brand essential oils.",
+    ingredients: ["Spring Water", "Isopropyl Alcohol", "Tea Tree Oil", "Lavender Oil", "Lemon Oil", "Peppermint Oil", "Eucalyptus Oil"]
+  },
+  {
+    name: "Norwex + Water Cleaning",
+    brand: "Norwex",
+    category: "Physical Cleaning",
+    notes: "Microfiber cloth with water only — no chemicals.",
+    ingredients: ["Norwex Microfiber Cloth", "Spring Water"]
+  },
+  {
+    name: "Pumice Stone Scrubbing",
+    brand: "N/A",
+    category: "Physical Cleaning",
+    notes: "Pumice stone for hard water stains and scrubbing. No chemicals.",
+    ingredients: ["Pumice Stone"]
+  },
+];
+
+// === Scoring ===
+const GRADE_ORDER = { "A": 0, "B": 1, "C": 2, "D": 3, "F": 4 };
+
+function gradeWorse(a, b) {
+  return (GRADE_ORDER[a] ?? 0) > (GRADE_ORDER[b] ?? 0);
+}
+
+function computeOverallGrade(ingredients) {
+  let worst = "A";
+  for (const name of ingredients) {
+    const ing = INGREDIENTS[name];
+    if (!ing) continue;
+    const evidence = ing.evidence;
+    if (evidence !== "High" && evidence !== "Medium") continue;
+    const dims = ["respiratory", "dermal", "endocrine", "organ", "environmental", "worker"];
+    for (const dim of dims) {
+      const g = ing.grades[dim];
+      if (g && gradeWorse(g, worst)) worst = g;
+    }
+  }
+  return worst;
+}
+
+function checkInteractions(ingredientNames) {
+  const flags = [];
+  const ings = ingredientNames.map(n => INGREDIENTS[n]).filter(Boolean);
+
+  const hasSensitizer = ings.some(i => i.ghs && i.ghs.includes("H317"));
+  const hasVolatile = ings.some(i => i.ghs && (i.ghs.includes("H226") || i.ghs.includes("H225") || i.ghs.includes("H335") || i.ghs.includes("H304")));
+  const hasRespIrritant = ings.some(i => i.grades.respiratory && gradeWorse(i.grades.respiratory, "B"));
+  const hasAquaticToxic = ings.some(i => i.ghs && (i.ghs.includes("H400") || i.ghs.includes("H412")));
+  const hasSurfactant = ingredientNames.some(n => n.toLowerCase().includes("soap") || n.toLowerCase().includes("sulfate") || n.toLowerCase().includes("castile"));
+  const hasDermalIrritant = ings.some(i => i.grades.dermal && gradeWorse(i.grades.dermal, "B"));
+
+  if (hasSensitizer && hasSurfactant) {
+    flags.push({ name: "Compounded irritation", concern: "Surfactant + sensitizer may enhance dermal absorption of the sensitizer" });
+  }
+  if (hasVolatile && hasRespIrritant) {
+    flags.push({ name: "Indoor air quality", concern: "Volatile compounds + respiratory irritant — combined airway effect during use" });
+  }
+  if (hasAquaticToxic) {
+    flags.push({ name: "Aquatic toxicity", concern: "One or more ingredients very toxic to aquatic life — avoid disposal to waterways" });
+  }
+
+  return flags;
+}
+
+// === Rendering ===
+let currentMode = "search";
+
+function setMode(mode) {
+  currentMode = mode;
+  document.querySelectorAll(".mode-btn").forEach(b => b.classList.remove("active"));
+  event.target.classList.add("active");
+  document.getElementById("search-mode").style.display = mode === "search" ? "block" : "none";
+  document.getElementById("paste-mode").style.display = mode === "paste" ? "block" : "none";
+  if (mode === "search") {
+    searchProducts();
+  } else {
+    document.getElementById("results").innerHTML = "";
+  }
+}
+
+function gradeClass(grade) {
+  if (!grade) return "grade-unknown";
+  return "grade-" + grade;
+}
+
+function renderProduct(product, customIngredients) {
+  const ingredients = customIngredients || product.ingredients;
+  const overall = computeOverallGrade(ingredients);
+  const flags = checkInteractions(ingredients);
+
+  let html = `<div class="product-card">`;
+  html += `<div class="product-header">`;
+  html += `<div>`;
+  html += `<div class="product-name">${product.name}</div>`;
+  if (product.brand) html += `<div class="product-brand">${product.brand}</div>`;
+  if (product.category) html += `<div class="product-category">${product.category}</div>`;
+  html += `</div>`;
+  html += `<div class="overall-grade">`;
+  html += `<div class="grade-circle ${gradeClass(overall)}">${overall}</div>`;
+  html += `<div class="grade-label">Overall</div>`;
+  html += `</div>`;
+  html += `</div>`;
+
+  // Ingredients
+  html += `<div class="ingredients-title">Ingredients (${ingredients.length})</div>`;
+  ingredients.forEach((name, i) => {
+    const ing = INGREDIENTS[name];
+    const hasData = ing && ing.ghs;
+    const grades = ing ? ing.grades : {};
+
+    html += `<div class="ingredient-row" onclick="toggleDetail(${i})" style="cursor:pointer;">`;
+    html += `<div>`;
+    html += `<div class="ingredient-name">${name}</div>`;
+    if (ing && ing.cas) html += `<div class="ingredient-cas">CAS: ${ing.cas}</div>`;
+    if (!ing) html += `<div class="ingredient-cas" style="color:var(--flag)">Unknown — not in database</div>`;
+    html += `</div>`;
+    html += `<div class="ingredient-grades">`;
+
+    const dims = [
+      { key: "respiratory", label: "R", cls: "dim-resp" },
+      { key: "dermal", label: "D", cls: "dim-derm" },
+      { key: "endocrine", label: "E", cls: "dim-endo" },
+      { key: "organ", label: "O", cls: "dim-organ" },
+      { key: "environmental", label: "N", cls: "dim-env" },
+      { key: "worker", label: "W", cls: "dim-work" },
+    ];
+    dims.forEach(d => {
+      const g = grades[d.key];
+      html += `<div class="grade-chip ${d.cls} ${gradeClass(g)}" title="${d.key}">${g || "?"}</div>`;
+    });
+
+    html += `</div>`;
+    html += `</div>`;
+
+    // Detail panel
+    html += `<div class="ingredient-detail" id="detail-${i}">`;
+    if (ing) {
+      html += `<div class="detail-row"><span class="detail-label">GHS Hazard</span><span class="detail-value">${ing.ghs || "None"}</span></div>`;
+      html += `<div class="detail-row"><span class="detail-label">Evidence</span><span class="detail-value"><span class="evidence-badge evidence-${ing.evidence.toLowerCase()}">${ing.evidence}</span></span></div>`;
+      if (ing.summary) html += `<div class="detail-summary">${ing.summary}</div>`;
+    } else {
+      html += `<div class="detail-summary">This ingredient is not in our database yet. It will be researched and added.</div>`;
+    }
+    html += `</div>`;
+  });
+
+  // Interaction flags
+  if (flags.length > 0) {
+    flags.forEach(f => {
+      html += `<div class="interaction-flag">`;
+      html += `<div class="flag-name">⚠ ${f.name}</div>`;
+      html += `<div class="flag-concern">${f.concern}</div>`;
+      html += `</div>`;
+    });
+  }
+
+  if (product.notes) {
+    html += `<div style="margin-top:12px; font-size:0.8rem; color:var(--muted);">${product.notes}</div>`;
+  }
+
+  html += `</div>`;
+  return html;
+}
+
+function searchProducts() {
+  const query = document.getElementById("search-input").value.toLowerCase().trim();
+  const results = document.getElementById("results");
+
+  let filtered = PRODUCTS;
+  if (query) {
+    filtered = PRODUCTS.filter(p =>
+      p.name.toLowerCase().includes(query) ||
+      p.brand.toLowerCase().includes(query) ||
+      p.category.toLowerCase().includes(query) ||
+      p.ingredients.some(i => i.toLowerCase().includes(query))
+    );
+  }
+
+  if (filtered.length === 0) {
+    results.innerHTML = `<div class="no-results"><h3>No products found</h3><p>Try searching for an ingredient name, or switch to Paste mode to analyze a custom ingredient list.</p></div>`;
+    return;
+  }
+
+  results.innerHTML = filtered.map(p => renderProduct(p)).join("");
+}
+
+function analyzePasted() {
+  const text = document.getElementById("paste-input").value.trim();
+  const results = document.getElementById("results");
+
+  if (!text) {
+    results.innerHTML = `<div class="no-results"><h3>Paste an ingredient list</h3><p>Copy the ingredients from a product label and paste them above.</p></div>`;
+    return;
+  }
+
+  // Split on commas, semicolons, and "and"
+  let parts = text.split(/[,;]|\s+and\s+/i).map(s => s.trim()).filter(s => s);
+
+  const product = {
+    name: "Custom Analysis",
+    brand: "User Input",
+    category: "Custom",
+    notes: `Analyzed ${parts.length} ingredients from pasted list.`,
+    ingredients: parts
+  };
+
+  results.innerHTML = renderProduct(product, parts);
+}
+
+function toggleDetail(i) {
+  const el = document.getElementById(`detail-${i}`);
+  if (el) el.classList.toggle("show");
+}
+
+// Initial render
+searchProducts();
+</script>
+
+</body>
+</html>
