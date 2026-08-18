@@ -1,0 +1,11 @@
+name,cas_number,pubchem_cid,ghs_hazard,summary
+Water,7732-18-5,962,"None","Universal solvent. No hazard."
+Sodium Laureth Sulfate,9004-82-4,23667758,"H315,H319","Skin and eye irritant. Widely used surfactant. Moderate dermal irritant with repeated exposure."
+Sodium Lauryl Sulfate,151-21-3,3426,"H228,H302,H315,H319,H335","Flammable solid. Harmful if swallowed. Skin/eye/respiratory irritant. Strong surfactant, common in cleaning products."
+Fragrance,N/A,N/A,"H317","May cause allergic skin reaction. Undisclosed blend — cannot assess specific hazards without full breakdown."
+Citric Acid,77-92-9,311,"H319","Eye irritant. Mild acid, naturally occurring. Low overall hazard."
+Sodium Hydroxide,1310-73-2,14798,"H290,H314,H318","Corrosive. Severe skin burns and eye damage. Common drain cleaner ingredient."
+Limonene,5989-27-5,22311,"H226,H304,H315,H317,H400","Flammable. Skin sensititizer. Aspiration hazard. Aquatic toxicity. Common citrus-scented fragrance component."
+Ethanol,64-17-5,702,"H225,H319","Highly flammable. Eye irritant. Low toxicity otherwise."
+Hydrogen Peroxide,7722-84-1,784,"H314,H318,H412","Corrosive. Severe eye damage. Aquatic toxicity. Common disinfectant."
+Quaternary Ammonium Compounds (DDAC),139-07-1,6121,"H302,H314,H400","Harmful if swallowed. Corrosive. Very toxic to aquatic life. Common disinfectant in cleaning products."
