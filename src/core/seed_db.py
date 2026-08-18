@@ -156,7 +156,7 @@ def seed():
     link_product_ingredient(conn, p1, iso_id, 0, "Isopropyl Alcohol")
 
     # 2. Castile Soap (homemade base)
-    p2 = insert_product(conn, "Castile Soap Cleaning Mixture", brand="Homemade / Dr. Bronner's (TBD)",
+    p2 = insert_product(conn, "Castile Soap Cleaning Mixture", brand="Dr. Bronner's",
                         category="All-Purpose Cleaner",
                         notes="Homemade mixture. Exact recipe TBD — Chris will provide details.")
     link_product_ingredient(conn, p2, castile_id, 0, "Castile Soap")
