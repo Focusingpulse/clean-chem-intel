@@ -388,12 +388,12 @@
     </div>
     <div class="geno-card" id="gcard-mhc" onclick="toggleGene('mhc')">
       <div class="geno-card-header">
-        <div class="geno-card-title">MHC Immune Response Variants</div>
-        <div class="geno-card-prevalence">~20–30% of population</div>
+        <div class="geno-card-title">MHC Region Variants (HLA-DP)</div>
+        <div class="geno-card-prevalence">Varies by allele</div>
       </div>
-      <div class="geno-card-desc">Variants in the MHC region (HLA-DP, HLA-DR) affect how your immune system identifies and responds to chemical sensitizers. May lower the threshold for developing contact allergies.</div>
-      <div class="geno-affected">Affects: <span>Benzalkonium chloride, strong sensitizers, fragrances</span></div>
-      <div class="geno-card-evidence ev-plausible">Plausible mechanism — MHC region associated with irritant response in occupational studies, but not yet linked to specific cleaning chemicals</div>
+      <div class="geno-card-desc">Variants in the MHC class II region affect how your immune system responds to chemical irritants. A NIOSH study of 585 healthcare workers found specific HLA-DP variants linked to stronger skin reactions to benzalkonium chloride and SLS.</div>
+      <div class="geno-affected">Affects: <span>Benzalkonium chloride, SLS, NaOH</span></div>
+      <div class="geno-card-evidence ev-moderate">Moderate evidence — direct occupational study (NIOSH, n=585) shows HLA-DP variants affect irritant threshold, but not yet replicated</div>
     </div>
     <div class="geno-card" id="gcard-dao" onclick="toggleGene('dao')">
       <div class="geno-card-header">
@@ -630,7 +630,7 @@ function gradeOrder(g){ return {A:0,B:1,C:2,D:3,F:4}[g] ?? 5; }
 const GENE_ING_MAP = {
   gstm1: ["Methylisothiazolinone","Methylchloroisothiazolinone","Benzisothiazolinone"],
   tnf: ["Sodium Lauryl Sulfate","Sodium Laureth Sulfate","Benzalkonium Chloride","Sodium Hydroxide","Hydrochloric Acid","Fragrance","Lauramine Oxide"],
-  mhc: ["Benzalkonium Chloride","Fragrance","Methylisothiazolinone","Methylchloroisothiazolinone"],
+  mhc: ["Benzalkonium Chloride","Sodium Lauryl Sulfate","Sodium Hydroxide"],
   dao: ["Sodium Lauryl Sulfate","Benzalkonium Chloride","Fragrance","Limonene","Butyloxyethanol"],
 };
 
