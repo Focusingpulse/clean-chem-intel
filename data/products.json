@@ -1,0 +1,1749 @@
+[
+ {
+  "name": "Windex Original",
+  "brand": "SC Johnson",
+  "cat": "Glass Cleaner",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Isopropanol",
+   "Propylene Glycol",
+   "Butyloxyethanol",
+   "Ammonium Hydroxide",
+   "Fragrance"
+  ],
+  "heritage": true,
+  "heritage_year": 1933,
+  "heritage_note": "Blue glass cleaner since the 1930s — most families' first window spray. Formula evolved (DBC solvent era → 2-butoxyethanol → modern).",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Formula 409",
+  "brand": "Clorox",
+  "cat": "All-Purpose",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Lauramine Oxide",
+   "Ethanolamine",
+   "Quaternary Ammonium",
+   "Fragrance"
+  ],
+  "heritage": true,
+  "heritage_year": 1964,
+  "heritage_note": "'The 409' — 1960s all-purpose spray burned into muscle memory for kitchen counters.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Mr. Clean",
+  "brand": "P&G",
+  "cat": "All-Purpose",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Alkyldimethylamine Oxide",
+   "Sodium Carbonate",
+   "Benzisothiazolinone",
+   "Fragrance"
+  ],
+  "heritage": true,
+  "heritage_year": 1958,
+  "heritage_note": "The bald genie's cleaner, a 1950s staple that defined what 'clean' smelled like.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Pine-Sol",
+  "brand": "Clorox",
+  "cat": "All-Purpose",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Alcohol Ethoxylates",
+   "Fragrance",
+   "Citric Acid"
+  ],
+  "heritage": true,
+  "heritage_year": 1929,
+  "heritage_note": "Pine-oil cleaner from 1929 — that 'clean pine smell' is a generational memory (and a sensitizer source).",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Lysol All-Purpose",
+  "brand": "Reckitt",
+  "cat": "All-Purpose",
+  "safe": null,
+  "ings": [
+   "Quaternary Ammonium",
+   "Water",
+   "Phenoxyisopropanol",
+   "Ethanol",
+   "Fragrance"
+  ],
+  "heritage": true,
+  "heritage_year": 1889,
+  "heritage_note": "Sold since the 1889 flu era as 'household disinfectant'. Early formulas even contained cresol; generations of sickness-cleaning trust.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Fabuloso",
+  "brand": "Colgate-Palmolive",
+  "cat": "All-Purpose",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Dodecylbenzenesulfonate",
+   "Fragrance",
+   "Sodium Laureth Sulfate",
+   "Citric Acid"
+  ],
+  "heritage": true,
+  "heritage_year": 1980,
+  "heritage_note": "Colgate's brightly colored multi-surface cleaner — a 1980s–90s kitchen fixture, passed down by scent loyalty.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Simple Green",
+  "brand": "Sunshine Makers",
+  "cat": "All-Purpose",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Surfactant",
+   "Tetrasodium Glutamate Diacetate",
+   "Sodium Bicarbonate",
+   "Fragrance"
+  ],
+  "heritage": true,
+  "heritage_year": 1975,
+  "heritage_note": "The 1970s 'environmentally friendly' pioneer — one of the first green-label cleaners in ordinary homes.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Method All-Purpose",
+  "brand": "SC Johnson",
+  "cat": "Eco-Friendly",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Decyl Glucoside",
+   "Lauryl Glucoside",
+   "Citric Acid",
+   "Fragrance",
+   "Limonene"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Mrs. Meyer's Multi-Surface",
+  "brand": "SC Johnson",
+  "cat": "Eco-Friendly",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Citrate",
+   "Decyl Glucoside",
+   "Citric Acid",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Seventh Gen All-Purpose",
+  "brand": "Unilever",
+  "cat": "Eco-Friendly",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Octyl/Decyl Glucoside",
+   "Sodium Citrate",
+   "Citric Acid",
+   "Essential Oils"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Clorox Bleach",
+  "brand": "Clorox",
+  "cat": "Disinfectant",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Hypochlorite",
+   "Sodium Chloride",
+   "Sodium Hydroxide"
+  ],
+  "heritage": true,
+  "heritage_year": 1913,
+  "heritage_note": "The original household disinfectant, in cupboards for 100+ years. Effective but carries respiratory + repro flags on routine indoor use.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Lysol Disinfectant Spray",
+  "brand": "Reckitt",
+  "cat": "Disinfectant",
+  "safe": null,
+  "ings": [
+   "Ethanol",
+   "Quaternary Ammonium",
+   "Water",
+   "Butane",
+   "Propane",
+   "Fragrance"
+  ],
+  "heritage": true,
+  "heritage_year": 1950,
+  "heritage_note": "The aerosol that 'kills 99.9% of germs' — a 1950s icon passed down as the default sick-day spray.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Lysol Toilet Bowl",
+  "brand": "Reckitt",
+  "cat": "Toilet Cleaner",
+  "safe": null,
+  "ings": [
+   "Hydrochloric Acid",
+   "Water",
+   "Fragrance"
+  ],
+  "heritage": true,
+  "heritage_year": 1930,
+  "heritage_note": "The acid-based toilet cleaner many inherited without reading the label.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Scrubbing Bubbles",
+  "brand": "SC Johnson",
+  "cat": "Bathroom",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Isobutane",
+   "Benzalkonium Chloride",
+   "Fragrance"
+  ],
+  "heritage": true,
+  "heritage_year": 1972,
+  "heritage_note": "The 1970s bathroom spray that foamed 'up and at 'em' — a shower-scrub icon.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Comet Bathroom",
+  "brand": "KIK",
+  "cat": "Bathroom",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Citric Acid",
+   "Sodium Hydroxide",
+   "Fragrance"
+  ],
+  "heritage": true,
+  "heritage_year": 1956,
+  "heritage_note": "Comet cleanser (1956) — chlorinated scouring powder era, tub rings beware.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Tilex Mold & Mildew",
+  "brand": "Clorox",
+  "cat": "Bathroom",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Hypochlorite",
+   "Sodium Hydroxide",
+   "Lauramine Oxide",
+   "Fragrance"
+  ],
+  "heritage": true,
+  "heritage_year": 1980,
+  "heritage_note": "The bleach-based mold spray that bathrooms across two generations have reached for without gloves.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Kaboom Foam-Tastic",
+  "brand": "Church & Dwight",
+  "cat": "Bathroom",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Isobutane",
+   "Lauramine Oxide",
+   "Fragrance",
+   "Sodium Hydroxide"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Clorox ToiletWand",
+  "brand": "Clorox",
+  "cat": "Toilet Cleaner",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Glycolic Acid",
+   "Sodium Lauryl Sulfate",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Soft Scrub",
+  "brand": "Henkel",
+  "cat": "Abrasive",
+  "safe": null,
+  "ings": [
+   "Limestone",
+   "Sodium Hypochlorite",
+   "Surfactant"
+  ],
+  "heritage": true,
+  "heritage_year": 1968,
+  "heritage_note": "The 1968 gentle abrasive that replaced powders — 'liquid Comet', passed along as the safe scrubbing option.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Bar Keepers Friend",
+  "brand": "BKF",
+  "cat": "Specialty",
+  "safe": null,
+  "ings": [
+   "Feldspar",
+   "Oxalic Acid",
+   "Sodium Dodecylbenzenesulfonate"
+  ],
+  "heritage": true,
+  "heritage_year": 1882,
+  "heritage_note": "A stainless-steel polish from 1882 with a cult following that skipped generations entirely via word of mouth.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Pledge",
+  "brand": "SC Johnson",
+  "cat": "Polish",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Isoparaffin",
+   "Dimethicone",
+   "Fragrance",
+   "Limonene"
+  ],
+  "heritage": true,
+  "heritage_year": 1958,
+  "heritage_note": "Lemon-oil furniture polish (1958) — the 'clean lemon smell' of living rooms for three generations.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Febreze",
+  "brand": "P&G",
+  "cat": "Fabric",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Alcohol",
+   "Hydroxypropyl Cyclodextrin",
+   "Fragrance"
+  ],
+  "heritage": true,
+  "heritage_year": 1998,
+  "heritage_note": "Younger than the rest, but already inherited: the 'spray the couch' reflex is now a household ritual.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Drano Max Gel",
+  "brand": "SC Johnson",
+  "cat": "Drain",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Hypochlorite",
+   "Sodium Hydroxide",
+   "Lauramine Oxide"
+  ],
+  "heritage": true,
+  "heritage_year": 1923,
+  "heritage_note": "Drano (1923) — the caustic drain unclogger every household inherited, lye and all.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "CLR",
+  "brand": "Jelmar",
+  "cat": "Specialty",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Lactic Acid",
+   "Gluconic Acid",
+   "Lauramine Oxide"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Bon Ami",
+  "brand": "Faultless",
+  "cat": "Eco-Friendly",
+  "safe": null,
+  "ings": [
+   "Calcium Carbonate",
+   "Feldspar",
+   "Sodium Carbonate",
+   "Sodium Bicarbonate"
+  ],
+  "heritage": true,
+  "heritage_year": 1886,
+  "heritage_note": "'Hasn't scratched yet' since 1886 — the feldspar-based powder that outlived every competitor.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Ajax Powder",
+  "brand": "Colgate-Palmolive",
+  "cat": "Abrasive",
+  "safe": null,
+  "ings": [
+   "Calcium Carbonate",
+   "Sodium Carbonate",
+   "Sodium Dodecylbenzenesulfonate",
+   "Trichloroisocyanuric Acid",
+   "Fragrance"
+  ],
+  "heritage": true,
+  "heritage_year": 1947,
+  "heritage_note": "The 1940s scouring powder with the knight — gritty, cheap, and grandma's cabinet standby.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Swiffer WetJet",
+  "brand": "P&G",
+  "cat": "Floor",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Propylene Glycol Butyl Ether",
+   "Didecyldimonium Chloride",
+   "Fragrance"
+  ],
+  "heritage": true,
+  "heritage_year": 1999,
+  "heritage_note": "P&G's mop reinvention — the modern 'clean floor' default already being handed down.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Green Works",
+  "brand": "Clorox",
+  "cat": "Eco-Friendly",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Caprylyl/Capryl Glucoside",
+   "Ethanol",
+   "Citric Acid",
+   "Limonene",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "ECOS Dishmate",
+  "brand": "ECOS",
+  "cat": "Eco-Friendly",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Coco-Sulfate",
+   "Lauramine Oxide",
+   "Phenoxyethanol",
+   "Citric Acid"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Biokleen All-Purpose",
+  "brand": "Biokleen",
+  "cat": "Eco-Friendly",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Lauryl Sulfate",
+   "Cocamidopropyl Betaine",
+   "Lauramine Oxide",
+   "Limonene"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Dr. Bronner's Sal Suds",
+  "brand": "Dr. Bronner's",
+  "cat": "Eco-Friendly",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Lauryl Sulfate",
+   "Lauryl Glucoside",
+   "Essential Oils",
+   "Limonene"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Grove Co. Multi-Purpose",
+  "brand": "Grove",
+  "cat": "Eco-Friendly",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Coco-Glucoside",
+   "Lauramine Oxide",
+   "Citric Acid",
+   "Phenoxyethanol"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Dawn Ultra",
+  "brand": "P&G",
+  "cat": "Dish Soap",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Lauryl Sulfate",
+   "Sodium Laureth Sulfate",
+   "Lauramine Oxide",
+   "Fragrance",
+   "Methylisothiazolinone"
+  ],
+  "heritage": true,
+  "heritage_year": 1973,
+  "heritage_note": "Dawn (1973) — the dish soap that doubles as wildlife-cleanup icon; generations trust it on their greasiest pots.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Palmolive",
+  "brand": "Colgate-Palmolive",
+  "cat": "Dish Soap",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Laureth Sulfate",
+   "Sodium Lauryl Sulfate",
+   "Lauramine Oxide",
+   "Fragrance",
+   "Methylisothiazolinone"
+  ],
+  "heritage": true,
+  "heritage_year": 1898,
+  "heritage_note": "A brand since 1898 — 'Palmolive' dish liquid is literally a great-grandparent's soap.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Tide",
+  "brand": "P&G",
+  "cat": "Laundry",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Alcohol Ethoxylate",
+   "Sodium Laureth Sulfate",
+   "Enzymes",
+   "Fragrance"
+  ],
+  "heritage": true,
+  "heritage_year": 1946,
+  "heritage_note": "The 1946 laundry breakthrough that became the default 'family detergent' for 80 years.",
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Gain",
+  "brand": "P&G",
+  "cat": "Laundry",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Alcohol Ethoxylate",
+   "Sodium Laureth Sulfate",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Cascade",
+  "brand": "P&G",
+  "cat": "Dishwasher",
+  "safe": null,
+  "ings": [
+   "Sodium Carbonate",
+   "Sodium Percarbonate",
+   "Sodium Silicate",
+   "Enzymes",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Finish",
+  "brand": "Reckitt",
+  "cat": "Dishwasher",
+  "safe": null,
+  "ings": [
+   "Sodium Carbonate",
+   "Sodium Percarbonate",
+   "Sodium Silicate",
+   "Enzymes",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Arm & Hammer",
+  "brand": "Church & Dwight",
+  "cat": "Laundry",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Carbonate",
+   "Sodium Laureth Sulfate",
+   "Fragrance",
+   "Enzymes"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Seventh Gen Dish",
+  "brand": "Unilever",
+  "cat": "Dish Soap",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Lauryl Sulfate",
+   "Cocamidopropyl Betaine",
+   "Lauramine Oxide",
+   "Methylisothiazolinone"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Mrs. Meyer's Dish",
+  "brand": "SC Johnson",
+  "cat": "Dish Soap",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Lauryl Sulfate",
+   "Cocamidopropyl Betaine",
+   "Fragrance",
+   "Methylisothiazolinone"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Method Dish",
+  "brand": "SC Johnson",
+  "cat": "Dish Soap",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Lauryl Sulfate",
+   "Cocamidopropyl Betaine",
+   "Fragrance",
+   "Limonene",
+   "Methylisothiazolinone"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Isopropyl Alcohol 70% (BMVC)",
+  "brand": "Swan",
+  "cat": "Disinfectant",
+  "safe": null,
+  "ings": [
+   "Isopropyl Alcohol",
+   "Water"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "18-in-1 Pure-Castile Soap, Peppermint (BMVC)",
+  "brand": "Dr. Bronner's",
+  "cat": "All-Purpose",
+  "safe": null,
+  "ings": [
+   "Saponified Coconut Oil",
+   "Saponified Olive Oil",
+   "Organic Hemp Oil",
+   "Organic Peppermint Oil",
+   "Spring Water"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Essential Oil Spray (BMVC)",
+  "brand": "Homemade",
+  "cat": "All-Purpose",
+  "safe": null,
+  "ings": [
+   "Spring Water",
+   "Isopropyl Alcohol",
+   "Tea Tree Oil",
+   "Lavender Oil",
+   "Lemon Oil",
+   "Peppermint Oil",
+   "Eucalyptus Oil"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Peppermint Pure Essential Oil (BMVC)",
+  "brand": "Aura Cacia",
+  "cat": "Essential Oil",
+  "safe": null,
+  "ings": [
+   "Organic Peppermint Oil"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Organic Essential Oils Kit (BMVC)",
+  "brand": "NOW Foods",
+  "cat": "Essential Oil",
+  "safe": null,
+  "ings": [
+   "Lavender Oil",
+   "Peppermint Oil",
+   "Tea Tree Oil",
+   "Lemon Oil"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Granite & Stone Cleaner (BMVC)",
+  "brand": "Ever Spring",
+  "cat": "Surface Cleaner",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Caprylyl Glucoside",
+   "Sodium Citrate",
+   "Myristyl Glucoside",
+   "Plant-based surfactants",
+   "Citric Acid",
+   "Fragrance",
+   "Mandarin Oil",
+   "Ginger Extract"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Wood Surface Cleaner (BMVC)",
+  "brand": "Ever Spring",
+  "cat": "Surface Cleaner",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Plant-based surfactants",
+   "Fragrance",
+   "Lemon Oil",
+   "Mint Oil",
+   "Basil Oil",
+   "Geranium Oil",
+   "Citric Acid",
+   "Denatured Alcohol"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Power Cleaning Paste (BMVC)",
+  "brand": "Norwex",
+  "cat": "Physical",
+  "safe": "EWG Verified",
+  "ings": [
+   "Calcium Carbonate",
+   "Alumina",
+   "Brassica Campestris Seed Oil",
+   "Helianthus Annuus Seed Oil",
+   "Water",
+   "Potassium Carbonate",
+   "Aloe Vera",
+   "Citrus Aurantium Peel Oil",
+   "Triethyl Citrate",
+   "Dipterocarpus Wood Oil",
+   "Limonene",
+   "Citral"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Norwex Cloth + Water (BMVC)",
+  "brand": "Norwex",
+  "cat": "Physical",
+  "safe": null,
+  "ings": [
+   "Norwex Cloth",
+   "Spring Water"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Pumie Toilet Bowl Ring Remover (BMVC)",
+  "brand": "Pumie",
+  "cat": "Physical",
+  "safe": null,
+  "ings": [
+   "Pumice Stone"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Dishwasher Pods Zero Plastic, Unscented",
+  "brand": "AspenClean",
+  "cat": "Dishwasher",
+  "safe": "EWG Verified",
+  "ings": [
+   "Sodium Citrate",
+   "Sodium Carbonate",
+   "Sodium Carbonate Peroxide",
+   "Decyl Glucoside",
+   "Enzymes",
+   "Sodium Chloride"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Zero Plastic Dishwasher Powder",
+  "brand": "AspenClean",
+  "cat": "Dishwasher",
+  "safe": "EWG Verified",
+  "ings": [
+   "Sodium Citrate",
+   "Sodium Carbonate",
+   "Sodium Carbonate Peroxide",
+   "Decyl Glucoside",
+   "Enzymes"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Dishwasher Detergent, Fragrance-free",
+  "brand": "Blueland",
+  "cat": "Dishwasher",
+  "safe": "EWG Verified, EPA Safer Choice, MADE SAFE",
+  "ings": [
+   "Plant-based surfactants",
+   "Sodium Carbonate"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Dishwasher Tablets, Fragrance Free",
+  "brand": "Branch Basics",
+  "cat": "Dishwasher",
+  "safe": "EWG Verified, MADE SAFE",
+  "ings": [
+   "Sodium Carbonate",
+   "Sodium Carbonate Peroxide",
+   "Sodium Bicarbonate",
+   "Plant-based surfactants"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "UltraWash Dishwasher Pods",
+  "brand": "Dropps",
+  "cat": "Dishwasher",
+  "safe": "EWG Verified",
+  "ings": [
+   "Sodium Carbonate",
+   "Sodium Carbonate Peroxide",
+   "Plant-based surfactants"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Dishwasher Gel, Free & Clear",
+  "brand": "ECOS",
+  "cat": "Dishwasher",
+  "safe": "EWG Grade A, EPA Safer Choice",
+  "ings": [
+   "Plant-based surfactants",
+   "Sodium Carbonate"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Laundry Detergent Pods, Eucalyptus & Rosemary",
+  "brand": "AspenClean",
+  "cat": "Laundry",
+  "safe": "EWG Verified",
+  "ings": [
+   "Plant-based surfactants",
+   "Sodium Carbonate",
+   "Sodium Carbonate Peroxide",
+   "Enzymes",
+   "Essential Oils"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Laundry Detergent Pods, Unscented",
+  "brand": "AspenClean",
+  "cat": "Laundry",
+  "safe": "EWG Verified",
+  "ings": [
+   "Plant-based surfactants",
+   "Sodium Carbonate",
+   "Sodium Carbonate Peroxide",
+   "Enzymes"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Laundry Detergent, Unscented",
+  "brand": "AspenClean",
+  "cat": "Laundry",
+  "safe": "EWG Verified",
+  "ings": [
+   "Plant-based surfactants",
+   "Sodium Carbonate",
+   "Enzymes"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Baby Laundry Detergent, Unscented",
+  "brand": "ATTITUDE",
+  "cat": "Laundry",
+  "safe": "EWG Verified",
+  "ings": [
+   "Water",
+   "Plant-based surfactants",
+   "Sodium Citrate",
+   "Oatmeal extract"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Liquid Laundry Detergent, Unscented",
+  "brand": "ATTITUDE",
+  "cat": "Laundry",
+  "safe": "EWG Verified",
+  "ings": [
+   "Water",
+   "Plant-based surfactants"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Oxi Booster Pods",
+  "brand": "Dropps",
+  "cat": "Laundry",
+  "safe": "EWG Verified",
+  "ings": [
+   "Sodium Carbonate Peroxide",
+   "Sodium Carbonate"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Laundry Powder",
+  "brand": "Meliora",
+  "cat": "Laundry",
+  "safe": "MADE SAFE",
+  "ings": [
+   "Sodium Carbonate",
+   "Sodium Percarbonate",
+   "Sodium Bicarbonate"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Free & Clear Laundry Detergent",
+  "brand": "Seventh Generation",
+  "cat": "Laundry",
+  "safe": "EPA Safer Choice, EWG Grade A",
+  "ings": [
+   "Plant-based surfactants",
+   "Water",
+   "Sodium Citrate"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Chlorine Free Bleach",
+  "brand": "Seventh Generation",
+  "cat": "Laundry",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Hydrogen Peroxide",
+   "Water"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Super Washing Soda",
+  "brand": "Arm & Hammer",
+  "cat": "Laundry",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Sodium Carbonate"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Castile Soap, Peppermint",
+  "brand": "Dr. Bronner's",
+  "cat": "All-Purpose",
+  "safe": "EWG Verified, USDA Organic",
+  "ings": [
+   "Water",
+   "Saponified Coconut Oil",
+   "Saponified Olive Oil",
+   "Organic Hemp Oil",
+   "Organic Peppermint Oil",
+   "Citric Acid"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Castile Soap, Lavender",
+  "brand": "Dr. Bronner's",
+  "cat": "All-Purpose",
+  "safe": "EWG Verified, USDA Organic",
+  "ings": [
+   "Water",
+   "Saponified Coconut Oil",
+   "Saponified Olive Oil",
+   "Organic Hemp Oil",
+   "Organic Lavender Oil",
+   "Citric Acid"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Sal Suds Liquid Cleaner",
+  "brand": "Dr. Bronner's",
+  "cat": "All-Purpose",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Water",
+   "Potassium Hydroxide",
+   "Lauric Acid",
+   "Sodium Lauryl Sulfate",
+   "Rosemary Extract"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "All-Purpose Cleaner, Geranium & Lemongrass",
+  "brand": "ATTITUDE",
+  "cat": "All-Purpose",
+  "safe": "EWG Verified",
+  "ings": [
+   "Water",
+   "Sodium Bicarbonate",
+   "Sodium Hydroxide",
+   "Myristyl Glucoside",
+   "Caprylyl Glucoside",
+   "Citric Acid",
+   "Tea Tree Oil",
+   "Geranium Oil"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Daily Shower & Tile Cleaner, Citrus Zest",
+  "brand": "ATTITUDE",
+  "cat": "Bathroom",
+  "safe": "EWG Verified",
+  "ings": [
+   "Water",
+   "Plant-based surfactants",
+   "Citrus essential oils"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Bathroom Cleaner Spray, Citrus Zest",
+  "brand": "ATTITUDE",
+  "cat": "Bathroom",
+  "safe": "EWG Verified",
+  "ings": [
+   "Water",
+   "Plant-based surfactants",
+   "Citrus essential oils"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Bathroom Cleaner Spray, Unscented",
+  "brand": "ATTITUDE",
+  "cat": "Bathroom",
+  "safe": "EWG Verified",
+  "ings": [
+   "Water",
+   "Plant-based surfactants"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Floor Surface Cleaner, Citrus Zest",
+  "brand": "ATTITUDE",
+  "cat": "Floor",
+  "safe": "EWG Verified",
+  "ings": [
+   "Water",
+   "Plant-based surfactants",
+   "Citrus essential oils"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Concentrate, Fragrance-Free",
+  "brand": "Branch Basics",
+  "cat": "All-Purpose",
+  "safe": "EWG Verified, MADE SAFE",
+  "ings": [
+   "Water",
+   "Sodium Citrate",
+   "Decyl Glucoside",
+   "Lauramine Oxide",
+   "Sodium Phytate",
+   "Citric Acid"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Oxygen Boost",
+  "brand": "Branch Basics",
+  "cat": "Laundry",
+  "safe": "EWG Verified, MADE SAFE",
+  "ings": [
+   "Sodium Carbonate Peroxide",
+   "Sodium Carbonate"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Gel Hand Soap",
+  "brand": "Branch Basics",
+  "cat": "Hand Soap",
+  "safe": "EWG Verified",
+  "ings": [
+   "Water",
+   "Plant-based surfactants",
+   "Aloe Vera"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Bathroom Cleaner, Fresh",
+  "brand": "Green Shield Organic",
+  "cat": "Bathroom",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Plant-based surfactants",
+   "Citric Acid"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Toilet Bowl Cleaner",
+  "brand": "Green Shield Organic",
+  "cat": "Toilet",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Plant-based surfactants",
+   "Citric Acid"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "All-Purpose Degreaser, Fresh",
+  "brand": "Green Shield Organic",
+  "cat": "All-Purpose",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Plant-based surfactants",
+   "Citric Acid"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Glass Cleaner Fresh",
+  "brand": "Green Shield Organic",
+  "cat": "Glass",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Plant-based surfactants",
+   "Water"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Toilet Bowl Cleaner, Emerald Cypress & Fir",
+  "brand": "Seventh Generation",
+  "cat": "Toilet",
+  "safe": "EWG top-rated, EPA Safer Choice",
+  "ings": [
+   "Plant-based surfactants",
+   "Citric Acid",
+   "Essential Oils"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Tub & Tile Cleaner, Emerald Cypress & Fir",
+  "brand": "Seventh Generation",
+  "cat": "Bathroom",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Plant-based surfactants",
+   "Citric Acid",
+   "Essential Oils"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Shower Kleener",
+  "brand": "ECOS",
+  "cat": "Bathroom",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Water",
+   "Plant-based surfactants",
+   "Citric Acid"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Toilet Kleener, Natural Cedar",
+  "brand": "ECOS",
+  "cat": "Toilet",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Water",
+   "Plant-based surfactants",
+   "Cedar essential oil"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Toilet Bowl Cleaner Pine Fresh",
+  "brand": "Ecover",
+  "cat": "Toilet",
+  "safe": "EWG top-rated, EPA Safer Choice",
+  "ings": [
+   "Water",
+   "Plant-based surfactants",
+   "Pine essential oil"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Cream Scrub",
+  "brand": "Ecover",
+  "cat": "Abrasive",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Calcium Carbonate",
+   "Plant-based surfactants",
+   "Water"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Glass Cleaner, Unscented",
+  "brand": "Whole Foods",
+  "cat": "Glass",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Water",
+   "Plant-based surfactants"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "All-Purpose Spray, Lemon Zest",
+  "brand": "Whole Foods",
+  "cat": "All-Purpose",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Plant-based surfactants",
+   "Water"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "All-Purpose Surface Cleaner, Ginger Yuzu",
+  "brand": "Method",
+  "cat": "All-Purpose",
+  "safe": "EWG top-rated, EPA Safer Choice",
+  "ings": [
+   "Water",
+   "Decyl Glucoside",
+   "Citric Acid"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Powder Cleanser",
+  "brand": "Bon Ami",
+  "cat": "Abrasive",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Limestone",
+   "Feldspar",
+   "Sodium Carbonate",
+   "Sodium Bicarbonate"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Dishwashing Liquid, Hypo-Allergenic",
+  "brand": "Planet",
+  "cat": "Dish Soap",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Plant-based surfactants",
+   "Water"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Dish Liquid, Unscented",
+  "brand": "Better Life",
+  "cat": "Dish Soap",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Plant-based surfactants",
+   "Water"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Dish Liquid, Free & Clear",
+  "brand": "Seventh Generation",
+  "cat": "Dish Soap",
+  "safe": "EPA Safer Choice",
+  "ings": [
+   "Plant-based surfactants",
+   "Water"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "All-Purpose Cleaner, Free & Clear",
+  "brand": "Seventh Generation",
+  "cat": "All-Purpose",
+  "safe": "EPA Safer Choice, EWG Grade B",
+  "ings": [
+   "Plant-based surfactants",
+   "Water"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "All-Purpose Home Cleaner",
+  "brand": "Meliora",
+  "cat": "All-Purpose",
+  "safe": "MADE SAFE",
+  "ings": [
+   "Water",
+   "Potassium Oleate",
+   "Potassium Citrate",
+   "Glycerin"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Dish Soap",
+  "brand": "Meliora",
+  "cat": "Dish Soap",
+  "safe": "MADE SAFE",
+  "ings": [
+   "Water",
+   "Potassium Oleate",
+   "Potassium Citrate",
+   "Glycerin"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Laundry Detergent, Free & Clear",
+  "brand": "Pure Natural",
+  "cat": "Laundry",
+  "safe": "MADE SAFE, USDA Biobased",
+  "ings": [
+   "Botanical surfactant"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Multi-Purpose Cleaner, Free & Clear",
+  "brand": "Pure Natural",
+  "cat": "All-Purpose",
+  "safe": "MADE SAFE, USDA Biobased",
+  "ings": [
+   "Botanical surfactant"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Hand Soap, Meyer Lemon Mandarin",
+  "brand": "Everyone",
+  "cat": "Hand Soap",
+  "safe": "EWG Verified",
+  "ings": [
+   "Water",
+   "Plant-based surfactants",
+   "Essential Oils"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Floor Cleaner",
+  "brand": "Bona",
+  "cat": "Floor",
+  "safe": "EPA Safer Choice",
+  "ings": [
+   "Water",
+   "Plant-based surfactants"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Concentrated All-Purpose",
+  "brand": "Simple Green",
+  "cat": "All-Purpose",
+  "safe": "EPA Safer Choice",
+  "ings": [
+   "Water",
+   "Surfactant",
+   "Tetrasodium Glutamate Diacetate"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Calcium Lime Rust Cleaner",
+  "brand": "CLR",
+  "cat": "Specialty",
+  "safe": "EWG top-rated, EPA Safer Choice",
+  "ings": [
+   "Lactic Acid",
+   "Gluconic Acid",
+   "Water"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "OxiClean Baby Stain Soaker",
+  "brand": "OxiClean",
+  "cat": "Laundry",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Sodium Carbonate Peroxide",
+   "Sodium Carbonate"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Dishwasher Pacs, Free & Clear",
+  "brand": "Seventh Generation",
+  "cat": "Dishwasher",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Plant-based surfactants",
+   "Sodium Carbonate",
+   "Enzymes"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Dishwasher Powder, Free & Clear",
+  "brand": "Seventh Generation",
+  "cat": "Dishwasher",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Plant-based surfactants",
+   "Sodium Carbonate",
+   "Enzymes"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Wave Dishwashing Gel Lavender",
+  "brand": "ECOS",
+  "cat": "Dishwasher",
+  "safe": "EWG top-rated",
+  "ings": [
+   "Plant-based surfactants",
+   "Lavender essential oil"
+  ],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Glass Cleaner Concentrate 1A",
+  "brand": "3M",
+  "cat": "Glass (Commercial)",
+  "safe": "Green Seal",
+  "ings": [],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Focus MP 11 Multi-Purpose",
+  "brand": "Focus",
+  "cat": "All-Purpose (Commercial)",
+  "safe": "Green Seal",
+  "ings": [],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Green Link Multi-Clean Degreaser",
+  "brand": "Zep",
+  "cat": "All-Purpose (Commercial)",
+  "safe": "Green Seal",
+  "ings": [],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Green Link Neutral Floor Cleaner",
+  "brand": "Zep",
+  "cat": "Floor (Commercial)",
+  "safe": "Green Seal",
+  "ings": [],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "HOST Dry Carpet Cleaner",
+  "brand": "HOST",
+  "cat": "Carpet",
+  "safe": "Green Seal",
+  "ings": [],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "Carpet & Upholstery Concentrate",
+  "brand": "Procyon",
+  "cat": "Carpet",
+  "safe": "Green Seal",
+  "ings": [],
+  "heritage": false,
+  "added": "2026-08-18",
+  "updated": "2026-08-18"
+ },
+ {
+  "name": "20 Mule Team Borax (BMVC)",
+  "brand": "20 Mule Team",
+  "cat": "Laundry",
+  "safe": null,
+  "ings": [
+   "Sodium Tetraborate"
+  ],
+  "heritage": true,
+  "heritage_year": 1891,
+  "heritage_note": "Mined in Death Valley and hauled by 20-mule teams since 1891 — the all-purpose laundry booster grandma swore by. Still in most US grocery aisles; restricted across the EU for reproductive toxicity.",
+  "added": "2026-08-28",
+  "updated": "2026-08-28"
+ }
+]

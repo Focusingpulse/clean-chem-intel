@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clean Chem Intel — Know What's Under Your Sink</title>
+<meta name="description" content="A living database of cleaning products — graded ingredient by ingredient. Search by health impact: respiratory, reproductive, endocrine, skin, aquatic, cancer, allergen.">
+<style>
+  :root{
+    --pine:#1d5c45; --pine-2:#2e7d5b; --pine-soft:#e6f0ea;
+    --cream:#faf9f6; --surface:#ffffff; --ink:#1c2a25; --muted:#5e7068;
+    --line:#e3e8e4; --shadow:0 2px 10px rgba(29,60,48,.08);
+    --a:#2e9e5b; --b:#8fbf3d; --c:#e6b93d; --d:#e8853a; --f:#d64545; --u:#9aa5a0;
+    --resp:#3d8bd1; --repro:#d9527a; --endo:#8a63d2; --derm:#dd8a33; --aqua:#24a39c; --canc:#d04545; --allerg:#bf9b1f;
+    --rad:16px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;background:var(--cream);color:var(--ink);line-height:1.45;-webkit-font-smoothing:antialiased}
+
+  /* ---------- header ---------- */
+  .topbar{position:sticky;top:0;z-index:40;background:rgba(250,249,246,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .topbar-in{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--pine),var(--pine-2));display:flex;align-items:center;justify-content:center;color:#fff;font-size:17px;box-shadow:0 2px 6px rgba(29,92,69,.35)}
+  .brand-name{font-weight:800;font-size:1.02rem;color:var(--ink);letter-spacing:-.2px}
+  .brand-name span{color:var(--pine)}
+  .live{display:flex;align-items:center;gap:6px;font-size:.72rem;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 11px}
+  .live .dot{width:8px;height:8px;border-radius:50%;background:var(--a);animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .live b{color:var(--pine)}
+
+  /* ---------- hero ---------- */
+  .hero{background:linear-gradient(160deg,#eef5f0 0%,#e2efe7 55%,#d7e8de 100%);border-bottom:1px solid var(--line);overflow:hidden;position:relative}
+  .hero-in{max-width:1080px;margin:0 auto;padding:40px 16px 34px;position:relative;z-index:2}
+  .hero h1{font-size:clamp(1.7rem,4.5vw,2.6rem);font-weight:800;letter-spacing:-1px;line-height:1.12}
+  .hero h1 em{font-style:normal;color:var(--pine)}
+  .hero p.tag{max-width:640px;margin-top:10px;font-size:clamp(.95rem,2vw,1.08rem);color:#48635a}
+  .stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .stat{background:rgba(255,255,255,.75);border:1px solid rgba(29,92,69,.14);border-radius:14px;padding:10px 16px;min-width:96px}
+  .stat b{display:block;font-size:1.35rem;font-weight:800;color:var(--pine);line-height:1.1}
+  .stat span{font-size:.68rem;text-transform:uppercase;letter-spacing:.7px;color:var(--muted)}
+  .mountains{position:absolute;bottom:-2px;left:0;right:0;opacity:.5;pointer-events:none}
+  .mountains svg{display:block;width:100%;height:70px}
+
+  /* ---------- sections ---------- */
+  .wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+  section{margin-top:30px}
+  .sec-title{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
+  .sec-title h2{font-size:1.15rem;font-weight:800;letter-spacing:-.3px}
+  .sec-title .sub{font-size:.78rem;color:var(--muted)}
+  .pill{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;background:var(--pine-soft);color:var(--pine);padding:3px 9px;border-radius:999px}
+
+  /* ---------- search ---------- */
+  .search-box{width:100%;padding:14px 16px;font-size:1rem;border:1.5px solid var(--line);border-radius:14px;background:var(--surface);color:var(--ink);outline:none;box-shadow:var(--shadow);transition:border-color .15s}
+  .search-box:focus{border-color:var(--pine-2)}
+  .search-box::placeholder{color:#a4b2ac}
+
+  .impact-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin:16px 0 8px;display:flex;align-items:center;gap:8px}
+  .chips{display:flex;flex-wrap:wrap;gap:7px}
+  .chip{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);font-size:.83rem;font-weight:600;color:#44544e;cursor:pointer;transition:all .13s;user-select:none}
+  .chip:hover{border-color:#c4d3cb;transform:translateY(-1px)}
+  .chip .cd{width:9px;height:9px;border-radius:50%;flex:none}
+  .chip.active{color:#fff;border-color:transparent;box-shadow:0 3px 10px rgba(0,0,0,.14)}
+  .chip.safe{font-weight:600}
+  .chip.safe.active{background:var(--pine-2)!important}
+  .chip .check{display:none;font-size:.72rem}
+  .chip.active .check{display:inline}
+
+  .row2{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px;align-items:center}
+  .tbtn{padding:8px 14px;border-radius:11px;border:1.5px solid var(--line);background:var(--surface);font-size:.82rem;font-weight:600;color:#44544e;cursor:pointer;transition:all .13s}
+  .tbtn:hover{border-color:#c4d3cb}
+  .tbtn.active{background:var(--pine);border-color:var(--pine);color:#fff}
+  .cats{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .catb{padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-size:.74rem;color:#5a6b64;cursor:pointer;transition:all .12s}
+  .catb:hover{border-color:#c4d3cb}
+  .catb.active{background:var(--pine-soft);border-color:var(--pine-2);color:var(--pine);font-weight:700}
+
+  /* ---------- reclassified strip ---------- */
+  .strip{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+  .strip::-webkit-scrollbar{height:6px}
+  .strip::-webkit-scrollbar-thumb{background:#cdd8d2;border-radius:6px}
+  .rc-card{flex:0 0 270px;scroll-snap-align:start;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--d);border-radius:14px;padding:13px 15px;box-shadow:var(--shadow)}
+  .rc-card .rc-name{font-weight:750;font-size:.95rem;color:var(--ink)}
+  .rc-card .rc-badge{font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--d);background:#fdf1e6;border:1px solid #f3d9c0;padding:2px 7px;border-radius:999px;display:inline-block;margin-bottom:6px}
+  .rc-card p{font-size:.79rem;color:#4c5e56;margin-top:5px;line-height:1.45}
+
+  /* ---------- heritage ---------- */
+  .heritage-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+  .h-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:6px}
+  .h-card .year{font-size:.66rem;font-weight:800;color:var(--pine);background:var(--pine-soft);padding:2px 8px;border-radius:999px;align-self:flex-start}
+  .h-card .h-name{font-weight:750;font-size:.92rem}
+  .h-card .h-brand{font-size:.74rem;color:var(--muted)}
+  .h-card p{font-size:.76rem;color:#48635a;line-height:1.45}
+
+  /* ---------- products ---------- */
+  .stats-line{font-size:.8rem;color:var(--muted);margin:14px 0 10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .stats-line b{color:var(--pine)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--rad);padding:15px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:9px;transition:transform .12s,box-shadow .12s}
+  .card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(29,60,48,.12)}
+  .card-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+  .card-name{font-weight:750;font-size:1rem;letter-spacing:-.2px}
+  .card-brand{font-size:.76rem;color:var(--muted);margin-top:1px}
+  .badges{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+  .bdg{font-size:.62rem;font-weight:700;padding:3px 8px;border-radius:999px;display:inline-flex;align-items:center;gap:4px}
+  .bdg.safe{background:#e8f4ec;color:#1f7a46;border:1px solid #c7e6d3}
+  .bdg.heritage{background:#fdf4e3;color:#a06a1a;border:1px solid #f0ddbb}
+  .bdg.flag{background:#fdeaea;color:#b33838;border:1px solid #f3cdcd}
+  .grade{flex:none;width:48px;text-align:center}
+  .gcircle{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.35rem;font-weight:800;color:#fff;margin:0 auto;position:relative}
+  .gcircle small{position:absolute;bottom:-13px;left:0;right:0;font-size:.56rem;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.4px}
+  .g-A{background:linear-gradient(135deg,#37b26b,#2e9e5b);box-shadow:0 3px 8px rgba(46,158,91,.35)}
+  .g-B{background:linear-gradient(135deg,#a9cf46,#8fbf3d);box-shadow:0 3px 8px rgba(143,191,61,.35)}
+  .g-C{background:linear-gradient(135deg,#f0c94f,#e6b93d);box-shadow:0 3px 8px rgba(230,185,61,.35)}
+  .g-D{background:linear-gradient(135deg,#ef9a52,#e8853a);box-shadow:0 3px 8px rgba(232,133,58,.35)}
+  .g-F{background:linear-gradient(135deg,#e0605a,#d04545);box-shadow:0 3px 8px rgba(208,69,69,.35)}
+  .g-null{background:linear-gradient(135deg,#aab5b0,#8f9b95);box-shadow:0 3px 8px rgba(143,155,149,.35)}
+  .impacts{display:flex;flex-wrap:wrap;gap:5px}
+  .imp{font-size:.66rem;font-weight:700;padding:2px 8px;border-radius:999px;color:#fff}
+  .imp.resp{background:var(--resp)} .imp.repro{background:var(--repro)} .imp.endo{background:var(--endo)}
+  .imp.derm{background:var(--derm)} .imp.aqua{background:var(--aqua)} .imp.canc{background:var(--canc)} .imp.allerg{background:var(--allerg)}
+  .card-ings{font-size:.76rem;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.4em}
+  .card-foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:9px;margin-top:2px}
+  .ing-count{font-size:.72rem;color:var(--muted)}
+  .more-btn{font-size:.78rem;font-weight:700;color:var(--pine);background:var(--pine-soft);border:none;padding:6px 13px;border-radius:9px;cursor:pointer}
+  .more-btn:hover{background:#d8e8df}
+
+  /* shift badge (genetic) */
+  .shift{font-size:.66rem;font-weight:700;color:#b33838;background:#fdeaea;border:1px solid #f3cdcd;padding:2px 8px;border-radius:999px;margin-top:6px;display:inline-block}
+
+  /* ---------- modal ---------- */
+  .modal-bg{position:fixed;inset:0;background:rgba(15,30,24,.5);z-index:50;display:none;align-items:flex-end;justify-content:center;backdrop-filter:blur(2px)}
+  .modal-bg.show{display:flex}
+  .modal{background:var(--cream);width:100%;max-width:640px;max-height:86vh;border-radius:20px 20px 0 0;overflow-y:auto;padding:20px 18px 30px;position:relative;animation:slideup .22s ease}
+  @media(min-width:700px){.modal-bg{align-items:center}.modal{border-radius:20px}}
+  @keyframes slideup{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
+  .modal-x{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;border:none;background:var(--pine-soft);color:var(--pine);font-size:1rem;cursor:pointer;font-weight:700}
+  .modal h3{font-size:1.25rem;font-weight:800;padding-right:40px}
+  .modal .mbrand{font-size:.82rem;color:var(--muted);margin-top:2px}
+  .modal .mrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .mimg{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
+  .ming{flex:1 1 250px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px}
+  .ming h4{font-size:.82rem;font-weight:750;display:flex;align-items:center;gap:6px;justify-content:space-between}
+  .ming h4 .gdot{width:16px;height:16px;border-radius:5px;font-size:.62rem;color:#fff;display:flex;align-items:center;justify-content:center;flex:none}
+  .ming .isum{font-size:.75rem;color:#48635a;margin-top:3px}
+  .ming .idims{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
+  .idim{font-size:.62rem;font-weight:700;padding:2px 7px;border-radius:6px;background:#eef2f0;color:#4c5e56;border:1px solid var(--line)}
+  .idim b{color:var(--pine)}
+  .ming .iev{font-size:.64rem;color:var(--muted);margin-top:6px;font-style:italic}
+  .mnote{font-size:.73rem;color:#7a6a4a;background:#fdf8ec;border:1px solid #f0e4c6;border-radius:9px;padding:8px 10px;margin-top:6px}
+  .rcbox{margin-top:14px;background:#fdf1e6;border:1px solid #f3d9c0;border-left:4px solid var(--d);border-radius:11px;padding:11px 13px}
+  .rcbox .rc-t{font-size:.66rem;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--d)}
+  .rcbox p{font-size:.79rem;color:#4c5e56;margin-top:4px;line-height:1.5}
+  .modal .noteline{margin-top:14px;font-size:.75rem;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+  .flagged-ing{font-size:.66rem;font-weight:800;color:#b33838;background:#fdeaea;border:1px solid #f3cdcd;padding:2px 8px;border-radius:999px;margin-top:4px;display:inline-block}
+
+  /* ---------- changelog ---------- */
+  .cl{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+  .cl-item{display:flex;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .cl-item:last-child{border-bottom:none}
+  .cl-date{flex:none;width:76px;font-size:.74rem;font-weight:800;color:var(--pine)}
+  .cl-text{font-size:.84rem;color:#44544e}
+
+  /* ---------- genetic panel ---------- */
+  .geno{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+  .geno-btn{width:100%;padding:14px 16px;background:var(--surface);border:none;font-size:.92rem;font-weight:750;color:var(--ink);display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+  .geno-btn .arrow{transition:transform .2s;color:var(--muted)}
+  .geno-btn.open .arrow{transform:rotate(180deg)}
+  .geno-body{display:none;padding:0 16px 16px}
+  .geno-body.show{display:block}
+  .geno-intro{font-size:.78rem;color:var(--muted);margin-bottom:10px}
+  .geno-grid{display:grid;grid-template-columns:1fr;gap:9px}
+  @media(min-width:700px){.geno-grid{grid-template-columns:1fr 1fr}}
+  .gcard{background:var(--cream);border:1.5px solid var(--line);border-radius:12px;padding:11px 12px;cursor:pointer;transition:border-color .12s}
+  .gcard.active{border-color:var(--pine-2);background:var(--pine-soft)}
+  .gcard-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .gcard-top b{font-size:.83rem}
+  .gpre{font-size:.64rem;font-weight:700;color:var(--pine);background:var(--pine-soft);padding:2px 8px;border-radius:999px;white-space:nowrap}
+  .gdesc{font-size:.72rem;color:#4c5e56;margin-top:4px}
+  .gaf{font-size:.69rem;margin-top:5px;color:var(--muted)}
+  .gaf span{color:var(--ink);font-weight:600}
+  .gev{font-size:.64rem;margin-top:6px;padding:3px 8px;border-radius:7px;display:inline-block}
+  .ev-strong{background:#e8f4ec;color:#1f7a46}
+  .ev-moderate{background:#fdf4e3;color:#a06a1a}
+  .ev-plausible{background:#fdeede;color:#b06a24}
+
+  /* ---------- global registry ---------- */
+  .region-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:4px}
+  .region-card{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:12px;box-shadow:var(--shadow)}
+  .region-card .rname{font-weight:750;font-size:.85rem;display:flex;align-items:center;gap:6px}
+  .region-card .rstat{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+  .rpc{font-size:.63rem;font-weight:800;padding:2px 7px;border-radius:999px;background:#eef2f0;color:#54655f;border:1px solid var(--line)}
+  .rpc.banned{background:#fdeaea;color:#b33838;border-color:#f3cdcd}
+  .rpc.restricted{background:#fdf4e3;color:#a06a1a;border-color:#f0ddbb}
+  .rpc.review{background:#eef2f0;color:#54655f}
+  .rpc.flagged{background:#fdeede;color:#b06a24}
+  .rpc.allowed{background:#e8f4ec;color:#1f7a46;border-color:#c7e6d3}
+  .rblurb{font-size:.68rem;color:var(--muted);margin-top:7px;line-height:1.4}
+  .catchup{background:linear-gradient(135deg,#fdf4e3,#fdf8ec);border:1px solid #f0ddbb;border-radius:14px;padding:14px 16px;margin-top:14px;box-shadow:var(--shadow)}
+  .catchup h3{font-size:.95rem;font-weight:800;color:#8a5a14;display:flex;align-items:center;gap:8px}
+  .catchup .cu-item{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px dashed #ecd9b4}
+  .catchup .cu-item:last-child{border-bottom:none}
+  .cu-flag{font-size:1.3rem;flex:none;line-height:1}
+  .cu-who{font-size:.84rem;font-weight:750;color:var(--ink)}
+  .cu-what{font-size:.74rem;color:#5c6b4e;margin-top:1px}
+  .cu-why{font-size:.72rem;color:#7a6a4a;margin-top:2px;font-style:italic}
+  .watch{display:flex;gap:10px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+  .watch::-webkit-scrollbar{height:6px}
+  .watch::-webkit-scrollbar-thumb{background:#cdd8d2;border-radius:6px}
+  .watch-card{flex:0 0 250px;scroll-snap-align:start;background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--b);border-radius:13px;padding:12px 14px;box-shadow:var(--shadow)}
+  .watch-card .w-name{font-weight:750;font-size:.9rem;display:flex;justify-content:space-between;gap:6px;align-items:center}
+  .watch-card .w-reg{font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--d);background:#fdf1e6;padding:2px 7px;border-radius:999px}
+  .watch-card .w-rule{font-size:.73rem;color:#4c5e56;margin-top:6px}
+  .watch-card .w-why{font-size:.7rem;color:#7a6a4a;margin-top:5px;font-style:italic}
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--line);margin-top:44px;background:#eef2f0}
+  .foot-in{max-width:1080px;margin:0 auto;padding:22px 16px 34px;font-size:.76rem;color:var(--muted)}
+  .foot-in .links{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
+  .foot-in a{color:var(--pine);font-weight:600;text-decoration:none}
+  .foot-in a:hover{text-decoration:underline}
+  .note{font-size:.7rem;color:var(--muted);line-height:1.55;margin-top:8px;border-top:1px solid var(--line);padding-top:12px}
+  .built{display:flex;align-items:center;gap:6px;margin-top:12px;font-size:.68rem}
+  .built .dot{width:7px;height:7px;border-radius:50%;background:var(--a)}
+  .no-results{text-align:center;padding:36px 16px;color:var(--muted);font-size:.9rem}
+  .empty{text-align:center;padding:28px;color:var(--muted);font-size:.85rem;background:var(--surface);border:1px dashed var(--line);border-radius:14px}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#">
+      <div class="mark">🧪</div>
+      <div class="brand-name">Clean Chem <span>Intel</span></div>
+    </a>
+    <div class="live"><span class="dot"></span>Living database · updated <b id="live-date"></b></div>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="hero-in">
+    <h1>Know what's <em>under your sink.</em></h1>
+    <p class="tag" id="hero-tag"></p>
+    <div class="stats" id="hero-stats"></div>
+  </div>
+  <div class="mountains">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 70 L160 12 L300 48 L460 0 L640 52 L820 8 L980 44 L1160 16 L1320 50 L1440 30 L1440 70 Z" fill="#d7e8de" opacity=".8"/><path d="M0 70 L220 34 L400 58 L560 24 L760 60 L960 30 L1140 62 L1340 40 L1440 56 L1440 70 Z" fill="#ffffff" opacity=".9"/></svg>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <section id="search-sec">
+    <input type="text" class="search-box" id="search" placeholder="Search products, brands, or ingredients… (try “lavender”, “Dawn”, “reproductive”)" oninput="render()">
+  </section>
+
+  <section>
+    <div class="sec-title"><h2>Search by how it can affect you</h2><span class="sub">tap an impact to see products containing ingredients flagged for it</span></div>
+    <div class="chips" id="harm-chips"></div>
+
+    <div class="impact-label">Or search for what's <i>not</i> flagged — products with no ingredient carrying that impact</div>
+    <div class="chips" id="safe-chips"></div>
+
+    <div class="row2">
+      <button class="tbtn" id="safe-only" onclick="toggleSafeOnly(this)">✓ Certified safe only</button>
+      <button class="tbtn" id="heritage-only" onclick="toggleHeritage(this)">🏺 Grandma's cupboard</button>
+    </div>
+    <div class="cats" id="filters"></div>
+  </section>
+
+  <section>
+    <div class="sec-title"><h2 id="results-title">All products</h2><span class="sub" id="count-note"></span></div>
+    <div class="stats-line" id="stats"></div>
+    <div class="grid" id="results"></div>
+  </section>
+
+  <section>
+    <div class="sec-title"><h2>🌍 The planet's verdict</h2><span class="sub">banned or restricted elsewhere — still on US shelves</span></div>
+    <div class="region-grid" id="region-grid"></div>
+    <div class="catchup" id="catchup"></div>
+    <div style="margin:18px 0 8px" class="impact-label">Watch list — chemicals the US hasn't caught up on yet</div>
+    <div class="watch" id="watch"></div>
+  </section>
+
+  <section>
+    <div class="sec-title"><h2>⚠️ Once safe, now flagged</h2><span class="sub">chemicals that were marketed as harmless — and the research that changed the story</span></div>
+    <div class="strip" id="rc-strip"></div>
+  </section>
+
+  <section>
+    <div class="sec-title"><h2>🏺 Grandma's cupboard</h2><span class="sub">heritage cleaners passed down generations — still under the sink today</span></div>
+    <div class="heritage-grid" id="heritage-grid"></div>
+  </section>
+
+  <section>
+    <div class="sec-title"><h2>📚 What's new</h2><span class="sub">this database grows on a schedule — watch the changelog</span></div>
+    <div class="cl" id="changelog"></div>
+  </section>
+
+  <section>
+    <div class="geno">
+      <button class="geno-btn" id="geno-toggle-btn" onclick="toggleGenoPanel()">
+        <span>🧬 Genetic sensitivity layer — is this product right for *your* body?</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="geno-body" id="geno-body">
+        <div class="geno-intro">These are <strong>common human genetic variations</strong>, not defects — ~75–90% of people carry at least one. Toggle the ones that apply to you and watch product grades shift. Your personal experience is valid data; if a product bothers you, it bothers you.</div>
+        <div class="geno-grid">
+          <div class="gcard" id="gcard-gstm1" onclick="toggleGene('gstm1')">
+            <div class="gcard-top"><b>GSTM1 Deletion</b><span class="gpre">~50%</span></div>
+            <div class="gdesc">Reduced glutathione detoxification — your body clears certain chemicals more slowly.</div>
+            <div class="gaf">Affects: <span>Isothiazolinones (MI, BIT)</span></div>
+            <div class="gev ev-moderate">Moderate evidence — strong mechanism, indirect for cleaners</div>
+          </div>
+          <div class="gcard" id="gcard-tnf" onclick="toggleGene('tnf')">
+            <div class="gcard-top"><b>TNF-α -308A</b><span class="gpre">~25–28%</span></div>
+            <div class="gdesc">Higher inflammatory response — your immune system reacts more strongly to irritants.</div>
+            <div class="gaf">Affects: <span>SLS, benzalkonium chloride, NaOH</span></div>
+            <div class="gev ev-strong">Strong evidence — lower irritation threshold shown</div>
+          </div>
+          <div class="gcard" id="gcard-mhc" onclick="toggleGene('mhc')">
+            <div class="gcard-top"><b>MHC / HLA-DP</b><span class="gpre">varies</span></div>
+            <div class="gdesc">Immune-system variants linked to stronger skin reactions to common cleaners (NIOSH study, n=585).</div>
+            <div class="gaf">Affects: <span>Benzalkonium chloride, SLS, NaOH</span></div>
+            <div class="gev ev-moderate">Moderate — direct occupational study, not yet replicated</div>
+          </div>
+          <div class="gcard" id="gcard-dao" onclick="toggleGene('dao')">
+            <div class="gcard-top"><b>DAO / HNMT slow</b><span class="gpre">~66–80%</span></div>
+            <div class="gdesc">Slower histamine clearance — chemical-triggered histamine lingers, amplifying the response.</div>
+            <div class="gaf">Affects: <span>SLS, benzalkonium chloride, VOCs</span></div>
+            <div class="gev ev-plausible">Plausible — enzyme evidence strong, cleaner link inferred</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="foot-in">
+    <div class="links">
+      <a href="docs/methodology.md">Methodology</a>
+      <a href="docs/source-policy.md">Source policy</a>
+      <a href="docs/scoring-rubric.md">Scoring rubric</a>
+      <a href="https://github.com/Focusingpulse/clean-chem-intel">GitHub</a>
+    </div>
+    <div>Built for <b>Bella's Mountain Vacation Cleaning</b> — because Sandra vets what she uses, and you should know what you're using too.</div>
+    <div class="note"><strong>Not medical advice.</strong> Grades reflect documented hazard data (GHS classifications, peer-reviewed toxicology, regulatory listings) mapped to health endpoints. Evidence is labeled honestly — Low/Medium/High/Extrapolated. Absence of a flag is not proof of safety; it means our database documents no signal. This is a transparency tool, not a diagnosis.</div>
+    <div class="built"><span class="dot"></span>Built <span id="built-at"></span> · generated from data pipeline</div>
+  </div>
+</footer>
+
+<div class="modal-bg" id="modal-bg" onclick="if(event.target===this)closeModal()">
+  <div class="modal" id="modal"></div>
+</div>
+
+<script>
+const PRODUCTS = __PRODUCTS__;
+const INGS = __INGS__;
+const CHANGELOG = __CHANGELOG__;
+const META = __META__;
+const REG = __REG__;
+const SCOREBOARD = __SCOREBOARD__;
+
+/* ---------- bootstrap ---------- */
+document.getElementById("live-date").textContent = META.last_updated;
+document.getElementById("hero-tag").textContent = META.tagline;
+document.getElementById("built-at").textContent = META.built_at;
+document.getElementById("hero-stats").innerHTML =
+  `<div class="stat"><b>${META.products}</b><span>Products</span></div>`+
+  `<div class="stat"><b>${META.ingredients}</b><span>Ingredients</span></div>`+
+  `<div class="stat"><b>${META.reclassified}</b><span>Reclassified</span></div>`+
+  `<div class="stat"><b>${META.restricted_anywhere||0}</b><span>Restricted elsewhere</span></div>`+
+  `<div class="stat"><b>${META.heritage}</b><span>Heirlooms</span></div>`+
+  `<div class="stat"><b>${META.safe}</b><span>Certified safe</span></div>`;
+
+/* ---------- impact taxonomy ---------- */
+const IMPACTS = {
+  resp:{label:"Respiratory",emoji:"🌬️",color:"var(--resp)"},
+  repro:{label:"Reproductive",emoji:"🤰",color:"var(--repro)"},
+  endo:{label:"Endocrine",emoji:"🧬",color:"var(--endo)"},
+  derm:{label:"Skin",emoji:"🧴",color:"var(--derm)"},
+  aqua:{label:"Aquatic",emoji:"🌊",color:"var(--aqua)"},
+  canc:{label:"Cancer",emoji:"🎯",color:"var(--canc)"},
+  allerg:{label:"Allergen",emoji:"⚠️",color:"var(--allerg)"},
+};
+const DIMS = ["resp","derm","endo","repro","organ","env","work","canc"];
+const DIM_LABEL = {resp:"Respiratory",derm:"Skin",endo:"Endocrine",repro:"Reproductive",organ:"Organ",env:"Environmental",work:"Worker safety",canc:"Cancer"};
+
+/* ---------- state ---------- */
+let safeOnly=false, heritageOnly=false;
+let harmImpacts=new Set(), safeImpacts=new Set(), activeCats=new Set();
+let activeGenes=new Set();
+let lastQuery="";
+
+/* ---------- product grade ---------- */
+function gradeOrder(g){return {A:0,B:1,C:2,D:3,F:4}[g] ?? 5;}
+function gradeClass(g){ return g?"g-"+g:"g-null"; }
+function productGrade(ings){
+  let worst="A";
+  for(const n of ings){
+    const d=INGS[n]; if(!d||!d.gr) continue;
+    if(d.ev!=="High"&&d.ev!=="Medium") continue;
+    for(const dim of DIMS){
+      const g=d.gr[dim];
+      if(g&&gradeOrder(g)>gradeOrder(worst)) worst=g;
+    }
+  }
+  return worst;
+}
+function productImpactSet(p){
+  const s=new Set();
+  for(const n of p.ings){ const d=INGS[n]; if(d&&d.impacts) d.impacts.forEach(i=>s.add(i)); }
+  return s;
+}
+
+/* ---------- genetic layer ---------- */
+const GENE_ING_MAP={
+  gstm1:["Methylisothiazolinone","Methylchloroisothiazolinone","Benzisothiazolinone"],
+  tnf:["Sodium Lauryl Sulfate","Sodium Laureth Sulfate","Benzalkonium Chloride","Sodium Hydroxide","Hydrochloric Acid","Fragrance","Lauramine Oxide"],
+  mhc:["Benzalkonium Chloride","Sodium Lauryl Sulfate","Sodium Hydroxide"],
+  dao:["Sodium Lauryl Sulfate","Benzalkonium Chloride","Fragrance","Limonene","Butyloxyethanol"],
+};
+const GENE_PENALTY={gstm1:1,tnf:1,mhc:1,dao:1};
+const GENE_NAMES={gstm1:"GSTM1",tnf:"TNF-α",mhc:"MHC/HLA-DP",dao:"DAO/HNMT"};
+function geneAdjustedGrade(ings,baseGrade){
+  if(activeGenes.size===0) return {grade:baseGrade,shifts:[]};
+  let pen=0; const reasons=[];
+  for(const gene of activeGenes){
+    const affected=GENE_ING_MAP[gene]||[];
+    if(ings.some(i=>affected.some(a=>i.toLowerCase().includes(a.toLowerCase())))){ pen+=GENE_PENALTY[gene]; reasons.push(GENE_NAMES[gene]); }
+  }
+  const grades=["A","B","C","D","F"];
+  const idx=Math.min(gradeOrder(baseGrade)+pen,4);
+  return {grade:grades[idx],shifts:reasons};
+}
+
+/* ---------- rendering ---------- */
+function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+
+function render(){
+  const q=document.getElementById("search").value.trim().toLowerCase();
+  lastQuery=q;
+  let list=PRODUCTS;
+  if(safeOnly) list=list.filter(p=>p.safe);
+  if(heritageOnly) list=list.filter(p=>p.heritage);
+  if(q){
+    list=list.filter(p=>
+      p.name.toLowerCase().includes(q)||
+      p.brand.toLowerCase().includes(q)||
+      p.cat.toLowerCase().includes(q)||
+      p.ings.some(i=>i.toLowerCase().includes(q))||
+      (p.heritage_note||"").toLowerCase().includes(q)
+    );
+  }
+  if(activeCats.size) list=list.filter(p=>activeCats.has(p.cat));
+  if(harmImpacts.size){
+    list=list.filter(p=>{
+      const s=productImpactSet(p);
+      return [...harmImpacts].every(i=>s.has(i));
+    });
+  }
+  if(safeImpacts.size){
+    list=list.filter(p=>{
+      const s=productImpactSet(p);
+      return [...safeImpacts].every(i=>!s.has(i));
+    });
+  }
+
+  document.getElementById("stats").innerHTML=
+    `Showing <b>${list.length}</b> of ${PRODUCTS.length} products ${safeOnly?"· certified-safe only":""} ${heritageOnly?"· heirloom only":""}`+
+    (harmImpacts.size?` · flagged: ${[...harmImpacts].map(i=>IMPACTS[i].label).join(" + ")}`:"")+
+    (safeImpacts.size?` · no ${[...safeImpacts].map(i=>IMPACTS[i].label).join("/")} flags`:"");
+  document.getElementById("count-note").textContent =
+    harmImpacts.size||safeImpacts.size||activeCats.size||safeOnly||heritageOnly||q ? "filtered view" : "all "+PRODUCTS.length;
+
+  const html=list.map((p,idx)=>{
+    const base=productGrade(p.ings);
+    const {grade,shifts}=geneAdjustedGrade(p.ings,base);
+    const shifted=base!==grade;
+    const imp=productImpactSet(p);
+    const impChips=[...imp].map(i=>`<span class="imp ${i}">${IMPACTS[i].emoji||""} ${IMPACTS[i].label}</span>`).join("");
+    const badges=[];
+    if(p.safe) badges.push(`<span class="bdg safe">✓ ${esc(p.safe)}</span>`);
+    if(p.heritage) badges.push(`<span class="bdg heritage">🏺 ${p.heritage_year||""}</span>`);
+    const flagged = p.ings.some(n=>INGS[n]&&INGS[n].reclassified);
+    if(flagged) badges.push(`<span class="bdg flag">⚠ reclassified ingredient</span>`);
+    if(hasRestrictedElsewhere(p)) badges.push(`<span class="bdg" style="background:#fdeede;color:#b06a24;border:1px solid #f0d7b8">🌍 restricted elsewhere</span>`);
+    const shiftBadge=shifted?`<div class="shift">${base}→${grade} · ${shifts.join(", ")}</div>`:"";
+    return `<div class="card">
+      <div class="card-top">
+        <div>
+          <div class="card-name">${esc(p.name)}</div>
+          <div class="card-brand">${esc(p.brand)} · ${esc(p.cat)}</div>
+          ${badges.length?`<div class="badges">${badges.join("")}</div>`:""}
+          ${shiftBadge}
+        </div>
+        <div class="grade"><div class="gcircle ${gradeClass(grade)}">${grade}<small>${shifted?"adjusted":"overall"}</small></div></div>
+      </div>
+      ${impChips?`<div class="impacts">${impChips}</div>`:""}
+      <div class="card-ings">${p.ings.map(esc).join(" · ")}</div>
+      <div class="card-foot"><span class="ing-count">${p.ings.length} ingredient${p.ings.length===1?"":"s"}</span><button class="more-btn" onclick="openModal(${PRODUCTS.indexOf(p)})">Breakdown →</button></div>
+    </div>`;
+  }).join("");
+  document.getElementById("results").innerHTML=html||`<div class="no-results">No products match. Try clearing filters — or this might be a product we haven't cataloged yet. <b>We add products regularly.</b></div>`;
+}
+function toggleSafeOnly(btn){safeOnly=!safeOnly;btn.classList.toggle("active");render();}
+function toggleHeritage(btn){heritageOnly=!heritageOnly;btn.classList.toggle("active");render();}
+
+/* ---------- filter chips ---------- */
+function buildChips(){
+  document.getElementById("harm-chips").innerHTML=Object.entries(IMPACTS).map(([k,v])=>
+    `<button class="chip" id="harm-${k}" onclick="toggleHarm('${k}',this)"><span class="cd" style="background:${v.color}"></span>${v.emoji} ${v.label}</button>`).join("");
+  document.getElementById("safe-chips").innerHTML=Object.entries(IMPACTS).map(([k,v])=>
+    `<button class="chip safe" id="safe-${k}" onclick="toggleSafe('${k}',this)"><span class="cd" style="background:${v.color}"></span><span class="check">✓</span> No ${v.label.toLowerCase()} flags</button>`).join("");
+}
+function toggleHarm(k,btn){
+  if(harmImpacts.has(k)){harmImpacts.delete(k);btn.classList.remove("active");}
+  else{harmImpacts.add(k);btn.classList.add("active");}
+  render();
+}
+function toggleSafe(k,btn){
+  if(safeImpacts.has(k)){safeImpacts.delete(k);btn.classList.remove("active");}
+  else{safeImpacts.add(k);btn.classList.add("active");}
+  render();
+}
+function buildFilters(){
+  const cats=[...new Set(PRODUCTS.map(p=>p.cat))].sort();
+  document.getElementById("filters").innerHTML=cats.map(c=>
+    `<button class="catb" id="cat-${c.replace(/[^a-z0-9]/gi,'')}" onclick="toggleCat('${c.replace(/'/g,"\\'")}',this)">${esc(c)}</button>`).join("");
+}
+function toggleCat(c,btn){
+  if(activeCats.has(c)){activeCats.delete(c);btn.classList.remove("active");}
+  else{activeCats.add(c);btn.classList.add("active");}
+  render();
+}
+
+/* ---------- modal ---------- */
+function openModal(idx){
+  const p=PRODUCTS[idx];
+  const flags=[];
+  const rows=p.ings.map(n=>{
+    const d=INGS[n];
+    if(!d) return `<div class="ming"><h4>${esc(n)} <span style="font-size:.68rem;color:var(--muted)">uncataloged</span></h4><div class="isum">No hazard data in our database yet — we're adding ingredients regularly.</div></div>`;
+    const g=d.gr||{};
+    const dims=DIMS.filter(dim=>g[dim]).map(dim=>`<span class="idim">${DIM_LABEL[dim]} <b>${g[dim]}</b></span>`).join("");
+    const ev=d.ev||"Low";
+    const w=gradeClass(g.derm||g.resp||null).replace("g-","");
+    const flagged=d.reclassified?`<span class="flagged-ing">⚠ once safe, now flagged</span>`:"";
+    const gs=ingGlobalStatus(n);
+    const gsHtml=gs?`<div class="idims">${gs.map(e=>{
+      const rinfo=REG.regions[e.region]||{flag:"🌍",name:e.region};
+      return `<span class="idim" title="${esc(e.rule)}"><b>${rinfo.flag} ${rinfo.name}</b> · ${STATUS_LABEL[e.status]||e.status}${e.since?" since "+e.since:""}</span>`;
+    }).join("")}</div>${gs.some(e=>e.reason)?`<div class="iev">Why: ${esc(gs.find(e=>e.reason).reason)}</div>`:""}`:"";
+    return `<div class="ming">
+      <h4>${esc(n)} ${d.gr?(Object.keys(d.gr).some(k=>gradeOrder(d.gr[k])>2)?`<span class="gdot" style="background:var(--f)">!</span>`:`<span class="gdot" style="background:var(--a)">•</span>`):""}</h4>
+      ${flagged}
+      <div class="isum">${esc(d.s||"")}</div>
+      ${dims?`<div class="idims">${dims}</div>`:""}
+      ${gsHtml}
+      <div class="iev">Evidence: ${ev}${d.g?` · GHS: ${esc(d.g)}`:""}</div>
+    </div>`;
+  });
+  const rcs=p.ings.map(n=>INGS[n]).filter(d=>d&&d.reclassified);
+  const rcHtml=rcs.map(d=>`<div class="rcbox"><div class="rc-t">Once safe, now flagged — ${esc(d.s?d.s.split(".")[0]:"")}</div>${d.reclassified.map(r=>`<p>${esc(r)}</p>`).join("")}</div>`).join("");
+  const noteLine = p.heritage ? `<div class="noteline">🏺 <b>Heirloom:</b> ${esc(p.heritage_note||"")}</div>` : "";
+  document.getElementById("modal").innerHTML=`
+    <button class="modal-x" onclick="closeModal()">✕</button>
+    <div class="mrow">
+      ${p.safe?`<span class="bdg safe">✓ ${esc(p.safe)}</span>`:""}
+      ${p.heritage?`<span class="bdg heritage">🏺 ${p.heritage_year}</span>`:""}
+      <span class="bdg" style="background:var(--pine-soft);color:var(--pine);border:1px solid #c9dfd3">${esc(p.cat)}</span>
+    </div>
+    <h3>${esc(p.name)}</h3>
+    <div class="mbrand">${esc(p.brand)} · graded ${gradeClass(productGrade(p.ings)).replace("g-","")}</div>
+    ${noteLine}
+    ${rcHtml}
+    <div class="mimg">${rows.join("")}</div>`;
+  document.getElementById("modal-bg").classList.add("show");
+  document.body.style.overflow="hidden";
+}
+function closeModal(){document.getElementById("modal-bg").classList.remove("show");document.body.style.overflow="";}
+
+/* ---------- global registry ---------- */
+function ingGlobalStatus(n){
+  return REG.entries[n] || null;
+}
+function hasRestrictedElsewhere(p){
+  return p.ings.some(n=>{ const e=REG.entries[n]; return e && e.some(x=>x.status==="banned"||x.status==="restricted"); });
+}
+const STATUS_LABEL={banned:"🚫 banned",restricted:"⚠ restricted",review:"🔎 under review",flagged:"📌 flagged",allowed:"✅ allowed"};
+function buildRegions(){
+  const grid=document.getElementById("region-grid");
+  const rows=Object.entries(REG.regions).map(([r,info])=>{
+    const sb=SCOREBOARD.by_region[r]||{};
+    const parts=[];
+    for(const st of ["banned","restricted","review","flagged","allowed"]){
+      if(sb[st]) parts.push(`<span class="rpc ${st}">${sb[st]} ${STATUS_LABEL[st]}</span>`);
+    }
+    return `<div class="region-card"><div class="rname">${info.flag} ${info.name}</div><div class="rstat">${parts.join("")||"<span class='rpc'>—</span>"}</div><div class="rblurb">${esc(info.blurb)}</div></div>`;
+  }).join("");
+  grid.innerHTML=rows;
+}
+function buildCatchup(){
+  // Catch-up stories: every ingredient restricted/banned elsewhere with NO US action,
+  // plus explicit US-flagged entries. Classic "banned there, still here".
+  const el=document.getElementById("catchup");
+  const stories=[];
+  for(const [ing, lst] of Object.entries(REG.entries)){
+    const elsewhere=lst.filter(e=>e.region!=="us"&&(e.status==="banned"||e.status==="restricted"));
+    const usEntry=lst.find(e=>e.region==="us");
+    if(elsewhere.length && (!usEntry || usEntry.status==="allowed")){
+      // use the strictest elsewhere entry as the headline
+      const head=elsewhere.reduce((a,b)=>({banned:1,restricted:2,review:3}[a.status]||4)<({banned:1,restricted:2,review:3}[b.status]||4)?a:b);
+      const ri=REG.regions[head.region]||{flag:"🌍",name:head.region};
+      stories.push({ing, flag:ri.flag, region:ri.name, status:head.status, since:head.since, rule:head.rule,
+        usStatus: usEntry?STATUS_LABEL[usEntry.status]:"allowed (no US action)"});
+    } else if(usEntry && (usEntry.status==="flagged"||usEntry.status==="restricted"||usEntry.status==="banned")){
+      const ri=REG.regions[usEntry.region]||{flag:"🇺🇸",name:"US"};
+      stories.push({ing, flag:"🇺🇸", region:"United States", status:usEntry.status, since:usEntry.since, rule:usEntry.rule,
+        usStatus: STATUS_LABEL[usEntry.status]});
+    }
+  }
+  if(!stories.length){ el.style.display="none"; return; }
+  el.innerHTML=`<h3>🇺🇸 The catch-up scoreboard — restricted elsewhere, still here</h3>`+
+    stories.map(f=>
+      `<div class="cu-item"><div class="cu-flag">${f.flag}</div><div><div class="cu-who">${esc(f.ing)} <span style="font-weight:600;color:var(--d)">· ${STATUS_LABEL[f.status]||f.status} in ${esc(f.region)}${f.since?" since "+f.since:""} · US: ${esc(f.usStatus)}</span></div><div class="cu-what">${esc(f.rule||"")}</div></div></div>`
+    ).join("");
+}
+function buildWatch(){
+  const el=document.getElementById("watch");
+  el.innerHTML=REG.watchlist.map(w=>
+    `<div class="watch-card"><div class="w-name">${esc(w.name)}<span class="w-reg">${w.region}</span></div><div class="w-rule">${esc(w.rule)}</div><div class="w-why">Why: ${esc(w.reason)}</div></div>`).join("");
+}
+
+/* ---------- genetic ---------- */
+function toggleGenoPanel(){
+  const btn=document.getElementById("geno-toggle-btn");
+  document.getElementById("geno-body").classList.toggle("show");
+  btn.classList.toggle("open");
+}
+function toggleGene(id){
+  const card=document.getElementById("gcard-"+id);
+  if(activeGenes.has(id)){activeGenes.delete(id);card.classList.remove("active");}
+  else{activeGenes.add(id);card.classList.add("active");}
+  render();
+}
+
+/* ---------- changelog + strips ---------- */
+function buildChangelog(){
+  document.getElementById("changelog").innerHTML=CHANGELOG.map(e=>
+    `<div class="cl-item"><div class="cl-date">${e.date}</div><div class="cl-text">${esc(e.text)}</div></div>`).join("");
+}
+function buildRCStrip(){
+  const items=Object.entries(INGS).filter(([n,d])=>d.reclassified);
+  document.getElementById("rc-strip").innerHTML=items.map(([n,d])=>
+    `<div class="rc-card"><span class="rc-badge">Reclassified</span><div class="rc-name">${esc(n)}</div><p>${esc(d.reclassified[0])}</p></div>`).join("");
+}
+function buildHeritage(){
+  const h=PRODUCTS.filter(p=>p.heritage).sort((a,b)=>(a.heritage_year||0)-(b.heritage_year||0));
+  document.getElementById("heritage-grid").innerHTML=h.map(p=>
+    `<div class="h-card"><span class="year">since ${p.heritage_year}</span><div class="h-name">${esc(p.name)}</div><div class="h-brand">${esc(p.brand)}</div><p>${esc(p.heritage_note||"")}</p></div>`).join("");
+}
+
+/* ---------- init ---------- */
+buildChips();buildFilters();buildChangelog();buildRCStrip();buildHeritage();buildRegions();buildCatchup();buildWatch();render();
+</script>
+</body>
+</html>

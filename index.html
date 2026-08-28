@@ -3,771 +3,671 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clean Chem Intel — Product Database</title>
+<title>Clean Chem Intel — Know What's Under Your Sink</title>
+<meta name="description" content="A living database of cleaning products — graded ingredient by ingredient. Search by health impact: respiratory, reproductive, endocrine, skin, aquatic, cancer, allergen.">
 <style>
-  :root {
-    --bg: #1a1d24;
-    --surface: #232830;
-    --surface2: #2d333d;
-    --border: #3a4049;
-    --text: #e8e6e3;
-    --muted: #8b8d91;
-    --accent: #6cbf84;
-    --accent-dim: #4a8a5e;
-    --grade-a: #4caf50;
-    --grade-b: #8bc34a;
-    --grade-c: #ffc107;
-    --grade-d: #ff9800;
-    --grade-f: #f44336;
-    --flag: #ff6b6b;
+  :root{
+    --pine:#1d5c45; --pine-2:#2e7d5b; --pine-soft:#e6f0ea;
+    --cream:#faf9f6; --surface:#ffffff; --ink:#1c2a25; --muted:#5e7068;
+    --line:#e3e8e4; --shadow:0 2px 10px rgba(29,60,48,.08);
+    --a:#2e9e5b; --b:#8fbf3d; --c:#e6b93d; --d:#e8853a; --f:#d64545; --u:#9aa5a0;
+    --resp:#3d8bd1; --repro:#d9527a; --endo:#8a63d2; --derm:#dd8a33; --aqua:#24a39c; --canc:#d04545; --allerg:#bf9b1f;
+    --rad:16px;
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    min-height: 100vh;
-    padding-bottom: 40px;
-  }
-  .header {
-    background: linear-gradient(135deg, #2d333d, #1a1d24);
-    border-bottom: 1px solid var(--border);
-    padding: 16px;
-    text-align: center;
-  }
-  .header h1 {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--accent);
-  }
-  .header p {
-    font-size: 0.75rem;
-    color: var(--muted);
-    margin-top: 4px;
-  }
-  .controls {
-    padding: 12px 16px;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  .search-row {
-    display: flex;
-    gap: 8px;
-  }
-  .search-box {
-    flex: 1;
-    padding: 12px 14px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    color: var(--text);
-    font-size: 1rem;
-    outline: none;
-  }
-  .search-box:focus { border-color: var(--accent); }
-  .search-box::placeholder { color: var(--muted); }
-  .filter-row {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    justify-content: center;
-  }
-  .filter-btn {
-    padding: 6px 12px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    color: var(--muted);
-    font-size: 0.8rem;
-    cursor: pointer;
-  }
-  .filter-btn.active {
-    background: var(--accent-dim);
-    color: var(--text);
-    border-color: var(--accent);
-  }
-  .results {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 8px 16px;
-  }
-  .product-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 14px;
-    margin-bottom: 10px;
-  }
-  .product-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .product-title {
-    font-size: 1rem;
-    font-weight: 600;
-  }
-  .product-brand {
-    font-size: 0.75rem;
-    color: var(--muted);
-  }
-  .product-category {
-    font-size: 0.65rem;
-    background: var(--surface2);
-    padding: 2px 6px;
-    border-radius: 4px;
-    margin-top: 4px;
-    display: inline-block;
-  }
-  .grade-badge {
-    min-width: 44px;
-    text-align: center;
-  }
-  .grade-circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: white;
-    margin: 0 auto;
-  }
-  .grade-label {
-    font-size: 0.6rem;
-    color: var(--muted);
-    text-transform: uppercase;
-    margin-top: 2px;
-  }
-  .ingredients-section {
-    margin-top: 10px;
-    border-top: 1px solid var(--border);
-    padding-top: 8px;
-  }
-  .ingredients-label {
-    font-size: 0.7rem;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  .ingredient-chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    margin-top: 6px;
-  }
-  .ing-chip {
-    padding: 4px 8px;
-    background: var(--surface2);
-    border-radius: 4px;
-    font-size: 0.75rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-  .ing-chip.unknown { color: var(--flag); }
-  .ing-chip .grade-dot {
-    width: 14px;
-    height: 14px;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.6rem;
-    color: white;
-  }
-  .product-detail {
-    display: none;
-    margin-top: 10px;
-    padding: 10px;
-    background: var(--surface2);
-    border-radius: 6px;
-    font-size: 0.85rem;
-  }
-  .product-detail.show { display: block; }
-  .detail-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 3px 0;
-  }
-  .detail-label { color: var(--muted); }
-  .no-results {
-    text-align: center;
-    padding: 30px;
-    color: var(--muted);
-  }
-  .legend {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 12px 16px;
-    font-size: 0.7rem;
-    color: var(--muted);
-  }
-  .legend-row {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 4px;
-  }
-  .legend-item {
-    display: flex;
-    align-items: center;
-    gap: 3px;
-  }
-  .legend-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 2px;
-  }
-  .stats {
-    text-align: center;
-    padding: 10px;
-    color: var(--muted);
-    font-size: 0.75rem;
-  }
-  .geno-panel {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0 16px 8px;
-  }
-  .geno-toggle {
-    width: 100%;
-    padding: 10px 14px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    color: var(--text);
-    font-size: 0.85rem;
-    cursor: pointer;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .geno-toggle:hover { border-color: var(--accent); }
-  .geno-toggle .arrow { transition: transform 0.2s; font-size: 0.7rem; color: var(--muted); }
-  .geno-toggle.open .arrow { transform: rotate(180deg); }
-  .geno-body {
-    display: none;
-    margin-top: 8px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 12px;
-  }
-  .geno-body.show { display: block; }
-  .geno-intro {
-    font-size: 0.75rem;
-    color: var(--muted);
-    margin-bottom: 10px;
-    line-height: 1.5;
-  }
-  .geno-intro strong { color: var(--accent); }
-  .geno-card {
-    background: var(--surface2);
-    border-radius: 8px;
-    padding: 10px 12px;
-    margin-bottom: 8px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: border-color 0.2s;
-  }
-  .geno-card.active { border-color: var(--accent); }
-  .geno-card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .geno-card-title {
-    font-size: 0.85rem;
-    font-weight: 600;
-  }
-  .geno-card-prevalence {
-    font-size: 0.7rem;
-    color: var(--accent);
-    background: rgba(108,191,132,0.12);
-    padding: 2px 8px;
-    border-radius: 10px;
-  }
-  .geno-card-desc {
-    font-size: 0.72rem;
-    color: var(--muted);
-    margin-top: 4px;
-    line-height: 1.4;
-  }
-  .geno-card-evidence {
-    font-size: 0.65rem;
-    margin-top: 6px;
-    padding: 4px 8px;
-    border-radius: 4px;
-    display: inline-block;
-  }
-  .ev-strong { background: rgba(76,175,80,0.15); color: #81c784; }
-  .ev-moderate { background: rgba(255,193,7,0.15); color: #ffd54f; }
-  .ev-plausible { background: rgba(255,152,0,0.15); color: #ffb74d; }
-  .ev-weak { background: rgba(244,67,54,0.12); color: #ef9a9a; }
-  .geno-affected {
-    margin-top: 6px;
-    font-size: 0.7rem;
-    color: var(--muted);
-  }
-  .geno-affected span { color: var(--text); font-weight: 500; }
-  .grade-shift {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    margin-left: 6px;
-    font-size: 0.7rem;
-    padding: 2px 6px;
-    border-radius: 4px;
-    background: rgba(244,67,54,0.12);
-    color: var(--flag);
-  }
-  .grade-shift.up {
-    background: rgba(76,175,80,0.12);
-    color: var(--accent);
-  }
-  .disclaimer {
-    max-width: 700px;
-    margin: 12px auto 0;
-    padding: 10px 16px;
-    font-size: 0.65rem;
-    color: var(--muted);
-    line-height: 1.5;
-    border-top: 1px solid var(--border);
-  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;background:var(--cream);color:var(--ink);line-height:1.45;-webkit-font-smoothing:antialiased}
+
+  /* ---------- header ---------- */
+  .topbar{position:sticky;top:0;z-index:40;background:rgba(250,249,246,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .topbar-in{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--pine),var(--pine-2));display:flex;align-items:center;justify-content:center;color:#fff;font-size:17px;box-shadow:0 2px 6px rgba(29,92,69,.35)}
+  .brand-name{font-weight:800;font-size:1.02rem;color:var(--ink);letter-spacing:-.2px}
+  .brand-name span{color:var(--pine)}
+  .live{display:flex;align-items:center;gap:6px;font-size:.72rem;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 11px}
+  .live .dot{width:8px;height:8px;border-radius:50%;background:var(--a);animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .live b{color:var(--pine)}
+
+  /* ---------- hero ---------- */
+  .hero{background:linear-gradient(160deg,#eef5f0 0%,#e2efe7 55%,#d7e8de 100%);border-bottom:1px solid var(--line);overflow:hidden;position:relative}
+  .hero-in{max-width:1080px;margin:0 auto;padding:40px 16px 34px;position:relative;z-index:2}
+  .hero h1{font-size:clamp(1.7rem,4.5vw,2.6rem);font-weight:800;letter-spacing:-1px;line-height:1.12}
+  .hero h1 em{font-style:normal;color:var(--pine)}
+  .hero p.tag{max-width:640px;margin-top:10px;font-size:clamp(.95rem,2vw,1.08rem);color:#48635a}
+  .stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .stat{background:rgba(255,255,255,.75);border:1px solid rgba(29,92,69,.14);border-radius:14px;padding:10px 16px;min-width:96px}
+  .stat b{display:block;font-size:1.35rem;font-weight:800;color:var(--pine);line-height:1.1}
+  .stat span{font-size:.68rem;text-transform:uppercase;letter-spacing:.7px;color:var(--muted)}
+  .mountains{position:absolute;bottom:-2px;left:0;right:0;opacity:.5;pointer-events:none}
+  .mountains svg{display:block;width:100%;height:70px}
+
+  /* ---------- sections ---------- */
+  .wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+  section{margin-top:30px}
+  .sec-title{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
+  .sec-title h2{font-size:1.15rem;font-weight:800;letter-spacing:-.3px}
+  .sec-title .sub{font-size:.78rem;color:var(--muted)}
+  .pill{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;background:var(--pine-soft);color:var(--pine);padding:3px 9px;border-radius:999px}
+
+  /* ---------- search ---------- */
+  .search-box{width:100%;padding:14px 16px;font-size:1rem;border:1.5px solid var(--line);border-radius:14px;background:var(--surface);color:var(--ink);outline:none;box-shadow:var(--shadow);transition:border-color .15s}
+  .search-box:focus{border-color:var(--pine-2)}
+  .search-box::placeholder{color:#a4b2ac}
+
+  .impact-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin:16px 0 8px;display:flex;align-items:center;gap:8px}
+  .chips{display:flex;flex-wrap:wrap;gap:7px}
+  .chip{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);font-size:.83rem;font-weight:600;color:#44544e;cursor:pointer;transition:all .13s;user-select:none}
+  .chip:hover{border-color:#c4d3cb;transform:translateY(-1px)}
+  .chip .cd{width:9px;height:9px;border-radius:50%;flex:none}
+  .chip.active{color:#fff;border-color:transparent;box-shadow:0 3px 10px rgba(0,0,0,.14)}
+  .chip.safe{font-weight:600}
+  .chip.safe.active{background:var(--pine-2)!important}
+  .chip .check{display:none;font-size:.72rem}
+  .chip.active .check{display:inline}
+
+  .row2{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px;align-items:center}
+  .tbtn{padding:8px 14px;border-radius:11px;border:1.5px solid var(--line);background:var(--surface);font-size:.82rem;font-weight:600;color:#44544e;cursor:pointer;transition:all .13s}
+  .tbtn:hover{border-color:#c4d3cb}
+  .tbtn.active{background:var(--pine);border-color:var(--pine);color:#fff}
+  .cats{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .catb{padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-size:.74rem;color:#5a6b64;cursor:pointer;transition:all .12s}
+  .catb:hover{border-color:#c4d3cb}
+  .catb.active{background:var(--pine-soft);border-color:var(--pine-2);color:var(--pine);font-weight:700}
+
+  /* ---------- reclassified strip ---------- */
+  .strip{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+  .strip::-webkit-scrollbar{height:6px}
+  .strip::-webkit-scrollbar-thumb{background:#cdd8d2;border-radius:6px}
+  .rc-card{flex:0 0 270px;scroll-snap-align:start;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--d);border-radius:14px;padding:13px 15px;box-shadow:var(--shadow)}
+  .rc-card .rc-name{font-weight:750;font-size:.95rem;color:var(--ink)}
+  .rc-card .rc-badge{font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--d);background:#fdf1e6;border:1px solid #f3d9c0;padding:2px 7px;border-radius:999px;display:inline-block;margin-bottom:6px}
+  .rc-card p{font-size:.79rem;color:#4c5e56;margin-top:5px;line-height:1.45}
+
+  /* ---------- heritage ---------- */
+  .heritage-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+  .h-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:6px}
+  .h-card .year{font-size:.66rem;font-weight:800;color:var(--pine);background:var(--pine-soft);padding:2px 8px;border-radius:999px;align-self:flex-start}
+  .h-card .h-name{font-weight:750;font-size:.92rem}
+  .h-card .h-brand{font-size:.74rem;color:var(--muted)}
+  .h-card p{font-size:.76rem;color:#48635a;line-height:1.45}
+
+  /* ---------- products ---------- */
+  .stats-line{font-size:.8rem;color:var(--muted);margin:14px 0 10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .stats-line b{color:var(--pine)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--rad);padding:15px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:9px;transition:transform .12s,box-shadow .12s}
+  .card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(29,60,48,.12)}
+  .card-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+  .card-name{font-weight:750;font-size:1rem;letter-spacing:-.2px}
+  .card-brand{font-size:.76rem;color:var(--muted);margin-top:1px}
+  .badges{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+  .bdg{font-size:.62rem;font-weight:700;padding:3px 8px;border-radius:999px;display:inline-flex;align-items:center;gap:4px}
+  .bdg.safe{background:#e8f4ec;color:#1f7a46;border:1px solid #c7e6d3}
+  .bdg.heritage{background:#fdf4e3;color:#a06a1a;border:1px solid #f0ddbb}
+  .bdg.flag{background:#fdeaea;color:#b33838;border:1px solid #f3cdcd}
+  .grade{flex:none;width:48px;text-align:center}
+  .gcircle{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.35rem;font-weight:800;color:#fff;margin:0 auto;position:relative}
+  .gcircle small{position:absolute;bottom:-13px;left:0;right:0;font-size:.56rem;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.4px}
+  .g-A{background:linear-gradient(135deg,#37b26b,#2e9e5b);box-shadow:0 3px 8px rgba(46,158,91,.35)}
+  .g-B{background:linear-gradient(135deg,#a9cf46,#8fbf3d);box-shadow:0 3px 8px rgba(143,191,61,.35)}
+  .g-C{background:linear-gradient(135deg,#f0c94f,#e6b93d);box-shadow:0 3px 8px rgba(230,185,61,.35)}
+  .g-D{background:linear-gradient(135deg,#ef9a52,#e8853a);box-shadow:0 3px 8px rgba(232,133,58,.35)}
+  .g-F{background:linear-gradient(135deg,#e0605a,#d04545);box-shadow:0 3px 8px rgba(208,69,69,.35)}
+  .g-null{background:linear-gradient(135deg,#aab5b0,#8f9b95);box-shadow:0 3px 8px rgba(143,155,149,.35)}
+  .impacts{display:flex;flex-wrap:wrap;gap:5px}
+  .imp{font-size:.66rem;font-weight:700;padding:2px 8px;border-radius:999px;color:#fff}
+  .imp.resp{background:var(--resp)} .imp.repro{background:var(--repro)} .imp.endo{background:var(--endo)}
+  .imp.derm{background:var(--derm)} .imp.aqua{background:var(--aqua)} .imp.canc{background:var(--canc)} .imp.allerg{background:var(--allerg)}
+  .card-ings{font-size:.76rem;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.4em}
+  .card-foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:9px;margin-top:2px}
+  .ing-count{font-size:.72rem;color:var(--muted)}
+  .more-btn{font-size:.78rem;font-weight:700;color:var(--pine);background:var(--pine-soft);border:none;padding:6px 13px;border-radius:9px;cursor:pointer}
+  .more-btn:hover{background:#d8e8df}
+
+  /* shift badge (genetic) */
+  .shift{font-size:.66rem;font-weight:700;color:#b33838;background:#fdeaea;border:1px solid #f3cdcd;padding:2px 8px;border-radius:999px;margin-top:6px;display:inline-block}
+
+  /* ---------- modal ---------- */
+  .modal-bg{position:fixed;inset:0;background:rgba(15,30,24,.5);z-index:50;display:none;align-items:flex-end;justify-content:center;backdrop-filter:blur(2px)}
+  .modal-bg.show{display:flex}
+  .modal{background:var(--cream);width:100%;max-width:640px;max-height:86vh;border-radius:20px 20px 0 0;overflow-y:auto;padding:20px 18px 30px;position:relative;animation:slideup .22s ease}
+  @media(min-width:700px){.modal-bg{align-items:center}.modal{border-radius:20px}}
+  @keyframes slideup{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
+  .modal-x{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;border:none;background:var(--pine-soft);color:var(--pine);font-size:1rem;cursor:pointer;font-weight:700}
+  .modal h3{font-size:1.25rem;font-weight:800;padding-right:40px}
+  .modal .mbrand{font-size:.82rem;color:var(--muted);margin-top:2px}
+  .modal .mrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .mimg{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
+  .ming{flex:1 1 250px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px}
+  .ming h4{font-size:.82rem;font-weight:750;display:flex;align-items:center;gap:6px;justify-content:space-between}
+  .ming h4 .gdot{width:16px;height:16px;border-radius:5px;font-size:.62rem;color:#fff;display:flex;align-items:center;justify-content:center;flex:none}
+  .ming .isum{font-size:.75rem;color:#48635a;margin-top:3px}
+  .ming .idims{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
+  .idim{font-size:.62rem;font-weight:700;padding:2px 7px;border-radius:6px;background:#eef2f0;color:#4c5e56;border:1px solid var(--line)}
+  .idim b{color:var(--pine)}
+  .ming .iev{font-size:.64rem;color:var(--muted);margin-top:6px;font-style:italic}
+  .mnote{font-size:.73rem;color:#7a6a4a;background:#fdf8ec;border:1px solid #f0e4c6;border-radius:9px;padding:8px 10px;margin-top:6px}
+  .rcbox{margin-top:14px;background:#fdf1e6;border:1px solid #f3d9c0;border-left:4px solid var(--d);border-radius:11px;padding:11px 13px}
+  .rcbox .rc-t{font-size:.66rem;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--d)}
+  .rcbox p{font-size:.79rem;color:#4c5e56;margin-top:4px;line-height:1.5}
+  .modal .noteline{margin-top:14px;font-size:.75rem;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+  .flagged-ing{font-size:.66rem;font-weight:800;color:#b33838;background:#fdeaea;border:1px solid #f3cdcd;padding:2px 8px;border-radius:999px;margin-top:4px;display:inline-block}
+
+  /* ---------- changelog ---------- */
+  .cl{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+  .cl-item{display:flex;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .cl-item:last-child{border-bottom:none}
+  .cl-date{flex:none;width:76px;font-size:.74rem;font-weight:800;color:var(--pine)}
+  .cl-text{font-size:.84rem;color:#44544e}
+
+  /* ---------- genetic panel ---------- */
+  .geno{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+  .geno-btn{width:100%;padding:14px 16px;background:var(--surface);border:none;font-size:.92rem;font-weight:750;color:var(--ink);display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+  .geno-btn .arrow{transition:transform .2s;color:var(--muted)}
+  .geno-btn.open .arrow{transform:rotate(180deg)}
+  .geno-body{display:none;padding:0 16px 16px}
+  .geno-body.show{display:block}
+  .geno-intro{font-size:.78rem;color:var(--muted);margin-bottom:10px}
+  .geno-grid{display:grid;grid-template-columns:1fr;gap:9px}
+  @media(min-width:700px){.geno-grid{grid-template-columns:1fr 1fr}}
+  .gcard{background:var(--cream);border:1.5px solid var(--line);border-radius:12px;padding:11px 12px;cursor:pointer;transition:border-color .12s}
+  .gcard.active{border-color:var(--pine-2);background:var(--pine-soft)}
+  .gcard-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .gcard-top b{font-size:.83rem}
+  .gpre{font-size:.64rem;font-weight:700;color:var(--pine);background:var(--pine-soft);padding:2px 8px;border-radius:999px;white-space:nowrap}
+  .gdesc{font-size:.72rem;color:#4c5e56;margin-top:4px}
+  .gaf{font-size:.69rem;margin-top:5px;color:var(--muted)}
+  .gaf span{color:var(--ink);font-weight:600}
+  .gev{font-size:.64rem;margin-top:6px;padding:3px 8px;border-radius:7px;display:inline-block}
+  .ev-strong{background:#e8f4ec;color:#1f7a46}
+  .ev-moderate{background:#fdf4e3;color:#a06a1a}
+  .ev-plausible{background:#fdeede;color:#b06a24}
+
+  /* ---------- global registry ---------- */
+  .region-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:4px}
+  .region-card{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:12px;box-shadow:var(--shadow)}
+  .region-card .rname{font-weight:750;font-size:.85rem;display:flex;align-items:center;gap:6px}
+  .region-card .rstat{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+  .rpc{font-size:.63rem;font-weight:800;padding:2px 7px;border-radius:999px;background:#eef2f0;color:#54655f;border:1px solid var(--line)}
+  .rpc.banned{background:#fdeaea;color:#b33838;border-color:#f3cdcd}
+  .rpc.restricted{background:#fdf4e3;color:#a06a1a;border-color:#f0ddbb}
+  .rpc.review{background:#eef2f0;color:#54655f}
+  .rpc.flagged{background:#fdeede;color:#b06a24}
+  .rpc.allowed{background:#e8f4ec;color:#1f7a46;border-color:#c7e6d3}
+  .rblurb{font-size:.68rem;color:var(--muted);margin-top:7px;line-height:1.4}
+  .catchup{background:linear-gradient(135deg,#fdf4e3,#fdf8ec);border:1px solid #f0ddbb;border-radius:14px;padding:14px 16px;margin-top:14px;box-shadow:var(--shadow)}
+  .catchup h3{font-size:.95rem;font-weight:800;color:#8a5a14;display:flex;align-items:center;gap:8px}
+  .catchup .cu-item{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px dashed #ecd9b4}
+  .catchup .cu-item:last-child{border-bottom:none}
+  .cu-flag{font-size:1.3rem;flex:none;line-height:1}
+  .cu-who{font-size:.84rem;font-weight:750;color:var(--ink)}
+  .cu-what{font-size:.74rem;color:#5c6b4e;margin-top:1px}
+  .cu-why{font-size:.72rem;color:#7a6a4a;margin-top:2px;font-style:italic}
+  .watch{display:flex;gap:10px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+  .watch::-webkit-scrollbar{height:6px}
+  .watch::-webkit-scrollbar-thumb{background:#cdd8d2;border-radius:6px}
+  .watch-card{flex:0 0 250px;scroll-snap-align:start;background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--b);border-radius:13px;padding:12px 14px;box-shadow:var(--shadow)}
+  .watch-card .w-name{font-weight:750;font-size:.9rem;display:flex;justify-content:space-between;gap:6px;align-items:center}
+  .watch-card .w-reg{font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--d);background:#fdf1e6;padding:2px 7px;border-radius:999px}
+  .watch-card .w-rule{font-size:.73rem;color:#4c5e56;margin-top:6px}
+  .watch-card .w-why{font-size:.7rem;color:#7a6a4a;margin-top:5px;font-style:italic}
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--line);margin-top:44px;background:#eef2f0}
+  .foot-in{max-width:1080px;margin:0 auto;padding:22px 16px 34px;font-size:.76rem;color:var(--muted)}
+  .foot-in .links{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
+  .foot-in a{color:var(--pine);font-weight:600;text-decoration:none}
+  .foot-in a:hover{text-decoration:underline}
+  .note{font-size:.7rem;color:var(--muted);line-height:1.55;margin-top:8px;border-top:1px solid var(--line);padding-top:12px}
+  .built{display:flex;align-items:center;gap:6px;margin-top:12px;font-size:.68rem}
+  .built .dot{width:7px;height:7px;border-radius:50%;background:var(--a)}
+  .no-results{text-align:center;padding:36px 16px;color:var(--muted);font-size:.9rem}
+  .empty{text-align:center;padding:28px;color:var(--muted);font-size:.85rem;background:var(--surface);border:1px dashed var(--line);border-radius:14px}
 </style>
 </head>
 <body>
 
-<div class="header">
-  <h1>Clean Chem Intel</h1>
-  <p>146 Products — with Genetic Sensitivity Layer</p>
-</div>
-
-<div class="controls">
-  <div class="search-row">
-    <input type="text" class="search-box" id="search" placeholder="Search products or ingredients..." oninput="render()">
-  </div>
-  <div class="filter-row" id="filters"></div>
-  <div class="filter-row" style="margin-top:6px;">
-    <button class="filter-btn" id="safe-only" onclick="toggleSafeOnly(this)">✓ Recommended Safe Only</button>
+<div class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#">
+      <div class="mark">🧪</div>
+      <div class="brand-name">Clean Chem <span>Intel</span></div>
+    </a>
+    <div class="live"><span class="dot"></span>Living database · updated <b id="live-date"></b></div>
   </div>
 </div>
 
-<div class="geno-panel">
-  <button class="geno-toggle" id="geno-toggle-btn" onclick="toggleGenoPanel()">
-    <span>🧬 Genetic Sensitivity Layer</span>
-    <span class="arrow">▼</span>
-  </button>
-  <div class="geno-body" id="geno-body">
-    <div class="geno-intro">
-      These are <strong>normal human genetic variations</strong>, not defects. ~75–90% of people carry at least one. Toggle the ones that apply to you and watch how product grades shift.
-    </div>
-    <div class="geno-card" id="gcard-gstm1" onclick="toggleGene('gstm1')">
-      <div class="geno-card-header">
-        <div class="geno-card-title">GSTM1 Deletion</div>
-        <div class="geno-card-prevalence">~50% of population</div>
-      </div>
-      <div class="geno-card-desc">Reduced glutathione detoxification. Your body clears certain chemicals more slowly through the glutathione pathway.</div>
-      <div class="geno-affected">Affects: <span>Isothiazolinone preservatives (MI, MCI, BIT)</span></div>
-      <div class="geno-card-evidence ev-moderate">Moderate evidence — strong for glutathione mechanism, indirect for cleaning chemicals specifically</div>
-    </div>
-    <div class="geno-card" id="gcard-tnf" onclick="toggleGene('tnf')">
-      <div class="geno-card-header">
-        <div class="geno-card-title">TNF-α -308A Variant</div>
-        <div class="geno-card-prevalence">~25–28% of population</div>
-      </div>
-      <div class="geno-card-desc">Higher inflammatory cytokine production. Your immune system mounts a stronger inflammatory response to irritants.</div>
-      <div class="geno-affected">Affects: <span>SLS, benzalkonium chloride, NaOH, strong irritants</span></div>
-      <div class="geno-card-evidence ev-strong">Strong evidence — directly demonstrated lower irritation threshold in gene-environment studies</div>
-    </div>
-    <div class="geno-card" id="gcard-mhc" onclick="toggleGene('mhc')">
-      <div class="geno-card-header">
-        <div class="geno-card-title">MHC Region Variants (HLA-DP)</div>
-        <div class="geno-card-prevalence">Varies by allele</div>
-      </div>
-      <div class="geno-card-desc">Variants in the MHC class II region affect how your immune system responds to chemical irritants. A NIOSH study of 585 healthcare workers found specific HLA-DP variants linked to stronger skin reactions to benzalkonium chloride and SLS.</div>
-      <div class="geno-affected">Affects: <span>Benzalkonium chloride, SLS, NaOH</span></div>
-      <div class="geno-card-evidence ev-moderate">Moderate evidence — direct occupational study (NIOSH, n=585) shows HLA-DP variants affect irritant threshold, but not yet replicated</div>
-    </div>
-    <div class="geno-card" id="gcard-dao" onclick="toggleGene('dao')">
-      <div class="geno-card-header">
-        <div class="geno-card-title">Reduced Histamine Clearance (DAO/HNMT)</div>
-        <div class="geno-card-prevalence">~66–80% carry a DAO variant</div>
-      </div>
-      <div class="geno-card-desc">Slower breakdown of histamine. When a chemical triggers histamine release (surfactants, QACs, VOCs), your body takes longer to clear it, amplifying the response.</div>
-      <div class="geno-affected">Affects: <span>Surfactants (SLS), benzalkonium chloride, VOCs, chlorinated solvents</span></div>
-      <div class="geno-card-evidence ev-plausible">Plausible mechanism — strong evidence for reduced enzyme function, but the link to cleaning product exposure is biologically inferred, not directly tested</div>
-    </div>
+<div class="hero">
+  <div class="hero-in">
+    <h1>Know what's <em>under your sink.</em></h1>
+    <p class="tag" id="hero-tag"></p>
+    <div class="stats" id="hero-stats"></div>
+  </div>
+  <div class="mountains">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 70 L160 12 L300 48 L460 0 L640 52 L820 8 L980 44 L1160 16 L1320 50 L1440 30 L1440 70 Z" fill="#d7e8de" opacity=".8"/><path d="M0 70 L220 34 L400 58 L560 24 L760 60 L960 30 L1140 62 L1340 40 L1440 56 L1440 70 Z" fill="#ffffff" opacity=".9"/></svg>
   </div>
 </div>
 
-<div class="stats" id="stats"></div>
+<div class="wrap">
 
-<div class="results" id="results"></div>
+  <section id="search-sec">
+    <input type="text" class="search-box" id="search" placeholder="Search products, brands, or ingredients… (try “lavender”, “Dawn”, “reproductive”)" oninput="render()">
+  </section>
 
-<div class="disclaimer">
-  <strong>Not medical advice.</strong> Genetic sensitivity ratings are based on published, peer-reviewed research on gene-environment interactions. Evidence strength is labeled honestly — see each variant card. Genetic variations shown are common human diversity, not defects. Your personal experience with a product is valid data and should not be dismissed as "anecdotal." If a product bothers you, it bothers you — regardless of what any rating says.
+  <section>
+    <div class="sec-title"><h2>Search by how it can affect you</h2><span class="sub">tap an impact to see products containing ingredients flagged for it</span></div>
+    <div class="chips" id="harm-chips"></div>
+
+    <div class="impact-label">Or search for what's <i>not</i> flagged — products with no ingredient carrying that impact</div>
+    <div class="chips" id="safe-chips"></div>
+
+    <div class="row2">
+      <button class="tbtn" id="safe-only" onclick="toggleSafeOnly(this)">✓ Certified safe only</button>
+      <button class="tbtn" id="heritage-only" onclick="toggleHeritage(this)">🏺 Grandma's cupboard</button>
+    </div>
+    <div class="cats" id="filters"></div>
+  </section>
+
+  <section>
+    <div class="sec-title"><h2 id="results-title">All products</h2><span class="sub" id="count-note"></span></div>
+    <div class="stats-line" id="stats"></div>
+    <div class="grid" id="results"></div>
+  </section>
+
+  <section>
+    <div class="sec-title"><h2>🌍 The planet's verdict</h2><span class="sub">banned or restricted elsewhere — still on US shelves</span></div>
+    <div class="region-grid" id="region-grid"></div>
+    <div class="catchup" id="catchup"></div>
+    <div style="margin:18px 0 8px" class="impact-label">Watch list — chemicals the US hasn't caught up on yet</div>
+    <div class="watch" id="watch"></div>
+  </section>
+
+  <section>
+    <div class="sec-title"><h2>⚠️ Once safe, now flagged</h2><span class="sub">chemicals that were marketed as harmless — and the research that changed the story</span></div>
+    <div class="strip" id="rc-strip"></div>
+  </section>
+
+  <section>
+    <div class="sec-title"><h2>🏺 Grandma's cupboard</h2><span class="sub">heritage cleaners passed down generations — still under the sink today</span></div>
+    <div class="heritage-grid" id="heritage-grid"></div>
+  </section>
+
+  <section>
+    <div class="sec-title"><h2>📚 What's new</h2><span class="sub">this database grows on a schedule — watch the changelog</span></div>
+    <div class="cl" id="changelog"></div>
+  </section>
+
+  <section>
+    <div class="geno">
+      <button class="geno-btn" id="geno-toggle-btn" onclick="toggleGenoPanel()">
+        <span>🧬 Genetic sensitivity layer — is this product right for *your* body?</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="geno-body" id="geno-body">
+        <div class="geno-intro">These are <strong>common human genetic variations</strong>, not defects — ~75–90% of people carry at least one. Toggle the ones that apply to you and watch product grades shift. Your personal experience is valid data; if a product bothers you, it bothers you.</div>
+        <div class="geno-grid">
+          <div class="gcard" id="gcard-gstm1" onclick="toggleGene('gstm1')">
+            <div class="gcard-top"><b>GSTM1 Deletion</b><span class="gpre">~50%</span></div>
+            <div class="gdesc">Reduced glutathione detoxification — your body clears certain chemicals more slowly.</div>
+            <div class="gaf">Affects: <span>Isothiazolinones (MI, BIT)</span></div>
+            <div class="gev ev-moderate">Moderate evidence — strong mechanism, indirect for cleaners</div>
+          </div>
+          <div class="gcard" id="gcard-tnf" onclick="toggleGene('tnf')">
+            <div class="gcard-top"><b>TNF-α -308A</b><span class="gpre">~25–28%</span></div>
+            <div class="gdesc">Higher inflammatory response — your immune system reacts more strongly to irritants.</div>
+            <div class="gaf">Affects: <span>SLS, benzalkonium chloride, NaOH</span></div>
+            <div class="gev ev-strong">Strong evidence — lower irritation threshold shown</div>
+          </div>
+          <div class="gcard" id="gcard-mhc" onclick="toggleGene('mhc')">
+            <div class="gcard-top"><b>MHC / HLA-DP</b><span class="gpre">varies</span></div>
+            <div class="gdesc">Immune-system variants linked to stronger skin reactions to common cleaners (NIOSH study, n=585).</div>
+            <div class="gaf">Affects: <span>Benzalkonium chloride, SLS, NaOH</span></div>
+            <div class="gev ev-moderate">Moderate — direct occupational study, not yet replicated</div>
+          </div>
+          <div class="gcard" id="gcard-dao" onclick="toggleGene('dao')">
+            <div class="gcard-top"><b>DAO / HNMT slow</b><span class="gpre">~66–80%</span></div>
+            <div class="gdesc">Slower histamine clearance — chemical-triggered histamine lingers, amplifying the response.</div>
+            <div class="gaf">Affects: <span>SLS, benzalkonium chloride, VOCs</span></div>
+            <div class="gev ev-plausible">Plausible — enzyme evidence strong, cleaner link inferred</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </div>
 
-<div class="legend">
-  <div class="legend-row">
-    <div class="legend-item"><div class="legend-dot" style="background:#4caf50"></div> A</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#8bc34a"></div> B</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#ffc107"></div> C</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#ff9800"></div> D</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#f44336"></div> F</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#555"></div> ?</div>
+<footer>
+  <div class="foot-in">
+    <div class="links">
+      <a href="docs/methodology.md">Methodology</a>
+      <a href="docs/source-policy.md">Source policy</a>
+      <a href="docs/scoring-rubric.md">Scoring rubric</a>
+      <a href="https://github.com/Focusingpulse/clean-chem-intel">GitHub</a>
+    </div>
+    <div>Built for <b>Bella's Mountain Vacation Cleaning</b> — because Sandra vets what she uses, and you should know what you're using too.</div>
+    <div class="note"><strong>Not medical advice.</strong> Grades reflect documented hazard data (GHS classifications, peer-reviewed toxicology, regulatory listings) mapped to health endpoints. Evidence is labeled honestly — Low/Medium/High/Extrapolated. Absence of a flag is not proof of safety; it means our database documents no signal. This is a transparency tool, not a diagnosis.</div>
+    <div class="built"><span class="dot"></span>Built <span id="built-at"></span> · generated from data pipeline</div>
   </div>
+</footer>
+
+<div class="modal-bg" id="modal-bg" onclick="if(event.target===this)closeModal()">
+  <div class="modal" id="modal"></div>
 </div>
 
 <script>
-const PRODUCTS = [
-  {name:"Windex Original",brand:"SC Johnson",cat:"Glass Cleaner",ings:["Water","Isopropanol","Propylene Glycol","Butyloxyethanol","Ammonium Hydroxide","Fragrance"]},
-  {name:"Formula 409",brand:"Clorox",cat:"All-Purpose",ings:["Water","Lauramine Oxide","Ethanolamine","Quaternary Ammonium","Fragrance"]},
-  {name:"Mr. Clean",brand:"P&G",cat:"All-Purpose",ings:["Water","Alkyldimethylamine Oxide","Sodium Carbonate","Benzisothiazolinone","Fragrance"]},
-  {name:"Pine-Sol",brand:"Clorox",cat:"All-Purpose",ings:["Water","Alcohol Ethoxylates","Fragrance","Citric Acid"]},
-  {name:"Lysol All-Purpose",brand:"Reckitt",cat:"All-Purpose",ings:["Quaternary Ammonium","Water","Phenoxyisopropanol","Ethanol","Fragrance"]},
-  {name:"Fabuloso",brand:"Colgate-Palmolive",cat:"All-Purpose",ings:["Water","Sodium Dodecylbenzenesulfonate","Fragrance","Sodium Laureth Sulfate","Citric Acid"]},
-  {name:"Simple Green",brand:"Sunshine Makers",cat:"All-Purpose",ings:["Water","Surfactant","Tetrasodium Glutamate Diacetate","Sodium Bicarbonate","Fragrance"]},
-  {name:"Method All-Purpose",brand:"SC Johnson",cat:"Eco-Friendly",ings:["Water","Decyl Glucoside","Lauryl Glucoside","Citric Acid","Fragrance","Limonene"]},
-  {name:"Mrs. Meyer's Multi-Surface",brand:"SC Johnson",cat:"Eco-Friendly",ings:["Water","Sodium Citrate","Decyl Glucoside","Citric Acid","Fragrance"]},
-  {name:"Seventh Gen All-Purpose",brand:"Unilever",cat:"Eco-Friendly",ings:["Water","Octyl/Decyl Glucoside","Sodium Citrate","Citric Acid","Essential Oils"]},
-  {name:"Clorox Bleach",brand:"Clorox",cat:"Disinfectant",ings:["Water","Sodium Hypochlorite","Sodium Chloride","Sodium Hydroxide"]},
-  {name:"Lysol Disinfectant Spray",brand:"Reckitt",cat:"Disinfectant",ings:["Ethanol","Quaternary Ammonium","Water","Butane","Propane","Fragrance"]},
-  {name:"Lysol Toilet Bowl",brand:"Reckitt",cat:"Toilet Cleaner",ings:["Hydrochloric Acid","Water","Fragrance"]},
-  {name:"Scrubbing Bubbles",brand:"SC Johnson",cat:"Bathroom",ings:["Water","Isobutane","Benzalkonium Chloride","Fragrance"]},
-  {name:"Comet Bathroom",brand:"KIK",cat:"Bathroom",ings:["Water","Citric Acid","Sodium Hydroxide","Fragrance"]},
-  {name:"Tilex Mold & Mildew",brand:"Clorox",cat:"Bathroom",ings:["Water","Sodium Hypochlorite","Sodium Hydroxide","Lauramine Oxide","Fragrance"]},
-  {name:"Kaboom Foam-Tastic",brand:"Church & Dwight",cat:"Bathroom",ings:["Water","Isobutane","Lauramine Oxide","Fragrance","Sodium Hydroxide"]},
-  {name:"Clorox ToiletWand",brand:"Clorox",cat:"Toilet Cleaner",ings:["Water","Glycolic Acid","Sodium Lauryl Sulfate","Fragrance"]},
-  {name:"Soft Scrub",brand:"Henkel",cat:"Abrasive",ings:["Limestone","Sodium Hypochlorite","Surfactant"]},
-  {name:"Bar Keepers Friend",brand:"BKF",cat:"Specialty",ings:["Feldspar","Oxalic Acid","Sodium Dodecylbenzenesulfonate"]},
-  {name:"Pledge",brand:"SC Johnson",cat:"Polish",ings:["Water","Isoparaffin","Dimethicone","Fragrance","Limonene"]},
-  {name:"Febreze",brand:"P&G",cat:"Fabric",ings:["Water","Alcohol","Hydroxypropyl Cyclodextrin","Fragrance"]},
-  {name:"Drano Max Gel",brand:"SC Johnson",cat:"Drain",ings:["Water","Sodium Hypochlorite","Sodium Hydroxide","Lauramine Oxide"]},
-  {name:"CLR",brand:"Jelmar",cat:"Specialty",ings:["Water","Lactic Acid","Gluconic Acid","Lauramine Oxide"]},
-  {name:"Bon Ami",brand:"Faultless",cat:"Eco-Friendly",ings:["Calcium Carbonate","Feldspar","Sodium Carbonate","Sodium Bicarbonate"]},
-  {name:"Ajax Powder",brand:"Colgate-Palmolive",cat:"Abrasive",ings:["Calcium Carbonate","Sodium Carbonate","Sodium Dodecylbenzenesulfonate","Trichloroisocyanuric Acid","Fragrance"]},
-  {name:"Swiffer WetJet",brand:"P&G",cat:"Floor",ings:["Water","Propylene Glycol Butyl Ether","Didecyldimonium Chloride","Fragrance"]},
-  {name:"Green Works",brand:"Clorox",cat:"Eco-Friendly",ings:["Water","Caprylyl/Capryl Glucoside","Ethanol","Citric Acid","Limonene","Fragrance"]},
-  {name:"ECOS Dishmate",brand:"ECOS",cat:"Eco-Friendly",ings:["Water","Sodium Coco-Sulfate","Lauramine Oxide","Phenoxyethanol","Citric Acid"]},
-  {name:"Biokleen All-Purpose",brand:"Biokleen",cat:"Eco-Friendly",ings:["Water","Sodium Lauryl Sulfate","Cocamidopropyl Betaine","Lauramine Oxide","Limonene"]},
-  {name:"Dr. Bronner's Sal Suds",brand:"Dr. Bronner's",cat:"Eco-Friendly",ings:["Water","Sodium Lauryl Sulfate","Lauryl Glucoside","Essential Oils","Limonene"]},
-  {name:"Grove Co. Multi-Purpose",brand:"Grove",cat:"Eco-Friendly",ings:["Water","Coco-Glucoside","Lauramine Oxide","Citric Acid","Phenoxyethanol"]},
-  {name:"Dawn Ultra",brand:"P&G",cat:"Dish Soap",ings:["Water","Sodium Lauryl Sulfate","Sodium Laureth Sulfate","Lauramine Oxide","Fragrance","Methylisothiazolinone"]},
-  {name:"Palmolive",brand:"Colgate-Palmolive",cat:"Dish Soap",ings:["Water","Sodium Laureth Sulfate","Sodium Lauryl Sulfate","Lauramine Oxide","Fragrance","Methylisothiazolinone"]},
-  {name:"Tide",brand:"P&G",cat:"Laundry",ings:["Water","Alcohol Ethoxylate","Sodium Laureth Sulfate","Enzymes","Fragrance"]},
-  {name:"Gain",brand:"P&G",cat:"Laundry",ings:["Water","Alcohol Ethoxylate","Sodium Laureth Sulfate","Fragrance"]},
-  {name:"Cascade",brand:"P&G",cat:"Dishwasher",ings:["Sodium Carbonate","Sodium Percarbonate","Sodium Silicate","Enzymes","Fragrance"]},
-  {name:"Finish",brand:"Reckitt",cat:"Dishwasher",ings:["Sodium Carbonate","Sodium Percarbonate","Sodium Silicate","Enzymes","Fragrance"]},
-  {name:"Arm & Hammer",brand:"Church & Dwight",cat:"Laundry",ings:["Water","Sodium Carbonate","Sodium Laureth Sulfate","Fragrance","Enzymes"]},
-  {name:"Seventh Gen Dish",brand:"Unilever",cat:"Dish Soap",ings:["Water","Sodium Lauryl Sulfate","Cocamidopropyl Betaine","Lauramine Oxide","Methylisothiazolinone"]},
-  {name:"Mrs. Meyer's Dish",brand:"SC Johnson",cat:"Dish Soap",ings:["Water","Sodium Lauryl Sulfate","Cocamidopropyl Betaine","Fragrance","Methylisothiazolinone"]},
-  {name:"Method Dish",brand:"SC Johnson",cat:"Dish Soap",ings:["Water","Sodium Lauryl Sulfate","Cocamidopropyl Betaine","Fragrance","Limonene","Methylisothiazolinone"]},
-  {name:"Isopropyl Alcohol 70% (BMVC)",brand:"Swan",cat:"Disinfectant",ings:["Isopropyl Alcohol","Water"]},
-  {name:"18-in-1 Pure-Castile Soap, Peppermint (BMVC)",brand:"Dr. Bronner's",cat:"All-Purpose",ings:["Saponified Coconut Oil","Saponified Olive Oil","Organic Hemp Oil","Organic Peppermint Oil","Spring Water"]},
-  {name:"Essential Oil Spray (BMVC)",brand:"Homemade",cat:"All-Purpose",ings:["Spring Water","Isopropyl Alcohol","Tea Tree Oil","Lavender Oil","Lemon Oil","Peppermint Oil","Eucalyptus Oil"]},
-  {name:"Peppermint Pure Essential Oil (BMVC)",brand:"Aura Cacia",cat:"Essential Oil",ings:["Organic Peppermint Oil"]},
-  {name:"Organic Essential Oils Kit (BMVC)",brand:"NOW Foods",cat:"Essential Oil",ings:["Lavender Oil","Peppermint Oil","Tea Tree Oil","Lemon Oil"]},
-  {name:"Granite & Stone Cleaner (BMVC)",brand:"Ever Spring",cat:"Surface Cleaner",ings:["Water","Caprylyl Glucoside","Sodium Citrate","Myristyl Glucoside","Plant-based surfactants","Citric Acid","Fragrance","Mandarin Oil","Ginger Extract"]},
-  {name:"Wood Surface Cleaner (BMVC)",brand:"Ever Spring",cat:"Surface Cleaner",ings:["Water","Plant-based surfactants","Fragrance","Lemon Oil","Mint Oil","Basil Oil","Geranium Oil","Citric Acid","Denatured Alcohol"]},
-  {name:"Power Cleaning Paste (BMVC)",brand:"Norwex",cat:"Physical",safe:"EWG Verified",ings:["Calcium Carbonate","Alumina","Brassica Campestris Seed Oil","Helianthus Annuus Seed Oil","Water","Potassium Carbonate","Aloe Vera","Citrus Aurantium Peel Oil","Triethyl Citrate","Dipterocarpus Wood Oil","Limonene","Citral"]},
-  {name:"Norwex Cloth + Water (BMVC)",brand:"Norwex",cat:"Physical",ings:["Norwex Cloth","Spring Water"]},
-  {name:"Pumie Toilet Bowl Ring Remover (BMVC)",brand:"Pumie",cat:"Physical",ings:["Pumice Stone"]},
-  // === RECOMMENDED SAFE PRODUCTS ===
-  {name:"Dishwasher Pods Zero Plastic, Unscented",brand:"AspenClean",cat:"Dishwasher",safe:"EWG Verified",ings:["Sodium Citrate","Sodium Carbonate","Sodium Carbonate Peroxide","Decyl Glucoside","Enzymes","Sodium Chloride"]},
-  {name:"Zero Plastic Dishwasher Powder",brand:"AspenClean",cat:"Dishwasher",safe:"EWG Verified",ings:["Sodium Citrate","Sodium Carbonate","Sodium Carbonate Peroxide","Decyl Glucoside","Enzymes"]},
-  {name:"Dishwasher Detergent, Fragrance-free",brand:"Blueland",cat:"Dishwasher",safe:"EWG Verified, EPA Safer Choice, MADE SAFE",ings:["Plant-based surfactants","Sodium Carbonate"]},
-  {name:"Dishwasher Tablets, Fragrance Free",brand:"Branch Basics",cat:"Dishwasher",safe:"EWG Verified, MADE SAFE",ings:["Sodium Carbonate","Sodium Carbonate Peroxide","Sodium Bicarbonate","Plant-based surfactants"]},
-  {name:"UltraWash Dishwasher Pods",brand:"Dropps",cat:"Dishwasher",safe:"EWG Verified",ings:["Sodium Carbonate","Sodium Carbonate Peroxide","Plant-based surfactants"]},
-  {name:"Dishwasher Gel, Free & Clear",brand:"ECOS",cat:"Dishwasher",safe:"EWG Grade A, EPA Safer Choice",ings:["Plant-based surfactants","Sodium Carbonate"]},
-  {name:"Laundry Detergent Pods, Eucalyptus & Rosemary",brand:"AspenClean",cat:"Laundry",safe:"EWG Verified",ings:["Plant-based surfactants","Sodium Carbonate","Sodium Carbonate Peroxide","Enzymes","Essential Oils"]},
-  {name:"Laundry Detergent Pods, Unscented",brand:"AspenClean",cat:"Laundry",safe:"EWG Verified",ings:["Plant-based surfactants","Sodium Carbonate","Sodium Carbonate Peroxide","Enzymes"]},
-  {name:"Laundry Detergent, Unscented",brand:"AspenClean",cat:"Laundry",safe:"EWG Verified",ings:["Plant-based surfactants","Sodium Carbonate","Enzymes"]},
-  {name:"Baby Laundry Detergent, Unscented",brand:"ATTITUDE",cat:"Laundry",safe:"EWG Verified",ings:["Water","Plant-based surfactants","Sodium Citrate","Oatmeal extract"]},
-  {name:"Liquid Laundry Detergent, Unscented",brand:"ATTITUDE",cat:"Laundry",safe:"EWG Verified",ings:["Water","Plant-based surfactants"]},
-  {name:"Oxi Booster Pods",brand:"Dropps",cat:"Laundry",safe:"EWG Verified",ings:["Sodium Carbonate Peroxide","Sodium Carbonate"]},
-  {name:"Laundry Powder",brand:"Meliora",cat:"Laundry",safe:"MADE SAFE",ings:["Sodium Carbonate","Sodium Percarbonate","Sodium Bicarbonate"]},
-  {name:"Free & Clear Laundry Detergent",brand:"Seventh Generation",cat:"Laundry",safe:"EPA Safer Choice, EWG Grade A",ings:["Plant-based surfactants","Water","Sodium Citrate"]},
-  {name:"Chlorine Free Bleach",brand:"Seventh Generation",cat:"Laundry",safe:"EWG top-rated",ings:["Hydrogen Peroxide","Water"]},
-  {name:"Super Washing Soda",brand:"Arm & Hammer",cat:"Laundry",safe:"EWG top-rated",ings:["Sodium Carbonate"]},
-  {name:"Castile Soap, Peppermint",brand:"Dr. Bronner's",cat:"All-Purpose",safe:"EWG Verified, USDA Organic",ings:["Water","Saponified Coconut Oil","Saponified Olive Oil","Organic Hemp Oil","Organic Peppermint Oil","Citric Acid"]},
-  {name:"Castile Soap, Lavender",brand:"Dr. Bronner's",cat:"All-Purpose",safe:"EWG Verified, USDA Organic",ings:["Water","Saponified Coconut Oil","Saponified Olive Oil","Organic Hemp Oil","Organic Lavender Oil","Citric Acid"]},
-  {name:"Sal Suds Liquid Cleaner",brand:"Dr. Bronner's",cat:"All-Purpose",safe:"EWG top-rated",ings:["Water","Potassium Hydroxide","Lauric Acid","Sodium Lauryl Sulfate","Rosemary Extract"]},
-  {name:"All-Purpose Cleaner, Geranium & Lemongrass",brand:"ATTITUDE",cat:"All-Purpose",safe:"EWG Verified",ings:["Water","Sodium Bicarbonate","Sodium Hydroxide","Myristyl Glucoside","Caprylyl Glucoside","Citric Acid","Tea Tree Oil","Geranium Oil"]},
-  {name:"Daily Shower & Tile Cleaner, Citrus Zest",brand:"ATTITUDE",cat:"Bathroom",safe:"EWG Verified",ings:["Water","Plant-based surfactants","Citrus essential oils"]},
-  {name:"Bathroom Cleaner Spray, Citrus Zest",brand:"ATTITUDE",cat:"Bathroom",safe:"EWG Verified",ings:["Water","Plant-based surfactants","Citrus essential oils"]},
-  {name:"Bathroom Cleaner Spray, Unscented",brand:"ATTITUDE",cat:"Bathroom",safe:"EWG Verified",ings:["Water","Plant-based surfactants"]},
-  {name:"Floor Surface Cleaner, Citrus Zest",brand:"ATTITUDE",cat:"Floor",safe:"EWG Verified",ings:["Water","Plant-based surfactants","Citrus essential oils"]},
-  {name:"Concentrate, Fragrance-Free",brand:"Branch Basics",cat:"All-Purpose",safe:"EWG Verified, MADE SAFE",ings:["Water","Sodium Citrate","Decyl Glucoside","Lauramine Oxide","Sodium Phytate","Citric Acid"]},
-  {name:"Oxygen Boost",brand:"Branch Basics",cat:"Laundry",safe:"EWG Verified, MADE SAFE",ings:["Sodium Carbonate Peroxide","Sodium Carbonate"]},
-  {name:"Gel Hand Soap",brand:"Branch Basics",cat:"Hand Soap",safe:"EWG Verified",ings:["Water","Plant-based surfactants","Aloe Vera"]},
-  {name:"Bathroom Cleaner, Fresh",brand:"Green Shield Organic",cat:"Bathroom",safe:"EWG top-rated",ings:["Plant-based surfactants","Citric Acid"]},
-  {name:"Toilet Bowl Cleaner",brand:"Green Shield Organic",cat:"Toilet",safe:"EWG top-rated",ings:["Plant-based surfactants","Citric Acid"]},
-  {name:"All-Purpose Degreaser, Fresh",brand:"Green Shield Organic",cat:"All-Purpose",safe:"EWG top-rated",ings:["Plant-based surfactants","Citric Acid"]},
-  {name:"Glass Cleaner Fresh",brand:"Green Shield Organic",cat:"Glass",safe:"EWG top-rated",ings:["Plant-based surfactants","Water"]},
-  {name:"Toilet Bowl Cleaner, Emerald Cypress & Fir",brand:"Seventh Generation",cat:"Toilet",safe:"EWG top-rated, EPA Safer Choice",ings:["Plant-based surfactants","Citric Acid","Essential Oils"]},
-  {name:"Tub & Tile Cleaner, Emerald Cypress & Fir",brand:"Seventh Generation",cat:"Bathroom",safe:"EWG top-rated",ings:["Plant-based surfactants","Citric Acid","Essential Oils"]},
-  {name:"Shower Kleener",brand:"ECOS",cat:"Bathroom",safe:"EWG top-rated",ings:["Water","Plant-based surfactants","Citric Acid"]},
-  {name:"Toilet Kleener, Natural Cedar",brand:"ECOS",cat:"Toilet",safe:"EWG top-rated",ings:["Water","Plant-based surfactants","Cedar essential oil"]},
-  {name:"Toilet Bowl Cleaner Pine Fresh",brand:"Ecover",cat:"Toilet",safe:"EWG top-rated, EPA Safer Choice",ings:["Water","Plant-based surfactants","Pine essential oil"]},
-  {name:"Cream Scrub",brand:"Ecover",cat:"Abrasive",safe:"EWG top-rated",ings:["Calcium Carbonate","Plant-based surfactants","Water"]},
-  {name:"Glass Cleaner, Unscented",brand:"Whole Foods",cat:"Glass",safe:"EWG top-rated",ings:["Water","Plant-based surfactants"]},
-  {name:"All-Purpose Spray, Lemon Zest",brand:"Whole Foods",cat:"All-Purpose",safe:"EWG top-rated",ings:["Plant-based surfactants","Water"]},
-  {name:"All-Purpose Surface Cleaner, Ginger Yuzu",brand:"Method",cat:"All-Purpose",safe:"EWG top-rated, EPA Safer Choice",ings:["Water","Decyl Glucoside","Citric Acid"]},
-  {name:"Powder Cleanser",brand:"Bon Ami",cat:"Abrasive",safe:"EWG top-rated",ings:["Limestone","Feldspar","Sodium Carbonate","Sodium Bicarbonate"]},
-  {name:"Dishwashing Liquid, Hypo-Allergenic",brand:"Planet",cat:"Dish Soap",safe:"EWG top-rated",ings:["Plant-based surfactants","Water"]},
-  {name:"Dish Liquid, Unscented",brand:"Better Life",cat:"Dish Soap",safe:"EWG top-rated",ings:["Plant-based surfactants","Water"]},
-  {name:"Dish Liquid, Free & Clear",brand:"Seventh Generation",cat:"Dish Soap",safe:"EPA Safer Choice",ings:["Plant-based surfactants","Water"]},
-  {name:"All-Purpose Cleaner, Free & Clear",brand:"Seventh Generation",cat:"All-Purpose",safe:"EPA Safer Choice, EWG Grade B",ings:["Plant-based surfactants","Water"]},
-  {name:"All-Purpose Home Cleaner",brand:"Meliora",cat:"All-Purpose",safe:"MADE SAFE",ings:["Water","Potassium Oleate","Potassium Citrate","Glycerin"]},
-  {name:"Dish Soap",brand:"Meliora",cat:"Dish Soap",safe:"MADE SAFE",ings:["Water","Potassium Oleate","Potassium Citrate","Glycerin"]},
-  {name:"Laundry Detergent, Free & Clear",brand:"Pure Natural",cat:"Laundry",safe:"MADE SAFE, USDA Biobased",ings:["Botanical surfactant"]},
-  {name:"Multi-Purpose Cleaner, Free & Clear",brand:"Pure Natural",cat:"All-Purpose",safe:"MADE SAFE, USDA Biobased",ings:["Botanical surfactant"]},
-  {name:"Hand Soap, Meyer Lemon Mandarin",brand:"Everyone",cat:"Hand Soap",safe:"EWG Verified",ings:["Water","Plant-based surfactants","Essential Oils"]},
-  {name:"Floor Cleaner",brand:"Bona",cat:"Floor",safe:"EPA Safer Choice",ings:["Water","Plant-based surfactants"]},
-  {name:"Concentrated All-Purpose",brand:"Simple Green",cat:"All-Purpose",safe:"EPA Safer Choice",ings:["Water","Surfactant","Tetrasodium Glutamate Diacetate"]},
-  {name:"Calcium Lime Rust Cleaner",brand:"CLR",cat:"Specialty",safe:"EWG top-rated, EPA Safer Choice",ings:["Lactic Acid","Gluconic Acid","Water"]},
-  {name:"OxiClean Baby Stain Soaker",brand:"OxiClean",cat:"Laundry",safe:"EWG top-rated",ings:["Sodium Carbonate Peroxide","Sodium Carbonate"]},
-  {name:"Dishwasher Pacs, Free & Clear",brand:"Seventh Generation",cat:"Dishwasher",safe:"EWG top-rated",ings:["Plant-based surfactants","Sodium Carbonate","Enzymes"]},
-  {name:"Dishwasher Powder, Free & Clear",brand:"Seventh Generation",cat:"Dishwasher",safe:"EWG top-rated",ings:["Plant-based surfactants","Sodium Carbonate","Enzymes"]},
-  {name:"Wave Dishwashing Gel Lavender",brand:"ECOS",cat:"Dishwasher",safe:"EWG top-rated",ings:["Plant-based surfactants","Lavender essential oil"]},
-  // Commercial Green Seal
-  {name:"Glass Cleaner Concentrate 1A",brand:"3M",cat:"Glass (Commercial)",safe:"Green Seal",ings:[]},
-  {name:"Focus MP 11 Multi-Purpose",brand:"Focus",cat:"All-Purpose (Commercial)",safe:"Green Seal",ings:[]},
-  {name:"Green Link Multi-Clean Degreaser",brand:"Zep",cat:"All-Purpose (Commercial)",safe:"Green Seal",ings:[]},
-  {name:"Green Link Neutral Floor Cleaner",brand:"Zep",cat:"Floor (Commercial)",safe:"Green Seal",ings:[]},
-  {name:"HOST Dry Carpet Cleaner",brand:"HOST",cat:"Carpet",safe:"Green Seal",ings:[]},
-  {name:"Carpet & Upholstery Concentrate",brand:"Procyon",cat:"Carpet",safe:"Green Seal",ings:[]},
-];
+const PRODUCTS = [{"name": "Windex Original", "brand": "SC Johnson", "cat": "Glass Cleaner", "safe": null, "ings": ["Water", "Isopropanol", "Propylene Glycol", "Butyloxyethanol", "Ammonium Hydroxide", "Fragrance"], "heritage": true, "heritage_year": 1933, "heritage_note": "Blue glass cleaner since the 1930s — most families' first window spray. Formula evolved (DBC solvent era → 2-butoxyethanol → modern).", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Formula 409", "brand": "Clorox", "cat": "All-Purpose", "safe": null, "ings": ["Water", "Lauramine Oxide", "Ethanolamine", "Quaternary Ammonium", "Fragrance"], "heritage": true, "heritage_year": 1964, "heritage_note": "'The 409' — 1960s all-purpose spray burned into muscle memory for kitchen counters.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Mr. Clean", "brand": "P&G", "cat": "All-Purpose", "safe": null, "ings": ["Water", "Alkyldimethylamine Oxide", "Sodium Carbonate", "Benzisothiazolinone", "Fragrance"], "heritage": true, "heritage_year": 1958, "heritage_note": "The bald genie's cleaner, a 1950s staple that defined what 'clean' smelled like.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Pine-Sol", "brand": "Clorox", "cat": "All-Purpose", "safe": null, "ings": ["Water", "Alcohol Ethoxylates", "Fragrance", "Citric Acid"], "heritage": true, "heritage_year": 1929, "heritage_note": "Pine-oil cleaner from 1929 — that 'clean pine smell' is a generational memory (and a sensitizer source).", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Lysol All-Purpose", "brand": "Reckitt", "cat": "All-Purpose", "safe": null, "ings": ["Quaternary Ammonium", "Water", "Phenoxyisopropanol", "Ethanol", "Fragrance"], "heritage": true, "heritage_year": 1889, "heritage_note": "Sold since the 1889 flu era as 'household disinfectant'. Early formulas even contained cresol; generations of sickness-cleaning trust.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Fabuloso", "brand": "Colgate-Palmolive", "cat": "All-Purpose", "safe": null, "ings": ["Water", "Sodium Dodecylbenzenesulfonate", "Fragrance", "Sodium Laureth Sulfate", "Citric Acid"], "heritage": true, "heritage_year": 1980, "heritage_note": "Colgate's brightly colored multi-surface cleaner — a 1980s–90s kitchen fixture, passed down by scent loyalty.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Simple Green", "brand": "Sunshine Makers", "cat": "All-Purpose", "safe": null, "ings": ["Water", "Surfactant", "Tetrasodium Glutamate Diacetate", "Sodium Bicarbonate", "Fragrance"], "heritage": true, "heritage_year": 1975, "heritage_note": "The 1970s 'environmentally friendly' pioneer — one of the first green-label cleaners in ordinary homes.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Method All-Purpose", "brand": "SC Johnson", "cat": "Eco-Friendly", "safe": null, "ings": ["Water", "Decyl Glucoside", "Lauryl Glucoside", "Citric Acid", "Fragrance", "Limonene"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Mrs. Meyer's Multi-Surface", "brand": "SC Johnson", "cat": "Eco-Friendly", "safe": null, "ings": ["Water", "Sodium Citrate", "Decyl Glucoside", "Citric Acid", "Fragrance"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Seventh Gen All-Purpose", "brand": "Unilever", "cat": "Eco-Friendly", "safe": null, "ings": ["Water", "Octyl/Decyl Glucoside", "Sodium Citrate", "Citric Acid", "Essential Oils"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Clorox Bleach", "brand": "Clorox", "cat": "Disinfectant", "safe": null, "ings": ["Water", "Sodium Hypochlorite", "Sodium Chloride", "Sodium Hydroxide"], "heritage": true, "heritage_year": 1913, "heritage_note": "The original household disinfectant, in cupboards for 100+ years. Effective but carries respiratory + repro flags on routine indoor use.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Lysol Disinfectant Spray", "brand": "Reckitt", "cat": "Disinfectant", "safe": null, "ings": ["Ethanol", "Quaternary Ammonium", "Water", "Butane", "Propane", "Fragrance"], "heritage": true, "heritage_year": 1950, "heritage_note": "The aerosol that 'kills 99.9% of germs' — a 1950s icon passed down as the default sick-day spray.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Lysol Toilet Bowl", "brand": "Reckitt", "cat": "Toilet Cleaner", "safe": null, "ings": ["Hydrochloric Acid", "Water", "Fragrance"], "heritage": true, "heritage_year": 1930, "heritage_note": "The acid-based toilet cleaner many inherited without reading the label.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Scrubbing Bubbles", "brand": "SC Johnson", "cat": "Bathroom", "safe": null, "ings": ["Water", "Isobutane", "Benzalkonium Chloride", "Fragrance"], "heritage": true, "heritage_year": 1972, "heritage_note": "The 1970s bathroom spray that foamed 'up and at 'em' — a shower-scrub icon.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Comet Bathroom", "brand": "KIK", "cat": "Bathroom", "safe": null, "ings": ["Water", "Citric Acid", "Sodium Hydroxide", "Fragrance"], "heritage": true, "heritage_year": 1956, "heritage_note": "Comet cleanser (1956) — chlorinated scouring powder era, tub rings beware.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Tilex Mold & Mildew", "brand": "Clorox", "cat": "Bathroom", "safe": null, "ings": ["Water", "Sodium Hypochlorite", "Sodium Hydroxide", "Lauramine Oxide", "Fragrance"], "heritage": true, "heritage_year": 1980, "heritage_note": "The bleach-based mold spray that bathrooms across two generations have reached for without gloves.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Kaboom Foam-Tastic", "brand": "Church & Dwight", "cat": "Bathroom", "safe": null, "ings": ["Water", "Isobutane", "Lauramine Oxide", "Fragrance", "Sodium Hydroxide"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Clorox ToiletWand", "brand": "Clorox", "cat": "Toilet Cleaner", "safe": null, "ings": ["Water", "Glycolic Acid", "Sodium Lauryl Sulfate", "Fragrance"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Soft Scrub", "brand": "Henkel", "cat": "Abrasive", "safe": null, "ings": ["Limestone", "Sodium Hypochlorite", "Surfactant"], "heritage": true, "heritage_year": 1968, "heritage_note": "The 1968 gentle abrasive that replaced powders — 'liquid Comet', passed along as the safe scrubbing option.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Bar Keepers Friend", "brand": "BKF", "cat": "Specialty", "safe": null, "ings": ["Feldspar", "Oxalic Acid", "Sodium Dodecylbenzenesulfonate"], "heritage": true, "heritage_year": 1882, "heritage_note": "A stainless-steel polish from 1882 with a cult following that skipped generations entirely via word of mouth.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Pledge", "brand": "SC Johnson", "cat": "Polish", "safe": null, "ings": ["Water", "Isoparaffin", "Dimethicone", "Fragrance", "Limonene"], "heritage": true, "heritage_year": 1958, "heritage_note": "Lemon-oil furniture polish (1958) — the 'clean lemon smell' of living rooms for three generations.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Febreze", "brand": "P&G", "cat": "Fabric", "safe": null, "ings": ["Water", "Alcohol", "Hydroxypropyl Cyclodextrin", "Fragrance"], "heritage": true, "heritage_year": 1998, "heritage_note": "Younger than the rest, but already inherited: the 'spray the couch' reflex is now a household ritual.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Drano Max Gel", "brand": "SC Johnson", "cat": "Drain", "safe": null, "ings": ["Water", "Sodium Hypochlorite", "Sodium Hydroxide", "Lauramine Oxide"], "heritage": true, "heritage_year": 1923, "heritage_note": "Drano (1923) — the caustic drain unclogger every household inherited, lye and all.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "CLR", "brand": "Jelmar", "cat": "Specialty", "safe": null, "ings": ["Water", "Lactic Acid", "Gluconic Acid", "Lauramine Oxide"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Bon Ami", "brand": "Faultless", "cat": "Eco-Friendly", "safe": null, "ings": ["Calcium Carbonate", "Feldspar", "Sodium Carbonate", "Sodium Bicarbonate"], "heritage": true, "heritage_year": 1886, "heritage_note": "'Hasn't scratched yet' since 1886 — the feldspar-based powder that outlived every competitor.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Ajax Powder", "brand": "Colgate-Palmolive", "cat": "Abrasive", "safe": null, "ings": ["Calcium Carbonate", "Sodium Carbonate", "Sodium Dodecylbenzenesulfonate", "Trichloroisocyanuric Acid", "Fragrance"], "heritage": true, "heritage_year": 1947, "heritage_note": "The 1940s scouring powder with the knight — gritty, cheap, and grandma's cabinet standby.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Swiffer WetJet", "brand": "P&G", "cat": "Floor", "safe": null, "ings": ["Water", "Propylene Glycol Butyl Ether", "Didecyldimonium Chloride", "Fragrance"], "heritage": true, "heritage_year": 1999, "heritage_note": "P&G's mop reinvention — the modern 'clean floor' default already being handed down.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Green Works", "brand": "Clorox", "cat": "Eco-Friendly", "safe": null, "ings": ["Water", "Caprylyl/Capryl Glucoside", "Ethanol", "Citric Acid", "Limonene", "Fragrance"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "ECOS Dishmate", "brand": "ECOS", "cat": "Eco-Friendly", "safe": null, "ings": ["Water", "Sodium Coco-Sulfate", "Lauramine Oxide", "Phenoxyethanol", "Citric Acid"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Biokleen All-Purpose", "brand": "Biokleen", "cat": "Eco-Friendly", "safe": null, "ings": ["Water", "Sodium Lauryl Sulfate", "Cocamidopropyl Betaine", "Lauramine Oxide", "Limonene"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Dr. Bronner's Sal Suds", "brand": "Dr. Bronner's", "cat": "Eco-Friendly", "safe": null, "ings": ["Water", "Sodium Lauryl Sulfate", "Lauryl Glucoside", "Essential Oils", "Limonene"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Grove Co. Multi-Purpose", "brand": "Grove", "cat": "Eco-Friendly", "safe": null, "ings": ["Water", "Coco-Glucoside", "Lauramine Oxide", "Citric Acid", "Phenoxyethanol"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Dawn Ultra", "brand": "P&G", "cat": "Dish Soap", "safe": null, "ings": ["Water", "Sodium Lauryl Sulfate", "Sodium Laureth Sulfate", "Lauramine Oxide", "Fragrance", "Methylisothiazolinone"], "heritage": true, "heritage_year": 1973, "heritage_note": "Dawn (1973) — the dish soap that doubles as wildlife-cleanup icon; generations trust it on their greasiest pots.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Palmolive", "brand": "Colgate-Palmolive", "cat": "Dish Soap", "safe": null, "ings": ["Water", "Sodium Laureth Sulfate", "Sodium Lauryl Sulfate", "Lauramine Oxide", "Fragrance", "Methylisothiazolinone"], "heritage": true, "heritage_year": 1898, "heritage_note": "A brand since 1898 — 'Palmolive' dish liquid is literally a great-grandparent's soap.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Tide", "brand": "P&G", "cat": "Laundry", "safe": null, "ings": ["Water", "Alcohol Ethoxylate", "Sodium Laureth Sulfate", "Enzymes", "Fragrance"], "heritage": true, "heritage_year": 1946, "heritage_note": "The 1946 laundry breakthrough that became the default 'family detergent' for 80 years.", "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Gain", "brand": "P&G", "cat": "Laundry", "safe": null, "ings": ["Water", "Alcohol Ethoxylate", "Sodium Laureth Sulfate", "Fragrance"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Cascade", "brand": "P&G", "cat": "Dishwasher", "safe": null, "ings": ["Sodium Carbonate", "Sodium Percarbonate", "Sodium Silicate", "Enzymes", "Fragrance"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Finish", "brand": "Reckitt", "cat": "Dishwasher", "safe": null, "ings": ["Sodium Carbonate", "Sodium Percarbonate", "Sodium Silicate", "Enzymes", "Fragrance"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Arm & Hammer", "brand": "Church & Dwight", "cat": "Laundry", "safe": null, "ings": ["Water", "Sodium Carbonate", "Sodium Laureth Sulfate", "Fragrance", "Enzymes"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Seventh Gen Dish", "brand": "Unilever", "cat": "Dish Soap", "safe": null, "ings": ["Water", "Sodium Lauryl Sulfate", "Cocamidopropyl Betaine", "Lauramine Oxide", "Methylisothiazolinone"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Mrs. Meyer's Dish", "brand": "SC Johnson", "cat": "Dish Soap", "safe": null, "ings": ["Water", "Sodium Lauryl Sulfate", "Cocamidopropyl Betaine", "Fragrance", "Methylisothiazolinone"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Method Dish", "brand": "SC Johnson", "cat": "Dish Soap", "safe": null, "ings": ["Water", "Sodium Lauryl Sulfate", "Cocamidopropyl Betaine", "Fragrance", "Limonene", "Methylisothiazolinone"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Isopropyl Alcohol 70% (BMVC)", "brand": "Swan", "cat": "Disinfectant", "safe": null, "ings": ["Isopropyl Alcohol", "Water"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "18-in-1 Pure-Castile Soap, Peppermint (BMVC)", "brand": "Dr. Bronner's", "cat": "All-Purpose", "safe": null, "ings": ["Saponified Coconut Oil", "Saponified Olive Oil", "Organic Hemp Oil", "Organic Peppermint Oil", "Spring Water"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Essential Oil Spray (BMVC)", "brand": "Homemade", "cat": "All-Purpose", "safe": null, "ings": ["Spring Water", "Isopropyl Alcohol", "Tea Tree Oil", "Lavender Oil", "Lemon Oil", "Peppermint Oil", "Eucalyptus Oil"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Peppermint Pure Essential Oil (BMVC)", "brand": "Aura Cacia", "cat": "Essential Oil", "safe": null, "ings": ["Organic Peppermint Oil"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Organic Essential Oils Kit (BMVC)", "brand": "NOW Foods", "cat": "Essential Oil", "safe": null, "ings": ["Lavender Oil", "Peppermint Oil", "Tea Tree Oil", "Lemon Oil"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Granite & Stone Cleaner (BMVC)", "brand": "Ever Spring", "cat": "Surface Cleaner", "safe": null, "ings": ["Water", "Caprylyl Glucoside", "Sodium Citrate", "Myristyl Glucoside", "Plant-based surfactants", "Citric Acid", "Fragrance", "Mandarin Oil", "Ginger Extract"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Wood Surface Cleaner (BMVC)", "brand": "Ever Spring", "cat": "Surface Cleaner", "safe": null, "ings": ["Water", "Plant-based surfactants", "Fragrance", "Lemon Oil", "Mint Oil", "Basil Oil", "Geranium Oil", "Citric Acid", "Denatured Alcohol"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Power Cleaning Paste (BMVC)", "brand": "Norwex", "cat": "Physical", "safe": "EWG Verified", "ings": ["Calcium Carbonate", "Alumina", "Brassica Campestris Seed Oil", "Helianthus Annuus Seed Oil", "Water", "Potassium Carbonate", "Aloe Vera", "Citrus Aurantium Peel Oil", "Triethyl Citrate", "Dipterocarpus Wood Oil", "Limonene", "Citral"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Norwex Cloth + Water (BMVC)", "brand": "Norwex", "cat": "Physical", "safe": null, "ings": ["Norwex Cloth", "Spring Water"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Pumie Toilet Bowl Ring Remover (BMVC)", "brand": "Pumie", "cat": "Physical", "safe": null, "ings": ["Pumice Stone"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Dishwasher Pods Zero Plastic, Unscented", "brand": "AspenClean", "cat": "Dishwasher", "safe": "EWG Verified", "ings": ["Sodium Citrate", "Sodium Carbonate", "Sodium Carbonate Peroxide", "Decyl Glucoside", "Enzymes", "Sodium Chloride"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Zero Plastic Dishwasher Powder", "brand": "AspenClean", "cat": "Dishwasher", "safe": "EWG Verified", "ings": ["Sodium Citrate", "Sodium Carbonate", "Sodium Carbonate Peroxide", "Decyl Glucoside", "Enzymes"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Dishwasher Detergent, Fragrance-free", "brand": "Blueland", "cat": "Dishwasher", "safe": "EWG Verified, EPA Safer Choice, MADE SAFE", "ings": ["Plant-based surfactants", "Sodium Carbonate"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Dishwasher Tablets, Fragrance Free", "brand": "Branch Basics", "cat": "Dishwasher", "safe": "EWG Verified, MADE SAFE", "ings": ["Sodium Carbonate", "Sodium Carbonate Peroxide", "Sodium Bicarbonate", "Plant-based surfactants"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "UltraWash Dishwasher Pods", "brand": "Dropps", "cat": "Dishwasher", "safe": "EWG Verified", "ings": ["Sodium Carbonate", "Sodium Carbonate Peroxide", "Plant-based surfactants"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Dishwasher Gel, Free & Clear", "brand": "ECOS", "cat": "Dishwasher", "safe": "EWG Grade A, EPA Safer Choice", "ings": ["Plant-based surfactants", "Sodium Carbonate"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Laundry Detergent Pods, Eucalyptus & Rosemary", "brand": "AspenClean", "cat": "Laundry", "safe": "EWG Verified", "ings": ["Plant-based surfactants", "Sodium Carbonate", "Sodium Carbonate Peroxide", "Enzymes", "Essential Oils"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Laundry Detergent Pods, Unscented", "brand": "AspenClean", "cat": "Laundry", "safe": "EWG Verified", "ings": ["Plant-based surfactants", "Sodium Carbonate", "Sodium Carbonate Peroxide", "Enzymes"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Laundry Detergent, Unscented", "brand": "AspenClean", "cat": "Laundry", "safe": "EWG Verified", "ings": ["Plant-based surfactants", "Sodium Carbonate", "Enzymes"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Baby Laundry Detergent, Unscented", "brand": "ATTITUDE", "cat": "Laundry", "safe": "EWG Verified", "ings": ["Water", "Plant-based surfactants", "Sodium Citrate", "Oatmeal extract"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Liquid Laundry Detergent, Unscented", "brand": "ATTITUDE", "cat": "Laundry", "safe": "EWG Verified", "ings": ["Water", "Plant-based surfactants"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Oxi Booster Pods", "brand": "Dropps", "cat": "Laundry", "safe": "EWG Verified", "ings": ["Sodium Carbonate Peroxide", "Sodium Carbonate"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Laundry Powder", "brand": "Meliora", "cat": "Laundry", "safe": "MADE SAFE", "ings": ["Sodium Carbonate", "Sodium Percarbonate", "Sodium Bicarbonate"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Free & Clear Laundry Detergent", "brand": "Seventh Generation", "cat": "Laundry", "safe": "EPA Safer Choice, EWG Grade A", "ings": ["Plant-based surfactants", "Water", "Sodium Citrate"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Chlorine Free Bleach", "brand": "Seventh Generation", "cat": "Laundry", "safe": "EWG top-rated", "ings": ["Hydrogen Peroxide", "Water"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Super Washing Soda", "brand": "Arm & Hammer", "cat": "Laundry", "safe": "EWG top-rated", "ings": ["Sodium Carbonate"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Castile Soap, Peppermint", "brand": "Dr. Bronner's", "cat": "All-Purpose", "safe": "EWG Verified, USDA Organic", "ings": ["Water", "Saponified Coconut Oil", "Saponified Olive Oil", "Organic Hemp Oil", "Organic Peppermint Oil", "Citric Acid"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Castile Soap, Lavender", "brand": "Dr. Bronner's", "cat": "All-Purpose", "safe": "EWG Verified, USDA Organic", "ings": ["Water", "Saponified Coconut Oil", "Saponified Olive Oil", "Organic Hemp Oil", "Organic Lavender Oil", "Citric Acid"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Sal Suds Liquid Cleaner", "brand": "Dr. Bronner's", "cat": "All-Purpose", "safe": "EWG top-rated", "ings": ["Water", "Potassium Hydroxide", "Lauric Acid", "Sodium Lauryl Sulfate", "Rosemary Extract"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "All-Purpose Cleaner, Geranium & Lemongrass", "brand": "ATTITUDE", "cat": "All-Purpose", "safe": "EWG Verified", "ings": ["Water", "Sodium Bicarbonate", "Sodium Hydroxide", "Myristyl Glucoside", "Caprylyl Glucoside", "Citric Acid", "Tea Tree Oil", "Geranium Oil"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Daily Shower & Tile Cleaner, Citrus Zest", "brand": "ATTITUDE", "cat": "Bathroom", "safe": "EWG Verified", "ings": ["Water", "Plant-based surfactants", "Citrus essential oils"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Bathroom Cleaner Spray, Citrus Zest", "brand": "ATTITUDE", "cat": "Bathroom", "safe": "EWG Verified", "ings": ["Water", "Plant-based surfactants", "Citrus essential oils"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Bathroom Cleaner Spray, Unscented", "brand": "ATTITUDE", "cat": "Bathroom", "safe": "EWG Verified", "ings": ["Water", "Plant-based surfactants"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Floor Surface Cleaner, Citrus Zest", "brand": "ATTITUDE", "cat": "Floor", "safe": "EWG Verified", "ings": ["Water", "Plant-based surfactants", "Citrus essential oils"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Concentrate, Fragrance-Free", "brand": "Branch Basics", "cat": "All-Purpose", "safe": "EWG Verified, MADE SAFE", "ings": ["Water", "Sodium Citrate", "Decyl Glucoside", "Lauramine Oxide", "Sodium Phytate", "Citric Acid"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Oxygen Boost", "brand": "Branch Basics", "cat": "Laundry", "safe": "EWG Verified, MADE SAFE", "ings": ["Sodium Carbonate Peroxide", "Sodium Carbonate"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Gel Hand Soap", "brand": "Branch Basics", "cat": "Hand Soap", "safe": "EWG Verified", "ings": ["Water", "Plant-based surfactants", "Aloe Vera"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Bathroom Cleaner, Fresh", "brand": "Green Shield Organic", "cat": "Bathroom", "safe": "EWG top-rated", "ings": ["Plant-based surfactants", "Citric Acid"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Toilet Bowl Cleaner", "brand": "Green Shield Organic", "cat": "Toilet", "safe": "EWG top-rated", "ings": ["Plant-based surfactants", "Citric Acid"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "All-Purpose Degreaser, Fresh", "brand": "Green Shield Organic", "cat": "All-Purpose", "safe": "EWG top-rated", "ings": ["Plant-based surfactants", "Citric Acid"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Glass Cleaner Fresh", "brand": "Green Shield Organic", "cat": "Glass", "safe": "EWG top-rated", "ings": ["Plant-based surfactants", "Water"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Toilet Bowl Cleaner, Emerald Cypress & Fir", "brand": "Seventh Generation", "cat": "Toilet", "safe": "EWG top-rated, EPA Safer Choice", "ings": ["Plant-based surfactants", "Citric Acid", "Essential Oils"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Tub & Tile Cleaner, Emerald Cypress & Fir", "brand": "Seventh Generation", "cat": "Bathroom", "safe": "EWG top-rated", "ings": ["Plant-based surfactants", "Citric Acid", "Essential Oils"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Shower Kleener", "brand": "ECOS", "cat": "Bathroom", "safe": "EWG top-rated", "ings": ["Water", "Plant-based surfactants", "Citric Acid"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Toilet Kleener, Natural Cedar", "brand": "ECOS", "cat": "Toilet", "safe": "EWG top-rated", "ings": ["Water", "Plant-based surfactants", "Cedar essential oil"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Toilet Bowl Cleaner Pine Fresh", "brand": "Ecover", "cat": "Toilet", "safe": "EWG top-rated, EPA Safer Choice", "ings": ["Water", "Plant-based surfactants", "Pine essential oil"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Cream Scrub", "brand": "Ecover", "cat": "Abrasive", "safe": "EWG top-rated", "ings": ["Calcium Carbonate", "Plant-based surfactants", "Water"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Glass Cleaner, Unscented", "brand": "Whole Foods", "cat": "Glass", "safe": "EWG top-rated", "ings": ["Water", "Plant-based surfactants"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "All-Purpose Spray, Lemon Zest", "brand": "Whole Foods", "cat": "All-Purpose", "safe": "EWG top-rated", "ings": ["Plant-based surfactants", "Water"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "All-Purpose Surface Cleaner, Ginger Yuzu", "brand": "Method", "cat": "All-Purpose", "safe": "EWG top-rated, EPA Safer Choice", "ings": ["Water", "Decyl Glucoside", "Citric Acid"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Powder Cleanser", "brand": "Bon Ami", "cat": "Abrasive", "safe": "EWG top-rated", "ings": ["Limestone", "Feldspar", "Sodium Carbonate", "Sodium Bicarbonate"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Dishwashing Liquid, Hypo-Allergenic", "brand": "Planet", "cat": "Dish Soap", "safe": "EWG top-rated", "ings": ["Plant-based surfactants", "Water"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Dish Liquid, Unscented", "brand": "Better Life", "cat": "Dish Soap", "safe": "EWG top-rated", "ings": ["Plant-based surfactants", "Water"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Dish Liquid, Free & Clear", "brand": "Seventh Generation", "cat": "Dish Soap", "safe": "EPA Safer Choice", "ings": ["Plant-based surfactants", "Water"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "All-Purpose Cleaner, Free & Clear", "brand": "Seventh Generation", "cat": "All-Purpose", "safe": "EPA Safer Choice, EWG Grade B", "ings": ["Plant-based surfactants", "Water"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "All-Purpose Home Cleaner", "brand": "Meliora", "cat": "All-Purpose", "safe": "MADE SAFE", "ings": ["Water", "Potassium Oleate", "Potassium Citrate", "Glycerin"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Dish Soap", "brand": "Meliora", "cat": "Dish Soap", "safe": "MADE SAFE", "ings": ["Water", "Potassium Oleate", "Potassium Citrate", "Glycerin"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Laundry Detergent, Free & Clear", "brand": "Pure Natural", "cat": "Laundry", "safe": "MADE SAFE, USDA Biobased", "ings": ["Botanical surfactant"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Multi-Purpose Cleaner, Free & Clear", "brand": "Pure Natural", "cat": "All-Purpose", "safe": "MADE SAFE, USDA Biobased", "ings": ["Botanical surfactant"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Hand Soap, Meyer Lemon Mandarin", "brand": "Everyone", "cat": "Hand Soap", "safe": "EWG Verified", "ings": ["Water", "Plant-based surfactants", "Essential Oils"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Floor Cleaner", "brand": "Bona", "cat": "Floor", "safe": "EPA Safer Choice", "ings": ["Water", "Plant-based surfactants"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Concentrated All-Purpose", "brand": "Simple Green", "cat": "All-Purpose", "safe": "EPA Safer Choice", "ings": ["Water", "Surfactant", "Tetrasodium Glutamate Diacetate"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Calcium Lime Rust Cleaner", "brand": "CLR", "cat": "Specialty", "safe": "EWG top-rated, EPA Safer Choice", "ings": ["Lactic Acid", "Gluconic Acid", "Water"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "OxiClean Baby Stain Soaker", "brand": "OxiClean", "cat": "Laundry", "safe": "EWG top-rated", "ings": ["Sodium Carbonate Peroxide", "Sodium Carbonate"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Dishwasher Pacs, Free & Clear", "brand": "Seventh Generation", "cat": "Dishwasher", "safe": "EWG top-rated", "ings": ["Plant-based surfactants", "Sodium Carbonate", "Enzymes"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Dishwasher Powder, Free & Clear", "brand": "Seventh Generation", "cat": "Dishwasher", "safe": "EWG top-rated", "ings": ["Plant-based surfactants", "Sodium Carbonate", "Enzymes"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Wave Dishwashing Gel Lavender", "brand": "ECOS", "cat": "Dishwasher", "safe": "EWG top-rated", "ings": ["Plant-based surfactants", "Lavender essential oil"], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Glass Cleaner Concentrate 1A", "brand": "3M", "cat": "Glass (Commercial)", "safe": "Green Seal", "ings": [], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Focus MP 11 Multi-Purpose", "brand": "Focus", "cat": "All-Purpose (Commercial)", "safe": "Green Seal", "ings": [], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Green Link Multi-Clean Degreaser", "brand": "Zep", "cat": "All-Purpose (Commercial)", "safe": "Green Seal", "ings": [], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Green Link Neutral Floor Cleaner", "brand": "Zep", "cat": "Floor (Commercial)", "safe": "Green Seal", "ings": [], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "HOST Dry Carpet Cleaner", "brand": "HOST", "cat": "Carpet", "safe": "Green Seal", "ings": [], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "Carpet & Upholstery Concentrate", "brand": "Procyon", "cat": "Carpet", "safe": "Green Seal", "ings": [], "heritage": false, "added": "2026-08-18", "updated": "2026-08-18"}, {"name": "20 Mule Team Borax (BMVC)", "brand": "20 Mule Team", "cat": "Laundry", "safe": null, "ings": ["Sodium Tetraborate"], "heritage": true, "heritage_year": 1891, "heritage_note": "Mined in Death Valley and hauled by 20-mule teams since 1891 — the all-purpose laundry booster grandma swore by. Still in most US grocery aisles; restricted across the EU for reproductive toxicity.", "added": "2026-08-28", "updated": "2026-08-28"}];
+const INGS = {"Water": {"g": "null", "s": "No hazard", "ev": "High", "gr": {}, "impacts": [], "note": null}, "Spring Water": {"g": "null", "s": "No hazard", "ev": "High", "gr": {}, "impacts": [], "note": null}, "Fragrance": {"g": "H317", "s": "May cause allergic skin reaction", "ev": "Low", "gr": {"derm": "D", "repro": "C", "endo": "D", "canc": "C"}, "impacts": ["allerg", "endo", "repro"], "reclassified": ["'Fragrance' was historically treated as one harmless scent note; undisclosed blends routinely contain phthalates & synthetic musks — endocrine/repro flags (Prop 65 phthalates) and contact allergens."], "note": "Undisclosed blend. Hazards assigned from documented fragrance-carrier chemistry (phthalates, musks), not the specific formula."}, "Citric Acid": {"g": "H319", "s": "Eye irritant", "ev": "High", "gr": {"derm": "C"}, "impacts": ["derm"], "note": null}, "Glycolic Acid": {"g": "H314", "s": "Corrosive", "ev": "High", "gr": {"derm": "D"}, "impacts": ["derm"], "note": null}, "Lactic Acid": {"g": "H315", "s": "Skin irritant", "ev": "High", "gr": {"derm": "C"}, "impacts": [], "note": null}, "Sodium Carbonate": {"g": "H319", "s": "Eye irritant", "ev": "High", "gr": {"derm": "B"}, "impacts": ["derm"], "note": null}, "Sodium Bicarbonate": {"g": "null", "s": "Low hazard", "ev": "High", "gr": {}, "impacts": [], "note": null}, "Calcium Carbonate": {"g": "null", "s": "Chalk/limestone, mild abrasive, no hazard", "ev": "High", "gr": {"derm": "A"}, "impacts": [], "note": null}, "Feldspar": {"g": "null", "s": "Natural abrasive, low hazard", "ev": "High", "gr": {}, "impacts": [], "note": null}, "Limestone": {"g": "null", "s": "Natural abrasive, low hazard", "ev": "High", "gr": {}, "impacts": [], "note": null}, "Decyl Glucoside": {"g": "null", "s": "Plant-derived surfactant, biodegradable", "ev": "Low", "gr": {"derm": "B"}, "impacts": [], "note": null}, "Lauryl Glucoside": {"g": "null", "s": "Plant-derived surfactant, biodegradable", "ev": "Low", "gr": {"derm": "B"}, "impacts": [], "note": null}, "Methylisothiazolinone": {"g": "H317", "s": "Strong skin sensitizer, preservative", "ev": "High", "gr": {"derm": "D", "resp": "C", "repro": "C"}, "impacts": ["allerg", "derm", "resp"], "reclassified": ["MIT was the 'safe' preservative replacing parabens; became 2013 'Allergen of the Year' — epidemic of allergic contact dermatitis, now restricted in leave-on products (EU)."], "note": null}, "Propylene Glycol": {"g": "null", "s": "Low hazard solvent", "ev": "High", "gr": {"derm": "A", "repro": "B"}, "impacts": ["derm"], "note": "Low acute hazard; mild skin irritant at high concentration."}, "Enzymes": {"g": "null", "s": "Biological catalysts, may cause respiratory sensitization", "ev": "High", "gr": {"resp": "D", "repro": "B"}, "impacts": ["allerg", "resp"], "reclassified": ["Enzymes were added to laundry products as 'natural' boosters; they are potent respiratory sensitizers — industry adopted encapsulation after occupational asthma outbreaks (1970s)."], "note": "Encapsulated in modern products to reduce aerosolization."}, "Tetrasodium Glutamate Diacetate": {"g": "null", "s": "Chelating agent, low hazard", "ev": "Low", "gr": {}, "impacts": [], "note": null}, "Norwex Cloth": {"g": "null", "s": "Microfiber cloth, no chemicals", "ev": "High", "gr": {}, "impacts": [], "note": null}, "Pumice Stone": {"g": "null", "s": "Natural volcanic rock, no chemicals", "ev": "High", "gr": {}, "impacts": [], "note": null}, "Sodium Citrate": {"g": "null", "s": "Food-grade preservative, low hazard", "ev": "High", "gr": {"derm": "A"}, "impacts": [], "note": null}, "Sodium Phytate": {"g": "null", "s": "Plant-derived chelating agent, low hazard", "ev": "Low", "gr": {}, "impacts": [], "note": null}, "Myristyl Glucoside": {"g": "null", "s": "Plant-derived surfactant, biodegradable", "ev": "Low", "gr": {"derm": "B"}, "impacts": [], "note": null}, "Caprylyl Glucoside": {"g": "null", "s": "Plant-derived surfactant, biodegradable", "ev": "Low", "gr": {"derm": "B"}, "impacts": [], "note": null}, "Coco-Glucoside": {"g": "null", "s": "Plant-derived surfactant, biodegradable", "ev": "Low", "gr": {"derm": "B"}, "impacts": [], "note": null}, "Potassium Citrate": {"g": "null", "s": "Food-grade, low hazard", "ev": "High", "gr": {}, "impacts": [], "note": null}, "Glycerin": {"g": "null", "s": "Plant-derived humectant, low hazard", "ev": "High", "gr": {"derm": "A"}, "impacts": [], "note": null}, "Saponified Coconut Oil": {"g": "null", "s": "Saponified oils, mild soap", "ev": "Low", "gr": {"derm": "B"}, "impacts": [], "note": null}, "Saponified Olive Oil": {"g": "null", "s": "Saponified oils, mild soap", "ev": "Low", "gr": {"derm": "B"}, "impacts": [], "note": null}, "Organic Hemp Oil": {"g": "null", "s": "Natural oil, no hazard", "ev": "High", "gr": {}, "impacts": [], "note": null}, "Rosemary Extract": {"g": "null", "s": "Natural antioxidant, no hazard", "ev": "High", "gr": {}, "impacts": [], "note": null}, "Aloe Vera": {"g": "null", "s": "Natural soothing agent, no hazard", "ev": "High", "gr": {}, "impacts": [], "note": null}, "Botanical surfactant": {"g": "null", "s": "Plant-derived saponins, low hazard", "ev": "Low", "gr": {"derm": "B"}, "impacts": [], "note": null}, "Plant-based surfactants": {"g": "null", "s": "Plant-derived, biodegradable", "ev": "Low", "gr": {"derm": "B"}, "impacts": [], "note": null}, "Oatmeal extract": {"g": "null", "s": "Soothing skin protectant, no hazard", "ev": "High", "gr": {}, "impacts": [], "note": null}, "Vitamin E": {"g": "null", "s": "Natural antioxidant, no hazard", "ev": "High", "gr": {}, "impacts": [], "note": null}, "Sodium Chloride": {"g": "null", "s": "Table salt, no hazard in cleaning context", "ev": "High", "gr": {}, "impacts": [], "note": null}, "Alkaline Silicate": {"g": "H319", "s": "Eye irritant, low overall hazard", "ev": "High", "gr": {"derm": "B"}, "impacts": ["derm"], "note": null}, "Alumina": {"g": "null", "s": "Natural abrasive, low hazard in cleaning paste form", "ev": "High", "gr": {"derm": "A"}, "impacts": [], "note": null}, "Brassica Campestris Seed Oil": {"g": "null", "s": "Field mustard seed oil, natural emollient", "ev": "High", "gr": {"derm": "A"}, "impacts": [], "note": null}, "Helianthus Annuus Seed Oil": {"g": "null", "s": "Sunflower seed oil, natural emollient", "ev": "High", "gr": {"derm": "A"}, "impacts": [], "note": null}, "Triethyl Citrate": {"g": "null", "s": "Food-grade plasticizer, low hazard", "ev": "High", "gr": {"derm": "A"}, "impacts": [], "note": null}, "Ginger Extract": {"g": "null", "s": "Natural plant extract, low hazard", "ev": "High", "gr": {"derm": "A"}, "impacts": [], "note": null}, "Isopropanol": {"g": "H225,H319,H336", "s": "Flammable, eye irritant, drowsiness", "ev": "High", "gr": {"derm": "B", "resp": "C", "work": "C", "repro": "B"}, "impacts": ["derm", "resp"], "note": null}, "Isopropyl Alcohol": {"g": "H225,H319,H336", "s": "Flammable, eye irritant, drowsiness", "ev": "High", "gr": {"derm": "B", "resp": "C", "work": "C", "repro": "B"}, "impacts": ["derm", "resp"], "note": null}, "Ethanol": {"g": "H225,H319", "s": "Highly flammable, eye irritant", "ev": "High", "gr": {"derm": "B", "work": "C", "repro": "D"}, "impacts": ["repro"], "reclassified": ["Ethanol was long marketed as a harmless 'natural' solvent; high-exposure studies documented fetal harm (FAS), and occupational exposure is now treated more cautiously."], "note": null}, "Sodium Hypochlorite": {"g": "H314,H318,H400", "s": "Corrosive, severe eye damage, aquatic toxicity", "ev": "High", "gr": {"derm": "F", "env": "F", "work": "D", "resp": "C"}, "impacts": ["aqua", "derm", "resp"], "reclassified": ["Bleach was the unquestioned household standard for a century; occupational cohorts (cleaning workers, nurses) later linked routine bleach exposure to asthma & COPD risk."], "note": null}, "Sodium Hydroxide": {"g": "H290,H314,H318", "s": "Corrosive, severe burns", "ev": "High", "gr": {"derm": "F", "work": "D", "repro": "B"}, "impacts": ["derm"], "note": null}, "Hydrochloric Acid": {"g": "H290,H314,H335", "s": "Corrosive, respiratory irritant", "ev": "High", "gr": {"derm": "F", "resp": "D", "work": "D", "repro": "B"}, "impacts": ["derm", "resp"], "note": null}, "Quaternary Ammonium": {"g": "H302,H314,H400", "s": "Harmful if swallowed, corrosive, aquatic toxicity", "ev": "High", "gr": {"derm": "F", "env": "F", "work": "D", "resp": "C", "repro": "C"}, "impacts": ["allerg", "aqua", "derm", "resp"], "reclassified": ["Quats surged as 'safe' germ killers; occupational studies linked them to asthma & allergic sensitization; EPA registration review ongoing."], "note": null}, "Benzalkonium Chloride": {"g": "H302,H314,H400", "s": "Harmful if swallowed, corrosive, aquatic toxicity", "ev": "High", "gr": {"derm": "F", "env": "F", "work": "D", "resp": "C", "repro": "C"}, "impacts": ["allerg", "aqua", "derm", "resp"], "reclassified": ["Benzalkonium chloride was a go-to 'mild' disinfectant; animal repro studies + occupational asthma reports led to stricter limits & allergy labeling."], "note": null}, "Sodium Lauryl Sulfate": {"g": "H228,H302,H315,H319,H335", "s": "Flammable solid, skin/eye irritant", "ev": "High", "gr": {"derm": "C", "resp": "C", "work": "C", "repro": "C"}, "impacts": ["derm", "repro"], "reclassified": ["SLS was once marketed as 'safe enough to brush your teeth with'; stripping studies & 1,4-dioxane contamination concerns (from ethoxylation variants) later tempered that."], "note": null}, "Sodium Laureth Sulfate": {"g": "H315,H319", "s": "Skin and eye irritant", "ev": "High", "gr": {"derm": "C", "repro": "C", "canc": "C"}, "impacts": ["derm", "repro", "canc"], "reclassified": ["SLES replaced SLS as 'gentler'; ethoxylation introduces trace 1,4-dioxane (IARC 2B probable carcinogen) — a contaminant, not an ingredient."], "note": null}, "Limonene": {"g": "H226,H304,H315,H317,H400", "s": "Flammable, skin sensitizer, aspiration hazard, aquatic toxicity", "ev": "High", "gr": {"derm": "D", "resp": "D", "env": "F", "repro": "B"}, "impacts": ["allerg", "aqua", "derm", "resp"], "reclassified": ["Citrus limonene was sold as the 'natural' scent; on air exposure it oxidizes into potent sensitizers (limonene hydroperoxides) — now a known contact-allergen source."], "note": null}, "Lauramine Oxide": {"g": "H315,H319", "s": "Skin and eye irritant", "ev": "High", "gr": {"derm": "C"}, "impacts": ["derm"], "note": null}, "Oxalic Acid": {"g": "H302,H312", "s": "Harmful if swallowed or contacted", "ev": "High", "gr": {"derm": "D", "organ": "D", "repro": "C"}, "impacts": ["derm", "repro"], "note": null}, "Sodium Percarbonate": {"g": "H271,H302,H318", "s": "Oxidizer, harmful if swallowed, severe eye damage", "ev": "High", "gr": {"derm": "D", "work": "C"}, "impacts": ["aqua", "derm"], "note": null}, "Castile Soap": {"g": "H315,H319", "s": "Mild skin/eye irritant, biodegradable", "ev": "Low", "gr": {"derm": "C"}, "impacts": [], "note": null}, "Tea Tree Oil": {"g": "H304,H315,H317,H335,H412", "s": "Skin sensitizer, aspiration hazard, respiratory irritant", "ev": "Low", "gr": {"derm": "D", "resp": "C", "repro": "C"}, "impacts": ["allerg", "derm", "resp"], "reclassified": ["Tea tree oil rode the 'natural = safe' wave; it is a documented contact sensitizer (oxidized forms) and has rare prepubertal gynecomastia case reports (weak endocrine signal)."], "note": null}, "Lavender Oil": {"g": "H315,H317,H319", "s": "Skin sensitizer and irritant", "ev": "Low", "gr": {"derm": "D", "repro": "C", "endo": "C"}, "impacts": ["allerg", "endo"], "reclassified": ["Lavender oil, once 'calming & innocent', has case reports linking topical use to prepubertal gynecomastia (weak, possible endocrine activity); a registered contact allergen."], "note": null}, "Lemon Oil": {"g": "H226,H304,H315,H317,H400", "s": "Flammable, sensitizer, aquatic toxicity", "ev": "Low", "gr": {"derm": "D", "env": "F"}, "impacts": ["allerg", "aqua", "derm"], "note": null}, "Peppermint Oil": {"g": "H315,H317,H319,H335", "s": "Skin/eye irritant, respiratory irritant", "ev": "Low", "gr": {"derm": "D", "resp": "C"}, "impacts": ["allerg", "derm", "resp"], "note": null}, "Eucalyptus Oil": {"g": "H304,H315,H317,H335", "s": "Skin sensitizer, respiratory irritant, toxic to pets", "ev": "Low", "gr": {"derm": "D", "resp": "C"}, "impacts": ["allerg", "derm", "resp"], "note": null}, "Sodium Coco-Sulfate": {"g": "H315,H319", "s": "Plant-derived surfactant, skin/eye irritant", "ev": "Low", "gr": {"derm": "C"}, "impacts": ["derm"], "note": null}, "Cocamidopropyl Betaine": {"g": "H315,H319", "s": "Mild surfactant, skin/eye irritant", "ev": "High", "gr": {"derm": "B"}, "impacts": ["allerg", "derm"], "reclassified": ["CAPB replaced harsher surfactants as 'gentle'; became a common contact allergen (amide impurities) — now on many allergen patch panels."], "note": null}, "Benzisothiazolinone": {"g": "H302,H315,H317,H400", "s": "Harmful if swallowed, skin irritant, aquatic toxicity", "ev": "High", "gr": {"derm": "D", "env": "D", "resp": "C", "repro": "C"}, "impacts": ["allerg", "aqua", "derm"], "reclassified": ["BIT, a cousin of MIT, followed the same arc: marketed safe, became a recognized sensitizer with occupational dermatitis reports."], "note": null}, "Phenoxyethanol": {"g": "H302,H315,H319", "s": "Harmful if swallowed, skin/eye irritant", "ev": "High", "gr": {"derm": "C", "repro": "C"}, "impacts": ["derm"], "reclassified": ["Phenoxyethanol replaced parabens as 'clean' preservative; repro/developmental flags in animal studies led to EU restrictions in cosmetics (2012)."], "note": null}, "Butyloxyethanol": {"g": "H302,H315,H319", "s": "Harmful if swallowed, skin/eye irritant", "ev": "High", "gr": {"derm": "D", "work": "C", "repro": "D", "resp": "C"}, "impacts": ["derm", "repro", "resp"], "reclassified": ["2-Butoxyethanol (EGBE) was once in every window & all-purpose cleaner as a 'safe' solvent; CA Prop 65 lists it for reproductive/developmental harm; EPA risk reviews followed."], "note": null}, "Ammonium Hydroxide": {"g": "H314,H318", "s": "Corrosive, severe eye damage", "ev": "High", "gr": {"derm": "D", "work": "C", "resp": "C", "repro": "C"}, "impacts": ["derm", "resp"], "reclassified": ["Ammonia was grandma's go-to; strong respiratory irritant, and mixing with bleach produces chloramine gas — a documented household emergency."], "note": null}, "Alcohol Ethoxylate": {"g": "H315,H319", "s": "Skin/eye irritant, surfactant", "ev": "High", "gr": {"derm": "C", "repro": "C"}, "impacts": ["aqua", "derm", "repro"], "reclassified": ["Ethoxylated surfactants can carry trace 1,4-dioxane (IARC 2B probable carcinogen) from manufacturing — process contaminant, not on the label."], "note": null}, "Trichloroisocyanuric Acid": {"g": "H271,H302,H319,H410", "s": "Oxidizer, harmful, aquatic toxicity", "ev": "High", "gr": {"derm": "D", "env": "F"}, "impacts": ["aqua", "derm"], "note": null}, "Sodium Carbonate Peroxide": {"g": "H271,H302,H318", "s": "Oxidizer, harmful if swallowed, severe eye damage", "ev": "High", "gr": {"derm": "D", "work": "C"}, "impacts": ["derm"], "note": null}, "Potassium Oleate": {"g": "H315,H319", "s": "Potassium salt of oleic acid, mild irritant", "ev": "Low", "gr": {"derm": "C"}, "impacts": ["derm"], "note": null}, "Organic Peppermint Oil": {"g": "H315,H317", "s": "May cause skin sensitization", "ev": "Low", "gr": {"derm": "C"}, "impacts": ["allerg"], "note": null}, "Organic Lavender Oil": {"g": "H315,H317", "s": "May cause skin sensitization", "ev": "Low", "gr": {"derm": "C"}, "impacts": ["allerg"], "note": null}, "Essential Oils": {"g": "H315,H317", "s": "May cause skin sensitization. Varies by oil type.", "ev": "Low", "gr": {"derm": "C"}, "impacts": ["allerg"], "note": "Varies widely by oil; sensitization is the common thread."}, "Citrus essential oils": {"g": "H315,H317", "s": "May cause skin sensitization. Contains limonene.", "ev": "Low", "gr": {"derm": "C"}, "impacts": ["allerg", "derm"], "note": null}, "Cedar essential oil": {"g": "H315,H317", "s": "May cause skin sensitization", "ev": "Low", "gr": {"derm": "C"}, "impacts": ["allerg"], "note": null}, "Pine essential oil": {"g": "H315,H317", "s": "May cause skin sensitization", "ev": "Low", "gr": {"derm": "C"}, "impacts": ["allerg", "resp"], "note": null}, "Lavender essential oil": {"g": "H315,H317", "s": "May cause skin sensitization", "ev": "Low", "gr": {"derm": "C"}, "impacts": ["allerg", "endo"], "note": null}, "Geranium Oil": {"g": "H315,H317", "s": "May cause skin sensitization", "ev": "Low", "gr": {"derm": "C"}, "impacts": ["allerg"], "note": null}, "Potassium Hydroxide": {"g": "H290,H314,H318", "s": "Corrosive in pure form, but neutralized in final product", "ev": "High", "gr": {"derm": "B"}, "impacts": ["derm"], "note": "Corrosive in pure form; neutralized in finished products."}, "Lauric Acid": {"g": "H315,H319", "s": "Fatty acid, mild irritant", "ev": "High", "gr": {"derm": "B"}, "impacts": [], "note": null}, "Potassium Carbonate": {"g": "H315,H319", "s": "Mild alkali, can cause skin/eye irritation in pure form", "ev": "High", "gr": {"derm": "B"}, "impacts": ["derm"], "note": null}, "Dipterocarpus Wood Oil": {"g": "H315,H317", "s": "Natural essential oil, may cause sensitization", "ev": "Low", "gr": {"derm": "C"}, "impacts": ["allerg"], "note": null}, "Citral": {"g": "H315,H317,H319", "s": "Fragrance allergen, occurs naturally in citrus oils", "ev": "Low", "gr": {"derm": "D"}, "impacts": ["allerg", "derm"], "note": null}, "Mandarin Oil": {"g": "H315,H317", "s": "Citrus essential oil, may cause sensitization", "ev": "Low", "gr": {"derm": "C"}, "impacts": ["allerg"], "note": null}, "Mint Oil": {"g": "H315,H317", "s": "Essential oil, may cause sensitization", "ev": "Low", "gr": {"derm": "C"}, "impacts": ["allerg"], "note": null}, "Basil Oil": {"g": "H315,H317", "s": "Essential oil, may cause sensitization", "ev": "Low", "gr": {"derm": "C"}, "impacts": ["allerg"], "note": null}, "Denatured Alcohol": {"g": "H225,H319", "s": "Ethanol denatured with bitterants, flammable, eye irritant", "ev": "High", "gr": {"derm": "C", "work": "C", "repro": "D"}, "impacts": ["derm", "repro"], "reclassified": ["Denatured alcohol is ethanol + bitterants; inherits ethanol's high-exposure repro flags. Often the hidden volatile in 'natural' spray cleaners."], "note": null}, "Citrus Aurantium Peel Oil": {"g": "H315,H317", "s": "Bitter orange peel oil, may cause sensitization", "ev": "Low", "gr": {"derm": "C"}, "impacts": ["allerg"], "note": null}, "Ethanolamine": {"g": "H312,H332,H319", "s": "Corrosive amine. Occupational asthma documented in cleaners (meta-analyses).", "ev": "Medium", "gr": {"derm": "C", "resp": "D", "work": "C"}, "impacts": ["resp", "derm"], "note": null}, "Surfactant": {"g": null, "s": "Undisclosed surfactant blend — cannot assess specific hazards.", "ev": "Low", "gr": {}, "impacts": [], "note": "Undisclosed blend; generic placeholder used when the true surfactant is unknown."}, "Caprylyl/Capryl Glucoside": {"g": null, "s": "Plant-derived glucoside surfactant, biodegradable, mild.", "ev": "Low", "gr": {"derm": "B"}, "impacts": ["derm"], "note": null}, "Dimethicone": {"g": null, "s": "Silicone polymer. Low hazard, persistent in environment.", "ev": "Medium", "gr": {"derm": "A"}, "impacts": ["aqua"], "note": "Not acutely toxic but poorly biodegradable; accumulates."}, "Butane": {"g": "H220,H280", "s": "Extremely flammable propellant gas. Simple asphyxiant in confined spaces.", "ev": "High", "gr": {"work": "C"}, "impacts": [], "note": null}, "Alkyldimethylamine Oxide": {"g": "H315,H318", "s": "Amine oxide surfactant. Skin/eye irritant.", "ev": "Medium", "gr": {"derm": "D"}, "impacts": ["derm"], "note": null}, "Hydrogen Peroxide": {"g": "H314,H318,H412", "s": "Corrosive oxidizer. Severe eye damage, aquatic toxicity.", "ev": "High", "gr": {"derm": "F", "env": "C", "work": "D"}, "impacts": ["aqua", "derm"], "note": null}, "Hydroxypropyl Cyclodextrin": {"g": null, "s": "Modified starch ring that traps odor molecules. Low hazard.", "ev": "Medium", "gr": {"derm": "A"}, "impacts": [], "note": null}, "Alcohol": {"g": "H225,H319", "s": "Generic alcohol (usually ethanol or isopropanol). Flammable, eye irritant.", "ev": "Low", "gr": {"derm": "B", "work": "C"}, "impacts": [], "note": null}, "Octyl/Decyl Glucoside": {"g": null, "s": "Plant-derived glucoside surfactant, biodegradable, mild.", "ev": "Low", "gr": {"derm": "B"}, "impacts": [], "note": null}, "Propane": {"g": "H220,H280", "s": "Extremely flammable propellant gas. Simple asphyxiant in confined spaces.", "ev": "High", "gr": {"work": "C"}, "impacts": [], "note": null}, "Propylene Glycol Butyl Ether": {"g": "H302,H315,H319", "s": "Glycol ether solvent. Repro/developmental concern (glycol ether class, EPA/Prop 65 flagged 2-butoxyethanol cousin).", "ev": "Medium", "gr": {"derm": "D", "repro": "C", "work": "C"}, "impacts": ["repro", "derm"], "reclassified": ["Glycol ethers were promoted as 'safe' replacements for banned solvents (1970s–90s); regulation & Prop 65 listings later flagged reproductive/developmental harm in the class."], "note": null}, "Gluconic Acid": {"g": null, "s": "Mild chelating acid. Low hazard.", "ev": "Medium", "gr": {"derm": "B"}, "impacts": [], "note": null}, "Sodium Dodecylbenzenesulfonate": {"g": "H302,H315,H318,H412", "s": "Anionic surfactant (linear alkylbenzene sulfonate). Skin/eye irritant, aquatic toxicity.", "ev": "Medium", "gr": {"derm": "D", "env": "C"}, "impacts": ["derm", "aqua"], "note": null}, "Alcohol Ethoxylates": {"g": "H315,H319,H412", "s": "Ethoxylated surfactant family. Skin/eye irritant; 1,4-dioxane contaminant trace concern from ethoxylation.", "ev": "Medium", "gr": {"derm": "C", "env": "C", "canc": "C"}, "impacts": ["derm", "aqua", "canc"], "reclassified": ["Ethoxylated surfactants (SLES, alcohol ethoxylates) can carry trace 1,4-dioxane — a byproduct EPA flagged as a probable human carcinogen (IARC 2B). Not an added ingredient; a process contaminant."], "note": null}, "Didecyldimonium Chloride": {"g": "H302,H314,H400", "s": "Quaternary ammonium (DDAC). Corrosive, aquatic toxicity, respiratory sensitizer in occupational use.", "ev": "Medium", "gr": {"derm": "F", "resp": "C", "env": "F", "work": "D"}, "impacts": ["resp", "derm", "aqua", "allerg"], "reclassified": ["Quats (quaternary ammonium disinfectants) surged in use mid-20th c. as 'safe' germ killers; occupational studies later linked them to asthma & allergic sensitization."], "note": null}, "Isoparaffin": {"g": "H226,H304", "s": "Petroleum-derived solvent blend. Flammable, aspiration hazard.", "ev": "Medium", "gr": {"resp": "C", "work": "B"}, "impacts": ["resp"], "note": null}, "Phenoxyisopropanol": {"g": "H315,H319", "s": "Glycol ether-like solvent. Skin/eye irritant; glycol ether class repro flags.", "ev": "Low", "gr": {"derm": "C", "repro": "C"}, "impacts": ["repro", "derm"], "note": null}, "Isobutane": {"g": "H220,H280", "s": "Extremely flammable propellant gas. Simple asphyxiant in confined spaces.", "ev": "High", "gr": {"work": "C"}, "impacts": [], "note": null}, "Sodium Silicate": {"g": "H314,H335", "s": "Alkaline silicate. Corrosive; dust respiratory irritant.", "ev": "Medium", "gr": {"derm": "D", "resp": "C", "work": "C"}, "impacts": ["resp", "derm"], "note": null}, "Sodium Tetraborate": {"g": "H360FD,H319", "s": "Borax (sodium tetraborate decahydrate). EU/CLP-classified reproductive toxicant 1B (H360FD); eye irritant. US allows in household products.", "ev": "High", "gr": {"repro": "F", "derm": "C", "work": "D"}, "impacts": ["repro"], "reclassified": ["Borax was the 19th-century 'miracle cleaner' — cheap, effective, universally trusted. EU CLP classified it Reproductive toxicant 1B (H360FD) in 2010; it is restricted across Europe while the US still sells it off the shelf."], "note": "The catch-up poster child: identical GHS hazard classification on both sides of the Atlantic, opposite regulatory outcomes."}};
+const CHANGELOG = [{"date": "2026-08-28", "text": "Added global regulatory layer — the planet's verdict: which ingredients the EU/UK/Canada/Japan have banned or restricted while the US still allows them, with reasons. Includes catch-up scoreboard, watch list, and Borax as the showcase heritage-vs-EU case."}, {"date": "2026-08-28", "text": "v2 overhaul — search by health impact (respiratory, reproductive, endocrine, skin, aquatic, cancer, allergen), heritage 'grandma's cupboard' layer, 'once safe, now flagged' reclassified warnings, 110 documented ingredients (20 gaps closed)."}, {"date": "2026-08-19", "text": "BMVC products updated with real ingredient lists from Sandra's cleaning kit (heritage + homemade formulas)."}, {"date": "2026-08-18", "text": "First public build — 115 products, 90 ingredients, A-F transparent grading with evidence labels, genetic sensitivity layer preview."}];
+const META = {"products": 116, "ingredients": 111, "reclassified": 23, "heritage": 25, "safe": 64, "restricted_anywhere": 17, "last_updated": "2026-08-28", "built_at": "2026-08-28 18:58 UTC", "tagline": "A living database of cleaning products — graded ingredient by ingredient, updated regularly."};
+const REG = {"regions": {"eu": {"name": "European Union", "flag": "🇪🇺", "blurb": "Regulates via REACH, CLP, and the Cosmetics Regulation — the world's strictest chemical framework. Often years ahead of US federal action."}, "uk": {"name": "United Kingdom", "flag": "🇬🇧", "blurb": "Retained EU chemicals law post-Brexit (UK REACH); continues banning/restricting in lockstep with the EU."}, "ca": {"name": "Canada", "flag": "🇨🇦", "blurb": "Health Canada restricts cosmetics/consumer chemicals; lists under CEPA, often ahead of the US."}, "jp": {"name": "Japan", "flag": "🇯🇵", "blurb": "CSCL + cosmetics standards; restricts several preservatives and allergens the US allows."}, "us": {"name": "United States", "flag": "🇺🇸", "blurb": "No federal cosmetics ban list; EPA registration + CA Prop 65 are the main levers. Prop 65 (California) often outruns the FDA."}}, "entries": {"Methylisothiazolinone": [{"region": "eu", "status": "restricted", "since": "2017", "rule": "EU Cosmetics Reg. Annex V — 15 ppm max in leave-on products (was 100). Effectively banned in leave-on cosmetics.", "reason": "Epidemic of allergic contact dermatitis — named Contact Allergen of the Year 2013. Dermatology clinics saw mass patch-test spikes from wet wipes and cosmetics.", "confidence": "High"}, {"region": "ca", "status": "restricted", "since": "2017", "rule": "Health Canada aligned with the EU: 15 ppm cap in leave-on cosmetics.", "reason": "Same allergic-contact-dermatitis epidemic, mirrored across North American patch-test data.", "confidence": "High"}], "Benzisothiazolinone": [{"region": "eu", "status": "restricted", "since": "2017", "rule": "EU Cosmetics Reg. — rinse-off use only; prohibited in leave-on products; labeled as a sensitizer.", "reason": "Cross-reacting isothiazolinone; occupational contact dermatitis (paints, cleaners) and consumer allergy burden.", "confidence": "Medium"}], "Quaternary Ammonium": [{"region": "eu", "status": "review", "since": "2013", "rule": "EU Biocidal Products Regulation — quats (incl. DDAC, BAC) under rolling approval reviews with tightening conditions.", "reason": "Occupational asthma and allergic sensitization studies; aquatic toxicity; overuse concerns post-pandemic.", "confidence": "Medium"}], "Didecyldimonium Chloride": [{"region": "eu", "status": "review", "since": "2013", "rule": "EU BPR approval review — DDAC use conditions being tightened.", "reason": "Respiratory sensitization in occupational cleaning studies; very toxic to aquatic life (H400).", "confidence": "Medium"}], "Benzalkonium Chloride": [{"region": "eu", "status": "restricted", "since": "2012", "rule": "EU Cosmetics Reg. Annex V — max 0.1% in cosmetics, extra conditions for spray products.", "reason": "Skin/respiratory sensitization documented in healthcare and cleaning workers (NIOSH n=585 HLA-DP study); repro concerns in animal data.", "confidence": "Medium"}], "Butyloxyethanol": [{"region": "eu", "status": "restricted", "since": "2018", "rule": "EU CLP — classified Reproductive toxicant 1B (H360FD); restricted in consumer products from 2019. Effectively out of EU household cleaners.", "reason": "Reproductive/developmental harm evidence (the same class as 2-methoxy/2-ethoxyethanol bans).", "confidence": "High"}, {"region": "us", "status": "flagged", "since": "1987", "rule": "California Prop 65 — listed for reproductive/developmental harm. No federal consumer ban; still sold in US glass cleaners.", "reason": "State-level 'catch-up' signal: US federal law never restricted it, so California stepped in.", "confidence": "High"}], "Fragrance": [{"region": "eu", "status": "restricted", "since": "2005", "rule": "EU Cosmetics Reg. — mandatory labeling of 26 known fragrance allergens above thresholds; several phthalates (DEHP, DBP, BBP) banned outright in cosmetics.", "reason": "Contact allergy burden from undisclosed fragrance; endocrine concerns over phthalates. US law treats fragrance as a trade secret — no allergen labeling required.", "confidence": "High"}], "Limonene": [{"region": "eu", "status": "restricted", "since": "2005", "rule": "EU — one of the 26 mandatory-labeled fragrance allergens (d-limonene).", "reason": "Oxidizes on exposure to air into potent contact sensitizers (limonene hydroperoxides) — a major allergy source in cleaning products.", "confidence": "High"}], "Essential Oils": [{"region": "eu", "status": "restricted", "since": "2005", "rule": "EU — linalool, limonene, geraniol, citral etc. must be labeled when present above thresholds.", "reason": "Common sensitizers; consumers deserve to know which specific oils are in 'essential oil' blends.", "confidence": "High"}], "Citral": [{"region": "eu", "status": "restricted", "since": "2005", "rule": "EU — mandatory-labeled fragrance allergen.", "reason": "Sensitization (oxidized citral) — H317 classification.", "confidence": "High"}], "Sodium Laureth Sulfate": [{"region": "eu", "status": "restricted", "since": "2015", "rule": "EU — 1,4-dioxane (ethoxylation byproduct, IARC 2B probable carcinogen) restricted as a cosmetic contaminant.", "reason": "SLES is not banned, but the process contaminant 1,4-dioxane is capped. US: no federal limit; CA Prop 65 lists it.", "confidence": "Medium"}], "Alcohol Ethoxylates": [{"region": "eu", "status": "restricted", "since": "2015", "rule": "EU — 1,4-dioxane contaminant monitoring; CLP classification of the byproduct.", "reason": "Same ethoxylation byproduct issue as SLES.", "confidence": "Medium"}], "Alcohol Ethoxylate": [{"region": "eu", "status": "restricted", "since": "2015", "rule": "EU — 1,4-dioxane contaminant monitoring; CLP classification of the byproduct.", "reason": "Same ethoxylation byproduct issue as SLES.", "confidence": "Medium"}], "Phenoxyethanol": [{"region": "eu", "status": "restricted", "since": "2012", "rule": "EU Cosmetics Reg. — max 1% in cosmetics; additional warnings for use around infants.", "reason": "Repro/developmental toxicity signals in animal studies at higher doses.", "confidence": "Medium"}, {"region": "jp", "status": "restricted", "since": "2010", "rule": "Japan — restricted to 1% in cosmetics.", "reason": "Same reproductive/developmental safety review.", "confidence": "Medium"}], "Hydrogen Peroxide": [{"region": "eu", "status": "restricted", "since": "2013", "rule": "EU Cosmetics Reg. Annex III — concentration caps by use (e.g., 12% in hair products).", "reason": "Corrosive/oxidizer exposure risk (H314/H318).", "confidence": "High"}], "Sodium Tetraborate": [{"region": "eu", "status": "restricted", "since": "2010", "rule": "EU CLP — Reproductive toxicant 1B (H360FD). Borates restricted in many consumer products; EU banned in cosmetic leave-on.", "reason": "Reproductive/developmental harm classification — the reason 'grandma's borax' is banned across much of Europe while sold freely in US grocery aisles.", "confidence": "High"}, {"region": "us", "status": "allowed", "since": null, "rule": "US: EPA allows in household products; no federal repro restriction; OSHA GHS labels H360 but does not ban consumer sale.", "reason": "Textbook catch-up case: same hazard classification on both sides of the Atlantic, different regulatory outcome.", "confidence": "High"}], "Trichloroisocyanuric Acid": [{"region": "eu", "status": "restricted", "since": "2016", "rule": "EU — restricted in certain consumer uses; strong oxidizer handling rules.", "reason": "Oxidizer (H271) + chlorinated byproduct formation (chlorine gas in misuse).", "confidence": "Medium"}]}, "watchlist": [{"name": "Triclosan", "region": "eu", "status": "banned", "since": "2010", "rule": "EU banned in cosmetics. US FDA banned OTC antibacterial soaps 2016 — but it remains in some consumer products; the ban took 40+ years to catch up.", "reason": "Endocrine disruption (thyroid), bacterial resistance, aquatic toxicity."}, {"name": "Nonylphenol Ethoxylates", "region": "eu", "status": "banned", "since": "2005", "rule": "EU banned in cleaning products. US: EPA restricts industrial use only; consumer cleaning products can still contain them.", "reason": "Endocrine disruption (estrogenic), aquatic toxicity, persistence."}, {"name": "Phosphates (detergents)", "region": "eu", "status": "banned", "since": "2013", "rule": "EU banned phosphates in laundry detergent (2013) and dishwasher detergent (2017). US: no federal ban; a few state-level limits.", "reason": "Eutrophication — algal blooms and dead zones in waterways."}, {"name": "Parabens (propyl/butyl)", "region": "eu", "status": "restricted", "since": "2014", "rule": "EU banned propyl/butyl parabens in leave-on cosmetics for under-3s; ongoing endocrine review. US: allowed without age restriction.", "reason": "Weak estrogenic activity; endocrine disruption concerns."}, {"name": "Formaldehyde", "region": "eu", "status": "banned", "since": "2004", "rule": "EU banned in cosmetics (Annex II). US: no federal cosmetics ban; some states restrict.", "reason": "Carcinogenic (IARC 1); occupational asthma."}, {"name": "Titanium Dioxide (powder)", "region": "eu", "status": "restricted", "since": "2020", "rule": "EU classified Carcinogen 1B by inhalation (2020); banned as food additive 2022. US: allowed in food and cosmetics.", "reason": "Inhalation carcinogenicity (powder form)."}, {"name": "Microplastics (intentionally added)", "region": "eu", "status": "banned", "since": "2023", "rule": "EU banned intentionally-added microplastics (phased 2023–2035). US: state-level only.", "reason": "Persistence and bioaccumulation; cleaning products with plastic scrubbing particles affected."}, {"name": "Talc (asbestos-contaminated)", "region": "eu", "status": "restricted", "since": "2016", "rule": "EU tightens asbestos-in-talc limits; ongoing litigation. US: FDA testing program, no ban.", "reason": "Asbestos contamination/possible carcinogenicity; talc-based cleaning powders affected."}]};
+const SCOREBOARD = {"n_restricted_anywhere": 17, "watchlist": 8, "by_region": {"eu": {"banned": 0, "restricted": 15, "review": 2, "flagged": 0, "allowed": 0}, "ca": {"banned": 0, "restricted": 1, "review": 0, "flagged": 0, "allowed": 0}, "us": {"banned": 0, "restricted": 0, "review": 0, "flagged": 1, "allowed": 1}, "jp": {"banned": 0, "restricted": 1, "review": 0, "flagged": 0, "allowed": 0}}, "us_flags": [{"ing": "Butyloxyethanol", "status": "flagged", "since": "1987", "rule": "California Prop 65 — listed for reproductive/developmental harm. No federal consumer ban; still sold in US glass cleaners."}], "us_flags_count": 1};
 
-const INGS = {
-  "Water":{g:null,s:"No hazard",ev:"High"},
-  "Spring Water":{g:null,s:"No hazard",ev:"High"},
-  "Isopropanol":{g:"H225,H319,H336",s:"Flammable, eye irritant, drowsiness",ev:"High",gr:{derm:"B",resp:"C",work:"C"}},
-  "Isopropyl Alcohol":{g:"H225,H319,H336",s:"Flammable, eye irritant, drowsiness",ev:"High",gr:{derm:"B",resp:"C",work:"C"}},
-  "Ethanol":{g:"H225,H319",s:"Highly flammable, eye irritant",ev:"High",gr:{derm:"B",work:"C"}},
-  "Sodium Hypochlorite":{g:"H314,H318,H400",s:"Corrosive, severe eye damage, aquatic toxicity",ev:"High",gr:{derm:"F",env:"F",work:"D"}},
-  "Sodium Hydroxide":{g:"H290,H314,H318",s:"Corrosive, severe burns",ev:"High",gr:{derm:"F",work:"D"}},
-  "Hydrochloric Acid":{g:"H290,H314,H335",s:"Corrosive, respiratory irritant",ev:"High",gr:{derm:"F",resp:"D",work:"D"}},
-  "Quaternary Ammonium":{g:"H302,H314,H400",s:"Harmful if swallowed, corrosive, aquatic toxicity",ev:"High",gr:{derm:"F",env:"F",work:"D"}},
-  "Benzalkonium Chloride":{g:"H302,H314,H400",s:"Harmful if swallowed, corrosive, aquatic toxicity",ev:"High",gr:{derm:"F",env:"F",work:"D"}},
-  "Sodium Lauryl Sulfate":{g:"H228,H302,H315,H319,H335",s:"Flammable solid, skin/eye irritant",ev:"High",gr:{derm:"C",resp:"C",work:"C"}},
-  "Sodium Laureth Sulfate":{g:"H315,H319",s:"Skin and eye irritant",ev:"High",gr:{derm:"C"}},
-  "Limonene":{g:"H226,H304,H315,H317,H400",s:"Flammable, skin sensitizer, aspiration hazard, aquatic toxicity",ev:"High",gr:{derm:"D",resp:"D",env:"F"}},
-  "Lauramine Oxide":{g:"H315,H319",s:"Skin and eye irritant",ev:"High",gr:{derm:"C"}},
-  "Fragrance":{g:"H317",s:"May cause allergic skin reaction",ev:"Low",gr:{derm:"D"}},
-  "Citric Acid":{g:"H319",s:"Eye irritant",ev:"High",gr:{derm:"C"}},
-  "Oxalic Acid":{g:"H302,H312",s:"Harmful if swallowed or contacted",ev:"High",gr:{derm:"D",organ:"D"}},
-  "Glycolic Acid":{g:"H314",s:"Corrosive",ev:"High",gr:{derm:"D"}},
-  "Lactic Acid":{g:"H315",s:"Skin irritant",ev:"High",gr:{derm:"C"}},
-  "Sodium Carbonate":{g:"H319",s:"Eye irritant",ev:"High",gr:{derm:"B"}},
-  "Sodium Bicarbonate":{g:null,s:"Low hazard",ev:"High"},
-  "Sodium Percarbonate":{g:"H271,H302,H318",s:"Oxidizer, harmful if swallowed, severe eye damage",ev:"High",gr:{derm:"D",work:"C"}},
-  "Calcium Carbonate":{g:null,s:"Low hazard abrasive",ev:"High"},
-  "Feldspar":{g:null,s:"Natural abrasive, low hazard",ev:"High"},
-  "Limestone":{g:null,s:"Natural abrasive, low hazard",ev:"High"},
-  "Castile Soap":{g:"H315,H319",s:"Mild skin/eye irritant, biodegradable",ev:"Low",gr:{derm:"C"}},
-  "Tea Tree Oil":{g:"H304,H315,H317,H335,H412",s:"Skin sensitizer, aspiration hazard, respiratory irritant",ev:"Low",gr:{derm:"D",resp:"C"}},
-  "Lavender Oil":{g:"H315,H317,H319",s:"Skin sensitizer and irritant",ev:"Low",gr:{derm:"D"}},
-  "Lemon Oil":{g:"H226,H304,H315,H317,H400",s:"Flammable, sensitizer, aquatic toxicity",ev:"Low",gr:{derm:"D",env:"F"}},
-  "Peppermint Oil":{g:"H315,H317,H319,H335",s:"Skin/eye irritant, respiratory irritant",ev:"Low",gr:{derm:"D",resp:"C"}},
-  "Eucalyptus Oil":{g:"H304,H315,H317,H335",s:"Skin sensitizer, respiratory irritant, toxic to pets",ev:"Low",gr:{derm:"D",resp:"C"}},
-  "Decyl Glucoside":{g:null,s:"Plant-derived surfactant, biodegradable",ev:"Low",gr:{derm:"B"}},
-  "Lauryl Glucoside":{g:null,s:"Plant-derived surfactant, biodegradable",ev:"Low",gr:{derm:"B"}},
-  "Sodium Coco-Sulfate":{g:"H315,H319",s:"Plant-derived surfactant, skin/eye irritant",ev:"Low",gr:{derm:"C"}},
-  "Cocamidopropyl Betaine":{g:"H315,H319",s:"Mild surfactant, skin/eye irritant",ev:"High",gr:{derm:"B"}},
-  "Methylisothiazolinone":{g:"H317",s:"Strong skin sensitizer, preservative",ev:"High",gr:{derm:"D"}},
-  "Benzisothiazolinone":{g:"H302,H315,H317,H400",s:"Harmful if swallowed, skin irritant, aquatic toxicity",ev:"High",gr:{derm:"D",env:"D"}},
-  "Phenoxyethanol":{g:"H302,H315,H319",s:"Harmful if swallowed, skin/eye irritant",ev:"High",gr:{derm:"C"}},
-  "Propylene Glycol":{g:null,s:"Low hazard solvent",ev:"High",gr:{derm:"A"}},
-  "Butyloxyethanol":{g:"H302,H315,H319",s:"Harmful if swallowed, skin/eye irritant",ev:"High",gr:{derm:"D",work:"C"}},
-  "Ammonium Hydroxide":{g:"H314,H318",s:"Corrosive, severe eye damage",ev:"High",gr:{derm:"D",work:"C"}},
-  "Alcohol Ethoxylate":{g:"H315,H319",s:"Skin/eye irritant, surfactant",ev:"High",gr:{derm:"C"}},
-  "Enzymes":{g:null,s:"Biological catalysts, may cause respiratory sensitization",ev:"High",gr:{resp:"B"}},
-  "Trichloroisocyanuric Acid":{g:"H271,H302,H319,H410",s:"Oxidizer, harmful, aquatic toxicity",ev:"High",gr:{derm:"D",env:"F"}},
-  "Tetrasodium Glutamate Diacetate":{g:null,s:"Chelating agent, low hazard",ev:"Low"},
-  "Norwex Cloth":{g:null,s:"Microfiber cloth, no chemicals",ev:"High"},
-  "Pumice Stone":{g:null,s:"Natural volcanic rock, no chemicals",ev:"High"},
-  // Safe product ingredients
-  "Sodium Carbonate Peroxide":{g:"H271,H302,H318",s:"Oxidizer, harmful if swallowed, severe eye damage",ev:"High",gr:{derm:"D",work:"C"}},
-  "Sodium Citrate":{g:null,s:"Food-grade preservative, low hazard",ev:"High",gr:{derm:"A"}},
-  "Sodium Phytate":{g:null,s:"Plant-derived chelating agent, low hazard",ev:"Low"},
-  "Myristyl Glucoside":{g:null,s:"Plant-derived surfactant, biodegradable",ev:"Low",gr:{derm:"B"}},
-  "Caprylyl Glucoside":{g:null,s:"Plant-derived surfactant, biodegradable",ev:"Low",gr:{derm:"B"}},
-  "Coco-Glucoside":{g:null,s:"Plant-derived surfactant, biodegradable",ev:"Low",gr:{derm:"B"}},
-  "Potassium Oleate":{g:"H315,H319",s:"Potassium salt of oleic acid, mild irritant",ev:"Low",gr:{derm:"C"}},
-  "Potassium Citrate":{g:null,s:"Food-grade, low hazard",ev:"High"},
-  "Glycerin":{g:null,s:"Plant-derived humectant, low hazard",ev:"High",gr:{derm:"A"}},
-  "Saponified Coconut Oil":{g:null,s:"Saponified oils, mild soap",ev:"Low",gr:{derm:"B"}},
-  "Saponified Olive Oil":{g:null,s:"Saponified oils, mild soap",ev:"Low",gr:{derm:"B"}},
-  "Organic Hemp Oil":{g:null,s:"Natural oil, no hazard",ev:"High"},
-  "Organic Peppermint Oil":{g:"H315,H317",s:"May cause skin sensitization",ev:"Low",gr:{derm:"C"}},
-  "Organic Lavender Oil":{g:"H315,H317",s:"May cause skin sensitization",ev:"Low",gr:{derm:"C"}},
-  "Rosemary Extract":{g:null,s:"Natural antioxidant, no hazard",ev:"High"},
-  "Aloe Vera":{g:null,s:"Natural soothing agent, no hazard",ev:"High"},
-  "Botanical surfactant":{g:null,s:"Plant-derived saponins, low hazard",ev:"Low",gr:{derm:"B"}},
-  "Plant-based surfactants":{g:null,s:"Plant-derived, biodegradable",ev:"Low",gr:{derm:"B"}},
-  "Essential Oils":{g:"H315,H317",s:"May cause skin sensitization. Varies by oil type.",ev:"Low",gr:{derm:"C"}},
-  "Citrus essential oils":{g:"H315,H317",s:"May cause skin sensitization. Contains limonene.",ev:"Low",gr:{derm:"C"}},
-  "Cedar essential oil":{g:"H315,H317",s:"May cause skin sensitization",ev:"Low",gr:{derm:"C"}},
-  "Pine essential oil":{g:"H315,H317",s:"May cause skin sensitization",ev:"Low",gr:{derm:"C"}},
-  "Lavender essential oil":{g:"H315,H317",s:"May cause skin sensitization",ev:"Low",gr:{derm:"C"}},
-  "Geranium Oil":{g:"H315,H317",s:"May cause skin sensitization",ev:"Low",gr:{derm:"C"}},
-  "Oatmeal extract":{g:null,s:"Soothing skin protectant, no hazard",ev:"High"},
-  "Vitamin E":{g:null,s:"Natural antioxidant, no hazard",ev:"High"},
-  "Potassium Hydroxide":{g:"H290,H314,H318",s:"Corrosive in pure form, but neutralized in final product",ev:"High",gr:{derm:"B"}},
-  "Lauric Acid":{g:"H315,H319",s:"Fatty acid, mild irritant",ev:"High",gr:{derm:"B"}},
-  "Sodium Chloride":{g:null,s:"Table salt, no hazard in cleaning context",ev:"High"},
-  "Alkaline Silicate":{g:"H319",s:"Eye irritant, low overall hazard",ev:"High",gr:{derm:"B"}},
-  // BMVC specific ingredients
-  "Calcium Carbonate":{g:null,s:"Chalk/limestone, mild abrasive, no hazard",ev:"High",gr:{derm:"A"}},
-  "Alumina":{g:null,s:"Natural abrasive, low hazard in cleaning paste form",ev:"High",gr:{derm:"A"}},
-  "Brassica Campestris Seed Oil":{g:null,s:"Field mustard seed oil, natural emollient",ev:"High",gr:{derm:"A"}},
-  "Helianthus Annuus Seed Oil":{g:null,s:"Sunflower seed oil, natural emollient",ev:"High",gr:{derm:"A"}},
-  "Potassium Carbonate":{g:"H315,H319",s:"Mild alkali, can cause skin/eye irritation in pure form",ev:"High",gr:{derm:"B"}},
-  "Triethyl Citrate":{g:null,s:"Food-grade plasticizer, low hazard",ev:"High",gr:{derm:"A"}},
-  "Dipterocarpus Wood Oil":{g:"H315,H317",s:"Natural essential oil, may cause sensitization",ev:"Low",gr:{derm:"C"}},
-  "Citral":{g:"H315,H317,H319",s:"Fragrance allergen, occurs naturally in citrus oils",ev:"Low",gr:{derm:"D"}},
-  "Mandarin Oil":{g:"H315,H317",s:"Citrus essential oil, may cause sensitization",ev:"Low",gr:{derm:"C"}},
-  "Ginger Extract":{g:null,s:"Natural plant extract, low hazard",ev:"High",gr:{derm:"A"}},
-  "Mint Oil":{g:"H315,H317",s:"Essential oil, may cause sensitization",ev:"Low",gr:{derm:"C"}},
-  "Basil Oil":{g:"H315,H317",s:"Essential oil, may cause sensitization",ev:"Low",gr:{derm:"C"}},
-  "Geranium Oil":{g:"H315,H317",s:"Essential oil, may cause sensitization",ev:"Low",gr:{derm:"C"}},
-  "Denatured Alcohol":{g:"H225,H319",s:"Ethanol denatured with bitterants, flammable, eye irritant",ev:"High",gr:{derm:"C",work:"C"}},
-  "Citrus Aurantium Peel Oil":{g:"H315,H317",s:"Bitter orange peel oil, may cause sensitization",ev:"Low",gr:{derm:"C"}},
+/* ---------- bootstrap ---------- */
+document.getElementById("live-date").textContent = META.last_updated;
+document.getElementById("hero-tag").textContent = META.tagline;
+document.getElementById("built-at").textContent = META.built_at;
+document.getElementById("hero-stats").innerHTML =
+  `<div class="stat"><b>${META.products}</b><span>Products</span></div>`+
+  `<div class="stat"><b>${META.ingredients}</b><span>Ingredients</span></div>`+
+  `<div class="stat"><b>${META.reclassified}</b><span>Reclassified</span></div>`+
+  `<div class="stat"><b>${META.restricted_anywhere||0}</b><span>Restricted elsewhere</span></div>`+
+  `<div class="stat"><b>${META.heritage}</b><span>Heirlooms</span></div>`+
+  `<div class="stat"><b>${META.safe}</b><span>Certified safe</span></div>`;
+
+/* ---------- impact taxonomy ---------- */
+const IMPACTS = {
+  resp:{label:"Respiratory",emoji:"🌬️",color:"var(--resp)"},
+  repro:{label:"Reproductive",emoji:"🤰",color:"var(--repro)"},
+  endo:{label:"Endocrine",emoji:"🧬",color:"var(--endo)"},
+  derm:{label:"Skin",emoji:"🧴",color:"var(--derm)"},
+  aqua:{label:"Aquatic",emoji:"🌊",color:"var(--aqua)"},
+  canc:{label:"Cancer",emoji:"🎯",color:"var(--canc)"},
+  allerg:{label:"Allergen",emoji:"⚠️",color:"var(--allerg)"},
 };
+const DIMS = ["resp","derm","endo","repro","organ","env","work","canc"];
+const DIM_LABEL = {resp:"Respiratory",derm:"Skin",endo:"Endocrine",repro:"Reproductive",organ:"Organ",env:"Environmental",work:"Worker safety",canc:"Cancer"};
 
-function gradeClass(g){ return g ? "grade-"+g.toLowerCase() : "grade-unknown"; }
-function gradeOrder(g){ return {A:0,B:1,C:2,D:3,F:4}[g] ?? 5; }
+/* ---------- state ---------- */
+let safeOnly=false, heritageOnly=false;
+let harmImpacts=new Set(), safeImpacts=new Set(), activeCats=new Set();
+let activeGenes=new Set();
+let lastQuery="";
 
-// Genetic sensitivity: which ingredients are affected by which variants
-const GENE_ING_MAP = {
-  gstm1: ["Methylisothiazolinone","Methylchloroisothiazolinone","Benzisothiazolinone"],
-  tnf: ["Sodium Lauryl Sulfate","Sodium Laureth Sulfate","Benzalkonium Chloride","Sodium Hydroxide","Hydrochloric Acid","Fragrance","Lauramine Oxide"],
-  mhc: ["Benzalkonium Chloride","Sodium Lauryl Sulfate","Sodium Hydroxide"],
-  dao: ["Sodium Lauryl Sulfate","Benzalkonium Chloride","Fragrance","Limonene","Butyloxyethanol"],
-};
-
-// How many grade steps to drop per variant (only if ingredient is present)
-const GENE_PENALTY = { gstm1: 1, tnf: 1, mhc: 1, dao: 1 };
-
-let activeGenes = new Set();
-
-function toggleGenoPanel(){
-  const btn = document.getElementById("geno-toggle-btn");
-  const body = document.getElementById("geno-body");
-  btn.classList.toggle("open");
-  body.classList.toggle("show");
-}
-
-function toggleGene(id){
-  const card = document.getElementById("gcard-"+id);
-  if(activeGenes.has(id)){ activeGenes.delete(id); card.classList.remove("active"); }
-  else { activeGenes.add(id); card.classList.add("active"); }
-  render();
-}
-
-function geneAdjustedGrade(ings, baseGrade){
-  if(activeGenes.size === 0) return { grade: baseGrade, shifts: [] };
-  let totalPenalty = 0;
-  let reasons = [];
-  for(const gene of activeGenes){
-    const affected = GENE_ING_MAP[gene] || [];
-    const matchCount = ings.filter(i => affected.some(a => i.toLowerCase().includes(a.toLowerCase()))).length;
-    if(matchCount > 0){
-      totalPenalty += GENE_PENALTY[gene];
-      const names = { gstm1: "GSTM1", tnf: "TNF-α -308A", mhc: "MHC", dao: "DAO/HNMT" };
-      reasons.push(names[gene]);
-    }
-  }
-  // Cap penalty — don't go below F
-  const grades = ["A","B","C","D","F"];
-  let idx = gradeOrder(baseGrade);
-  idx = Math.min(idx + totalPenalty, 4);
-  return { grade: grades[idx], shifts: reasons };
-}
-
+/* ---------- product grade ---------- */
+function gradeOrder(g){return {A:0,B:1,C:2,D:3,F:4}[g] ?? 5;}
+function gradeClass(g){ return g?"g-"+g:"g-null"; }
 function productGrade(ings){
-  let worst = "A";
+  let worst="A";
   for(const n of ings){
-    const d = INGS[n];
-    if(!d || !d.gr) continue;
-    if(d.ev !== "High" && d.ev !== "Medium") continue;
-    for(const dim of ["resp","derm","endo","organ","env","work"]){
-      const g = d.gr[dim];
-      if(g && gradeOrder(g) > gradeOrder(worst)) worst = g;
+    const d=INGS[n]; if(!d||!d.gr) continue;
+    if(d.ev!=="High"&&d.ev!=="Medium") continue;
+    for(const dim of DIMS){
+      const g=d.gr[dim];
+      if(g&&gradeOrder(g)>gradeOrder(worst)) worst=g;
     }
   }
   return worst;
 }
+function productImpactSet(p){
+  const s=new Set();
+  for(const n of p.ings){ const d=INGS[n]; if(d&&d.impacts) d.impacts.forEach(i=>s.add(i)); }
+  return s;
+}
+
+/* ---------- genetic layer ---------- */
+const GENE_ING_MAP={
+  gstm1:["Methylisothiazolinone","Methylchloroisothiazolinone","Benzisothiazolinone"],
+  tnf:["Sodium Lauryl Sulfate","Sodium Laureth Sulfate","Benzalkonium Chloride","Sodium Hydroxide","Hydrochloric Acid","Fragrance","Lauramine Oxide"],
+  mhc:["Benzalkonium Chloride","Sodium Lauryl Sulfate","Sodium Hydroxide"],
+  dao:["Sodium Lauryl Sulfate","Benzalkonium Chloride","Fragrance","Limonene","Butyloxyethanol"],
+};
+const GENE_PENALTY={gstm1:1,tnf:1,mhc:1,dao:1};
+const GENE_NAMES={gstm1:"GSTM1",tnf:"TNF-α",mhc:"MHC/HLA-DP",dao:"DAO/HNMT"};
+function geneAdjustedGrade(ings,baseGrade){
+  if(activeGenes.size===0) return {grade:baseGrade,shifts:[]};
+  let pen=0; const reasons=[];
+  for(const gene of activeGenes){
+    const affected=GENE_ING_MAP[gene]||[];
+    if(ings.some(i=>affected.some(a=>i.toLowerCase().includes(a.toLowerCase())))){ pen+=GENE_PENALTY[gene]; reasons.push(GENE_NAMES[gene]); }
+  }
+  const grades=["A","B","C","D","F"];
+  const idx=Math.min(gradeOrder(baseGrade)+pen,4);
+  return {grade:grades[idx],shifts:reasons};
+}
+
+/* ---------- rendering ---------- */
+function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
 
 function render(){
-  const q = document.getElementById("search").value.toLowerCase();
-  const activeFilters = [...document.querySelectorAll(".filter-btn.active")].map(b=>b.dataset.cat);
-  let list = PRODUCTS;
-  if(safeOnly) list = list.filter(p=> p.safe);
-  if(q) list = list.filter(p=> p.name.toLowerCase().includes(q) || p.brand.toLowerCase().includes(q) || p.ings.some(i=>i.toLowerCase().includes(q)));
-  if(activeFilters.length) list = list.filter(p=> activeFilters.includes(p.cat));
+  const q=document.getElementById("search").value.trim().toLowerCase();
+  lastQuery=q;
+  let list=PRODUCTS;
+  if(safeOnly) list=list.filter(p=>p.safe);
+  if(heritageOnly) list=list.filter(p=>p.heritage);
+  if(q){
+    list=list.filter(p=>
+      p.name.toLowerCase().includes(q)||
+      p.brand.toLowerCase().includes(q)||
+      p.cat.toLowerCase().includes(q)||
+      p.ings.some(i=>i.toLowerCase().includes(q))||
+      (p.heritage_note||"").toLowerCase().includes(q)
+    );
+  }
+  if(activeCats.size) list=list.filter(p=>activeCats.has(p.cat));
+  if(harmImpacts.size){
+    list=list.filter(p=>{
+      const s=productImpactSet(p);
+      return [...harmImpacts].every(i=>s.has(i));
+    });
+  }
+  if(safeImpacts.size){
+    list=list.filter(p=>{
+      const s=productImpactSet(p);
+      return [...safeImpacts].every(i=>!s.has(i));
+    });
+  }
 
-  document.getElementById("stats").textContent = `Showing ${list.length} of ${PRODUCTS.length} products`;
+  document.getElementById("stats").innerHTML=
+    `Showing <b>${list.length}</b> of ${PRODUCTS.length} products ${safeOnly?"· certified-safe only":""} ${heritageOnly?"· heirloom only":""}`+
+    (harmImpacts.size?` · flagged: ${[...harmImpacts].map(i=>IMPACTS[i].label).join(" + ")}`:"")+
+    (safeImpacts.size?` · no ${[...safeImpacts].map(i=>IMPACTS[i].label).join("/")} flags`:"");
+  document.getElementById("count-note").textContent =
+    harmImpacts.size||safeImpacts.size||activeCats.size||safeOnly||heritageOnly||q ? "filtered view" : "all "+PRODUCTS.length;
 
-  const html = list.map((p,i)=>{
-    const baseGrade = productGrade(p.ings);
-    const { grade: adjGrade, shifts } = geneAdjustedGrade(p.ings, baseGrade);
-    const grade = adjGrade;
-    const shifted = baseGrade !== adjGrade;
-    const ingChips = p.ings.map(n=>{
-      const d = INGS[n];
-      const known = !!d;
-      const g = d?.gr?.derm || d?.gr?.resp || null;
-      return `<span class="ing-chip ${known?"":"unknown"}" onclick="toggleDetail(${i})">${n} ${d?`<span class="grade-dot ${gradeClass(g)}">${g||"?"}</span>`:""}</span>`;
-    }).join("");
-    const safeBadge = p.safe ? `<div style="margin-top:4px;font-size:0.65rem;color:var(--accent);background:rgba(108,191,132,0.15);padding:2px 6px;border-radius:4px;display:inline-block">✓ ${p.safe}</div>` : "";
-    const shiftBadge = shifted ? `<span class="grade-shift">${baseGrade}→${adjGrade} (${shifts.join(", ")})</span>` : "";
-    return `<div class="product-card">
-      <div class="product-header">
-        <div><div class="product-title">${p.name}</div><div class="product-brand">${p.brand}</div><span class="product-category">${p.cat}</span>${safeBadge}${shiftBadge}</div>
-        <div class="grade-badge"><div class="grade-circle ${gradeClass(grade)}">${grade}</div><div class="grade-label">${shifted?"Adjusted":"Overall"}</div></div>
+  const html=list.map((p,idx)=>{
+    const base=productGrade(p.ings);
+    const {grade,shifts}=geneAdjustedGrade(p.ings,base);
+    const shifted=base!==grade;
+    const imp=productImpactSet(p);
+    const impChips=[...imp].map(i=>`<span class="imp ${i}">${IMPACTS[i].emoji||""} ${IMPACTS[i].label}</span>`).join("");
+    const badges=[];
+    if(p.safe) badges.push(`<span class="bdg safe">✓ ${esc(p.safe)}</span>`);
+    if(p.heritage) badges.push(`<span class="bdg heritage">🏺 ${p.heritage_year||""}</span>`);
+    const flagged = p.ings.some(n=>INGS[n]&&INGS[n].reclassified);
+    if(flagged) badges.push(`<span class="bdg flag">⚠ reclassified ingredient</span>`);
+    if(hasRestrictedElsewhere(p)) badges.push(`<span class="bdg" style="background:#fdeede;color:#b06a24;border:1px solid #f0d7b8">🌍 restricted elsewhere</span>`);
+    const shiftBadge=shifted?`<div class="shift">${base}→${grade} · ${shifts.join(", ")}</div>`:"";
+    return `<div class="card">
+      <div class="card-top">
+        <div>
+          <div class="card-name">${esc(p.name)}</div>
+          <div class="card-brand">${esc(p.brand)} · ${esc(p.cat)}</div>
+          ${badges.length?`<div class="badges">${badges.join("")}</div>`:""}
+          ${shiftBadge}
+        </div>
+        <div class="grade"><div class="gcircle ${gradeClass(grade)}">${grade}<small>${shifted?"adjusted":"overall"}</small></div></div>
       </div>
-      <div class="ingredients-section"><div class="ingredients-label">Ingredients (${p.ings.length})</div><div class="ingredient-chips">${ingChips}</div></div>
-      <div class="product-detail" id="det-${i}">${p.ings.map(n=>{const d=INGS[n];return d?`<div class="detail-row"><span>${n}</span><span>${d.s||""}</span></div>`:`<div class="detail-row" style="color:var(--flag)"><span>${n}</span><span>Unknown ingredient</span></div>`;}).join("")}</div>
+      ${impChips?`<div class="impacts">${impChips}</div>`:""}
+      <div class="card-ings">${p.ings.map(esc).join(" · ")}</div>
+      <div class="card-foot"><span class="ing-count">${p.ings.length} ingredient${p.ings.length===1?"":"s"}</span><button class="more-btn" onclick="openModal(${PRODUCTS.indexOf(p)})">Breakdown →</button></div>
     </div>`;
   }).join("");
-  document.getElementById("results").innerHTML = html || `<div class="no-results">No products found</div>`;
+  document.getElementById("results").innerHTML=html||`<div class="no-results">No products match. Try clearing filters — or this might be a product we haven't cataloged yet. <b>We add products regularly.</b></div>`;
 }
+function toggleSafeOnly(btn){safeOnly=!safeOnly;btn.classList.toggle("active");render();}
+function toggleHeritage(btn){heritageOnly=!heritageOnly;btn.classList.toggle("active");render();}
 
-function toggleDetail(i){
-  const el = document.getElementById("det-"+i);
-  if(el) el.classList.toggle("show");
+/* ---------- filter chips ---------- */
+function buildChips(){
+  document.getElementById("harm-chips").innerHTML=Object.entries(IMPACTS).map(([k,v])=>
+    `<button class="chip" id="harm-${k}" onclick="toggleHarm('${k}',this)"><span class="cd" style="background:${v.color}"></span>${v.emoji} ${v.label}</button>`).join("");
+  document.getElementById("safe-chips").innerHTML=Object.entries(IMPACTS).map(([k,v])=>
+    `<button class="chip safe" id="safe-${k}" onclick="toggleSafe('${k}',this)"><span class="cd" style="background:${v.color}"></span><span class="check">✓</span> No ${v.label.toLowerCase()} flags</button>`).join("");
 }
-
+function toggleHarm(k,btn){
+  if(harmImpacts.has(k)){harmImpacts.delete(k);btn.classList.remove("active");}
+  else{harmImpacts.add(k);btn.classList.add("active");}
+  render();
+}
+function toggleSafe(k,btn){
+  if(safeImpacts.has(k)){safeImpacts.delete(k);btn.classList.remove("active");}
+  else{safeImpacts.add(k);btn.classList.add("active");}
+  render();
+}
 function buildFilters(){
-  const cats = [...new Set(PRODUCTS.map(p=>p.cat))].sort();
-  document.getElementById("filters").innerHTML = `<button class="filter-btn active" data-cat="" onclick="toggleFilter(this)">All</button>` + cats.map(c=>`<button class="filter-btn" data-cat="${c}" onclick="toggleFilter(this)">${c}</button>`).join("");
+  const cats=[...new Set(PRODUCTS.map(p=>p.cat))].sort();
+  document.getElementById("filters").innerHTML=cats.map(c=>
+    `<button class="catb" id="cat-${c.replace(/[^a-z0-9]/gi,'')}" onclick="toggleCat('${c.replace(/'/g,"\\'")}',this)">${esc(c)}</button>`).join("");
 }
-
-function toggleFilter(btn){
-  if(btn.dataset.cat===""){ document.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("active")); btn.classList.add("active"); }
-  else { btn.classList.toggle("active"); document.querySelector(".filter-btn[data-cat='']").classList.remove("active"); }
+function toggleCat(c,btn){
+  if(activeCats.has(c)){activeCats.delete(c);btn.classList.remove("active");}
+  else{activeCats.add(c);btn.classList.add("active");}
   render();
 }
 
-let safeOnly = false;
-function toggleSafeOnly(btn){
-  safeOnly = !safeOnly;
-  btn.classList.toggle("active");
+/* ---------- modal ---------- */
+function openModal(idx){
+  const p=PRODUCTS[idx];
+  const flags=[];
+  const rows=p.ings.map(n=>{
+    const d=INGS[n];
+    if(!d) return `<div class="ming"><h4>${esc(n)} <span style="font-size:.68rem;color:var(--muted)">uncataloged</span></h4><div class="isum">No hazard data in our database yet — we're adding ingredients regularly.</div></div>`;
+    const g=d.gr||{};
+    const dims=DIMS.filter(dim=>g[dim]).map(dim=>`<span class="idim">${DIM_LABEL[dim]} <b>${g[dim]}</b></span>`).join("");
+    const ev=d.ev||"Low";
+    const w=gradeClass(g.derm||g.resp||null).replace("g-","");
+    const flagged=d.reclassified?`<span class="flagged-ing">⚠ once safe, now flagged</span>`:"";
+    const gs=ingGlobalStatus(n);
+    const gsHtml=gs?`<div class="idims">${gs.map(e=>{
+      const rinfo=REG.regions[e.region]||{flag:"🌍",name:e.region};
+      return `<span class="idim" title="${esc(e.rule)}"><b>${rinfo.flag} ${rinfo.name}</b> · ${STATUS_LABEL[e.status]||e.status}${e.since?" since "+e.since:""}</span>`;
+    }).join("")}</div>${gs.some(e=>e.reason)?`<div class="iev">Why: ${esc(gs.find(e=>e.reason).reason)}</div>`:""}`:"";
+    return `<div class="ming">
+      <h4>${esc(n)} ${d.gr?(Object.keys(d.gr).some(k=>gradeOrder(d.gr[k])>2)?`<span class="gdot" style="background:var(--f)">!</span>`:`<span class="gdot" style="background:var(--a)">•</span>`):""}</h4>
+      ${flagged}
+      <div class="isum">${esc(d.s||"")}</div>
+      ${dims?`<div class="idims">${dims}</div>`:""}
+      ${gsHtml}
+      <div class="iev">Evidence: ${ev}${d.g?` · GHS: ${esc(d.g)}`:""}</div>
+    </div>`;
+  });
+  const rcs=p.ings.map(n=>INGS[n]).filter(d=>d&&d.reclassified);
+  const rcHtml=rcs.map(d=>`<div class="rcbox"><div class="rc-t">Once safe, now flagged — ${esc(d.s?d.s.split(".")[0]:"")}</div>${d.reclassified.map(r=>`<p>${esc(r)}</p>`).join("")}</div>`).join("");
+  const noteLine = p.heritage ? `<div class="noteline">🏺 <b>Heirloom:</b> ${esc(p.heritage_note||"")}</div>` : "";
+  document.getElementById("modal").innerHTML=`
+    <button class="modal-x" onclick="closeModal()">✕</button>
+    <div class="mrow">
+      ${p.safe?`<span class="bdg safe">✓ ${esc(p.safe)}</span>`:""}
+      ${p.heritage?`<span class="bdg heritage">🏺 ${p.heritage_year}</span>`:""}
+      <span class="bdg" style="background:var(--pine-soft);color:var(--pine);border:1px solid #c9dfd3">${esc(p.cat)}</span>
+    </div>
+    <h3>${esc(p.name)}</h3>
+    <div class="mbrand">${esc(p.brand)} · graded ${gradeClass(productGrade(p.ings)).replace("g-","")}</div>
+    ${noteLine}
+    ${rcHtml}
+    <div class="mimg">${rows.join("")}</div>`;
+  document.getElementById("modal-bg").classList.add("show");
+  document.body.style.overflow="hidden";
+}
+function closeModal(){document.getElementById("modal-bg").classList.remove("show");document.body.style.overflow="";}
+
+/* ---------- global registry ---------- */
+function ingGlobalStatus(n){
+  return REG.entries[n] || null;
+}
+function hasRestrictedElsewhere(p){
+  return p.ings.some(n=>{ const e=REG.entries[n]; return e && e.some(x=>x.status==="banned"||x.status==="restricted"); });
+}
+const STATUS_LABEL={banned:"🚫 banned",restricted:"⚠ restricted",review:"🔎 under review",flagged:"📌 flagged",allowed:"✅ allowed"};
+function buildRegions(){
+  const grid=document.getElementById("region-grid");
+  const rows=Object.entries(REG.regions).map(([r,info])=>{
+    const sb=SCOREBOARD.by_region[r]||{};
+    const parts=[];
+    for(const st of ["banned","restricted","review","flagged","allowed"]){
+      if(sb[st]) parts.push(`<span class="rpc ${st}">${sb[st]} ${STATUS_LABEL[st]}</span>`);
+    }
+    return `<div class="region-card"><div class="rname">${info.flag} ${info.name}</div><div class="rstat">${parts.join("")||"<span class='rpc'>—</span>"}</div><div class="rblurb">${esc(info.blurb)}</div></div>`;
+  }).join("");
+  grid.innerHTML=rows;
+}
+function buildCatchup(){
+  // Catch-up stories: every ingredient restricted/banned elsewhere with NO US action,
+  // plus explicit US-flagged entries. Classic "banned there, still here".
+  const el=document.getElementById("catchup");
+  const stories=[];
+  for(const [ing, lst] of Object.entries(REG.entries)){
+    const elsewhere=lst.filter(e=>e.region!=="us"&&(e.status==="banned"||e.status==="restricted"));
+    const usEntry=lst.find(e=>e.region==="us");
+    if(elsewhere.length && (!usEntry || usEntry.status==="allowed")){
+      // use the strictest elsewhere entry as the headline
+      const head=elsewhere.reduce((a,b)=>({banned:1,restricted:2,review:3}[a.status]||4)<({banned:1,restricted:2,review:3}[b.status]||4)?a:b);
+      const ri=REG.regions[head.region]||{flag:"🌍",name:head.region};
+      stories.push({ing, flag:ri.flag, region:ri.name, status:head.status, since:head.since, rule:head.rule,
+        usStatus: usEntry?STATUS_LABEL[usEntry.status]:"allowed (no US action)"});
+    } else if(usEntry && (usEntry.status==="flagged"||usEntry.status==="restricted"||usEntry.status==="banned")){
+      const ri=REG.regions[usEntry.region]||{flag:"🇺🇸",name:"US"};
+      stories.push({ing, flag:"🇺🇸", region:"United States", status:usEntry.status, since:usEntry.since, rule:usEntry.rule,
+        usStatus: STATUS_LABEL[usEntry.status]});
+    }
+  }
+  if(!stories.length){ el.style.display="none"; return; }
+  el.innerHTML=`<h3>🇺🇸 The catch-up scoreboard — restricted elsewhere, still here</h3>`+
+    stories.map(f=>
+      `<div class="cu-item"><div class="cu-flag">${f.flag}</div><div><div class="cu-who">${esc(f.ing)} <span style="font-weight:600;color:var(--d)">· ${STATUS_LABEL[f.status]||f.status} in ${esc(f.region)}${f.since?" since "+f.since:""} · US: ${esc(f.usStatus)}</span></div><div class="cu-what">${esc(f.rule||"")}</div></div></div>`
+    ).join("");
+}
+function buildWatch(){
+  const el=document.getElementById("watch");
+  el.innerHTML=REG.watchlist.map(w=>
+    `<div class="watch-card"><div class="w-name">${esc(w.name)}<span class="w-reg">${w.region}</span></div><div class="w-rule">${esc(w.rule)}</div><div class="w-why">Why: ${esc(w.reason)}</div></div>`).join("");
+}
+
+/* ---------- genetic ---------- */
+function toggleGenoPanel(){
+  const btn=document.getElementById("geno-toggle-btn");
+  document.getElementById("geno-body").classList.toggle("show");
+  btn.classList.toggle("open");
+}
+function toggleGene(id){
+  const card=document.getElementById("gcard-"+id);
+  if(activeGenes.has(id)){activeGenes.delete(id);card.classList.remove("active");}
+  else{activeGenes.add(id);card.classList.add("active");}
   render();
 }
 
-buildFilters();
-render();
+/* ---------- changelog + strips ---------- */
+function buildChangelog(){
+  document.getElementById("changelog").innerHTML=CHANGELOG.map(e=>
+    `<div class="cl-item"><div class="cl-date">${e.date}</div><div class="cl-text">${esc(e.text)}</div></div>`).join("");
+}
+function buildRCStrip(){
+  const items=Object.entries(INGS).filter(([n,d])=>d.reclassified);
+  document.getElementById("rc-strip").innerHTML=items.map(([n,d])=>
+    `<div class="rc-card"><span class="rc-badge">Reclassified</span><div class="rc-name">${esc(n)}</div><p>${esc(d.reclassified[0])}</p></div>`).join("");
+}
+function buildHeritage(){
+  const h=PRODUCTS.filter(p=>p.heritage).sort((a,b)=>(a.heritage_year||0)-(b.heritage_year||0));
+  document.getElementById("heritage-grid").innerHTML=h.map(p=>
+    `<div class="h-card"><span class="year">since ${p.heritage_year}</span><div class="h-name">${esc(p.name)}</div><div class="h-brand">${esc(p.brand)}</div><p>${esc(p.heritage_note||"")}</p></div>`).join("");
+}
+
+/* ---------- init ---------- */
+buildChips();buildFilters();buildChangelog();buildRCStrip();buildHeritage();buildRegions();buildCatchup();buildWatch();render();
 </script>
 </body>
 </html>

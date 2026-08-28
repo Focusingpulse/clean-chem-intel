@@ -1,0 +1,1422 @@
+{
+ "Water": {
+  "g": "null",
+  "s": "No hazard",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": null
+ },
+ "Spring Water": {
+  "g": "null",
+  "s": "No hazard",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": null
+ },
+ "Fragrance": {
+  "g": "H317",
+  "s": "May cause allergic skin reaction",
+  "ev": "Low",
+  "gr": {
+   "derm": "D",
+   "repro": "C",
+   "endo": "D",
+   "canc": "C"
+  },
+  "impacts": [
+   "allerg",
+   "endo",
+   "repro"
+  ],
+  "reclassified": [
+   "'Fragrance' was historically treated as one harmless scent note; undisclosed blends routinely contain phthalates & synthetic musks — endocrine/repro flags (Prop 65 phthalates) and contact allergens."
+  ],
+  "note": "Undisclosed blend. Hazards assigned from documented fragrance-carrier chemistry (phthalates, musks), not the specific formula."
+ },
+ "Citric Acid": {
+  "g": "H319",
+  "s": "Eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Glycolic Acid": {
+  "g": "H314",
+  "s": "Corrosive",
+  "ev": "High",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Lactic Acid": {
+  "g": "H315",
+  "s": "Skin irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Sodium Carbonate": {
+  "g": "H319",
+  "s": "Eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Sodium Bicarbonate": {
+  "g": "null",
+  "s": "Low hazard",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": null
+ },
+ "Calcium Carbonate": {
+  "g": "null",
+  "s": "Chalk/limestone, mild abrasive, no hazard",
+  "ev": "High",
+  "gr": {
+   "derm": "A"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Feldspar": {
+  "g": "null",
+  "s": "Natural abrasive, low hazard",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": null
+ },
+ "Limestone": {
+  "g": "null",
+  "s": "Natural abrasive, low hazard",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": null
+ },
+ "Decyl Glucoside": {
+  "g": "null",
+  "s": "Plant-derived surfactant, biodegradable",
+  "ev": "Low",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Lauryl Glucoside": {
+  "g": "null",
+  "s": "Plant-derived surfactant, biodegradable",
+  "ev": "Low",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Methylisothiazolinone": {
+  "g": "H317",
+  "s": "Strong skin sensitizer, preservative",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "resp": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "allerg",
+   "derm",
+   "resp"
+  ],
+  "reclassified": [
+   "MIT was the 'safe' preservative replacing parabens; became 2013 'Allergen of the Year' — epidemic of allergic contact dermatitis, now restricted in leave-on products (EU)."
+  ],
+  "note": null
+ },
+ "Propylene Glycol": {
+  "g": "null",
+  "s": "Low hazard solvent",
+  "ev": "High",
+  "gr": {
+   "derm": "A",
+   "repro": "B"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Low acute hazard; mild skin irritant at high concentration."
+ },
+ "Enzymes": {
+  "g": "null",
+  "s": "Biological catalysts, may cause respiratory sensitization",
+  "ev": "High",
+  "gr": {
+   "resp": "D",
+   "repro": "B"
+  },
+  "impacts": [
+   "allerg",
+   "resp"
+  ],
+  "reclassified": [
+   "Enzymes were added to laundry products as 'natural' boosters; they are potent respiratory sensitizers — industry adopted encapsulation after occupational asthma outbreaks (1970s)."
+  ],
+  "note": "Encapsulated in modern products to reduce aerosolization."
+ },
+ "Tetrasodium Glutamate Diacetate": {
+  "g": "null",
+  "s": "Chelating agent, low hazard",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": null
+ },
+ "Norwex Cloth": {
+  "g": "null",
+  "s": "Microfiber cloth, no chemicals",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": null
+ },
+ "Pumice Stone": {
+  "g": "null",
+  "s": "Natural volcanic rock, no chemicals",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": null
+ },
+ "Sodium Citrate": {
+  "g": "null",
+  "s": "Food-grade preservative, low hazard",
+  "ev": "High",
+  "gr": {
+   "derm": "A"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Sodium Phytate": {
+  "g": "null",
+  "s": "Plant-derived chelating agent, low hazard",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": null
+ },
+ "Myristyl Glucoside": {
+  "g": "null",
+  "s": "Plant-derived surfactant, biodegradable",
+  "ev": "Low",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Caprylyl Glucoside": {
+  "g": "null",
+  "s": "Plant-derived surfactant, biodegradable",
+  "ev": "Low",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Coco-Glucoside": {
+  "g": "null",
+  "s": "Plant-derived surfactant, biodegradable",
+  "ev": "Low",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Potassium Citrate": {
+  "g": "null",
+  "s": "Food-grade, low hazard",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": null
+ },
+ "Glycerin": {
+  "g": "null",
+  "s": "Plant-derived humectant, low hazard",
+  "ev": "High",
+  "gr": {
+   "derm": "A"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Saponified Coconut Oil": {
+  "g": "null",
+  "s": "Saponified oils, mild soap",
+  "ev": "Low",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Saponified Olive Oil": {
+  "g": "null",
+  "s": "Saponified oils, mild soap",
+  "ev": "Low",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Organic Hemp Oil": {
+  "g": "null",
+  "s": "Natural oil, no hazard",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": null
+ },
+ "Rosemary Extract": {
+  "g": "null",
+  "s": "Natural antioxidant, no hazard",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": null
+ },
+ "Aloe Vera": {
+  "g": "null",
+  "s": "Natural soothing agent, no hazard",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": null
+ },
+ "Botanical surfactant": {
+  "g": "null",
+  "s": "Plant-derived saponins, low hazard",
+  "ev": "Low",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Plant-based surfactants": {
+  "g": "null",
+  "s": "Plant-derived, biodegradable",
+  "ev": "Low",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Oatmeal extract": {
+  "g": "null",
+  "s": "Soothing skin protectant, no hazard",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": null
+ },
+ "Vitamin E": {
+  "g": "null",
+  "s": "Natural antioxidant, no hazard",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": null
+ },
+ "Sodium Chloride": {
+  "g": "null",
+  "s": "Table salt, no hazard in cleaning context",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": null
+ },
+ "Alkaline Silicate": {
+  "g": "H319",
+  "s": "Eye irritant, low overall hazard",
+  "ev": "High",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Alumina": {
+  "g": "null",
+  "s": "Natural abrasive, low hazard in cleaning paste form",
+  "ev": "High",
+  "gr": {
+   "derm": "A"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Brassica Campestris Seed Oil": {
+  "g": "null",
+  "s": "Field mustard seed oil, natural emollient",
+  "ev": "High",
+  "gr": {
+   "derm": "A"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Helianthus Annuus Seed Oil": {
+  "g": "null",
+  "s": "Sunflower seed oil, natural emollient",
+  "ev": "High",
+  "gr": {
+   "derm": "A"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Triethyl Citrate": {
+  "g": "null",
+  "s": "Food-grade plasticizer, low hazard",
+  "ev": "High",
+  "gr": {
+   "derm": "A"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Ginger Extract": {
+  "g": "null",
+  "s": "Natural plant extract, low hazard",
+  "ev": "High",
+  "gr": {
+   "derm": "A"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Isopropanol": {
+  "g": "H225,H319,H336",
+  "s": "Flammable, eye irritant, drowsiness",
+  "ev": "High",
+  "gr": {
+   "derm": "B",
+   "resp": "C",
+   "work": "C",
+   "repro": "B"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": null
+ },
+ "Isopropyl Alcohol": {
+  "g": "H225,H319,H336",
+  "s": "Flammable, eye irritant, drowsiness",
+  "ev": "High",
+  "gr": {
+   "derm": "B",
+   "resp": "C",
+   "work": "C",
+   "repro": "B"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": null
+ },
+ "Ethanol": {
+  "g": "H225,H319",
+  "s": "Highly flammable, eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "B",
+   "work": "C",
+   "repro": "D"
+  },
+  "impacts": [
+   "repro"
+  ],
+  "reclassified": [
+   "Ethanol was long marketed as a harmless 'natural' solvent; high-exposure studies documented fetal harm (FAS), and occupational exposure is now treated more cautiously."
+  ],
+  "note": null
+ },
+ "Sodium Hypochlorite": {
+  "g": "H314,H318,H400",
+  "s": "Corrosive, severe eye damage, aquatic toxicity",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "env": "F",
+   "work": "D",
+   "resp": "C"
+  },
+  "impacts": [
+   "aqua",
+   "derm",
+   "resp"
+  ],
+  "reclassified": [
+   "Bleach was the unquestioned household standard for a century; occupational cohorts (cleaning workers, nurses) later linked routine bleach exposure to asthma & COPD risk."
+  ],
+  "note": null
+ },
+ "Sodium Hydroxide": {
+  "g": "H290,H314,H318",
+  "s": "Corrosive, severe burns",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "work": "D",
+   "repro": "B"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Hydrochloric Acid": {
+  "g": "H290,H314,H335",
+  "s": "Corrosive, respiratory irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "resp": "D",
+   "work": "D",
+   "repro": "B"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": null
+ },
+ "Quaternary Ammonium": {
+  "g": "H302,H314,H400",
+  "s": "Harmful if swallowed, corrosive, aquatic toxicity",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "env": "F",
+   "work": "D",
+   "resp": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm",
+   "resp"
+  ],
+  "reclassified": [
+   "Quats surged as 'safe' germ killers; occupational studies linked them to asthma & allergic sensitization; EPA registration review ongoing."
+  ],
+  "note": null
+ },
+ "Benzalkonium Chloride": {
+  "g": "H302,H314,H400",
+  "s": "Harmful if swallowed, corrosive, aquatic toxicity",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "env": "F",
+   "work": "D",
+   "resp": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm",
+   "resp"
+  ],
+  "reclassified": [
+   "Benzalkonium chloride was a go-to 'mild' disinfectant; animal repro studies + occupational asthma reports led to stricter limits & allergy labeling."
+  ],
+  "note": null
+ },
+ "Sodium Lauryl Sulfate": {
+  "g": "H228,H302,H315,H319,H335",
+  "s": "Flammable solid, skin/eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "C",
+   "resp": "C",
+   "work": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "derm",
+   "repro"
+  ],
+  "reclassified": [
+   "SLS was once marketed as 'safe enough to brush your teeth with'; stripping studies & 1,4-dioxane contamination concerns (from ethoxylation variants) later tempered that."
+  ],
+  "note": null
+ },
+ "Sodium Laureth Sulfate": {
+  "g": "H315,H319",
+  "s": "Skin and eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "C",
+   "repro": "C",
+   "canc": "C"
+  },
+  "impacts": [
+   "derm",
+   "repro",
+   "canc"
+  ],
+  "reclassified": [
+   "SLES replaced SLS as 'gentler'; ethoxylation introduces trace 1,4-dioxane (IARC 2B probable carcinogen) — a contaminant, not an ingredient."
+  ],
+  "note": null
+ },
+ "Limonene": {
+  "g": "H226,H304,H315,H317,H400",
+  "s": "Flammable, skin sensitizer, aspiration hazard, aquatic toxicity",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "resp": "D",
+   "env": "F",
+   "repro": "B"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm",
+   "resp"
+  ],
+  "reclassified": [
+   "Citrus limonene was sold as the 'natural' scent; on air exposure it oxidizes into potent sensitizers (limonene hydroperoxides) — now a known contact-allergen source."
+  ],
+  "note": null
+ },
+ "Lauramine Oxide": {
+  "g": "H315,H319",
+  "s": "Skin and eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Oxalic Acid": {
+  "g": "H302,H312",
+  "s": "Harmful if swallowed or contacted",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "organ": "D",
+   "repro": "C"
+  },
+  "impacts": [
+   "derm",
+   "repro"
+  ],
+  "note": null
+ },
+ "Sodium Percarbonate": {
+  "g": "H271,H302,H318",
+  "s": "Oxidizer, harmful if swallowed, severe eye damage",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "work": "C"
+  },
+  "impacts": [
+   "aqua",
+   "derm"
+  ],
+  "note": null
+ },
+ "Castile Soap": {
+  "g": "H315,H319",
+  "s": "Mild skin/eye irritant, biodegradable",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Tea Tree Oil": {
+  "g": "H304,H315,H317,H335,H412",
+  "s": "Skin sensitizer, aspiration hazard, respiratory irritant",
+  "ev": "Low",
+  "gr": {
+   "derm": "D",
+   "resp": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "allerg",
+   "derm",
+   "resp"
+  ],
+  "reclassified": [
+   "Tea tree oil rode the 'natural = safe' wave; it is a documented contact sensitizer (oxidized forms) and has rare prepubertal gynecomastia case reports (weak endocrine signal)."
+  ],
+  "note": null
+ },
+ "Lavender Oil": {
+  "g": "H315,H317,H319",
+  "s": "Skin sensitizer and irritant",
+  "ev": "Low",
+  "gr": {
+   "derm": "D",
+   "repro": "C",
+   "endo": "C"
+  },
+  "impacts": [
+   "allerg",
+   "endo"
+  ],
+  "reclassified": [
+   "Lavender oil, once 'calming & innocent', has case reports linking topical use to prepubertal gynecomastia (weak, possible endocrine activity); a registered contact allergen."
+  ],
+  "note": null
+ },
+ "Lemon Oil": {
+  "g": "H226,H304,H315,H317,H400",
+  "s": "Flammable, sensitizer, aquatic toxicity",
+  "ev": "Low",
+  "gr": {
+   "derm": "D",
+   "env": "F"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm"
+  ],
+  "note": null
+ },
+ "Peppermint Oil": {
+  "g": "H315,H317,H319,H335",
+  "s": "Skin/eye irritant, respiratory irritant",
+  "ev": "Low",
+  "gr": {
+   "derm": "D",
+   "resp": "C"
+  },
+  "impacts": [
+   "allerg",
+   "derm",
+   "resp"
+  ],
+  "note": null
+ },
+ "Eucalyptus Oil": {
+  "g": "H304,H315,H317,H335",
+  "s": "Skin sensitizer, respiratory irritant, toxic to pets",
+  "ev": "Low",
+  "gr": {
+   "derm": "D",
+   "resp": "C"
+  },
+  "impacts": [
+   "allerg",
+   "derm",
+   "resp"
+  ],
+  "note": null
+ },
+ "Sodium Coco-Sulfate": {
+  "g": "H315,H319",
+  "s": "Plant-derived surfactant, skin/eye irritant",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Cocamidopropyl Betaine": {
+  "g": "H315,H319",
+  "s": "Mild surfactant, skin/eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [
+   "allerg",
+   "derm"
+  ],
+  "reclassified": [
+   "CAPB replaced harsher surfactants as 'gentle'; became a common contact allergen (amide impurities) — now on many allergen patch panels."
+  ],
+  "note": null
+ },
+ "Benzisothiazolinone": {
+  "g": "H302,H315,H317,H400",
+  "s": "Harmful if swallowed, skin irritant, aquatic toxicity",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "env": "D",
+   "resp": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm"
+  ],
+  "reclassified": [
+   "BIT, a cousin of MIT, followed the same arc: marketed safe, became a recognized sensitizer with occupational dermatitis reports."
+  ],
+  "note": null
+ },
+ "Phenoxyethanol": {
+  "g": "H302,H315,H319",
+  "s": "Harmful if swallowed, skin/eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "reclassified": [
+   "Phenoxyethanol replaced parabens as 'clean' preservative; repro/developmental flags in animal studies led to EU restrictions in cosmetics (2012)."
+  ],
+  "note": null
+ },
+ "Butyloxyethanol": {
+  "g": "H302,H315,H319",
+  "s": "Harmful if swallowed, skin/eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "work": "C",
+   "repro": "D",
+   "resp": "C"
+  },
+  "impacts": [
+   "derm",
+   "repro",
+   "resp"
+  ],
+  "reclassified": [
+   "2-Butoxyethanol (EGBE) was once in every window & all-purpose cleaner as a 'safe' solvent; CA Prop 65 lists it for reproductive/developmental harm; EPA risk reviews followed."
+  ],
+  "note": null
+ },
+ "Ammonium Hydroxide": {
+  "g": "H314,H318",
+  "s": "Corrosive, severe eye damage",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "work": "C",
+   "resp": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "reclassified": [
+   "Ammonia was grandma's go-to; strong respiratory irritant, and mixing with bleach produces chloramine gas — a documented household emergency."
+  ],
+  "note": null
+ },
+ "Alcohol Ethoxylate": {
+  "g": "H315,H319",
+  "s": "Skin/eye irritant, surfactant",
+  "ev": "High",
+  "gr": {
+   "derm": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "aqua",
+   "derm",
+   "repro"
+  ],
+  "reclassified": [
+   "Ethoxylated surfactants can carry trace 1,4-dioxane (IARC 2B probable carcinogen) from manufacturing — process contaminant, not on the label."
+  ],
+  "note": null
+ },
+ "Trichloroisocyanuric Acid": {
+  "g": "H271,H302,H319,H410",
+  "s": "Oxidizer, harmful, aquatic toxicity",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "env": "F"
+  },
+  "impacts": [
+   "aqua",
+   "derm"
+  ],
+  "note": null
+ },
+ "Sodium Carbonate Peroxide": {
+  "g": "H271,H302,H318",
+  "s": "Oxidizer, harmful if swallowed, severe eye damage",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "work": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Potassium Oleate": {
+  "g": "H315,H319",
+  "s": "Potassium salt of oleic acid, mild irritant",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Organic Peppermint Oil": {
+  "g": "H315,H317",
+  "s": "May cause skin sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Organic Lavender Oil": {
+  "g": "H315,H317",
+  "s": "May cause skin sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Essential Oils": {
+  "g": "H315,H317",
+  "s": "May cause skin sensitization. Varies by oil type.",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": "Varies widely by oil; sensitization is the common thread."
+ },
+ "Citrus essential oils": {
+  "g": "H315,H317",
+  "s": "May cause skin sensitization. Contains limonene.",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg",
+   "derm"
+  ],
+  "note": null
+ },
+ "Cedar essential oil": {
+  "g": "H315,H317",
+  "s": "May cause skin sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Pine essential oil": {
+  "g": "H315,H317",
+  "s": "May cause skin sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg",
+   "resp"
+  ],
+  "note": null
+ },
+ "Lavender essential oil": {
+  "g": "H315,H317",
+  "s": "May cause skin sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg",
+   "endo"
+  ],
+  "note": null
+ },
+ "Geranium Oil": {
+  "g": "H315,H317",
+  "s": "May cause skin sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Potassium Hydroxide": {
+  "g": "H290,H314,H318",
+  "s": "Corrosive in pure form, but neutralized in final product",
+  "ev": "High",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Corrosive in pure form; neutralized in finished products."
+ },
+ "Lauric Acid": {
+  "g": "H315,H319",
+  "s": "Fatty acid, mild irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Potassium Carbonate": {
+  "g": "H315,H319",
+  "s": "Mild alkali, can cause skin/eye irritation in pure form",
+  "ev": "High",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Dipterocarpus Wood Oil": {
+  "g": "H315,H317",
+  "s": "Natural essential oil, may cause sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Citral": {
+  "g": "H315,H317,H319",
+  "s": "Fragrance allergen, occurs naturally in citrus oils",
+  "ev": "Low",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "allerg",
+   "derm"
+  ],
+  "note": null
+ },
+ "Mandarin Oil": {
+  "g": "H315,H317",
+  "s": "Citrus essential oil, may cause sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Mint Oil": {
+  "g": "H315,H317",
+  "s": "Essential oil, may cause sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Basil Oil": {
+  "g": "H315,H317",
+  "s": "Essential oil, may cause sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Denatured Alcohol": {
+  "g": "H225,H319",
+  "s": "Ethanol denatured with bitterants, flammable, eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "C",
+   "work": "C",
+   "repro": "D"
+  },
+  "impacts": [
+   "derm",
+   "repro"
+  ],
+  "reclassified": [
+   "Denatured alcohol is ethanol + bitterants; inherits ethanol's high-exposure repro flags. Often the hidden volatile in 'natural' spray cleaners."
+  ],
+  "note": null
+ },
+ "Citrus Aurantium Peel Oil": {
+  "g": "H315,H317",
+  "s": "Bitter orange peel oil, may cause sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Ethanolamine": {
+  "g": "H312,H332,H319",
+  "s": "Corrosive amine. Occupational asthma documented in cleaners (meta-analyses).",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C",
+   "resp": "D",
+   "work": "C"
+  },
+  "impacts": [
+   "resp",
+   "derm"
+  ],
+  "note": null
+ },
+ "Surfactant": {
+  "g": null,
+  "s": "Undisclosed surfactant blend — cannot assess specific hazards.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Undisclosed blend; generic placeholder used when the true surfactant is unknown."
+ },
+ "Caprylyl/Capryl Glucoside": {
+  "g": null,
+  "s": "Plant-derived glucoside surfactant, biodegradable, mild.",
+  "ev": "Low",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Dimethicone": {
+  "g": null,
+  "s": "Silicone polymer. Low hazard, persistent in environment.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "A"
+  },
+  "impacts": [
+   "aqua"
+  ],
+  "note": "Not acutely toxic but poorly biodegradable; accumulates."
+ },
+ "Butane": {
+  "g": "H220,H280",
+  "s": "Extremely flammable propellant gas. Simple asphyxiant in confined spaces.",
+  "ev": "High",
+  "gr": {
+   "work": "C"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Alkyldimethylamine Oxide": {
+  "g": "H315,H318",
+  "s": "Amine oxide surfactant. Skin/eye irritant.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Hydrogen Peroxide": {
+  "g": "H314,H318,H412",
+  "s": "Corrosive oxidizer. Severe eye damage, aquatic toxicity.",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "env": "C",
+   "work": "D"
+  },
+  "impacts": [
+   "aqua",
+   "derm"
+  ],
+  "note": null
+ },
+ "Hydroxypropyl Cyclodextrin": {
+  "g": null,
+  "s": "Modified starch ring that traps odor molecules. Low hazard.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "A"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Alcohol": {
+  "g": "H225,H319",
+  "s": "Generic alcohol (usually ethanol or isopropanol). Flammable, eye irritant.",
+  "ev": "Low",
+  "gr": {
+   "derm": "B",
+   "work": "C"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Octyl/Decyl Glucoside": {
+  "g": null,
+  "s": "Plant-derived glucoside surfactant, biodegradable, mild.",
+  "ev": "Low",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Propane": {
+  "g": "H220,H280",
+  "s": "Extremely flammable propellant gas. Simple asphyxiant in confined spaces.",
+  "ev": "High",
+  "gr": {
+   "work": "C"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Propylene Glycol Butyl Ether": {
+  "g": "H302,H315,H319",
+  "s": "Glycol ether solvent. Repro/developmental concern (glycol ether class, EPA/Prop 65 flagged 2-butoxyethanol cousin).",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D",
+   "repro": "C",
+   "work": "C"
+  },
+  "impacts": [
+   "repro",
+   "derm"
+  ],
+  "reclassified": [
+   "Glycol ethers were promoted as 'safe' replacements for banned solvents (1970s–90s); regulation & Prop 65 listings later flagged reproductive/developmental harm in the class."
+  ],
+  "note": null
+ },
+ "Gluconic Acid": {
+  "g": null,
+  "s": "Mild chelating acid. Low hazard.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Sodium Dodecylbenzenesulfonate": {
+  "g": "H302,H315,H318,H412",
+  "s": "Anionic surfactant (linear alkylbenzene sulfonate). Skin/eye irritant, aquatic toxicity.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D",
+   "env": "C"
+  },
+  "impacts": [
+   "derm",
+   "aqua"
+  ],
+  "note": null
+ },
+ "Alcohol Ethoxylates": {
+  "g": "H315,H319,H412",
+  "s": "Ethoxylated surfactant family. Skin/eye irritant; 1,4-dioxane contaminant trace concern from ethoxylation.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C",
+   "env": "C",
+   "canc": "C"
+  },
+  "impacts": [
+   "derm",
+   "aqua",
+   "canc"
+  ],
+  "reclassified": [
+   "Ethoxylated surfactants (SLES, alcohol ethoxylates) can carry trace 1,4-dioxane — a byproduct EPA flagged as a probable human carcinogen (IARC 2B). Not an added ingredient; a process contaminant."
+  ],
+  "note": null
+ },
+ "Didecyldimonium Chloride": {
+  "g": "H302,H314,H400",
+  "s": "Quaternary ammonium (DDAC). Corrosive, aquatic toxicity, respiratory sensitizer in occupational use.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "F",
+   "resp": "C",
+   "env": "F",
+   "work": "D"
+  },
+  "impacts": [
+   "resp",
+   "derm",
+   "aqua",
+   "allerg"
+  ],
+  "reclassified": [
+   "Quats (quaternary ammonium disinfectants) surged in use mid-20th c. as 'safe' germ killers; occupational studies later linked them to asthma & allergic sensitization."
+  ],
+  "note": null
+ },
+ "Isoparaffin": {
+  "g": "H226,H304",
+  "s": "Petroleum-derived solvent blend. Flammable, aspiration hazard.",
+  "ev": "Medium",
+  "gr": {
+   "resp": "C",
+   "work": "B"
+  },
+  "impacts": [
+   "resp"
+  ],
+  "note": null
+ },
+ "Phenoxyisopropanol": {
+  "g": "H315,H319",
+  "s": "Glycol ether-like solvent. Skin/eye irritant; glycol ether class repro flags.",
+  "ev": "Low",
+  "gr": {
+   "derm": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "repro",
+   "derm"
+  ],
+  "note": null
+ },
+ "Isobutane": {
+  "g": "H220,H280",
+  "s": "Extremely flammable propellant gas. Simple asphyxiant in confined spaces.",
+  "ev": "High",
+  "gr": {
+   "work": "C"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Sodium Silicate": {
+  "g": "H314,H335",
+  "s": "Alkaline silicate. Corrosive; dust respiratory irritant.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D",
+   "resp": "C",
+   "work": "C"
+  },
+  "impacts": [
+   "resp",
+   "derm"
+  ],
+  "note": null
+ },
+ "Sodium Tetraborate": {
+  "g": "H360FD,H319",
+  "s": "Borax (sodium tetraborate decahydrate). EU/CLP-classified reproductive toxicant 1B (H360FD); eye irritant. US allows in household products.",
+  "ev": "High",
+  "gr": {
+   "repro": "F",
+   "derm": "C",
+   "work": "D"
+  },
+  "impacts": [
+   "repro"
+  ],
+  "reclassified": [
+   "Borax was the 19th-century 'miracle cleaner' — cheap, effective, universally trusted. EU CLP classified it Reproductive toxicant 1B (H360FD) in 2010; it is restricted across Europe while the US still sells it off the shelf."
+  ],
+  "note": "The catch-up poster child: identical GHS hazard classification on both sides of the Atlantic, opposite regulatory outcomes."
+ }
+}
