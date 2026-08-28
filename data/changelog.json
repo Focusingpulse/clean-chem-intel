@@ -1,6 +1,10 @@
 [
  {
   "date": "2026-08-28",
+  "text": "Added DIY Mix & Match Solution Lab — pick a surface (degreaser, glass, all-purpose, porcelain/tub, hard-water, carpet), choose safe base ingredients (castile, alcohol, vinegar, baking soda, essential oils...), set ratios with a visual bottle-fill, get vetted starter recipes + mixing rules (never bleach+acid) and a pH cheat sheet."
+ },
+ {
+  "date": "2026-08-28",
   "text": "Gather pass: added Easy-Off Heavy Duty Oven Cleaner (lye + DEGBE glycol-ether solvent) and profiled Diethylene Glycol Monobutyl Ether; added EU amine-restriction context for ethanolamine. 117 products."
  },
  {

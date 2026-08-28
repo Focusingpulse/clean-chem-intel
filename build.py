@@ -28,6 +28,7 @@ def main():
     ings = load("ingredients.json")
     changelog = load("changelog.json")
     reg = load("reg.json")
+    recipes = load("recipes.json")
 
     # Last-updated = newest changelog date (stable across day rebuilds)
     last_updated = max(e["date"] for e in changelog) if changelog else date.today().isoformat()
@@ -83,6 +84,7 @@ def main():
     html = inject("__META__", meta)
     html = inject("__REG__", reg)
     html = inject("__SCOREBOARD__", scoreboard)
+    html = inject("__RECIPES__", recipes)
 
     OUT.write_text(html, encoding="utf-8")
 
