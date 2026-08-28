@@ -53,10 +53,13 @@ git stash --quiet 2>/dev/null || true
 git pull --rebase --quiet origin main 2>&1 | tail -1 || git pull --quiet origin main 2>&1 | tail -1
 git stash pop --quiet 2>/dev/null || true
 
-echo "[3] Validate + report"
+echo "[3] Validate + rebuild"
+# Validate data files, then regenerate index.html from data (living-system build)
 MAINT=$(python3 chem_maintain.py 2>&1)
 echo "$MAINT" | tail -8
-SUMMARY=$(python3 chem_maintain.py --summary 2>/dev/null || echo "clean-chem: validation failed")
+BUILD=$(python3 build.py 2>&1)
+echo "$BUILD" | tail -4
+SUMMARY=$(echo "$BUILD" | head -1 | grep -oE '[0-9]+ products, [0-9]+ ingredients' || echo "clean-chem build run")
 
 echo "[4] Commit and push (if anything changed)"
 git add -A
