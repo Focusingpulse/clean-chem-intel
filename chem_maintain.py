@@ -1,79 +1,137 @@
 #!/usr/bin/env python3
-"""
-Clean Chem Intel maintenance + bounded improvement helper.
+"""Clean Chem Intel data validator — the living-system checks.
 
-Pure stdlib. Validates and (optionally, with --fix) repairs the single-file
-web UI: product data sanity, duplicate slugs, malformed entries, sort order.
-Also reports product counts for the family ledger check-in.
+Validates the SOURCE OF TRUTH (data/*.json) instead of the built HTML:
+- products.json: required fields, duplicate names, unknown/missing ingredients
+- ingredients.json: required fields, valid grades, valid impact tags
+- reg.json: valid regions/statuses, no empty reasons
+- changelog.json: sane entries
 
 Usage:
-    python3 chem_maintain.py            # validate + report (read-only)
-    python3 chem_maintain.py --fix      # apply safe, automatic repairs
+    python3 chem_maintain.py            # validate (read-only), exit 1 on issues
     python3 chem_maintain.py --summary  # one-line ledger summary
-
-Never edits scores or research — that is agent-judgment work.
 """
+import json
 import re
 import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent
-INDEX = REPO / "index.html"
+DATA = REPO / "data"
 
-# Product entries look like:  {name:"...",brand:"...",cat:"...",ings:[...]}
-# optional: safe:"..." certifications.
-# We do NOT try to parse the full JS; we spot-check structure and counts.
-ENTRY_RE = re.compile(r'\{name:"[^"]+",brand:"[^"]+",cat:"[^"]+",(?:safe:"[^"]*",)?ings:\[[^\]]*\]\}')
+VALID_GRADES = {"A", "B", "C", "D", "F"}
+VALID_IMPACTS = {"resp", "repro", "endo", "derm", "aqua", "canc", "allerg"}
+VALID_DIMS = {"resp", "derm", "endo", "repro", "organ", "env", "work", "canc"}
+VALID_REGIONS = {"eu", "uk", "ca", "jp", "us"}
+VALID_STATUS = {"banned", "restricted", "review", "flagged", "allowed"}
 
 
-def load_products():
-    html = INDEX.read_text(encoding="utf-8")
-    m = re.search(r"const PRODUCTS = \[(.*?)\n\];", html, re.S)
-    if not m:
-        return None, html
-    arr = m.group(1)
-    entries = ENTRY_RE.findall(arr)
-    return entries, html
+def load(name):
+    try:
+        return json.loads((DATA / name).read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return None
+    except json.JSONDecodeError as e:
+        return f"JSON ERROR in {name}: {e}"
 
 
 def validate():
-    """Read-only structural check. Returns list of issue strings."""
     issues = []
-    entries, html = load_products()
-    if entries is None:
-        return ["PRODUCTS array not found — index.html structure changed?"]
-    if not entries:
-        return ["PRODUCTS array is empty"]
-    names = [re.search(r'name:"([^"]+)"', e).group(1) for e in entries]
-    dup = {n for n in names if names.count(n) > 1}
-    if dup:
-        issues.append(f"duplicate product names: {sorted(dup)}")
-    # name/brand/cat fields must be present on every entry
-    for e in entries:
-        for field in ("name:", "brand:", "cat:", "ings:"):
-            if field not in e:
-                issues.append(f"entry missing {field!r}: {e[:80]}...")
+
+    products = load("products.json")
+    if isinstance(products, str):
+        return [products]
+    if products is None:
+        return ["data/products.json missing"]
+    seen = {}
+    for i, p in enumerate(products):
+        for f in ("name", "brand", "cat", "ings"):
+            if f not in p:
+                issues.append(f"product[{i}] missing {f}: {p.get('name','?')}")
+        nm = p.get("name")
+        if nm and nm in seen:
+            issues.append(f"duplicate product name: {nm} (idx {seen[nm]} and {i})")
+        seen[nm] = i
+        for ing in p.get("ings", []):
+            if not isinstance(ing, str) or not ing.strip():
+                issues.append(f"product {nm}: bad ingredient entry {ing!r}")
+
+    ings = load("ingredients.json")
+    if isinstance(ings, str):
+        return [ings]
+    if ings is None:
+        return ["data/ingredients.json missing"]
+    for name, d in ings.items():
+        if not isinstance(d, dict):
+            issues.append(f"ingredient {name}: not a dict")
+            continue
+        for g in (d.get("gr") or {}).values():
+            if g not in VALID_GRADES:
+                issues.append(f"ingredient {name}: invalid grade {g!r}")
+        for dim in (d.get("gr") or {}):
+            if dim not in VALID_DIMS:
+                issues.append(f"ingredient {name}: invalid dim {dim!r}")
+        for imp in d.get("impacts", []):
+            if imp not in VALID_IMPACTS:
+                issues.append(f"ingredient {name}: invalid impact {imp!r}")
+        ev = d.get("ev")
+        if ev not in (None, "High", "Medium", "Low", "Extrapolated"):
+            issues.append(f"ingredient {name}: odd evidence {ev!r}")
+
+    # products must not reference unknown ingredients
+    for p in products:
+        for ing in p.get("ings", []):
+            if ing not in ings:
+                issues.append(f"product {p.get('name')}: unknown ingredient {ing!r} (add to data/ingredients.json)")
+
+    reg = load("reg.json")
+    if isinstance(reg, str):
+        return [reg]
+    if reg:
+        for ing, lst in reg.get("entries", {}).items():
+            if ing not in ings:
+                issues.append(f"reg entry references ingredient missing from DB: {ing}")
+            for e in lst:
+                if e.get("region") not in VALID_REGIONS:
+                    issues.append(f"reg {ing}: bad region {e.get('region')}")
+                if e.get("status") not in VALID_STATUS:
+                    issues.append(f"reg {ing}: bad status {e.get('status')}")
+                if not e.get("reason"):
+                    issues.append(f"reg {ing}: missing reason")
+        for w in reg.get("watchlist", []):
+            if not w.get("rule") or not w.get("reason"):
+                issues.append(f"watchlist {w.get('name')}: missing rule/reason")
+
+    cl = load("changelog.json")
+    if isinstance(cl, str):
+        return [cl]
+    if cl:
+        for e in cl:
+            if not e.get("date") or not e.get("text"):
+                issues.append(f"changelog entry missing date/text: {e}")
+
     return issues
 
 
-def autofix():
-    """Apply safe automatic repairs. Returns list of actions taken."""
-    actions = []
-    entries, html = load_products()
-    if entries is None:
-        return ["PRODUCTS not found — cannot fix"]
-    # Sort products: keep the human-maintained order? No — sort is a judgment
-    # call (BMVC products first vs alphabetical). Leave ordering alone.
-    # Structural auto-fix: none required by current validation pass.
-    return actions
-
-
 def summary_line():
-    entries, _ = load_products()
-    if entries is None:
-        return "clean-chem: products parse FAILED"
-    safe = sum(1 for e in entries if 'safe:' in e)
-    return f"clean-chem: {len(entries)} products ({safe} certified safe), structurally clean"
+    counts = {}
+    try:
+        products = json.loads((DATA / "products.json").read_text())
+        ings = json.loads((DATA / "ingredients.json").read_text())
+        reg = json.loads((DATA / "reg.json").read_text())
+        counts["products"] = len(products)
+        counts["ings"] = len(ings)
+        counts["rec"] = sum(1 for v in ings.values() if v.get("reclassified"))
+        counts["her"] = sum(1 for p in products if p.get("heritage"))
+        n_restricted = 0
+        for lst in reg.get("entries", {}).values():
+            if any(e.get("status") in ("banned", "restricted") and e.get("region") != "us" for e in lst):
+                n_restricted += 1
+        counts["restricted"] = n_restricted
+        return (f"clean-chem: {counts['products']} products, {counts['ings']} ingredients, "
+                f"{counts['rec']} reclassified, {counts['her']} heritage, {counts['restricted']} restricted-elsewhere")
+    except Exception as e:
+        return f"clean-chem: summary error ({e})"
 
 
 if __name__ == "__main__":
@@ -83,15 +141,10 @@ if __name__ == "__main__":
     issues = validate()
     if issues:
         print("ISSUES:")
-        for i in issues:
+        for i in issues[:20]:
             print(f"  - {i}")
-        if "--fix" in sys.argv:
-            for a in autofix():
-                print(f"FIXED: {a}")
-        sys.exit(1 if issues else 0)
-    else:
-        print("clean-chem: all checks passed")
-        if "--fix" in sys.argv:
-            for a in autofix():
-                print(f"FIXED: {a}")
-        sys.exit(0)
+        if len(issues) > 20:
+            print(f"  ... and {len(issues)-20} more")
+        sys.exit(1)
+    print("clean-chem: data checks passed")
+    sys.exit(0)
