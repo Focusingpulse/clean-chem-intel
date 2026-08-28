@@ -1418,5 +1418,23 @@
    "Borax was the 19th-century 'miracle cleaner' — cheap, effective, universally trusted. EU CLP classified it Reproductive toxicant 1B (H360FD) in 2010; it is restricted across Europe while the US still sells it off the shelf."
   ],
   "note": "The catch-up poster child: identical GHS hazard classification on both sides of the Atlantic, opposite regulatory outcomes."
+ },
+ "Diethylene Glycol Monobutyl Ether": {
+  "g": "H302,H319",
+  "s": "DEGBE — glycol ether solvent used in heavy-duty oven and floor cleaners. Harmful if swallowed, eye irritant. Glycol-ether class carries reproductive/developmental concern in EU/Prop 65 classifications.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C",
+   "repro": "C",
+   "work": "C"
+  },
+  "impacts": [
+   "repro",
+   "derm"
+  ],
+  "reclassified": [
+   "DEGBE is a glycol ether — the same family as 2-butoxyethanol (EGBE). Glycol ethers were adopted as 'safer' replacements for banned solvents through the 1980s-90s; EU CLP later flagged reproductive/developmental toxicity across the class and several are now CA Prop 65-listed. Lower acute toxicity than EGBE, but the class concern stands."
+  ],
+  "note": "Common in fume-style oven cleaners where high heat vaporizes the solvent."
  }
 }

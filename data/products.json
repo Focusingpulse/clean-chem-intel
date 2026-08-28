@@ -1745,5 +1745,21 @@
   "heritage_note": "Mined in Death Valley and hauled by 20-mule teams since 1891 — the all-purpose laundry booster grandma swore by. Still in most US grocery aisles; restricted across the EU for reproductive toxicity.",
   "added": "2026-08-28",
   "updated": "2026-08-28"
+ },
+ {
+  "name": "Easy-Off Heavy Duty Oven Cleaner",
+  "brand": "Reckitt",
+  "cat": "Oven Cleaner",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Hydroxide",
+   "Diethylene Glycol Monobutyl Ether",
+   "Butane",
+   "Isobutane"
+  ],
+  "heritage": false,
+  "added": "2026-08-28",
+  "updated": "2026-08-28"
  }
 ]
