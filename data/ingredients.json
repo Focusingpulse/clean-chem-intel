@@ -142,7 +142,8 @@
   "gr": {
    "derm": "D",
    "resp": "C",
-   "repro": "C"
+   "repro": "C",
+   "canc": "B"
   },
   "impacts": [
    "allerg",
@@ -463,7 +464,8 @@
   "gr": {
    "derm": "B",
    "work": "C",
-   "repro": "D"
+   "repro": "D",
+   "canc": "B"
   },
   "impacts": [
    "repro"
@@ -596,9 +598,9 @@
    "canc": "C"
   },
   "impacts": [
+   "canc",
    "derm",
-   "repro",
-   "canc"
+   "repro"
   ],
   "reclassified": [
    "SLES replaced SLS as 'gentler'; ethoxylation introduces trace 1,4-dioxane (IARC 2B probable carcinogen) — a contaminant, not an ingredient."
@@ -1316,13 +1318,11 @@
   "ev": "Medium",
   "gr": {
    "derm": "C",
-   "env": "C",
-   "canc": "C"
+   "env": "C"
   },
   "impacts": [
    "derm",
-   "aqua",
-   "canc"
+   "aqua"
   ],
   "reclassified": [
    "Ethoxylated surfactants (SLES, alcohol ethoxylates) can carry trace 1,4-dioxane — a byproduct EPA flagged as a probable human carcinogen (IARC 2B). Not an added ingredient; a process contaminant."
@@ -1436,5 +1436,185 @@
    "DEGBE is a glycol ether — the same family as 2-butoxyethanol (EGBE). Glycol ethers were adopted as 'safer' replacements for banned solvents through the 1980s-90s; EU CLP later flagged reproductive/developmental toxicity across the class and several are now CA Prop 65-listed. Lower acute toxicity than EGBE, but the class concern stands."
   ],
   "note": "Common in fume-style oven cleaners where high heat vaporizes the solvent."
+ },
+ "sodium lauryl sulfate": {
+  "name": "Sodium Lauryl Sulfate",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "sodium laureth sulfate": {
+  "name": "Sodium Laureth Sulfate",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "cocamidopropyl betaine": {
+  "name": "Cocamidopropyl Betaine",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "sodium hypochlorite": {
+  "name": "Sodium Hypochlorite",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "sodium hydroxide": {
+  "name": "Sodium Hydroxide",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "benzalkonium chloride": {
+  "name": "Benzalkonium Chloride",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "alcohol ethoxylates": {
+  "name": "Alcohol Ethoxylates",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "glycerin": {
+  "name": "Glycerin",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "sodium gluconate": {
+  "name": "Sodium Gluconate",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "hydrogen peroxide": {
+  "name": "Hydrogen Peroxide",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "citric acid": {
+  "name": "Citric Acid",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "didecyldimonium chloride": {
+  "name": "Didecyldimonium Chloride",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "sodium carbonate": {
+  "name": "Sodium Carbonate",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "limonene": {
+  "name": "Limonene",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "sodium citrate": {
+  "name": "Sodium Citrate",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "propylene glycol": {
+  "name": "Propylene Glycol",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "ethanol": {
+  "name": "Ethanol",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
+ },
+ "isopropanol": {
+  "name": "Isopropanol",
+  "cas": "",
+  "source": "PubChem PUG REST",
+  "ghs": null,
+  "added": "2026-09-06",
+  "impacts": [],
+  "gr": {},
+  "note": null
  }
 }

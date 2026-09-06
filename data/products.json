@@ -1740,7 +1740,7 @@
   "ings": [
    "Sodium Tetraborate"
   ],
-  "heritage": true,
+  "heritage": false,
   "heritage_year": 1891,
   "heritage_note": "Mined in Death Valley and hauled by 20-mule teams since 1891 — the all-purpose laundry booster grandma swore by. Still in most US grocery aisles; restricted across the EU for reproductive toxicity.",
   "added": "2026-08-28",
@@ -1761,5 +1761,170 @@
   "heritage": false,
   "added": "2026-08-28",
   "updated": "2026-08-28"
+ },
+ {
+  "name": "Dawn Ultra Dish Soap",
+  "brand": "P&G",
+  "cat": "Dish Soap",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Lauryl Sulfate",
+   "Sodium Laureth Sulfate",
+   "Cocamidopropyl Betaine",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "source": "CA SB258 disclosure (public via CPID)",
+  "source_url": "https://cpid.calepa.ca.gov/",
+  "added": "2026-09-06",
+  "updated": "2026-09-06",
+  "note": ""
+ },
+ {
+  "name": "Tide Original Liquid Laundry",
+  "brand": "P&G",
+  "cat": "Laundry Detergent",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Alcohol Ethoxylate",
+   "Sodium Laureth Sulfate",
+   "Sodium Citrate",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "source": "CA SB258 disclosure (public via CPID)",
+  "source_url": "https://cpid.calepa.ca.gov/",
+  "added": "2026-09-06",
+  "updated": "2026-09-06",
+  "note": ""
+ },
+ {
+  "name": "Clorox Disinfecting Bleach",
+  "brand": "Clorox",
+  "cat": "Disinfectant",
+  "safe": null,
+  "ings": [
+   "Sodium Hypochlorite",
+   "Sodium Hydroxide",
+   "Water"
+  ],
+  "heritage": false,
+  "source": "CA SB258 disclosure (public via CPID)",
+  "source_url": "https://cpid.calepa.ca.gov/",
+  "added": "2026-09-06",
+  "updated": "2026-09-06",
+  "note": ""
+ },
+ {
+  "name": "Lysol Multi-Surface Cleaner",
+  "brand": "Reckitt",
+  "cat": "Multi-Surface Cleaner",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Benzalkonium Chloride",
+   "Sodium Lauryl Sulfate",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "source": "CA SB258 disclosure (public via CPID)",
+  "source_url": "https://cpid.calepa.ca.gov/",
+  "added": "2026-09-06",
+  "updated": "2026-09-06",
+  "note": ""
+ },
+ {
+  "name": "Seventh Generation Free & Clear Dish",
+  "brand": "Seventh Generation",
+  "cat": "Dish Soap",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Plant-derived Surfactants",
+   "Glycerin",
+   "Sodium Gluconate"
+  ],
+  "heritage": false,
+  "source": "Brand disclosure (public)",
+  "source_url": "https://cpid.calepa.ca.gov/",
+  "added": "2026-09-06",
+  "updated": "2026-09-06",
+  "note": ""
+ },
+ {
+  "name": "Dawn Ultra Dish Soap",
+  "brand": "P&G",
+  "cat": "Dish Soap",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Lauryl Sulfate",
+   "Sodium Laureth Sulfate",
+   "Cocamidopropyl Betaine",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "source": "CA SB258 disclosure (public via CPID)",
+  "source_url": "https://cpid.calepa.ca.gov/",
+  "added": "2026-09-06",
+  "updated": "2026-09-06",
+  "note": ""
+ },
+ {
+  "name": "Tide Original Liquid Laundry",
+  "brand": "P&G",
+  "cat": "Laundry Detergent",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Alcohol Ethoxylate",
+   "Sodium Laureth Sulfate",
+   "Sodium Citrate",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "source": "CA SB258 disclosure (public via CPID)",
+  "source_url": "https://cpid.calepa.ca.gov/",
+  "added": "2026-09-06",
+  "updated": "2026-09-06",
+  "note": ""
+ },
+ {
+  "name": "Lysol Multi-Surface Cleaner",
+  "brand": "Reckitt",
+  "cat": "Multi-Surface Cleaner",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Benzalkonium Chloride",
+   "Sodium Lauryl Sulfate",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "source": "CA SB258 disclosure (public via CPID)",
+  "source_url": "https://cpid.calepa.ca.gov/",
+  "added": "2026-09-06",
+  "updated": "2026-09-06",
+  "note": ""
+ },
+ {
+  "name": "Seventh Generation Free & Clear Dish",
+  "brand": "Seventh Generation",
+  "cat": "Dish Soap",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Plant-derived Surfactants",
+   "Glycerin",
+   "Sodium Gluconate"
+  ],
+  "heritage": false,
+  "source": "Brand disclosure (public)",
+  "source_url": "https://cpid.calepa.ca.gov/",
+  "added": "2026-09-06",
+  "updated": "2026-09-06",
+  "note": ""
  }
 ]
