@@ -31,7 +31,7 @@
    "repro"
   ],
   "reclassified": [
-   "'Fragrance' was historically treated as one harmless scent note; undisclosed blends routinely contain phthalates & synthetic musks \u2014 endocrine/repro flags (Prop 65 phthalates) and contact allergens."
+   "'Fragrance' was historically treated as one harmless scent note; undisclosed blends routinely contain phthalates & synthetic musks — endocrine/repro flags (Prop 65 phthalates) and contact allergens."
   ],
   "note": "Undisclosed blend. Hazards assigned from documented fragrance-carrier chemistry (phthalates, musks), not the specific formula."
  },
@@ -151,7 +151,7 @@
    "resp"
   ],
   "reclassified": [
-   "MIT was the 'safe' preservative replacing parabens; became 2013 'Allergen of the Year' \u2014 epidemic of allergic contact dermatitis, now restricted in leave-on products (EU)."
+   "MIT was the 'safe' preservative replacing parabens; became 2013 'Allergen of the Year' — epidemic of allergic contact dermatitis, now restricted in leave-on products (EU)."
   ],
   "note": null
  },
@@ -181,7 +181,7 @@
    "resp"
   ],
   "reclassified": [
-   "Enzymes were added to laundry products as 'natural' boosters; they are potent respiratory sensitizers \u2014 industry adopted encapsulation after occupational asthma outbreaks (1970s)."
+   "Enzymes were added to laundry products as 'natural' boosters; they are potent respiratory sensitizers — industry adopted encapsulation after occupational asthma outbreaks (1970s)."
   ],
   "note": "Encapsulated in modern products to reduce aerosolization."
  },
@@ -603,7 +603,7 @@
    "repro"
   ],
   "reclassified": [
-   "SLES replaced SLS as 'gentler'; ethoxylation introduces trace 1,4-dioxane (IARC 2B probable carcinogen) \u2014 a contaminant, not an ingredient."
+   "SLES replaced SLS as 'gentler'; ethoxylation introduces trace 1,4-dioxane (IARC 2B probable carcinogen) — a contaminant, not an ingredient."
   ],
   "note": null
  },
@@ -624,7 +624,7 @@
    "resp"
   ],
   "reclassified": [
-   "Citrus limonene was sold as the 'natural' scent; on air exposure it oxidizes into potent sensitizers (limonene hydroperoxides) \u2014 now a known contact-allergen source."
+   "Citrus limonene was sold as the 'natural' scent; on air exposure it oxidizes into potent sensitizers (limonene hydroperoxides) — now a known contact-allergen source."
   ],
   "note": null
  },
@@ -785,7 +785,7 @@
    "derm"
   ],
   "reclassified": [
-   "CAPB replaced harsher surfactants as 'gentle'; became a common contact allergen (amide impurities) \u2014 now on many allergen patch panels."
+   "CAPB replaced harsher surfactants as 'gentle'; became a common contact allergen (amide impurities) — now on many allergen patch panels."
   ],
   "note": null
  },
@@ -860,7 +860,7 @@
    "resp"
   ],
   "reclassified": [
-   "Ammonia was grandma's go-to; strong respiratory irritant, and mixing with bleach produces chloramine gas \u2014 a documented household emergency."
+   "Ammonia was grandma's go-to; strong respiratory irritant, and mixing with bleach produces chloramine gas — a documented household emergency."
   ],
   "note": null
  },
@@ -878,7 +878,7 @@
    "repro"
   ],
   "reclassified": [
-   "Ethoxylated surfactants can carry trace 1,4-dioxane (IARC 2B probable carcinogen) from manufacturing \u2014 process contaminant, not on the label."
+   "Ethoxylated surfactants can carry trace 1,4-dioxane (IARC 2B probable carcinogen) from manufacturing — process contaminant, not on the label."
   ],
   "note": null
  },
@@ -1162,7 +1162,7 @@
  },
  "Surfactant": {
   "g": null,
-  "s": "Undisclosed surfactant blend \u2014 cannot assess specific hazards.",
+  "s": "Undisclosed surfactant blend — cannot assess specific hazards.",
   "ev": "Low",
   "gr": {},
   "impacts": [],
@@ -1284,7 +1284,7 @@
    "derm"
   ],
   "reclassified": [
-   "Glycol ethers were promoted as 'safe' replacements for banned solvents (1970s\u201390s); regulation & Prop 65 listings later flagged reproductive/developmental harm in the class."
+   "Glycol ethers were promoted as 'safe' replacements for banned solvents (1970s–90s); regulation & Prop 65 listings later flagged reproductive/developmental harm in the class."
   ],
   "note": null
  },
@@ -1325,7 +1325,7 @@
    "aqua"
   ],
   "reclassified": [
-   "Ethoxylated surfactants (SLES, alcohol ethoxylates) can carry trace 1,4-dioxane \u2014 a byproduct EPA flagged as a probable human carcinogen (IARC 2B). Not an added ingredient; a process contaminant."
+   "Ethoxylated surfactants (SLES, alcohol ethoxylates) can carry trace 1,4-dioxane — a byproduct EPA flagged as a probable human carcinogen (IARC 2B). Not an added ingredient; a process contaminant."
   ],
   "note": null
  },
@@ -1415,13 +1415,13 @@
    "repro"
   ],
   "reclassified": [
-   "Borax was the 19th-century 'miracle cleaner' \u2014 cheap, effective, universally trusted. EU CLP classified it Reproductive toxicant 1B (H360FD) in 2010; it is restricted across Europe while the US still sells it off the shelf."
+   "Borax was the 19th-century 'miracle cleaner' — cheap, effective, universally trusted. EU CLP classified it Reproductive toxicant 1B (H360FD) in 2010; it is restricted across Europe while the US still sells it off the shelf."
   ],
   "note": "The catch-up poster child: identical GHS hazard classification on both sides of the Atlantic, opposite regulatory outcomes."
  },
  "Diethylene Glycol Monobutyl Ether": {
   "g": "H302,H319",
-  "s": "DEGBE \u2014 glycol ether solvent used in heavy-duty oven and floor cleaners. Harmful if swallowed, eye irritant. Glycol-ether class carries reproductive/developmental concern in EU/Prop 65 classifications.",
+  "s": "DEGBE — glycol ether solvent used in heavy-duty oven and floor cleaners. Harmful if swallowed, eye irritant. Glycol-ether class carries reproductive/developmental concern in EU/Prop 65 classifications.",
   "ev": "Medium",
   "gr": {
    "derm": "C",
@@ -1433,7 +1433,7 @@
    "derm"
   ],
   "reclassified": [
-   "DEGBE is a glycol ether \u2014 the same family as 2-butoxyethanol (EGBE). Glycol ethers were adopted as 'safer' replacements for banned solvents through the 1980s-90s; EU CLP later flagged reproductive/developmental toxicity across the class and several are now CA Prop 65-listed. Lower acute toxicity than EGBE, but the class concern stands."
+   "DEGBE is a glycol ether — the same family as 2-butoxyethanol (EGBE). Glycol ethers were adopted as 'safer' replacements for banned solvents through the 1980s-90s; EU CLP later flagged reproductive/developmental toxicity across the class and several are now CA Prop 65-listed. Lower acute toxicity than EGBE, but the class concern stands."
   ],
   "note": "Common in fume-style oven cleaners where high heat vaporizes the solvent."
  },
@@ -1619,7 +1619,7 @@
  },
  "DMDM Hydantoin": {
   "g": "H317",
-  "s": "Formaldehyde-releasing preservative. Skin sensitizer \u2014 can cause allergic contact dermatitis in formaldehyde-sensitive individuals.",
+  "s": "Formaldehyde-releasing preservative. Skin sensitizer — can cause allergic contact dermatitis in formaldehyde-sensitive individuals.",
   "ev": "Low",
   "gr": {
    "derm": "D",
@@ -1630,7 +1630,7 @@
    "derm"
   ],
   "reclassified": [
-   "DMDM Hydantoin was marketed as a 'safer' preservative; it releases formaldehyde slowly, inheriting formaldehyde's sensitization profile. EU 2022 lowered labeling threshold to 10 ppm \u2014 now must warn 'releases formaldehyde'."
+   "DMDM Hydantoin was marketed as a 'safer' preservative; it releases formaldehyde slowly, inheriting formaldehyde's sensitization profile. EU 2022 lowered labeling threshold to 10 ppm — now must warn 'releases formaldehyde'."
   ],
   "note": "Common in shampoos, body washes, and liquid hand soaps. Hidden source of formaldehyde exposure for sensitive individuals."
  }
