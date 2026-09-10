@@ -1,30 +1,34 @@
 [
- {
-  "date": "2026-09-09",
-  "text": "Daily gather: added DMDM Hydantoin regulatory entry (EU requires \"releases formaldehyde\" label at 10 ppm; US no such requirement) + Zud Heavy Duty Cleanser (powder rust remover, oxalic acid based). 131 products."
- },
- {
-  "date": "2026-08-28",
-  "text": "Added DIY Mix & Match Solution Lab \u2014 pick a surface (degreaser, glass, all-purpose, porcelain/tub, hard-water, carpet), choose safe base ingredients (castile, alcohol, vinegar, baking soda, essential oils...), set ratios with a visual bottle-fill, get vetted starter recipes + mixing rules (never bleach+acid) and a pH cheat sheet."
- },
- {
-  "date": "2026-08-28",
-  "text": "Gather pass: added Easy-Off Heavy Duty Oven Cleaner (lye + DEGBE glycol-ether solvent) and profiled Diethylene Glycol Monobutyl Ether; added EU amine-restriction context for ethanolamine. 117 products."
- },
- {
-  "date": "2026-08-28",
-  "text": "Added global regulatory layer \u2014 the planet's verdict: which ingredients the EU/UK/Canada/Japan have banned or restricted while the US still allows them, with reasons. Includes catch-up scoreboard, watch list, and Borax as the showcase heritage-vs-EU case."
- },
- {
-  "date": "2026-08-28",
-  "text": "v2 overhaul \u2014 search by health impact (respiratory, reproductive, endocrine, skin, aquatic, cancer, allergen), heritage 'grandma's cupboard' layer, 'once safe, now flagged' reclassified warnings, 110 documented ingredients (20 gaps closed)."
- },
- {
-  "date": "2026-08-19",
-  "text": "BMVC products updated with real ingredient lists from Sandra's cleaning kit (heritage + homemade formulas)."
- },
- {
-  "date": "2026-08-18",
-  "text": "First public build \u2014 115 products, 90 ingredients, A-F transparent grading with evidence labels, genetic sensitivity layer preview."
- }
+  {
+    "date": "2026-09-10",
+    "text": "Daily gather: added Dawn Ultra Dishwashing Liquid (mainstream US product with MIT preservative). Added EU formaldehyde regulatory entries: (1) BPR Decision 2026/599 banning formaldehyde releaser (paraformaldehyde + 2-hydroxypropylamine) for PT6 in-can preservatives; (2) REACH Annex XVII Entry 77 emission limits (0.062-0.080 mg/m\u00b3) for indoor articles effective Aug 2026. 136 products, 131 ingredients."
+  },
+  {
+    "date": "2026-09-09",
+    "text": "Daily gather: added DMDM Hydantoin regulatory entry (EU requires \"releases formaldehyde\" label at 10 ppm; US no such requirement) + Zud Heavy Duty Cleanser (powder rust remover, oxalic acid based). 131 products."
+  },
+  {
+    "date": "2026-08-28",
+    "text": "Added DIY Mix & Match Solution Lab \u2014 pick a surface (degreaser, glass, all-purpose, porcelain/tub, hard-water, carpet), choose safe base ingredients (castile, alcohol, vinegar, baking soda, essential oils...), set ratios with a visual bottle-fill, get vetted starter recipes + mixing rules (never bleach+acid) and a pH cheat sheet."
+  },
+  {
+    "date": "2026-08-28",
+    "text": "Gather pass: added Easy-Off Heavy Duty Oven Cleaner (lye + DEGBE glycol-ether solvent) and profiled Diethylene Glycol Monobutyl Ether; added EU amine-restriction context for ethanolamine. 117 products."
+  },
+  {
+    "date": "2026-08-28",
+    "text": "Added global regulatory layer \u2014 the planet's verdict: which ingredients the EU/UK/Canada/Japan have banned or restricted while the US still allows them, with reasons. Includes catch-up scoreboard, watch list, and Borax as the showcase heritage-vs-EU case."
+  },
+  {
+    "date": "2026-08-28",
+    "text": "v2 overhaul \u2014 search by health impact (respiratory, reproductive, endocrine, skin, aquatic, cancer, allergen), heritage 'grandma's cupboard' layer, 'once safe, now flagged' reclassified warnings, 110 documented ingredients (20 gaps closed)."
+  },
+  {
+    "date": "2026-08-19",
+    "text": "BMVC products updated with real ingredient lists from Sandra's cleaning kit (heritage + homemade formulas)."
+  },
+  {
+    "date": "2026-08-18",
+    "text": "First public build \u2014 115 products, 90 ingredients, A-F transparent grading with evidence labels, genetic sensitivity layer preview."
+  }
 ]
