@@ -1,5 +1,9 @@
 [
   {
+    "date": "2026-09-12",
+    "text": "Daily maintain: removed 20 duplicate product entries (4 products each duplicated 5x from prior cron runs \u2014 146\u2192126). Added Murphy Oil Soap (heritage wood cleaner, 1905). Added 1,4-dioxane regulatory entries (NY State 1ppm ban 2023, EU REACH roadmap evaluation) + ingredient profile (IARC 2B carcinogen, common surfactant contaminant). 127 products, 132 ingredients."
+  },
+  {
     "date": "2026-09-11",
     "text": "Daily gather: added Method Glass Cleaner (mainstream glass cleaner) and The Honest Company Dish Soap (popular clean brand). 142 products."
   },

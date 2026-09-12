@@ -276,6 +276,26 @@
         "reason": "Formaldehyde classified as carcinogen (CLP). EU set strict indoor emission limits while US has no comparable federal standard.",
         "confidence": "High"
       }
+    ],
+    "1,4-Dioxane": [
+      {
+        "region": "us",
+        "status": "restricted",
+        "since": "2023",
+        "rule": "New York State ban: 1,4-dioxane in cleaning/personal care products capped at 1 ppm (effective Dec 2023). California requires disclosure at >1 ppm. No US federal restriction.",
+        "reason": "Common contaminant in ethoxylated surfactants. Probable human carcinogen (IARC 2B). State-level action where federal has none.",
+        "confidence": "High"
+      }
+    ],
+    "1,4-Dioxane (EU)": [
+      {
+        "region": "eu",
+        "status": "restricted",
+        "since": "2026",
+        "rule": "EU REACH 2026 Restrictions Roadmap lists certain uses of 1,4-dioxane for potential future restriction under REACH Annex XVII. Not yet adopted; under evaluation.",
+        "reason": "Probable human carcinogen. Contaminant in ethoxylated surfactants used in cleaning products. EU considering restriction while US has only state-level limits.",
+        "confidence": "Medium"
+      }
     ]
   },
   "watchlist": [
@@ -342,6 +362,15 @@
       "since": "2016",
       "rule": "EU tightens asbestos-in-talc limits; ongoing litigation. US: FDA testing program, no ban.",
       "reason": "Asbestos contamination/possible carcinogenicity; talc-based cleaning powders affected."
+    },
+    {
+      "name": "1,4-Dioxane",
+      "region": "eu",
+      "status": "restricted",
+      "since": "2026",
+      "rule": "EU REACH 2026 Restrictions Roadmap lists certain uses of 1,4-dioxane for potential restriction. Not yet adopted but under evaluation. US: NY State banned 1,4-dioxane in cleaning/personal care products above 1 ppm (effective 2023); CA requires disclosure above 1 ppm.",
+      "reason": "1,4-dioxane is a common contaminant in ethoxylated surfactants (SLES, etc.) used in dish soaps and detergents. Probable human carcinogen (IARC 2B). EU considering restriction; US has state-level action but no federal ban.",
+      "confidence": "Medium"
     }
   ]
 }
