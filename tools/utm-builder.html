@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMVC UTM Link Builder</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 { color: #2c5f2d; margin-bottom: 5px; }
+        .subtitle { color: #666; margin-bottom: 25px; }
+        .form-group {
+            margin-bottom: 15px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .hint { font-size: 12px; color: #888; margin-top: 3px; }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        input:focus, select:focus {
+            outline: none;
+            border-color: #2c5f2d;
+        }
+        .output {
+            background: #1a1a1a;
+            color: #4ade80;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 13px;
+            word-break: break-all;
+            margin-top: 20px;
+        }
+        .copy-btn {
+            background: #2c5f2d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .copy-btn:hover { background: #1e4d1f; }
+        .copy-btn:active { transform: scale(0.98); }
+        .presets {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        .preset-btn {
+            background: #e8f5e9;
+            border: 1px solid #2c5f2d;
+            color: #2c5f2d;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .preset-btn:hover { background: #c8e6c9; }
+        .section-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #888;
+            margin: 20px 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>BMVC UTM Link Builder</h1>
+    <p class="subtitle">Tag your ad links so GA4 shows where leads come from</p>
+
+    <div class="section-title">Quick Presets</div>
+    <div class="presets">
+        <button class="preset-btn" onclick="setPreset('facebook', 'paid', 'rental_owners')">Facebook - Rental Owners</button>
+        <button class="preset-btn" onclick="setPreset('facebook', 'paid', 'residential')">Facebook - Residential</button>
+        <button class="preset-btn" onclick="setPreset('instagram', 'paid', 'rental_owners')">Instagram - Rental Owners</button>
+        <button class="preset-btn" onclick="setPreset('instagram', 'paid', 'residential')">Instagram - Residential</button>
+        <button class="preset-btn" onclick="setPreset('google', 'cpc', 'brand')">Google - Brand Search</button>
+        <button class="preset-btn" onclick="setPreset('nextdoor', 'organic', 'local')">Nextdoor - Local</button>
+    </div>
+
+    <div class="form-group">
+        <label>Base URL</label>
+        <input type="text" id="baseUrl" value="https://bellasmountainvacationcleaning.com" placeholder="https://bellasmountainvacationcleaning.com">
+        <div class="hint">The page you're sending traffic to (homepage or a specific landing page)</div>
+    </div>
+
+    <div class="form-group">
+        <label>Source (utm_source) — Where is the ad running?</label>
+        <select id="source">
+            <option value="">Select or type custom...</option>
+            <option value="facebook">facebook</option>
+            <option value="instagram">instagram</option>
+            <option value="google">google</option>
+            <option value="nextdoor">nextdoor</option>
+            <option value="linkedin">linkedin</option>
+            <option value="email">email</option>
+            <option value="referral">referral</option>
+        </select>
+        <input type="text" id="sourceCustom" placeholder="Or type a custom source..." style="margin-top: 5px;">
+    </div>
+
+    <div class="form-group">
+        <label>Medium (utm_medium) — What type of traffic?</label>
+        <select id="medium">
+            <option value="">Select or type custom...</option>
+            <option value="paid">paid</option>
+            <option value="cpc">cpc</option>
+            <option value="organic">organic</option>
+            <option value="social">social</option>
+            <option value="email">email</option>
+            <option value="referral">referral</option>
+        </select>
+        <input type="text" id="mediumCustom" placeholder="Or type a custom medium..." style="margin-top: 5px;">
+    </div>
+
+    <div class="form-group">
+        <label>Campaign (utm_campaign) — What's this ad about?</label>
+        <select id="campaign">
+            <option value="">Select or type custom...</option>
+            <option value="rental_owners">rental_owners</option>
+            <option value="residential">residential</option>
+            <option value="brand">brand</option>
+            <option value="spring_cleaning">spring_cleaning</option>
+            <option value="move_out">move_out</option>
+            <option value="deep_clean">deep_clean</option>
+        </select>
+        <input type="text" id="campaignCustom" placeholder="Or type a custom campaign..." style="margin-top: 5px;">
+    </div>
+
+    <div class="form-group">
+        <label>Content (utm_content) — Optional, for A/B testing</label>
+        <input type="text" id="content" placeholder="e.g., headline_a, image_variant_1">
+        <div class="hint">Use this to test different ad creatives — same campaign, different versions</div>
+    </div>
+
+    <div class="form-group">
+        <label>Term (utm_term) — Optional, for paid search keywords</label>
+        <input type="text" id="term" placeholder="e.g., cleaning_service_breckenridge">
+        <div class="hint">Usually for Google Ads — tracks which keyword triggered the ad</div>
+    </div>
+
+    <div class="section-title">Generated URL</div>
+    <div class="output" id="output">https://bellasmountainvacationcleaning.com</div>
+    <button class="copy-btn" onclick="copyUrl()">Copy URL</button>
+
+    <script>
+        const baseUrlInput = document.getElementById('baseUrl');
+        const sourceSelect = document.getElementById('source');
+        const sourceCustom = document.getElementById('sourceCustom');
+        const mediumSelect = document.getElementById('medium');
+        const mediumCustom = document.getElementById('mediumCustom');
+        const campaignSelect = document.getElementById('campaign');
+        const campaignCustom = document.getElementById('campaignCustom');
+        const contentInput = document.getElementById('content');
+        const termInput = document.getElementById('term');
+        const output = document.getElementById('output');
+
+        function getVal(select, custom) {
+            return custom.value || select.value || '';
+        }
+
+        function buildUrl() {
+            let url = baseUrlInput.value.replace(/\/$/, '');
+            const params = [];
+
+            const source = getVal(sourceSelect, sourceCustom);
+            const medium = getVal(mediumSelect, mediumCustom);
+            const campaign = getVal(campaignSelect, campaignCustom);
+            const content = contentInput.value;
+            const term = termInput.value;
+
+            if (source) params.push(`utm_source=${encodeURIComponent(source)}`);
+            if (medium) params.push(`utm_medium=${encodeURIComponent(medium)}`);
+            if (campaign) params.push(`utm_campaign=${encodeURIComponent(campaign)}`);
+            if (content) params.push(`utm_content=${encodeURIComponent(content)}`);
+            if (term) params.push(`utm_term=${encodeURIComponent(term)}`);
+
+            if (params.length > 0) {
+                url += '?' + params.join('&');
+            }
+
+            output.textContent = url;
+        }
+
+        function setPreset(source, medium, campaign) {
+            sourceSelect.value = source;
+            sourceCustom.value = '';
+            mediumSelect.value = medium;
+            mediumCustom.value = '';
+            campaignSelect.value = campaign;
+            campaignCustom.value = '';
+            buildUrl();
+        }
+
+        function copyUrl() {
+            navigator.clipboard.writeText(output.textContent).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                const original = btn.textContent;
+                btn.textContent = 'Copied!';
+                setTimeout(() => btn.textContent = original, 1500);
+            });
+        }
+
+        // Listen to all inputs
+        [baseUrlInput, sourceSelect, sourceCustom, mediumSelect, mediumCustom, 
+         campaignSelect, campaignCustom, contentInput, termInput].forEach(el => {
+            el.addEventListener('input', buildUrl);
+            el.addEventListener('change', buildUrl);
+        });
+
+        // Initial build
+        buildUrl();
+    </script>
+</body>
+</html>
