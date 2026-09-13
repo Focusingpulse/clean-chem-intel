@@ -1525,7 +1525,7 @@
   "updated": "2026-08-18"
  },
  {
-  "name": "Dish Soap",
+  "name": "Meliora Dish Soap",
   "brand": "Meliora",
   "cat": "Dish Soap",
   "safe": "MADE SAFE",
@@ -1909,7 +1909,7 @@
   "updated": "2026-09-11"
  },
  {
-  "name": "Dish Soap",
+  "name": "The Honest Company Dish Soap",
   "brand": "The Honest Company",
   "cat": "Dish Soap",
   "safe": null,
@@ -1944,79 +1944,5 @@
   "heritage_note": "Original oil soap formula since 1905 — generations of wood furniture care. Potassium oleate (plant-oil soap) base, not petroleum solvent.",
   "added": "2026-09-12",
   "updated": "2026-09-12"
- },
- {
-  "name": "Dawn Ultra Dish Soap",
-  "brand": "P&G",
-  "cat": "Dish Soap",
-  "safe": null,
-  "ings": [
-   "Water",
-   "Sodium Lauryl Sulfate",
-   "Sodium Laureth Sulfate",
-   "Cocamidopropyl Betaine",
-   "Fragrance"
-  ],
-  "heritage": false,
-  "source": "CA SB258 disclosure (public via CPID)",
-  "source_url": "https://cpid.calepa.ca.gov/",
-  "added": "2026-09-13",
-  "updated": "2026-09-13",
-  "note": ""
- },
- {
-  "name": "Tide Original Liquid Laundry",
-  "brand": "P&G",
-  "cat": "Laundry Detergent",
-  "safe": null,
-  "ings": [
-   "Water",
-   "Alcohol Ethoxylate",
-   "Sodium Laureth Sulfate",
-   "Sodium Citrate",
-   "Fragrance"
-  ],
-  "heritage": false,
-  "source": "CA SB258 disclosure (public via CPID)",
-  "source_url": "https://cpid.calepa.ca.gov/",
-  "added": "2026-09-13",
-  "updated": "2026-09-13",
-  "note": ""
- },
- {
-  "name": "Lysol Multi-Surface Cleaner",
-  "brand": "Reckitt",
-  "cat": "Multi-Surface Cleaner",
-  "safe": null,
-  "ings": [
-   "Water",
-   "Benzalkonium Chloride",
-   "Sodium Lauryl Sulfate",
-   "Fragrance"
-  ],
-  "heritage": false,
-  "source": "CA SB258 disclosure (public via CPID)",
-  "source_url": "https://cpid.calepa.ca.gov/",
-  "added": "2026-09-13",
-  "updated": "2026-09-13",
-  "note": ""
- },
- {
-  "name": "Seventh Generation Free & Clear Dish",
-  "brand": "Seventh Generation",
-  "cat": "Dish Soap",
-  "safe": null,
-  "ings": [
-   "Water",
-   "Plant-derived Surfactants",
-   "Glycerin",
-   "Sodium Gluconate"
-  ],
-  "heritage": false,
-  "source": "Brand disclosure (public)",
-  "source_url": "https://cpid.calepa.ca.gov/",
-  "added": "2026-09-13",
-  "updated": "2026-09-13",
-  "note": ""
  }
 ]

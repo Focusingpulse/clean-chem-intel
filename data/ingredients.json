@@ -1652,5 +1652,118 @@
    "1,4-dioxane was historically treated as a harmless manufacturing byproduct in ethoxylated surfactants. Now recognized as a probable human carcinogen (IARC 2B). NY State banned it in cleaning products above 1 ppm (2023). EU considering REACH restriction."
   ],
   "note": null
+ },
+ "Yellow 5": {
+  "g": "null",
+  "s": "FD&C Yellow No. 5 (tartrazine). Approved colorant; allergic reactions reported in a small subset.",
+  "ev": "High",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": "Colorant only — no cleaning function. FDA-approved; EU requires labeling (Southampton study led to EU warning labels on azo dyes in food)."
+ },
+ "PPG-26": {
+  "g": "null",
+  "s": "Polypropylene glycol-based surfactant/emulsifier. Low hazard.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Polymer — hazard profile from PPG class; specific long-chain data limited."
+ },
+ "Polysorbate 20": {
+  "g": "H317",
+  "s": "Ethoxylated sorbitan ester emulsifier. Mild; possible trace 1,4-dioxane from ethoxylation.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Ethoxylated — carries 1,4-dioxane contaminant risk common to the class."
+ },
+ "Aloe Barbadensis Leaf Juice": {
+  "g": "null",
+  "s": "Aloe vera leaf juice — soothing additive, no hazard.",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": "Same substance as existing 'Aloe Vera' entry; kept separate to match label wording."
+ },
+ "Plant-derived Surfactants": {
+  "g": "null",
+  "s": "Undisclosed blend of plant-derived surfactants (brand does not name specific ones).",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Vague disclosure — cannot grade specifics. Typical members (alkyl polyglucosides) are mild, but the blend is unverified."
+ },
+ "Sodium Gluconate": {
+  "g": "null",
+  "s": "Plant-derived chelating agent, low hazard.",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": "Sodium salt of gluconic acid (separate PubChem-style entry 'sodium gluconate' exists from bulk ingest; this canonical entry serves product references)."
+ },
+ "Silica": {
+  "g": "H373",
+  "s": "Abrasive. Crystalline silica dust is a respiratory hazard with chronic exposure; scrubber paste is low-risk in household use.",
+  "ev": "High",
+  "gr": {
+   "resp": "C",
+   "work": "C"
+  },
+  "impacts": [
+   "resp"
+  ],
+  "note": "Hazard is dust-inhalation (occupational); sealed paste form is low risk. Distinct from 'Sodium Silicate' (alkaline)."
+ },
+ "Pumice": {
+  "g": "null",
+  "s": "Natural volcanic rock abrasive, no chemicals.",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": "Same substance as existing 'Pumice Stone' entry; kept to match Zud label wording."
+ },
+ "Formaldehyde": {
+  "g": "H350,H317,H341",
+  "s": "Known carcinogen (IARC Group 1); skin sensitizer.",
+  "ev": "High",
+  "gr": {
+   "canc": "A",
+   "derm": "D",
+   "resp": "C"
+  },
+  "impacts": [
+   "canc",
+   "allerg",
+   "derm",
+   "resp"
+  ],
+  "reclassified": [
+   "Once a common preservative in consumer products; now CLP Category 1B carcinogen. US bans it in cosmetics but formaldehyde-RELEASING preservatives (DMDM Hydantoin etc.) remain unlabeled."
+  ],
+  "note": "Rarely a direct cleaning-product ingredient; included to anchor formaldehyde-releaser entries."
+ },
+ "Formaldehyde releaser (paraformaldehyde + 2-hydroxypropylamine 1:1)": {
+  "g": "H317,H350",
+  "s": "Formaldehyde-releasing biocide blend; failed EU BPR approval (PT6).",
+  "ev": "High",
+  "gr": {
+   "canc": "B",
+   "derm": "D",
+   "resp": "C"
+  },
+  "impacts": [
+   "canc",
+   "allerg",
+   "derm"
+  ],
+  "note": "Grades reflect the formaldehyde it releases (EU classifies releasers as carcinogenic when release exceeds threshold)."
  }
 }
