@@ -452,7 +452,7 @@ let lastQuery="";
 
 /* ---------- product grade ---------- */
 function gradeOrder(g){return {A:0,B:1,C:2,D:3,F:4}[g] ?? 5;}
-function gradeClass(g){ return g?"g-"+g:"g-null"; }
+function gradeClass(g){ return (g&&g!=="null")?"g-"+g:"g-null"; }
 function productGrade(ings){
   let worst="A";
   for(const n of ings){
@@ -615,7 +615,7 @@ function openModal(idx){
       <div class="isum">${esc(d.s||"")}</div>
       ${dims?`<div class="idims">${dims}</div>`:""}
       ${gsHtml}
-      <div class="iev">Evidence: ${ev}${d.g?` · GHS: ${esc(d.g)}`:""}</div>
+      <div class="iev">Evidence: ${ev}${(d.g&&d.g!=="null")?` · GHS: ${esc(d.g)}`:""}</div>
     </div>`;
   });
   const rcs=p.ings.map(n=>INGS[n]).filter(d=>d&&d.reclassified);

@@ -1,6 +1,6 @@
 {
  "Water": {
-  "g": "null",
+  "g": null,
   "s": "No hazard",
   "ev": "High",
   "gr": {},
@@ -8,7 +8,7 @@
   "note": null
  },
  "Spring Water": {
-  "g": "null",
+  "g": null,
   "s": "No hazard",
   "ev": "High",
   "gr": {},
@@ -82,7 +82,7 @@
   "note": null
  },
  "Sodium Bicarbonate": {
-  "g": "null",
+  "g": null,
   "s": "Low hazard",
   "ev": "High",
   "gr": {},
@@ -90,7 +90,7 @@
   "note": null
  },
  "Calcium Carbonate": {
-  "g": "null",
+  "g": null,
   "s": "Chalk/limestone, mild abrasive, no hazard",
   "ev": "High",
   "gr": {
@@ -100,7 +100,7 @@
   "note": null
  },
  "Feldspar": {
-  "g": "null",
+  "g": null,
   "s": "Natural abrasive, low hazard",
   "ev": "High",
   "gr": {},
@@ -108,7 +108,7 @@
   "note": null
  },
  "Limestone": {
-  "g": "null",
+  "g": null,
   "s": "Natural abrasive, low hazard",
   "ev": "High",
   "gr": {},
@@ -116,7 +116,7 @@
   "note": null
  },
  "Decyl Glucoside": {
-  "g": "null",
+  "g": null,
   "s": "Plant-derived surfactant, biodegradable",
   "ev": "Low",
   "gr": {
@@ -126,7 +126,7 @@
   "note": null
  },
  "Lauryl Glucoside": {
-  "g": "null",
+  "g": null,
   "s": "Plant-derived surfactant, biodegradable",
   "ev": "Low",
   "gr": {
@@ -156,7 +156,7 @@
   "note": null
  },
  "Propylene Glycol": {
-  "g": "null",
+  "g": null,
   "s": "Low hazard solvent",
   "ev": "High",
   "gr": {
@@ -169,7 +169,7 @@
   "note": "Low acute hazard; mild skin irritant at high concentration."
  },
  "Enzymes": {
-  "g": "null",
+  "g": null,
   "s": "Biological catalysts, may cause respiratory sensitization",
   "ev": "High",
   "gr": {
@@ -186,7 +186,7 @@
   "note": "Encapsulated in modern products to reduce aerosolization."
  },
  "Tetrasodium Glutamate Diacetate": {
-  "g": "null",
+  "g": null,
   "s": "Chelating agent, low hazard",
   "ev": "Low",
   "gr": {},
@@ -194,7 +194,7 @@
   "note": null
  },
  "Norwex Cloth": {
-  "g": "null",
+  "g": null,
   "s": "Microfiber cloth, no chemicals",
   "ev": "High",
   "gr": {},
@@ -202,7 +202,7 @@
   "note": null
  },
  "Pumice Stone": {
-  "g": "null",
+  "g": null,
   "s": "Natural volcanic rock, no chemicals",
   "ev": "High",
   "gr": {},
@@ -210,7 +210,7 @@
   "note": null
  },
  "Sodium Citrate": {
-  "g": "null",
+  "g": null,
   "s": "Food-grade preservative, low hazard",
   "ev": "High",
   "gr": {
@@ -220,7 +220,7 @@
   "note": null
  },
  "Sodium Phytate": {
-  "g": "null",
+  "g": null,
   "s": "Plant-derived chelating agent, low hazard",
   "ev": "Low",
   "gr": {},
@@ -228,7 +228,7 @@
   "note": null
  },
  "Myristyl Glucoside": {
-  "g": "null",
+  "g": null,
   "s": "Plant-derived surfactant, biodegradable",
   "ev": "Low",
   "gr": {
@@ -238,7 +238,7 @@
   "note": null
  },
  "Caprylyl Glucoside": {
-  "g": "null",
+  "g": null,
   "s": "Plant-derived surfactant, biodegradable",
   "ev": "Low",
   "gr": {
@@ -248,7 +248,7 @@
   "note": null
  },
  "Coco-Glucoside": {
-  "g": "null",
+  "g": null,
   "s": "Plant-derived surfactant, biodegradable",
   "ev": "Low",
   "gr": {
@@ -258,7 +258,7 @@
   "note": null
  },
  "Potassium Citrate": {
-  "g": "null",
+  "g": null,
   "s": "Food-grade, low hazard",
   "ev": "High",
   "gr": {},
@@ -266,7 +266,7 @@
   "note": null
  },
  "Glycerin": {
-  "g": "null",
+  "g": null,
   "s": "Plant-derived humectant, low hazard",
   "ev": "High",
   "gr": {
@@ -276,7 +276,7 @@
   "note": null
  },
  "Saponified Coconut Oil": {
-  "g": "null",
+  "g": null,
   "s": "Saponified oils, mild soap",
   "ev": "Low",
   "gr": {
@@ -286,7 +286,7 @@
   "note": null
  },
  "Saponified Olive Oil": {
-  "g": "null",
+  "g": null,
   "s": "Saponified oils, mild soap",
   "ev": "Low",
   "gr": {
@@ -296,7 +296,7 @@
   "note": null
  },
  "Organic Hemp Oil": {
-  "g": "null",
+  "g": null,
   "s": "Natural oil, no hazard",
   "ev": "High",
   "gr": {},
@@ -304,7 +304,7 @@
   "note": null
  },
  "Rosemary Extract": {
-  "g": "null",
+  "g": null,
   "s": "Natural antioxidant, no hazard",
   "ev": "High",
   "gr": {},
@@ -312,7 +312,7 @@
   "note": null
  },
  "Aloe Vera": {
-  "g": "null",
+  "g": null,
   "s": "Natural soothing agent, no hazard",
   "ev": "High",
   "gr": {},
@@ -320,7 +320,7 @@
   "note": null
  },
  "Botanical surfactant": {
-  "g": "null",
+  "g": null,
   "s": "Plant-derived saponins, low hazard",
   "ev": "Low",
   "gr": {
@@ -330,7 +330,7 @@
   "note": null
  },
  "Plant-based surfactants": {
-  "g": "null",
+  "g": null,
   "s": "Plant-derived, biodegradable",
   "ev": "Low",
   "gr": {
@@ -340,7 +340,7 @@
   "note": null
  },
  "Oatmeal extract": {
-  "g": "null",
+  "g": null,
   "s": "Soothing skin protectant, no hazard",
   "ev": "High",
   "gr": {},
@@ -348,7 +348,7 @@
   "note": null
  },
  "Vitamin E": {
-  "g": "null",
+  "g": null,
   "s": "Natural antioxidant, no hazard",
   "ev": "High",
   "gr": {},
@@ -356,7 +356,7 @@
   "note": null
  },
  "Sodium Chloride": {
-  "g": "null",
+  "g": null,
   "s": "Table salt, no hazard in cleaning context",
   "ev": "High",
   "gr": {},
@@ -376,7 +376,7 @@
   "note": null
  },
  "Alumina": {
-  "g": "null",
+  "g": null,
   "s": "Natural abrasive, low hazard in cleaning paste form",
   "ev": "High",
   "gr": {
@@ -386,7 +386,7 @@
   "note": null
  },
  "Brassica Campestris Seed Oil": {
-  "g": "null",
+  "g": null,
   "s": "Field mustard seed oil, natural emollient",
   "ev": "High",
   "gr": {
@@ -396,7 +396,7 @@
   "note": null
  },
  "Helianthus Annuus Seed Oil": {
-  "g": "null",
+  "g": null,
   "s": "Sunflower seed oil, natural emollient",
   "ev": "High",
   "gr": {
@@ -406,7 +406,7 @@
   "note": null
  },
  "Triethyl Citrate": {
-  "g": "null",
+  "g": null,
   "s": "Food-grade plasticizer, low hazard",
   "ev": "High",
   "gr": {
@@ -416,7 +416,7 @@
   "note": null
  },
  "Ginger Extract": {
-  "g": "null",
+  "g": null,
   "s": "Natural plant extract, low hazard",
   "ev": "High",
   "gr": {
@@ -1654,7 +1654,7 @@
   "note": null
  },
  "Yellow 5": {
-  "g": "null",
+  "g": null,
   "s": "FD&C Yellow No. 5 (tartrazine). Approved colorant; allergic reactions reported in a small subset.",
   "ev": "High",
   "gr": {
@@ -1666,7 +1666,7 @@
   "note": "Colorant only — no cleaning function. FDA-approved; EU requires labeling (Southampton study led to EU warning labels on azo dyes in food)."
  },
  "PPG-26": {
-  "g": "null",
+  "g": null,
   "s": "Polypropylene glycol-based surfactant/emulsifier. Low hazard.",
   "ev": "Medium",
   "gr": {},
@@ -1686,7 +1686,7 @@
   "note": "Ethoxylated — carries 1,4-dioxane contaminant risk common to the class."
  },
  "Aloe Barbadensis Leaf Juice": {
-  "g": "null",
+  "g": null,
   "s": "Aloe vera leaf juice — soothing additive, no hazard.",
   "ev": "High",
   "gr": {},
@@ -1694,7 +1694,7 @@
   "note": "Same substance as existing 'Aloe Vera' entry; kept separate to match label wording."
  },
  "Plant-derived Surfactants": {
-  "g": "null",
+  "g": null,
   "s": "Undisclosed blend of plant-derived surfactants (brand does not name specific ones).",
   "ev": "Low",
   "gr": {},
@@ -1702,7 +1702,7 @@
   "note": "Vague disclosure — cannot grade specifics. Typical members (alkyl polyglucosides) are mild, but the blend is unverified."
  },
  "Sodium Gluconate": {
-  "g": "null",
+  "g": null,
   "s": "Plant-derived chelating agent, low hazard.",
   "ev": "High",
   "gr": {},
@@ -1723,7 +1723,7 @@
   "note": "Hazard is dust-inhalation (occupational); sealed paste form is low risk. Distinct from 'Sodium Silicate' (alkaline)."
  },
  "Pumice": {
-  "g": "null",
+  "g": null,
   "s": "Natural volcanic rock abrasive, no chemicals.",
   "ev": "High",
   "gr": {},
