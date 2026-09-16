@@ -1765,5 +1765,180 @@
    "derm"
   ],
   "note": "Grades reflect the formaldehyde it releases (EU classifies releasers as carcinogenic when release exceeds threshold)."
+ },
+ "Sodium Sulfate": {
+  "g": null,
+  "s": "Inorganic filler salt (powder/dishwasher products). Low hazard.",
+  "ev": "High",
+  "gr": {
+   "derm": "A"
+  },
+  "impacts": []
+ },
+ "Trisodium Dicarboxymethyl Alaninate": {
+  "g": null,
+  "s": "Biodegradable chelating agent (MGDA-type). Designed as phosphate replacement; low hazard.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "B",
+   "env": "B"
+  },
+  "impacts": []
+ },
+ "Copolymer of Acrylic Maleic and Sulphonic Acids": {
+  "g": null,
+  "s": "Anti-redeposition polymer in dishwasher detergents. Undisclosed polymer blend — cannot assess specific hazards.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Proprietary polymer; generic placeholder."
+ },
+ "Isotridecanol Ethoxylated": {
+  "g": "H315,H318,H411",
+  "s": "Ethoxylated fatty alcohol surfactant. Skin/eye irritant, aquatic toxicity; 1,4-dioxane trace contaminant concern from ethoxylation.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C",
+   "env": "C"
+  },
+  "impacts": [
+   "derm",
+   "aqua"
+  ],
+  "reclassified": [
+   "Ethoxylated surfactants can carry trace 1,4-dioxane (IARC 2B) — a process contaminant, not an added ingredient."
+  ]
+ },
+ "PEG/PPG/Propylheptyl Ether": {
+  "g": null,
+  "s": "Polyethylene/polypropylene glycol ether blend. Low hazard; 1,4-dioxane trace concern from ethoxylation.",
+  "ev": "Low",
+  "gr": {
+   "derm": "B",
+   "env": "C"
+  },
+  "impacts": []
+ },
+ "Dipropylene Glycol": {
+  "g": null,
+  "s": "Glycol ether solvent, low volatility. Mild skin/eye irritant at high concentration.",
+  "ev": "High",
+  "gr": {
+   "derm": "B",
+   "work": "B"
+  },
+  "impacts": []
+ },
+ "Benzotriazole": {
+  "g": "H302,H315,H319,H410",
+  "s": "Metal corrosion inhibitor. Oral/eye irritant, very toxic to aquatic life; EU watch-list substance.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C",
+   "env": "D",
+   "work": "C"
+  },
+  "impacts": [
+   "aqua",
+   "derm"
+  ]
+ },
+ "Subtilisin": {
+  "g": "H315,H319,H334",
+  "s": "Protease enzyme (detergent). Respiratory sensitizer — well-documented occupational asthma from detergent enzymes.",
+  "ev": "High",
+  "gr": {
+   "resp": "D",
+   "derm": "C"
+  },
+  "impacts": [
+   "resp",
+   "allerg"
+  ],
+  "reclassified": [
+   "Enzyme additives (1960s–) were marketed as a cleaning breakthrough; occupational studies later linked protease exposure to sensitization and asthma in workers."
+  ]
+ },
+ "Amylase Enzyme": {
+  "g": "H315,H319,H334",
+  "s": "Starch-digesting detergent enzyme. Respiratory sensitizer, same class hazard as subtilisin.",
+  "ev": "High",
+  "gr": {
+   "resp": "D",
+   "derm": "C"
+  },
+  "impacts": [
+   "resp",
+   "allerg"
+  ]
+ },
+ "Transition Metal Catalyst": {
+  "g": null,
+  "s": "Undisclosed catalyst (stain-removal bleach booster, typically Mn/Fe complex). Cannot assess specific hazards.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Proprietary; generic placeholder."
+ },
+ "Acid Blue 182": {
+  "g": null,
+  "s": "Synthetic dye. Low direct hazard; some azo-dye class concerns do not clearly apply to this triarylmethane-type dye.",
+  "ev": "Low",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": []
+ },
+ "Polyvinyl Alcohol Polymer": {
+  "g": null,
+  "s": "Water-soluble film polymer (ActionPac pouch). Low hazard, biodegrades slowly.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "A",
+   "env": "C"
+  },
+  "impacts": [
+   "aqua"
+  ]
+ },
+ "Ethoxylated Alcohol": {
+  "g": "H315,H319,H412",
+  "s": "Alcohol ethoxylate surfactant family. Skin/eye irritant, aquatic toxicity; 1,4-dioxane trace contaminant concern from ethoxylation.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C",
+   "env": "C"
+  },
+  "impacts": [
+   "derm",
+   "aqua"
+  ]
+ },
+ "PEG-150": {
+  "g": null,
+  "s": "Polyethylene glycol thickener. Low hazard; 1,4-dioxane trace concern from ethoxylation.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "A",
+   "env": "C"
+  },
+  "impacts": []
+ },
+ "Proprietary Polymer Solution": {
+  "g": null,
+  "s": "Undisclosed polymer blend — cannot assess specific hazards.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Proprietary; generic placeholder."
+ },
+ "Acid Blue 9": {
+  "g": null,
+  "s": "Synthetic triarylmethane dye (FD&C Blue 1). Low direct hazard in cleaning products.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": []
  }
 }
