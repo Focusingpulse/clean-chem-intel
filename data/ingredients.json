@@ -1773,7 +1773,8 @@
   "gr": {
    "derm": "A"
   },
-  "impacts": []
+  "impacts": [],
+  "note": null
  },
  "Trisodium Dicarboxymethyl Alaninate": {
   "g": null,
@@ -1783,7 +1784,8 @@
    "derm": "B",
    "env": "B"
   },
-  "impacts": []
+  "impacts": [],
+  "note": null
  },
  "Copolymer of Acrylic Maleic and Sulphonic Acids": {
   "g": null,
@@ -1807,7 +1809,8 @@
   ],
   "reclassified": [
    "Ethoxylated surfactants can carry trace 1,4-dioxane (IARC 2B) — a process contaminant, not an added ingredient."
-  ]
+  ],
+  "note": null
  },
  "PEG/PPG/Propylheptyl Ether": {
   "g": null,
@@ -1817,7 +1820,8 @@
    "derm": "B",
    "env": "C"
   },
-  "impacts": []
+  "impacts": [],
+  "note": null
  },
  "Dipropylene Glycol": {
   "g": null,
@@ -1827,7 +1831,8 @@
    "derm": "B",
    "work": "B"
   },
-  "impacts": []
+  "impacts": [],
+  "note": null
  },
  "Benzotriazole": {
   "g": "H302,H315,H319,H410",
@@ -1841,7 +1846,8 @@
   "impacts": [
    "aqua",
    "derm"
-  ]
+  ],
+  "note": null
  },
  "Subtilisin": {
   "g": "H315,H319,H334",
@@ -1857,7 +1863,8 @@
   ],
   "reclassified": [
    "Enzyme additives (1960s–) were marketed as a cleaning breakthrough; occupational studies later linked protease exposure to sensitization and asthma in workers."
-  ]
+  ],
+  "note": null
  },
  "Amylase Enzyme": {
   "g": "H315,H319,H334",
@@ -1870,7 +1877,8 @@
   "impacts": [
    "resp",
    "allerg"
-  ]
+  ],
+  "note": null
  },
  "Transition Metal Catalyst": {
   "g": null,
@@ -1887,7 +1895,8 @@
   "gr": {
    "derm": "B"
   },
-  "impacts": []
+  "impacts": [],
+  "note": null
  },
  "Polyvinyl Alcohol Polymer": {
   "g": null,
@@ -1899,7 +1908,8 @@
   },
   "impacts": [
    "aqua"
-  ]
+  ],
+  "note": null
  },
  "Ethoxylated Alcohol": {
   "g": "H315,H319,H412",
@@ -1912,7 +1922,8 @@
   "impacts": [
    "derm",
    "aqua"
-  ]
+  ],
+  "note": null
  },
  "PEG-150": {
   "g": null,
@@ -1922,7 +1933,8 @@
    "derm": "A",
    "env": "C"
   },
-  "impacts": []
+  "impacts": [],
+  "note": null
  },
  "Proprietary Polymer Solution": {
   "g": null,
@@ -1939,6 +1951,7 @@
   "gr": {
    "derm": "B"
   },
-  "impacts": []
+  "impacts": [],
+  "note": null
  }
 }
