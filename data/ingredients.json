@@ -426,8 +426,8 @@
     "note": null
   },
   "Ethanol": {
-    "g": "H225,H319",
-    "s": "Highly flammable, eye irritant",
+    "g": "H225",
+    "s": "Highly flammable liquid and vapor",
     "ev": "High",
     "gr": {
       "derm": "B",
@@ -441,7 +441,7 @@
     "reclassified": [
       "Ethanol was long marketed as a harmless 'natural' solvent; high-exposure studies documented fetal harm (FAS), and occupational exposure is now treated more cautiously."
     ],
-    "note": null
+    "note": "Graded from PubChem GHS (CID 702). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: H225 >99.9%; H319 at 37.7% is below the 40% threshold; H315/H412 appear only in non-ECHA blocks and do not drive grades."
   },
   "Sodium Hypochlorite": {
     "g": "H314,H318,H400",
@@ -557,8 +557,8 @@
     "note": null
   },
   "Sodium Laureth Sulfate": {
-    "g": "H315,H319",
-    "s": "Skin and eye irritant",
+    "g": "H315,H318",
+    "s": "Causes skin and serious eye damage",
     "ev": "High",
     "gr": {
       "derm": "C",
@@ -1410,8 +1410,8 @@
     "note": "Graded from PubChem GHS classifications (CID 3423265)."
   },
   "sodium laureth sulfate": {
-    "g": "H318,H315,H319",
-    "s": "Causes serious eye irritation",
+    "g": "H315,H318",
+    "s": "Causes skin and serious eye damage",
     "ev": "High",
     "gr": {
       "derm": "D",
@@ -1444,8 +1444,8 @@
     "note": "Graded from PubChem GHS classifications (CID 23665760)."
   },
   "sodium hydroxide": {
-    "g": "H314,H318,H290",
-    "s": "Causes severe skin burns and eye damage",
+    "g": "H290,H314,H318",
+    "s": "Corrosive, severe burns",
     "ev": "High",
     "gr": {
       "derm": "F",
@@ -1521,8 +1521,8 @@
     "note": "Graded from PubChem GHS (CID 311): H319 84.7% consensus (corrected from 99.8% per Linnea CCI-004 revision, 2026-09-17)."
   },
   "didecyldimonium chloride": {
-    "g": "H314,H400,H302",
-    "s": "Causes severe skin burns and eye damage",
+    "g": "H302,H314,H400",
+    "s": "Quaternary ammonium (DDAC). Corrosive, aquatic toxicity, respiratory sensitizer in occupational use.",
     "ev": "Medium",
     "gr": {
       "derm": "F",
