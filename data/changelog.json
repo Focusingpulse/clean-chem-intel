@@ -1,54 +1,58 @@
 [
- {
-  "date": "2026-09-16",
-  "text": "Sifter lane: dedupe pass — removed 4 duplicate products re-added 09-15 (133→129). Closed 15 ingredient-profile gaps from the two newest products (Cascade ActionPacs enzymes/benzotriazole/polymers, Toilet Stamp ethoxylates) with GHS + evidence-level data. Validator: 0 issues. Also profiled Acid Blue 9 (16 gaps total)."
- },
- {
-  "date": "2026-09-14",
-  "text": "Daily maintain (quota gear): dedupe pass — removed 4 duplicate products re-added by prior cron run (131→127). Added 2 popular US products with honest ingredients from public disclosures: Cascade Complete ActionPacs (P&G SmartLabel, heritage dishwasher detergent 1953) and Fresh Gel Toilet Cleaning Stamp (SC Johnson disclosure). 129 products, 142 ingredients."
- },
- {
-  "date": "2026-09-13",
-  "text": "Daily maintain (quota gear): dedupe pass — removed 4 exact-duplicate products re-added 09-13 by prior cron run (131->127); renamed two generic 'Dish Soap' entries to brand names (Meliora, The Honest Company). Added 10 honest ingredient profiles to close validator gaps: Yellow 5, PPG-26, Polysorbate 20, Aloe Barbadensis Leaf Juice, Plant-derived Surfactants (vague-disclosure flag), Sodium Gluconate, Silica (crystalline-dust hazard note), Pumice, Formaldehyde (IARC 1, anchors releaser entries), and the EU-rejected paraformaldehyde releaser. Merged synthetic reg key '1,4-Dioxane (EU)' into canonical '1,4-Dioxane'. Validator: 0 issues. 127 products, 142 ingredients."
- },
- {
-  "date": "2026-09-12",
-  "text": "Daily maintain: removed 20 duplicate product entries (4 products each duplicated 5x from prior cron runs — 146→126). Added Murphy Oil Soap (heritage wood cleaner, 1905). Added 1,4-dioxane regulatory entries (NY State 1ppm ban 2023, EU REACH roadmap evaluation) + ingredient profile (IARC 2B carcinogen, common surfactant contaminant). 127 products, 132 ingredients."
- },
- {
-  "date": "2026-09-11",
-  "text": "Daily gather: added Method Glass Cleaner (mainstream glass cleaner) and The Honest Company Dish Soap (popular clean brand). 142 products."
- },
- {
-  "date": "2026-09-10",
-  "text": "Daily gather: added Dawn Ultra Dishwashing Liquid (mainstream US product with MIT preservative). Added EU formaldehyde regulatory entries: (1) BPR Decision 2026/599 banning formaldehyde releaser (paraformaldehyde + 2-hydroxypropylamine) for PT6 in-can preservatives; (2) REACH Annex XVII Entry 77 emission limits (0.062-0.080 mg/m³) for indoor articles effective Aug 2026. 136 products, 131 ingredients."
- },
- {
-  "date": "2026-09-09",
-  "text": "Daily gather: added DMDM Hydantoin regulatory entry (EU requires \"releases formaldehyde\" label at 10 ppm; US no such requirement) + Zud Heavy Duty Cleanser (powder rust remover, oxalic acid based). 131 products."
- },
- {
-  "date": "2026-08-28",
-  "text": "Added DIY Mix & Match Solution Lab — pick a surface (degreaser, glass, all-purpose, porcelain/tub, hard-water, carpet), choose safe base ingredients (castile, alcohol, vinegar, baking soda, essential oils...), set ratios with a visual bottle-fill, get vetted starter recipes + mixing rules (never bleach+acid) and a pH cheat sheet."
- },
- {
-  "date": "2026-08-28",
-  "text": "Gather pass: added Easy-Off Heavy Duty Oven Cleaner (lye + DEGBE glycol-ether solvent) and profiled Diethylene Glycol Monobutyl Ether; added EU amine-restriction context for ethanolamine. 117 products."
- },
- {
-  "date": "2026-08-28",
-  "text": "Added global regulatory layer — the planet's verdict: which ingredients the EU/UK/Canada/Japan have banned or restricted while the US still allows them, with reasons. Includes catch-up scoreboard, watch list, and Borax as the showcase heritage-vs-EU case."
- },
- {
-  "date": "2026-08-28",
-  "text": "v2 overhaul — search by health impact (respiratory, reproductive, endocrine, skin, aquatic, cancer, allergen), heritage 'grandma's cupboard' layer, 'once safe, now flagged' reclassified warnings, 110 documented ingredients (20 gaps closed)."
- },
- {
-  "date": "2026-08-19",
-  "text": "BMVC products updated with real ingredient lists from Sandra's cleaning kit (heritage + homemade formulas)."
- },
- {
-  "date": "2026-08-18",
-  "text": "First public build — 115 products, 90 ingredients, A-F transparent grading with evidence labels, genetic sensitivity layer preview."
- }
+  {
+    "date": "2026-09-16",
+    "text": "Sifter lane: dedupe pass — removed 4 duplicate products re-added 09-15 (133→129). Closed 15 ingredient-profile gaps from the two newest products (Cascade ActionPacs enzymes/benzotriazole/polymers, Toilet Stamp ethoxylates) with GHS + evidence-level data. Validator: 0 issues. Also profiled Acid Blue 9 (16 gaps total)."
+  },
+  {
+    "date": "2026-09-14",
+    "text": "Daily maintain (quota gear): dedupe pass — removed 4 duplicate products re-added by prior cron run (131→127). Added 2 popular US products with honest ingredients from public disclosures: Cascade Complete ActionPacs (P&G SmartLabel, heritage dishwasher detergent 1953) and Fresh Gel Toilet Cleaning Stamp (SC Johnson disclosure). 129 products, 142 ingredients."
+  },
+  {
+    "date": "2026-09-13",
+    "text": "Daily maintain (quota gear): dedupe pass — removed 4 exact-duplicate products re-added 09-13 by prior cron run (131->127); renamed two generic 'Dish Soap' entries to brand names (Meliora, The Honest Company). Added 10 honest ingredient profiles to close validator gaps: Yellow 5, PPG-26, Polysorbate 20, Aloe Barbadensis Leaf Juice, Plant-derived Surfactants (vague-disclosure flag), Sodium Gluconate, Silica (crystalline-dust hazard note), Pumice, Formaldehyde (IARC 1, anchors releaser entries), and the EU-rejected paraformaldehyde releaser. Merged synthetic reg key '1,4-Dioxane (EU)' into canonical '1,4-Dioxane'. Validator: 0 issues. 127 products, 142 ingredients."
+  },
+  {
+    "date": "2026-09-12",
+    "text": "Daily maintain: removed 20 duplicate product entries (4 products each duplicated 5x from prior cron runs — 146→126). Added Murphy Oil Soap (heritage wood cleaner, 1905). Added 1,4-dioxane regulatory entries (NY State 1ppm ban 2023, EU REACH roadmap evaluation) + ingredient profile (IARC 2B carcinogen, common surfactant contaminant). 127 products, 132 ingredients."
+  },
+  {
+    "date": "2026-09-11",
+    "text": "Daily gather: added Method Glass Cleaner (mainstream glass cleaner) and The Honest Company Dish Soap (popular clean brand). 142 products."
+  },
+  {
+    "date": "2026-09-10",
+    "text": "Daily gather: added Dawn Ultra Dishwashing Liquid (mainstream US product with MIT preservative). Added EU formaldehyde regulatory entries: (1) BPR Decision 2026/599 banning formaldehyde releaser (paraformaldehyde + 2-hydroxypropylamine) for PT6 in-can preservatives; (2) REACH Annex XVII Entry 77 emission limits (0.062-0.080 mg/m³) for indoor articles effective Aug 2026. 136 products, 131 ingredients."
+  },
+  {
+    "date": "2026-09-09",
+    "text": "Daily gather: added DMDM Hydantoin regulatory entry (EU requires \"releases formaldehyde\" label at 10 ppm; US no such requirement) + Zud Heavy Duty Cleanser (powder rust remover, oxalic acid based). 131 products."
+  },
+  {
+    "date": "2026-08-28",
+    "text": "Added DIY Mix & Match Solution Lab — pick a surface (degreaser, glass, all-purpose, porcelain/tub, hard-water, carpet), choose safe base ingredients (castile, alcohol, vinegar, baking soda, essential oils...), set ratios with a visual bottle-fill, get vetted starter recipes + mixing rules (never bleach+acid) and a pH cheat sheet."
+  },
+  {
+    "date": "2026-08-28",
+    "text": "Gather pass: added Easy-Off Heavy Duty Oven Cleaner (lye + DEGBE glycol-ether solvent) and profiled Diethylene Glycol Monobutyl Ether; added EU amine-restriction context for ethanolamine. 117 products."
+  },
+  {
+    "date": "2026-08-28",
+    "text": "Added global regulatory layer — the planet's verdict: which ingredients the EU/UK/Canada/Japan have banned or restricted while the US still allows them, with reasons. Includes catch-up scoreboard, watch list, and Borax as the showcase heritage-vs-EU case."
+  },
+  {
+    "date": "2026-08-28",
+    "text": "v2 overhaul — search by health impact (respiratory, reproductive, endocrine, skin, aquatic, cancer, allergen), heritage 'grandma's cupboard' layer, 'once safe, now flagged' reclassified warnings, 110 documented ingredients (20 gaps closed)."
+  },
+  {
+    "date": "2026-08-19",
+    "text": "BMVC products updated with real ingredient lists from Sandra's cleaning kit (heritage + homemade formulas)."
+  },
+  {
+    "date": "2026-08-18",
+    "text": "First public build — 115 products, 90 ingredients, A-F transparent grading with evidence labels, genetic sensitivity layer preview."
+  },
+  {
+    "date": "2026-09-17",
+    "text": "Curated add: 4 researched products (Biokleen Bac-Out, Puracy Multi-Surface, Better Life What-Ever, Granite Gold Daily Cleaner) — full ingredient lists, source URLs. 11 new graded ingredients incl. PubChem-GHS laureths, tetrasodium glutamate diacetate, disodium cocoyl glutamate, MIT, EU fragrance allergens. Product count 133 -> 137."
+  }
 ]

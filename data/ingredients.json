@@ -1922,5 +1922,91 @@
     "gr": {},
     "impacts": [],
     "note": "Acid Blue 9 (CI 42045, CID 17560): PubChem lists no GHS hazard statements. FD&C Blue 1 dye, approved food/colorant. Medium confidence."
+  },
+  "Laureth-7": {
+    "g": "H302,H315,H318",
+    "s": "Ethoxylated lauryl alcohol surfactant. Harmful if swallowed; skin irritant; serious eye damage (per GHS for the laureth family).",
+    "ev": "Medium",
+    "gr": {
+      "derm": "C",
+      "work": "B"
+    },
+    "impacts": [
+      "derm"
+    ],
+    "note": "GHS from PubChem (CID 24750, laureth-type ethoxylate); trace 1,4-dioxane contaminant concern from ethoxylation applies to the family."
+  },
+  "Laureth-9": {
+    "g": "H302,H315,H318,H319,H335,H400,H412",
+    "s": "Ethoxylated lauryl alcohol (9 EO units). Skin/eye irritant, aquatic toxicity per GHS.",
+    "ev": "Medium",
+    "gr": {
+      "derm": "C",
+      "env": "C",
+      "work": "B"
+    },
+    "impacts": [
+      "derm",
+      "aqua"
+    ],
+    "note": "GHS from PubChem CID 656641. Ethoxylate family 1,4-dioxane contaminant concern."
+  },
+  "Disodium Cocoyl Glutamate": {
+    "g": "H319",
+    "s": "Amino-acid surfactant from coconut + glutamic acid. Mild eye irritant per GHS; gentle class used in sensitive-skin products.",
+    "ev": "Medium",
+    "gr": {
+      "derm": "B"
+    },
+    "impacts": [],
+    "note": "GHS from PubChem CID 167560."
+  },
+  "Quillaja Saponaria Bark Extract": {
+    "g": null,
+    "s": "Soap bark natural saponin. Generally recognized as mild; saponins can be eye/skin irritants at high concentration.",
+    "ev": "Low",
+    "gr": {
+      "derm": "B"
+    },
+    "impacts": [],
+    "note": "Natural extract, no PubChem GHS data (complex mixture). Extrapolation only."
+  },
+  "Bac-Out Microbial Mixture (enzymes + live cultures)": {
+    "g": null,
+    "s": "Biological enzyme + live-culture blend. No CAS; hazard profile depends on strain; generally low for consumer products.",
+    "ev": "Low",
+    "gr": {},
+    "impacts": [
+      "sens"
+    ],
+    "note": "Biological mixture — no PubChem entry. Flag as sensitization-possible for heavily exposed workers (enzyme-induced asthma documented in enzyme industry)."
+  },
+  "Linalool": {
+    "g": "H315,H317",
+    "s": "Fragrance terpene alcohol. Skin irritant/sensitizer, especially when oxidized on air exposure.",
+    "ev": "Medium",
+    "gr": {
+      "derm": "C",
+      "allerg": "D"
+    },
+    "impacts": [
+      "allerg",
+      "derm"
+    ],
+    "note": "EU fragrance allergen requiring label disclosure at low thresholds; oxidation increases sensitization."
+  },
+  "Geraniol": {
+    "g": "H315,H317,H411",
+    "s": "Fragrance terpene alcohol. Skin sensitizer; EU-mandated allergen disclosure.",
+    "ev": "Medium",
+    "gr": {
+      "derm": "C",
+      "allerg": "D"
+    },
+    "impacts": [
+      "allerg",
+      "derm"
+    ],
+    "note": "EU fragrance allergen disclosure list (Regulation 1223/2009); sensitization documented."
   }
 }
