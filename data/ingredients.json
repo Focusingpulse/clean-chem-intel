@@ -45,7 +45,7 @@
     "impacts": [
       "derm"
     ],
-    "note": null
+    "note": "Graded from PubChem GHS (CID 311): H319 84.7% consensus (corrected from 99.8% per Linnea CCI-004 revision, 2026-09-17)."
   },
   "Glycolic Acid": {
     "g": "H314",
@@ -172,14 +172,14 @@
     "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
   },
   "Tetrasodium Glutamate Diacetate": {
-    "g": "H319",
-    "s": "Causes serious eye irritation",
+    "g": "Not Classified",
+    "s": "No GHS hazard criteria met",
     "ev": "Medium",
     "gr": {
       "derm": "C"
     },
     "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 44630158) — H319 at 31.7% consensus, below 40% threshold; treated as mild eye irritant with Medium confidence."
+    "note": "Graded from PubChem GHS (CID 44630158). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. H290 22.8%, H319 31.7%, H335 22.4% — all below the 40% threshold, so none drive a grade. Earlier H319 grade withdrawn."
   },
   "Norwex Cloth": {
     "g": "Not Classified",
@@ -198,12 +198,12 @@
     "note": "Extrapolated: PubChem GHS for Calcium carbonate (CID 10112) — no hazard criteria. Pumice = inert abrasive; no GHS record."
   },
   "Sodium Citrate": {
-    "g": "H319",
-    "s": "Causes serious eye irritation",
+    "g": "Not Classified",
+    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
     "ev": "Medium",
     "gr": {},
     "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 6224). Duplicate-capitalized entry; same grade as canonical key."
+    "note": "Graded from PubChem GHS (CID 6224). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: 1117/1184 (94.3%) not meeting criteria. Earlier H319 grade came from a secondary block and is withdrawn."
   },
   "Sodium Phytate": {
     "g": "Not Classified",
@@ -211,7 +211,7 @@
     "ev": "Medium",
     "gr": {},
     "impacts": [],
-    "note": "Graded from PubChem (CID 23724990) — GHS section present, no hazard statements reported. Sodium salt of phytic acid (food-grade chelant)."
+    "note": "Graded from PubChem (CID 23724990) — no GHS Classification section in PUG View (corrected wording per Linnea CCI-004 revision, 2026-09-17). Sodium salt of phytic acid (food-grade chelant)."
   },
   "Myristyl Glucoside": {
     "g": "Extrapolated",
@@ -230,7 +230,7 @@
       "resp": "C"
     },
     "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 62852)."
+    "note": "Graded from PubChem GHS (CID 62852): H315 50%, H319 50%, H335 50% consensus (knowable values; corrected characterization per Linnea CCI-004 revision, 2026-09-17)."
   },
   "Coco-Glucoside": {
     "g": "Extrapolated",
@@ -352,15 +352,12 @@
     "note": null
   },
   "Alumina": {
-    "g": "H335",
-    "s": "May cause respiratory irritation",
+    "g": "Not Classified",
+    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
     "ev": "High",
-    "gr": {
-      "resp": "C",
-      "organ": "D"
-    },
+    "gr": {},
     "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 9989226)."
+    "note": "Graded from PubChem GHS (CID 9989226). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: 2917/3142 (92.8%) not meeting criteria; H335 appeared only in a secondary block. Respirable-crystalline-silica concern applies to product form, not this CID’s C&L classification, and is not graded here."
   },
   "Brassica Campestris Seed Oil": {
     "g": "Extrapolated",
@@ -478,7 +475,7 @@
     "impacts": [
       "derm"
     ],
-    "note": null
+    "note": "Graded from PubChem GHS (CID 14798): H314 >99.9%, H318 44.1%, H290 47.5% consensus (corrected 2026-09-17 per Linnea CCI-004 revision)."
   },
   "Hydrochloric Acid": {
     "g": "H290,H314,H335",
@@ -576,7 +573,7 @@
     "reclassified": [
       "SLES replaced SLS as 'gentler'; ethoxylation introduces trace 1,4-dioxane (IARC 2B probable carcinogen) — a contaminant, not an ingredient."
     ],
-    "note": null
+    "note": "Graded from PubChem GHS (CID 23665884): H315 98.1%, H318 98.1% per headline ECHA block; H319 appears only in a secondary block (Linnea CCI-004 revision, 2026-09-17)."
   },
   "Limonene": {
     "g": "H226,H304,H315,H317,H400",
@@ -1148,7 +1145,7 @@
       "resp": "C"
     },
     "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 62852)."
+    "note": "Graded from PubChem GHS (CID 62852): H315 50%, H319 50%, H335 50% consensus (corrected per Linnea CCI-004 revision, 2026-09-17)."
   },
   "Dimethicone": {
     "g": "Not Classified",
@@ -1310,7 +1307,7 @@
     "reclassified": [
       "Quats (quaternary ammonium disinfectants) surged in use mid-20th c. as 'safe' germ killers; occupational studies later linked them to asthma & allergic sensitization."
     ],
-    "note": null
+    "note": "Graded from PubChem GHS (CID 23558): H314 100%, H302 85.8%, H400 47.6% consensus (knowable values; corrected characterization per Linnea CCI-004 revision, 2026-09-17)."
   },
   "Isoparaffin": {
     "g": "H226,H304",
@@ -1521,7 +1518,7 @@
       "resp": "C"
     },
     "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 311)."
+    "note": "Graded from PubChem GHS (CID 311): H319 84.7% consensus (corrected from 99.8% per Linnea CCI-004 revision, 2026-09-17)."
   },
   "didecyldimonium chloride": {
     "g": "H314,H400,H302",
@@ -1566,12 +1563,12 @@
     "sensitive": true
   },
   "sodium citrate": {
-    "g": "H319",
-    "s": "Causes serious eye irritation",
+    "g": "Not Classified",
+    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
     "ev": "Medium",
     "gr": {},
     "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 6224)."
+    "note": "Graded from PubChem GHS (CID 6224). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: 1117/1184 (94.3%) not meeting criteria. Earlier H319 grade came from a secondary block and is withdrawn."
   },
   "propylene glycol": {
     "g": "Not Classified",
@@ -1584,17 +1581,12 @@
     "note": "Graded from PubChem GHS classifications (CID 1030)."
   },
   "ethanol": {
-    "g": "H315,H319,H412,H225",
-    "s": "Highly Flammable liquid and vapor",
+    "g": "H225",
+    "s": "Highly flammable liquid and vapor",
     "ev": "High",
-    "gr": {
-      "derm": "C",
-      "resp": "C",
-      "organ": "D",
-      "env": "C"
-    },
+    "gr": {},
     "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 702)."
+    "note": "Graded from PubChem GHS (CID 702). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: H225 >99.9%; H319 at 37.7% is below the 40% threshold; H315/H412 appear only in non-ECHA blocks and do not drive grades."
   },
   "isopropanol": {
     "g": "H319,H336,H225",
@@ -1924,32 +1916,27 @@
     "note": "Acid Blue 9 (CI 42045, CID 17560): PubChem lists no GHS hazard statements. FD&C Blue 1 dye, approved food/colorant. Medium confidence."
   },
   "Laureth-7": {
-    "g": "H302,H315,H318",
-    "s": "Ethoxylated lauryl alcohol surfactant. Harmful if swallowed; skin irritant; serious eye damage (per GHS for the laureth family).",
+    "g": "Not Classified",
+    "s": "Ethoxylated lauryl alcohol surfactant. No GHS health classification per the authoritative ECHA block.",
     "ev": "Medium",
-    "gr": {
-      "derm": "C",
-      "work": "B"
-    },
+    "gr": {},
     "impacts": [
       "derm"
     ],
-    "note": "GHS from PubChem (CID 24750, laureth-type ethoxylate); trace 1,4-dioxane contaminant concern from ethoxylation applies to the family."
+    "note": "Graded from PubChem GHS (CID 24750). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: not classified (aggregated). H302/H315/H318 appear only in a non-aggregated block without consensus % and do not drive grades. Ethoxylate-family trace 1,4-dioxane contaminant concern noted but not graded."
   },
   "Laureth-9": {
-    "g": "H302,H315,H318,H319,H335,H400,H412",
-    "s": "Ethoxylated lauryl alcohol (9 EO units). Skin/eye irritant, aquatic toxicity per GHS.",
+    "g": "H302,H318",
+    "s": "Ethoxylated lauryl alcohol (9 EO units). Harmful if swallowed; serious eye damage.",
     "ev": "Medium",
     "gr": {
-      "derm": "C",
-      "env": "C",
-      "work": "B"
+      "derm": "C"
     },
     "impacts": [
       "derm",
       "aqua"
     ],
-    "note": "GHS from PubChem CID 656641. Ethoxylate family 1,4-dioxane contaminant concern."
+    "note": "Graded from PubChem GHS (CID 656641). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Only H302 (50%) and H318 (60%) clear the 40% bar; H315 30%, H319 20%, H335 10%, H400 20%, H412 20% are sub-threshold and dropped. Ethoxylate-family 1,4-dioxane contaminant concern noted but not graded."
   },
   "Disodium Cocoyl Glutamate": {
     "g": "H319",
@@ -1996,7 +1983,7 @@
     "note": "EU fragrance allergen requiring label disclosure at low thresholds; oxidation increases sensitization."
   },
   "Geraniol": {
-    "g": "H315,H317,H411",
+    "g": "H315,H317",
     "s": "Fragrance terpene alcohol. Skin sensitizer; EU-mandated allergen disclosure.",
     "ev": "Medium",
     "gr": {
@@ -2007,6 +1994,6 @@
       "allerg",
       "derm"
     ],
-    "note": "EU fragrance allergen disclosure list (Regulation 1223/2009); sensitization documented."
+    "note": "Graded from PubChem GHS (CID 637566): H315 98.9%, H317 99.4% per ECHA C&L consensus; H411 is not present in the ECHA C&L block and was dropped (Linnea CCI-005 revision, 2026-09-17). EU fragrance allergen disclosure list (Regulation 1223/2009); sensitization documented."
   }
 }
