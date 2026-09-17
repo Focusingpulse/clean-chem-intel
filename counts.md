@@ -4,20 +4,20 @@ description: Live database counts for Clean Chem Intel — regenerated from data
 
 # Clean Chem Intel — Live Counts
 
-_Updated: 2026-09-16 00:40 UTC_
+_Updated: 2026-09-17 03:09 UTC_
 
 | Metric | Count |
 |---|---:|
-| **Products** | 129 |
+| **Products** | 133 |
 | — Graded (safe set) | 65 |
-| — Ungraded (safe null) | 64 |
+| — Ungraded (safe null) | 68 |
 | — Heritage | 24 |
 | **Ingredients** | 158 |
 | **Regulatory entries** | 3 |
 | **DIY recipes (backend)** | 8 |
 
 ## Sources of products
-curated: 122, ca sb258 disclosure (public via cpid): 4, brand disclosure (public): 1, p&g smartlabel disclosure (public): 1
+curated: 122, ca sb258 disclosure (public via cpid): 7, brand disclosure (public): 2, p&g smartlabel disclosure (public): 1
 
 ## Note
 - Raw product count grows mainly from **curated additions** (Dolman's lane, Mon/Wed/Fri).
