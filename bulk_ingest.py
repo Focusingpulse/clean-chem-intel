@@ -31,9 +31,13 @@ INGREDIENTS = DATA / "ingredients.json"
 # ── 1. Load current state ──────────────────────────────────────────────────
 products = json.loads(PRODUCTS.read_text(encoding="utf-8")) if PRODUCTS.exists() else []
 ings = json.loads(INGREDIENTS.read_text(encoding="utf-8")) if INGREDIENTS.exists() else {}
-have = { (p.get("name","").strip().lower(), p.get("brand","").strip().lower()): p for p in products }
-
 def norm(s): return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
+
+# Dedupe index MUST use the same normalization as add_product()'s lookup.
+# Keying this raw (strip().lower()) while looking up with norm() silently
+# re-added every seed product whose name/brand contains punctuation
+# ("P&G", "Free & Clear", "Multi-Surface") on each grow run.
+have = { (norm(p.get("name","")), norm(p.get("brand",""))): p for p in products }
 
 def add_product(name, brand, cat, ings_list, source, source_url, note=""):
     key = (norm(name), norm(brand))

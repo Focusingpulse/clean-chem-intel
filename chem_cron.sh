@@ -54,6 +54,11 @@ git pull --rebase --quiet origin main 2>&1 | tail -1 || git pull --quiet origin 
 git stash pop --quiet 2>/dev/null || true
 
 echo "[3] Validate + rebuild"
+# Dedupe guard first: the grow lane once re-added punctuation-branded seed
+# products every run (raw-keyed index vs norm()-keyed lookup). This pass makes
+# duplicates impossible to persist; it keeps the oldest copy and never invents data.
+DEDUPE=$(python3 chem_maintain.py --dedupe --fix 2>&1)
+echo "$DEDUPE" | tail -3
 # Validate data files, then regenerate index.html from data (living-system build)
 MAINT=$(python3 chem_maintain.py 2>&1)
 echo "$MAINT" | tail -8

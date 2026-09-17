@@ -1,1999 +1,2134 @@
 {
-  "Water": {
-    "g": "Not Classified",
-    "s": "No hazard",
-    "ev": "High",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 962 Water) — no GHS hazard criteria."
-  },
-  "Spring Water": {
-    "g": "Not Classified",
-    "s": "No hazard",
-    "ev": "High",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 962 Water) — no GHS hazard criteria."
-  },
-  "Fragrance": {
-    "g": "H317",
-    "s": "May cause allergic skin reaction",
-    "ev": "Low",
-    "gr": {
-      "derm": "D",
-      "repro": "C",
-      "endo": "D",
-      "canc": "C"
-    },
-    "impacts": [
-      "allerg",
-      "endo",
-      "repro"
-    ],
-    "reclassified": [
-      "'Fragrance' was historically treated as one harmless scent note; undisclosed blends routinely contain phthalates & synthetic musks — endocrine/repro flags (Prop 65 phthalates) and contact allergens."
-    ],
-    "note": "Undisclosed blend. Hazards assigned from documented fragrance-carrier chemistry (phthalates, musks), not the specific formula."
-  },
-  "Citric Acid": {
-    "g": "H319",
-    "s": "Eye irritant",
-    "ev": "High",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "derm"
-    ],
-    "note": "Graded from PubChem GHS (CID 311): H319 84.7% consensus (corrected from 99.8% per Linnea CCI-004 revision, 2026-09-17)."
-  },
-  "Glycolic Acid": {
-    "g": "H314",
-    "s": "Corrosive",
-    "ev": "High",
-    "gr": {
-      "derm": "D"
-    },
-    "impacts": [
-      "derm"
-    ],
-    "note": null
-  },
-  "Lactic Acid": {
-    "g": "H315",
-    "s": "Skin irritant",
-    "ev": "High",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [],
-    "note": null
-  },
-  "Sodium Carbonate": {
-    "g": "H319",
-    "s": "Eye irritant",
-    "ev": "High",
-    "gr": {
-      "derm": "B"
-    },
-    "impacts": [
-      "derm"
-    ],
-    "note": null
-  },
-  "Sodium Bicarbonate": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 516892)."
-  },
-  "Calcium Carbonate": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 10112)."
-  },
-  "Feldspar": {
-    "g": "H373",
-    "s": "May cause damage to organs through prolonged or repeated exposure",
-    "ev": "High",
-    "gr": {
-      "organ": "D",
-      "resp": "D"
-    },
-    "impacts": [],
-    "sensitive": true,
-    "note": "Graded from PubChem GHS classifications (CID 3080680) — crystalline silica (respirable) concern; H373 at 100% consensus."
-  },
-  "Limestone": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated: PubChem GHS for Calcium carbonate (CID 10112) — no hazard criteria. Limestone = calcium carbonate (mineral form)."
-  },
-  "Decyl Glucoside": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 62142)."
-  },
-  "Lauryl Glucoside": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 10893439)."
-  },
-  "Methylisothiazolinone": {
-    "g": "H317",
-    "s": "Strong skin sensitizer, preservative",
-    "ev": "High",
-    "gr": {
-      "derm": "D",
-      "resp": "C",
-      "repro": "C",
-      "canc": "B"
-    },
-    "impacts": [
-      "allerg",
-      "derm",
-      "resp"
-    ],
-    "reclassified": [
-      "MIT was the 'safe' preservative replacing parabens; became 2013 'Allergen of the Year' — epidemic of allergic contact dermatitis, now restricted in leave-on products (EU)."
-    ],
-    "note": null
-  },
-  "Propylene Glycol": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {
-      "organ": "D"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 1030). Duplicate-capitalized entry; same grade as canonical key."
-  },
-  "Enzymes": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within enzyme (protein, potential respiratory sensitizer class) class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Tetrasodium Glutamate Diacetate": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met",
-    "ev": "Medium",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS (CID 44630158). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. H290 22.8%, H319 31.7%, H335 22.4% — all below the 40% threshold, so none drive a grade. Earlier H319 grade withdrawn."
-  },
-  "Norwex Cloth": {
-    "g": "Not Classified",
-    "s": "Physical article, not a chemical",
-    "ev": "High",
-    "gr": {},
-    "impacts": [],
-    "note": "Microfiber cloth — physical article, no chemical hazard grading applicable."
-  },
-  "Pumice Stone": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated: PubChem GHS for Calcium carbonate (CID 10112) — no hazard criteria. Pumice = inert abrasive; no GHS record."
-  },
-  "Sodium Citrate": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS (CID 6224). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: 1117/1184 (94.3%) not meeting criteria. Earlier H319 grade came from a secondary block and is withdrawn."
-  },
-  "Sodium Phytate": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem (CID 23724990) — no GHS Classification section in PUG View (corrected wording per Linnea CCI-004 revision, 2026-09-17). Sodium salt of phytic acid (food-grade chelant)."
-  },
-  "Myristyl Glucoside": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within alkyl polyglucoside surfactant class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Caprylyl Glucoside": {
-    "g": "H315,H319,H335",
-    "s": "Causes skin irritation",
-    "ev": "Medium",
-    "gr": {
-      "derm": "C",
-      "resp": "C"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS (CID 62852): H315 50%, H319 50%, H335 50% consensus (knowable values; corrected characterization per Linnea CCI-004 revision, 2026-09-17)."
-  },
-  "Coco-Glucoside": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within alkyl polyglucoside surfactant class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Potassium Citrate": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 2735208)."
-  },
-  "Glycerin": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 753) — no H-codes at >=40% consensus; treated as minimal hazard with Medium confidence. Duplicate-capitalized entry; same grade as canonical key."
-  },
-  "Saponified Coconut Oil": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within saponified oil (soap salt) class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Saponified Olive Oil": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within saponified oil (soap salt) class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Organic Hemp Oil": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within plant oil class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Rosemary Extract": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within botanical extract class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Aloe Vera": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within botanical extract class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Botanical surfactant": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within surfactant class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Plant-based surfactants": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within surfactant class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Oatmeal extract": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within botanical extract class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Vitamin E": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 14986) — alias Tocopherol."
-  },
-  "Sodium Chloride": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {
-      "derm": "D",
-      "env": "C"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 5234)."
-  },
-  "Alkaline Silicate": {
-    "g": "H319",
-    "s": "Eye irritant, low overall hazard",
-    "ev": "High",
-    "gr": {
-      "derm": "B"
-    },
-    "impacts": [
-      "derm"
-    ],
-    "note": null
-  },
-  "Alumina": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "High",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS (CID 9989226). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: 2917/3142 (92.8%) not meeting criteria; H335 appeared only in a secondary block. Respirable-crystalline-silica concern applies to product form, not this CID’s C&L classification, and is not graded here."
-  },
-  "Brassica Campestris Seed Oil": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within plant oil class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Helianthus Annuus Seed Oil": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within plant oil class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Triethyl Citrate": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {
-      "resp": "C"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 6506)."
-  },
-  "Ginger Extract": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within botanical extract class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Isopropanol": {
-    "g": "H225,H319,H336",
-    "s": "Flammable, eye irritant, drowsiness",
-    "ev": "High",
-    "gr": {
-      "derm": "B",
-      "resp": "C",
-      "work": "C",
-      "repro": "B"
-    },
-    "impacts": [
-      "derm",
-      "resp"
-    ],
-    "note": null
-  },
-  "Isopropyl Alcohol": {
-    "g": "H225,H319,H336",
-    "s": "Flammable, eye irritant, drowsiness",
-    "ev": "High",
-    "gr": {
-      "derm": "B",
-      "resp": "C",
-      "work": "C",
-      "repro": "B"
-    },
-    "impacts": [
-      "derm",
-      "resp"
-    ],
-    "note": null
-  },
-  "Ethanol": {
-    "g": "H225",
-    "s": "Highly flammable liquid and vapor",
-    "ev": "High",
-    "gr": {
-      "derm": "B",
-      "work": "C",
-      "repro": "D",
-      "canc": "B"
-    },
-    "impacts": [
-      "repro"
-    ],
-    "reclassified": [
-      "Ethanol was long marketed as a harmless 'natural' solvent; high-exposure studies documented fetal harm (FAS), and occupational exposure is now treated more cautiously."
-    ],
-    "note": "Graded from PubChem GHS (CID 702). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: H225 >99.9%; H319 at 37.7% is below the 40% threshold; H315/H412 appear only in non-ECHA blocks and do not drive grades."
-  },
-  "Sodium Hypochlorite": {
-    "g": "H314,H318,H400",
-    "s": "Corrosive, severe eye damage, aquatic toxicity",
-    "ev": "High",
-    "gr": {
-      "derm": "F",
-      "env": "F",
-      "work": "D",
-      "resp": "C"
-    },
-    "impacts": [
-      "aqua",
-      "derm",
-      "resp"
-    ],
-    "reclassified": [
-      "Bleach was the unquestioned household standard for a century; occupational cohorts (cleaning workers, nurses) later linked routine bleach exposure to asthma & COPD risk."
-    ],
-    "note": null
-  },
-  "Sodium Hydroxide": {
-    "g": "H290,H314,H318",
-    "s": "Corrosive, severe burns",
-    "ev": "High",
-    "gr": {
-      "derm": "F",
-      "work": "D",
-      "repro": "B"
-    },
-    "impacts": [
-      "derm"
-    ],
-    "note": "Graded from PubChem GHS (CID 14798): H314 >99.9%, H318 44.1%, H290 47.5% consensus (corrected 2026-09-17 per Linnea CCI-004 revision)."
-  },
-  "Hydrochloric Acid": {
-    "g": "H290,H314,H335",
-    "s": "Corrosive, respiratory irritant",
-    "ev": "High",
-    "gr": {
-      "derm": "F",
-      "resp": "D",
-      "work": "D",
-      "repro": "B"
-    },
-    "impacts": [
-      "derm",
-      "resp"
-    ],
-    "note": null
-  },
-  "Quaternary Ammonium": {
-    "g": "H302,H314,H400",
-    "s": "Harmful if swallowed, corrosive, aquatic toxicity",
-    "ev": "High",
-    "gr": {
-      "derm": "F",
-      "env": "F",
-      "work": "D",
-      "resp": "C",
-      "repro": "C"
-    },
-    "impacts": [
-      "allerg",
-      "aqua",
-      "derm",
-      "resp"
-    ],
-    "reclassified": [
-      "Quats surged as 'safe' germ killers; occupational studies linked them to asthma & allergic sensitization; EPA registration review ongoing."
-    ],
-    "note": null
-  },
-  "Benzalkonium Chloride": {
-    "g": "H302,H314,H400",
-    "s": "Harmful if swallowed, corrosive, aquatic toxicity",
-    "ev": "High",
-    "gr": {
-      "derm": "F",
-      "env": "F",
-      "work": "D",
-      "resp": "C",
-      "repro": "C"
-    },
-    "impacts": [
-      "allerg",
-      "aqua",
-      "derm",
-      "resp"
-    ],
-    "reclassified": [
-      "Benzalkonium chloride was a go-to 'mild' disinfectant; animal repro studies + occupational asthma reports led to stricter limits & allergy labeling."
-    ],
-    "note": null
-  },
-  "Sodium Lauryl Sulfate": {
-    "g": "H228,H302,H315,H319,H335",
-    "s": "Flammable solid, skin/eye irritant",
-    "ev": "High",
-    "gr": {
-      "derm": "C",
-      "resp": "C",
-      "work": "C",
-      "repro": "C"
-    },
-    "impacts": [
-      "derm",
-      "repro"
-    ],
-    "reclassified": [
-      "SLS was once marketed as 'safe enough to brush your teeth with'; stripping studies & 1,4-dioxane contamination concerns (from ethoxylation variants) later tempered that."
-    ],
-    "note": null
-  },
-  "Sodium Laureth Sulfate": {
-    "g": "H315,H318",
-    "s": "Causes skin and serious eye damage",
-    "ev": "High",
-    "gr": {
-      "derm": "C",
-      "repro": "C",
-      "canc": "C"
-    },
-    "impacts": [
-      "canc",
-      "derm",
-      "repro"
-    ],
-    "reclassified": [
-      "SLES replaced SLS as 'gentler'; ethoxylation introduces trace 1,4-dioxane (IARC 2B probable carcinogen) — a contaminant, not an ingredient."
-    ],
-    "note": "Graded from PubChem GHS (CID 23665884): H315 98.1%, H318 98.1% per headline ECHA block; H319 appears only in a secondary block (Linnea CCI-004 revision, 2026-09-17)."
-  },
-  "Limonene": {
-    "g": "H226,H304,H315,H317,H400",
-    "s": "Flammable, skin sensitizer, aspiration hazard, aquatic toxicity",
-    "ev": "High",
-    "gr": {
-      "derm": "D",
-      "resp": "D",
-      "env": "F",
-      "repro": "B"
-    },
-    "impacts": [
-      "allerg",
-      "aqua",
-      "derm",
-      "resp"
-    ],
-    "reclassified": [
-      "Citrus limonene was sold as the 'natural' scent; on air exposure it oxidizes into potent sensitizers (limonene hydroperoxides) — now a known contact-allergen source."
-    ],
-    "note": null
-  },
-  "Lauramine Oxide": {
-    "g": "H315,H319",
-    "s": "Skin and eye irritant",
-    "ev": "High",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "derm"
-    ],
-    "note": null
-  },
-  "Oxalic Acid": {
-    "g": "H302,H312",
-    "s": "Harmful if swallowed or contacted",
-    "ev": "High",
-    "gr": {
-      "derm": "D",
-      "organ": "D",
-      "repro": "C"
-    },
-    "impacts": [
-      "derm",
-      "repro"
-    ],
-    "note": null
-  },
-  "Sodium Percarbonate": {
-    "g": "H271,H302,H318",
-    "s": "Oxidizer, harmful if swallowed, severe eye damage",
-    "ev": "High",
-    "gr": {
-      "derm": "D",
-      "work": "C"
-    },
-    "impacts": [
-      "aqua",
-      "derm"
-    ],
-    "note": null
-  },
-  "Castile Soap": {
-    "g": "H315,H319",
-    "s": "Mild skin/eye irritant, biodegradable",
-    "ev": "Low",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [],
-    "note": null
-  },
-  "Tea Tree Oil": {
-    "g": "H304,H315,H317,H335,H412",
-    "s": "Skin sensitizer, aspiration hazard, respiratory irritant",
-    "ev": "Low",
-    "gr": {
-      "derm": "D",
-      "resp": "C",
-      "repro": "C"
-    },
-    "impacts": [
-      "allerg",
-      "derm",
-      "resp"
-    ],
-    "reclassified": [
-      "Tea tree oil rode the 'natural = safe' wave; it is a documented contact sensitizer (oxidized forms) and has rare prepubertal gynecomastia case reports (weak endocrine signal)."
-    ],
-    "note": null
-  },
-  "Lavender Oil": {
-    "g": "H315,H317,H319",
-    "s": "Skin sensitizer and irritant",
-    "ev": "Low",
-    "gr": {
-      "derm": "D",
-      "repro": "C",
-      "endo": "C"
-    },
-    "impacts": [
-      "allerg",
-      "endo"
-    ],
-    "reclassified": [
-      "Lavender oil, once 'calming & innocent', has case reports linking topical use to prepubertal gynecomastia (weak, possible endocrine activity); a registered contact allergen."
-    ],
-    "note": null
-  },
-  "Lemon Oil": {
-    "g": "H226,H304,H315,H317,H400",
-    "s": "Flammable, sensitizer, aquatic toxicity",
-    "ev": "Low",
-    "gr": {
-      "derm": "D",
-      "env": "F"
-    },
-    "impacts": [
-      "allerg",
-      "aqua",
-      "derm"
-    ],
-    "note": null
-  },
-  "Peppermint Oil": {
-    "g": "H315,H317,H319,H335",
-    "s": "Skin/eye irritant, respiratory irritant",
-    "ev": "Low",
-    "gr": {
-      "derm": "D",
-      "resp": "C"
-    },
-    "impacts": [
-      "allerg",
-      "derm",
-      "resp"
-    ],
-    "note": null
-  },
-  "Eucalyptus Oil": {
-    "g": "H304,H315,H317,H335",
-    "s": "Skin sensitizer, respiratory irritant, toxic to pets",
-    "ev": "Low",
-    "gr": {
-      "derm": "D",
-      "resp": "C"
-    },
-    "impacts": [
-      "allerg",
-      "derm",
-      "resp"
-    ],
-    "note": null
-  },
-  "Sodium Coco-Sulfate": {
-    "g": "H315,H319",
-    "s": "Plant-derived surfactant, skin/eye irritant",
-    "ev": "Low",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "derm"
-    ],
-    "note": null
-  },
-  "Cocamidopropyl Betaine": {
-    "g": "H315,H319",
-    "s": "Mild surfactant, skin/eye irritant",
-    "ev": "High",
-    "gr": {
-      "derm": "B"
-    },
-    "impacts": [
-      "allerg",
-      "derm"
-    ],
-    "reclassified": [
-      "CAPB replaced harsher surfactants as 'gentle'; became a common contact allergen (amide impurities) — now on many allergen patch panels."
-    ],
-    "note": null
-  },
-  "Benzisothiazolinone": {
-    "g": "H302,H315,H317,H400",
-    "s": "Harmful if swallowed, skin irritant, aquatic toxicity",
-    "ev": "High",
-    "gr": {
-      "derm": "D",
-      "env": "D",
-      "resp": "C",
-      "repro": "C"
-    },
-    "impacts": [
-      "allerg",
-      "aqua",
-      "derm"
-    ],
-    "reclassified": [
-      "BIT, a cousin of MIT, followed the same arc: marketed safe, became a recognized sensitizer with occupational dermatitis reports."
-    ],
-    "note": null
-  },
-  "Phenoxyethanol": {
-    "g": "H302,H315,H319",
-    "s": "Harmful if swallowed, skin/eye irritant",
-    "ev": "High",
-    "gr": {
-      "derm": "C",
-      "repro": "C"
-    },
-    "impacts": [
-      "derm"
-    ],
-    "reclassified": [
-      "Phenoxyethanol replaced parabens as 'clean' preservative; repro/developmental flags in animal studies led to EU restrictions in cosmetics (2012)."
-    ],
-    "note": null
-  },
-  "Butyloxyethanol": {
-    "g": "H302,H315,H319",
-    "s": "Harmful if swallowed, skin/eye irritant",
-    "ev": "High",
-    "gr": {
-      "derm": "D",
-      "work": "C",
-      "repro": "D",
-      "resp": "C"
-    },
-    "impacts": [
-      "derm",
-      "repro",
-      "resp"
-    ],
-    "reclassified": [
-      "2-Butoxyethanol (EGBE) was once in every window & all-purpose cleaner as a 'safe' solvent; CA Prop 65 lists it for reproductive/developmental harm; EPA risk reviews followed."
-    ],
-    "note": null
-  },
-  "Ammonium Hydroxide": {
-    "g": "H314,H318",
-    "s": "Corrosive, severe eye damage",
-    "ev": "High",
-    "gr": {
-      "derm": "D",
-      "work": "C",
-      "resp": "C",
-      "repro": "C"
-    },
-    "impacts": [
-      "derm",
-      "resp"
-    ],
-    "reclassified": [
-      "Ammonia was grandma's go-to; strong respiratory irritant, and mixing with bleach produces chloramine gas — a documented household emergency."
-    ],
-    "note": null
-  },
-  "Alcohol Ethoxylate": {
-    "g": "H315,H319",
-    "s": "Skin/eye irritant, surfactant",
-    "ev": "High",
-    "gr": {
-      "derm": "C",
-      "repro": "C"
-    },
-    "impacts": [
-      "aqua",
-      "derm",
-      "repro"
-    ],
-    "reclassified": [
-      "Ethoxylated surfactants can carry trace 1,4-dioxane (IARC 2B probable carcinogen) from manufacturing — process contaminant, not on the label."
-    ],
-    "note": null
-  },
-  "Trichloroisocyanuric Acid": {
-    "g": "H271,H302,H319,H410",
-    "s": "Oxidizer, harmful, aquatic toxicity",
-    "ev": "High",
-    "gr": {
-      "derm": "D",
-      "env": "F"
-    },
-    "impacts": [
-      "aqua",
-      "derm"
-    ],
-    "note": null
-  },
-  "Sodium Carbonate Peroxide": {
-    "g": "H271,H302,H318",
-    "s": "Oxidizer, harmful if swallowed, severe eye damage",
-    "ev": "High",
-    "gr": {
-      "derm": "D",
-      "work": "C"
-    },
-    "impacts": [
-      "derm"
-    ],
-    "note": null
-  },
-  "Potassium Oleate": {
-    "g": "H315,H319",
-    "s": "Potassium salt of oleic acid, mild irritant",
-    "ev": "Low",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "derm"
-    ],
-    "note": null
-  },
-  "Organic Peppermint Oil": {
-    "g": "H315,H317",
-    "s": "May cause skin sensitization",
-    "ev": "Low",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "allerg"
-    ],
-    "note": null
-  },
-  "Organic Lavender Oil": {
-    "g": "H315,H317",
-    "s": "May cause skin sensitization",
-    "ev": "Low",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "allerg"
-    ],
-    "note": null
-  },
-  "Essential Oils": {
-    "g": "H315,H317",
-    "s": "May cause skin sensitization. Varies by oil type.",
-    "ev": "Low",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "allerg"
-    ],
-    "note": "Varies widely by oil; sensitization is the common thread."
-  },
-  "Citrus essential oils": {
-    "g": "H315,H317",
-    "s": "May cause skin sensitization. Contains limonene.",
-    "ev": "Low",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "allerg",
-      "derm"
-    ],
-    "note": null
-  },
-  "Cedar essential oil": {
-    "g": "H315,H317",
-    "s": "May cause skin sensitization",
-    "ev": "Low",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "allerg"
-    ],
-    "note": null
-  },
-  "Pine essential oil": {
-    "g": "H315,H317",
-    "s": "May cause skin sensitization",
-    "ev": "Low",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "allerg",
-      "resp"
-    ],
-    "note": null
-  },
-  "Lavender essential oil": {
-    "g": "H315,H317",
-    "s": "May cause skin sensitization",
-    "ev": "Low",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "allerg",
-      "endo"
-    ],
-    "note": null
-  },
-  "Geranium Oil": {
-    "g": "H315,H317",
-    "s": "May cause skin sensitization",
-    "ev": "Low",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "allerg"
-    ],
-    "note": null
-  },
-  "Potassium Hydroxide": {
-    "g": "H290,H314,H318",
-    "s": "Corrosive in pure form, but neutralized in final product",
-    "ev": "High",
-    "gr": {
-      "derm": "B"
-    },
-    "impacts": [
-      "derm"
-    ],
-    "note": "Corrosive in pure form; neutralized in finished products."
-  },
-  "Lauric Acid": {
-    "g": "H315,H319",
-    "s": "Fatty acid, mild irritant",
-    "ev": "High",
-    "gr": {
-      "derm": "B"
-    },
-    "impacts": [],
-    "note": null
-  },
-  "Potassium Carbonate": {
-    "g": "H315,H319",
-    "s": "Mild alkali, can cause skin/eye irritation in pure form",
-    "ev": "High",
-    "gr": {
-      "derm": "B"
-    },
-    "impacts": [
-      "derm"
-    ],
-    "note": null
-  },
-  "Dipterocarpus Wood Oil": {
-    "g": "H315,H317",
-    "s": "Natural essential oil, may cause sensitization",
-    "ev": "Low",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "allerg"
-    ],
-    "note": null
-  },
-  "Citral": {
-    "g": "H315,H317,H319",
-    "s": "Fragrance allergen, occurs naturally in citrus oils",
-    "ev": "Low",
-    "gr": {
-      "derm": "D"
-    },
-    "impacts": [
-      "allerg",
-      "derm"
-    ],
-    "note": null
-  },
-  "Mandarin Oil": {
-    "g": "H315,H317",
-    "s": "Citrus essential oil, may cause sensitization",
-    "ev": "Low",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "allerg"
-    ],
-    "note": null
-  },
-  "Mint Oil": {
-    "g": "H315,H317",
-    "s": "Essential oil, may cause sensitization",
-    "ev": "Low",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "allerg"
-    ],
-    "note": null
-  },
-  "Basil Oil": {
-    "g": "H315,H317",
-    "s": "Essential oil, may cause sensitization",
-    "ev": "Low",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "allerg"
-    ],
-    "note": null
-  },
-  "Denatured Alcohol": {
-    "g": "H225,H319",
-    "s": "Ethanol denatured with bitterants, flammable, eye irritant",
-    "ev": "High",
-    "gr": {
-      "derm": "C",
-      "work": "C",
-      "repro": "D"
-    },
-    "impacts": [
-      "derm",
-      "repro"
-    ],
-    "reclassified": [
-      "Denatured alcohol is ethanol + bitterants; inherits ethanol's high-exposure repro flags. Often the hidden volatile in 'natural' spray cleaners."
-    ],
-    "note": null
-  },
-  "Citrus Aurantium Peel Oil": {
-    "g": "H315,H317",
-    "s": "Bitter orange peel oil, may cause sensitization",
-    "ev": "Low",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "allerg"
-    ],
-    "note": null
-  },
-  "Ethanolamine": {
-    "g": "H312,H332,H319",
-    "s": "Corrosive amine. Occupational asthma documented in cleaners (meta-analyses).",
-    "ev": "Medium",
-    "gr": {
-      "derm": "C",
-      "resp": "D",
-      "work": "C"
-    },
-    "impacts": [
-      "resp",
-      "derm"
-    ],
-    "note": null
-  },
-  "Surfactant": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within surfactant class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Caprylyl/Capryl Glucoside": {
-    "g": "H315,H319,H335",
-    "s": "Causes skin irritation",
-    "ev": "Medium",
-    "gr": {
-      "derm": "C",
-      "resp": "C"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS (CID 62852): H315 50%, H319 50%, H335 50% consensus (corrected per Linnea CCI-004 revision, 2026-09-17)."
-  },
-  "Dimethicone": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "PDMS silicones have no ECHA C&L GHS classification on PubChem; dimethicone widely reported as inert. Medium confidence pending Linnea verification."
-  },
-  "Butane": {
-    "g": "H220,H280",
-    "s": "Extremely flammable propellant gas. Simple asphyxiant in confined spaces.",
-    "ev": "High",
-    "gr": {
-      "work": "C"
-    },
-    "impacts": [],
-    "note": null
-  },
-  "Alkyldimethylamine Oxide": {
-    "g": "H315,H318",
-    "s": "Amine oxide surfactant. Skin/eye irritant.",
-    "ev": "Medium",
-    "gr": {
-      "derm": "D"
-    },
-    "impacts": [
-      "derm"
-    ],
-    "note": null
-  },
-  "Hydrogen Peroxide": {
-    "g": "H314,H318,H412",
-    "s": "Corrosive oxidizer. Severe eye damage, aquatic toxicity.",
-    "ev": "High",
-    "gr": {
-      "derm": "F",
-      "env": "C",
-      "work": "D"
-    },
-    "impacts": [
-      "aqua",
-      "derm"
-    ],
-    "note": null
-  },
-  "Hydroxypropyl Cyclodextrin": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within polymer class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Alcohol": {
-    "g": "H225,H319",
-    "s": "Generic alcohol (usually ethanol or isopropanol). Flammable, eye irritant.",
-    "ev": "Low",
-    "gr": {
-      "derm": "B",
-      "work": "C"
-    },
-    "impacts": [],
-    "note": null
-  },
-  "Octyl/Decyl Glucoside": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within alkyl polyglucoside surfactant class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Propane": {
-    "g": "H220,H280",
-    "s": "Extremely flammable propellant gas. Simple asphyxiant in confined spaces.",
-    "ev": "High",
-    "gr": {
-      "work": "C"
-    },
-    "impacts": [],
-    "note": null
-  },
-  "Propylene Glycol Butyl Ether": {
-    "g": "H302,H315,H319",
-    "s": "Glycol ether solvent. Repro/developmental concern (glycol ether class, EPA/Prop 65 flagged 2-butoxyethanol cousin).",
-    "ev": "Medium",
-    "gr": {
-      "derm": "D",
-      "repro": "C",
-      "work": "C"
-    },
-    "impacts": [
-      "repro",
-      "derm"
-    ],
-    "reclassified": [
-      "Glycol ethers were promoted as 'safe' replacements for banned solvents (1970s–90s); regulation & Prop 65 listings later flagged reproductive/developmental harm in the class."
-    ],
-    "note": null
-  },
-  "Gluconic Acid": {
-    "g": "H315,H319",
-    "s": "Causes skin irritation",
-    "ev": "Medium",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 10690)."
-  },
-  "Sodium Dodecylbenzenesulfonate": {
-    "g": "H302,H315,H318,H412",
-    "s": "Anionic surfactant (linear alkylbenzene sulfonate). Skin/eye irritant, aquatic toxicity.",
-    "ev": "Medium",
-    "gr": {
-      "derm": "D",
-      "env": "C"
-    },
-    "impacts": [
-      "derm",
-      "aqua"
-    ],
-    "note": null
-  },
-  "Alcohol Ethoxylates": {
-    "g": "H315,H319,H412",
-    "s": "Ethoxylated surfactant family. Skin/eye irritant; 1,4-dioxane contaminant trace concern from ethoxylation.",
-    "ev": "Medium",
-    "gr": {
-      "derm": "C",
-      "env": "C"
-    },
-    "impacts": [
-      "derm",
-      "aqua"
-    ],
-    "reclassified": [
-      "Ethoxylated surfactants (SLES, alcohol ethoxylates) can carry trace 1,4-dioxane — a byproduct EPA flagged as a probable human carcinogen (IARC 2B). Not an added ingredient; a process contaminant."
-    ],
-    "note": null
-  },
-  "Didecyldimonium Chloride": {
-    "g": "H302,H314,H400",
-    "s": "Quaternary ammonium (DDAC). Corrosive, aquatic toxicity, respiratory sensitizer in occupational use.",
-    "ev": "Medium",
-    "gr": {
-      "derm": "F",
-      "resp": "C",
-      "env": "F",
-      "work": "D"
-    },
-    "impacts": [
-      "resp",
-      "derm",
-      "aqua",
-      "allerg"
-    ],
-    "reclassified": [
-      "Quats (quaternary ammonium disinfectants) surged in use mid-20th c. as 'safe' germ killers; occupational studies later linked them to asthma & allergic sensitization."
-    ],
-    "note": "Graded from PubChem GHS (CID 23558): H314 100%, H302 85.8%, H400 47.6% consensus (knowable values; corrected characterization per Linnea CCI-004 revision, 2026-09-17)."
-  },
-  "Isoparaffin": {
-    "g": "H226,H304",
-    "s": "Petroleum-derived solvent blend. Flammable, aspiration hazard.",
-    "ev": "Medium",
-    "gr": {
-      "resp": "C",
-      "work": "B"
-    },
-    "impacts": [
-      "resp"
-    ],
-    "note": null
-  },
-  "Phenoxyisopropanol": {
-    "g": "H315,H319",
-    "s": "Glycol ether-like solvent. Skin/eye irritant; glycol ether class repro flags.",
-    "ev": "Low",
-    "gr": {
-      "derm": "C",
-      "repro": "C"
-    },
-    "impacts": [
-      "repro",
-      "derm"
-    ],
-    "note": null
-  },
-  "Isobutane": {
-    "g": "H220,H280",
-    "s": "Extremely flammable propellant gas. Simple asphyxiant in confined spaces.",
-    "ev": "High",
-    "gr": {
-      "work": "C"
-    },
-    "impacts": [],
-    "note": null
-  },
-  "Sodium Silicate": {
-    "g": "H314,H335",
-    "s": "Alkaline silicate. Corrosive; dust respiratory irritant.",
-    "ev": "Medium",
-    "gr": {
-      "derm": "D",
-      "resp": "C",
-      "work": "C"
-    },
-    "impacts": [
-      "resp",
-      "derm"
-    ],
-    "note": null
-  },
-  "Sodium Tetraborate": {
-    "g": "H360FD,H319",
-    "s": "Borax (sodium tetraborate decahydrate). EU/CLP-classified reproductive toxicant 1B (H360FD); eye irritant. US allows in household products.",
-    "ev": "High",
-    "gr": {
-      "repro": "F",
-      "derm": "C",
-      "work": "D"
-    },
-    "impacts": [
-      "repro"
-    ],
-    "reclassified": [
-      "Borax was the 19th-century 'miracle cleaner' — cheap, effective, universally trusted. EU CLP classified it Reproductive toxicant 1B (H360FD) in 2010; it is restricted across Europe while the US still sells it off the shelf."
-    ],
-    "note": "The catch-up poster child: identical GHS hazard classification on both sides of the Atlantic, opposite regulatory outcomes."
-  },
-  "Diethylene Glycol Monobutyl Ether": {
-    "g": "H302,H319",
-    "s": "DEGBE — glycol ether solvent used in heavy-duty oven and floor cleaners. Harmful if swallowed, eye irritant. Glycol-ether class carries reproductive/developmental concern in EU/Prop 65 classifications.",
-    "ev": "Medium",
-    "gr": {
-      "derm": "C",
-      "repro": "C",
-      "work": "C"
-    },
-    "impacts": [
-      "repro",
-      "derm"
-    ],
-    "reclassified": [
-      "DEGBE is a glycol ether — the same family as 2-butoxyethanol (EGBE). Glycol ethers were adopted as 'safer' replacements for banned solvents through the 1980s-90s; EU CLP later flagged reproductive/developmental toxicity across the class and several are now CA Prop 65-listed. Lower acute toxicity than EGBE, but the class concern stands."
-    ],
-    "note": "Common in fume-style oven cleaners where high heat vaporizes the solvent."
-  },
-  "sodium lauryl sulfate": {
-    "g": "H318,H302,H315,H412",
-    "s": "Causes serious eye damage",
-    "ev": "Medium",
-    "gr": {
-      "derm": "D",
-      "resp": "C",
-      "organ": "D",
-      "env": "F"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 3423265)."
-  },
-  "sodium laureth sulfate": {
-    "g": "H315,H318",
-    "s": "Causes skin and serious eye damage",
-    "ev": "High",
-    "gr": {
-      "derm": "D",
-      "organ": "C"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 23665884)."
-  },
-  "cocamidopropyl betaine": {
-    "g": "Extrapolated",
-    "s": "Extrapolated — amphoteric surfactant, documented contact-allergen class; derm C",
-    "ev": "Extrapolated",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "sodium hypochlorite": {
-    "g": "H314,H318,H400",
-    "s": "Causes severe skin burns and eye damage",
-    "ev": "Medium",
-    "gr": {
-      "derm": "F",
-      "resp": "C",
-      "organ": "C",
-      "env": "F"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 23665760)."
-  },
-  "sodium hydroxide": {
-    "g": "H290,H314,H318",
-    "s": "Corrosive, severe burns",
-    "ev": "High",
-    "gr": {
-      "derm": "F",
-      "resp": "C",
-      "organ": "D"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 14798)."
-  },
-  "benzalkonium chloride": {
-    "g": "H314,H318,H400,H302,H312,H332",
-    "s": "Causes severe skin burns and eye damage",
-    "ev": "Medium",
-    "gr": {
-      "derm": "F",
-      "resp": "F",
-      "organ": "C",
-      "env": "F"
-    },
-    "impacts": [
-      "allerg"
-    ],
-    "note": "Graded from PubChem GHS classifications (CID 3014024).",
-    "sensitive": true
-  },
-  "alcohol ethoxylates": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within nonionic surfactant class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "glycerin": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 753) — no H-codes at >=40% consensus; treated as minimal hazard with Medium confidence."
-  },
-  "sodium gluconate": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 23672301) — no H-codes at >=40% consensus; treated as minimal hazard with Medium confidence."
-  },
-  "hydrogen peroxide": {
-    "g": "H271,H314,H302,H332",
-    "s": "Causes severe skin burns and eye damage",
-    "ev": "High",
-    "gr": {
-      "derm": "F",
-      "resp": "F",
-      "organ": "D",
-      "env": "F"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 784).",
-    "sensitive": true
-  },
-  "citric acid": {
-    "g": "H319",
-    "s": "Causes serious eye irritation",
-    "ev": "High",
-    "gr": {
-      "derm": "C",
-      "resp": "C"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS (CID 311): H319 84.7% consensus (corrected from 99.8% per Linnea CCI-004 revision, 2026-09-17)."
-  },
-  "didecyldimonium chloride": {
-    "g": "H302,H314,H400",
-    "s": "Quaternary ammonium (DDAC). Corrosive, aquatic toxicity, respiratory sensitizer in occupational use.",
-    "ev": "Medium",
-    "gr": {
-      "derm": "F",
-      "resp": "F",
-      "organ": "D",
-      "env": "F"
-    },
-    "impacts": [
-      "allerg"
-    ],
-    "note": "Graded from PubChem GHS classifications (CID 23558).",
-    "sensitive": true
-  },
-  "sodium carbonate": {
-    "g": "H319",
-    "s": "Causes serious eye irritation",
-    "ev": "High",
-    "gr": {
-      "derm": "D",
-      "resp": "C",
-      "organ": "D"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 10340)."
-  },
-  "limonene": {
-    "g": "H317,H400,H410,H304,H315,H226",
-    "s": "Flammable liquid and vapor",
-    "ev": "High",
-    "gr": {
-      "derm": "D",
-      "env": "F"
-    },
-    "impacts": [
-      "allerg"
-    ],
-    "note": "Graded from PubChem GHS classifications (CID 22311).",
-    "sensitive": true
-  },
-  "sodium citrate": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS (CID 6224). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: 1117/1184 (94.3%) not meeting criteria. Earlier H319 grade came from a secondary block and is withdrawn."
-  },
-  "propylene glycol": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {
-      "organ": "D"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 1030)."
-  },
-  "ethanol": {
-    "g": "H225",
-    "s": "Highly flammable liquid and vapor",
-    "ev": "High",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS (CID 702). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: H225 >99.9%; H319 at 37.7% is below the 40% threshold; H315/H412 appear only in non-ECHA blocks and do not drive grades."
-  },
-  "isopropanol": {
-    "g": "H319,H336,H225",
-    "s": "Highly Flammable liquid and vapor",
-    "ev": "High",
-    "gr": {
-      "derm": "D",
-      "resp": "C",
-      "organ": "D",
-      "env": "F"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 3776)."
-  },
-  "DMDM Hydantoin": {
-    "g": "H317",
-    "s": "Formaldehyde-releasing preservative. Skin sensitizer — can cause allergic contact dermatitis in formaldehyde-sensitive individuals.",
-    "ev": "Low",
-    "gr": {
-      "derm": "D",
-      "canc": "C"
-    },
-    "impacts": [
-      "allerg",
-      "derm"
-    ],
-    "reclassified": [
-      "DMDM Hydantoin was marketed as a 'safer' preservative; it releases formaldehyde slowly, inheriting formaldehyde's sensitization profile. EU 2022 lowered labeling threshold to 10 ppm — now must warn 'releases formaldehyde'."
-    ],
-    "note": "Common in shampoos, body washes, and liquid hand soaps. Hidden source of formaldehyde exposure for sensitive individuals."
-  },
-  "1,4-Dioxane": {
-    "g": "H350",
-    "s": "May cause cancer",
-    "ev": "High",
-    "gr": {
-      "derm": "B",
-      "repro": "C",
-      "endo": "D",
-      "canc": "A"
-    },
-    "impacts": [
-      "canc",
-      "repro"
-    ],
-    "reclassified": [
-      "1,4-dioxane was historically treated as a harmless manufacturing byproduct in ethoxylated surfactants. Now recognized as a probable human carcinogen (IARC 2B). NY State banned it in cleaning products above 1 ppm (2023). EU considering REACH restriction."
-    ],
-    "note": null
-  },
-  "Yellow 5": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Yellow 5 (tartrazine, CID 164825): PubChem GHS lookup returns no hazard data. FD&C Yellow 5, FDA-approved colorant. Medium confidence."
-  },
-  "PPG-26": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "PPG-26 resolves on PubChem to propylene glycol family (CID 1030) — majority not classified. Treated as minimal hazard, Medium confidence."
-  },
-  "Polysorbate 20": {
-    "g": "H317",
-    "s": "Ethoxylated sorbitan ester emulsifier. Mild; possible trace 1,4-dioxane from ethoxylation.",
-    "ev": "Medium",
-    "gr": {
-      "derm": "B"
-    },
-    "impacts": [
-      "derm"
-    ],
-    "note": "Ethoxylated — carries 1,4-dioxane contaminant risk common to the class."
-  },
-  "Aloe Barbadensis Leaf Juice": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within botanical extract class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Plant-derived Surfactants": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within surfactant class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Sodium Gluconate": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 23672301)."
-  },
-  "Silica": {
-    "g": "H373",
-    "s": "Abrasive. Crystalline silica dust is a respiratory hazard with chronic exposure; scrubber paste is low-risk in household use.",
-    "ev": "High",
-    "gr": {
-      "resp": "C",
-      "work": "C"
-    },
-    "impacts": [
-      "resp"
-    ],
-    "note": "Hazard is dust-inhalation (occupational); sealed paste form is low risk. Distinct from 'Sodium Silicate' (alkaline)."
-  },
-  "Pumice": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated: PubChem GHS for Calcium carbonate (CID 10112) — no hazard criteria. Pumice = volcanic silicate glass, inert abrasive; no GHS record on PubChem."
-  },
-  "Formaldehyde": {
-    "g": "H350,H317,H341",
-    "s": "Known carcinogen (IARC Group 1); skin sensitizer.",
-    "ev": "High",
-    "gr": {
-      "canc": "A",
-      "derm": "D",
-      "resp": "C"
-    },
-    "impacts": [
-      "canc",
-      "allerg",
-      "derm",
-      "resp"
-    ],
-    "reclassified": [
-      "Once a common preservative in consumer products; now CLP Category 1B carcinogen. US bans it in cosmetics but formaldehyde-RELEASING preservatives (DMDM Hydantoin etc.) remain unlabeled."
-    ],
-    "note": "Rarely a direct cleaning-product ingredient; included to anchor formaldehyde-releaser entries."
-  },
-  "Formaldehyde releaser (paraformaldehyde + 2-hydroxypropylamine 1:1)": {
-    "g": "H317,H350",
-    "s": "Formaldehyde-releasing biocide blend; failed EU BPR approval (PT6).",
-    "ev": "High",
-    "gr": {
-      "canc": "B",
-      "derm": "D",
-      "resp": "C"
-    },
-    "impacts": [
-      "canc",
-      "allerg",
-      "derm"
-    ],
-    "note": "Grades reflect the formaldehyde it releases (EU classifies releasers as carcinogenic when release exceeds threshold)."
-  },
-  "Sodium Sulfate": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {
-      "organ": "D"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 24436)."
-  },
-  "Trisodium Dicarboxymethyl Alaninate": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 11021984) — only sub-threshold H290 metal-corrosion codes; no health hazard consensus."
-  },
-  "Copolymer of Acrylic Maleic and Sulphonic Acids": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within polymer class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Isotridecanol Ethoxylated": {
-    "g": "H315,H318,H411",
-    "s": "Ethoxylated fatty alcohol surfactant. Skin/eye irritant, aquatic toxicity; 1,4-dioxane trace contaminant concern from ethoxylation.",
-    "ev": "Medium",
-    "gr": {
-      "derm": "C",
-      "env": "C"
-    },
-    "impacts": [
-      "derm",
-      "aqua"
-    ],
-    "reclassified": [
-      "Ethoxylated surfactants can carry trace 1,4-dioxane (IARC 2B) — a process contaminant, not an added ingredient."
-    ],
-    "note": null
-  },
-  "PEG/PPG/Propylheptyl Ether": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within polyethylene glycol class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Dipropylene Glycol": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
-    "ev": "Medium",
-    "gr": {
-      "derm": "F"
-    },
-    "impacts": [],
-    "note": "Graded from PubChem GHS classifications (CID 134692469)."
-  },
-  "Benzotriazole": {
-    "g": "H302,H315,H319,H410",
-    "s": "Metal corrosion inhibitor. Oral/eye irritant, very toxic to aquatic life; EU watch-list substance.",
-    "ev": "Medium",
-    "gr": {
-      "derm": "C",
-      "env": "D",
-      "work": "C"
-    },
-    "impacts": [
-      "aqua",
-      "derm"
-    ],
-    "note": null
-  },
-  "Subtilisin": {
-    "g": "H315,H319,H334",
-    "s": "Protease enzyme (detergent). Respiratory sensitizer — well-documented occupational asthma from detergent enzymes.",
-    "ev": "High",
-    "gr": {
-      "resp": "D",
-      "derm": "C"
-    },
-    "impacts": [
-      "resp",
-      "allerg"
-    ],
-    "reclassified": [
-      "Enzyme additives (1960s–) were marketed as a cleaning breakthrough; occupational studies later linked protease exposure to sensitization and asthma in workers."
-    ],
-    "note": null
-  },
-  "Amylase Enzyme": {
-    "g": "H315,H319,H334",
-    "s": "Starch-digesting detergent enzyme. Respiratory sensitizer, same class hazard as subtilisin.",
-    "ev": "High",
-    "gr": {
-      "resp": "D",
-      "derm": "C"
-    },
-    "impacts": [
-      "resp",
-      "allerg"
-    ],
-    "note": null
-  },
-  "Transition Metal Catalyst": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within catalyst (undisclosed) class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Acid Blue 182": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within hair dye (acid blue class) class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Polyvinyl Alcohol Polymer": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within polymer class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Ethoxylated Alcohol": {
-    "g": "H315,H319,H412",
-    "s": "Alcohol ethoxylate surfactant family. Skin/eye irritant, aquatic toxicity; 1,4-dioxane trace contaminant concern from ethoxylation.",
-    "ev": "Medium",
-    "gr": {
-      "derm": "C",
-      "env": "C"
-    },
-    "impacts": [
-      "derm",
-      "aqua"
-    ],
-    "note": null
-  },
-  "PEG-150": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within polyethylene glycol class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Proprietary Polymer Solution": {
-    "g": "Extrapolated",
-    "s": "Insufficient direct GHS data — graded by analogy within polymer class",
-    "ev": "Extrapolated",
-    "gr": {},
-    "impacts": [],
-    "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
-  },
-  "Acid Blue 9": {
-    "g": "Not Classified",
-    "s": "No GHS hazard criteria met",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [],
-    "note": "Acid Blue 9 (CI 42045, CID 17560): PubChem lists no GHS hazard statements. FD&C Blue 1 dye, approved food/colorant. Medium confidence."
-  },
-  "Laureth-7": {
-    "g": "Not Classified",
-    "s": "Ethoxylated lauryl alcohol surfactant. No GHS health classification per the authoritative ECHA block.",
-    "ev": "Medium",
-    "gr": {},
-    "impacts": [
-      "derm"
-    ],
-    "note": "Graded from PubChem GHS (CID 24750). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: not classified (aggregated). H302/H315/H318 appear only in a non-aggregated block without consensus % and do not drive grades. Ethoxylate-family trace 1,4-dioxane contaminant concern noted but not graded."
-  },
-  "Laureth-9": {
-    "g": "H302,H318",
-    "s": "Ethoxylated lauryl alcohol (9 EO units). Harmful if swallowed; serious eye damage.",
-    "ev": "Medium",
-    "gr": {
-      "derm": "C"
-    },
-    "impacts": [
-      "derm",
-      "aqua"
-    ],
-    "note": "Graded from PubChem GHS (CID 656641). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Only H302 (50%) and H318 (60%) clear the 40% bar; H315 30%, H319 20%, H335 10%, H400 20%, H412 20% are sub-threshold and dropped. Ethoxylate-family 1,4-dioxane contaminant concern noted but not graded."
-  },
-  "Disodium Cocoyl Glutamate": {
-    "g": "H319",
-    "s": "Amino-acid surfactant from coconut + glutamic acid. Mild eye irritant per GHS; gentle class used in sensitive-skin products.",
-    "ev": "Medium",
-    "gr": {
-      "derm": "B"
-    },
-    "impacts": [],
-    "note": "GHS from PubChem CID 167560."
-  },
-  "Quillaja Saponaria Bark Extract": {
-    "g": null,
-    "s": "Soap bark natural saponin. Generally recognized as mild; saponins can be eye/skin irritants at high concentration.",
-    "ev": "Low",
-    "gr": {
-      "derm": "B"
-    },
-    "impacts": [],
-    "note": "Natural extract, no PubChem GHS data (complex mixture). Extrapolation only."
-  },
-  "Bac-Out Microbial Mixture (enzymes + live cultures)": {
-    "g": null,
-    "s": "Biological enzyme + live-culture blend. No CAS; hazard profile depends on strain; generally low for consumer products.",
-    "ev": "Low",
-    "gr": {},
-    "impacts": [
-      "sens"
-    ],
-    "note": "Biological mixture — no PubChem entry. Flag as sensitization-possible for heavily exposed workers (enzyme-induced asthma documented in enzyme industry)."
-  },
-  "Linalool": {
-    "g": "H315,H317",
-    "s": "Fragrance terpene alcohol. Skin irritant/sensitizer, especially when oxidized on air exposure.",
-    "ev": "Medium",
-    "gr": {
-      "derm": "C",
-      "allerg": "D"
-    },
-    "impacts": [
-      "allerg",
-      "derm"
-    ],
-    "note": "EU fragrance allergen requiring label disclosure at low thresholds; oxidation increases sensitization."
-  },
-  "Geraniol": {
-    "g": "H315,H317",
-    "s": "Fragrance terpene alcohol. Skin sensitizer; EU-mandated allergen disclosure.",
-    "ev": "Medium",
-    "gr": {
-      "derm": "C",
-      "allerg": "D"
-    },
-    "impacts": [
-      "allerg",
-      "derm"
-    ],
-    "note": "Graded from PubChem GHS (CID 637566): H315 98.9%, H317 99.4% per ECHA C&L consensus; H411 is not present in the ECHA C&L block and was dropped (Linnea CCI-005 revision, 2026-09-17). EU fragrance allergen disclosure list (Regulation 1223/2009); sensitization documented."
-  }
+ "Water": {
+  "g": "Not Classified",
+  "s": "No hazard",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 962 Water) — no GHS hazard criteria."
+ },
+ "Spring Water": {
+  "g": "Not Classified",
+  "s": "No hazard",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 962 Water) — no GHS hazard criteria."
+ },
+ "Fragrance": {
+  "g": "H317",
+  "s": "May cause allergic skin reaction",
+  "ev": "Low",
+  "gr": {
+   "derm": "D",
+   "repro": "C",
+   "endo": "D",
+   "canc": "C"
+  },
+  "impacts": [
+   "allerg",
+   "endo",
+   "repro"
+  ],
+  "reclassified": [
+   "'Fragrance' was historically treated as one harmless scent note; undisclosed blends routinely contain phthalates & synthetic musks — endocrine/repro flags (Prop 65 phthalates) and contact allergens."
+  ],
+  "note": "Undisclosed blend. Hazards assigned from documented fragrance-carrier chemistry (phthalates, musks), not the specific formula."
+ },
+ "Citric Acid": {
+  "g": "H319",
+  "s": "Eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 311): H319 84.7% consensus (corrected from 99.8% per Linnea CCI-004 revision, 2026-09-17)."
+ },
+ "Glycolic Acid": {
+  "g": "H314",
+  "s": "Corrosive",
+  "ev": "High",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Lactic Acid": {
+  "g": "H315",
+  "s": "Skin irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Sodium Carbonate": {
+  "g": "H319",
+  "s": "Eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Sodium Bicarbonate": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 516892)."
+ },
+ "Calcium Carbonate": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 10112)."
+ },
+ "Feldspar": {
+  "g": "H373",
+  "s": "May cause damage to organs through prolonged or repeated exposure",
+  "ev": "High",
+  "gr": {
+   "organ": "D",
+   "resp": "D"
+  },
+  "impacts": [],
+  "sensitive": true,
+  "note": "Graded from PubChem GHS classifications (CID 3080680) — crystalline silica (respirable) concern; H373 at 100% consensus."
+ },
+ "Limestone": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated: PubChem GHS for Calcium carbonate (CID 10112) — no hazard criteria. Limestone = calcium carbonate (mineral form)."
+ },
+ "Decyl Glucoside": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 62142)."
+ },
+ "Lauryl Glucoside": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 10893439)."
+ },
+ "Methylisothiazolinone": {
+  "g": "H317",
+  "s": "Strong skin sensitizer, preservative",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "resp": "C",
+   "repro": "C",
+   "canc": "B"
+  },
+  "impacts": [
+   "allerg",
+   "derm",
+   "resp"
+  ],
+  "reclassified": [
+   "MIT was the 'safe' preservative replacing parabens; became 2013 'Allergen of the Year' — epidemic of allergic contact dermatitis, now restricted in leave-on products (EU)."
+  ],
+  "note": null
+ },
+ "Propylene Glycol": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {
+   "organ": "D"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 1030). Duplicate-capitalized entry; same grade as canonical key."
+ },
+ "Enzymes": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within enzyme (protein, potential respiratory sensitizer class) class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Tetrasodium Glutamate Diacetate": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 44630158). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. H290 22.8%, H319 31.7%, H335 22.4% — all below the 40% threshold, so none drive a grade. Earlier H319 grade withdrawn."
+ },
+ "Norwex Cloth": {
+  "g": "Not Classified",
+  "s": "Physical article, not a chemical",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": "Microfiber cloth — physical article, no chemical hazard grading applicable."
+ },
+ "Pumice Stone": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated: PubChem GHS for Calcium carbonate (CID 10112) — no hazard criteria. Pumice = inert abrasive; no GHS record."
+ },
+ "Sodium Citrate": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 6224). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: 1117/1184 (94.3%) not meeting criteria. Earlier H319 grade came from a secondary block and is withdrawn."
+ },
+ "Sodium Phytate": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem (CID 23724990) — no GHS Classification section in PUG View (corrected wording per Linnea CCI-004 revision, 2026-09-17). Sodium salt of phytic acid (food-grade chelant)."
+ },
+ "Myristyl Glucoside": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within alkyl polyglucoside surfactant class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Caprylyl Glucoside": {
+  "g": "H315,H319,H335",
+  "s": "Causes skin irritation",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C",
+   "resp": "C"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 62852): H315 50%, H319 50%, H335 50% consensus (knowable values; corrected characterization per Linnea CCI-004 revision, 2026-09-17)."
+ },
+ "Coco-Glucoside": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within alkyl polyglucoside surfactant class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Potassium Citrate": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 2735208)."
+ },
+ "Glycerin": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 753) — no H-codes at >=40% consensus; treated as minimal hazard with Medium confidence. Duplicate-capitalized entry; same grade as canonical key."
+ },
+ "Saponified Coconut Oil": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within saponified oil (soap salt) class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Saponified Olive Oil": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within saponified oil (soap salt) class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Organic Hemp Oil": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within plant oil class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Rosemary Extract": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within botanical extract class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Aloe Vera": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within botanical extract class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Botanical surfactant": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within surfactant class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Plant-based surfactants": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within surfactant class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Oatmeal extract": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within botanical extract class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Vitamin E": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 14986) — alias Tocopherol."
+ },
+ "Sodium Chloride": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D",
+   "env": "C"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 5234)."
+ },
+ "Alkaline Silicate": {
+  "g": "H319",
+  "s": "Eye irritant, low overall hazard",
+  "ev": "High",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Alumina": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 9989226). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: 2917/3142 (92.8%) not meeting criteria; H335 appeared only in a secondary block. Respirable-crystalline-silica concern applies to product form, not this CID’s C&L classification, and is not graded here."
+ },
+ "Brassica Campestris Seed Oil": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within plant oil class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Helianthus Annuus Seed Oil": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within plant oil class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Triethyl Citrate": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {
+   "resp": "C"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 6506)."
+ },
+ "Ginger Extract": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within botanical extract class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Isopropanol": {
+  "g": "H225,H319,H336",
+  "s": "Flammable, eye irritant, drowsiness",
+  "ev": "High",
+  "gr": {
+   "derm": "B",
+   "resp": "C",
+   "work": "C",
+   "repro": "B"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": null
+ },
+ "Isopropyl Alcohol": {
+  "g": "H225,H319,H336",
+  "s": "Flammable, eye irritant, drowsiness",
+  "ev": "High",
+  "gr": {
+   "derm": "B",
+   "resp": "C",
+   "work": "C",
+   "repro": "B"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": null
+ },
+ "Ethanol": {
+  "g": "H225",
+  "s": "Highly flammable liquid and vapor",
+  "ev": "High",
+  "gr": {
+   "derm": "B",
+   "work": "C",
+   "repro": "D",
+   "canc": "B"
+  },
+  "impacts": [
+   "repro"
+  ],
+  "reclassified": [
+   "Ethanol was long marketed as a harmless 'natural' solvent; high-exposure studies documented fetal harm (FAS), and occupational exposure is now treated more cautiously."
+  ],
+  "note": "Graded from PubChem GHS (CID 702). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: H225 >99.9%; H319 at 37.7% is below the 40% threshold; H315/H412 appear only in non-ECHA blocks and do not drive grades."
+ },
+ "Sodium Hypochlorite": {
+  "g": "H314,H318,H400",
+  "s": "Corrosive, severe eye damage, aquatic toxicity",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "env": "F",
+   "work": "D",
+   "resp": "C"
+  },
+  "impacts": [
+   "aqua",
+   "derm",
+   "resp"
+  ],
+  "reclassified": [
+   "Bleach was the unquestioned household standard for a century; occupational cohorts (cleaning workers, nurses) later linked routine bleach exposure to asthma & COPD risk."
+  ],
+  "note": null
+ },
+ "Sodium Hydroxide": {
+  "g": "H290,H314,H318",
+  "s": "Corrosive, severe burns",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "work": "D",
+   "repro": "B"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 14798): H314 >99.9%, H318 44.1%, H290 47.5% consensus (corrected 2026-09-17 per Linnea CCI-004 revision)."
+ },
+ "Hydrochloric Acid": {
+  "g": "H290,H314,H335",
+  "s": "Corrosive, respiratory irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "resp": "D",
+   "work": "D",
+   "repro": "B"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": null
+ },
+ "Quaternary Ammonium": {
+  "g": "H302,H314,H400",
+  "s": "Harmful if swallowed, corrosive, aquatic toxicity",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "env": "F",
+   "work": "D",
+   "resp": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm",
+   "resp"
+  ],
+  "reclassified": [
+   "Quats surged as 'safe' germ killers; occupational studies linked them to asthma & allergic sensitization; EPA registration review ongoing."
+  ],
+  "note": null
+ },
+ "Benzalkonium Chloride": {
+  "g": "H302,H314,H400",
+  "s": "Harmful if swallowed, corrosive, aquatic toxicity",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "env": "F",
+   "work": "D",
+   "resp": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm",
+   "resp"
+  ],
+  "reclassified": [
+   "Benzalkonium chloride was a go-to 'mild' disinfectant; animal repro studies + occupational asthma reports led to stricter limits & allergy labeling."
+  ],
+  "note": null
+ },
+ "Sodium Lauryl Sulfate": {
+  "g": "H228,H302,H315,H319,H335",
+  "s": "Flammable solid, skin/eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "C",
+   "resp": "C",
+   "work": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "derm",
+   "repro"
+  ],
+  "reclassified": [
+   "SLS was once marketed as 'safe enough to brush your teeth with'; stripping studies & 1,4-dioxane contamination concerns (from ethoxylation variants) later tempered that."
+  ],
+  "note": null
+ },
+ "Sodium Laureth Sulfate": {
+  "g": "H315,H318",
+  "s": "Causes skin and serious eye damage",
+  "ev": "High",
+  "gr": {
+   "derm": "C",
+   "repro": "C",
+   "canc": "C"
+  },
+  "impacts": [
+   "canc",
+   "derm",
+   "repro"
+  ],
+  "reclassified": [
+   "SLES replaced SLS as 'gentler'; ethoxylation introduces trace 1,4-dioxane (IARC 2B probable carcinogen) — a contaminant, not an ingredient."
+  ],
+  "note": "Graded from PubChem GHS (CID 23665884): H315 98.1%, H318 98.1% per headline ECHA block; H319 appears only in a secondary block (Linnea CCI-004 revision, 2026-09-17)."
+ },
+ "Limonene": {
+  "g": "H226,H304,H315,H317,H400",
+  "s": "Flammable, skin sensitizer, aspiration hazard, aquatic toxicity",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "resp": "D",
+   "env": "F",
+   "repro": "B"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm",
+   "resp"
+  ],
+  "reclassified": [
+   "Citrus limonene was sold as the 'natural' scent; on air exposure it oxidizes into potent sensitizers (limonene hydroperoxides) — now a known contact-allergen source."
+  ],
+  "note": null
+ },
+ "Lauramine Oxide": {
+  "g": "H315,H319",
+  "s": "Skin and eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Oxalic Acid": {
+  "g": "H302,H312",
+  "s": "Harmful if swallowed or contacted",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "organ": "D",
+   "repro": "C"
+  },
+  "impacts": [
+   "derm",
+   "repro"
+  ],
+  "note": null
+ },
+ "Sodium Percarbonate": {
+  "g": "H271,H302,H318",
+  "s": "Oxidizer, harmful if swallowed, severe eye damage",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "work": "C"
+  },
+  "impacts": [
+   "aqua",
+   "derm"
+  ],
+  "note": null
+ },
+ "Castile Soap": {
+  "g": "H315,H319",
+  "s": "Mild skin/eye irritant, biodegradable",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Tea Tree Oil": {
+  "g": "H304,H315,H317,H335,H412",
+  "s": "Skin sensitizer, aspiration hazard, respiratory irritant",
+  "ev": "Low",
+  "gr": {
+   "derm": "D",
+   "resp": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "allerg",
+   "derm",
+   "resp"
+  ],
+  "reclassified": [
+   "Tea tree oil rode the 'natural = safe' wave; it is a documented contact sensitizer (oxidized forms) and has rare prepubertal gynecomastia case reports (weak endocrine signal)."
+  ],
+  "note": null
+ },
+ "Lavender Oil": {
+  "g": "H315,H317,H319",
+  "s": "Skin sensitizer and irritant",
+  "ev": "Low",
+  "gr": {
+   "derm": "D",
+   "repro": "C",
+   "endo": "C"
+  },
+  "impacts": [
+   "allerg",
+   "endo"
+  ],
+  "reclassified": [
+   "Lavender oil, once 'calming & innocent', has case reports linking topical use to prepubertal gynecomastia (weak, possible endocrine activity); a registered contact allergen."
+  ],
+  "note": null
+ },
+ "Lemon Oil": {
+  "g": "H226,H304,H315,H317,H400",
+  "s": "Flammable, sensitizer, aquatic toxicity",
+  "ev": "Low",
+  "gr": {
+   "derm": "D",
+   "env": "F"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm"
+  ],
+  "note": null
+ },
+ "Peppermint Oil": {
+  "g": "H315,H317,H319,H335",
+  "s": "Skin/eye irritant, respiratory irritant",
+  "ev": "Low",
+  "gr": {
+   "derm": "D",
+   "resp": "C"
+  },
+  "impacts": [
+   "allerg",
+   "derm",
+   "resp"
+  ],
+  "note": null
+ },
+ "Eucalyptus Oil": {
+  "g": "H304,H315,H317,H335",
+  "s": "Skin sensitizer, respiratory irritant, toxic to pets",
+  "ev": "Low",
+  "gr": {
+   "derm": "D",
+   "resp": "C"
+  },
+  "impacts": [
+   "allerg",
+   "derm",
+   "resp"
+  ],
+  "note": null
+ },
+ "Sodium Coco-Sulfate": {
+  "g": "H315,H319",
+  "s": "Plant-derived surfactant, skin/eye irritant",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Cocamidopropyl Betaine": {
+  "g": "H315,H319",
+  "s": "Mild surfactant, skin/eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [
+   "allerg",
+   "derm"
+  ],
+  "reclassified": [
+   "CAPB replaced harsher surfactants as 'gentle'; became a common contact allergen (amide impurities) — now on many allergen patch panels."
+  ],
+  "note": null
+ },
+ "Benzisothiazolinone": {
+  "g": "H302,H315,H317,H400",
+  "s": "Harmful if swallowed, skin irritant, aquatic toxicity",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "env": "D",
+   "resp": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm"
+  ],
+  "reclassified": [
+   "BIT, a cousin of MIT, followed the same arc: marketed safe, became a recognized sensitizer with occupational dermatitis reports."
+  ],
+  "note": null
+ },
+ "Phenoxyethanol": {
+  "g": "H302,H315,H319",
+  "s": "Harmful if swallowed, skin/eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "reclassified": [
+   "Phenoxyethanol replaced parabens as 'clean' preservative; repro/developmental flags in animal studies led to EU restrictions in cosmetics (2012)."
+  ],
+  "note": null
+ },
+ "Butyloxyethanol": {
+  "g": "H302,H315,H319",
+  "s": "Harmful if swallowed, skin/eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "work": "C",
+   "repro": "D",
+   "resp": "C"
+  },
+  "impacts": [
+   "derm",
+   "repro",
+   "resp"
+  ],
+  "reclassified": [
+   "2-Butoxyethanol (EGBE) was once in every window & all-purpose cleaner as a 'safe' solvent; CA Prop 65 lists it for reproductive/developmental harm; EPA risk reviews followed."
+  ],
+  "note": null
+ },
+ "Ammonium Hydroxide": {
+  "g": "H314,H318",
+  "s": "Corrosive, severe eye damage",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "work": "C",
+   "resp": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "reclassified": [
+   "Ammonia was grandma's go-to; strong respiratory irritant, and mixing with bleach produces chloramine gas — a documented household emergency."
+  ],
+  "note": null
+ },
+ "Alcohol Ethoxylate": {
+  "g": "H315,H319",
+  "s": "Skin/eye irritant, surfactant",
+  "ev": "High",
+  "gr": {
+   "derm": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "aqua",
+   "derm",
+   "repro"
+  ],
+  "reclassified": [
+   "Ethoxylated surfactants can carry trace 1,4-dioxane (IARC 2B probable carcinogen) from manufacturing — process contaminant, not on the label."
+  ],
+  "note": null
+ },
+ "Trichloroisocyanuric Acid": {
+  "g": "H271,H302,H319,H410",
+  "s": "Oxidizer, harmful, aquatic toxicity",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "env": "F"
+  },
+  "impacts": [
+   "aqua",
+   "derm"
+  ],
+  "note": null
+ },
+ "Sodium Carbonate Peroxide": {
+  "g": "H271,H302,H318",
+  "s": "Oxidizer, harmful if swallowed, severe eye damage",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "work": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Potassium Oleate": {
+  "g": "H315,H319",
+  "s": "Potassium salt of oleic acid, mild irritant",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Organic Peppermint Oil": {
+  "g": "H315,H317",
+  "s": "May cause skin sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Organic Lavender Oil": {
+  "g": "H315,H317",
+  "s": "May cause skin sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Essential Oils": {
+  "g": "H315,H317",
+  "s": "May cause skin sensitization. Varies by oil type.",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": "Varies widely by oil; sensitization is the common thread."
+ },
+ "Citrus essential oils": {
+  "g": "H315,H317",
+  "s": "May cause skin sensitization. Contains limonene.",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg",
+   "derm"
+  ],
+  "note": null
+ },
+ "Cedar essential oil": {
+  "g": "H315,H317",
+  "s": "May cause skin sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Pine essential oil": {
+  "g": "H315,H317",
+  "s": "May cause skin sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg",
+   "resp"
+  ],
+  "note": null
+ },
+ "Lavender essential oil": {
+  "g": "H315,H317",
+  "s": "May cause skin sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg",
+   "endo"
+  ],
+  "note": null
+ },
+ "Geranium Oil": {
+  "g": "H315,H317",
+  "s": "May cause skin sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Potassium Hydroxide": {
+  "g": "H290,H314,H318",
+  "s": "Corrosive in pure form, but neutralized in final product",
+  "ev": "High",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Corrosive in pure form; neutralized in finished products."
+ },
+ "Lauric Acid": {
+  "g": "H315,H319",
+  "s": "Fatty acid, mild irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Potassium Carbonate": {
+  "g": "H315,H319",
+  "s": "Mild alkali, can cause skin/eye irritation in pure form",
+  "ev": "High",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Dipterocarpus Wood Oil": {
+  "g": "H315,H317",
+  "s": "Natural essential oil, may cause sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Citral": {
+  "g": "H315,H317,H319",
+  "s": "Fragrance allergen, occurs naturally in citrus oils",
+  "ev": "Low",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "allerg",
+   "derm"
+  ],
+  "note": null
+ },
+ "Mandarin Oil": {
+  "g": "H315,H317",
+  "s": "Citrus essential oil, may cause sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Mint Oil": {
+  "g": "H315,H317",
+  "s": "Essential oil, may cause sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Basil Oil": {
+  "g": "H315,H317",
+  "s": "Essential oil, may cause sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Denatured Alcohol": {
+  "g": "H225,H319",
+  "s": "Ethanol denatured with bitterants, flammable, eye irritant",
+  "ev": "High",
+  "gr": {
+   "derm": "C",
+   "work": "C",
+   "repro": "D"
+  },
+  "impacts": [
+   "derm",
+   "repro"
+  ],
+  "reclassified": [
+   "Denatured alcohol is ethanol + bitterants; inherits ethanol's high-exposure repro flags. Often the hidden volatile in 'natural' spray cleaners."
+  ],
+  "note": null
+ },
+ "Citrus Aurantium Peel Oil": {
+  "g": "H315,H317",
+  "s": "Bitter orange peel oil, may cause sensitization",
+  "ev": "Low",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": null
+ },
+ "Ethanolamine": {
+  "g": "H312,H332,H319",
+  "s": "Corrosive amine. Occupational asthma documented in cleaners (meta-analyses).",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C",
+   "resp": "D",
+   "work": "C"
+  },
+  "impacts": [
+   "resp",
+   "derm"
+  ],
+  "note": null
+ },
+ "Surfactant": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within surfactant class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Caprylyl/Capryl Glucoside": {
+  "g": "H315,H319,H335",
+  "s": "Causes skin irritation",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C",
+   "resp": "C"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 62852): H315 50%, H319 50%, H335 50% consensus (corrected per Linnea CCI-004 revision, 2026-09-17)."
+ },
+ "Dimethicone": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "PDMS silicones have no ECHA C&L GHS classification on PubChem; dimethicone widely reported as inert. Medium confidence pending Linnea verification."
+ },
+ "Butane": {
+  "g": "H220,H280",
+  "s": "Extremely flammable propellant gas. Simple asphyxiant in confined spaces.",
+  "ev": "High",
+  "gr": {
+   "work": "C"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Alkyldimethylamine Oxide": {
+  "g": "H315,H318",
+  "s": "Amine oxide surfactant. Skin/eye irritant.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": null
+ },
+ "Hydrogen Peroxide": {
+  "g": "H314,H318,H412",
+  "s": "Corrosive oxidizer. Severe eye damage, aquatic toxicity.",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "env": "C",
+   "work": "D"
+  },
+  "impacts": [
+   "aqua",
+   "derm"
+  ],
+  "note": null
+ },
+ "Hydroxypropyl Cyclodextrin": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within polymer class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Alcohol": {
+  "g": "H225,H319",
+  "s": "Generic alcohol (usually ethanol or isopropanol). Flammable, eye irritant.",
+  "ev": "Low",
+  "gr": {
+   "derm": "B",
+   "work": "C"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Octyl/Decyl Glucoside": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within alkyl polyglucoside surfactant class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Propane": {
+  "g": "H220,H280",
+  "s": "Extremely flammable propellant gas. Simple asphyxiant in confined spaces.",
+  "ev": "High",
+  "gr": {
+   "work": "C"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Propylene Glycol Butyl Ether": {
+  "g": "H302,H315,H319",
+  "s": "Glycol ether solvent. Repro/developmental concern (glycol ether class, EPA/Prop 65 flagged 2-butoxyethanol cousin).",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D",
+   "repro": "C",
+   "work": "C"
+  },
+  "impacts": [
+   "repro",
+   "derm"
+  ],
+  "reclassified": [
+   "Glycol ethers were promoted as 'safe' replacements for banned solvents (1970s–90s); regulation & Prop 65 listings later flagged reproductive/developmental harm in the class."
+  ],
+  "note": null
+ },
+ "Gluconic Acid": {
+  "g": "H315,H319",
+  "s": "Causes skin irritation",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 10690)."
+ },
+ "Sodium Dodecylbenzenesulfonate": {
+  "g": "H302,H315,H318,H412",
+  "s": "Anionic surfactant (linear alkylbenzene sulfonate). Skin/eye irritant, aquatic toxicity.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D",
+   "env": "C"
+  },
+  "impacts": [
+   "derm",
+   "aqua"
+  ],
+  "note": null
+ },
+ "Alcohol Ethoxylates": {
+  "g": "H315,H319,H412",
+  "s": "Ethoxylated surfactant family. Skin/eye irritant; 1,4-dioxane contaminant trace concern from ethoxylation.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C",
+   "env": "C"
+  },
+  "impacts": [
+   "derm",
+   "aqua"
+  ],
+  "reclassified": [
+   "Ethoxylated surfactants (SLES, alcohol ethoxylates) can carry trace 1,4-dioxane — a byproduct EPA flagged as a probable human carcinogen (IARC 2B). Not an added ingredient; a process contaminant."
+  ],
+  "note": null
+ },
+ "Didecyldimonium Chloride": {
+  "g": "H302,H314,H400",
+  "s": "Quaternary ammonium (DDAC). Corrosive, aquatic toxicity, respiratory sensitizer in occupational use.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "F",
+   "resp": "C",
+   "env": "F",
+   "work": "D"
+  },
+  "impacts": [
+   "resp",
+   "derm",
+   "aqua",
+   "allerg"
+  ],
+  "reclassified": [
+   "Quats (quaternary ammonium disinfectants) surged in use mid-20th c. as 'safe' germ killers; occupational studies later linked them to asthma & allergic sensitization."
+  ],
+  "note": "Graded from PubChem GHS (CID 23558): H314 100%, H302 85.8%, H400 47.6% consensus (knowable values; corrected characterization per Linnea CCI-004 revision, 2026-09-17)."
+ },
+ "Isoparaffin": {
+  "g": "H226,H304",
+  "s": "Petroleum-derived solvent blend. Flammable, aspiration hazard.",
+  "ev": "Medium",
+  "gr": {
+   "resp": "C",
+   "work": "B"
+  },
+  "impacts": [
+   "resp"
+  ],
+  "note": null
+ },
+ "Phenoxyisopropanol": {
+  "g": "H315,H319",
+  "s": "Glycol ether-like solvent. Skin/eye irritant; glycol ether class repro flags.",
+  "ev": "Low",
+  "gr": {
+   "derm": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "repro",
+   "derm"
+  ],
+  "note": null
+ },
+ "Isobutane": {
+  "g": "H220,H280",
+  "s": "Extremely flammable propellant gas. Simple asphyxiant in confined spaces.",
+  "ev": "High",
+  "gr": {
+   "work": "C"
+  },
+  "impacts": [],
+  "note": null
+ },
+ "Sodium Silicate": {
+  "g": "H314,H335",
+  "s": "Alkaline silicate. Corrosive; dust respiratory irritant.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D",
+   "resp": "C",
+   "work": "C"
+  },
+  "impacts": [
+   "resp",
+   "derm"
+  ],
+  "note": null
+ },
+ "Sodium Tetraborate": {
+  "g": "H360FD,H319",
+  "s": "Borax (sodium tetraborate decahydrate). EU/CLP-classified reproductive toxicant 1B (H360FD); eye irritant. US allows in household products.",
+  "ev": "High",
+  "gr": {
+   "repro": "F",
+   "derm": "C",
+   "work": "D"
+  },
+  "impacts": [
+   "repro"
+  ],
+  "reclassified": [
+   "Borax was the 19th-century 'miracle cleaner' — cheap, effective, universally trusted. EU CLP classified it Reproductive toxicant 1B (H360FD) in 2010; it is restricted across Europe while the US still sells it off the shelf."
+  ],
+  "note": "The catch-up poster child: identical GHS hazard classification on both sides of the Atlantic, opposite regulatory outcomes."
+ },
+ "Diethylene Glycol Monobutyl Ether": {
+  "g": "H302,H319",
+  "s": "DEGBE — glycol ether solvent used in heavy-duty oven and floor cleaners. Harmful if swallowed, eye irritant. Glycol-ether class carries reproductive/developmental concern in EU/Prop 65 classifications.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C",
+   "repro": "C",
+   "work": "C"
+  },
+  "impacts": [
+   "repro",
+   "derm"
+  ],
+  "reclassified": [
+   "DEGBE is a glycol ether — the same family as 2-butoxyethanol (EGBE). Glycol ethers were adopted as 'safer' replacements for banned solvents through the 1980s-90s; EU CLP later flagged reproductive/developmental toxicity across the class and several are now CA Prop 65-listed. Lower acute toxicity than EGBE, but the class concern stands."
+  ],
+  "note": "Common in fume-style oven cleaners where high heat vaporizes the solvent."
+ },
+ "sodium lauryl sulfate": {
+  "g": "H318,H302,H315,H412",
+  "s": "Causes serious eye damage",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D",
+   "resp": "C",
+   "organ": "D",
+   "env": "F"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 3423265)."
+ },
+ "sodium laureth sulfate": {
+  "g": "H315,H318",
+  "s": "Causes skin and serious eye damage",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "organ": "C"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 23665884)."
+ },
+ "cocamidopropyl betaine": {
+  "g": "Extrapolated",
+  "s": "Extrapolated — amphoteric surfactant, documented contact-allergen class; derm C",
+  "ev": "Extrapolated",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "sodium hypochlorite": {
+  "g": "H314,H318,H400",
+  "s": "Causes severe skin burns and eye damage",
+  "ev": "Medium",
+  "gr": {
+   "derm": "F",
+   "resp": "C",
+   "organ": "C",
+   "env": "F"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 23665760)."
+ },
+ "sodium hydroxide": {
+  "g": "H290,H314,H318",
+  "s": "Corrosive, severe burns",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "resp": "C",
+   "organ": "D"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 14798)."
+ },
+ "benzalkonium chloride": {
+  "g": "H314,H318,H400,H302,H312,H332",
+  "s": "Causes severe skin burns and eye damage",
+  "ev": "Medium",
+  "gr": {
+   "derm": "F",
+   "resp": "F",
+   "organ": "C",
+   "env": "F"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": "Graded from PubChem GHS classifications (CID 3014024).",
+  "sensitive": true
+ },
+ "alcohol ethoxylates": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within nonionic surfactant class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "glycerin": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 753) — no H-codes at >=40% consensus; treated as minimal hazard with Medium confidence."
+ },
+ "sodium gluconate": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 23672301) — no H-codes at >=40% consensus; treated as minimal hazard with Medium confidence."
+ },
+ "hydrogen peroxide": {
+  "g": "H271,H314,H302,H332",
+  "s": "Causes severe skin burns and eye damage",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "resp": "F",
+   "organ": "D",
+   "env": "F"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 784).",
+  "sensitive": true
+ },
+ "citric acid": {
+  "g": "H319",
+  "s": "Causes serious eye irritation",
+  "ev": "High",
+  "gr": {
+   "derm": "C",
+   "resp": "C"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 311): H319 84.7% consensus (corrected from 99.8% per Linnea CCI-004 revision, 2026-09-17)."
+ },
+ "didecyldimonium chloride": {
+  "g": "H302,H314,H400",
+  "s": "Quaternary ammonium (DDAC). Corrosive, aquatic toxicity, respiratory sensitizer in occupational use.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "F",
+   "resp": "F",
+   "organ": "D",
+   "env": "F"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": "Graded from PubChem GHS classifications (CID 23558).",
+  "sensitive": true
+ },
+ "sodium carbonate": {
+  "g": "H319",
+  "s": "Causes serious eye irritation",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "resp": "C",
+   "organ": "D"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 10340)."
+ },
+ "limonene": {
+  "g": "H317,H400,H410,H304,H315,H226",
+  "s": "Flammable liquid and vapor",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "env": "F"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": "Graded from PubChem GHS classifications (CID 22311).",
+  "sensitive": true
+ },
+ "sodium citrate": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 6224). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: 1117/1184 (94.3%) not meeting criteria. Earlier H319 grade came from a secondary block and is withdrawn."
+ },
+ "propylene glycol": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {
+   "organ": "D"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 1030)."
+ },
+ "ethanol": {
+  "g": "H225",
+  "s": "Highly flammable liquid and vapor",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 702). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: H225 >99.9%; H319 at 37.7% is below the 40% threshold; H315/H412 appear only in non-ECHA blocks and do not drive grades."
+ },
+ "isopropanol": {
+  "g": "H319,H336,H225",
+  "s": "Highly Flammable liquid and vapor",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "resp": "C",
+   "organ": "D",
+   "env": "F"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 3776)."
+ },
+ "DMDM Hydantoin": {
+  "g": "H317",
+  "s": "Formaldehyde-releasing preservative. Skin sensitizer — can cause allergic contact dermatitis in formaldehyde-sensitive individuals.",
+  "ev": "Low",
+  "gr": {
+   "derm": "D",
+   "canc": "C"
+  },
+  "impacts": [
+   "allerg",
+   "derm"
+  ],
+  "reclassified": [
+   "DMDM Hydantoin was marketed as a 'safer' preservative; it releases formaldehyde slowly, inheriting formaldehyde's sensitization profile. EU 2022 lowered labeling threshold to 10 ppm — now must warn 'releases formaldehyde'."
+  ],
+  "note": "Common in shampoos, body washes, and liquid hand soaps. Hidden source of formaldehyde exposure for sensitive individuals."
+ },
+ "1,4-Dioxane": {
+  "g": "H350",
+  "s": "May cause cancer",
+  "ev": "High",
+  "gr": {
+   "derm": "B",
+   "repro": "C",
+   "endo": "D",
+   "canc": "A"
+  },
+  "impacts": [
+   "canc",
+   "repro"
+  ],
+  "reclassified": [
+   "1,4-dioxane was historically treated as a harmless manufacturing byproduct in ethoxylated surfactants. Now recognized as a probable human carcinogen (IARC 2B). NY State banned it in cleaning products above 1 ppm (2023). EU considering REACH restriction."
+  ],
+  "note": null
+ },
+ "Yellow 5": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Yellow 5 (tartrazine, CID 164825): PubChem GHS lookup returns no hazard data. FD&C Yellow 5, FDA-approved colorant. Medium confidence."
+ },
+ "PPG-26": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "PPG-26 resolves on PubChem to propylene glycol family (CID 1030) — majority not classified. Treated as minimal hazard, Medium confidence."
+ },
+ "Polysorbate 20": {
+  "g": "H317",
+  "s": "Ethoxylated sorbitan ester emulsifier. Mild; possible trace 1,4-dioxane from ethoxylation.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Ethoxylated — carries 1,4-dioxane contaminant risk common to the class."
+ },
+ "Aloe Barbadensis Leaf Juice": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within botanical extract class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Plant-derived Surfactants": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within surfactant class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Sodium Gluconate": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 23672301)."
+ },
+ "Silica": {
+  "g": "H373",
+  "s": "Abrasive. Crystalline silica dust is a respiratory hazard with chronic exposure; scrubber paste is low-risk in household use.",
+  "ev": "High",
+  "gr": {
+   "resp": "C",
+   "work": "C"
+  },
+  "impacts": [
+   "resp"
+  ],
+  "note": "Hazard is dust-inhalation (occupational); sealed paste form is low risk. Distinct from 'Sodium Silicate' (alkaline)."
+ },
+ "Pumice": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated: PubChem GHS for Calcium carbonate (CID 10112) — no hazard criteria. Pumice = volcanic silicate glass, inert abrasive; no GHS record on PubChem."
+ },
+ "Formaldehyde": {
+  "g": "H350,H317,H341",
+  "s": "Known carcinogen (IARC Group 1); skin sensitizer.",
+  "ev": "High",
+  "gr": {
+   "canc": "A",
+   "derm": "D",
+   "resp": "C"
+  },
+  "impacts": [
+   "canc",
+   "allerg",
+   "derm",
+   "resp"
+  ],
+  "reclassified": [
+   "Once a common preservative in consumer products; now CLP Category 1B carcinogen. US bans it in cosmetics but formaldehyde-RELEASING preservatives (DMDM Hydantoin etc.) remain unlabeled."
+  ],
+  "note": "Rarely a direct cleaning-product ingredient; included to anchor formaldehyde-releaser entries."
+ },
+ "Formaldehyde releaser (paraformaldehyde + 2-hydroxypropylamine 1:1)": {
+  "g": "H317,H350",
+  "s": "Formaldehyde-releasing biocide blend; failed EU BPR approval (PT6).",
+  "ev": "High",
+  "gr": {
+   "canc": "B",
+   "derm": "D",
+   "resp": "C"
+  },
+  "impacts": [
+   "canc",
+   "allerg",
+   "derm"
+  ],
+  "note": "Grades reflect the formaldehyde it releases (EU classifies releasers as carcinogenic when release exceeds threshold)."
+ },
+ "Sodium Sulfate": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {
+   "organ": "D"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 24436)."
+ },
+ "Trisodium Dicarboxymethyl Alaninate": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 11021984) — only sub-threshold H290 metal-corrosion codes; no health hazard consensus."
+ },
+ "Copolymer of Acrylic Maleic and Sulphonic Acids": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within polymer class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Isotridecanol Ethoxylated": {
+  "g": "H315,H318,H411",
+  "s": "Ethoxylated fatty alcohol surfactant. Skin/eye irritant, aquatic toxicity; 1,4-dioxane trace contaminant concern from ethoxylation.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C",
+   "env": "C"
+  },
+  "impacts": [
+   "derm",
+   "aqua"
+  ],
+  "reclassified": [
+   "Ethoxylated surfactants can carry trace 1,4-dioxane (IARC 2B) — a process contaminant, not an added ingredient."
+  ],
+  "note": null
+ },
+ "PEG/PPG/Propylheptyl Ether": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within polyethylene glycol class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Dipropylene Glycol": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {
+   "derm": "F"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 134692469)."
+ },
+ "Benzotriazole": {
+  "g": "H302,H315,H319,H410",
+  "s": "Metal corrosion inhibitor. Oral/eye irritant, very toxic to aquatic life; EU watch-list substance.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C",
+   "env": "D",
+   "work": "C"
+  },
+  "impacts": [
+   "aqua",
+   "derm"
+  ],
+  "note": null
+ },
+ "Subtilisin": {
+  "g": "H315,H319,H334",
+  "s": "Protease enzyme (detergent). Respiratory sensitizer — well-documented occupational asthma from detergent enzymes.",
+  "ev": "High",
+  "gr": {
+   "resp": "D",
+   "derm": "C"
+  },
+  "impacts": [
+   "resp",
+   "allerg"
+  ],
+  "reclassified": [
+   "Enzyme additives (1960s–) were marketed as a cleaning breakthrough; occupational studies later linked protease exposure to sensitization and asthma in workers."
+  ],
+  "note": null
+ },
+ "Amylase Enzyme": {
+  "g": "H315,H319,H334",
+  "s": "Starch-digesting detergent enzyme. Respiratory sensitizer, same class hazard as subtilisin.",
+  "ev": "High",
+  "gr": {
+   "resp": "D",
+   "derm": "C"
+  },
+  "impacts": [
+   "resp",
+   "allerg"
+  ],
+  "note": null
+ },
+ "Transition Metal Catalyst": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within catalyst (undisclosed) class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Acid Blue 182": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within hair dye (acid blue class) class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Polyvinyl Alcohol Polymer": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within polymer class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Ethoxylated Alcohol": {
+  "g": "H315,H319,H412",
+  "s": "Alcohol ethoxylate surfactant family. Skin/eye irritant, aquatic toxicity; 1,4-dioxane trace contaminant concern from ethoxylation.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C",
+   "env": "C"
+  },
+  "impacts": [
+   "derm",
+   "aqua"
+  ],
+  "note": null
+ },
+ "PEG-150": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within polyethylene glycol class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Proprietary Polymer Solution": {
+  "g": "Extrapolated",
+  "s": "Insufficient direct GHS data — graded by analogy within polymer class",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+ },
+ "Acid Blue 9": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Acid Blue 9 (CI 42045, CID 17560): PubChem lists no GHS hazard statements. FD&C Blue 1 dye, approved food/colorant. Medium confidence."
+ },
+ "Laureth-7": {
+  "g": "Not Classified",
+  "s": "Ethoxylated lauryl alcohol surfactant. No GHS health classification per the authoritative ECHA block.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 24750). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: not classified (aggregated). H302/H315/H318 appear only in a non-aggregated block without consensus % and do not drive grades. Ethoxylate-family trace 1,4-dioxane contaminant concern noted but not graded."
+ },
+ "Laureth-9": {
+  "g": "H302,H318",
+  "s": "Ethoxylated lauryl alcohol (9 EO units). Harmful if swallowed; serious eye damage.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm",
+   "aqua"
+  ],
+  "note": "Graded from PubChem GHS (CID 656641). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Only H302 (50%) and H318 (60%) clear the 40% bar; H315 30%, H319 20%, H335 10%, H400 20%, H412 20% are sub-threshold and dropped. Ethoxylate-family 1,4-dioxane contaminant concern noted but not graded."
+ },
+ "Disodium Cocoyl Glutamate": {
+  "g": "H319",
+  "s": "Amino-acid surfactant from coconut + glutamic acid. Mild eye irritant per GHS; gentle class used in sensitive-skin products.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [],
+  "note": "GHS from PubChem CID 167560."
+ },
+ "Quillaja Saponaria Bark Extract": {
+  "g": null,
+  "s": "Soap bark natural saponin. Generally recognized as mild; saponins can be eye/skin irritants at high concentration.",
+  "ev": "Low",
+  "gr": {
+   "derm": "B"
+  },
+  "impacts": [],
+  "note": "Natural extract, no PubChem GHS data (complex mixture). Extrapolation only."
+ },
+ "Bac-Out Microbial Mixture (enzymes + live cultures)": {
+  "g": null,
+  "s": "Biological enzyme + live-culture blend. No CAS; hazard profile depends on strain; generally low for consumer products.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [
+   "allerg"
+  ],
+  "note": "Biological mixture — no PubChem entry. Flag as sensitization-possible for heavily exposed workers (enzyme-induced asthma documented in enzyme industry). Impact tag normalized sens->allerg (schema fix, 2026-09-17): the validator's canonical impact set has no 'sens'; sensitization is carried as 'allerg'."
+ },
+ "Linalool": {
+  "g": "H315,H317",
+  "s": "Fragrance terpene alcohol. Skin irritant/sensitizer, especially when oxidized on air exposure.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "allerg",
+   "derm"
+  ],
+  "note": "EU fragrance allergen requiring label disclosure at low thresholds; oxidation increases sensitization. Grade dim normalized allerg:D -> derm:D (schema fix, 2026-09-17): 'allerg' is not a canonical grade dimension; H317 sensitizer severity is carried in derm, matching Citral/Limonene/Fragrance. Allergenicity remains tagged in impacts."
+ },
+ "Geraniol": {
+  "g": "H315,H317",
+  "s": "Fragrance terpene alcohol. Skin sensitizer; EU-mandated allergen disclosure.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "allerg",
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 637566): H315 98.9%, H317 99.4% per ECHA C&L consensus; H411 is not present in the ECHA C&L block and was dropped (Linnea CCI-005 revision, 2026-09-17). EU fragrance allergen disclosure list (Regulation 1223/2009); sensitization documented. Grade dim normalized allerg:D -> derm:D (schema fix, 2026-09-17): 'allerg' is not a canonical grade dimension; H317 sensitizer severity is carried in derm, matching Citral/Limonene/Fragrance. Allergenicity remains tagged in impacts."
+ },
+ "Methylchloroisothiazolinone": {
+  "g": "H301,H311,H314,H317,H318,H400,H410",
+  "s": "CMIT — the chlorine half of the CMIT/MIT preservative pair. Corrosive, toxic if swallowed or in contact with skin, strong skin sensitizer, very toxic to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "env": "F",
+   "work": "C"
+  },
+  "impacts": [
+   "allerg",
+   "derm",
+   "aqua"
+  ],
+  "reclassified": [
+   "CMIT/MIT (Kathon) was the workhorse preservative of the 1990s–2000s; an epidemic of contact allergy made it the archetype of 'the preservative is the hazard', now restricted in EU leave-on products."
+  ],
+  "note": "Graded from ECHA C&L via PubChem (CID 33344): H314 98.3%, H317 98.4%, H400 94.5%, H410 40.3% consensus. Paired with Methylisothiazolinone (MIT) at ~3:1 in the common preservative blend."
+ },
+ "Sodium Metasilicate": {
+  "g": "H302,H314,H315,H318,H335,H371",
+  "s": "Alkaline silicate builder. Corrosive to skin and eyes; dust is a respiratory irritant.",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "resp": "C",
+   "organ": "C",
+   "work": "C"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": "Graded from ECHA C&L via PubChem (CID 23266, disodium metasilicate / 'Sodium Silicate'): H314 >99.9%, H335 98.6%, H318 61.5%, H315 72.6% consensus. Dataset has a separate 'Sodium Silicate' entry (alkaline builder, H314,H335) — kept distinct because this is the metasilicate CAS 6834-92-0 used as a hard-surface builder."
+ },
+ "Tetrasodium EDTA": {
+  "g": "H302,H315,H318,H319,H332,H335,H371,H373",
+  "s": "Chelating agent (binds hard-water metals). Harmful if swallowed; serious eye damage; may damage organs on prolonged exposure.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "resp": "C",
+   "organ": "C",
+   "work": "C"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": "Graded from ECHA C&L via PubChem (CID 6144, 'Edetate Sodium'): H318 >99.9%, H302 >99.9%, H335 56.3%, H315 58.1% consensus. EDTA's environmental concern is chelation/metal mobilisation rather than direct aquatic toxicity; the H-code block shows no H4xx."
+ },
+ "Sodium Lauroyl Sarcosinate": {
+  "g": "H315,H318,H330",
+  "s": "Amino-acid (sarcosinate) surfactant. Serious eye damage and skin irritation; H330 (fatal if inhaled) reflects the aerosolisable powder form.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "resp": "F"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": "Graded from ECHA C&L via PubChem (CID 23668817): H315 83.7%, H318 79.8%, H330 81.9% consensus. Route caveat: H330 is a property of the inhalable powder/aerosol, not of the diluted liquid cleaner in which this appears; the respiratory F grade is form-conditional, applied per the house >=40% rule."
+ },
+ "Sodium Benzoate": {
+  "g": "H319",
+  "s": "Preservative / corrosion inhibitor. Causes serious eye irritation.",
+  "ev": "High",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "ECHA C&L via PubChem (CID 517055): H319 at 37.9% consensus — below the house's strict >=40% consensus bar for graded dims, so the grade is carried by precedent (Citric Acid / H319 -> derm C, eye-route irritation) rather than the consensus rule. Intentional food-grade preservative; low systemic hazard."
+ },
+ "Acrylic Copolymer": {
+  "g": "Not Classified",
+  "s": "High-molecular-weight acrylic film-former / anti-redeposition agent. No discrete PubChem CID.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Polymer/UVCB — PubChem name lookup resolves no CID and therefore no GHS classification. Recorded as unclassified rather than assigned an unsourced grade: high-MW polymers are generally not bioavailable. Disclosed by Reckitt SmartLabel for Resolve."
+ },
+ "Amino-Functional Silicone": {
+  "g": "Not Classified",
+  "s": "Silicone antifoam / surface modifier. Polymeric; no discrete PubChem CID.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Polymer/UVCB — no PubChem GHS classification available. Recorded unclassified rather than guessed. Disclosed by Reckitt SmartLabel for Resolve. Distinct from 'Dimethicone' (non-functional PDMS)."
+ },
+ "Polyglyceryl-2 Oleate": {
+  "g": "Not Classified",
+  "s": "Non-ionic emulsifier (polyglycerol ester of oleic acid).",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "No PubChem CID / GHS classification found for this UVCB ester. Recorded unclassified rather than assigned an unsourced grade. Disclosed by Weiman for Stainless Steel Cleaner & Polish."
+ },
+ "Alcohols, C9-11, ethoxylated": {
+  "g": "Extrapolated",
+  "s": "Non-ionic alcohol ethoxylate surfactant (CAS 68439-46-3 / 160875-66-1). Supplier SDS classifies H318 (serious eye damage), H302, H335.",
+  "ev": "Extrapolated",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "UVCB — no PubChem CID, so no ECHA consensus percentages are available. Grade extrapolated conservatively from the Rust-Oleum Krud Kutter SDS classification block (H318, H302, H335 at 1.0-2.5% in the product) and class-typical behaviour for C9-11 alcohol ethoxylates. Pending verification; NOT a consensus-derived grade."
+ },
+ "Mineral Oil": {
+  "g": "H304",
+  "s": "White mineral oil (CAS 8042-47-5). Aspiration hazard if liquid reaches the airways; highly refined white oils are not classified carcinogenic.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Aspiration-only hazard (H304, Asp. Tox. 1) per the Weiman SDS composition block; ECHA treats highly refined white mineral oils as not classified for carcinogenicity. No dermal/respiratory grade applies to normal surface-cleaning exposure, so gr is deliberately empty rather than padded."
+ },
+ "C11-15 Alkane/Cycloalkane": {
+  "g": "H304",
+  "s": "Petroleum hydrocarbon distillate solvent (CAS 64742-47-8, hydrotreated light distillate). Aspiration hazard.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Asp. Tox. 1 / H304 per the Weiman SDS composition block (CAS 64742-47-8 listed 10-15%). Hydrocarbon distillate; the hazard is aspiration on ingestion, not surface use. gr left empty deliberately."
+ },
+ "Liquefied Petroleum Gas": {
+  "g": "H220",
+  "s": "LPG propellant (butane/propane mix, CAS 68476-85-7). Extremely flammable gas.",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": "Physical hazard only — H220 (extremely flammable gas) per supplier SDS; no health-hazard grade applies. Propellant in the aerosol, not a cleaning active. The dataset already carries Butane and Propane separately."
+ }
 }

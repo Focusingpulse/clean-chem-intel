@@ -294,6 +294,32 @@
     "reason": "Probable human carcinogen. Contaminant in ethoxylated surfactants used in cleaning products. EU considering restriction while US has only state-level limits.",
     "confidence": "Medium"
    }
+  ],
+  "Methylchloroisothiazolinone": [
+   {
+    "region": "eu",
+    "status": "banned",
+    "since": "2016",
+    "rule": "EU Cosmetics Reg. Annex V: the CMIT/MIT (3:1) mixture is banned in leave-on cosmetics; permitted only in rinse-off products at 15 ppm. CMIT alone may not be used in cosmetics at all.",
+    "reason": "Contact-allergy epidemic — CMIT/MIT (trade name Kathon) became one of the most frequent causes of occupational and consumer allergic contact dermatitis, especially in cleaners and personal care. The rinse-off restriction followed sustained patch-test evidence.",
+    "confidence": "High"
+   },
+   {
+    "region": "eu",
+    "status": "restricted",
+    "since": "2016",
+    "rule": "EU CLP classifies CMIT as H314 (corrosive), H317 (skin sensitizer), H400/H410 (very toxic to aquatic life). No equivalent US federal restriction in cleaning products.",
+    "reason": "Both human sensitization and aquatic toxicity drive the EU classification; CMIT is acutely toxic to aquatic organisms at very low concentrations, which matters because cleaners go down the drain.",
+    "confidence": "High"
+   },
+   {
+    "region": "us",
+    "status": "allowed",
+    "since": "—",
+    "rule": "No US federal ban or ppm cap for CMIT/MIT in household cleaning products. It remains a common in-can preservative in US carpet cleaners, detergents and hard-surface cleaners.",
+    "reason": "US regulation of isothiazolinone preservatives in cleaning products is largely absent, so the same chemistry restricted in EU leave-on products is routine in US cleaners.",
+    "confidence": "Medium"
+   }
   ]
  },
  "watchlist": [

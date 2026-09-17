@@ -113,6 +113,42 @@ def validate():
     return issues
 
 
+def dedupe(fix=False):
+    """Collapse exact-duplicate product entries keyed on normalized name+brand.
+
+    This is the invariant guard for a bug that was hand-fixed five times: the
+    grow lane re-added seed products whose name/brand contained punctuation
+    because its dedupe index was keyed raw while its lookup used norm().
+    Keeping the pass here means a duplicate can never survive a cron run.
+
+    Keeps the OLDEST entry (it carries the original added date); merges any
+    field the older entry is missing from the newer one. Never invents data.
+    """
+    products = load("products.json")
+    if not isinstance(products, list):
+        return None, []
+    def norm(s):
+        return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
+
+    kept, index, removed = [], {}, []
+    for p in products:
+        key = (norm(p.get("name", "")), norm(p.get("brand", "")))
+        if key in index:
+            old = index[key]
+            for k, v in p.items():
+                if not old.get(k) and v:
+                    old[k] = v          # fill blanks from the newer copy only
+            removed.append(p.get("name", "?"))
+            continue
+        index[key] = p
+        kept.append(p)
+
+    if fix and removed:
+        (DATA / "products.json").write_text(
+            json.dumps(kept, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    return kept, removed
+
+
 def summary_line():
     counts = {}
     try:
@@ -137,6 +173,15 @@ def summary_line():
 if __name__ == "__main__":
     if "--summary" in sys.argv:
         print(summary_line())
+        sys.exit(0)
+    if "--dedupe" in sys.argv:
+        fix = "--fix" in sys.argv
+        kept, removed = dedupe(fix=fix)
+        if removed:
+            verb = "removed" if fix else "would remove"
+            print(f"dedupe: {verb} {len(removed)} duplicate(s): {', '.join(sorted(set(removed)))}")
+        else:
+            print("dedupe: no duplicates")
         sys.exit(0)
     issues = validate()
     if issues:
