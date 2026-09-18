@@ -2142,5 +2142,184 @@
   "gr": {},
   "impacts": [],
   "note": "Physical hazard only — H220 (extremely flammable gas) per supplier SDS; no health-hazard grade applies. Propellant in the aerosol, not a cleaning active. The dataset already carries Butane and Propane separately."
+ },
+ "Hexoxyethanol": {
+  "g": "H227,H302,H311,H312,H314,H315,H318,H320,H371",
+  "s": "Glycol ether (2-(hexyloxy)ethanol). Corrosive to skin and eyes in concentrate; toxic in contact with skin; combustible liquid.",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "organ": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from ECHA C&L via PubChem (CID 8170, glycol monohexyl ether): H314 99.5%, H302 99.5%, H318 59.9%, H311 58.9%, H312 40.6% consensus; H227/H315/H320/H371 listed without a consensus percentage. Disclosed by Clorox SmartLabel for Disinfecting Wipes."
+ },
+ "Triethanolamine": {
+  "g": "H315,H317,H319,H335",
+  "s": "Ethanolamine. Skin/eye irritant and skin sensitizer; pH buffer and emulsifier in detergents.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "resp": "C"
+  },
+  "impacts": [
+   "allerg",
+   "derm",
+   "resp"
+  ],
+  "note": "Graded from ECHA C&L via PubChem (CID 7618): H317 (skin sensitizer) and H315 listed without a consensus percentage; H319 appears at 18.5% consensus, below the house >=40% bar, so the derm grade rests on H317/H315. Disclosed by Reckitt SmartLabel for Woolite Delicates."
+ },
+ "BHT": {
+  "g": "H302,H313,H316,H317,H320,H361,H370,H373,H400,H410",
+  "s": "Synthetic antioxidant preservative (butylated hydroxytoluene). Skin sensitizer; suspected reproductive toxicant; very toxic to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "organ": "D",
+   "env": "F"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm",
+   "repro"
+  ],
+  "note": "Graded from ECHA C&L via PubChem (CID 31404, 2,6-di-tert-butyl-4-methylphenol): H410 84.3%, H400 42.6% consensus; H361/H370/H373/H317 listed without a consensus percentage. Preservative in Woolite Delicates."
+ },
+ "Butylphenyl Methylpropional": {
+  "g": "H227,H302,H315,H317,H320,H335,H336,H360,H361,H373,H411",
+  "s": "Synthetic lily-of-the-valley fragrance (Lilial). CMR-classified reproductive toxicant; strong skin sensitizer; banned in EU cosmetics since 2022.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "resp": "C",
+   "organ": "C",
+   "env": "D"
+  },
+  "impacts": [
+   "allerg",
+   "derm",
+   "resp",
+   "repro"
+  ],
+  "reclassified": [
+   "Lilial was a ubiquitous 'clean' floral scent note. Reclassified as a CMR reproductive toxicant (H360Fd) and banned in EU cosmetics in 2022 (Reg. 2022/1181) — yet it is still disclosed in some US cleaning products, with no equivalent US federal restriction."
+  ],
+  "note": "Graded from ECHA C&L via PubChem (CID 228987, Lilial): H302 98.7%, H317 99.6%, H315 90.9%, H361 84.9%, H411 84.2% consensus; H360Fd appears at 10.9%, below the >=40% bar, but H361 (84.9%) carries the repro flag. Disclosed as a fragrance component by Reckitt SmartLabel for Woolite Delicates."
+ },
+ "Hexyl Salicylate": {
+  "g": "H315,H317,H319,H361,H400,H410",
+  "s": "Fragrance component (salicylate ester). Skin sensitizer; suspected developmental toxicant; very toxic to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "env": "F"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm",
+   "repro"
+  ],
+  "note": "Graded from ECHA C&L via PubChem (CID 22629): H410 100%, H317 98.4%, H400 90.2% consensus; H315 (26.9%) and H319 (13.2%) are below the >=40% bar. Disclosed as a fragrance component by Reckitt SmartLabel for Woolite Delicates."
+ },
+ "Isoeugenol": {
+  "g": "H302,H312,H315,H317,H319,H332,H335,H351,H371,H373",
+  "s": "Fragrance component (isomer of eugenol). Skin sensitizer; suspected carcinogen; harmful if swallowed or in contact with skin.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "resp": "C",
+   "organ": "C"
+  },
+  "impacts": [
+   "allerg",
+   "canc",
+   "derm",
+   "resp"
+  ],
+  "note": "Graded from ECHA C&L via PubChem (CID 853433): H317 99.7%, H302 99.5%, H315 99.5%, H319 98.9%, H312 96.4%, H335 53%, H332 52.3% consensus; H351/H371/H373 listed without a consensus percentage. Disclosed as a fragrance component by Reckitt SmartLabel for Woolite Delicates."
+ },
+ "Eugenol": {
+  "g": "H302,H315,H317,H319,H336,H351,H401,H412",
+  "s": "Fragrance component (clove oil constituent). Strong skin sensitizer; suspected carcinogen; toxic to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "env": "C"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "canc",
+   "derm"
+  ],
+  "note": "Graded from ECHA C&L via PubChem (CID 3314): H317 99.8%, H319 80.4% consensus; H302 (17.3%) and H315 (20.6%) are below the >=40% bar. Disclosed as a fragrance component by Reckitt SmartLabel for Woolite Delicates."
+ },
+ "Sodium Polycarboxylate": {
+  "g": "Not Classified",
+  "s": "Polymeric dispersant / anti-redeposition agent. No discrete PubChem CID.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Polymer/UVCB — no PubChem entry for CAS 68479-09-4 (PUG REST 404). Recorded unclassified rather than guessed. Listed in the Church & Dwight SDS for OxiClean Versatile Stain Remover."
+ },
+ "Formaldehyde-Melamine-Sodium Bisulfite Copolymer": {
+  "g": "Not Classified",
+  "s": "Melamine-formaldehyde foam polymer (Magic Eraser abrasive). Polymeric; no discrete PubChem CID.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Polymer/UVCB — no PubChem CID. P&G's SDS classifies the finished Magic Eraser as 'Not Classified' (no hazardous ingredients listed); the copolymer identity comes from the P&G MSDS composition section (reproduced in university chemical-safety listings). Recorded unclassified rather than guessed; the melamine-formaldehyde class is why it is tracked at all."
+ },
+ "Alkyl C12-18 Dimethylbenzyl Ammonium Chloride": {
+  "g": "Extrapolated",
+  "s": "Quaternary ammonium disinfectant (BAC-type). Class hazards: corrosive, aquatic toxicity, respiratory/allergic sensitization.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB quaternary-ammonium blend (CAS 53516-76-0) — no discrete PubChem CID. Graded by class analogy to the existing 'Benzalkonium Chloride'/'Quaternary Ammonium' entries (derm F, env F, allerg/resp); kept as its own record so the Clorox Wipes disclosure stays traceable. No invented grade."
+ },
+ "Alkyl C12-14 Dimethylethylbenzyl Ammonium Chloride": {
+  "g": "Extrapolated",
+  "s": "Quaternary ammonium disinfectant (BAC-type). Class hazards: corrosive, aquatic toxicity, respiratory/allergic sensitization.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB quaternary-ammonium blend (CAS 85409-23-0) — no discrete PubChem CID. Graded by class analogy to the existing 'Benzalkonium Chloride'/'Quaternary Ammonium' entries; kept as its own record for traceability. No invented grade."
+ },
+ "TEA Cocoate": {
+  "g": "Extrapolated",
+  "s": "Coconut-oil-derived triethanolamine soap (surfactant). UVCB; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB (CAS 61790-64-5) — no PubChem entry (PUG REST 404). Soap-type anionic surfactant; recorded unclassified/extrapolated rather than assigned an invented grade. Disclosed by Reckitt SmartLabel for Woolite Delicates."
+ },
+ "C10-16 Pareth": {
+  "g": "Extrapolated",
+  "s": "Alcohol ethoxylate surfactant (C10-16 pareth). UVCB; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB (CAS 68002-97-1) — no PubChem entry. Class-analogous to the existing 'Ethoxylated Alcohol'/'Alcohol Ethoxylate' entries (derm C, env C; trace 1,4-dioxane from ethoxylation). Recorded extrapolated, not graded. Disclosed by Reckitt SmartLabel for Woolite Delicates."
+ },
+ "C12-14 Alcohols Ethoxylated Propoxylated": {
+  "g": "Extrapolated",
+  "s": "Alcohol ethoxylate/propoxylate surfactant (low-foam). UVCB; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB — no PubChem CID. Class-analogous to 'Ethoxylated Alcohol'. Recorded extrapolated rather than graded. Disclosed by Clorox SmartLabel for Disinfecting Wipes."
+ },
+ "Sodium (C10-16) Alkylbenzenesulfonate": {
+  "g": "Extrapolated",
+  "s": "Linear alkylbenzene sulfonate (LAS) surfactant. UVCB; class hazards: skin/eye irritant, aquatic toxicity.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB (CAS 68081-81-2) — no PubChem entry. Class-analogous to the existing 'Sodium Dodecylbenzenesulfonate' entry (derm D, env C). Recorded extrapolated, not graded. Disclosed by Reckitt SmartLabel for Woolite Delicates."
  }
 }

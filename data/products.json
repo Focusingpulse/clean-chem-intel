@@ -2172,5 +2172,92 @@
   "added": "2026-09-17",
   "updated": "2026-09-17",
   "note": "Sourcing caveat: the manufacturer page markets the formula but does not enumerate ingredients. Composition taken from a retail listing of the current formulation (Butyl Carbitol = DEGBE; Ecosurf EH-9 = an alcohol ethoxylate, recorded under the existing 'Ethoxylated Alcohol' entry) plus the manufacturer's 2011 MSDS (which additionally listed an orange-oil blend, no longer shown). Weaker disclosure than the other three adds; flagged rather than presented as equivalent."
+ },
+ {
+  "name": "Clorox Disinfecting Wipes, Fresh Scent",
+  "brand": "Clorox",
+  "cat": "Disinfectant",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Hexoxyethanol",
+   "Isopropanol",
+   "C12-14 Alcohols Ethoxylated Propoxylated",
+   "Alkyl C12-14 Dimethylethylbenzyl Ammonium Chloride",
+   "Alkyl C12-18 Dimethylbenzyl Ammonium Chloride",
+   "Sodium Bicarbonate",
+   "Citric Acid",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "source": "Clorox SmartLabel public ingredient disclosure (updated 4/8/2025)",
+  "source_url": "https://smartlabel.labelinsight.com/product/6089729/ingredients",
+  "added": "2026-09-18",
+  "updated": "2026-09-18",
+  "note": "EPA-registered disinfecting wipe (EPA Reg. 5813-79). Two BAC-type quats are the actives; the SDS lists each at ~0.184% by weight. SmartLabel flags hexoxyethanol, isopropanol and the C12-18 quat on California SB258 designated lists. The C12-14 and C12-18 quats are UVCBs with no discrete PubChem CID, recorded extrapolated by class."
+ },
+ {
+  "name": "OxiClean Versatile Stain Remover",
+  "brand": "Church & Dwight",
+  "cat": "Stain Remover",
+  "safe": null,
+  "ings": [
+   "Sodium Carbonate",
+   "Sodium Percarbonate",
+   "Ethoxylated Alcohol",
+   "Sodium Polycarboxylate",
+   "Sodium Metasilicate"
+  ],
+  "heritage": false,
+  "source": "Church & Dwight SDS (WebstaurantStore + steinsinc copies)",
+  "source_url": "https://www.webstaurantstore.com/documents/sds/msds-1605-oxiclean_versatile_stain_remover.pdf",
+  "added": "2026-09-18",
+  "updated": "2026-09-18",
+  "note": "Oxygen-bleach stain remover. SDS composition: sodium carbonate 50-75%, sodium percarbonate 30-45%, ethoxylated alcohol 1-3%, sodium polycarboxylate 1%, sodium metasilicate 1%. Two SDS revisions name the surfactant differently (C12-16 vs C12-15 ethoxylated) — recorded under the existing generic 'Ethoxylated Alcohol' entry rather than over-precise. The manufacturer states the product 'contains a light fragrance' but the SDS does not enumerate it; noted rather than padded."
+ },
+ {
+  "name": "Woolite Delicates Laundry Detergent",
+  "brand": "Reckitt",
+  "cat": "Laundry Detergent",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium (C10-16) Alkylbenzenesulfonate",
+   "TEA Cocoate",
+   "C10-16 Pareth",
+   "Sodium Laureth Sulfate",
+   "Sodium Chloride",
+   "Fragrance",
+   "BHT",
+   "Benzisothiazolinone",
+   "Methylisothiazolinone",
+   "Sodium Sulfate",
+   "Butylphenyl Methylpropional",
+   "Dipropylene Glycol",
+   "Eugenol",
+   "Hexyl Salicylate",
+   "Isoeugenol"
+  ],
+  "heritage": false,
+  "source": "Reckitt SmartLabel public ingredient disclosure",
+  "source_url": "https://rbnainfo.com/product.php?productLineId=592",
+  "added": "2026-09-18",
+  "updated": "2026-09-18",
+  "note": "Hand-wash/delicates detergent. SmartLabel discloses five fragrance components individually (butylphenyl methylpropional, dipropylene glycol, eugenol, hexyl salicylate, isoeugenol) — included here per the DB's fragrance-allergen pattern. Butylphenyl methylpropional (Lilial) is the headline: an EU-banned CMR still disclosed in a US product. Preserved with the BIT/MIT pair."
+ },
+ {
+  "name": "Mr. Clean Magic Eraser",
+  "brand": "P&G",
+  "cat": "Specialty",
+  "safe": null,
+  "ings": [
+   "Formaldehyde-Melamine-Sodium Bisulfite Copolymer"
+  ],
+  "heritage": false,
+  "source": "P&G SDS (composition section, reproduced in university chemical-safety listing)",
+  "source_url": "https://content.oppictures.com/Master_Images/Master_PDF_Files/PGC79009_SDS.PDF",
+  "added": "2026-09-18",
+  "updated": "2026-09-18",
+  "note": "Melamine-formaldehyde abrasive foam. P&G's SDS classifies the finished product 'Not Classified' with no hazardous ingredients listed, and notes it is treated as an article under TSCA. The single disclosed component is a melamine-formaldehyde copolymer (formaldehyde is a known decomposition product under heat/fire). One-ingredient product — recorded as-is rather than padded."
  }
 ]

@@ -320,6 +320,24 @@
     "reason": "US regulation of isothiazolinone preservatives in cleaning products is largely absent, so the same chemistry restricted in EU leave-on products is routine in US cleaners.",
     "confidence": "Medium"
    }
+  ],
+  "Butylphenyl Methylpropional": [
+   {
+    "region": "eu",
+    "status": "banned",
+    "since": "2022",
+    "rule": "EU Cosmetics Regulation Annex II — BMHCA (Lilial) classified CMR 1B (Repr. 1B) by Delegated Reg. (EU) 2020/1182; added to the prohibited list by Commission Reg. (EU) 2021/1902, applying from 1 March 2022. Note: the ban covers cosmetics — SCCS documentation records BMHCA is also used in household cleaners and detergents, which the cosmetics ban does not reach.",
+    "reason": "CMR 1B (reprotoxic) classification; SCCS found it not safe as a fragrance ingredient under aggregate exposure.",
+    "confidence": "High"
+   },
+   {
+    "region": "us",
+    "status": "allowed",
+    "since": null,
+    "rule": "No federal restriction on BMHCA in cleaning products; no state ban identified. Still disclosed as a fragrance component in US detergents.",
+    "reason": "Illustrates the transatlantic gap: a CMR fragrance removed from EU cosmetics remains permitted in US consumer products.",
+    "confidence": "High"
+   }
   ]
  },
  "watchlist": [
