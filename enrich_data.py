@@ -172,8 +172,15 @@ HERITAGE = {
 # ------------------------------------------------------------------
 # 4) apply
 # ------------------------------------------------------------------
+# FILL-ONLY. This table is a *seed* for ingredients absent from the index.
+# It must never clobber an existing record: those fields are owned by the
+# verification lane (PubChem/ECHA GHS grades, CCI-004/005 revisions), and a
+# blind .update() here silently reverted verified grades to null placeholders
+# on every run. If a seed entry looks stale, fix it in the verification lane.
 for name, data in MISSING.items():
-    ings.setdefault(name, {}).update(data)
+    if name in ings:
+        continue
+    ings[name] = dict(data)
 
 for name, extra in ING_EXTRA.items():
     if name not in ings:
@@ -186,7 +193,11 @@ for name, extra in ING_EXTRA.items():
         elif k == "reclassified":
             ings[name]["reclassified"] = v
         elif k == "note":
-            ings[name]["note"] = v
+            # fill-only: never erase a note that already carries provenance
+            # (PubChem/ECHA citation, verification flag). The nuance layer
+            # supplements; it does not overwrite the evidence trail.
+            if not ings[name].get("note"):
+                ings[name]["note"] = v
 
 # normalize any missing imp fields to [] and gr to {}
 for v in ings.values():
@@ -209,8 +220,8 @@ for p in products:
     p.setdefault("added", "2026-08-18")
     p.setdefault("updated", "2026-08-18")
 
-(DATA / "ingredients.json").write_text(json.dumps(ings, indent=1, ensure_ascii=False), encoding="utf-8")
-(DATA / "products.json").write_text(json.dumps(products, indent=1, ensure_ascii=False), encoding="utf-8")
+(DATA / "ingredients.json").write_text(json.dumps(ings, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+(DATA / "products.json").write_text(json.dumps(products, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
 print(f"ingredients now: {len(ings)}  | products: {len(products)}")
 rec = sum(1 for v in ings.values() if v.get("reclassified"))

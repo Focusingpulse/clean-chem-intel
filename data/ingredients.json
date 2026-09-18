@@ -158,18 +158,30 @@
   "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
   "ev": "Medium",
   "gr": {
-   "organ": "D"
+   "organ": "D",
+   "repro": "B"
   },
-  "impacts": [],
+  "impacts": [
+   "derm"
+  ],
   "note": "Graded from PubChem GHS classifications (CID 1030). Duplicate-capitalized entry; same grade as canonical key."
  },
  "Enzymes": {
   "g": "Extrapolated",
   "s": "Insufficient direct GHS data — graded by analogy within enzyme (protein, potential respiratory sensitizer class) class",
   "ev": "Extrapolated",
-  "gr": {},
-  "impacts": [],
-  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification."
+  "gr": {
+   "resp": "D",
+   "repro": "B"
+  },
+  "impacts": [
+   "allerg",
+   "resp"
+  ],
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification.",
+  "reclassified": [
+   "Enzymes were added to laundry products as 'natural' boosters; they are potent respiratory sensitizers — industry adopted encapsulation after occupational asthma outbreaks (1970s)."
+  ]
  },
  "Tetrasodium Glutamate Diacetate": {
   "g": "Not Classified",
