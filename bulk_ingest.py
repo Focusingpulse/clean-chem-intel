@@ -149,9 +149,12 @@ def main():
     n_epa = ingest_epa_scil(max_rows=500)
     n_cpid = ingest_cpid_seed()
     n_pub = ingest_pubchem_sync()
-    # persist products
-    PRODUCTS.write_text(json.dumps(products, ensure_ascii=False, indent=2), encoding="utf-8")
-    INGREDIENTS.write_text(json.dumps(ings, ensure_ascii=False, indent=2), encoding="utf-8")
+    # persist products — indent=1 matches every other writer in this repo
+    # (extract_data.py, enrich_data.py, chem_maintain.py). indent=2 here used to
+    # re-indent the whole file on every run, burying real changes in ~4k lines
+    # of spurious diff. One convention, all writers.
+    PRODUCTS.write_text(json.dumps(products, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    INGREDIENTS.write_text(json.dumps(ings, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"  +{n_epa} EPA SCIL ingredients (ingredient index)")
     print(f"  +{n_cpid} CPID-seed products (product index)")
     print(f"  +{n_pub} PubChem-verified ingredients (ingredient index)")
