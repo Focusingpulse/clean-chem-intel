@@ -338,6 +338,34 @@
     "reason": "Illustrates the transatlantic gap: a CMR fragrance removed from EU cosmetics remains permitted in US consumer products.",
     "confidence": "High"
    }
+  ],
+  "Benzophenone": [
+   {
+    "region": "eu",
+    "status": "banned",
+    "since": "2023",
+    "rule": "EU Cosmetics Regulation 1223/2009, Annex II (prohibited substances), Entry 1703 — as amended by Regulation (EU) 2023/1490. No concentration limit; must not be present in any cosmetic product on the EU market.",
+    "reason": "Classified Carc. 1B (H350) and IARC Group 2B. The cosmetics ban does not reach household cleaning products — benzophenone is disclosed on the US label of Clorox Clean-Up with Bleach.",
+    "confidence": "High"
+   },
+   {
+    "region": "us",
+    "status": "flagged",
+    "since": "2021",
+    "rule": "No federal restriction. Listed on the California Cleaning Products Right to Know Act designated list (DL-flagged on the Clorox Clean-Up SmartLabel).",
+    "reason": "Same carcinogenicity classification on both sides of the Atlantic; opposite regulatory outcome for a household cleaner.",
+    "confidence": "Medium"
+   }
+  ],
+  "Sodium Metaborate": [
+   {
+    "region": "eu",
+    "status": "restricted",
+    "since": "2010",
+    "rule": "Borates harmonized under CLP as Reproductive toxicant 1B (H360FD). REACH Annex XVII entry 30 bars supply to the general public at or above the specific concentration limit (5.5% for boric acid), requiring 'Restricted to professional users' labelling.",
+    "reason": "Reproductive/developmental toxicity confirmed by ECHA RAC (2014). US allows borate builders in household cleaning products off the shelf.",
+    "confidence": "High"
+   }
   ]
  },
  "watchlist": [
