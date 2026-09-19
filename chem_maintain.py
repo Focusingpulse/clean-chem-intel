@@ -110,6 +110,32 @@ def validate():
             if not e.get("date") or not e.get("text"):
                 issues.append(f"changelog entry missing date/text: {e}")
 
+    # counts.md is the ledger both lanes and Sandra read — a stale one is a
+    # silent lie about the database. It drifted for two days because
+    # update_counts.py was never wired into chem_cron.sh; this check means it
+    # cannot drift unnoticed again.
+    counts_path = REPO / "counts.md"
+    if counts_path.exists() and isinstance(products, list) and isinstance(ings, dict):
+        text = counts_path.read_text(encoding="utf-8")
+        def _row(label):
+            m = re.search(rf"\|\s*\*\*{re.escape(label)}\*\*\s*\|\s*(\d+)\s*\|", text)
+            return int(m.group(1)) if m else None
+        expected = {
+            "Products": len(products),
+            "Ingredients": len(ings),
+            "Regulatory entries": len(reg.get("entries", {})) if isinstance(reg, dict) else None,
+        }
+        for label, want in expected.items():
+            if want is None:
+                continue
+            got = _row(label)
+            if got is None:
+                issues.append(f"counts.md: missing '{label}' row")
+            elif got != want:
+                issues.append(
+                    f"counts.md: '{label}' says {got}, data has {want} "
+                    f"(run: python3 update_counts.py)")
+
     return issues
 
 

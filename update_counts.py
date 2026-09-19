@@ -25,8 +25,11 @@ ings = load("ingredients.json", {})
 recipes = load("recipes.json", {})
 reg = load("reg.json", [])
 
-graded = [p for p in products if p.get("safe") is not None]
-ungraded = [p for p in products if p.get("safe") is None]
+# "safe" is a certification/verdict field: a string (EWG Verified, EPA Safer
+# Choice...), None (no certification recorded) or False (explicitly flagged).
+# build.py counts truthy values; match it so the two reports never disagree.
+graded = [p for p in products if p.get("safe")]
+ungraded = [p for p in products if not p.get("safe")]
 heritage = [p for p in products if p.get("heritage")]
 sources = {}
 for p in products:
@@ -52,7 +55,7 @@ lines = [
     f"| — Ungraded (safe null) | {len(ungraded)} |",
     f"| — Heritage | {len(heritage)} |",
     f"| **Ingredients** | {len(ings)} |",
-    f"| **Regulatory entries** | {len(reg)} |",
+    f"| **Regulatory entries** | {len(reg.get('entries', {}) if isinstance(reg, dict) else reg)} |",
     f"| **DIY recipes (backend)** | {len(recipes.get('recipes', []))} |",
     "",
     "## Sources of products",

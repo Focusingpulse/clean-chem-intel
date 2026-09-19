@@ -66,6 +66,12 @@ BUILD=$(python3 build.py 2>&1)
 echo "$BUILD" | tail -4
 SUMMARY=$(echo "$BUILD" | head -1 | grep -oE '[0-9]+ products, [0-9]+ ingredients' || echo "clean-chem build run")
 
+# counts.md is the human-readable ledger BOTH lanes and Sandra read. It drifts
+# silently if it is not regenerated here, so regenerate it every run (it is
+# cheap) rather than trusting it to be current.
+COUNTS=$(python3 update_counts.py 2>&1 | tail -1)
+echo "  $COUNTS"
+
 echo "[4] Commit and push (if anything changed)"
 git add -A
 if git diff --cached --quiet; then
