@@ -329,7 +329,7 @@
   "name": "Bar Keepers Friend",
   "brand": "BKF",
   "cat": "Specialty",
-  "safe": null,
+  "safe": "Sifter grade D — worst credible dimension: organ D (feldspar H373 silica, oxalic acid H372-class organ effects; High evidence)",
   "ings": [
    "Feldspar",
    "Oxalic Acid",
@@ -339,7 +339,7 @@
   "heritage_year": 1882,
   "heritage_note": "A stainless-steel polish from 1882 with a cult following that skipped generations entirely via word of mouth.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-09-19"
  },
  {
   "name": "Pledge",
@@ -616,7 +616,7 @@
   "name": "Cascade",
   "brand": "P&G",
   "cat": "Dishwasher",
-  "safe": null,
+  "safe": "Sifter grade D — worst credible dimension: derm D (sodium percarbonate H318 94.6%, sodium silicate H314; High/Medium evidence)",
   "ings": [
    "Sodium Carbonate",
    "Sodium Percarbonate",
@@ -626,13 +626,13 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-09-19"
  },
  {
   "name": "Finish",
   "brand": "Reckitt",
   "cat": "Dishwasher",
-  "safe": null,
+  "safe": "Sifter grade D — worst credible dimension: derm D (sodium percarbonate H318 94.6%, sodium silicate H314; High/Medium evidence)",
   "ings": [
    "Sodium Carbonate",
    "Sodium Percarbonate",
@@ -642,7 +642,7 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-09-19"
  },
  {
   "name": "Arm & Hammer",
@@ -772,7 +772,7 @@
   "name": "Organic Essential Oils Kit (BMVC)",
   "brand": "NOW Foods",
   "cat": "Essential Oil",
-  "safe": null,
+  "safe": "Sifter grade F — env F (lemon oil H400 aquatic toxin) and derm D across oils; Low evidence (undisclosed oil composition)",
   "ings": [
    "Lavender Oil",
    "Peppermint Oil",
@@ -781,7 +781,7 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-09-19"
  },
  {
   "name": "Granite & Stone Cleaner (BMVC)",
@@ -1736,7 +1736,7 @@
   "name": "20 Mule Team Borax (BMVC)",
   "brand": "20 Mule Team",
   "cat": "Laundry",
-  "safe": null,
+  "safe": "Sifter grade F — repro F (sodium tetraborate H360FD fertility/developmental toxin, EU CLP Repr. 1B; High evidence)",
   "ings": [
    "Sodium Tetraborate"
   ],
@@ -1744,7 +1744,7 @@
   "heritage_year": 1891,
   "heritage_note": "Mined in Death Valley and hauled by 20-mule teams since 1891 — the all-purpose laundry booster grandma swore by. Still in most US grocery aisles; restricted across the EU for reproductive toxicity.",
   "added": "2026-08-28",
-  "updated": "2026-08-28"
+  "updated": "2026-09-19"
  },
  {
   "name": "Easy-Off Heavy Duty Oven Cleaner",

@@ -636,7 +636,7 @@
   "note": null
  },
  "Sodium Percarbonate": {
-  "g": "H271,H302,H318",
+  "g": "H272,H302,H318",
   "s": "Oxidizer, harmful if swallowed, severe eye damage",
   "ev": "High",
   "gr": {
