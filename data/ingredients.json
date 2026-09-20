@@ -2562,5 +2562,75 @@
   "gr": {},
   "impacts": [],
   "note": "Polymer/UVCB — PubChem name lookup resolves no CID (PUG REST 404) and therefore no GHS classification. Recorded unclassified rather than guessed."
+ },
+ "Calcium Chloride": {
+  "g": "H319",
+  "s": "Eye irritant; desiccant (exothermic with water).",
+  "ev": "High",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 5284359): headline ECHA C&L block reports H319 at 99.7% notifier consensus (eye irritant -> derm C). Secondary blocks add H318, H302, H335 and H373, all below the >=40% consensus threshold and so not graded. Disclosed by Reckitt for Spray 'n Wash."
+ },
+ "Potassium Chloride": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 4873): 825 of 875 companies (94.3%) report not meeting GHS hazard criteria. Disclosed by Reckitt for Spray 'n Wash."
+ },
+ "Diisopropanolamine": {
+  "g": "H318",
+  "s": "Eye irritant/corrosive (alkanolamine pH adjuster).",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 8086): headline ECHA C&L block reports H318 at 51.2% consensus (serious eye damage -> derm D). A secondary block reports H314 (severe skin burns) but below the >=40% consensus threshold, so not graded. Disclosed by SC Johnson for fantastik."
+ },
+ "Sodium Polyacrylate": {
+  "g": "Not Classified",
+  "s": "Polymeric dispersant / anti-redeposition agent (UVCB). No discrete PubChem CID.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Polymer/UVCB (CAS 9003-04-7) - PubChem name lookup resolves no CID (PUG REST 404) and therefore no GHS classification. Recorded unclassified rather than assigned an unsourced grade; high-MW polymers are generally not bioavailable. Disclosed by Henkel for Purex Free & Clear and by Reckitt for Spray 'n Wash."
+ },
+ "Fluorescent Brightener 28": {
+  "g": "Not Classified",
+  "s": "Optical brightener (stilbene disulfonate dye). No GHS hazard criteria met.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 6434593, title 'Cellufluor' - a synonym of Calcofluor White / Fluorescent Brightener 28, CAS 4193-55-9): 268 of 274 companies (97.8%) report not meeting GHS hazard criteria. Disclosed by Henkel for Purex Free & Clear."
+ },
+ "Protease Enzyme": {
+  "g": "Extrapolated",
+  "s": "Protein-degrading detergent enzyme. Enzyme proteins are respiratory sensitizers by class.",
+  "ev": "Extrapolated",
+  "gr": {
+   "resp": "D"
+  },
+  "impacts": [
+   "allerg",
+   "resp"
+  ],
+  "sens": true,
+  "note": "No PubChem CID for the generic label term 'Protease' - the name lookup returns an unrelated compound (Bacillomycin, CID 3086051) which is not used. Extrapolated by enzyme class, consistent with the existing 'Subtilisin', 'Amylase Enzyme' and 'Cellulase Enzyme' entries - detergent protease proteins are respiratory sensitizers (H334 class hazard). Disclosed by Reckitt for Spray 'n Wash."
+ },
+ "PEI-14 PEG-24/PPG-16 Copolymer": {
+  "g": "Not Classified",
+  "s": "Polymeric dispersant / anti-redeposition agent (UVCB). No discrete PubChem CID.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Polymer/UVCB - PubChem name lookup resolves no CID and therefore no GHS classification. Recorded unclassified rather than assigned an unsourced grade. Disclosed by P&G SmartLabel for Ivory Concentrated Dishwashing Liquid."
  }
 }

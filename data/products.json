@@ -2362,5 +2362,95 @@
   "added": "2026-09-19",
   "updated": "2026-09-19",
   "note": "Marketed as dye-free and perfume-free and accepted by the National Eczema Association, yet the SmartLabel disclosure still lists a 'Fragrance Ingredient' — recorded here under the existing 'Fragrance' entry, with the literal disclosure wording noted. The softener active is the ester-quat DEEDMAC, disclosed without a percentage."
+ },
+ {
+  "name": "Purex Free & Clear Liquid Laundry Detergent",
+  "brand": "Henkel",
+  "cat": "Laundry",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Laureth Sulfate",
+   "Sodium (C10-16) Alkylbenzenesulfonate",
+   "Sodium Carbonate",
+   "Laureth-12",
+   "Sodium Polyacrylate",
+   "Fatty Acids, C8-18 and C18-Unsaturated Sodium Salts",
+   "Tetrasodium EDTA",
+   "Fluorescent Brightener 28",
+   "Methylisothiazolinone"
+  ],
+  "source": "Henkel / Purex public ingredient disclosure (SmartLabel)",
+  "source_url": "https://www.purex.com/all-products/liquid-laundry-detergent/purex-free-and-clear-for-sensitive-skin.html",
+  "added": "2026-09-20",
+  "updated": "2026-09-20",
+  "note": "Marketed for sensitive skin as dye- and perfume-free, yet still contains methylisothiazolinone (a potent contact allergen) and sodium laureth sulfate. Same ingredient set disclosed on the Canadian label and US retail listings."
+ },
+ {
+  "name": "Spray 'n Wash Laundry Stain Remover",
+  "brand": "Reckitt",
+  "cat": "Stain Remover",
+  "safe": null,
+  "ings": [
+   "Water",
+   "C10-16 Pareth",
+   "Propylene Glycol",
+   "Sodium Citrate",
+   "Sodium Tetraborate",
+   "Sodium Polyacrylate",
+   "Protease Enzyme",
+   "Fragrance",
+   "Calcium Chloride",
+   "Benzisothiazolinone",
+   "Methylisothiazolinone",
+   "Potassium Chloride"
+  ],
+  "source": "Reckitt (rbnainfo.com) SmartLabel public ingredient disclosure + SDS",
+  "source_url": "https://rbnainfo.com/product.php?productLineId=1490",
+  "added": "2026-09-20",
+  "updated": "2026-09-20",
+  "note": "Discloses sodium tetraborate decahydrate (borax) as a sequestering agent - the same substance EU CLP classifies Reproductive toxicant 1B (H360FD) and restricts for consumer supply, while it remains routine in US stain removers."
+ },
+ {
+  "name": "Ivory Concentrated Dishwashing Liquid, Classic Scent",
+  "brand": "P&G",
+  "cat": "Dish Soap",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Lauryl Sulfate",
+   "Alkyldimethylamine Oxide",
+   "Sodium Laureth Sulfate",
+   "Sodium Chloride",
+   "Fragrance",
+   "PEI-14 PEG-24/PPG-16 Copolymer",
+   "Phenoxyethanol",
+   "Methylisothiazolinone"
+  ],
+  "source": "P&G SmartLabel public ingredient disclosure",
+  "source_url": "https://smartlabel.pg.com/en-CA/00037000751007.html",
+  "added": "2026-09-20",
+  "updated": "2026-09-20",
+  "note": "Ivory is P&G's oldest brand name (the 1879 soap bar); the dish liquid's own launch year is not verified, so no heritage year is claimed. Formula carries methylisothiazolinone and phenoxyethanol."
+ },
+ {
+  "name": "Fantastik Disinfectant Multi-Purpose Cleaner, Fresh Scent",
+  "brand": "SC Johnson",
+  "cat": "All-Purpose",
+  "safe": null,
+  "ings": [
+   "Quaternary Ammonium",
+   "Water",
+   "Diisopropanolamine",
+   "Lauramine Oxide",
+   "Isotridecanol Ethoxylated",
+   "Tetrasodium Iminodisuccinate",
+   "Fragrance"
+  ],
+  "source": "SC Johnson 'What's Inside' public ingredient disclosure",
+  "source_url": "https://whatsinsidescjohnson.com/en-us/brands/fantastik/all-purpose-cleaner-fresh-scent",
+  "added": "2026-09-20",
+  "updated": "2026-09-20",
+  "note": "Registered disinfectant (EPA Reg. 4822-613). The active quaternary ammonium compound is not further specified on the disclosure page. Fragrance components include butylphenyl methylpropional (Lilial), an EU-banned CMR fragrance, plus hexyl cinnamal, an EU-labeled fragrance allergen."
  }
 ]
