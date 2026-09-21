@@ -1,78 +1,82 @@
 [
- {
-  "date": "2026-09-20",
-  "text": "Gather: 4 popular US cleaning products with public disclosures - Purex Free & Clear Liquid Laundry Detergent (Henkel/Purex public disclosure), Spray 'n Wash Laundry Stain Remover (Reckitt rbnainfo.com SmartLabel + SDS), Ivory Concentrated Dishwashing Liquid Classic Scent (P&G SmartLabel), fantastik Disinfectant Multi-Purpose Cleaner Fresh Scent (SC Johnson 'What's Inside'). 7 new ingredients: calcium chloride, potassium chloride, diisopropanolamine, sodium polyacrylate, fluorescent brightener 28, protease enzyme, PEI-14 PEG-24/PPG-16 copolymer. 3 graded from PubChem/ECHA C&L via tools/ghs_lookup.py with consensus percentages cited (calcium chloride H319 99.7% -> derm C; diisopropanolamine H318 51.2% -> derm D; fluorescent brightener 28 268/274 not-classified); 1 not-classified on consensus (potassium chloride 825/875); 3 recorded unclassified/extrapolated with explicit sourcing notes because they are UVCB/polymers or generic class terms with no PubChem CID (sodium polyacrylate, PEI-14 copolymer, protease enzyme) - never an invented grade. Headline findings: (1) Spray 'n Wash discloses sodium tetraborate decahydrate (borax) as a sequestering agent - the same substance EU CLP classifies Reproductive toxicant 1B (H360FD) and restricts for consumer supply, still routine in a mainstream US stain remover. (2) Purex Free & Clear, marketed for sensitive skin as dye- and perfume-free, still contains methylisothiazolinone (a potent contact allergen) and sodium laureth sulfate. (3) fantastik's fragrance disclosure includes butylphenyl methylpropional (Lilial), an EU-banned CMR fragrance, plus hexyl cinnamal. 149 products, 219 ingredients."
- },
- {
-  "date": "2026-09-19",
-  "text": "Sifter lane: verified 9 graded ingredients against PubChem GHS (8 consistent, repo codes subsets of notifier aggregates); corrected Sodium Percarbonate H271→H272 (46.1% notifier consensus, oxidizer cat 2 not 1). Graded 5 fully-covered products via scorer methodology: Bar Keepers Friend D, Cascade D, Finish D, 20 Mule Team Borax F (H360FD), Organic Essential Oils Kit F. 145 products, 69 graded / 76 ungraded. No duplicates; validator green."
- },
- {
-  "date": "2026-09-19",
-  "text": "Gather: 4 popular US cleaning products with public disclosures — Persil ProClean Liquid Laundry Detergent Intense Fresh (Henkel SmartLabel, verified 16-Jan-2025), Clorox Clean-Up All Purpose Cleaner with Bleach Original (Clorox SmartLabel updated 11/19/2024 + SDS EPA Reg. 5813-21), Spic and Span All-Purpose Disinfecting Spray and Glass Cleaner (Church & Dwight SDS + retail disclosure), Downy Ultra Free & Gentle Liquid Fabric Conditioner (P&G SmartLabel updated 2024-11-04). 20 new ingredients. 13 graded from PubChem/ECHA C&L via tools/ghs_lookup.py, each with its consensus percentages cited and any sub-40% codes noted: laureth-12, sodium metaborate, tetrasodium iminodisuccinate, disodium distyrylbiphenyl disulfonate, myristamine oxide, sodium chlorate, benzophenone, sodium orthosilicate, isopropanolamine, tartaric acid, formic acid, pentasodium pentetate, cellulase enzyme. 7 recorded unclassified/extrapolated with explicit sourcing notes because they are UVCB/polymers with no PubChem CID (fatty acid sodium soaps, polyethyleneimine alkoxylate, the acrylate/styrene copolymer, the polyoxyalkylene chromophore, mannanase enzyme, DEEDMAC, polyquaternium-33) — never an invented grade. Headline findings: (1) benzophenone, prohibited in EU cosmetics (Annex II, Entry 1703) and IARC 2B, is disclosed on the US label of a mainstream bleach spray cleaner — added as a reclassified entry plus a new reg entry (EU banned / US flagged). (2) sodium metaborate, the borate enzyme stabilizer in Persil, carries the same EU CLP Reproductive toxicant 1B (H360FD) classification as borax — added as a reclassified entry plus a reg entry (EU restricted / US allowed). (3) sodium chlorate on the Clorox Clean-Up label is not an added ingredient — it forms as the hypochlorite decays in storage (3 NaOCl -> NaClO3 + 2 NaCl), documented in the OxyChem hypochlorite handbook. (4) Downy Free & Gentle is marketed perfume-free yet still discloses a 'Fragrance Ingredient'. Verification note: the PubChem name lookup for 'Protease' silently returned Bacillomycin (CID 3086051) — a different compound — so it was discarded and the disclosure recorded under the existing 'Subtilisin' entry instead. Validator: pending. Products 141 -> 145, ingredient keys 192 -> 212."
- },
- {
-  "date": "2026-09-18",
-  "text": "Gather: 4 popular US cleaning products with public disclosures — Clorox Disinfecting Wipes Fresh Scent (Clorox SmartLabel, updated 4/8/2025), OxiClean Versatile Stain Remover (Church & Dwight SDS), Woolite Delicates Laundry Detergent (Reckitt SmartLabel), Mr. Clean Magic Eraser (P&G SDS composition section). 15 new ingredients. 7 graded from PubChem/ECHA C&L via tools/ghs_lookup.py (hexoxyethanol, triethanolamine, BHT, butylphenyl methylpropional, hexyl salicylate, isoeugenol, eugenol), each with its consensus percentages cited and any sub-40% codes noted. 8 recorded unclassified/extrapolated with explicit sourcing notes because they are UVCB/polymers with no PubChem CID (sodium polycarboxylate, the melamine-formaldehyde copolymer, the two BAC-type quats, TEA cocoate, C10-16 pareth, C12-14 alcohols ethoxylated propoxylated, sodium C10-16 alkylbenzenesulfonate) — never an invented grade. Headline finding: butylphenyl methylpropional (Lilial), a CMR 1B fragrance banned in EU cosmetics since 2022, is still disclosed in a US detergent — added as a reclassified entry plus a new reg entry (EU banned / US allowed) noting the SCCS record that the cosmetics ban does not reach household cleaners. Validator: 0 issues. 141 products, 192 ingredients."
- },
- {
-  "date": "2026-09-17",
-  "text": "Root-cause fix for the duplicate bug that had been hand-fixed five times: the grow lane's dedupe index was keyed raw (.strip().lower()) while its lookup used norm() (punctuation collapsed), so every seed product whose name or brand contains punctuation (P&G, Free & Clear, Multi-Surface) silently re-added itself each run — which is exactly why Clorox Disinfecting Bleach, the one seed with no punctuation, never duplicated. Index normalized in bulk_ingest.py and a permanent `chem_maintain.py --dedupe --fix` guard wired into chem_cron.sh, so duplicates can no longer survive a run. Removed 4 duplicates (137->133). Schema fixes: 3 invalid enum values closed — Bac-Out impact 'sens'->'allerg', and the non-canonical grade dim 'allerg' on Linalool/Geraniol merged into derm:D per the house H317 rule (matching Citral/Limonene/Fragrance). Gather: 4 popular US products with public disclosures — Resolve Heavy Traffic Foam Carpet Cleaner (Reckitt SmartLabel), Krud Kutter Original Cleaner & Degreaser (Rust-Oleum SDS), Weiman Stainless Steel Cleaner & Polish (Weiman ingredient list), LA's Totally Awesome All-Purpose Cleaner (manufacturer MSDS + retail composition — flagged as weaker sourcing, not presented as equivalent). 12 new ingredients, each graded from PubChem/ECHA C&L via tools/ghs_lookup.py where a CID exists, or recorded unclassified with an explicit note where it does not (UVCB/polymer) rather than guessing a grade. Added CMIT regulatory entry: EU leave-on cosmetics ban since 2016, no equivalent US federal restriction in cleaning products. Validator: 0 issues. 137 products, 177 ingredients."
- },
- {
-  "date": "2026-09-16",
-  "text": "Sifter lane: dedupe pass — removed 4 duplicate products re-added 09-15 (133→129). Closed 15 ingredient-profile gaps from the two newest products (Cascade ActionPacs enzymes/benzotriazole/polymers, Toilet Stamp ethoxylates) with GHS + evidence-level data. Validator: 0 issues. Also profiled Acid Blue 9 (16 gaps total)."
- },
- {
-  "date": "2026-09-14",
-  "text": "Daily maintain (quota gear): dedupe pass — removed 4 duplicate products re-added by prior cron run (131→127). Added 2 popular US products with honest ingredients from public disclosures: Cascade Complete ActionPacs (P&G SmartLabel, heritage dishwasher detergent 1953) and Fresh Gel Toilet Cleaning Stamp (SC Johnson disclosure). 129 products, 142 ingredients."
- },
- {
-  "date": "2026-09-13",
-  "text": "Daily maintain (quota gear): dedupe pass — removed 4 exact-duplicate products re-added 09-13 by prior cron run (131->127); renamed two generic 'Dish Soap' entries to brand names (Meliora, The Honest Company). Added 10 honest ingredient profiles to close validator gaps: Yellow 5, PPG-26, Polysorbate 20, Aloe Barbadensis Leaf Juice, Plant-derived Surfactants (vague-disclosure flag), Sodium Gluconate, Silica (crystalline-dust hazard note), Pumice, Formaldehyde (IARC 1, anchors releaser entries), and the EU-rejected paraformaldehyde releaser. Merged synthetic reg key '1,4-Dioxane (EU)' into canonical '1,4-Dioxane'. Validator: 0 issues. 127 products, 142 ingredients."
- },
- {
-  "date": "2026-09-12",
-  "text": "Daily maintain: removed 20 duplicate product entries (4 products each duplicated 5x from prior cron runs — 146→126). Added Murphy Oil Soap (heritage wood cleaner, 1905). Added 1,4-dioxane regulatory entries (NY State 1ppm ban 2023, EU REACH roadmap evaluation) + ingredient profile (IARC 2B carcinogen, common surfactant contaminant). 127 products, 132 ingredients."
- },
- {
-  "date": "2026-09-11",
-  "text": "Daily gather: added Method Glass Cleaner (mainstream glass cleaner) and The Honest Company Dish Soap (popular clean brand). 142 products."
- },
- {
-  "date": "2026-09-10",
-  "text": "Daily gather: added Dawn Ultra Dishwashing Liquid (mainstream US product with MIT preservative). Added EU formaldehyde regulatory entries: (1) BPR Decision 2026/599 banning formaldehyde releaser (paraformaldehyde + 2-hydroxypropylamine) for PT6 in-can preservatives; (2) REACH Annex XVII Entry 77 emission limits (0.062-0.080 mg/m³) for indoor articles effective Aug 2026. 136 products, 131 ingredients."
- },
- {
-  "date": "2026-09-09",
-  "text": "Daily gather: added DMDM Hydantoin regulatory entry (EU requires \"releases formaldehyde\" label at 10 ppm; US no such requirement) + Zud Heavy Duty Cleanser (powder rust remover, oxalic acid based). 131 products."
- },
- {
-  "date": "2026-08-28",
-  "text": "Added DIY Mix & Match Solution Lab — pick a surface (degreaser, glass, all-purpose, porcelain/tub, hard-water, carpet), choose safe base ingredients (castile, alcohol, vinegar, baking soda, essential oils...), set ratios with a visual bottle-fill, get vetted starter recipes + mixing rules (never bleach+acid) and a pH cheat sheet."
- },
- {
-  "date": "2026-08-28",
-  "text": "Gather pass: added Easy-Off Heavy Duty Oven Cleaner (lye + DEGBE glycol-ether solvent) and profiled Diethylene Glycol Monobutyl Ether; added EU amine-restriction context for ethanolamine. 117 products."
- },
- {
-  "date": "2026-08-28",
-  "text": "Added global regulatory layer — the planet's verdict: which ingredients the EU/UK/Canada/Japan have banned or restricted while the US still allows them, with reasons. Includes catch-up scoreboard, watch list, and Borax as the showcase heritage-vs-EU case."
- },
- {
-  "date": "2026-08-28",
-  "text": "v2 overhaul — search by health impact (respiratory, reproductive, endocrine, skin, aquatic, cancer, allergen), heritage 'grandma's cupboard' layer, 'once safe, now flagged' reclassified warnings, 110 documented ingredients (20 gaps closed)."
- },
- {
-  "date": "2026-08-19",
-  "text": "BMVC products updated with real ingredient lists from Sandra's cleaning kit (heritage + homemade formulas)."
- },
- {
-  "date": "2026-08-18",
-  "text": "First public build — 115 products, 90 ingredients, A-F transparent grading with evidence labels, genetic sensitivity layer preview."
- },
- {
-  "date": "2026-09-17",
-  "text": "Curated add: 4 researched products (Biokleen Bac-Out, Puracy Multi-Surface, Better Life What-Ever, Granite Gold Daily Cleaner) — full ingredient lists, source URLs. 11 new graded ingredients incl. PubChem-GHS laureths, tetrasodium glutamate diacetate, disodium cocoyl glutamate, MIT, EU fragrance allergens. Product count 133 -> 137."
- }
+    {
+        "date": "2026-09-21",
+        "text": "Gather: 4 popular US cleaning products with public disclosures - Goo Gone Original adhesive remover (manufacturer SDS rev. 9/19/2024 + ingredient disclosure PDF), Shout Advanced Stain Remover Action Gel (SC Johnson SmartLabel + SDS 350000035250), The Works Toilet Bowl Cleaner (CA Cleaning Products Right to Know disclosure 12/27/2019 + manufacturer SDS + EPA label 5185-505-80306), and Bounce Fabric Softener Sheets Outdoor Fresh (P&G SmartLabel). 17 new ingredients. Grading: 4 graded from PubChem/ECHA C&L with consensus denominators cited - Orange Oil (CID 62161, dominant block 10 notifications/262 reports: H315 90.5%, H317 90.5% -> derm D + allerg, H318 44.7% -> derm D, H411 90.1% -> env D; H226 at 39.7% below threshold, not graded); Methenamine (CID 4101, dominant block 19 notifications/1051 reports: H317 100% -> derm C + allerg); Undeceth-3 (CID 61930, two single-company notifications: H318 100% -> derm D, flagged Low confidence); Nonoxynol (CID 24773, 2 notifications/3 reports: H315 100% -> derm C, H412 100% -> env C, flagged Low confidence). 5 recorded Not Classified on a stated consensus - Solvent Orange 60 (2229/2274), CI Acid Blue 145 (5/5), Tripropylene Glycol Butyl Ether (no GHS section in PubChem), Diethylene Glycol (H302 100% of 38 notifications; acute oral is not a graded dimension), and 8 recorded unclassified with explicit sourcing notes because they are UVCB/petroleum streams, minerals, materials or withheld trade-secret names with no PubChem CID (Petroleum Distillates Hydrotreated Light, Aliphatic Ether Alcohol, Glycol Ether, Polyester Sheet, Dialkylester Dimethyl Ammonium Methosulfate, Fatty Acids C16-18, Bentonite, Ethoxylated C8-18 Alkylamines, Turpentine) - never an invented grade. METHOD FINDING (recorded, not silently worked around): PubChem PUG View returns GHS classifications grouped by ECHA C&L notification group, and each group carries its own denominator. tools/grade_batch.py flattens all groups into one h_statements list, so a >=40% figure from a 2-notification fringe group is indistinguishable from a 19-notification consensus. Methenamine is the live example: its dominant group (19 notifications) carries H228+H317, while a separate 2-notification group carries H302/H314/H334/H351 at '100%' - within-group, not global. Those fringe codes were NOT graded. Grades in this run were taken from the dominant group with the denominator stated in each note. Regulatory: added a Nonoxynol entry (EU REACH Annex XVII entry 46 restricts NP/NPE at >=0.1% in domestic cleaning; US has no consumer-cleaner restriction) - The Works Toilet Bowl Cleaner discloses nonoxynol on a mainstream US product, which is the EU/US gap this section exists to show. Check attempted and REJECTED: Diethylene Glycol is not asserted as an EU harmonised Repr. 1B - the search result that suggested it was mixing in the borate row (same H360FD / 5.5% SCL), and the manufacturer SDSs found say DEG is not classified for reproductive or repeated-exposure toxicity. No reg entry filed."
+    },
+    {
+        "date": "2026-09-20",
+        "text": "Gather: 4 popular US cleaning products with public disclosures - Purex Free & Clear Liquid Laundry Detergent (Henkel/Purex public disclosure), Spray 'n Wash Laundry Stain Remover (Reckitt rbnainfo.com SmartLabel + SDS), Ivory Concentrated Dishwashing Liquid Classic Scent (P&G SmartLabel), fantastik Disinfectant Multi-Purpose Cleaner Fresh Scent (SC Johnson 'What's Inside'). 7 new ingredients: calcium chloride, potassium chloride, diisopropanolamine, sodium polyacrylate, fluorescent brightener 28, protease enzyme, PEI-14 PEG-24/PPG-16 copolymer. 3 graded from PubChem/ECHA C&L via tools/ghs_lookup.py with consensus percentages cited (calcium chloride H319 99.7% -> derm C; diisopropanolamine H318 51.2% -> derm D; fluorescent brightener 28 268/274 not-classified); 1 not-classified on consensus (potassium chloride 825/875); 3 recorded unclassified/extrapolated with explicit sourcing notes because they are UVCB/polymers or generic class terms with no PubChem CID (sodium polyacrylate, PEI-14 copolymer, protease enzyme) - never an invented grade. Headline findings: (1) Spray 'n Wash discloses sodium tetraborate decahydrate (borax) as a sequestering agent - the same substance EU CLP classifies Reproductive toxicant 1B (H360FD) and restricts for consumer supply, still routine in a mainstream US stain remover. (2) Purex Free & Clear, marketed for sensitive skin as dye- and perfume-free, still contains methylisothiazolinone (a potent contact allergen) and sodium laureth sulfate. (3) fantastik's fragrance disclosure includes butylphenyl methylpropional (Lilial), an EU-banned CMR fragrance, plus hexyl cinnamal. 149 products, 219 ingredients."
+    },
+    {
+        "date": "2026-09-19",
+        "text": "Sifter lane: verified 9 graded ingredients against PubChem GHS (8 consistent, repo codes subsets of notifier aggregates); corrected Sodium Percarbonate H271\u2192H272 (46.1% notifier consensus, oxidizer cat 2 not 1). Graded 5 fully-covered products via scorer methodology: Bar Keepers Friend D, Cascade D, Finish D, 20 Mule Team Borax F (H360FD), Organic Essential Oils Kit F. 145 products, 69 graded / 76 ungraded. No duplicates; validator green."
+    },
+    {
+        "date": "2026-09-19",
+        "text": "Gather: 4 popular US cleaning products with public disclosures \u2014 Persil ProClean Liquid Laundry Detergent Intense Fresh (Henkel SmartLabel, verified 16-Jan-2025), Clorox Clean-Up All Purpose Cleaner with Bleach Original (Clorox SmartLabel updated 11/19/2024 + SDS EPA Reg. 5813-21), Spic and Span All-Purpose Disinfecting Spray and Glass Cleaner (Church & Dwight SDS + retail disclosure), Downy Ultra Free & Gentle Liquid Fabric Conditioner (P&G SmartLabel updated 2024-11-04). 20 new ingredients. 13 graded from PubChem/ECHA C&L via tools/ghs_lookup.py, each with its consensus percentages cited and any sub-40% codes noted: laureth-12, sodium metaborate, tetrasodium iminodisuccinate, disodium distyrylbiphenyl disulfonate, myristamine oxide, sodium chlorate, benzophenone, sodium orthosilicate, isopropanolamine, tartaric acid, formic acid, pentasodium pentetate, cellulase enzyme. 7 recorded unclassified/extrapolated with explicit sourcing notes because they are UVCB/polymers with no PubChem CID (fatty acid sodium soaps, polyethyleneimine alkoxylate, the acrylate/styrene copolymer, the polyoxyalkylene chromophore, mannanase enzyme, DEEDMAC, polyquaternium-33) \u2014 never an invented grade. Headline findings: (1) benzophenone, prohibited in EU cosmetics (Annex II, Entry 1703) and IARC 2B, is disclosed on the US label of a mainstream bleach spray cleaner \u2014 added as a reclassified entry plus a new reg entry (EU banned / US flagged). (2) sodium metaborate, the borate enzyme stabilizer in Persil, carries the same EU CLP Reproductive toxicant 1B (H360FD) classification as borax \u2014 added as a reclassified entry plus a reg entry (EU restricted / US allowed). (3) sodium chlorate on the Clorox Clean-Up label is not an added ingredient \u2014 it forms as the hypochlorite decays in storage (3 NaOCl -> NaClO3 + 2 NaCl), documented in the OxyChem hypochlorite handbook. (4) Downy Free & Gentle is marketed perfume-free yet still discloses a 'Fragrance Ingredient'. Verification note: the PubChem name lookup for 'Protease' silently returned Bacillomycin (CID 3086051) \u2014 a different compound \u2014 so it was discarded and the disclosure recorded under the existing 'Subtilisin' entry instead. Validator: pending. Products 141 -> 145, ingredient keys 192 -> 212."
+    },
+    {
+        "date": "2026-09-18",
+        "text": "Gather: 4 popular US cleaning products with public disclosures \u2014 Clorox Disinfecting Wipes Fresh Scent (Clorox SmartLabel, updated 4/8/2025), OxiClean Versatile Stain Remover (Church & Dwight SDS), Woolite Delicates Laundry Detergent (Reckitt SmartLabel), Mr. Clean Magic Eraser (P&G SDS composition section). 15 new ingredients. 7 graded from PubChem/ECHA C&L via tools/ghs_lookup.py (hexoxyethanol, triethanolamine, BHT, butylphenyl methylpropional, hexyl salicylate, isoeugenol, eugenol), each with its consensus percentages cited and any sub-40% codes noted. 8 recorded unclassified/extrapolated with explicit sourcing notes because they are UVCB/polymers with no PubChem CID (sodium polycarboxylate, the melamine-formaldehyde copolymer, the two BAC-type quats, TEA cocoate, C10-16 pareth, C12-14 alcohols ethoxylated propoxylated, sodium C10-16 alkylbenzenesulfonate) \u2014 never an invented grade. Headline finding: butylphenyl methylpropional (Lilial), a CMR 1B fragrance banned in EU cosmetics since 2022, is still disclosed in a US detergent \u2014 added as a reclassified entry plus a new reg entry (EU banned / US allowed) noting the SCCS record that the cosmetics ban does not reach household cleaners. Validator: 0 issues. 141 products, 192 ingredients."
+    },
+    {
+        "date": "2026-09-17",
+        "text": "Root-cause fix for the duplicate bug that had been hand-fixed five times: the grow lane's dedupe index was keyed raw (.strip().lower()) while its lookup used norm() (punctuation collapsed), so every seed product whose name or brand contains punctuation (P&G, Free & Clear, Multi-Surface) silently re-added itself each run \u2014 which is exactly why Clorox Disinfecting Bleach, the one seed with no punctuation, never duplicated. Index normalized in bulk_ingest.py and a permanent `chem_maintain.py --dedupe --fix` guard wired into chem_cron.sh, so duplicates can no longer survive a run. Removed 4 duplicates (137->133). Schema fixes: 3 invalid enum values closed \u2014 Bac-Out impact 'sens'->'allerg', and the non-canonical grade dim 'allerg' on Linalool/Geraniol merged into derm:D per the house H317 rule (matching Citral/Limonene/Fragrance). Gather: 4 popular US products with public disclosures \u2014 Resolve Heavy Traffic Foam Carpet Cleaner (Reckitt SmartLabel), Krud Kutter Original Cleaner & Degreaser (Rust-Oleum SDS), Weiman Stainless Steel Cleaner & Polish (Weiman ingredient list), LA's Totally Awesome All-Purpose Cleaner (manufacturer MSDS + retail composition \u2014 flagged as weaker sourcing, not presented as equivalent). 12 new ingredients, each graded from PubChem/ECHA C&L via tools/ghs_lookup.py where a CID exists, or recorded unclassified with an explicit note where it does not (UVCB/polymer) rather than guessing a grade. Added CMIT regulatory entry: EU leave-on cosmetics ban since 2016, no equivalent US federal restriction in cleaning products. Validator: 0 issues. 137 products, 177 ingredients."
+    },
+    {
+        "date": "2026-09-16",
+        "text": "Sifter lane: dedupe pass \u2014 removed 4 duplicate products re-added 09-15 (133\u2192129). Closed 15 ingredient-profile gaps from the two newest products (Cascade ActionPacs enzymes/benzotriazole/polymers, Toilet Stamp ethoxylates) with GHS + evidence-level data. Validator: 0 issues. Also profiled Acid Blue 9 (16 gaps total)."
+    },
+    {
+        "date": "2026-09-14",
+        "text": "Daily maintain (quota gear): dedupe pass \u2014 removed 4 duplicate products re-added by prior cron run (131\u2192127). Added 2 popular US products with honest ingredients from public disclosures: Cascade Complete ActionPacs (P&G SmartLabel, heritage dishwasher detergent 1953) and Fresh Gel Toilet Cleaning Stamp (SC Johnson disclosure). 129 products, 142 ingredients."
+    },
+    {
+        "date": "2026-09-13",
+        "text": "Daily maintain (quota gear): dedupe pass \u2014 removed 4 exact-duplicate products re-added 09-13 by prior cron run (131->127); renamed two generic 'Dish Soap' entries to brand names (Meliora, The Honest Company). Added 10 honest ingredient profiles to close validator gaps: Yellow 5, PPG-26, Polysorbate 20, Aloe Barbadensis Leaf Juice, Plant-derived Surfactants (vague-disclosure flag), Sodium Gluconate, Silica (crystalline-dust hazard note), Pumice, Formaldehyde (IARC 1, anchors releaser entries), and the EU-rejected paraformaldehyde releaser. Merged synthetic reg key '1,4-Dioxane (EU)' into canonical '1,4-Dioxane'. Validator: 0 issues. 127 products, 142 ingredients."
+    },
+    {
+        "date": "2026-09-12",
+        "text": "Daily maintain: removed 20 duplicate product entries (4 products each duplicated 5x from prior cron runs \u2014 146\u2192126). Added Murphy Oil Soap (heritage wood cleaner, 1905). Added 1,4-dioxane regulatory entries (NY State 1ppm ban 2023, EU REACH roadmap evaluation) + ingredient profile (IARC 2B carcinogen, common surfactant contaminant). 127 products, 132 ingredients."
+    },
+    {
+        "date": "2026-09-11",
+        "text": "Daily gather: added Method Glass Cleaner (mainstream glass cleaner) and The Honest Company Dish Soap (popular clean brand). 142 products."
+    },
+    {
+        "date": "2026-09-10",
+        "text": "Daily gather: added Dawn Ultra Dishwashing Liquid (mainstream US product with MIT preservative). Added EU formaldehyde regulatory entries: (1) BPR Decision 2026/599 banning formaldehyde releaser (paraformaldehyde + 2-hydroxypropylamine) for PT6 in-can preservatives; (2) REACH Annex XVII Entry 77 emission limits (0.062-0.080 mg/m\u00b3) for indoor articles effective Aug 2026. 136 products, 131 ingredients."
+    },
+    {
+        "date": "2026-09-09",
+        "text": "Daily gather: added DMDM Hydantoin regulatory entry (EU requires \"releases formaldehyde\" label at 10 ppm; US no such requirement) + Zud Heavy Duty Cleanser (powder rust remover, oxalic acid based). 131 products."
+    },
+    {
+        "date": "2026-08-28",
+        "text": "Added DIY Mix & Match Solution Lab \u2014 pick a surface (degreaser, glass, all-purpose, porcelain/tub, hard-water, carpet), choose safe base ingredients (castile, alcohol, vinegar, baking soda, essential oils...), set ratios with a visual bottle-fill, get vetted starter recipes + mixing rules (never bleach+acid) and a pH cheat sheet."
+    },
+    {
+        "date": "2026-08-28",
+        "text": "Gather pass: added Easy-Off Heavy Duty Oven Cleaner (lye + DEGBE glycol-ether solvent) and profiled Diethylene Glycol Monobutyl Ether; added EU amine-restriction context for ethanolamine. 117 products."
+    },
+    {
+        "date": "2026-08-28",
+        "text": "Added global regulatory layer \u2014 the planet's verdict: which ingredients the EU/UK/Canada/Japan have banned or restricted while the US still allows them, with reasons. Includes catch-up scoreboard, watch list, and Borax as the showcase heritage-vs-EU case."
+    },
+    {
+        "date": "2026-08-28",
+        "text": "v2 overhaul \u2014 search by health impact (respiratory, reproductive, endocrine, skin, aquatic, cancer, allergen), heritage 'grandma's cupboard' layer, 'once safe, now flagged' reclassified warnings, 110 documented ingredients (20 gaps closed)."
+    },
+    {
+        "date": "2026-08-19",
+        "text": "BMVC products updated with real ingredient lists from Sandra's cleaning kit (heritage + homemade formulas)."
+    },
+    {
+        "date": "2026-08-18",
+        "text": "First public build \u2014 115 products, 90 ingredients, A-F transparent grading with evidence labels, genetic sensitivity layer preview."
+    },
+    {
+        "date": "2026-09-17",
+        "text": "Curated add: 4 researched products (Biokleen Bac-Out, Puracy Multi-Surface, Better Life What-Ever, Granite Gold Daily Cleaner) \u2014 full ingredient lists, source URLs. 11 new graded ingredients incl. PubChem-GHS laureths, tetrasodium glutamate diacetate, disodium cocoyl glutamate, MIT, EU fragrance allergens. Product count 133 -> 137."
+    }
 ]

@@ -5,7 +5,7 @@
   "ev": "High",
   "gr": {},
   "impacts": [],
-  "note": "Graded from PubChem GHS classifications (CID 962 Water) — no GHS hazard criteria."
+  "note": "Graded from PubChem GHS classifications (CID 962 Water) \u2014 no GHS hazard criteria."
  },
  "Spring Water": {
   "g": "Not Classified",
@@ -13,7 +13,7 @@
   "ev": "High",
   "gr": {},
   "impacts": [],
-  "note": "Graded from PubChem GHS classifications (CID 962 Water) — no GHS hazard criteria."
+  "note": "Graded from PubChem GHS classifications (CID 962 Water) \u2014 no GHS hazard criteria."
  },
  "Fragrance": {
   "g": "H317",
@@ -31,7 +31,7 @@
    "repro"
   ],
   "reclassified": [
-   "'Fragrance' was historically treated as one harmless scent note; undisclosed blends routinely contain phthalates & synthetic musks — endocrine/repro flags (Prop 65 phthalates) and contact allergens."
+   "'Fragrance' was historically treated as one harmless scent note; undisclosed blends routinely contain phthalates & synthetic musks \u2014 endocrine/repro flags (Prop 65 phthalates) and contact allergens."
   ],
   "note": "Undisclosed blend. Hazards assigned from documented fragrance-carrier chemistry (phthalates, musks), not the specific formula."
  },
@@ -107,7 +107,7 @@
   },
   "impacts": [],
   "sensitive": true,
-  "note": "Graded from PubChem GHS classifications (CID 3080680) — crystalline silica (respirable) concern; H373 at 100% consensus."
+  "note": "Graded from PubChem GHS classifications (CID 3080680) \u2014 crystalline silica (respirable) concern; H373 at 100% consensus."
  },
  "Limestone": {
   "g": "Not Classified",
@@ -115,7 +115,7 @@
   "ev": "Medium",
   "gr": {},
   "impacts": [],
-  "note": "Extrapolated: PubChem GHS for Calcium carbonate (CID 10112) — no hazard criteria. Limestone = calcium carbonate (mineral form)."
+  "note": "Extrapolated: PubChem GHS for Calcium carbonate (CID 10112) \u2014 no hazard criteria. Limestone = calcium carbonate (mineral form)."
  },
  "Decyl Glucoside": {
   "g": "Not Classified",
@@ -149,7 +149,7 @@
    "resp"
   ],
   "reclassified": [
-   "MIT was the 'safe' preservative replacing parabens; became 2013 'Allergen of the Year' — epidemic of allergic contact dermatitis, now restricted in leave-on products (EU)."
+   "MIT was the 'safe' preservative replacing parabens; became 2013 'Allergen of the Year' \u2014 epidemic of allergic contact dermatitis, now restricted in leave-on products (EU)."
   ],
   "note": null
  },
@@ -168,7 +168,7 @@
  },
  "Enzymes": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within enzyme (protein, potential respiratory sensitizer class) class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within enzyme (protein, potential respiratory sensitizer class) class",
   "ev": "Extrapolated",
   "gr": {
    "resp": "D",
@@ -180,7 +180,7 @@
   ],
   "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification.",
   "reclassified": [
-   "Enzymes were added to laundry products as 'natural' boosters; they are potent respiratory sensitizers — industry adopted encapsulation after occupational asthma outbreaks (1970s)."
+   "Enzymes were added to laundry products as 'natural' boosters; they are potent respiratory sensitizers \u2014 industry adopted encapsulation after occupational asthma outbreaks (1970s)."
   ]
  },
  "Tetrasodium Glutamate Diacetate": {
@@ -191,7 +191,7 @@
    "derm": "C"
   },
   "impacts": [],
-  "note": "Graded from PubChem GHS (CID 44630158). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. H290 22.8%, H319 31.7%, H335 22.4% — all below the 40% threshold, so none drive a grade. Earlier H319 grade withdrawn."
+  "note": "Graded from PubChem GHS (CID 44630158). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. H290 22.8%, H319 31.7%, H335 22.4% \u2014 all below the 40% threshold, so none drive a grade. Earlier H319 grade withdrawn."
  },
  "Norwex Cloth": {
   "g": "Not Classified",
@@ -199,7 +199,7 @@
   "ev": "High",
   "gr": {},
   "impacts": [],
-  "note": "Microfiber cloth — physical article, no chemical hazard grading applicable."
+  "note": "Microfiber cloth \u2014 physical article, no chemical hazard grading applicable."
  },
  "Pumice Stone": {
   "g": "Not Classified",
@@ -207,7 +207,7 @@
   "ev": "Medium",
   "gr": {},
   "impacts": [],
-  "note": "Extrapolated: PubChem GHS for Calcium carbonate (CID 10112) — no hazard criteria. Pumice = inert abrasive; no GHS record."
+  "note": "Extrapolated: PubChem GHS for Calcium carbonate (CID 10112) \u2014 no hazard criteria. Pumice = inert abrasive; no GHS record."
  },
  "Sodium Citrate": {
   "g": "Not Classified",
@@ -223,11 +223,11 @@
   "ev": "Medium",
   "gr": {},
   "impacts": [],
-  "note": "Graded from PubChem (CID 23724990) — no GHS Classification section in PUG View (corrected wording per Linnea CCI-004 revision, 2026-09-17). Sodium salt of phytic acid (food-grade chelant)."
+  "note": "Graded from PubChem (CID 23724990) \u2014 no GHS Classification section in PUG View (corrected wording per Linnea CCI-004 revision, 2026-09-17). Sodium salt of phytic acid (food-grade chelant)."
  },
  "Myristyl Glucoside": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within alkyl polyglucoside surfactant class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within alkyl polyglucoside surfactant class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -246,7 +246,7 @@
  },
  "Coco-Glucoside": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within alkyl polyglucoside surfactant class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within alkyl polyglucoside surfactant class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -266,11 +266,11 @@
   "ev": "Medium",
   "gr": {},
   "impacts": [],
-  "note": "Graded from PubChem GHS classifications (CID 753) — no H-codes at >=40% consensus; treated as minimal hazard with Medium confidence. Duplicate-capitalized entry; same grade as canonical key."
+  "note": "Graded from PubChem GHS classifications (CID 753) \u2014 no H-codes at >=40% consensus; treated as minimal hazard with Medium confidence. Duplicate-capitalized entry; same grade as canonical key."
  },
  "Saponified Coconut Oil": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within saponified oil (soap salt) class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within saponified oil (soap salt) class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -278,7 +278,7 @@
  },
  "Saponified Olive Oil": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within saponified oil (soap salt) class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within saponified oil (soap salt) class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -286,7 +286,7 @@
  },
  "Organic Hemp Oil": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within plant oil class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within plant oil class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -294,7 +294,7 @@
  },
  "Rosemary Extract": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within botanical extract class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within botanical extract class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -302,7 +302,7 @@
  },
  "Aloe Vera": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within botanical extract class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within botanical extract class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -310,7 +310,7 @@
  },
  "Botanical surfactant": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within surfactant class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within surfactant class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -318,7 +318,7 @@
  },
  "Plant-based surfactants": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within surfactant class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within surfactant class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -326,7 +326,7 @@
  },
  "Oatmeal extract": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within botanical extract class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within botanical extract class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -338,7 +338,7 @@
   "ev": "Medium",
   "gr": {},
   "impacts": [],
-  "note": "Graded from PubChem GHS classifications (CID 14986) — alias Tocopherol."
+  "note": "Graded from PubChem GHS classifications (CID 14986) \u2014 alias Tocopherol."
  },
  "Sodium Chloride": {
   "g": "Not Classified",
@@ -369,11 +369,11 @@
   "ev": "High",
   "gr": {},
   "impacts": [],
-  "note": "Graded from PubChem GHS (CID 9989226). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: 2917/3142 (92.8%) not meeting criteria; H335 appeared only in a secondary block. Respirable-crystalline-silica concern applies to product form, not this CID’s C&L classification, and is not graded here."
+  "note": "Graded from PubChem GHS (CID 9989226). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. Headline ECHA block: 2917/3142 (92.8%) not meeting criteria; H335 appeared only in a secondary block. Respirable-crystalline-silica concern applies to product form, not this CID\u2019s C&L classification, and is not graded here."
  },
  "Brassica Campestris Seed Oil": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within plant oil class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within plant oil class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -381,7 +381,7 @@
  },
  "Helianthus Annuus Seed Oil": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within plant oil class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within plant oil class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -399,7 +399,7 @@
  },
  "Ginger Extract": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within botanical extract class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within botanical extract class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -583,7 +583,7 @@
    "repro"
   ],
   "reclassified": [
-   "SLES replaced SLS as 'gentler'; ethoxylation introduces trace 1,4-dioxane (IARC 2B probable carcinogen) — a contaminant, not an ingredient."
+   "SLES replaced SLS as 'gentler'; ethoxylation introduces trace 1,4-dioxane (IARC 2B probable carcinogen) \u2014 a contaminant, not an ingredient."
   ],
   "note": "Graded from PubChem GHS (CID 23665884): H315 98.1%, H318 98.1% per headline ECHA block; H319 appears only in a secondary block (Linnea CCI-004 revision, 2026-09-17)."
  },
@@ -604,7 +604,7 @@
    "resp"
   ],
   "reclassified": [
-   "Citrus limonene was sold as the 'natural' scent; on air exposure it oxidizes into potent sensitizers (limonene hydroperoxides) — now a known contact-allergen source."
+   "Citrus limonene was sold as the 'natural' scent; on air exposure it oxidizes into potent sensitizers (limonene hydroperoxides) \u2014 now a known contact-allergen source."
   ],
   "note": null
  },
@@ -765,7 +765,7 @@
    "derm"
   ],
   "reclassified": [
-   "CAPB replaced harsher surfactants as 'gentle'; became a common contact allergen (amide impurities) — now on many allergen patch panels."
+   "CAPB replaced harsher surfactants as 'gentle'; became a common contact allergen (amide impurities) \u2014 now on many allergen patch panels."
   ],
   "note": null
  },
@@ -840,7 +840,7 @@
    "resp"
   ],
   "reclassified": [
-   "Ammonia was grandma's go-to; strong respiratory irritant, and mixing with bleach produces chloramine gas — a documented household emergency."
+   "Ammonia was grandma's go-to; strong respiratory irritant, and mixing with bleach produces chloramine gas \u2014 a documented household emergency."
   ],
   "note": null
  },
@@ -858,7 +858,7 @@
    "repro"
   ],
   "reclassified": [
-   "Ethoxylated surfactants can carry trace 1,4-dioxane (IARC 2B probable carcinogen) from manufacturing — process contaminant, not on the label."
+   "Ethoxylated surfactants can carry trace 1,4-dioxane (IARC 2B probable carcinogen) from manufacturing \u2014 process contaminant, not on the label."
   ],
   "note": null
  },
@@ -1142,7 +1142,7 @@
  },
  "Surfactant": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within surfactant class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within surfactant class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -1206,7 +1206,7 @@
  },
  "Hydroxypropyl Cyclodextrin": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within polymer class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within polymer class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -1225,7 +1225,7 @@
  },
  "Octyl/Decyl Glucoside": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within alkyl polyglucoside surfactant class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within alkyl polyglucoside surfactant class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -1255,7 +1255,7 @@
    "derm"
   ],
   "reclassified": [
-   "Glycol ethers were promoted as 'safe' replacements for banned solvents (1970s–90s); regulation & Prop 65 listings later flagged reproductive/developmental harm in the class."
+   "Glycol ethers were promoted as 'safe' replacements for banned solvents (1970s\u201390s); regulation & Prop 65 listings later flagged reproductive/developmental harm in the class."
   ],
   "note": null
  },
@@ -1296,7 +1296,7 @@
    "aqua"
   ],
   "reclassified": [
-   "Ethoxylated surfactants (SLES, alcohol ethoxylates) can carry trace 1,4-dioxane — a byproduct EPA flagged as a probable human carcinogen (IARC 2B). Not an added ingredient; a process contaminant."
+   "Ethoxylated surfactants (SLES, alcohol ethoxylates) can carry trace 1,4-dioxane \u2014 a byproduct EPA flagged as a probable human carcinogen (IARC 2B). Not an added ingredient; a process contaminant."
   ],
   "note": null
  },
@@ -1386,13 +1386,13 @@
    "repro"
   ],
   "reclassified": [
-   "Borax was the 19th-century 'miracle cleaner' — cheap, effective, universally trusted. EU CLP classified it Reproductive toxicant 1B (H360FD) in 2010; it is restricted across Europe while the US still sells it off the shelf."
+   "Borax was the 19th-century 'miracle cleaner' \u2014 cheap, effective, universally trusted. EU CLP classified it Reproductive toxicant 1B (H360FD) in 2010; it is restricted across Europe while the US still sells it off the shelf."
   ],
   "note": "The catch-up poster child: identical GHS hazard classification on both sides of the Atlantic, opposite regulatory outcomes."
  },
  "Diethylene Glycol Monobutyl Ether": {
   "g": "H302,H319",
-  "s": "DEGBE — glycol ether solvent used in heavy-duty oven and floor cleaners. Harmful if swallowed, eye irritant. Glycol-ether class carries reproductive/developmental concern in EU/Prop 65 classifications.",
+  "s": "DEGBE \u2014 glycol ether solvent used in heavy-duty oven and floor cleaners. Harmful if swallowed, eye irritant. Glycol-ether class carries reproductive/developmental concern in EU/Prop 65 classifications.",
   "ev": "Medium",
   "gr": {
    "derm": "C",
@@ -1404,7 +1404,7 @@
    "derm"
   ],
   "reclassified": [
-   "DEGBE is a glycol ether — the same family as 2-butoxyethanol (EGBE). Glycol ethers were adopted as 'safer' replacements for banned solvents through the 1980s-90s; EU CLP later flagged reproductive/developmental toxicity across the class and several are now CA Prop 65-listed. Lower acute toxicity than EGBE, but the class concern stands."
+   "DEGBE is a glycol ether \u2014 the same family as 2-butoxyethanol (EGBE). Glycol ethers were adopted as 'safer' replacements for banned solvents through the 1980s-90s; EU CLP later flagged reproductive/developmental toxicity across the class and several are now CA Prop 65-listed. Lower acute toxicity than EGBE, but the class concern stands."
   ],
   "note": "Common in fume-style oven cleaners where high heat vaporizes the solvent."
  },
@@ -1434,7 +1434,7 @@
  },
  "cocamidopropyl betaine": {
   "g": "Extrapolated",
-  "s": "Extrapolated — amphoteric surfactant, documented contact-allergen class; derm C",
+  "s": "Extrapolated \u2014 amphoteric surfactant, documented contact-allergen class; derm C",
   "ev": "Extrapolated",
   "gr": {
    "derm": "C"
@@ -1485,7 +1485,7 @@
  },
  "alcohol ethoxylates": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within nonionic surfactant class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within nonionic surfactant class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -1497,7 +1497,7 @@
   "ev": "Medium",
   "gr": {},
   "impacts": [],
-  "note": "Graded from PubChem GHS classifications (CID 753) — no H-codes at >=40% consensus; treated as minimal hazard with Medium confidence."
+  "note": "Graded from PubChem GHS classifications (CID 753) \u2014 no H-codes at >=40% consensus; treated as minimal hazard with Medium confidence."
  },
  "sodium gluconate": {
   "g": "Not Classified",
@@ -1505,7 +1505,7 @@
   "ev": "Medium",
   "gr": {},
   "impacts": [],
-  "note": "Graded from PubChem GHS classifications (CID 23672301) — no H-codes at >=40% consensus; treated as minimal hazard with Medium confidence."
+  "note": "Graded from PubChem GHS classifications (CID 23672301) \u2014 no H-codes at >=40% consensus; treated as minimal hazard with Medium confidence."
  },
  "hydrogen peroxide": {
   "g": "H271,H314,H302,H332",
@@ -1615,7 +1615,7 @@
  },
  "DMDM Hydantoin": {
   "g": "H317",
-  "s": "Formaldehyde-releasing preservative. Skin sensitizer — can cause allergic contact dermatitis in formaldehyde-sensitive individuals.",
+  "s": "Formaldehyde-releasing preservative. Skin sensitizer \u2014 can cause allergic contact dermatitis in formaldehyde-sensitive individuals.",
   "ev": "Low",
   "gr": {
    "derm": "D",
@@ -1626,7 +1626,7 @@
    "derm"
   ],
   "reclassified": [
-   "DMDM Hydantoin was marketed as a 'safer' preservative; it releases formaldehyde slowly, inheriting formaldehyde's sensitization profile. EU 2022 lowered labeling threshold to 10 ppm — now must warn 'releases formaldehyde'."
+   "DMDM Hydantoin was marketed as a 'safer' preservative; it releases formaldehyde slowly, inheriting formaldehyde's sensitization profile. EU 2022 lowered labeling threshold to 10 ppm \u2014 now must warn 'releases formaldehyde'."
   ],
   "note": "Common in shampoos, body washes, and liquid hand soaps. Hidden source of formaldehyde exposure for sensitive individuals."
  },
@@ -1663,7 +1663,7 @@
   "ev": "Medium",
   "gr": {},
   "impacts": [],
-  "note": "PPG-26 resolves on PubChem to propylene glycol family (CID 1030) — majority not classified. Treated as minimal hazard, Medium confidence."
+  "note": "PPG-26 resolves on PubChem to propylene glycol family (CID 1030) \u2014 majority not classified. Treated as minimal hazard, Medium confidence."
  },
  "Polysorbate 20": {
   "g": "H317",
@@ -1675,11 +1675,11 @@
   "impacts": [
    "derm"
   ],
-  "note": "Ethoxylated — carries 1,4-dioxane contaminant risk common to the class."
+  "note": "Ethoxylated \u2014 carries 1,4-dioxane contaminant risk common to the class."
  },
  "Aloe Barbadensis Leaf Juice": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within botanical extract class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within botanical extract class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -1687,7 +1687,7 @@
  },
  "Plant-derived Surfactants": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within surfactant class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within surfactant class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -1720,7 +1720,7 @@
   "ev": "Medium",
   "gr": {},
   "impacts": [],
-  "note": "Extrapolated: PubChem GHS for Calcium carbonate (CID 10112) — no hazard criteria. Pumice = volcanic silicate glass, inert abrasive; no GHS record on PubChem."
+  "note": "Extrapolated: PubChem GHS for Calcium carbonate (CID 10112) \u2014 no hazard criteria. Pumice = volcanic silicate glass, inert abrasive; no GHS record on PubChem."
  },
  "Formaldehyde": {
   "g": "H350,H317,H341",
@@ -1774,11 +1774,11 @@
   "ev": "Medium",
   "gr": {},
   "impacts": [],
-  "note": "Graded from PubChem GHS classifications (CID 11021984) — only sub-threshold H290 metal-corrosion codes; no health hazard consensus."
+  "note": "Graded from PubChem GHS classifications (CID 11021984) \u2014 only sub-threshold H290 metal-corrosion codes; no health hazard consensus."
  },
  "Copolymer of Acrylic Maleic and Sulphonic Acids": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within polymer class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within polymer class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -1797,13 +1797,13 @@
    "aqua"
   ],
   "reclassified": [
-   "Ethoxylated surfactants can carry trace 1,4-dioxane (IARC 2B) — a process contaminant, not an added ingredient."
+   "Ethoxylated surfactants can carry trace 1,4-dioxane (IARC 2B) \u2014 a process contaminant, not an added ingredient."
   ],
   "note": null
  },
  "PEG/PPG/Propylheptyl Ether": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within polyethylene glycol class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within polyethylene glycol class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -1836,7 +1836,7 @@
  },
  "Subtilisin": {
   "g": "H315,H319,H334",
-  "s": "Protease enzyme (detergent). Respiratory sensitizer — well-documented occupational asthma from detergent enzymes.",
+  "s": "Protease enzyme (detergent). Respiratory sensitizer \u2014 well-documented occupational asthma from detergent enzymes.",
   "ev": "High",
   "gr": {
    "resp": "D",
@@ -1847,7 +1847,7 @@
    "allerg"
   ],
   "reclassified": [
-   "Enzyme additives (1960s–) were marketed as a cleaning breakthrough; occupational studies later linked protease exposure to sensitization and asthma in workers."
+   "Enzyme additives (1960s\u2013) were marketed as a cleaning breakthrough; occupational studies later linked protease exposure to sensitization and asthma in workers."
   ],
   "note": null
  },
@@ -1867,7 +1867,7 @@
  },
  "Transition Metal Catalyst": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within catalyst (undisclosed) class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within catalyst (undisclosed) class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -1875,7 +1875,7 @@
  },
  "Acid Blue 182": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within hair dye (acid blue class) class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within hair dye (acid blue class) class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -1883,7 +1883,7 @@
  },
  "Polyvinyl Alcohol Polymer": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within polymer class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within polymer class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -1905,7 +1905,7 @@
  },
  "PEG-150": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within polyethylene glycol class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within polyethylene glycol class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -1913,7 +1913,7 @@
  },
  "Proprietary Polymer Solution": {
   "g": "Extrapolated",
-  "s": "Insufficient direct GHS data — graded by analogy within polymer class",
+  "s": "Insufficient direct GHS data \u2014 graded by analogy within polymer class",
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
@@ -1978,7 +1978,7 @@
   "impacts": [
    "allerg"
   ],
-  "note": "Biological mixture — no PubChem entry. Flag as sensitization-possible for heavily exposed workers (enzyme-induced asthma documented in enzyme industry). Impact tag normalized sens->allerg (schema fix, 2026-09-17): the validator's canonical impact set has no 'sens'; sensitization is carried as 'allerg'."
+  "note": "Biological mixture \u2014 no PubChem entry. Flag as sensitization-possible for heavily exposed workers (enzyme-induced asthma documented in enzyme industry). Impact tag normalized sens->allerg (schema fix, 2026-09-17): the validator's canonical impact set has no 'sens'; sensitization is carried as 'allerg'."
  },
  "Linalool": {
   "g": "H315,H317",
@@ -2008,7 +2008,7 @@
  },
  "Methylchloroisothiazolinone": {
   "g": "H301,H311,H314,H317,H318,H400,H410",
-  "s": "CMIT — the chlorine half of the CMIT/MIT preservative pair. Corrosive, toxic if swallowed or in contact with skin, strong skin sensitizer, very toxic to aquatic life.",
+  "s": "CMIT \u2014 the chlorine half of the CMIT/MIT preservative pair. Corrosive, toxic if swallowed or in contact with skin, strong skin sensitizer, very toxic to aquatic life.",
   "ev": "High",
   "gr": {
    "derm": "F",
@@ -2021,7 +2021,7 @@
    "aqua"
   ],
   "reclassified": [
-   "CMIT/MIT (Kathon) was the workhorse preservative of the 1990s–2000s; an epidemic of contact allergy made it the archetype of 'the preservative is the hazard', now restricted in EU leave-on products."
+   "CMIT/MIT (Kathon) was the workhorse preservative of the 1990s\u20132000s; an epidemic of contact allergy made it the archetype of 'the preservative is the hazard', now restricted in EU leave-on products."
   ],
   "note": "Graded from ECHA C&L via PubChem (CID 33344): H314 98.3%, H317 98.4%, H400 94.5%, H410 40.3% consensus. Paired with Methylisothiazolinone (MIT) at ~3:1 in the common preservative blend."
  },
@@ -2039,7 +2039,7 @@
    "derm",
    "resp"
   ],
-  "note": "Graded from ECHA C&L via PubChem (CID 23266, disodium metasilicate / 'Sodium Silicate'): H314 >99.9%, H335 98.6%, H318 61.5%, H315 72.6% consensus. Dataset has a separate 'Sodium Silicate' entry (alkaline builder, H314,H335) — kept distinct because this is the metasilicate CAS 6834-92-0 used as a hard-surface builder."
+  "note": "Graded from ECHA C&L via PubChem (CID 23266, disodium metasilicate / 'Sodium Silicate'): H314 >99.9%, H335 98.6%, H318 61.5%, H315 72.6% consensus. Dataset has a separate 'Sodium Silicate' entry (alkaline builder, H314,H335) \u2014 kept distinct because this is the metasilicate CAS 6834-92-0 used as a hard-surface builder."
  },
  "Tetrasodium EDTA": {
   "g": "H302,H315,H318,H319,H332,H335,H371,H373",
@@ -2081,7 +2081,7 @@
   "impacts": [
    "derm"
   ],
-  "note": "ECHA C&L via PubChem (CID 517055): H319 at 37.9% consensus — below the house's strict >=40% consensus bar for graded dims, so the grade is carried by precedent (Citric Acid / H319 -> derm C, eye-route irritation) rather than the consensus rule. Intentional food-grade preservative; low systemic hazard."
+  "note": "ECHA C&L via PubChem (CID 517055): H319 at 37.9% consensus \u2014 below the house's strict >=40% consensus bar for graded dims, so the grade is carried by precedent (Citric Acid / H319 -> derm C, eye-route irritation) rather than the consensus rule. Intentional food-grade preservative; low systemic hazard."
  },
  "Acrylic Copolymer": {
   "g": "Not Classified",
@@ -2089,7 +2089,7 @@
   "ev": "Low",
   "gr": {},
   "impacts": [],
-  "note": "Polymer/UVCB — PubChem name lookup resolves no CID and therefore no GHS classification. Recorded as unclassified rather than assigned an unsourced grade: high-MW polymers are generally not bioavailable. Disclosed by Reckitt SmartLabel for Resolve."
+  "note": "Polymer/UVCB \u2014 PubChem name lookup resolves no CID and therefore no GHS classification. Recorded as unclassified rather than assigned an unsourced grade: high-MW polymers are generally not bioavailable. Disclosed by Reckitt SmartLabel for Resolve."
  },
  "Amino-Functional Silicone": {
   "g": "Not Classified",
@@ -2097,7 +2097,7 @@
   "ev": "Low",
   "gr": {},
   "impacts": [],
-  "note": "Polymer/UVCB — no PubChem GHS classification available. Recorded unclassified rather than guessed. Disclosed by Reckitt SmartLabel for Resolve. Distinct from 'Dimethicone' (non-functional PDMS)."
+  "note": "Polymer/UVCB \u2014 no PubChem GHS classification available. Recorded unclassified rather than guessed. Disclosed by Reckitt SmartLabel for Resolve. Distinct from 'Dimethicone' (non-functional PDMS)."
  },
  "Polyglyceryl-2 Oleate": {
   "g": "Not Classified",
@@ -2117,7 +2117,7 @@
   "impacts": [
    "derm"
   ],
-  "note": "UVCB — no PubChem CID, so no ECHA consensus percentages are available. Grade extrapolated conservatively from the Rust-Oleum Krud Kutter SDS classification block (H318, H302, H335 at 1.0-2.5% in the product) and class-typical behaviour for C9-11 alcohol ethoxylates. Pending verification; NOT a consensus-derived grade."
+  "note": "UVCB \u2014 no PubChem CID, so no ECHA consensus percentages are available. Grade extrapolated conservatively from the Rust-Oleum Krud Kutter SDS classification block (H318, H302, H335 at 1.0-2.5% in the product) and class-typical behaviour for C9-11 alcohol ethoxylates. Pending verification; NOT a consensus-derived grade."
  },
  "Mineral Oil": {
   "g": "H304",
@@ -2141,7 +2141,7 @@
   "ev": "High",
   "gr": {},
   "impacts": [],
-  "note": "Physical hazard only — H220 (extremely flammable gas) per supplier SDS; no health-hazard grade applies. Propellant in the aerosol, not a cleaning active. The dataset already carries Butane and Propane separately."
+  "note": "Physical hazard only \u2014 H220 (extremely flammable gas) per supplier SDS; no health-hazard grade applies. Propellant in the aerosol, not a cleaning active. The dataset already carries Butane and Propane separately."
  },
  "Hexoxyethanol": {
   "g": "H227,H302,H311,H312,H314,H315,H318,H320,H371",
@@ -2205,7 +2205,7 @@
    "repro"
   ],
   "reclassified": [
-   "Lilial was a ubiquitous 'clean' floral scent note. Reclassified as a CMR reproductive toxicant (H360Fd) and banned in EU cosmetics in 2022 (Reg. 2022/1181) — yet it is still disclosed in some US cleaning products, with no equivalent US federal restriction."
+   "Lilial was a ubiquitous 'clean' floral scent note. Reclassified as a CMR reproductive toxicant (H360Fd) and banned in EU cosmetics in 2022 (Reg. 2022/1181) \u2014 yet it is still disclosed in some US cleaning products, with no equivalent US federal restriction."
   ],
   "note": "Graded from ECHA C&L via PubChem (CID 228987, Lilial): H302 98.7%, H317 99.6%, H315 90.9%, H361 84.9%, H411 84.2% consensus; H360Fd appears at 10.9%, below the >=40% bar, but H361 (84.9%) carries the repro flag. Disclosed as a fragrance component by Reckitt SmartLabel for Woolite Delicates."
  },
@@ -2264,7 +2264,7 @@
   "ev": "Low",
   "gr": {},
   "impacts": [],
-  "note": "Polymer/UVCB — no PubChem entry for CAS 68479-09-4 (PUG REST 404). Recorded unclassified rather than guessed. Listed in the Church & Dwight SDS for OxiClean Versatile Stain Remover."
+  "note": "Polymer/UVCB \u2014 no PubChem entry for CAS 68479-09-4 (PUG REST 404). Recorded unclassified rather than guessed. Listed in the Church & Dwight SDS for OxiClean Versatile Stain Remover."
  },
  "Formaldehyde-Melamine-Sodium Bisulfite Copolymer": {
   "g": "Not Classified",
@@ -2272,7 +2272,7 @@
   "ev": "Low",
   "gr": {},
   "impacts": [],
-  "note": "Polymer/UVCB — no PubChem CID. P&G's SDS classifies the finished Magic Eraser as 'Not Classified' (no hazardous ingredients listed); the copolymer identity comes from the P&G MSDS composition section (reproduced in university chemical-safety listings). Recorded unclassified rather than guessed; the melamine-formaldehyde class is why it is tracked at all."
+  "note": "Polymer/UVCB \u2014 no PubChem CID. P&G's SDS classifies the finished Magic Eraser as 'Not Classified' (no hazardous ingredients listed); the copolymer identity comes from the P&G MSDS composition section (reproduced in university chemical-safety listings). Recorded unclassified rather than guessed; the melamine-formaldehyde class is why it is tracked at all."
  },
  "Alkyl C12-18 Dimethylbenzyl Ammonium Chloride": {
   "g": "Extrapolated",
@@ -2280,7 +2280,7 @@
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
-  "note": "UVCB quaternary-ammonium blend (CAS 53516-76-0) — no discrete PubChem CID. Graded by class analogy to the existing 'Benzalkonium Chloride'/'Quaternary Ammonium' entries (derm F, env F, allerg/resp); kept as its own record so the Clorox Wipes disclosure stays traceable. No invented grade."
+  "note": "UVCB quaternary-ammonium blend (CAS 53516-76-0) \u2014 no discrete PubChem CID. Graded by class analogy to the existing 'Benzalkonium Chloride'/'Quaternary Ammonium' entries (derm F, env F, allerg/resp); kept as its own record so the Clorox Wipes disclosure stays traceable. No invented grade."
  },
  "Alkyl C12-14 Dimethylethylbenzyl Ammonium Chloride": {
   "g": "Extrapolated",
@@ -2288,7 +2288,7 @@
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
-  "note": "UVCB quaternary-ammonium blend (CAS 85409-23-0) — no discrete PubChem CID. Graded by class analogy to the existing 'Benzalkonium Chloride'/'Quaternary Ammonium' entries; kept as its own record for traceability. No invented grade."
+  "note": "UVCB quaternary-ammonium blend (CAS 85409-23-0) \u2014 no discrete PubChem CID. Graded by class analogy to the existing 'Benzalkonium Chloride'/'Quaternary Ammonium' entries; kept as its own record for traceability. No invented grade."
  },
  "TEA Cocoate": {
   "g": "Extrapolated",
@@ -2296,7 +2296,7 @@
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
-  "note": "UVCB (CAS 61790-64-5) — no PubChem entry (PUG REST 404). Soap-type anionic surfactant; recorded unclassified/extrapolated rather than assigned an invented grade. Disclosed by Reckitt SmartLabel for Woolite Delicates."
+  "note": "UVCB (CAS 61790-64-5) \u2014 no PubChem entry (PUG REST 404). Soap-type anionic surfactant; recorded unclassified/extrapolated rather than assigned an invented grade. Disclosed by Reckitt SmartLabel for Woolite Delicates."
  },
  "C10-16 Pareth": {
   "g": "Extrapolated",
@@ -2304,7 +2304,7 @@
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
-  "note": "UVCB (CAS 68002-97-1) — no PubChem entry. Class-analogous to the existing 'Ethoxylated Alcohol'/'Alcohol Ethoxylate' entries (derm C, env C; trace 1,4-dioxane from ethoxylation). Recorded extrapolated, not graded. Disclosed by Reckitt SmartLabel for Woolite Delicates."
+  "note": "UVCB (CAS 68002-97-1) \u2014 no PubChem entry. Class-analogous to the existing 'Ethoxylated Alcohol'/'Alcohol Ethoxylate' entries (derm C, env C; trace 1,4-dioxane from ethoxylation). Recorded extrapolated, not graded. Disclosed by Reckitt SmartLabel for Woolite Delicates."
  },
  "C12-14 Alcohols Ethoxylated Propoxylated": {
   "g": "Extrapolated",
@@ -2312,7 +2312,7 @@
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
-  "note": "UVCB — no PubChem CID. Class-analogous to 'Ethoxylated Alcohol'. Recorded extrapolated rather than graded. Disclosed by Clorox SmartLabel for Disinfecting Wipes."
+  "note": "UVCB \u2014 no PubChem CID. Class-analogous to 'Ethoxylated Alcohol'. Recorded extrapolated rather than graded. Disclosed by Clorox SmartLabel for Disinfecting Wipes."
  },
  "Sodium (C10-16) Alkylbenzenesulfonate": {
   "g": "Extrapolated",
@@ -2320,7 +2320,7 @@
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
-  "note": "UVCB (CAS 68081-81-2) — no PubChem entry. Class-analogous to the existing 'Sodium Dodecylbenzenesulfonate' entry (derm D, env C). Recorded extrapolated, not graded. Disclosed by Reckitt SmartLabel for Woolite Delicates."
+  "note": "UVCB (CAS 68081-81-2) \u2014 no PubChem entry. Class-analogous to the existing 'Sodium Dodecylbenzenesulfonate' entry (derm D, env C). Recorded extrapolated, not graded. Disclosed by Reckitt SmartLabel for Woolite Delicates."
  },
  "Laureth-12": {
   "g": "H318,H302",
@@ -2340,7 +2340,7 @@
   "ev": "Low",
   "gr": {},
   "impacts": [],
-  "note": "UVCB (CAS 67701-30-8). PubChem PUG REST returns 404 for both the name and the CAS — no discrete CID and therefore no GHS classification. Recorded unclassified rather than guessed, matching the house treatment of polymer/UVCB entries (see 'Acrylic Copolymer')."
+  "note": "UVCB (CAS 67701-30-8). PubChem PUG REST returns 404 for both the name and the CAS \u2014 no discrete CID and therefore no GHS classification. Recorded unclassified rather than guessed, matching the house treatment of polymer/UVCB entries (see 'Acrylic Copolymer')."
  },
  "Polyethyleneimine Alkoxylated": {
   "g": "Not Classified",
@@ -2348,7 +2348,7 @@
   "ev": "Low",
   "gr": {},
   "impacts": [],
-  "note": "Polymer/UVCB — PubChem name lookup resolves no CID (PUG REST 404) and therefore no GHS classification. Recorded unclassified rather than assigned an unsourced grade; high-MW polymers are generally not bioavailable. Disclosed by Henkel SmartLabel for Persil ProClean."
+  "note": "Polymer/UVCB \u2014 PubChem name lookup resolves no CID (PUG REST 404) and therefore no GHS classification. Recorded unclassified rather than assigned an unsourced grade; high-MW polymers are generally not bioavailable. Disclosed by Henkel SmartLabel for Persil ProClean."
  },
  "Sodium Metaborate": {
   "g": "H360FD,H361,H319",
@@ -2381,7 +2381,7 @@
   "ev": "Low",
   "gr": {},
   "impacts": [],
-  "note": "Polymer/UVCB — PubChem name lookup resolves no CID (PUG REST 404) and therefore no GHS classification. Recorded unclassified rather than guessed."
+  "note": "Polymer/UVCB \u2014 PubChem name lookup resolves no CID (PUG REST 404) and therefore no GHS classification. Recorded unclassified rather than guessed."
  },
  "Disodium Distyrylbiphenyl Disulfonate": {
   "g": "H319,H318",
@@ -2401,7 +2401,7 @@
   "ev": "Low",
   "gr": {},
   "impacts": [],
-  "note": "Polymer/UVCB — no PubChem entry for this trade description. Recorded unclassified rather than guessed."
+  "note": "Polymer/UVCB \u2014 no PubChem entry for this trade description. Recorded unclassified rather than guessed."
  },
  "Mannanase Enzyme": {
   "g": "Extrapolated",
@@ -2414,7 +2414,7 @@
    "allerg",
    "resp"
   ],
-  "note": "No PubChem CID (PUG VIEW 404). Extrapolated by enzyme class, consistent with the existing 'Enzymes' and 'Amylase Enzyme' entries — detergent enzyme proteins are respiratory sensitizers (H334 class hazard). Flagged for verification."
+  "note": "No PubChem CID (PUG VIEW 404). Extrapolated by enzyme class, consistent with the existing 'Enzymes' and 'Amylase Enzyme' entries \u2014 detergent enzyme proteins are respiratory sensitizers (H334 class hazard). Flagged for verification."
  },
  "Cellulase Enzyme": {
   "g": "H334",
@@ -2455,7 +2455,7 @@
    "aqua"
   ],
   "reclassified": [
-   "Sodium chlorate is not added to bleach cleaners — it forms as the hypochlorite decays in storage (3 NaOCl -> NaClO3 + 2 NaCl). It appears on the label as a disclosed component of Clorox Clean-Up."
+   "Sodium chlorate is not added to bleach cleaners \u2014 it forms as the hypochlorite decays in storage (3 NaOCl -> NaClO3 + 2 NaCl). It appears on the label as a disclosed component of Clorox Clean-Up."
   ],
   "note": "Graded from PubChem GHS (CID 516902): H411 98.9% -> env D; H271 100% strong oxidizer (physical hazard, not a health dimension); H301/H302 acute oral toxicity. Chlorate formation from stored hypochlorite is documented in the OxyChem Sodium Hypochlorite Handbook and Olin's Sodium Hypochlorite Product Stewardship Manual."
  },
@@ -2473,7 +2473,7 @@
    "aqua"
   ],
   "reclassified": [
-   "Benzophenone is prohibited in EU cosmetics (Annex II, Entry 1703) yet appears on the US disclosure label of a household bleach spray cleaner — where the cosmetics ban does not reach."
+   "Benzophenone is prohibited in EU cosmetics (Annex II, Entry 1703) yet appears on the US disclosure label of a household bleach spray cleaner \u2014 where the cosmetics ban does not reach."
   ],
   "note": "Graded from PubChem GHS (CID 3102): H350 (harmonized Carc. 1B, 'May cause cancer') and H351; H373 37.4% -> organ C; H411 74.8% -> env D. Clorox SmartLabel flags it with the DL symbol (California Cleaning Products Right to Know designated list)."
  },
@@ -2518,7 +2518,7 @@
    "derm"
   ],
   "sens": true,
-  "note": "Graded from PubChem GHS (CID 444305, 'L-Tartaric acid'): H315 54.3%, H319 57.8%, H317 42.5%, H318 41.2%, H335 55.4% consensus. ECHA C&L notifier consensus is unusually harsh for a GRAS food acid — recorded as reported rather than softened."
+  "note": "Graded from PubChem GHS (CID 444305, 'L-Tartaric acid'): H315 54.3%, H319 57.8%, H317 42.5%, H318 41.2%, H335 55.4% consensus. ECHA C&L notifier consensus is unusually harsh for a GRAS food acid \u2014 recorded as reported rather than softened."
  },
  "Formic Acid": {
   "g": "H314,H226,H318,H302",
@@ -2553,7 +2553,7 @@
   "ev": "Extrapolated",
   "gr": {},
   "impacts": [],
-  "note": "UVCB (CAS 919-30-2). PubChem returns no CID for the name (PUG REST 404). Recorded extrapolated by quat class rather than invented — the class hazards are skin/eye irritation and aquatic toxicity (see the existing 'Quaternary Ammonium' entry)."
+  "note": "UVCB (CAS 919-30-2). PubChem returns no CID for the name (PUG REST 404). Recorded extrapolated by quat class rather than invented \u2014 the class hazards are skin/eye irritation and aquatic toxicity (see the existing 'Quaternary Ammonium' entry)."
  },
  "Polyquaternium-33": {
   "g": "Not Classified",
@@ -2561,7 +2561,7 @@
   "ev": "Low",
   "gr": {},
   "impacts": [],
-  "note": "Polymer/UVCB — PubChem name lookup resolves no CID (PUG REST 404) and therefore no GHS classification. Recorded unclassified rather than guessed."
+  "note": "Polymer/UVCB \u2014 PubChem name lookup resolves no CID (PUG REST 404) and therefore no GHS classification. Recorded unclassified rather than guessed."
  },
  "Calcium Chloride": {
   "g": "H319",
@@ -2632,5 +2632,162 @@
   "gr": {},
   "impacts": [],
   "note": "Polymer/UVCB - PubChem name lookup resolves no CID and therefore no GHS classification. Recorded unclassified rather than assigned an unsourced grade. Disclosed by P&G SmartLabel for Ivory Concentrated Dishwashing Liquid."
+ },
+ "Petroleum Distillates, Hydrotreated Light": {
+  "g": "Not Classified",
+  "s": "Light hydrotreated petroleum distillate solvent (UVCB).",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB petroleum stream (CAS 64742-47-8). PubChem PUG REST returns 404 for both the CAS and the descriptive name - no discrete CID, therefore no GHS classification is assigned. Manufacturer SDS (Goo Gone, rev. 9/19/2024) classifies Asp. Tox. 1 (H304, aspiration hazard if swallowed) - aspiration hazard is outside the graded dimensions, so no dimension grade is set. Disclosed by Goo Gone for Goo Gone Original."
+ },
+ "Orange Oil": {
+  "g": "H304,H315,H317,H318,H411",
+  "s": "Citrus terpene oil - aspiration hazard, skin sensitizer, serious eye damage, aquatic toxicity.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "env": "D"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 62161, title 'Orange Oil'): dominant ECHA C&L block (10 notifications / 262 reports) reports H304 89.7%, H315 90.5%, H317 90.5% (skin sensitization -> derm D + allerg), H318 44.7% (serious eye damage -> derm D), H411 90.1% (aquatic long-term -> env D). H226 (flammable liquid) at 39.7% falls below the >=40% consensus threshold and is not graded. Disclosed by Goo Gone for Goo Gone Original."
+ },
+ "Aliphatic Ether Alcohol": {
+  "g": "Not Classified",
+  "s": "Solvent disclosed by generic class name only; identity withheld.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Name withheld by the manufacturer as a trade secret - no CAS, no discrete identity and no PubChem CID, so no classification is possible. Recorded unclassified rather than guessed. Disclosed on the Goo Gone Original ingredient list."
+ },
+ "Glycol Ether": {
+  "g": "Not Classified",
+  "s": "Solvent disclosed by generic class name only; identity withheld.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Name withheld by the manufacturer as a trade secret - no CAS, no discrete identity and no PubChem CID, so no classification is possible. Recorded unclassified rather than guessed. Disclosed on the Goo Gone Original ingredient list. Note the glycol-ether class carries reproductive/developmental concern in EU/Prop 65 classifications (see 'Diethylene Glycol Monobutyl Ether'), but the specific substance here is not identified and no class grade is assigned."
+ },
+ "Solvent Orange 60": {
+  "g": "Not Classified",
+  "s": "Orange dye colorant; no GHS hazard criteria met.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 81344, title 'Solvent Orange 60'): 2229 of 2274 companies (98.0%) report not meeting GHS hazard criteria. Disclosed by Goo Gone for Goo Gone Original."
+ },
+ "Tripropylene Glycol Butyl Ether": {
+  "g": "Not Classified",
+  "s": "Glycol ether solvent (PPG-3 butyl ether); no GHS hazard classification in PubChem.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "PubChem CID 60196418 (title 'Tripropylene glycol n-butyl ether') carries no GHS Classification section, so no H-codes are available. Recorded unclassified rather than guessed. Disclosed by SC Johnson for Shout Advanced Stain Remover."
+ },
+ "Polyester Sheet": {
+  "g": "Not Classified",
+  "s": "Substrate material (nonwoven polyester carrier sheet), not a chemical substance.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "The dryer-sheet substrate itself, disclosed as a material rather than a substance. No CAS, no PubChem CID and no GHS classification applies. Disclosed by P&G for Bounce Fabric Softener Sheets."
+ },
+ "Dialkylester Dimethyl Ammonium Methosulfate": {
+  "g": "Not Classified",
+  "s": "Quaternary ammonium fabric-softener active, disclosed by generic class name.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Proprietary quaternary ammonium softener active disclosed only by generic class name - no CAS and no discrete PubChem CID, so no classification is assigned. Recorded unclassified rather than guessed. Disclosed by P&G for Bounce Fabric Softener Sheets."
+ },
+ "Fatty Acids, C16-18 and C18-unsatd.": {
+  "g": "Not Classified",
+  "s": "Fatty acid blend (UVCB) used as a softener carrier.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB (CAS 67701-37-5 region). PubChem PUG REST resolves no discrete CID for the blend, therefore no GHS classification. Recorded unclassified rather than guessed, matching the house treatment of UVCB entries (see 'Fatty Acids, C8-18 and C18-Unsaturated Sodium Salts'). Disclosed by P&G for Bounce Fabric Softener Sheets."
+ },
+ "Bentonite": {
+  "g": "Not Classified",
+  "s": "Mineral clay (montmorillonite) used as a softener carrier.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Mineral clay (CAS 1302-78-9). PubChem PUG REST returns 404 for the name - no discrete CID resolved, therefore no GHS classification is assigned. Recorded unclassified rather than guessed. Respirable crystalline silica is a separate concern that depends on the specific grade's quartz content, which is not disclosed on the label. Disclosed by P&G for Bounce Fabric Softener Sheets."
+ },
+ "Undeceth-3": {
+  "g": "H302,H318",
+  "s": "Ethoxylated undecyl alcohol surfactant - harmful if swallowed, serious eye damage.",
+  "ev": "Low",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 61930, title '2-Undecyloxy-1-ethanol'): two single-company ECHA C&L notifications (1 notification each) report H302 100% and H318 100% (serious eye damage -> derm D), plus H319 100%. Low confidence because the denominator is one company per notification. Note the CID is the mono-ethoxylate homolog while Undeceth-3 denotes the 3-EO homolog - the CAS 34398-01-1 covers the ethoxylated undecyl alcohol family. Disclosed by The Works for The Works Toilet Bowl Cleaner."
+ },
+ "Methenamine": {
+  "g": "H317",
+  "s": "Skin sensitizer; corrosion inhibitor (hexamethylenetetramine).",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": "Graded from PubChem GHS (CID 4101, title 'Hexamethylenetetramine' - a synonym of methenamine): the dominant ECHA C&L block (19 notifications / 1051 reports) reports H317 100% (skin sensitization -> derm C + allerg) and H228 100% (flammable solid, a physical hazard outside the graded dimensions). A second block from only 2 notifications reports H302/H314/H334/H351 at 100% - a 2-notification fringe whose percentages are within-group, not global consensus, so those are NOT graded here. Disclosed by The Works for The Works Toilet Bowl Cleaner."
+ },
+ "CI Acid Blue 145": {
+  "g": "Not Classified",
+  "s": "Blue dye colorant; no GHS hazard criteria met.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 62606, title 'C.I. Acid Blue 145'): 5 of 5 companies report not meeting GHS hazard criteria. Disclosed by The Works for The Works Toilet Bowl Cleaner."
+ },
+ "Ethoxylated C8-18 and C18-unsatd. Alkylamines": {
+  "g": "Not Classified",
+  "s": "Ethoxylated alkylamine surfactant/corrosion inhibitor (UVCB).",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB (CAS 68439-72-5). PubChem PUG REST returns 404 for the CAS - no discrete CID, therefore no GHS classification is assigned. Recorded unclassified rather than guessed. Disclosed by The Works for The Works Toilet Bowl Cleaner."
+ },
+ "Diethylene Glycol": {
+  "g": "H302",
+  "s": "Harmful if swallowed; glycol solvent/corrosion inhibitor.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 8117, title 'Diethylene Glycol'): the dominant ECHA C&L block (38 notifications / 5754 reports) reports H302 100% (harmful if swallowed - acute oral toxicity is not one of the graded dimensions). Separate blocks report H361 (reproductive toxicity) and H372 (organ toxicity, repeated exposure) WITHOUT an aggregated ECHA consensus line, so no repro/organ grade is assigned here; the classifications are noted for completeness. Disclosed by The Works for The Works Toilet Bowl Cleaner."
+ },
+ "Nonoxynol": {
+  "g": "H315,H412",
+  "s": "Nonylphenol ethoxylate surfactant - skin irritant, harmful to aquatic life.",
+  "ev": "Low",
+  "gr": {
+   "derm": "C",
+   "env": "C"
+  },
+  "impacts": [
+   "derm",
+   "aqua"
+  ],
+  "note": "Graded from PubChem GHS (CID 24773, title '4-Nonylphenol diethoxylate', representative of the nonoxynol/NPE class): dominant ECHA C&L block reports H315 100% (skin irritation -> derm C), H319 100%, H335 33.3% (below threshold), H412 100% (aquatic long-term -> env C). Low confidence - the block rests on 2 notifications / 3 reports. Additional blocks report H361 (reproductive toxicity), H400 and H411 without a consensus line. Nonylphenol ethoxylates are a restricted class in the EU, but no class-based grade is assigned here. Disclosed by The Works for The Works Toilet Bowl Cleaner."
+ },
+ "Turpentine": {
+  "g": "Not Classified",
+  "s": "Terpene solvent (UVCB) disclosed as a fragrance ingredient.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB (CAS 8006-64-2). PubChem PUG REST returns 404 for the name, the CAS and common variants ('turpentine oil', 'oil of turpentine') - no discrete CID, therefore no GHS classification is assigned. Recorded unclassified rather than guessed. Disclosed by The Works for The Works Toilet Bowl Cleaner."
  }
 }
