@@ -2384,7 +2384,8 @@
   "source_url": "https://www.purex.com/all-products/liquid-laundry-detergent/purex-free-and-clear-for-sensitive-skin.html",
   "added": "2026-09-20",
   "updated": "2026-09-20",
-  "note": "Marketed for sensitive skin as dye- and perfume-free, yet still contains methylisothiazolinone (a potent contact allergen) and sodium laureth sulfate. Same ingredient set disclosed on the Canadian label and US retail listings."
+  "note": "Marketed for sensitive skin as dye- and perfume-free, yet still contains methylisothiazolinone (a potent contact allergen) and sodium laureth sulfate. Same ingredient set disclosed on the Canadian label and US retail listings.",
+  "heritage": false
  },
  {
   "name": "Spray 'n Wash Laundry Stain Remover",
@@ -2409,7 +2410,8 @@
   "source_url": "https://rbnainfo.com/product.php?productLineId=1490",
   "added": "2026-09-20",
   "updated": "2026-09-20",
-  "note": "Discloses sodium tetraborate decahydrate (borax) as a sequestering agent - the same substance EU CLP classifies Reproductive toxicant 1B (H360FD) and restricts for consumer supply, while it remains routine in US stain removers."
+  "note": "Discloses sodium tetraborate decahydrate (borax) as a sequestering agent - the same substance EU CLP classifies Reproductive toxicant 1B (H360FD) and restricts for consumer supply, while it remains routine in US stain removers.",
+  "heritage": false
  },
  {
   "name": "Ivory Concentrated Dishwashing Liquid, Classic Scent",
@@ -2431,7 +2433,8 @@
   "source_url": "https://smartlabel.pg.com/en-CA/00037000751007.html",
   "added": "2026-09-20",
   "updated": "2026-09-20",
-  "note": "Ivory is P&G's oldest brand name (the 1879 soap bar); the dish liquid's own launch year is not verified, so no heritage year is claimed. Formula carries methylisothiazolinone and phenoxyethanol."
+  "note": "Ivory is P&G's oldest brand name (the 1879 soap bar); the dish liquid's own launch year is not verified, so no heritage year is claimed. Formula carries methylisothiazolinone and phenoxyethanol.",
+  "heritage": false
  },
  {
   "name": "Fantastik Disinfectant Multi-Purpose Cleaner, Fresh Scent",
@@ -2451,6 +2454,7 @@
   "source_url": "https://whatsinsidescjohnson.com/en-us/brands/fantastik/all-purpose-cleaner-fresh-scent",
   "added": "2026-09-20",
   "updated": "2026-09-20",
-  "note": "Registered disinfectant (EPA Reg. 4822-613). The active quaternary ammonium compound is not further specified on the disclosure page. Fragrance components include butylphenyl methylpropional (Lilial), an EU-banned CMR fragrance, plus hexyl cinnamal, an EU-labeled fragrance allergen."
+  "note": "Registered disinfectant (EPA Reg. 4822-613). The active quaternary ammonium compound is not further specified on the disclosure page. Fragrance components include butylphenyl methylpropional (Lilial), an EU-banned CMR fragrance, plus hexyl cinnamal, an EU-labeled fragrance allergen.",
+  "heritage": false
  }
 ]
