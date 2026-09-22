@@ -2789,5 +2789,263 @@
   "gr": {},
   "impacts": [],
   "note": "UVCB (CAS 8006-64-2). PubChem PUG REST returns 404 for the name, the CAS and common variants ('turpentine oil', 'oil of turpentine') - no discrete CID, therefore no GHS classification is assigned. Recorded unclassified rather than guessed. Disclosed by The Works for The Works Toilet Bowl Cleaner."
+ },
+ "MEA C10-16 Alkylbenzenesulfonate": {
+  "g": "Extrapolated",
+  "s": "Anionic LAS surfactant (monoethanolamine salt). UVCB; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB (CAS 68908-95-0 class) - PubChem name lookup resolves no CID (PUG REST 404) and therefore no GHS classification. Class-analogous to the existing 'Sodium (C10-16) Alkylbenzenesulfonate' and 'Sodium Dodecylbenzenesulfonate' entries (anionic LAS: skin/eye irritant, aquatic toxicity). Recorded extrapolated, not graded. Disclosed by P&G SmartLabel for Tide PODS."
+ },
+ "MEA Laureth Sulfate": {
+  "g": "Extrapolated",
+  "s": "Ethoxylated anionic surfactant (monoethanolamine salt). UVCB; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB - PubChem name lookup resolves no CID (PUG REST 404). Class-analogous to the existing alcohol-ethoxylate entries (derm C, env C; trace 1,4-dioxane from ethoxylation). Recorded extrapolated, not graded. Disclosed by P&G SmartLabel for Tide PODS."
+ },
+ "MEA Salts of C12-18 Fatty Acids": {
+  "g": "Extrapolated",
+  "s": "Soap (monoethanolamine salts of C12-18 fatty acids). UVCB; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB - PubChem name lookup resolves no CID (PUG REST 404). Class-analogous to the existing soap-salt entries ('Saponified Coconut Oil', 'TEA Cocoate'): not classified; mild eye irritant at high concentration. Recorded extrapolated. Disclosed by P&G SmartLabel for Tide PODS."
+ },
+ "MEA-citrate": {
+  "g": "Extrapolated",
+  "s": "Monoethanolamine salt of citric acid (buffer/chelant). No discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "No PubChem CID for the salt (PUG REST 404). Class-analogous to the existing 'Citric Acid' entry (H319 84.7% -> derm C). Recorded extrapolated, not graded. Disclosed by P&G SmartLabel for Tide PODS."
+ },
+ "PEG-136 Polyvinyl Alcohol": {
+  "g": "Not Classified",
+  "s": "Polymeric pod-film plasticizer (UVCB). No discrete PubChem CID.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Polymer/UVCB - PubChem name lookup resolves no CID (PUG REST 404) and therefore no GHS classification. High-MW polymer, generally not bioavailable. Recorded unclassified rather than assigned an unsourced grade. Disclosed by P&G SmartLabel for Tide PODS."
+ },
+ "Sodium Bisulfite": {
+  "g": "H302",
+  "s": "Harmful if swallowed",
+  "ev": "High",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 23665763): H302 'Harmful if swallowed' at 99.9% ECHA C&L notifier consensus. PubChem's aggregated view also lists H334 (respiratory sensitizer), H372 (organ, prolonged/repeated), H318 and H317 without notifier percentages - sulfites are a documented asthma trigger, but unquantified codes do not drive a grade under the house >=40% consensus bar, so they are noted rather than graded. Preservative/antioxidant disclosed by P&G SmartLabel for Tide PODS."
+ },
+ "Methyl Di-t-butyl Hydroxyhydrocinnamate": {
+  "g": "H411",
+  "s": "Toxic to aquatic life with long lasting effects",
+  "ev": "High",
+  "gr": {
+   "env": "D"
+  },
+  "impacts": [
+   "aqua"
+  ],
+  "note": "Graded from PubChem GHS (CID 62603): H411 at 99.7% ECHA C&L notifier consensus -> env D. H302 at 15.7% is below the 40% bar. PubChem also lists H361 (suspected repro toxicant) and H373 (organ) without notifier percentages - noted, not graded. Phenolic antioxidant (BHT-methane analog) disclosed by P&G SmartLabel for Tide PODS."
+ },
+ "Hydrogenated Castor Oil": {
+  "g": "Not Classified",
+  "s": "Hydrogenated triglyceride processing aid (UVCB). No discrete PubChem CID.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB - PubChem name lookup resolves no CID (PUG REST 404). Recorded unclassified rather than guessed. Disclosed by P&G SmartLabel for Tide PODS."
+ },
+ "Styrene/Acrylates Copolymer": {
+  "g": "Not Classified",
+  "s": "Polymeric opacifier / suspension aid (UVCB). No discrete PubChem CID.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Polymer/UVCB - PubChem PUG REST returns 400 for the name and therefore no GHS classification. High-MW polymer, generally not bioavailable. Recorded unclassified. Disclosed by P&G SmartLabel for Tide PODS."
+ },
+ "Zeolite": {
+  "g": "Not Classified",
+  "s": "Aluminosilicate builder (UVCB). Insoluble mineral; no discrete PubChem CID.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB mineral (zeolite A class, CAS 1327-44-2 family) - PubChem name lookup resolves no CID (PUG REST 404). Insoluble, not bioavailable. Recorded unclassified. Disclosed by P&G SmartLabel for Tide PODS."
+ },
+ "Denatonium Benzoate": {
+  "g": "H302,H332,H412",
+  "s": "Harmful if swallowed",
+  "ev": "High",
+  "gr": {
+   "resp": "C",
+   "env": "C"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 19518): H302 95.1%, H332 83.4%, H412 83.2% ECHA C&L notifier consensus. H318 at 33.1% is below the 40% bar. The bittering agent added to detergent pods to deter accidental ingestion - itself harmful if swallowed and if inhaled. Disclosed by P&G SmartLabel for Tide PODS."
+ },
+ "Dipropylene Glycol Butyl Ether": {
+  "g": "Not Classified",
+  "s": "Glycol-ether solvent; 1311 of 1613 ECHA C&L notifiers report no classification.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "PubChem GHS (CID 24752, returned title 'Dipropylene glycol n-butyl ether' - matches the disclosed substance). Majority not-classified. PubChem's aggregated view also lists H373 (organ, prolonged/repeated exposure) without a notifier percentage - noted, not graded. Solvent disclosed by P&G SmartLabel for Dawn Powerwash."
+ },
+ "Sodium Xylenesulfonate": {
+  "g": "H319",
+  "s": "Causes serious eye irritation",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 23668192): H319 at 66.8% ECHA C&L notifier consensus -> derm D. Hydrotrope (solubilizer) disclosed by P&G SmartLabel for Dawn Powerwash."
+ },
+ "C9-11 Alkyl Glucoside": {
+  "g": "Extrapolated",
+  "s": "Nonionic alkyl polyglucoside surfactant (CAS 132778-08-6). UVCB; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB - PubChem name lookup resolves no CID (PUG REST 404). Class-analogous to the existing alkyl-polyglucoside entries ('Decyl Glucoside' / 'Lauryl Glucoside': not classified). Recorded extrapolated. Disclosed by Reckitt SmartLabel for Lysol Disinfecting Wipes."
+ },
+ "Citronellol": {
+  "g": "H315,H317,H319",
+  "s": "May cause an allergic skin reaction",
+  "ev": "High",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "allerg",
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 8842): H317 99.6%, H315 95.7%, H319 65.1% ECHA C&L notifier consensus -> derm D + allerg. H411 at 15.8% is below the 40% bar. One of the 26 fragrance allergens that must be declared on EU cosmetic labels (Reg. 1223/2009 Annex III); no equivalent US cleaning-product labelling requirement. Disclosed as a fragrance component by Reckitt SmartLabel for Lysol Disinfecting Wipes."
+ },
+ "Sodium Laurate": {
+  "g": "H318,H315,H335",
+  "s": "Causes serious eye damage",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D",
+   "resp": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 2735067): H318 67.4%, H315 71.8%, H335 45.6% ECHA C&L notifier consensus. H319 at 17.2% is below the 40% bar. Soap salt - concentrated soap salts are eye/skin irritants. Disclosed by Clorox SmartLabel for Clorox Toilet Bowl Cleaner with Bleach."
+ },
+ "Sodium Myristate": {
+  "g": "Not Classified",
+  "s": "Soap salt; all 37 ECHA C&L notifiers report no classification.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "PubChem GHS (CID 23693095): 37 of 37 ECHA C&L notifiers report no classification. Soap salt disclosed by Clorox SmartLabel for Clorox Toilet Bowl Cleaner with Bleach."
+ },
+ "Sodium Palmitate": {
+  "g": "Not Classified",
+  "s": "Soap salt; only quantified code is H319 at 23.3%, below the 40% bar.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "PubChem GHS (CID 2735111): the only quantified code is H319 at 23.3%, below the house >=40% consensus bar. Soap salt disclosed by Clorox SmartLabel for Clorox Toilet Bowl Cleaner with Bleach."
+ },
+ "Sodium Caprate": {
+  "g": "H412",
+  "s": "Harmful to aquatic life with long lasting effects",
+  "ev": "High",
+  "gr": {
+   "env": "C"
+  },
+  "impacts": [
+   "aqua"
+  ],
+  "note": "Graded from PubChem GHS (CID 4457968): H412 at 94.7% ECHA C&L notifier consensus -> env C. Soap salt disclosed by Clorox SmartLabel for Clorox Toilet Bowl Cleaner with Bleach."
+ },
+ "Sodium Caprylate": {
+  "g": "H314,H318",
+  "s": "Causes severe skin burns and eye damage",
+  "ev": "Medium",
+  "gr": {
+   "derm": "F"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 23664772, returned title 'Sodium octanoate' - sodium caprylate, matches): H314 46.6% and H318 46.6% ECHA C&L notifier consensus -> derm F. H315 21.1% and H319 20.6% are below the 40% bar. Classification is for the concentrated substance; the product is a diluted gel. Disclosed by Clorox SmartLabel."
+ },
+ "Sodium Stearate": {
+  "g": "Not Classified",
+  "s": "Soap salt; no H-code at >=40% ECHA C&L notifier consensus.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "PubChem GHS (CID 2724691): the only quantified codes are H315 at 19.3% and H318 at 19%, both below the 40% bar. PubChem also lists H401/H412 (aquatic) without notifier percentages - noted, not graded. Soap salt disclosed by Clorox SmartLabel."
+ },
+ "Potassium Iodide": {
+  "g": "H372",
+  "s": "Causes damage to organs through prolonged or repeated exposure",
+  "ev": "Medium",
+  "gr": {
+   "organ": "D"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 4875): H372 at 43.6% ECHA C&L notifier consensus -> organ D. All other quantified codes are below the 40% bar (H319 30.1%, H315 28.4%, H317 20.8%, H302 16.2%, H334 11.7%). PubChem also lists H360 (may damage fertility/unborn child) and H362 (may harm breast-fed children) without notifier percentages - noted, not graded. Disclosed by Clorox SmartLabel; its function is not stated in the disclosure."
+ },
+ "Pigment Green 7": {
+  "g": "Not Classified",
+  "s": "Chlorinated copper phthalocyanine pigment (UVCB). No discrete PubChem CID.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB pigment (chlorinated copper phthalocyanine, CAS 1328-53-6) - PubChem name lookup resolves no CID (PUG REST 404) and therefore no GHS classification. Insoluble pigment; not bioavailable. Recorded unclassified. Disclosed by Clorox SmartLabel."
+ },
+ "4-tert-Butylcyclohexyl Acetate": {
+  "g": "H317,H411",
+  "s": "May cause an allergic skin reaction",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D",
+   "env": "D"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 36081): H317 at 80.3% and H411 at 82.4% ECHA C&L notifier consensus -> derm D + allerg, env D. H302 at 27.5% is below the 40% bar. Fragrance component disclosed by Clorox SmartLabel."
+ },
+ "Benzyl Dimethyl Carbinyl Acetate": {
+  "g": "Not Classified",
+  "s": "Fragrance component; no H-code at >=40% ECHA C&L notifier consensus.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "PubChem GHS (CID 9024, returned title 'Dimethyl benzyl carbinyl acetate' - matches the disclosed substance): the only quantified code is H412 at 29.4%, below the 40% bar. Fragrance component disclosed by Clorox SmartLabel."
+ },
+ "Floral Pyranol": {
+  "g": "H319",
+  "s": "Causes serious eye irritation",
+  "ev": "High",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 3017432, returned title 'Tetrahydro-4-methyl-2-(2-methylpropyl)-2H-pyran-4-ol' - the fragrance chemical sold as Floral Pyranol): H319 at >99.9% ECHA C&L notifier consensus -> derm D. Fragrance component disclosed by Clorox SmartLabel."
+ },
+ "Tetrahydromyrcenol": {
+  "g": "Not Classified",
+  "s": "Fragrance component; 1584 of 1619 ECHA C&L notifiers report no classification.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "PubChem GHS (CID 86751): 1584 of 1619 ECHA C&L notifiers report no classification. Fragrance component disclosed by Clorox SmartLabel."
  }
 }

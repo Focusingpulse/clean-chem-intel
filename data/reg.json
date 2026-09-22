@@ -384,6 +384,24 @@
     "reason": "The EU restriction is based on endocrine disruption and aquatic persistence. US action has stayed at the industrial/new-use level rather than reaching consumer cleaners.",
     "confidence": "High"
    }
+  ],
+  "Citronellol": [
+   {
+    "region": "eu",
+    "status": "restricted",
+    "since": "2005",
+    "rule": "EU Cosmetics Reg. 1223/2009 Annex III - one of the 26 declarable fragrance allergens. Must be named on the label when present above 0.001% in leave-on or 0.01% in rinse-off products. The list originates in the 7th Amendment (2003/15/EC) to the old Cosmetics Directive, applicable from 2005.",
+    "reason": "Contact-allergy prevalence in patch-test populations; the EU allergen-labelling list exists because 'fragrance' as a single word hides the specific sensitizers.",
+    "confidence": "High"
+   },
+   {
+    "region": "us",
+    "status": "allowed",
+    "since": null,
+    "rule": "No US requirement to name individual fragrance allergens on cleaning-product labels. Ingredients on the California Cleaning Products Right to Know Act designated list are flagged voluntarily by some makers (Clorox, Reckitt, P&G all flag them with a DL symbol); federal law requires only the word 'fragrance'.",
+    "reason": "Same allergen, different disclosure regime - a US shopper cannot see citronellol on most labels even where an EU shopper can.",
+    "confidence": "High"
+   }
   ]
  },
  "watchlist": [
