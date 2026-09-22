@@ -2578,6 +2578,8 @@
    "Denatonium Benzoate",
    "Polyvinyl Alcohol Polymer"
   ],
+  "source": "P&G SmartLabel public ingredient disclosure (updated 2026-02-19)",
+  "source_url": "https://smartlabel.pg.com/00037000930358.html",
   "added": "2026-09-22",
   "updated": "2026-09-22"
  },
@@ -2601,6 +2603,8 @@
    "Fragrance",
    "PPG-26"
   ],
+  "source": "P&G SmartLabel public ingredient disclosure (updated 2024-12-18)",
+  "source_url": "https://smartlabel.pg.com/en-us/00037000523642.html",
   "added": "2026-09-22",
   "updated": "2026-09-22"
  },
@@ -2621,6 +2625,8 @@
    "Limonene",
    "Sodium Hydroxide"
   ],
+  "source": "Reckitt SmartLabel public ingredient disclosure",
+  "source_url": "https://www.rbnainfo.com/smart-label.php?productLineId=3427",
   "added": "2026-09-22",
   "updated": "2026-09-22"
  },
@@ -2653,6 +2659,8 @@
    "Floral Pyranol",
    "Tetrahydromyrcenol"
   ],
+  "source": "Clorox SmartLabel public ingredient disclosure (updated 4/14/2025)",
+  "source_url": "https://smartlabel.labelinsight.com/product/6085731/ingredients",
   "added": "2026-09-22",
   "updated": "2026-09-22"
  }
