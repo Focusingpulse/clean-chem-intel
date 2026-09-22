@@ -72,6 +72,10 @@ for em in re.finditer(r'"([^"]+)":\{g:(null|"[^"]*"),s:"((?:[^"\\]|\\.)*)",ev:"(
 
 print(f"total ingredients: {len(ings)}")
 
-(DATA / "products.json").write_text(json.dumps(products, indent=1), encoding="utf-8")
-(DATA / "ingredients.json").write_text(json.dumps(ings, indent=1), encoding="utf-8")
+# ensure_ascii=False matches every other writer in this repo (bulk_ingest.py,
+# enrich_data.py, chem_maintain.py). Without it this script re-escapes non-ASCII
+# (em-dash -> \u2014) and the next enrich run flips it back — a recurring
+# encoding ping-pong that keeps the tree permanently dirty.
+(DATA / "products.json").write_text(json.dumps(products, indent=1, ensure_ascii=False), encoding="utf-8")
+(DATA / "ingredients.json").write_text(json.dumps(ings, indent=1, ensure_ascii=False), encoding="utf-8")
 print("wrote data/products.json + data/ingredients.json")
