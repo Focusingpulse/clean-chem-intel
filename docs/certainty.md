@@ -93,6 +93,13 @@ is different from "nobody has checked yet."
 - Never soften it into "we don't have information on this." The subject of the
   sentence is the manufacturer, not us.
 
+## Decisions live in docs/decisions.md
+
+Sandra's sign-off rulings are recorded there, not in conversations. The page URL
+is frozen at `/products-we-use/`. Martha is not named in public copy. No sticky
+quote bar. Grading is two-level: pure chemical on the ingredient, as-sold on the
+product. Read that file before acting on any of them.
+
 ## Ordering: exposure, not price tier
 
 The database is ordered by **exposure**: how many homes actually use a product.
