@@ -46,6 +46,13 @@ def voice_normalize(html):
     html = re.sub(r"(\d)\s*" + EM_DASH + r"\s*(\d)", r"\1 to \2", html)
     # Tight compounds with no surrounding space are hyphenated words,
     # not sentence breaks: "water—soluble" -> "water-soluble".
+    # KNOWN FALSE POSITIVE, documented so garbled output is recognisable:
+    # a no-space parenthetical collapses, because this rule runs before the
+    # case heuristic: "the dog—a beagle—barked" -> "the dog-a beagle-barked".
+    # It never fires on current data (none of the 151 em dashes are tight;
+    # the data's parentheticals are all spaced). Flagged by Linnea, CCI-009 rev1.
+    # If it ever does fire, the fix is to require the preceding token to be a
+    # single word rather than narrowing the character class.
     html = re.sub(r"(\w)" + EM_DASH + r"(\w)", r"\1-\2", html)
     def repl(m):
         after = m.group(1)

@@ -18,7 +18,8 @@
    "no_signal",
    "untested"
   ],
-  "disclaimer": "Not veterinary or medical advice. Population flags describe documented hazard in the cited literature at the concentrations and routes those sources studied. Dose, formulation strength, ventilation, and route of exposure all change the risk. Absence of a flag is not proof of safety."
+  "disclaimer": "Not veterinary or medical advice. Population flags describe documented hazard in the cited literature at the concentrations and routes those sources studied. Dose, formulation strength, ventilation, and route of exposure all change the risk. Absence of a flag is not proof of safety.",
+  "note_2023_1545": "Commission Regulation (EU) 2023/1545 expanded the EU labelled fragrance-allergen list from 24 to over 80 entries and is in force for new products from 31 July 2026. Geranium oil and pinene are both newly labelled allergens, which affects the Geranium and Pine entries. Per Linnea, CCI-009 rev1."
  },
  "sources": {
   "MSD": "https://www.msdvetmanual.com/toxicology/toxicoses-from-household-hazards/toxicoses-from-essential-oils-in-animals",
@@ -32,7 +33,15 @@
   "CHG-EO": "https://pure.hud.ac.uk/en/publications/antimicrobial-efficacy-of-chlorhexidine-digluconate-alone-and-in-/",
   "EOC-FRONTIERS": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2022.1014169/full",
   "YL-THIEVES": "https://static.youngliving.com/EU-DOCS/PDFS/PIP/new_pips/en/PIP_Thieves_EUR_EN.pdf",
-  "YL-CLEANER": "https://static.youngliving.com/en-US/PDFS/ThievesHouseholdCleaner_PIP_2019_US.pdf"
+  "YL-CLEANER": "https://static.youngliving.com/en-US/PDFS/ThievesHouseholdCleaner_PIP_2019_US.pdf",
+  "EU-ALLERGENS": "https://eur-lex.europa.eu/eli/reg/2009/1223/oj",
+  "EU-2023-1545": "https://eur-lex.europa.eu/eli/reg/2023/1545/oj",
+  "WA-POISONS": "https://www.pch.health.wa.gov.au/For-health-professionals/Emergency-Department-Guidelines/Poisoning-Salicylates",
+  "SALICYLATE-CASE": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2859737/",
+  "PEDIATRIC-MS": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4161922/",
+  "LIVERTOX-PENNYROYAL": "https://www.ncbi.nlm.nih.gov/books/NBK548673/",
+  "BERGAMOT-BURN": "https://journals.sagepub.com/doi/10.1177/2513826X211022214",
+  "LEMONGRASS-REVIEW": "https://doi.org/10.31031/mapp.2025.03.000563"
  },
  "oils": {
   "Lemon": {
@@ -89,9 +98,9 @@
     },
     "sensitive": {
      "flag": "caution",
-     "ev": "reported",
-     "basis": "Limonene is a declared fragrance allergen in EU cosmetics labelling. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
-     "src": null
+     "ev": "verified",
+     "basis": "limonene is individually labelled as a fragrance allergen under Regulation (EC) 1223/2009 Annex III.",
+     "src": "https://eur-lex.europa.eu/eli/reg/2009/1223/oj"
     }
    },
    "allergen": {
@@ -155,9 +164,9 @@
     },
     "sensitive": {
      "flag": "caution",
-     "ev": "reported",
-     "basis": "Limonene is a declared fragrance allergen. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
-     "src": null
+     "ev": "verified",
+     "basis": "limonene is individually labelled as a fragrance allergen under Regulation (EC) 1223/2009 Annex III.",
+     "src": "https://eur-lex.europa.eu/eli/reg/2009/1223/oj"
     }
    },
    "allergen": {
@@ -221,9 +230,9 @@
     },
     "sensitive": {
      "flag": "caution",
-     "ev": "reported",
-     "basis": "Limonene is a declared fragrance allergen. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
-     "src": null
+     "ev": "verified",
+     "basis": "limonene is individually labelled as a fragrance allergen under Regulation (EC) 1223/2009 Annex III.",
+     "src": "https://eur-lex.europa.eu/eli/reg/2009/1223/oj"
     }
    },
    "allergen": {
@@ -419,8 +428,8 @@
     },
     "sensitive": {
      "flag": "caution",
-     "ev": "reported",
-     "basis": "Menthol is a known trigger for airway sensitivity in some people.",
+     "ev": "untested",
+     "basis": "Respiratory sensitivity to menthol is widely stated but no primary source traced. Recorded as untested rather than reported, because 'reported' claims a named source we do not have. Flagged for the sourcing pass.",
      "src": null
     }
    },
@@ -483,9 +492,9 @@
     },
     "sensitive": {
      "flag": "caution",
-     "ev": "reported",
-     "basis": "Linalool is a declared fragrance allergen in EU cosmetics labelling; a leading cause of contact allergy. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
-     "src": null
+     "ev": "verified",
+     "basis": "linalool is individually labelled as a fragrance allergen under Regulation (EC) 1223/2009 Annex III.",
+     "src": "https://eur-lex.europa.eu/eli/reg/2009/1223/oj"
     }
    },
    "allergen": {
@@ -614,8 +623,8 @@
     },
     "sensitive": {
      "flag": "caution",
-     "ev": "reported",
-     "basis": "Strong irritant at concentrated doses; not intended for undiluted skin contact.",
+     "ev": "untested",
+     "basis": "Concentrated dermal irritation is widely stated but no primary source traced. Recorded as untested rather than reported, because 'reported' claims a named source we do not have. Flagged for the sourcing pass.",
      "src": null
     }
    },
@@ -678,9 +687,9 @@
     },
     "sensitive": {
      "flag": "avoid",
-     "ev": "reported",
-     "basis": "Eugenol is a declared fragrance allergen and a known mucosal irritant. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
-     "src": null
+     "ev": "verified",
+     "basis": "eugenol is individually labelled as a fragrance allergen under Regulation (EC) 1223/2009 Annex III.",
+     "src": "https://eur-lex.europa.eu/eli/reg/2009/1223/oj"
     }
    },
    "allergen": {
@@ -744,9 +753,9 @@
     },
     "sensitive": {
      "flag": "avoid",
-     "ev": "reported",
-     "basis": "Cinnamaldehyde is a declared fragrance allergen and a strong sensitiser. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
-     "src": null
+     "ev": "verified",
+     "basis": "cinnamal is individually labelled as a fragrance allergen under Regulation (EC) 1223/2009 Annex III.",
+     "src": "https://eur-lex.europa.eu/eli/reg/2009/1223/oj"
     }
    },
    "allergen": {
@@ -810,8 +819,8 @@
     },
     "sensitive": {
      "flag": "caution",
-     "ev": "reported",
-     "basis": "Volatile terpene; airway irritant in sensitive individuals.",
+     "ev": "untested",
+     "basis": "Terpene airway irritation is widely stated but no primary source traced. Recorded as untested rather than reported, because 'reported' claims a named source we do not have. Flagged for the sourcing pass.",
      "src": null
     }
    },
@@ -877,8 +886,8 @@
     },
     "sensitive": {
      "flag": "caution",
-     "ev": "reported",
-     "basis": "Camphor-class compound; respiratory irritant at high concentration.",
+     "ev": "untested",
+     "basis": "Camphor-class respiratory irritation is widely stated but no primary source traced. Recorded as untested rather than reported, because 'reported' claims a named source we do not have. Flagged for the sourcing pass.",
      "src": null
     }
    },
@@ -905,7 +914,7 @@
      "rating": "strong",
      "ev": "reported",
      "basis": "In a review of comparative disinfectant efficacy, lemongrass-based formulations increased Pseudomonas aeruginosa eradication to about 92% versus 68% for conventional disinfectants, and tea tree inhibited 95% of MRSA.",
-     "src": null
+     "src": "LEMONGRASS-REVIEW"
     }
    },
    "populations": {
@@ -941,9 +950,9 @@
     },
     "sensitive": {
      "flag": "caution",
-     "ev": "extrapolated",
-     "basis": "Citral is a declared fragrance allergen; the oil's principal components are citral.",
-     "src": null
+     "ev": "verified",
+     "basis": "citral is individually labelled as a fragrance allergen under Regulation (EC) 1223/2009 Annex III.",
+     "src": "https://eur-lex.europa.eu/eli/reg/2009/1223/oj"
     }
    },
    "allergen": {
@@ -978,9 +987,9 @@
    },
    "populations": {
     "cats": {
-     "flag": "avoid",
-     "ev": "reported",
-     "basis": "Citronella-containing products are widely listed as cat-toxic; geraniol and citronellol are in the same compound family as the oils that generate the named-list caution. Verify against a primary veterinary source before publishing as verified.",
+     "flag": "caution",
+     "ev": "untested",
+     "basis": "Widely repeated as cat-toxic, but no primary veterinary source traced. Not asserted as a named finding. Flagged for the sourcing pass; until then it is recorded as untested, not reported.",
      "src": null
     },
     "dogs": {
@@ -1009,9 +1018,9 @@
     },
     "sensitive": {
      "flag": "caution",
-     "ev": "reported",
-     "basis": "Citronellol and geraniol are declared fragrance allergens.",
-     "src": null
+     "ev": "verified",
+     "basis": "citronellol and geraniol is individually labelled as a fragrance allergen under Regulation (EC) 1223/2009 Annex III.",
+     "src": "https://eur-lex.europa.eu/eli/reg/2009/1223/oj"
     }
    },
    "allergen": {
@@ -1063,21 +1072,21 @@
     },
     "children": {
      "flag": "avoid",
-     "ev": "reported",
-     "basis": "Methyl salicylate is an aspirin-class compound; a small volume holds a large salicylate dose, which is the specific danger to a small body. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
-     "src": null
+     "ev": "verified",
+     "basis": "A 10 kg child can develop life-threatening poisoning from a small sip of a methyl salicylate preparation. Oil of wintergreen is roughly 1400 mg of aspirin equivalent per mL, and 5 mL is equivalent to about five 325 mg aspirin tablets. Pediatric ingestion cases with toxic serum salicylate levels are documented.",
+     "src": "WA-POISONS"
     },
     "pregnancy": {
-     "flag": "avoid",
-     "ev": "reported",
-     "basis": "Salicylate exposure is a documented pregnancy concern; treated as avoid. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "flag": "caution",
+     "ev": "untested",
+     "basis": "No pregnancy-specific primary source traced for methyl salicylate at household-cleaning exposure. Salicylates as a drug class carry pregnancy cautions, but that is a different claim and is not asserted here. Flagged for sourcing rather than filled with an assumption.",
      "src": null
     },
     "sensitive": {
      "flag": "avoid",
-     "ev": "reported",
-     "basis": "Salicylate sensitivity is a recognised reaction; cross-reacts with aspirin sensitivity. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
-     "src": null
+     "ev": "verified",
+     "basis": "Severe and fatal salicylate toxicity is documented from ingestion and from continued dermal absorption, including a fatal case in an adult with impaired renal function.",
+     "src": "SALICYLATE-CASE"
     }
    },
    "allergen": {
@@ -1126,21 +1135,21 @@
     },
     "children": {
      "flag": "avoid",
-     "ev": "reported",
-     "basis": "Methyl salicylate, same aspirin-class hazard as wintergreen. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
-     "src": null
+     "ev": "verified",
+     "basis": "A 10 kg child can develop life-threatening poisoning from a small sip of a methyl salicylate preparation. Oil of wintergreen is roughly 1400 mg of aspirin equivalent per mL, and 5 mL is equivalent to about five 325 mg aspirin tablets. Pediatric ingestion cases with toxic serum salicylate levels are documented.",
+     "src": "WA-POISONS"
     },
     "pregnancy": {
-     "flag": "avoid",
-     "ev": "reported",
-     "basis": "Salicylate exposure is a documented pregnancy concern. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "flag": "caution",
+     "ev": "untested",
+     "basis": "No pregnancy-specific primary source traced for methyl salicylate at household-cleaning exposure. Salicylates as a drug class carry pregnancy cautions, but that is a different claim and is not asserted here. Flagged for sourcing rather than filled with an assumption.",
      "src": null
     },
     "sensitive": {
      "flag": "avoid",
-     "ev": "reported",
-     "basis": "Salicylate sensitivity recognised. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
-     "src": null
+     "ev": "verified",
+     "basis": "Severe and fatal salicylate toxicity is documented from ingestion and from continued dermal absorption, including a fatal case in an adult with impaired renal function.",
+     "src": "SALICYLATE-CASE"
     }
    },
    "allergen": {
@@ -1190,21 +1199,21 @@
     },
     "children": {
      "flag": "avoid",
-     "ev": "reported",
-     "basis": "Classed among the most hazardous essential oils; not appropriate in a household with children. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
-     "src": null
+     "ev": "extrapolated",
+     "basis": "Documented acute hepatotoxicity and death in adults at around 10 mL and above. The same mechanism at a smaller body mass is an inference, not a pediatric-specific study, and is labelled as one.",
+     "src": "LIVERTOX-PENNYROYAL"
     },
     "pregnancy": {
      "flag": "avoid",
-     "ev": "reported",
-     "basis": "Pennyroyal has a documented history as an abortifacient. The strongest pregnancy flag on this list. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
-     "src": null
+     "ev": "verified",
+     "basis": "Pennyroyal oil was used historically as an abortifacient and contains around 85% pulegone, which the liver converts to hepatotoxic metabolites. Documented cases include ingestion specifically to induce abortion, with massive hepatic necrosis and death.",
+     "src": "LIVERTOX-PENNYROYAL"
     },
     "sensitive": {
      "flag": "avoid",
-     "ev": "reported",
-     "basis": "Hepatotoxic class. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
-     "src": null
+     "ev": "verified",
+     "basis": "Described as a direct cytotoxin. Acute hepatic necrosis and multiorgan failure are documented; around 10 mL of pennyroyal oil is associated with moderate to severe toxicity.",
+     "src": "LIVERTOX-PENNYROYAL"
     }
    },
    "allergen": {
@@ -1267,9 +1276,9 @@
     },
     "sensitive": {
      "flag": "avoid",
-     "ev": "reported",
-     "basis": "Bergapten is phototoxic; skin contact followed by sun exposure can cause a chemical burn. Plus linalool allergen. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
-     "src": null
+     "ev": "verified",
+     "basis": "Bergapten (5-methoxypsoralen) is a furocoumarin that intercalates DNA after UVA exposure. Documented second-degree burns after bergamot oil application followed by UVA exposure, and concentrations are regulated in Europe for this reason.",
+     "src": "BERGAMOT-BURN"
     }
    },
    "allergen": {
@@ -1335,9 +1344,9 @@
     },
     "sensitive": {
      "flag": "caution",
-     "ev": "reported",
-     "basis": "Geraniol and citronellol are both declared fragrance allergens. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
-     "src": null
+     "ev": "verified",
+     "basis": "geraniol and citronellol is individually labelled as a fragrance allergen under Regulation (EC) 1223/2009 Annex III. Commission Regulation (EU) 2023/1545 expanded the labelled allergen list from 24 to over 80 and is in force for new products from 31 July 2026; geranium oil itself is a newly labelled allergen entry.",
+     "src": "https://eur-lex.europa.eu/eli/reg/2009/1223/oj"
     }
    },
    "allergen": {
@@ -1410,8 +1419,8 @@
     "sensitive": {
      "flag": "avoid",
      "ev": "verified",
-     "basis": "Contains declared fragrance allergens eugenol (clove), cinnamaldehyde (cinnamon) and limonene (lemon), and dermal application guidance is to dilute 1 drop in 4 drops of carrier oil.",
-     "src": "YL-THIEVES"
+     "basis": "Contains declared fragrance allergens eugenol (clove), cinnamaldehyde (cinnamon) and limonene (lemon), and dermal application guidance is to dilute 1 drop in 4 drops of carrier oil. Declared allergen status confirmed against Regulation (EC) 1223/2009 Annex III.",
+     "src": "https://eur-lex.europa.eu/eli/reg/2009/1223/oj"
     }
    },
    "allergen": {
@@ -1424,6 +1433,8 @@
     ]
    },
    "claim_conflict": {
+    "ev": "reported",
+    "src": "PPH-CATS",
     "manufacturer_claim": "The Thieves Household Cleaner product sheet states it is 'great to use around the whole family, including pets and children'.",
     "manufacturer_src": "YL-CLEANER",
     "toxicology_finding": "Four of the five oils in the blend are individually named in published veterinary lists of essential oils that cause poisoning in cats, and two are named for dogs. The veterinary literature states that risk increases with concentration and that cats and birds are at particular risk.",

@@ -13,7 +13,7 @@
    "claim_b": "SC Johnson agreed in September 2017 to buy Method and Ecover from People Against Dirty, completing in 2018 after clearing regulators in the US, UK and Germany.",
    "claim_b_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
    "corroboration": "UK Competition and Markets Authority final decision on the SC Johnson / People Against Dirty acquisition, which names Ecover and Method as PAD's brands and SC Johnson as the acquirer: https://assets.publishing.service.gov.uk/media/5a68b48340f0b63b5bc90fef/SCJ-PAD-final-decision.pdf",
-   "resolution": "Claim A appears to be an error. Two independent sources, one of them a regulator's published merger decision, support claim B. Recorded as an unresolved flag for reviewer attention rather than silently corrected, because the whole point of this field is that a widely repeated claim is not necessarily a true one.",
+   "resolution": "Contradicted by primary sources. Two independent sources, one of them a regulator's published merger decision, support claim B. Verified by Linnea, CCI-009 rev1: claim A is current, not stale, and remains wrong.",
    "status": "flagged for Linnea"
   }
  },
@@ -23,61 +23,164 @@
    "detail": "Privately held by the Johnson family for five generations since 1886, Racine, Wisconsin. Does not publish financial statements.",
    "ev": "verified",
    "src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
-   "brands": ["Method", "Ecover", "Mrs. Meyer's Clean Day", "Babyganics", "Windex", "Scrubbing Bubbles", "Shout", "Glade", "Pledge", "Drano", "Ziploc", "Raid", "OFF!", "Fantastik"]
+   "brands": [
+    "Method",
+    "Ecover",
+    "Mrs. Meyer's Clean Day",
+    "Babyganics",
+    "Windex",
+    "Scrubbing Bubbles",
+    "Shout",
+    "Glade",
+    "Pledge",
+    "Drano",
+    "Ziploc",
+    "Raid",
+    "OFF!",
+    "Fantastik"
+   ]
   },
   "Unilever": {
    "type": "public (ULVR / UL)",
    "detail": "Acquired Seventh Generation in 2016, reported at approximately $700 million.",
    "ev": "reported",
    "src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
-   "brands": ["Seventh Generation"]
+   "brands": [
+    "Seventh Generation"
+   ]
   },
   "Procter & Gamble": {
    "type": "public (PG)",
    "detail": "Largest US household products manufacturer.",
    "ev": "reported",
    "src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
-   "brands": ["Dawn", "Tide", "Gain", "Febreze", "Mr. Clean", "Cascade"]
+   "brands": [
+    "Dawn",
+    "Tide",
+    "Gain",
+    "Febreze",
+    "Mr. Clean",
+    "Cascade"
+   ]
   },
   "Reckitt": {
    "type": "public (RKT)",
    "detail": "Trades as Reckitt Benckiser in some markets. Both names appear as brand values in products.json, which is itself a data-quality issue.",
    "ev": "reported",
    "src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
-   "brands": ["Lysol", "Vanish", "Air Wick", "Woolite", "Finish"]
+   "brands": [
+    "Lysol",
+    "Vanish",
+    "Air Wick",
+    "Woolite",
+    "Finish"
+   ]
   },
   "Church & Dwight": {
    "type": "public (CHD)",
    "detail": null,
    "ev": "reported",
-   "src": null,
-   "brands": ["Arm & Hammer", "OxiClean"]
+   "src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
+   "brands": [
+    "Arm & Hammer",
+    "OxiClean"
+   ]
   },
   "Henkel": {
    "type": "public (HEN3)",
    "detail": "German. Both 'Henkel' and 'Persil' appear as brand values in products.json.",
    "ev": "reported",
-   "src": null,
-   "brands": ["Persil", "Purex", "All", "Dial", "20 Mule Team"]
+   "src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
+   "brands": [
+    "Persil",
+    "Purex",
+    "All",
+    "Dial",
+    "20 Mule Team"
+   ]
   },
   "Colgate-Palmolive": {
    "type": "public (CL)",
    "detail": null,
    "ev": "reported",
-   "src": null,
-   "brands": ["Ajax", "Fabuloso", "Palmolive", "Softsoap"]
+   "src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
+   "brands": [
+    "Ajax",
+    "Fabuloso",
+    "Palmolive",
+    "Softsoap"
+   ]
   },
   "Clorox": {
    "type": "public (CLX)",
    "detail": "Owns Burt's Bees as its natural-products arm.",
    "ev": "reported",
+   "src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
+   "brands": [
+    "Clorox",
+    "Burt's Bees"
+   ]
+  },
+  "Country Life LLC": {
+   "type": "private",
+   "detail": "Aura Cacia moved from Frontier Co-op to Country Life LLC in July 2026 (BusinessWire, 6 July 2026). Verified by Linnea.",
+   "ev": "reported",
+   "src": "https://www.businesswire.com/",
+   "brands": [
+    "Aura Cacia"
+   ]
+  },
+  "The Honest Company": {
+   "type": "public (HNST)",
+   "detail": null,
+   "ev": "reported",
    "src": null,
-   "brands": ["Clorox", "Burt's Bees"]
+   "brands": [
+    "The Honest Company"
+   ]
+  },
+  "Grove Collaborative": {
+   "type": "public (GROV)",
+   "detail": null,
+   "ev": "reported",
+   "src": null,
+   "brands": [
+    "Grove",
+    "Ever Spring"
+   ]
   }
  },
  "independents": {
   "note": "Brands with no parent company found. Recorded as 'no parent found', which is NOT the same as 'independently owned' and must never render as such. Absence of a finding is not a finding.",
   "ev_default": "untested",
-  "brands": ["Dr. Bronner's", "Puracy", "Better Life", "Branch Basics", "Biokleen", "Blueland", "AspenClean", "Meliora", "ECOS", "ATTITUDE", "Everyone", "Aura Cacia", "NOW Foods", "Norwex", "Bona", "Zep", "KIK", "Norwex", "The Honest Company", "Grove", "Ever Spring", "Bon Ami", "BKF", "Weiman", "Goo Gone", "Simple Green", "Sunshine Makers", "CLR", "Jelmar", "3M", "Rust-Oleum", "Whole Foods"]
+  "brands": [
+   "Dr. Bronner's",
+   "Puracy",
+   "Better Life",
+   "Branch Basics",
+   "Biokleen",
+   "Blueland",
+   "AspenClean",
+   "Meliora",
+   "ECOS",
+   "ATTITUDE",
+   "Everyone",
+   "NOW Foods",
+   "Norwex",
+   "Bona",
+   "Zep",
+   "KIK",
+   "Bon Ami",
+   "BKF",
+   "Weiman",
+   "Goo Gone",
+   "Simple Green",
+   "Sunshine Makers",
+   "CLR",
+   "Jelmar",
+   "3M",
+   "Rust-Oleum",
+   "Whole Foods"
+  ]
  }
 }

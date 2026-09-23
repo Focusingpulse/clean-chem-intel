@@ -49,6 +49,12 @@ def check_claim(where, claim):
     # A verified claim must resolve to a source.
     if ev == "verified" and not claim.get("src"):
         failures.append(f"{where}: marked verified with no source")
+    # 'reported' means 'we name the source'. A reported claim with no source
+    # renders as 'Reported by [source]' with nothing to put there, which is
+    # indistinguishable from verified. Either name the source or downgrade.
+    # Raised by Linnea, CCI-009 rev1, GAP 2.
+    if ev == "reported" and not claim.get("src"):
+        failures.append(f"{where}: marked reported with no named source")
 
 
 def validate_oils():
@@ -71,13 +77,13 @@ def validate_oils():
                         f"invalid flag {flag!r}")
                 n += 1
             # A legend or a claim conflict must carry its own level.
+            # Both a legend and a claim conflict make factual assertions, so
+            # both carry a level. Raised by Linnea, CCI-009 rev1, GAP 1: the
+            # comment said so but the code only checked naming_legend.
             for extra in ("naming_legend", "claim_conflict"):
                 if extra in o:
-                    blk = o[extra]
-                    if "ev" in blk or extra == "claim_conflict":
-                        if extra == "naming_legend":
-                            check_claim(f"oils.{section}.{name}.{extra}", blk)
-                            n += 1
+                    check_claim(f"oils.{section}.{name}.{extra}", o[extra])
+                    n += 1
     return n
 
 
