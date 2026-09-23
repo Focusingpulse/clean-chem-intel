@@ -87,6 +87,35 @@ def validate_oils():
     return n
 
 
+def check_substitutes():
+    """Every hazard must name a usable substitute, or say it has none.
+
+    Sandra's rule is to document what TO DO as much as what NOT to do. That
+    rule has no meaning unless it is checkable, so a product carrying a severe
+    grade with an empty substitutes list is reported by name every build.
+    Warning, not a halt: backfilling the whole catalog is a lane, not a night.
+    """
+    products = load("products.json")
+    if products is None:
+        return 0
+    severe, missing = [], []
+    for p in products:
+        safe = p.get("safe")
+        is_severe = isinstance(safe, str) and "Sifter grade" in safe and (
+            "grade D" in safe or "grade F" in safe)
+        if not is_severe:
+            continue
+        severe.append(p.get("name"))
+        subs = p.get("substitutes") or []
+        if not subs and not p.get("no_substitute_known"):
+            missing.append(p.get("name"))
+    if missing:
+        warnings.append(
+            f"hazard without a substitute on file ({len(missing)} of {len(severe)}): "
+            + ", ".join(missing))
+    return len(severe)
+
+
 def apply_owners(dry=True):
     owners = load("owners.json")
     products = load("products.json")
@@ -127,10 +156,12 @@ def apply_owners(dry=True):
 def main():
     apply = "--apply" in sys.argv
     n_oil = validate_oils()
+    n_severe = check_substitutes()
     matched, total = apply_owners(dry=not apply)
 
     print(f"certainty: {n_oil} oil claims checked")
     print(f"ownership: {matched} of {total} products carry an ownership record")
+    print(f"hazards: {n_severe} products carry a severe grade")
 
     if warnings:
         for w in warnings:
