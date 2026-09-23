@@ -40,6 +40,13 @@ def voice_normalize(html):
     import re
     before = html.count(EM_DASH)
     html = html.replace(">\u2014<", ">n/a<")
+    # Numeric ranges first, before the general rule:
+    # "pH 6 — 8" must become "pH 6 to 8", never "pH 6, 8".
+    # Caught by Linnea (CCI-009) as the failure mode most likely to bite.
+    html = re.sub(r"(\d)\s*" + EM_DASH + r"\s*(\d)", r"\1 to \2", html)
+    # Tight compounds with no surrounding space are hyphenated words,
+    # not sentence breaks: "water—soluble" -> "water-soluble".
+    html = re.sub(r"(\w)" + EM_DASH + r"(\w)", r"\1-\2", html)
     def repl(m):
         after = m.group(1)
         sep = ". " if after.isupper() else ", "

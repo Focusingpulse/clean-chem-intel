@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """update_counts.py — regenerate counts.md from the data files.
 
-Run after ANY change to data/ (products, ingredients, recipes, reg).
+Run after ANY change to data/ (products, ingredients, reg).
 Called by Dolman's clean-chem-grow cron after every fire, and by
 Chris's daily lane if wired in (one line in chem_cron.sh:
     python3 update_counts.py
@@ -22,7 +22,6 @@ def load(name, default):
 
 products = load("products.json", [])
 ings = load("ingredients.json", {})
-recipes = load("recipes.json", {})
 reg = load("reg.json", [])
 
 # "safe" is a certification/verdict field: a string (EWG Verified, EPA Safer
@@ -56,7 +55,6 @@ lines = [
     f"| — Heritage | {len(heritage)} |",
     f"| **Ingredients** | {len(ings)} |",
     f"| **Regulatory entries** | {len(reg.get('entries', {}) if isinstance(reg, dict) else reg)} |",
-    f"| **DIY recipes (backend)** | {len(recipes.get('recipes', []))} |",
     "",
     "## Sources of products",
     f"{top_sources}",

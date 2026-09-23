@@ -364,7 +364,7 @@
     </div>
     <div>Built for <b>Bellas Mountain Vacation Cleaning</b>. I vet what I use, and you should know what you're using too.</div>
     <div style="margin-top:12px;"><a class="quote-cta" href="/contact-us/">Get a Quote</a></div>
-    <div class="note"><strong>Not medical advice.</strong> Grades reflect documented hazard data (GHS classifications, peer-reviewed toxicology, regulatory listings) mapped to health endpoints. Evidence is labeled honestly. Low/Medium/High/Extrapolated. Absence of a flag is not proof of safety; it means our database documents no signal. This is a transparency tool, not a diagnosis.</div>
+    <div class="note"><strong>Not medical advice.</strong> Grades reflect documented hazard data (GHS classifications, peer-reviewed toxicology, regulatory listings) mapped to health endpoints. Evidence is labeled honestly. Low/Medium/High/Extrapolated. Absence of a flag is not proof of safety; it means my database documents no signal. This is a transparency tool, not a diagnosis.</div>
     <div class="built"><span class="dot"></span>Built <span id="built-at"></span> · generated from data pipeline</div>
   </div>
 </footer>
@@ -521,7 +521,7 @@ function render(){
       <div class="card-foot"><span class="ing-count">${p.ings.length} ingredient${p.ings.length===1?"":"s"}</span><button class="more-btn" onclick="openModal(${PRODUCTS.indexOf(p)})">Breakdown →</button></div>
     </div>`;
   }).join("");
-  document.getElementById("results").innerHTML=html||`<div class="no-results">No products match. Try clearing filters, or this might be a product we haven't cataloged yet. <b>We add products regularly.</b></div>`;
+  document.getElementById("results").innerHTML=html||`<div class="no-results">No products match. Try clearing filters, or this might be a product I haven't cataloged yet. <b>I add products regularly.</b></div>`;
 }
 function toggleSafeOnly(btn){safeOnly=!safeOnly;btn.classList.toggle("active");render();}
 function toggleHeritage(btn){heritageOnly=!heritageOnly;btn.classList.toggle("active");render();}
@@ -560,7 +560,7 @@ function openModal(idx){
   const flags=[];
   const rows=p.ings.map(n=>{
     const d=INGS[n];
-    if(!d) return `<div class="ming"><h4>${esc(n)} <span style="font-size:.68rem;color:var(--muted)">uncataloged</span></h4><div class="isum">No hazard data in our database yet, we're adding ingredients regularly.</div></div>`;
+    if(!d) return `<div class="ming"><h4>${esc(n)} <span style="font-size:.68rem;color:var(--muted)">uncataloged</span></h4><div class="isum">No hazard data in my database yet. I'm adding ingredients regularly.</div></div>`;
     const g=d.gr||{};
     const dims=DIMS.filter(dim=>g[dim]).map(dim=>`<span class="idim">${DIM_LABEL[dim]} <b>${g[dim]}</b></span>`).join("");
     const ev=d.ev||"Low";
