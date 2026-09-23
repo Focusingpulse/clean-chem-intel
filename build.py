@@ -82,7 +82,7 @@ def certainty_guard():
             "build halted: certainty validation failed. Fix the claims, "
             "do not silence the check.")
     for line in (r.stdout or "").splitlines():
-        if line.startswith(("certainty:", "ownership:", "surfaces:", "hazards:")):
+        if line.startswith(("certainty:", "ownership:", "exposure:", "surfaces:", "hazards:")):
             print("  " + line)
         elif line.strip().startswith("warn:"):
             # Warnings are lanes, not failures. Printed so they stay visible.

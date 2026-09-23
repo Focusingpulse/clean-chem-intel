@@ -477,6 +477,55 @@ def apply_owners(dry=True):
     return matched, len(products)
 
 
+def validate_exposure():
+    """Exposure is a claim. It gets the same treatment as any other.
+
+    Added with the spectrum build (Trellis, Sep 22 2026: order by exposure, not
+    price tier). The ordering rule is only meaningful if the exposure number is
+    a sourced estimate rather than a number shaped like one, so the guard fails
+    the build when:
+
+      - a non-null exposure carries no valid evidence level
+      - a non-null exposure carries no source
+      - an extrapolated exposure does not say what was searched for direct data
+        (the check_claim rule, applied to a new dimension)
+
+    An exposure of null with ev=untested is a legitimate and honest outcome; it
+    is a research gap, not a violation.
+    """
+    products = load("products.json")
+    if products is None:
+        return 0
+    n = 0
+    for p in products:
+        name = p.get("name", "?")
+        ev = p.get("exposure_ev")
+        val = p.get("exposure")
+        if ev is None:
+            failures.append(f"exposure[{name}]: claim has no evidence level")
+        elif ev not in LEVELS:
+            failures.append(f"exposure[{name}]: invalid evidence level {ev!r}")
+        if val is not None:
+            if ev == "untested":
+                failures.append(
+                    f"exposure[{name}]: carries a value {val!r} but is marked untested")
+            if not p.get("exposure_src"):
+                failures.append(
+                    f"exposure[{name}]: carries a value {val!r} with no exposure_src")
+        if ev == "extrapolated":
+            basis = (p.get("exposure_basis") or "").strip()
+            if len(basis) < 40:
+                failures.append(f"exposure[{name}]: extrapolated with no stated basis")
+            elif not any(w in basis.lower() for w in ("search", "located", "not measured",
+                                                      "no direct", "none exists",
+                                                      "extrapolat")):
+                failures.append(
+                    f"exposure[{name}]: extrapolated without saying what was searched "
+                    f"for direct data")
+        n += 1
+    return n
+
+
 def main():
     apply = "--apply" in sys.argv
     # Apply FIRST when asked. Running it after validation means the drift check
@@ -485,6 +534,7 @@ def main():
     n_oil = validate_oils()
     n_own = validate_owners()
     n_surf = validate_surfaces()
+    n_exp = validate_exposure()
     n_severe = check_substitutes()
     if not apply:
         matched, total = apply_owners(dry=True)
@@ -492,6 +542,7 @@ def main():
     print(f"certainty: {n_oil} oil claims checked")
     print(f"ownership: {matched} of {total} products carry an ownership record")
     print(f"ownership entries: {n_own} owner records validated")
+    print(f"exposure: {n_exp} exposure claims checked")
     print(f"surfaces: {n_surf} claim-bearing records considered (products, reg)")
     print(f"hazards: {n_severe} products carry a severe grade")
 
