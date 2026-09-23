@@ -28,6 +28,51 @@ FLAGS = {"avoid", "caution", "no_signal", "untested"}
 failures = []
 warnings = []
 
+# Warning lanes do not persist indefinitely. Every lane has three exits: close,
+# escalate to a halt, or be reclassified as an accepted constraint. Linnea's
+# rule, and the discriminator is the vocabulary's: Class B lanes are OUR gaps
+# (untested) and are supposed to close, so they halt on a deadline rather than
+# waiting for a human to notice. Class A lanes are facts about the world
+# (unknown/constraint) and are per-item states, never timers.
+LANE_STATE = REPO / "data" / "lane_state.json"
+LANE_REGISTRY = {
+    "tier_src": {"class": "B", "opened": "2026-09-23", "deadline": "2026-09-30",
+                 "detail": "products carry tier_ev=reported with no tier_src"},
+    "reg_src": {"class": "B", "opened": "2026-09-23", "deadline": "2026-09-30",
+                "detail": "reg.json entries name no source"},
+}
+
+
+def track_lane(name, count, today=None):
+    """Record a lane's count, its delta, and enforce its deadline.
+
+    A warning stops being read when it stops changing, not when it gets old.
+    So the delta is printed, and the deadline, not the age, is what escalates.
+    """
+    if today is None:
+        from datetime import date
+        today = date.today().isoformat()
+    state = {}
+    if LANE_STATE.exists():
+        state = json.loads(LANE_STATE.read_text(encoding="utf-8"))
+    lane = state.get(name, {"count": None, "unchanged": 0, "opened": today})
+    lane["unchanged"] = lane["unchanged"] + 1 if lane["count"] == count else 0
+    lane["count"] = count
+    state[name] = lane
+    LANE_STATE.write_text(json.dumps(state, indent=1, sort_keys=True), encoding="utf-8")
+
+    meta = LANE_REGISTRY.get(name, {})
+    delta = f"unchanged {lane['unchanged']} builds" if lane["unchanged"] else "changed this build"
+    msg = f"{name}: {count} ({delta})"
+    if meta.get("class") == "B" and today > meta.get("deadline", "9999"):
+        failures.append(
+            f"{msg} -- Class B lane past its {meta['deadline']} deadline. A gap that was "
+            f"supposed to close and did not is a process failure, and it halts rather than "
+            f"waiting to be noticed.")
+    else:
+        warnings.append(msg + (f", deadline {meta['deadline']}" if meta.get("class") == "B" else ""))
+    return count
+
 
 def load(name, default=None):
     p = DATA / name
@@ -162,9 +207,7 @@ def validate_surfaces():
         no_tier_src = [p.get("name") for p in products
                        if p.get("tier_ev") == "reported" and not p.get("tier_src")]
         if no_tier_src:
-            warnings.append(
-                f"tier claims with no source ({len(no_tier_src)} of {len(products)}): "
-                "same class as R2 in a field nothing validated. Needs a tier_src.")
+            track_lane("tier_src", len(no_tier_src))
         n += len(products)
 
     # --- reg.json: 40 regulatory claims, none carrying a source ---
@@ -177,10 +220,7 @@ def validate_surfaces():
                 if isinstance(e, dict) and not e.get("src"):
                     unsourced.append(f"{chem}: {str(e.get('rule'))[:40]}")
         if unsourced:
-            warnings.append(
-                f"reg.json: {len(unsourced)} regulatory claims name no source. A "
-                "'banned in the EU since 2010' with no resolvable source is exactly "
-                "what the vocabulary exists for. Needs a sourcing lane.")
+            track_lane("reg_src", len(unsourced))
         n += len(unsourced)
 
     return n

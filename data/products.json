@@ -1232,7 +1232,9 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "no_substitute_known": true,
+  "no_substitute_note": "Accepted constraint, not a research gap. This is our own kit. The severe grade comes from the oils themselves, so there is no same-price product swap that solves it. What the entry documents instead is use guidance: dilution, ventilation, and the population cautions on each oil. Reclassified from warning lane to an honest per-item state per Linnea, because escalating a known constraint forever is alarm fatigue."
  },
  {
   "name": "Granite & Stone Cleaner (BMVC)",

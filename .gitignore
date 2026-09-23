@@ -30,3 +30,7 @@ Thumbs.db
 *.db
 *.sqlite
 *.sqlite3
+
+# local build state, not content. Regenerated each build; tracking it would
+# create an empty diff every run, which is the noise Sandra already objected to.
+data/lane_state.json
