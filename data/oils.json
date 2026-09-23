@@ -1,0 +1,1442 @@
+{
+ "meta": {
+  "version": "1.0",
+  "created": "2026-09-23",
+  "author": "Dolman",
+  "vocabulary": "docs/certainty.md",
+  "purpose": "Essential oils used in cleaning. Cleaning efficacy and population safety are recorded as SEPARATE, independently levelled claims, because 'cleans well' and 'safe around a cat' are different questions and merging them into one score is the most common way a transparency tool misleads.",
+  "ev_levels": [
+   "verified",
+   "reported",
+   "extrapolated",
+   "untested",
+   "unknown"
+  ],
+  "pop_flags": [
+   "avoid",
+   "caution",
+   "no_signal",
+   "untested"
+  ],
+  "disclaimer": "Not veterinary or medical advice. Population flags describe documented hazard in the cited literature at the concentrations and routes those sources studied. Dose, formulation strength, ventilation, and route of exposure all change the risk. Absence of a flag is not proof of safety."
+ },
+ "sources": {
+  "MSD": "https://www.msdvetmanual.com/toxicology/toxicoses-from-household-hazards/toxicoses-from-essential-oils-in-animals",
+  "PPH-CATS": "https://www.petpoisonhelpline.com/uncategorized/essential-oils-cats/",
+  "PPH-UPD": "https://www.petpoisonhelpline.com/uncategorized/updates-on-essential-oils/",
+  "VCA-DOGS": "https://vcahospitals.com/know-your-pet/essential-oil-and-liquid-potpourri-poisoning-in-dogs",
+  "VCA-CATS": "https://vcahospitals.com/know-your-pet/essential-oil-and-liquid-potpourri-poisoning-in-cats",
+  "THYME-EO": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11130963/",
+  "CITRUS-EO": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8440794/",
+  "BIOCIDE-CMP": "https://www.mdpi.com/2409-9279/5/3/37",
+  "CHG-EO": "https://pure.hud.ac.uk/en/publications/antimicrobial-efficacy-of-chlorhexidine-digluconate-alone-and-in-/",
+  "EOC-FRONTIERS": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2022.1014169/full",
+  "YL-THIEVES": "https://static.youngliving.com/EU-DOCS/PDFS/PIP/new_pips/en/PIP_Thieves_EUR_EN.pdf",
+  "YL-CLEANER": "https://static.youngliving.com/en-US/PDFS/ThievesHouseholdCleaner_PIP_2019_US.pdf"
+ },
+ "oils": {
+  "Lemon": {
+   "botanical": "Citrus limon",
+   "components": [
+    "d-limonene",
+    "citral",
+    "gamma-terpinene"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "strong",
+     "ev": "verified",
+     "basis": "Citrus essential oils showed better cleaning ability than acetone against fats and fat-soluble pigment in a direct comparison of four citrus EOs.",
+     "src": "CITRUS-EO"
+    },
+    "antimicrobial": {
+     "rating": "moderate",
+     "ev": "reported",
+     "basis": "Citrus EO components (linalool, citral, geraniol, decanal) linked to activity against S. aureus, E. coli, C. albicans, V. parahaemolyticus.",
+     "src": "CITRUS-EO"
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Citrus oil (limonene) named among essential oils known to cause poisoning in cats.",
+     "src": "PPH-CATS"
+    },
+    "dogs": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Citrus named among oils poisonous to dogs; harmful to dogs if ingested in large quantities.",
+     "src": "VCA-DOGS"
+    },
+    "birds": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Cats and birds described as at particular risk from essential oil toxicosis.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Manufacturer label guidance: keep out of reach of children.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "no_signal",
+     "ev": "untested",
+     "basis": "No pregnancy-specific finding located for limonene at cleaning concentrations.",
+     "src": null
+    },
+    "sensitive": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Limonene is a declared fragrance allergen in EU cosmetics labelling. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": true,
+    "components": [
+     "limonene"
+    ]
+   },
+   "note": "The one oil that genuinely cleans by dissolving grease, not by smelling clean. Also the most common pet risk in everyday cleaning, because citrus cleaners are everywhere."
+  },
+  "Orange": {
+   "botanical": "Citrus sinensis",
+   "components": [
+    "d-limonene",
+    "myrcene"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "strong",
+     "ev": "extrapolated",
+     "basis": "Same principal solvent component (d-limonene) as the citrus EOs measured directly; not itself measured in the cited comparison.",
+     "src": "CITRUS-EO"
+    },
+    "antimicrobial": {
+     "rating": "weak",
+     "ev": "reported",
+     "basis": "Citrus EOs generally antimicrobial; relative potency by variety not established in the cited work.",
+     "src": "CITRUS-EO"
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Citrus oil (limonene) named among oils known to poison cats.",
+     "src": "PPH-CATS"
+    },
+    "dogs": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Citrus named among oils poisonous to dogs.",
+     "src": "VCA-DOGS"
+    },
+    "birds": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Keep out of reach of children (label guidance for this class).",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "no_signal",
+     "ev": "untested",
+     "basis": "No pregnancy-specific finding located.",
+     "src": null
+    },
+    "sensitive": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Limonene is a declared fragrance allergen. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": true,
+    "components": [
+     "limonene"
+    ]
+   },
+   "note": "Nearly interchangeable with lemon as a degreaser. Oxidised limonene becomes a stronger sensitiser over time, which is one reason old citrus cleaner smells different."
+  },
+  "Grapefruit": {
+   "botanical": "Citrus paradisi",
+   "components": [
+    "d-limonene",
+    "nootkatone"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "strong",
+     "ev": "extrapolated",
+     "basis": "Same principal solvent component as the citrus EOs measured directly.",
+     "src": "CITRUS-EO"
+    },
+    "antimicrobial": {
+     "rating": "weak",
+     "ev": "untested",
+     "basis": "No direct antimicrobial measure located for grapefruit specifically.",
+     "src": null
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Citrus oil named among oils known to poison cats.",
+     "src": "PPH-CATS"
+    },
+    "dogs": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Citrus named among oils poisonous to dogs.",
+     "src": "VCA-DOGS"
+    },
+    "birds": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Keep out of reach of children.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "no_signal",
+     "ev": "untested",
+     "basis": "No pregnancy-specific finding located.",
+     "src": null
+    },
+    "sensitive": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Limonene is a declared fragrance allergen. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": true,
+    "components": [
+     "limonene"
+    ]
+   },
+   "note": "Grouped with the other citrus oils for safety. Any citrus cleaning product carries the same cat caution."
+  },
+  "Tea Tree": {
+   "botanical": "Melaleuca alternifolia",
+   "components": [
+    "terpinen-4-ol",
+    "alpha-terpineol",
+    "1,8-cineole"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "Not a solvent. No degreasing claim located.",
+     "src": null
+    },
+    "antimicrobial": {
+     "rating": "moderate",
+     "ev": "verified",
+     "basis": "Effective but measurably weaker than thymol in a head-to-head biofilm comparison: MIC 2-16 g/L for tea tree versus 0.5-4 g/L for thymol. Named among the best of six oils tested in an in-situ biocide comparison.",
+     "src": "CHG-EO"
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "verified",
+     "basis": "Named explicitly as a known cat toxin; 443 reported cases of concentrated tea tree toxicosis in dogs and cats 2002-2012; described as the most commonly reported essential oil intoxicant in pets.",
+     "src": "MSD"
+    },
+    "dogs": {
+     "flag": "avoid",
+     "ev": "verified",
+     "basis": "Named explicitly among oils known to poison dogs; same 443-case series.",
+     "src": "VCA-DOGS"
+    },
+    "birds": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk of essential oil toxicosis.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Keep out of reach of children.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Manufacturer guidance to consult a professional if pregnant or nursing.",
+     "src": "YL-THIEVES"
+    },
+    "sensitive": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Antiseptic and cytotoxic action noted; sensitisation with repeated dermal use.",
+     "src": "BIOCIDE-CMP"
+    }
+   },
+   "allergen": {
+    "declared": true,
+    "components": [
+     "limonene"
+    ]
+   },
+   "note": "The gap between reputation and evidence is widest here. Widely marketed as the natural disinfectant, measurably weaker than thyme against biofilm, and the leading cause of essential oil poisoning in pets."
+  },
+  "Eucalyptus": {
+   "botanical": "Eucalyptus radiata / Eucalyptus globulus",
+   "components": [
+    "1,8-cineole (eucalyptol)",
+    "alpha-pinene"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "weak",
+     "ev": "untested",
+     "basis": "No degreasing claim located.",
+     "src": null
+    },
+    "antimicrobial": {
+     "rating": "moderate",
+     "ev": "verified",
+     "basis": "MIC 4-64 g/L against S. epidermidis, weaker alone than thymol but synergistic with chlorhexidine (fractional inhibitory concentration index below 0.5) against established biofilm.",
+     "src": "CHG-EO"
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Eucalyptus oil named among oils known to poison cats.",
+     "src": "PPH-CATS"
+    },
+    "dogs": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Eucalyptus oil named among oils known to poison dogs.",
+     "src": "VCA-DOGS"
+    },
+    "birds": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Keep out of reach of children.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Manufacturer guidance to consult a professional if pregnant or nursing.",
+     "src": "YL-THIEVES"
+    },
+    "sensitive": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Respiratory irritant at high vapour concentration; a common asthma trigger question.",
+     "src": "MSD"
+    }
+   },
+   "allergen": {
+    "declared": false,
+    "components": []
+   },
+   "note": "Its real strength is as a partner, not a solo act. The measured synergy with chlorhexidine is much larger than its standalone effect."
+  },
+  "Peppermint": {
+   "botanical": "Mentha piperita",
+   "components": [
+    "menthol",
+    "menthone",
+    "carvone"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "No degreasing evidence located.",
+     "src": null
+    },
+    "antimicrobial": {
+     "rating": "weak",
+     "ev": "untested",
+     "basis": "No direct antimicrobial measure located for peppermint in the cited comparisons.",
+     "src": null
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Peppermint oil named among oils known to poison cats.",
+     "src": "PPH-CATS"
+    },
+    "dogs": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Peppermint named among oils poisonous to dogs.",
+     "src": "VCA-DOGS"
+    },
+    "birds": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Keep out of reach of children.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Manufacturer guidance to consult a professional if pregnant or nursing.",
+     "src": "YL-THIEVES"
+    },
+    "sensitive": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Menthol is a known trigger for airway sensitivity in some people.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": false,
+    "components": []
+   },
+   "note": "The clearest example of scent doing the work and cleaning not being the point. Sold as a fresh-clean additive far more often than as a cleaner."
+  },
+  "Lavender": {
+   "botanical": "Lavandula angustifolia",
+   "components": [
+    "linalool",
+    "linalyl acetate"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "No degreasing evidence located.",
+     "src": null
+    },
+    "antimicrobial": {
+     "rating": "moderate",
+     "ev": "reported",
+     "basis": "Linalool and linalool acetate showed high antifungal activity against fungal strains isolated from library and archive storage areas.",
+     "src": "BIOCIDE-CMP"
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "caution",
+     "ev": "extrapolated",
+     "basis": "Not on the named-cat-toxin list, but falls in the alcoholic-compound group the veterinary sources describe as lower-concern yet still absorbed and metabolised in the liver, which cats do slowly.",
+     "src": "MSD"
+    },
+    "dogs": {
+     "flag": "caution",
+     "ev": "extrapolated",
+     "basis": "Same basis; not on the named-dog-toxin list.",
+     "src": "MSD"
+    },
+    "birds": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Keep out of reach of children.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Manufacturer guidance to consult a professional if pregnant or nursing.",
+     "src": "YL-THIEVES"
+    },
+    "sensitive": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Linalool is a declared fragrance allergen in EU cosmetics labelling; a leading cause of contact allergy. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": true,
+    "components": [
+     "linalool",
+     "linalyl acetate"
+    ]
+   },
+   "note": "Genuine antifungal activity, and a genuine allergen. The most under-warned oil in household cleaning because it reads as gentle."
+  },
+  "Thyme": {
+   "botanical": "Thymus vulgaris",
+   "components": [
+    "thymol",
+    "carvacrol"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "Not a solvent.",
+     "src": null
+    },
+    "antimicrobial": {
+     "rating": "strong",
+     "ev": "verified",
+     "basis": "Aqueous thyme EO at 2.5% and 5% reduced mesophilic and psychophilic bacteria and environmental fungi in both air (nebulised) and on surfaces (direct contact) in a controlled study. Thymol produced the strongest biofilm activity of the oils compared, MIC 0.5-4 g/L.",
+     "src": "THYME-EO"
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "extrapolated",
+     "basis": "Thyme is not named on the cat-toxin list, but its principal components thymol and carvacrol are phenols, and cats are described as very sensitive to phenol and phenolic compounds specifically. Flagged as inference, not as a named finding.",
+     "src": "PPH-CATS"
+    },
+    "dogs": {
+     "flag": "caution",
+     "ev": "extrapolated",
+     "basis": "Same phenol basis; not on the named-dog-toxin list.",
+     "src": "PPH-CATS"
+    },
+    "birds": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Keep out of reach of children.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Manufacturer guidance to consult a professional if pregnant or nursing.",
+     "src": "YL-THIEVES"
+    },
+    "sensitive": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Phenol-class respiratory and dermal irritant.",
+     "src": "MSD"
+    }
+   },
+   "allergen": {
+    "declared": false,
+    "components": []
+   },
+   "note": "The strongest measured antimicrobial of the oils compared here, and the least marketed as a cleaner. The cat flag is an extrapolation and is labelled as one: thyme is not on the named list, but its active components belong to the chemical class the named-list logic is built on."
+  },
+  "Oregano": {
+   "botanical": "Origanum vulgare",
+   "components": [
+    "carvacrol",
+    "thymol"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "Not a solvent.",
+     "src": null
+    },
+    "antimicrobial": {
+     "rating": "strong",
+     "ev": "reported",
+     "basis": "Carvacrol, oregano's principal component, was among the essential oil components tested for inhibitory and antibiofilm effect against multidrug-resistant Enterococcus, Staphylococcus and Pseudomonas.",
+     "src": "EOC-FRONTIERS"
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "extrapolated",
+     "basis": "Phenol-class principal component (carvacrol) and cats are described as very sensitive to phenols. Inference, not a named finding.",
+     "src": "PPH-CATS"
+    },
+    "dogs": {
+     "flag": "caution",
+     "ev": "extrapolated",
+     "basis": "Same phenol basis.",
+     "src": "PPH-CATS"
+    },
+    "birds": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Keep out of reach of children.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Manufacturer guidance to consult a professional if pregnant or nursing.",
+     "src": "YL-THIEVES"
+    },
+    "sensitive": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Strong irritant at concentrated doses; not intended for undiluted skin contact.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": false,
+    "components": []
+   },
+   "note": "Strong antimicrobial, strong irritant. Effective is not the same as appropriate for a home."
+  },
+  "Clove": {
+   "botanical": "Eugenia caryophyllus / Syzygium aromaticum",
+   "components": [
+    "eugenol",
+    "eugenyl acetate"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "Not a solvent.",
+     "src": null
+    },
+    "antimicrobial": {
+     "rating": "strong",
+     "ev": "verified",
+     "basis": "In an in-situ biocide comparison across site materials, the best results were obtained with tea tree, pine and thyme, with clove oil noted for its phenolic compound content; eugenol was separately among the components tested against multidrug-resistant strains.",
+     "src": "BIOCIDE-CMP"
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Clove oil named among oils known to poison cats.",
+     "src": "PPH-CATS"
+    },
+    "dogs": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Clove oil is toxic to dogs and can cause vomiting, diarrhoea and liver damage.",
+     "src": "VCA-DOGS"
+    },
+    "birds": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Keep out of reach of children; corrosive-class dermal irritant.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Manufacturer guidance to consult a professional if pregnant or nursing.",
+     "src": "YL-THIEVES"
+    },
+    "sensitive": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Eugenol is a declared fragrance allergen and a known mucosal irritant. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": true,
+    "components": [
+     "eugenol"
+    ]
+   },
+   "note": "One of the four pet-flagged oils in the Thieves blend. Strong cleaner, poor safety profile around animals and children."
+  },
+  "Cinnamon": {
+   "botanical": "Cinnamomum verum / Cinnamomum zeylanicum",
+   "components": [
+    "trans-cinnamaldehyde",
+    "eugenol"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "Not a solvent.",
+     "src": null
+    },
+    "antimicrobial": {
+     "rating": "moderate",
+     "ev": "reported",
+     "basis": "Cinnamaldehyde was among the essential oil components tested against multidrug-resistant Enterococcus, Staphylococcus and Pseudomonas.",
+     "src": "EOC-FRONTIERS"
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Cinnamon oil named among oils known to poison cats.",
+     "src": "PPH-CATS"
+    },
+    "dogs": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Cinnamon bark oil can irritate a dog's skin and mucous membranes; named among oils poisonous to dogs.",
+     "src": "VCA-DOGS"
+    },
+    "birds": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Keep out of reach of children; mucous membrane irritant.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Manufacturer guidance to consult a professional if pregnant or nursing.",
+     "src": "YL-THIEVES"
+    },
+    "sensitive": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Cinnamaldehyde is a declared fragrance allergen and a strong sensitiser. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": true,
+    "components": [
+     "cinnamaldehyde"
+    ]
+   },
+   "note": "The second of the four pet-flagged oils in Thieves. The scent people read as 'warm and clean' is the irritant."
+  },
+  "Pine": {
+   "botanical": "Pinus sylvestris",
+   "components": [
+    "alpha-pinene",
+    "beta-pinene"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "moderate",
+     "ev": "reported",
+     "basis": "Pine tree oil was among the best-performing single oils in an in-situ biocide comparison; terpenes are described as associated with degreasing ability.",
+     "src": "BIOCIDE-CMP"
+    },
+    "antimicrobial": {
+     "rating": "moderate",
+     "ev": "verified",
+     "basis": "Pine tree oil produced the best results of the single oils tested in situ, alongside tea tree and thyme.",
+     "src": "BIOCIDE-CMP"
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Pine oils named among oils known to poison cats.",
+     "src": "PPH-CATS"
+    },
+    "dogs": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Pine oil named among oils known to poison dogs.",
+     "src": "VCA-DOGS"
+    },
+    "birds": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Keep out of reach of children.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Manufacturer guidance to consult a professional if pregnant or nursing.",
+     "src": "YL-THIEVES"
+    },
+    "sensitive": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Volatile terpene; airway irritant in sensitive individuals.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": true,
+    "components": [
+     "limonene"
+    ]
+   },
+   "note": "Pine cleaners are the classic example of a scent that means 'this is clean' to a whole generation, with a real pet caution attached."
+  },
+  "Rosemary": {
+   "botanical": "Rosmarinus officinalis",
+   "components": [
+    "1,8-cineole",
+    "camphor",
+    "carnosic acid"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "Not a solvent.",
+     "src": null
+    },
+    "antimicrobial": {
+     "rating": "weak",
+     "ev": "untested",
+     "basis": "No direct antimicrobial measure located for rosemary oil; rosemary extract's carnosic acid is an antioxidant, a different claim.",
+     "src": null
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "caution",
+     "ev": "untested",
+     "basis": "Not on the named cat-toxin list and no other finding located. Not a clearance.",
+     "src": null
+    },
+    "dogs": {
+     "flag": "caution",
+     "ev": "untested",
+     "basis": "Not on the named dog-toxin list and no other finding located.",
+     "src": null
+    },
+    "birds": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Keep out of reach of children.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Manufacturer guidance to consult a professional if pregnant or nursing.",
+     "src": "YL-THIEVES"
+    },
+    "sensitive": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Camphor-class compound; respiratory irritant at high concentration.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": false,
+    "components": []
+   },
+   "note": "The fifth ingredient of Thieves, and the only one of the five that is not on a named pet-toxin list. Its cleaning value is largely unestablished, which is itself the finding."
+  },
+  "Lemongrass": {
+   "botanical": "Cymbopogon citratus",
+   "components": [
+    "citral (geranial, neral)",
+    "myrcene"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "Not a solvent.",
+     "src": null
+    },
+    "antimicrobial": {
+     "rating": "strong",
+     "ev": "reported",
+     "basis": "In a review of comparative disinfectant efficacy, lemongrass-based formulations increased Pseudomonas aeruginosa eradication to about 92% versus 68% for conventional disinfectants, and tea tree inhibited 95% of MRSA.",
+     "src": null
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "caution",
+     "ev": "untested",
+     "basis": "Not on the named cat-toxin list and no other finding located.",
+     "src": null
+    },
+    "dogs": {
+     "flag": "caution",
+     "ev": "untested",
+     "basis": "Not on the named dog-toxin list and no other finding located.",
+     "src": null
+    },
+    "birds": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Keep out of reach of children.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Manufacturer guidance to consult a professional if pregnant or nursing.",
+     "src": "YL-THIEVES"
+    },
+    "sensitive": {
+     "flag": "caution",
+     "ev": "extrapolated",
+     "basis": "Citral is a declared fragrance allergen; the oil's principal components are citral.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": true,
+    "components": [
+     "citral",
+     "geraniol"
+    ]
+   },
+   "note": "One of the most promising cleaning oils on the antimicrobial evidence, and one of the least verified for household use. The hospital review notes the need for large-scale validation, which is the honest caveat."
+  },
+  "Citronella": {
+   "botanical": "Cymbopogon nardus / Cymbopogon winterianus",
+   "components": [
+    "citronellal",
+    "geraniol",
+    "citronellol"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "Not a solvent.",
+     "src": null
+    },
+    "antimicrobial": {
+     "rating": "weak",
+     "ev": "untested",
+     "basis": "No direct antimicrobial measure located.",
+     "src": null
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Citronella-containing products are widely listed as cat-toxic; geraniol and citronellol are in the same compound family as the oils that generate the named-list caution. Verify against a primary veterinary source before publishing as verified.",
+     "src": null
+    },
+    "dogs": {
+     "flag": "caution",
+     "ev": "untested",
+     "basis": "No direct dog finding located.",
+     "src": null
+    },
+    "birds": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Keep out of reach of children.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Manufacturer guidance to consult a professional if pregnant or nursing.",
+     "src": "YL-THIEVES"
+    },
+    "sensitive": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Citronellol and geraniol are declared fragrance allergens.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": true,
+    "components": [
+     "citronellol",
+     "geraniol"
+    ]
+   },
+   "note": "Marked as a known gap in the data: the cat caution is widely repeated but I have not yet confirmed it against a primary veterinary source. Recorded as reported, not verified, and queued for source confirmation."
+  },
+  "Wintergreen": {
+   "botanical": "Gaultheria procumbens",
+   "components": [
+    "methyl salicylate"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "Not a cleaning agent. Included because it appears in household products and is often assumed to be interchangeable with other plant oils.",
+     "src": null
+    },
+    "antimicrobial": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "No antimicrobial claim located.",
+     "src": null
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Oil of wintergreen named first on the list of oils known to poison cats.",
+     "src": "PPH-CATS"
+    },
+    "dogs": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Oil of wintergreen named on the list of oils known to poison dogs.",
+     "src": "VCA-DOGS"
+    },
+    "birds": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Methyl salicylate is an aspirin-class compound; a small volume holds a large salicylate dose, which is the specific danger to a small body. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    },
+    "pregnancy": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Salicylate exposure is a documented pregnancy concern; treated as avoid. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    },
+    "sensitive": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Salicylate sensitivity is a recognised reaction; cross-reacts with aspirin sensitivity. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": false,
+    "components": []
+   },
+   "note": "Not a cleaner. Catalogued because it is the single most dangerous oil on this list and it is frequently mistaken for a gentle one. Methyl salicylate is aspirin chemistry."
+  },
+  "Sweet Birch": {
+   "botanical": "Betula lenta",
+   "components": [
+    "methyl salicylate"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "Not a cleaning agent.",
+     "src": null
+    },
+    "antimicrobial": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "No antimicrobial claim located.",
+     "src": null
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Oil of sweet birch named among oils known to poison cats.",
+     "src": "PPH-CATS"
+    },
+    "dogs": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Oil of sweet birch named among oils known to poison dogs.",
+     "src": "VCA-DOGS"
+    },
+    "birds": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Methyl salicylate, same aspirin-class hazard as wintergreen. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    },
+    "pregnancy": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Salicylate exposure is a documented pregnancy concern. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    },
+    "sensitive": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Salicylate sensitivity recognised. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": false,
+    "components": []
+   },
+   "note": "Chemically near-identical in hazard to wintergreen because the principal component is the same. Two names, one risk."
+  },
+  "Pennyroyal": {
+   "botanical": "Mentha pulegium",
+   "components": [
+    "pulegone",
+    "menthone"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "Not a cleaning agent.",
+     "src": null
+    },
+    "antimicrobial": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "No antimicrobial claim located.",
+     "src": null
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Pennyroyal oil named among oils known to poison cats.",
+     "src": "PPH-CATS"
+    },
+    "dogs": {
+     "flag": "avoid",
+     "ev": "verified",
+     "basis": "Pennyroyal oil can have effects on the liver in dogs; named among oils known to poison dogs.",
+     "src": "VCA-DOGS"
+    },
+    "birds": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Classed among the most hazardous essential oils; not appropriate in a household with children. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    },
+    "pregnancy": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Pennyroyal has a documented history as an abortifacient. The strongest pregnancy flag on this list. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    },
+    "sensitive": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Hepatotoxic class. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": false,
+    "components": []
+   },
+   "note": "The most serious pregnancy flag in this catalog. Historically used to induce abortion, with documented harm. Not a household cleaning oil, included so nobody assumes it is one."
+  },
+  "Bergamot": {
+   "botanical": "Citrus bergamia",
+   "components": [
+    "linalool",
+    "linalyl acetate",
+    "bergapten"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "moderate",
+     "ev": "extrapolated",
+     "basis": "A citrus oil; citrus EOs as a class showed better cleaning ability than acetone against fats. Bergamot itself was not in the measured set.",
+     "src": "CITRUS-EO"
+    },
+    "antimicrobial": {
+     "rating": "weak",
+     "ev": "untested",
+     "basis": "No direct antimicrobial measure located for bergamot.",
+     "src": null
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "extrapolated",
+     "basis": "Citrus oil (limonene) named among oils known to poison cats; bergamot is a citrus oil. Inference from the class, not a named finding.",
+     "src": "PPH-CATS"
+    },
+    "dogs": {
+     "flag": "caution",
+     "ev": "extrapolated",
+     "basis": "Same citrus basis.",
+     "src": "VCA-DOGS"
+    },
+    "birds": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Keep out of reach of children.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Manufacturer guidance to consult a professional if pregnant or nursing.",
+     "src": "YL-THIEVES"
+    },
+    "sensitive": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Bergapten is phototoxic; skin contact followed by sun exposure can cause a chemical burn. Plus linalool allergen. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": true,
+    "components": [
+     "linalool",
+     "limonene"
+    ]
+   },
+   "note": "The phototoxicity is the distinctive hazard, and it is the one people do not know. A surface cleaner carrying bergamot is a different risk on a sunny windowsill."
+  },
+  "Geranium": {
+   "botanical": "Pelargonium graveolens",
+   "components": [
+    "geraniol",
+    "citronellol",
+    "linalool"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "none",
+     "ev": "untested",
+     "basis": "Not a solvent.",
+     "src": null
+    },
+    "antimicrobial": {
+     "rating": "weak",
+     "ev": "reported",
+     "basis": "Grouped with the alcoholic-compound oils described as expressing a slightly less effective antimicrobial action than the phenolic oils.",
+     "src": "BIOCIDE-CMP"
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "caution",
+     "ev": "untested",
+     "basis": "Not on the named cat-toxin list and no other finding located.",
+     "src": null
+    },
+    "dogs": {
+     "flag": "caution",
+     "ev": "untested",
+     "basis": "Not on the named dog-toxin list and no other finding located.",
+     "src": null
+    },
+    "birds": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Cats and birds at particular risk.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Keep out of reach of children.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Manufacturer guidance to consult a professional if pregnant or nursing.",
+     "src": "YL-THIEVES"
+    },
+    "sensitive": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "Geraniol and citronellol are both declared fragrance allergens. Widely documented, but not yet traced to a resolvable primary source. Queued for sourcing.",
+     "src": null
+    }
+   },
+   "allergen": {
+    "declared": true,
+    "components": [
+     "geraniol",
+     "citronellol",
+     "linalool"
+    ]
+   },
+   "note": "Included because it is a common scent component rather than a cleaner, and it carries three declared allergens at once."
+  }
+ },
+ "blends": {
+  "Thieves": {
+   "brand": "Young Living",
+   "owner": "Young Living Essential Oils (private, MLM) — verify before publishing",
+   "components": [
+    "Clove",
+    "Lemon",
+    "Cinnamon",
+    "Eucalyptus Radiata",
+    "Rosemary"
+   ],
+   "cleaning": {
+    "degreasing": {
+     "rating": "moderate",
+     "ev": "extrapolated",
+     "basis": "Contains lemon, a verified degreaser. The blend as a whole has not been measured for degreasing in any source located.",
+     "src": "CITRUS-EO"
+    },
+    "antimicrobial": {
+     "rating": "moderate",
+     "ev": "extrapolated",
+     "basis": "Contains clove, cinnamon and eucalyptus, all of which show documented antimicrobial activity individually. An oil blend showed stronger biocidal action than single oils in an in-situ comparison, so a synergistic effect is plausible. Not measured for this blend.",
+     "src": "BIOCIDE-CMP"
+    }
+   },
+   "populations": {
+    "cats": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Four of the five components (clove, lemon, cinnamon, eucalyptus) are individually named in the published list of oils known to poison cats. Cats are described as more sensitive than dogs because they lack glucuronyl transferase and are especially sensitive to phenolic compounds, which clove and cinnamon contain.",
+     "src": "PPH-CATS"
+    },
+    "dogs": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Cinnamon and eucalyptus are named among oils known to poison dogs; clove oil is described as toxic to dogs and capable of causing vomiting, diarrhoea and liver damage.",
+     "src": "VCA-DOGS"
+    },
+    "birds": {
+     "flag": "avoid",
+     "ev": "reported",
+     "basis": "Cats and birds are described as at particular risk from essential oil toxicosis.",
+     "src": "MSD"
+    },
+    "children": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "The manufacturer's own label guidance is keep out of reach of children.",
+     "src": "YL-THIEVES"
+    },
+    "pregnancy": {
+     "flag": "caution",
+     "ev": "reported",
+     "basis": "The manufacturer's own label guidance is to consult a health professional if pregnant or nursing.",
+     "src": "YL-THIEVES"
+    },
+    "sensitive": {
+     "flag": "avoid",
+     "ev": "verified",
+     "basis": "Contains declared fragrance allergens eugenol (clove), cinnamaldehyde (cinnamon) and limonene (lemon), and dermal application guidance is to dilute 1 drop in 4 drops of carrier oil.",
+     "src": "YL-THIEVES"
+    }
+   },
+   "allergen": {
+    "declared": true,
+    "components": [
+     "eugenol",
+     "cinnamaldehyde",
+     "limonene",
+     "linalool"
+    ]
+   },
+   "claim_conflict": {
+    "manufacturer_claim": "The Thieves Household Cleaner product sheet states it is 'great to use around the whole family, including pets and children'.",
+    "manufacturer_src": "YL-CLEANER",
+    "toxicology_finding": "Four of the five oils in the blend are individually named in published veterinary lists of essential oils that cause poisoning in cats, and two are named for dogs. The veterinary literature states that risk increases with concentration and that cats and birds are at particular risk.",
+    "toxicology_src": "PPH-CATS",
+    "note": "Recorded as a tension, not as a verdict. Dose matters: a diluted household cleaner is a lower exposure than neat oil, and a capful-per-bucket dilution is not the same as applying the oil. The manufacturer's claim is asserted without a cited basis; the veterinary finding is cited. Both are shown."
+   },
+   "naming_legend": {
+    "claim": "Named for 15th-century French thieves who robbed plague victims, said to have protected themselves with an aromatic blend of clove, rosemary and other botanicals.",
+    "ev": "untested",
+    "basis": "The manufacturer's own material introduces it as 'Legend says'. Three differing versions appear across their own product pages: four 15th-century French thieves; 14th-century perfumers and spice traders who traded the formula for leniency; and a version naming a different century. This is folklore, not documented history.",
+    "note": "The folk recipe was vinegar-based. The modern blend contains no vinegar and is a proprietary oil blend inspired by the story."
+   },
+   "note": "The single best demonstration piece in this database. It shows the certainty system working across four layers at once: a legend presented as a name, a composition that differs from the legend, a safety claim asserted without a source, and a toxicology record that says otherwise."
+  }
+ }
+}

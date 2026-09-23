@@ -16,7 +16,10 @@
   "heritage_year": 1933,
   "heritage_note": "Blue glass cleaner since the 1930s — most families' first window spray. Formula evolved (DBC solvent era → 2-butoxyethanol → modern).",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Formula 409",
@@ -34,7 +37,10 @@
   "heritage_year": 1964,
   "heritage_note": "'The 409' — 1960s all-purpose spray burned into muscle memory for kitchen counters.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Clorox",
+  "owner_ev": "reported",
+  "owner_src": null
  },
  {
   "name": "Mr. Clean",
@@ -52,7 +58,10 @@
   "heritage_year": 1958,
   "heritage_note": "The bald genie's cleaner, a 1950s staple that defined what 'clean' smelled like.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Pine-Sol",
@@ -69,7 +78,10 @@
   "heritage_year": 1929,
   "heritage_note": "Pine-oil cleaner from 1929 — that 'clean pine smell' is a generational memory (and a sensitizer source).",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Clorox",
+  "owner_ev": "reported",
+  "owner_src": null
  },
  {
   "name": "Lysol All-Purpose",
@@ -87,7 +99,10 @@
   "heritage_year": 1889,
   "heritage_note": "Sold since the 1889 flu era as 'household disinfectant'. Early formulas even contained cresol; generations of sickness-cleaning trust.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Fabuloso",
@@ -105,7 +120,10 @@
   "heritage_year": 1980,
   "heritage_note": "Colgate's brightly colored multi-surface cleaner — a 1980s–90s kitchen fixture, passed down by scent loyalty.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Simple Green",
@@ -123,7 +141,10 @@
   "heritage_year": 1975,
   "heritage_note": "The 1970s 'environmentally friendly' pioneer — one of the first green-label cleaners in ordinary homes.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Method All-Purpose",
@@ -140,7 +161,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Mrs. Meyer's Multi-Surface",
@@ -156,7 +180,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Seventh Gen All-Purpose",
@@ -172,7 +199,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Clorox Bleach",
@@ -189,7 +219,10 @@
   "heritage_year": 1913,
   "heritage_note": "The original household disinfectant, in cupboards for 100+ years. Effective but carries respiratory + repro flags on routine indoor use.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Clorox",
+  "owner_ev": "reported",
+  "owner_src": null
  },
  {
   "name": "Lysol Disinfectant Spray",
@@ -208,7 +241,10 @@
   "heritage_year": 1950,
   "heritage_note": "The aerosol that 'kills 99.9% of germs' — a 1950s icon passed down as the default sick-day spray.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Lysol Toilet Bowl",
@@ -224,7 +260,10 @@
   "heritage_year": 1930,
   "heritage_note": "The acid-based toilet cleaner many inherited without reading the label.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Scrubbing Bubbles",
@@ -241,7 +280,10 @@
   "heritage_year": 1972,
   "heritage_note": "The 1970s bathroom spray that foamed 'up and at 'em' — a shower-scrub icon.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Comet Bathroom",
@@ -258,7 +300,10 @@
   "heritage_year": 1956,
   "heritage_note": "Comet cleanser (1956) — chlorinated scouring powder era, tub rings beware.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Tilex Mold & Mildew",
@@ -276,7 +321,10 @@
   "heritage_year": 1980,
   "heritage_note": "The bleach-based mold spray that bathrooms across two generations have reached for without gloves.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Clorox",
+  "owner_ev": "reported",
+  "owner_src": null
  },
  {
   "name": "Kaboom Foam-Tastic",
@@ -292,7 +340,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Clorox ToiletWand",
@@ -307,7 +358,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Clorox",
+  "owner_ev": "reported",
+  "owner_src": null
  },
  {
   "name": "Soft Scrub",
@@ -323,7 +377,10 @@
   "heritage_year": 1968,
   "heritage_note": "The 1968 gentle abrasive that replaced powders — 'liquid Comet', passed along as the safe scrubbing option.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Bar Keepers Friend",
@@ -339,7 +396,10 @@
   "heritage_year": 1882,
   "heritage_note": "A stainless-steel polish from 1882 with a cult following that skipped generations entirely via word of mouth.",
   "added": "2026-08-18",
-  "updated": "2026-09-19"
+  "updated": "2026-09-19",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Pledge",
@@ -357,7 +417,10 @@
   "heritage_year": 1958,
   "heritage_note": "Lemon-oil furniture polish (1958) — the 'clean lemon smell' of living rooms for three generations.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Febreze",
@@ -374,7 +437,10 @@
   "heritage_year": 1998,
   "heritage_note": "Younger than the rest, but already inherited: the 'spray the couch' reflex is now a household ritual.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Drano Max Gel",
@@ -391,7 +457,10 @@
   "heritage_year": 1923,
   "heritage_note": "Drano (1923) — the caustic drain unclogger every household inherited, lye and all.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "CLR",
@@ -406,7 +475,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Bon Ami",
@@ -423,7 +495,10 @@
   "heritage_year": 1886,
   "heritage_note": "'Hasn't scratched yet' since 1886 — the feldspar-based powder that outlived every competitor.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Ajax Powder",
@@ -441,7 +516,10 @@
   "heritage_year": 1947,
   "heritage_note": "The 1940s scouring powder with the knight — gritty, cheap, and grandma's cabinet standby.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Swiffer WetJet",
@@ -458,7 +536,10 @@
   "heritage_year": 1999,
   "heritage_note": "P&G's mop reinvention — the modern 'clean floor' default already being handed down.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Green Works",
@@ -475,7 +556,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Clorox",
+  "owner_ev": "reported",
+  "owner_src": null
  },
  {
   "name": "ECOS Dishmate",
@@ -491,7 +575,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Biokleen All-Purpose",
@@ -507,7 +594,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Dr. Bronner's Sal Suds",
@@ -523,7 +613,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Grove Co. Multi-Purpose",
@@ -539,7 +632,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Dawn Ultra",
@@ -558,7 +654,10 @@
   "heritage_year": 1973,
   "heritage_note": "Dawn (1973) — the dish soap that doubles as wildlife-cleanup icon; generations trust it on their greasiest pots.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Palmolive",
@@ -577,7 +676,10 @@
   "heritage_year": 1898,
   "heritage_note": "A brand since 1898 — 'Palmolive' dish liquid is literally a great-grandparent's soap.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Tide",
@@ -595,7 +697,10 @@
   "heritage_year": 1946,
   "heritage_note": "The 1946 laundry breakthrough that became the default 'family detergent' for 80 years.",
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Gain",
@@ -610,7 +715,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Cascade",
@@ -626,7 +734,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-09-19"
+  "updated": "2026-09-19",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Finish",
@@ -642,7 +753,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-09-19"
+  "updated": "2026-09-19",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Arm & Hammer",
@@ -658,7 +772,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Seventh Gen Dish",
@@ -674,7 +791,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Mrs. Meyer's Dish",
@@ -690,7 +810,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Method Dish",
@@ -707,7 +830,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Isopropyl Alcohol 70% (BMVC)",
@@ -720,7 +846,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "18-in-1 Pure-Castile Soap, Peppermint (BMVC)",
@@ -736,7 +865,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Essential Oil Spray (BMVC)",
@@ -754,7 +886,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Peppermint Pure Essential Oil (BMVC)",
@@ -766,7 +901,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Organic Essential Oils Kit (BMVC)",
@@ -781,7 +919,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-09-19"
+  "updated": "2026-09-19",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Granite & Stone Cleaner (BMVC)",
@@ -801,7 +942,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Wood Surface Cleaner (BMVC)",
@@ -821,7 +965,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Power Cleaning Paste (BMVC)",
@@ -844,7 +991,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Norwex Cloth + Water (BMVC)",
@@ -857,7 +1007,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Pumie Toilet Bowl Ring Remover (BMVC)",
@@ -869,7 +1022,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Dishwasher Pods Zero Plastic, Unscented",
@@ -886,7 +1042,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Zero Plastic Dishwasher Powder",
@@ -902,7 +1061,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Dishwasher Detergent, Fragrance-free",
@@ -915,7 +1077,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Dishwasher Tablets, Fragrance Free",
@@ -930,7 +1095,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "UltraWash Dishwasher Pods",
@@ -944,7 +1112,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Dishwasher Gel, Free & Clear",
@@ -957,7 +1128,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Laundry Detergent Pods, Eucalyptus & Rosemary",
@@ -973,7 +1147,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Laundry Detergent Pods, Unscented",
@@ -988,7 +1165,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Laundry Detergent, Unscented",
@@ -1002,7 +1182,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Baby Laundry Detergent, Unscented",
@@ -1017,7 +1200,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Liquid Laundry Detergent, Unscented",
@@ -1030,7 +1216,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Oxi Booster Pods",
@@ -1043,7 +1232,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Laundry Powder",
@@ -1057,7 +1249,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Free & Clear Laundry Detergent",
@@ -1071,7 +1266,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Unilever",
+  "owner_ev": "reported",
+  "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies"
  },
  {
   "name": "Chlorine Free Bleach",
@@ -1084,7 +1282,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Unilever",
+  "owner_ev": "reported",
+  "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies"
  },
  {
   "name": "Super Washing Soda",
@@ -1096,7 +1297,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Church & Dwight",
+  "owner_ev": "reported",
+  "owner_src": null
  },
  {
   "name": "Castile Soap, Peppermint",
@@ -1113,7 +1317,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Castile Soap, Lavender",
@@ -1130,7 +1337,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Sal Suds Liquid Cleaner",
@@ -1146,7 +1356,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "All-Purpose Cleaner, Geranium & Lemongrass",
@@ -1165,7 +1378,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Daily Shower & Tile Cleaner, Citrus Zest",
@@ -1179,7 +1395,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Bathroom Cleaner Spray, Citrus Zest",
@@ -1193,7 +1412,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Bathroom Cleaner Spray, Unscented",
@@ -1206,7 +1428,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Floor Surface Cleaner, Citrus Zest",
@@ -1220,7 +1445,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Concentrate, Fragrance-Free",
@@ -1237,7 +1465,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Oxygen Boost",
@@ -1250,7 +1481,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Gel Hand Soap",
@@ -1264,7 +1498,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Bathroom Cleaner, Fresh",
@@ -1277,7 +1514,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Toilet Bowl Cleaner",
@@ -1290,7 +1530,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "All-Purpose Degreaser, Fresh",
@@ -1303,7 +1546,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Glass Cleaner Fresh",
@@ -1316,7 +1562,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Toilet Bowl Cleaner, Emerald Cypress & Fir",
@@ -1330,7 +1579,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Unilever",
+  "owner_ev": "reported",
+  "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies"
  },
  {
   "name": "Tub & Tile Cleaner, Emerald Cypress & Fir",
@@ -1344,7 +1596,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Unilever",
+  "owner_ev": "reported",
+  "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies"
  },
  {
   "name": "Shower Kleener",
@@ -1358,7 +1613,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Toilet Kleener, Natural Cedar",
@@ -1372,7 +1630,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Toilet Bowl Cleaner Pine Fresh",
@@ -1386,7 +1647,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "SC Johnson",
+  "owner_ev": "verified",
+  "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html"
  },
  {
   "name": "Cream Scrub",
@@ -1400,7 +1664,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "SC Johnson",
+  "owner_ev": "verified",
+  "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html"
  },
  {
   "name": "Glass Cleaner, Unscented",
@@ -1413,7 +1680,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "All-Purpose Spray, Lemon Zest",
@@ -1426,7 +1696,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "All-Purpose Surface Cleaner, Ginger Yuzu",
@@ -1440,7 +1713,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "SC Johnson",
+  "owner_ev": "verified",
+  "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html"
  },
  {
   "name": "Powder Cleanser",
@@ -1455,7 +1731,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Dishwashing Liquid, Hypo-Allergenic",
@@ -1468,7 +1747,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Dish Liquid, Unscented",
@@ -1481,7 +1763,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Dish Liquid, Free & Clear",
@@ -1494,7 +1779,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Unilever",
+  "owner_ev": "reported",
+  "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies"
  },
  {
   "name": "All-Purpose Cleaner, Free & Clear",
@@ -1507,7 +1795,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Unilever",
+  "owner_ev": "reported",
+  "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies"
  },
  {
   "name": "All-Purpose Home Cleaner",
@@ -1522,7 +1813,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Meliora Dish Soap",
@@ -1537,7 +1831,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Laundry Detergent, Free & Clear",
@@ -1549,7 +1846,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Multi-Purpose Cleaner, Free & Clear",
@@ -1561,7 +1861,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Hand Soap, Meyer Lemon Mandarin",
@@ -1575,7 +1878,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Floor Cleaner",
@@ -1588,7 +1894,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Concentrated All-Purpose",
@@ -1602,7 +1911,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Calcium Lime Rust Cleaner",
@@ -1616,7 +1928,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "OxiClean Baby Stain Soaker",
@@ -1629,7 +1944,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Church & Dwight",
+  "owner_ev": "reported",
+  "owner_src": null
  },
  {
   "name": "Dishwasher Pacs, Free & Clear",
@@ -1643,7 +1961,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Unilever",
+  "owner_ev": "reported",
+  "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies"
  },
  {
   "name": "Dishwasher Powder, Free & Clear",
@@ -1657,7 +1978,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Unilever",
+  "owner_ev": "reported",
+  "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies"
  },
  {
   "name": "Wave Dishwashing Gel Lavender",
@@ -1670,7 +1994,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Glass Cleaner Concentrate 1A",
@@ -1680,7 +2007,10 @@
   "ings": [],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Focus MP 11 Multi-Purpose",
@@ -1690,7 +2020,10 @@
   "ings": [],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Green Link Multi-Clean Degreaser",
@@ -1700,7 +2033,10 @@
   "ings": [],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Green Link Neutral Floor Cleaner",
@@ -1710,7 +2046,10 @@
   "ings": [],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "HOST Dry Carpet Cleaner",
@@ -1720,7 +2059,10 @@
   "ings": [],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Carpet & Upholstery Concentrate",
@@ -1730,7 +2072,10 @@
   "ings": [],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "20 Mule Team Borax (BMVC)",
@@ -1744,7 +2089,10 @@
   "heritage_year": 1891,
   "heritage_note": "Mined in Death Valley and hauled by 20-mule teams since 1891 — the all-purpose laundry booster grandma swore by. Still in most US grocery aisles; restricted across the EU for reproductive toxicity.",
   "added": "2026-08-28",
-  "updated": "2026-09-19"
+  "updated": "2026-09-19",
+  "owner": "Henkel",
+  "owner_ev": "reported",
+  "owner_src": null
  },
  {
   "name": "Easy-Off Heavy Duty Oven Cleaner",
@@ -1760,7 +2108,10 @@
   ],
   "heritage": false,
   "added": "2026-08-28",
-  "updated": "2026-08-28"
+  "updated": "2026-08-28",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Dawn Ultra Dish Soap",
@@ -1779,7 +2130,10 @@
   "source_url": "https://cpid.calepa.ca.gov/",
   "added": "2026-09-06",
   "updated": "2026-09-06",
-  "note": ""
+  "note": "",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Tide Original Liquid Laundry",
@@ -1798,7 +2152,10 @@
   "source_url": "https://cpid.calepa.ca.gov/",
   "added": "2026-09-06",
   "updated": "2026-09-06",
-  "note": ""
+  "note": "",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Clorox Disinfecting Bleach",
@@ -1815,7 +2172,10 @@
   "source_url": "https://cpid.calepa.ca.gov/",
   "added": "2026-09-06",
   "updated": "2026-09-06",
-  "note": ""
+  "note": "",
+  "owner": "Clorox",
+  "owner_ev": "reported",
+  "owner_src": null
  },
  {
   "name": "Lysol Multi-Surface Cleaner",
@@ -1833,7 +2193,10 @@
   "source_url": "https://cpid.calepa.ca.gov/",
   "added": "2026-09-06",
   "updated": "2026-09-06",
-  "note": ""
+  "note": "",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Seventh Generation Free & Clear Dish",
@@ -1851,7 +2214,10 @@
   "source_url": "https://cpid.calepa.ca.gov/",
   "added": "2026-09-06",
   "updated": "2026-09-06",
-  "note": ""
+  "note": "",
+  "owner": "Unilever",
+  "owner_ev": "reported",
+  "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies"
  },
  {
   "name": "Zud Heavy Duty Cleanser",
@@ -1867,7 +2233,10 @@
   "heritage_year": 1950,
   "heritage_note": "Powdered rust remover since mid-20th century — go-to for tough rust stains on porcelain, tile, and metal. \"The rust remover your grandmother used.\"",
   "added": "2026-09-09",
-  "updated": "2026-09-09"
+  "updated": "2026-09-09",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Dawn Ultra Dishwashing Liquid",
@@ -1889,7 +2258,10 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18"
+  "updated": "2026-08-18",
+  "owner": "Procter & Gamble",
+  "owner_ev": "reported",
+  "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies"
  },
  {
   "name": "Glass Cleaner",
@@ -1906,7 +2278,10 @@
   ],
   "heritage": false,
   "added": "2026-09-11",
-  "updated": "2026-09-11"
+  "updated": "2026-09-11",
+  "owner": "SC Johnson",
+  "owner_ev": "verified",
+  "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html"
  },
  {
   "name": "The Honest Company Dish Soap",
@@ -1925,7 +2300,10 @@
   ],
   "heritage": false,
   "added": "2026-09-11",
-  "updated": "2026-09-11"
+  "updated": "2026-09-11",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Murphy Oil Soap",
@@ -1943,7 +2321,10 @@
   "heritage_year": 1905,
   "heritage_note": "Original oil soap formula since 1905 — generations of wood furniture care. Potassium oleate (plant-oil soap) base, not petroleum solvent.",
   "added": "2026-09-12",
-  "updated": "2026-09-12"
+  "updated": "2026-09-12",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Cascade Complete ActionPacs",
@@ -1976,7 +2357,10 @@
   "source": "P&G SmartLabel disclosure (public)",
   "source_url": "https://smartlabel.pg.com/00037000982081.html",
   "added": "2026-09-14",
-  "updated": "2026-09-14"
+  "updated": "2026-09-14",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Fresh Gel Toilet Cleaning Stamp",
@@ -1999,7 +2383,10 @@
   "source": "SC Johnson What's Inside disclosure (public)",
   "source_url": "https://whatsinsidescjohnson.com/en-us/brands/scrubbingbubbles/toilet/fresh-gel",
   "added": "2026-09-14",
-  "updated": "2026-09-14"
+  "updated": "2026-09-14",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Biokleen Bac-Out Stain & Odor Eliminator",
@@ -2021,7 +2408,10 @@
   "source_url": "https://biokleenhome.com/mwdownloads/download/link/id/1337/",
   "added": "2026-09-17",
   "updated": "2026-09-17",
-  "note": "Enzymatic odor eliminator — STR-relevant for pet/organic odors. SDS discloses full list incl. CAS numbers; microbial mixture has no CAS (biological)."
+  "note": "Enzymatic odor eliminator — STR-relevant for pet/organic odors. SDS discloses full list incl. CAS numbers; microbial mixture has no CAS (biological).",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Puracy Natural Multi-Surface Cleaner (Green Tea & Lime)",
@@ -2046,7 +2436,10 @@
   "source_url": "https://puracy.com/products/multi-surface-cleaner-spray-green-tea-lime",
   "added": "2026-09-17",
   "updated": "2026-09-17",
-  "note": "Plant-based multi-surface spray. Fragrance allergens (limonene, linalool, geraniol) disclosed — EU allergen-style transparency."
+  "note": "Plant-based multi-surface spray. Fragrance allergens (limonene, linalool, geraniol) disclosed — EU allergen-style transparency.",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Better Life What-Ever All-Purpose Cleaner (Unscented)",
@@ -2066,7 +2459,10 @@
   "source_url": "https://thesupplementshop.com.au/products/better-life-all-purpose-cleaner-unscented-32-fl-oz-946-ml",
   "added": "2026-09-17",
   "updated": "2026-09-17",
-  "note": "Plant-derived surfactants, unscented. Preservative methylisothiazolinone <0.01% — a known sensitizer at larger concentrations."
+  "note": "Plant-derived surfactants, unscented. Preservative methylisothiazolinone <0.01% — a known sensitizer at larger concentrations.",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Granite Gold Daily Cleaner",
@@ -2085,7 +2481,10 @@
   "source_url": "https://images.thdstatic.com/catalog/pdfImages/c9/c9704bb3-f613-4b8d-b9a8-352cc8285c6e.pdf",
   "added": "2026-09-17",
   "updated": "2026-09-17",
-  "note": "Newer manufacturer SDS lists 'proprietary ingredients 1-10%' — partial disclosure flag: the 5 named ingredients are from the earlier full SDS; current formula may differ. Mountain-relevant: granite/stone counter care."
+  "note": "Newer manufacturer SDS lists 'proprietary ingredients 1-10%' — partial disclosure flag: the 5 named ingredients are from the earlier full SDS; current formula may differ. Mountain-relevant: granite/stone counter care.",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Resolve Heavy Traffic Foam Carpet Cleaner",
@@ -2112,7 +2511,10 @@
   "source_url": "https://www.rbnainfo.com/product.php?productLineId=490",
   "added": "2026-09-17",
   "updated": "2026-09-17",
-  "note": "US formulation. SmartLabel also discloses fragrance components Butylphenyl Methylpropional, Dipropylene Glycol and Eugenol, and non-functional constituents (ethane, isopentane, pentane, acrylic acid, methyl methacrylate, DEGBE). Preserved by the CMIT/MIT pair — the allergen headline here."
+  "note": "US formulation. SmartLabel also discloses fragrance components Butylphenyl Methylpropional, Dipropylene Glycol and Eugenol, and non-functional constituents (ethane, isopentane, pentane, acrylic acid, methyl methacrylate, DEGBE). Preserved by the CMIT/MIT pair — the allergen headline here.",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Krud Kutter Original Cleaner & Degreaser",
@@ -2130,7 +2532,10 @@
   "source_url": "https://images.thdstatic.com/catalog/pdfImages/59/599a1865-8dc9-423d-8d0e-dc8a19e6e551.pdf",
   "added": "2026-09-17",
   "updated": "2026-09-17",
-  "note": "Concentrated alkaline degreaser, pH <12.2 (manufacturer TDS), 0% VOC. TDS describes the surfactant blend only as 'proprietary blend of biodegradable surfactants' — ingredient identity is taken from the SDS Section 3 hazardous-substances block, which lists only the classified components. Incomplete-by-design disclosure; noted rather than padded."
+  "note": "Concentrated alkaline degreaser, pH <12.2 (manufacturer TDS), 0% VOC. TDS describes the surfactant blend only as 'proprietary blend of biodegradable surfactants' — ingredient identity is taken from the SDS Section 3 hazardous-substances block, which lists only the classified components. Incomplete-by-design disclosure; noted rather than padded.",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Weiman Stainless Steel Cleaner & Polish",
@@ -2152,7 +2557,10 @@
   "source_url": "https://weiman.com/mwdownloads/download/link/id/572",
   "added": "2026-09-17",
   "updated": "2026-09-17",
-  "note": "Mineral-oil polish in an LPG aerosol. Manufacturer's own ingredient list; the SDS marks mineral oil 10-30% with exact concentrations withheld as trade secret. Product-level aspiration hazard (H304) comes from the mineral oil / distillate fraction."
+  "note": "Mineral-oil polish in an LPG aerosol. Manufacturer's own ingredient list; the SDS marks mineral oil 10-30% with exact concentrations withheld as trade secret. Product-level aspiration hazard (H304) comes from the mineral oil / distillate fraction.",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "LA's Totally Awesome All-Purpose Cleaner",
@@ -2171,7 +2579,10 @@
   "source_url": "https://www.lastotallyawesome.com/shop/all-purpose/awesome128oz-all-purpose-cleaner/",
   "added": "2026-09-17",
   "updated": "2026-09-17",
-  "note": "Sourcing caveat: the manufacturer page markets the formula but does not enumerate ingredients. Composition taken from a retail listing of the current formulation (Butyl Carbitol = DEGBE; Ecosurf EH-9 = an alcohol ethoxylate, recorded under the existing 'Ethoxylated Alcohol' entry) plus the manufacturer's 2011 MSDS (which additionally listed an orange-oil blend, no longer shown). Weaker disclosure than the other three adds; flagged rather than presented as equivalent."
+  "note": "Sourcing caveat: the manufacturer page markets the formula but does not enumerate ingredients. Composition taken from a retail listing of the current formulation (Butyl Carbitol = DEGBE; Ecosurf EH-9 = an alcohol ethoxylate, recorded under the existing 'Ethoxylated Alcohol' entry) plus the manufacturer's 2011 MSDS (which additionally listed an orange-oil blend, no longer shown). Weaker disclosure than the other three adds; flagged rather than presented as equivalent.",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Clorox Disinfecting Wipes, Fresh Scent",
@@ -2194,7 +2605,10 @@
   "source_url": "https://smartlabel.labelinsight.com/product/6089729/ingredients",
   "added": "2026-09-18",
   "updated": "2026-09-18",
-  "note": "EPA-registered disinfecting wipe (EPA Reg. 5813-79). Two BAC-type quats are the actives; the SDS lists each at ~0.184% by weight. SmartLabel flags hexoxyethanol, isopropanol and the C12-18 quat on California SB258 designated lists. The C12-14 and C12-18 quats are UVCBs with no discrete PubChem CID, recorded extrapolated by class."
+  "note": "EPA-registered disinfecting wipe (EPA Reg. 5813-79). Two BAC-type quats are the actives; the SDS lists each at ~0.184% by weight. SmartLabel flags hexoxyethanol, isopropanol and the C12-18 quat on California SB258 designated lists. The C12-14 and C12-18 quats are UVCBs with no discrete PubChem CID, recorded extrapolated by class.",
+  "owner": "Clorox",
+  "owner_ev": "reported",
+  "owner_src": null
  },
  {
   "name": "OxiClean Versatile Stain Remover",
@@ -2213,7 +2627,10 @@
   "source_url": "https://www.webstaurantstore.com/documents/sds/msds-1605-oxiclean_versatile_stain_remover.pdf",
   "added": "2026-09-18",
   "updated": "2026-09-18",
-  "note": "Oxygen-bleach stain remover. SDS composition: sodium carbonate 50-75%, sodium percarbonate 30-45%, ethoxylated alcohol 1-3%, sodium polycarboxylate 1%, sodium metasilicate 1%. Two SDS revisions name the surfactant differently (C12-16 vs C12-15 ethoxylated) — recorded under the existing generic 'Ethoxylated Alcohol' entry rather than over-precise. The manufacturer states the product 'contains a light fragrance' but the SDS does not enumerate it; noted rather than padded."
+  "note": "Oxygen-bleach stain remover. SDS composition: sodium carbonate 50-75%, sodium percarbonate 30-45%, ethoxylated alcohol 1-3%, sodium polycarboxylate 1%, sodium metasilicate 1%. Two SDS revisions name the surfactant differently (C12-16 vs C12-15 ethoxylated) — recorded under the existing generic 'Ethoxylated Alcohol' entry rather than over-precise. The manufacturer states the product 'contains a light fragrance' but the SDS does not enumerate it; noted rather than padded.",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Woolite Delicates Laundry Detergent",
@@ -2243,7 +2660,10 @@
   "source_url": "https://rbnainfo.com/product.php?productLineId=592",
   "added": "2026-09-18",
   "updated": "2026-09-18",
-  "note": "Hand-wash/delicates detergent. SmartLabel discloses five fragrance components individually (butylphenyl methylpropional, dipropylene glycol, eugenol, hexyl salicylate, isoeugenol) — included here per the DB's fragrance-allergen pattern. Butylphenyl methylpropional (Lilial) is the headline: an EU-banned CMR still disclosed in a US product. Preserved with the BIT/MIT pair."
+  "note": "Hand-wash/delicates detergent. SmartLabel discloses five fragrance components individually (butylphenyl methylpropional, dipropylene glycol, eugenol, hexyl salicylate, isoeugenol) — included here per the DB's fragrance-allergen pattern. Butylphenyl methylpropional (Lilial) is the headline: an EU-banned CMR still disclosed in a US product. Preserved with the BIT/MIT pair.",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Mr. Clean Magic Eraser",
@@ -2258,7 +2678,10 @@
   "source_url": "https://content.oppictures.com/Master_Images/Master_PDF_Files/PGC79009_SDS.PDF",
   "added": "2026-09-18",
   "updated": "2026-09-18",
-  "note": "Melamine-formaldehyde abrasive foam. P&G's SDS classifies the finished product 'Not Classified' with no hazardous ingredients listed, and notes it is treated as an article under TSCA. The single disclosed component is a melamine-formaldehyde copolymer (formaldehyde is a known decomposition product under heat/fire). One-ingredient product — recorded as-is rather than padded."
+  "note": "Melamine-formaldehyde abrasive foam. P&G's SDS classifies the finished product 'Not Classified' with no hazardous ingredients listed, and notes it is treated as an article under TSCA. The single disclosed component is a melamine-formaldehyde copolymer (formaldehyde is a known decomposition product under heat/fire). One-ingredient product — recorded as-is rather than padded.",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Persil ProClean Liquid Laundry Detergent, Intense Fresh",
@@ -2293,7 +2716,10 @@
   "source_url": "https://smartlabel.henkel-northamerica.com/00024200094232/p/smartlabel",
   "added": "2026-09-19",
   "updated": "2026-09-19",
-  "note": "Mainstream US liquid detergent. SmartLabel flags propylene glycol, polyethyleneimine alkoxylate, Fragrance, protease, amylase and cellulase with the DL symbol (California Cleaning Products Right to Know designated lists / EU Annex III fragrance allergens). Sodium metaborate is the borate enzyme stabilizer — the same boron chemistry the EU classifies as reproductive toxicant 1B while US products sell it off the shelf. Henkel discloses the enzyme as 'Protease enzyme'; recorded here under the existing 'Subtilisin' entry (the protease used in detergents)."
+  "note": "Mainstream US liquid detergent. SmartLabel flags propylene glycol, polyethyleneimine alkoxylate, Fragrance, protease, amylase and cellulase with the DL symbol (California Cleaning Products Right to Know designated lists / EU Annex III fragrance allergens). Sodium metaborate is the borate enzyme stabilizer — the same boron chemistry the EU classifies as reproductive toxicant 1B while US products sell it off the shelf. Henkel discloses the enzyme as 'Protease enzyme'; recorded here under the existing 'Subtilisin' entry (the protease used in detergents).",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Clorox Clean-Up All Purpose Cleaner with Bleach, Original",
@@ -2318,7 +2744,10 @@
   "source_url": "https://smartlabel.labelinsight.com/product/6091200/ingredients",
   "added": "2026-09-19",
   "updated": "2026-09-19",
-  "note": "EPA-registered disinfecting bleach spray (EPA Reg. 5813-21; SDS lists sodium hypochlorite 1-5%, sodium hydroxide 0.1-1%). Two notable disclosures on a mainstream bleach cleaner: benzophenone — prohibited in EU cosmetics (Annex II, Entry 1703) and DL-flagged on this label — and sodium chlorate, the oxidizer that accumulates as hypochlorite decays in storage."
+  "note": "EPA-registered disinfecting bleach spray (EPA Reg. 5813-21; SDS lists sodium hypochlorite 1-5%, sodium hydroxide 0.1-1%). Two notable disclosures on a mainstream bleach cleaner: benzophenone — prohibited in EU cosmetics (Annex II, Entry 1703) and DL-flagged on this label — and sodium chlorate, the oxidizer that accumulates as hypochlorite decays in storage.",
+  "owner": "Clorox",
+  "owner_ev": "reported",
+  "owner_src": null
  },
  {
   "name": "Spic and Span All-Purpose Disinfecting Spray and Glass Cleaner",
@@ -2341,7 +2770,10 @@
   "source_url": "https://assets.ctfassets.net/xsotn7jngs35/7DIO2vXqqtT3iwAUQQJNOF/42c702ffc409679e73fc40de3ab39e42/M8L2RWJ9FFADDFG5.pdf",
   "added": "2026-09-19",
   "updated": "2026-09-19",
-  "note": "Disinfecting all-purpose / glass cleaner (concentrate). SDS composition ranges: butoxydiglycol (DEGBE) 10-30%, 2-hexyloxyethanol 5-10%, 1-amino-2-propanol 5-10%, decyl octyl glucosides 1-5%. The retail disclosure additionally lists the two quat actives and a long fragrance accord (limonene, linalool, citral, coumarin, geraniol, hexyl cinnamal, benzyl salicylate, benzyl acetate, ionone, p-cymene, phenethyl alcohol, terpineol, orange oil terpenes, dipropylene glycol) — recorded here as the generic 'Fragrance' entry rather than enumerating every scent note, matching house convention. Butoxydiglycol is recorded under the existing 'Diethylene Glycol Monobutyl Ether' entry (same compound, CAS 112-34-5)."
+  "note": "Disinfecting all-purpose / glass cleaner (concentrate). SDS composition ranges: butoxydiglycol (DEGBE) 10-30%, 2-hexyloxyethanol 5-10%, 1-amino-2-propanol 5-10%, decyl octyl glucosides 1-5%. The retail disclosure additionally lists the two quat actives and a long fragrance accord (limonene, linalool, citral, coumarin, geraniol, hexyl cinnamal, benzyl salicylate, benzyl acetate, ionone, p-cymene, phenethyl alcohol, terpineol, orange oil terpenes, dipropylene glycol) — recorded here as the generic 'Fragrance' entry rather than enumerating every scent note, matching house convention. Butoxydiglycol is recorded under the existing 'Diethylene Glycol Monobutyl Ether' entry (same compound, CAS 112-34-5).",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Downy Ultra Free & Gentle Liquid Fabric Conditioner",
@@ -2361,7 +2793,10 @@
   "source_url": "https://smartlabel.pg.com/00037000248613.html",
   "added": "2026-09-19",
   "updated": "2026-09-19",
-  "note": "Marketed as dye-free and perfume-free and accepted by the National Eczema Association, yet the SmartLabel disclosure still lists a 'Fragrance Ingredient' — recorded here under the existing 'Fragrance' entry, with the literal disclosure wording noted. The softener active is the ester-quat DEEDMAC, disclosed without a percentage."
+  "note": "Marketed as dye-free and perfume-free and accepted by the National Eczema Association, yet the SmartLabel disclosure still lists a 'Fragrance Ingredient' — recorded here under the existing 'Fragrance' entry, with the literal disclosure wording noted. The softener active is the ester-quat DEEDMAC, disclosed without a percentage.",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Purex Free & Clear Liquid Laundry Detergent",
@@ -2385,7 +2820,10 @@
   "added": "2026-09-20",
   "updated": "2026-09-20",
   "note": "Marketed for sensitive skin as dye- and perfume-free, yet still contains methylisothiazolinone (a potent contact allergen) and sodium laureth sulfate. Same ingredient set disclosed on the Canadian label and US retail listings.",
-  "heritage": false
+  "heritage": false,
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Spray 'n Wash Laundry Stain Remover",
@@ -2411,7 +2849,10 @@
   "added": "2026-09-20",
   "updated": "2026-09-20",
   "note": "Discloses sodium tetraborate decahydrate (borax) as a sequestering agent - the same substance EU CLP classifies Reproductive toxicant 1B (H360FD) and restricts for consumer supply, while it remains routine in US stain removers.",
-  "heritage": false
+  "heritage": false,
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Ivory Concentrated Dishwashing Liquid, Classic Scent",
@@ -2434,7 +2875,10 @@
   "added": "2026-09-20",
   "updated": "2026-09-20",
   "note": "Ivory is P&G's oldest brand name (the 1879 soap bar); the dish liquid's own launch year is not verified, so no heritage year is claimed. Formula carries methylisothiazolinone and phenoxyethanol.",
-  "heritage": false
+  "heritage": false,
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Fantastik Disinfectant Multi-Purpose Cleaner, Fresh Scent",
@@ -2455,7 +2899,10 @@
   "added": "2026-09-20",
   "updated": "2026-09-20",
   "note": "Registered disinfectant (EPA Reg. 4822-613). The active quaternary ammonium compound is not further specified on the disclosure page. Fragrance components include butylphenyl methylpropional (Lilial), an EU-banned CMR fragrance, plus hexyl cinnamal, an EU-labeled fragrance allergen.",
-  "heritage": false
+  "heritage": false,
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Goo Gone Original",
@@ -2475,7 +2922,10 @@
   "source_url": "https://googone.com/media/ingredient/goo-gone-goo-adhesive-remover-ingredients.pdf",
   "added": "2026-09-21",
   "updated": "2026-09-21",
-  "note": "Adhesive/sticker remover - the household default for tape and label residue. Solvent base is a light hydrotreated petroleum distillate (80-95% per SDS) with d-limonene and orange oil; two solvents are disclosed by class name only (aliphatic ether alcohol, glycol ether) with identity withheld as trade secrets. Aspiration hazard (H304) is the SDS's own classification for the distillate."
+  "note": "Adhesive/sticker remover - the household default for tape and label residue. Solvent base is a light hydrotreated petroleum distillate (80-95% per SDS) with d-limonene and orange oil; two solvents are disclosed by class name only (aliphatic ether alcohol, glycol ether) with identity withheld as trade secrets. Aspiration hazard (H304) is the SDS's own classification for the distillate.",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null
  },
  {
   "name": "Shout Advanced Stain Remover Action Gel",
@@ -2500,7 +2950,10 @@
   "source_url": "https://whatsinsidescjohnson.com/en-us/brands/shout/advanced-action-gel",
   "added": "2026-09-21",
   "updated": "2026-09-21",
-  "note": "Enzyme stain remover gel - the SC Johnson counterpart to Reckitt's Spray 'n Wash. SC Johnson's own SDS does not meet the criteria for classification in any hazard class under OSHA 29 CFR 1910.1200; the individual ingredients carry their own classifications (benzisothiazolinone and the enzyme are the notable ones)."
+  "note": "Enzyme stain remover gel - the SC Johnson counterpart to Reckitt's Spray 'n Wash. SC Johnson's own SDS does not meet the criteria for classification in any hazard class under OSHA 29 CFR 1910.1200; the individual ingredients carry their own classifications (benzisothiazolinone and the enzyme are the notable ones).",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "The Works Toilet Bowl Cleaner",
@@ -2525,7 +2978,10 @@
   "source_url": "https://www.kikcorp.com/wp-content/uploads/2019/05/The-Works_Toilet-Bowl-Cleaner-12x24oz_0-74157-03317-4.pdf",
   "added": "2026-09-21",
   "updated": "2026-09-21",
-  "note": "Hydrochloric-acid toilet bowl cleaner, EPA-registered as a disinfectant (active: hydrogen chloride 9.5%). The CA Right to Know disclosure is unusually complete for a budget cleaner - it names the surfactant (Undeceth-3), the corrosion inhibitors (methenamine, ethoxylated alkylamines, diethylene glycol) and fragrance components (isopropanol, nonoxynol, turpentine). DANGER: corrosive; do not mix with chlorine bleach or other cleaners - releases hazardous gas."
+  "note": "Hydrochloric-acid toilet bowl cleaner, EPA-registered as a disinfectant (active: hydrogen chloride 9.5%). The CA Right to Know disclosure is unusually complete for a budget cleaner - it names the surfactant (Undeceth-3), the corrosion inhibitors (methenamine, ethoxylated alkylamines, diethylene glycol) and fragrance components (isopropanol, nonoxynol, turpentine). DANGER: corrosive; do not mix with chlorine bleach or other cleaners - releases hazardous gas.",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Bounce Fabric Softener Sheets, Outdoor Fresh",
@@ -2544,7 +3000,10 @@
   "source_url": "https://smartlabel.pg.com/en-us/00037000073123.html",
   "added": "2026-09-21",
   "updated": "2026-09-21",
-  "note": "The ubiquitous dryer sheet - five disclosed components, and the fragrance is flagged with the DL symbol (California Cleaning Products Right to Know Act designated list / EU Cosmetics Regulation Annex III fragrance allergens). The Free & Gentle variant discloses the same list without fragrance."
+  "note": "The ubiquitous dryer sheet - five disclosed components, and the fragrance is flagged with the DL symbol (California Cleaning Products Right to Know Act designated list / EU Cosmetics Regulation Annex III fragrance allergens). The Free & Gentle variant discloses the same list without fragrance.",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Tide PODS Laundry Detergent Pacs, Original Scent",
@@ -2581,7 +3040,10 @@
   "source": "P&G SmartLabel public ingredient disclosure (updated 2026-02-19)",
   "source_url": "https://smartlabel.pg.com/00037000930358.html",
   "added": "2026-09-22",
-  "updated": "2026-09-22"
+  "updated": "2026-09-22",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Dawn Powerwash Dish Spray, Fresh",
@@ -2606,7 +3068,10 @@
   "source": "P&G SmartLabel public ingredient disclosure (updated 2024-12-18)",
   "source_url": "https://smartlabel.pg.com/en-us/00037000523642.html",
   "added": "2026-09-22",
-  "updated": "2026-09-22"
+  "updated": "2026-09-22",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Lysol Disinfecting Wipes, Crisp Linen",
@@ -2628,7 +3093,10 @@
   "source": "Reckitt SmartLabel public ingredient disclosure",
   "source_url": "https://www.rbnainfo.com/smart-label.php?productLineId=3427",
   "added": "2026-09-22",
-  "updated": "2026-09-22"
+  "updated": "2026-09-22",
+  "owner": null,
+  "owner_ev": "unknown",
+  "owner_src": null
  },
  {
   "name": "Clorox Toilet Bowl Cleaner with Bleach, Fresh Scent",
@@ -2662,6 +3130,9 @@
   "source": "Clorox SmartLabel public ingredient disclosure (updated 4/14/2025)",
   "source_url": "https://smartlabel.labelinsight.com/product/6085731/ingredients",
   "added": "2026-09-22",
-  "updated": "2026-09-22"
+  "updated": "2026-09-22",
+  "owner": "Clorox",
+  "owner_ev": "reported",
+  "owner_src": null
  }
 ]

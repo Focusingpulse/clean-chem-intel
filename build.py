@@ -59,7 +59,28 @@ def voice_normalize(html):
     return html, before, after
 
 
+def certainty_guard():
+    """Refuse to build if any claim carries an invalid or missing evidence level.
+
+    Same principle as the voice rule: enforcement in the build, not in memory.
+    The certainty vocabulary only means something if a violation stops the build.
+    """
+    import subprocess
+    r = subprocess.run(
+        [sys.executable, str(REPO / "tools" / "validate_certainty.py")],
+        capture_output=True, text=True)
+    if r.returncode != 0:
+        print(r.stdout or r.stderr)
+        raise SystemExit(
+            "build halted: certainty validation failed. Fix the claims, "
+            "do not silence the check.")
+    for line in (r.stdout or "").splitlines():
+        if line.startswith(("certainty:", "ownership:")):
+            print("  " + line)
+
+
 def main():
+    certainty_guard()
     products = load("products.json")
     ings = load("ingredients.json")
     changelog = load("changelog.json")
