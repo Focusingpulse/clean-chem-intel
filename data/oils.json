@@ -191,7 +191,7 @@
     "degreasing": {
      "rating": "strong",
      "ev": "extrapolated",
-     "basis": "Same principal solvent component as the citrus EOs measured directly.",
+     "basis": "Same principal solvent component as the citrus EOs measured directly. Searched for direct degreasing measurement on grapefruit; none located.",
      "src": "CITRUS-EO"
     },
     "antimicrobial": {
@@ -467,13 +467,13 @@
     "cats": {
      "flag": "caution",
      "ev": "extrapolated",
-     "basis": "Not on the named-cat-toxin list, but falls in the alcoholic-compound group the veterinary sources describe as lower-concern yet still absorbed and metabolised in the liver, which cats do slowly.",
+     "basis": "Not on the named-cat-toxin list, but falls in the alcoholic-compound group the veterinary sources describe as lower-concern yet still absorbed and metabolised in the liver, which cats do slowly. Searched the veterinary sources for lavender by name; it is not listed, so this is inference from the phenolic/alcoholic class, not a named finding.",
      "src": "MSD"
     },
     "dogs": {
      "flag": "caution",
      "ev": "extrapolated",
-     "basis": "Same basis; not on the named-dog-toxin list.",
+     "basis": "Same basis; not on the named-dog-toxin list. Searched the veterinary sources for lavender by name; it is not listed, so this is inference from the compound class.",
      "src": "MSD"
     },
     "birds": {
@@ -534,13 +534,13 @@
     "cats": {
      "flag": "avoid",
      "ev": "extrapolated",
-     "basis": "Thyme is not named on the cat-toxin list, but its principal components thymol and carvacrol are phenols, and cats are described as very sensitive to phenol and phenolic compounds specifically. Flagged as inference, not as a named finding.",
+     "basis": "Thyme is not named on the cat-toxin list, but its principal components thymol and carvacrol are phenols, and cats are described as very sensitive to phenol and phenolic compounds specifically. Flagged as inference, not as a named finding. Searched the veterinary sources for thyme by name; it is not on the list. Inference rests on thymol and carvacrol being phenols.",
      "src": "PPH-CATS"
     },
     "dogs": {
      "flag": "caution",
      "ev": "extrapolated",
-     "basis": "Same phenol basis; not on the named-dog-toxin list.",
+     "basis": "Same phenol basis; not on the named-dog-toxin list. Searched the veterinary sources for thyme by name; it is not on the list. Inference rests on the phenol class.",
      "src": "PPH-CATS"
     },
     "birds": {
@@ -598,13 +598,13 @@
     "cats": {
      "flag": "avoid",
      "ev": "extrapolated",
-     "basis": "Phenol-class principal component (carvacrol) and cats are described as very sensitive to phenols. Inference, not a named finding.",
+     "basis": "Phenol-class principal component (carvacrol) and cats are described as very sensitive to phenols. Inference, not a named finding. Searched the veterinary sources for oregano by name; it is not listed. Inference rests on carvacrol being a phenol.",
      "src": "PPH-CATS"
     },
     "dogs": {
      "flag": "caution",
      "ev": "extrapolated",
-     "basis": "Same phenol basis.",
+     "basis": "Same phenol basis. Searched the veterinary sources for oregano by name; it is not listed. Inference rests on the phenol class.",
      "src": "PPH-CATS"
     },
     "birds": {
@@ -824,7 +824,7 @@
     "sensitive": {
      "flag": "caution",
      "ev": "untested",
-     "basis": "Terpene airway irritation is widely stated but no primary source traced. Recorded as untested rather than reported, because 'reported' claims a named source we do not have. Flagged for the sourcing pass.",
+     "basis": "Terpene airway irritation is widely stated but no primary source traced. Recorded as untested rather than reported, because 'reported' claims a named source we do not have. Flagged for the sourcing pass. Pinene, pine oil's principal component, is listed in Commission Regulation (EU) 2023/1545 as a newly labelled allergen, in force for new products from 31 July 2026. This applies to pine oil directly, not by inference.",
      "src": null
     }
    },
@@ -1077,7 +1077,7 @@
     "children": {
      "flag": "avoid",
      "ev": "verified",
-     "basis": "A 10 kg child can develop life-threatening poisoning from a small sip of a methyl salicylate preparation. Oil of wintergreen is roughly 1400 mg of aspirin equivalent per mL, and 5 mL is equivalent to about five 325 mg aspirin tablets. Pediatric ingestion cases with toxic serum salicylate levels are documented.",
+     "basis": "A 10 kg child can develop life-threatening poisoning from a small sip of a methyl salicylate preparation. Oil of wintergreen is roughly 1400 mg of aspirin equivalent per mL, and 5 mL is equivalent to about five 325 mg aspirin tablets. Pediatric ingestion cases with toxic serum salicylate levels are documented. Pediatric ingestion cases with toxic serum salicylate levels are documented, including a 16-month-old who required intensive care.",
      "src": "WA-POISONS"
     },
     "pregnancy": {
@@ -1140,7 +1140,7 @@
     "children": {
      "flag": "avoid",
      "ev": "verified",
-     "basis": "A 10 kg child can develop life-threatening poisoning from a small sip of a methyl salicylate preparation. Oil of wintergreen is roughly 1400 mg of aspirin equivalent per mL, and 5 mL is equivalent to about five 325 mg aspirin tablets. Pediatric ingestion cases with toxic serum salicylate levels are documented.",
+     "basis": "A 10 kg child can develop life-threatening poisoning from a small sip of a methyl salicylate preparation. Oil of wintergreen is roughly 1400 mg of aspirin equivalent per mL, and 5 mL is equivalent to about five 325 mg aspirin tablets. Pediatric ingestion cases with toxic serum salicylate levels are documented. Pediatric ingestion cases with toxic serum salicylate levels are documented, including a 16-month-old who required intensive care.",
      "src": "WA-POISONS"
     },
     "pregnancy": {
@@ -1237,7 +1237,7 @@
     "degreasing": {
      "rating": "moderate",
      "ev": "extrapolated",
-     "basis": "A citrus oil; citrus EOs as a class showed better cleaning ability than acetone against fats. Bergamot itself was not in the measured set.",
+     "basis": "A citrus oil; citrus EOs as a class showed better cleaning ability than acetone against fats. Bergamot itself was not in the measured set. Searched for direct degreasing measurement on bergamot; none located. Inference from the citrus class.",
      "src": "CITRUS-EO"
     },
     "antimicrobial": {
@@ -1251,13 +1251,13 @@
     "cats": {
      "flag": "avoid",
      "ev": "extrapolated",
-     "basis": "Citrus oil (limonene) named among oils known to poison cats; bergamot is a citrus oil. Inference from the class, not a named finding.",
+     "basis": "Citrus oil (limonene) named among oils known to poison cats; bergamot is a citrus oil. Inference from the class, not a named finding. Searched the veterinary sources for bergamot by name; it is not listed. Inference from the citrus class, where limonene is named.",
      "src": "PPH-CATS"
     },
     "dogs": {
      "flag": "caution",
      "ev": "extrapolated",
-     "basis": "Same citrus basis.",
+     "basis": "Same citrus basis. Searched the veterinary sources for bergamot by name; it is not listed. Inference from the citrus class.",
      "src": "VCA-DOGS"
     },
     "birds": {

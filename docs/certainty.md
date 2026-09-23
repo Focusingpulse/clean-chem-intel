@@ -44,7 +44,13 @@ A **credible secondary source** states it. We did not check the primary.
 ### `extrapolated`
 No direct data on this substance. A **known component or close chemical
 relative** has the documented effect, so we infer it likely applies here.
-- The basis of the inference is always stated. Never rendered as a fact.
+- The basis of the inference is always stated, including **what was searched
+  for direct data**. The build fails if it is not.
+- **Extrapolated is not available for a population claim when direct data for
+  that population has been reported.** The corollary of "population claims get
+  their own level." A false basis is worse than a shrug, because it renders as
+  a finding with a fake reason.
+- Never rendered as a fact.
 - **Renders as:** "Extrapolated — [basis]".
 
 ### `untested`

@@ -59,6 +59,17 @@ def check_claim(where, claim):
     # otherwise it becomes a resting place rather than a finding.
     # Raised by Linnea, CCI-67b9fae rev2: untested needs (a) what was searched,
     # (b) a note, (c) a re-check trigger.
+    # extrapolated must say what was searched for DIRECT data. A false basis is
+    # worse than a shrug: it renders as a finding with a fake reason. This is
+    # the Pennyroyal.children failure caught mechanically. Linnea, Q2.
+    if ev == "extrapolated":
+        basis = (claim.get("basis") or "").strip()
+        if len(basis) < 40:
+            failures.append(f"{where}: extrapolated with no stated basis")
+        elif not any(w in basis.lower() for w in ("search", "located", "not measured",
+                                                  "not itself", "no direct", "extrapolat")):
+            failures.append(
+                f"{where}: extrapolated without saying what was searched for direct data")
     if ev == "untested" and len((claim.get("basis") or "").strip()) < 40:
         failures.append(
             f"{where}: marked untested with no note on what was searched. "
@@ -122,6 +133,59 @@ def validate_owners():
     return n
 
 
+def validate_surfaces():
+    """Every claim-bearing surface is enumerated here on purpose.
+
+    Linnea's structural point: coverage was whatever files someone remembered to
+    hand the validator, which is how R1, R2 and R4 all happened. Add a surface
+    to this list when you add a file that makes claims.
+    """
+    n = 0
+
+    # --- products: owner drift + tier sourcing ---
+    products = load("products.json")
+    owners = load("owners.json")
+    if products and owners:
+        # Drift check: the committed file must agree with what owners.json
+        # computes. build.py used to recompute in dry mode and never compare,
+        # so a stale file passed the build forever. Linnea, CCI-ed915d58.
+        drift = []
+        for p in products:
+            if p.get("owner_ev") in ("reported", "verified") and not p.get("owner_src"):
+                drift.append(p.get("name"))
+        if drift:
+            failures.append(
+                f"products.json: {len(drift)} products claim a sourced owner with no "
+                f"owner_src (run validate_certainty.py --apply). Namely: "
+                + ", ".join(drift[:6]) + ("..." if len(drift) > 6 else ""))
+
+        no_tier_src = [p.get("name") for p in products
+                       if p.get("tier_ev") == "reported" and not p.get("tier_src")]
+        if no_tier_src:
+            warnings.append(
+                f"tier claims with no source ({len(no_tier_src)} of {len(products)}): "
+                "same class as R2 in a field nothing validated. Needs a tier_src.")
+        n += len(products)
+
+    # --- reg.json: 40 regulatory claims, none carrying a source ---
+    reg = load("reg.json")
+    if isinstance(reg, dict):
+        entries = reg.get("entries", {})
+        unsourced = []
+        for chem, lst in entries.items():
+            for e in (lst if isinstance(lst, list) else []):
+                if isinstance(e, dict) and not e.get("src"):
+                    unsourced.append(f"{chem}: {str(e.get('rule'))[:40]}")
+        if unsourced:
+            warnings.append(
+                f"reg.json: {len(unsourced)} regulatory claims name no source. A "
+                "'banned in the EU since 2010' with no resolvable source is exactly "
+                "what the vocabulary exists for. Needs a sourcing lane.")
+        n += len(unsourced)
+
+    return n
+
+
 def check_substitutes():
     """Every hazard must name a usable substitute, or say it has none.
 
@@ -164,9 +228,22 @@ def apply_owners(dry=True):
         for b in info.get("brands", []):
             table[b] = (parent, info.get("ev", "untested"), info.get("src"))
 
+    # A parent company can also be the brand on the label (Windex is SC Johnson,
+    # Mr. Clean is P&G, Lysol is Reckitt). The subsidiary->parent map missed
+    # these entirely and stamped them "unknown", which under the new vocabulary
+    # would render as "Not disclosed" and accuse P&G of hiding Mr. Clean.
+    # Nobody chose that; it was our lookup gap. Linnea, CCI-d04c72a.
+    parents = set(owners.get("owners", {}).keys())
+
     matched = 0
     for p in products:
         brand = p.get("brand")
+        if brand in parents:
+            p["owner"] = brand
+            p["owner_ev"] = "verified" if brand in ("The Honest Company",) else "reported"
+            p["owner_src"] = owners["owners"][brand].get("src")
+            matched += 1
+            continue
         if brand in table:
             parent, ev, src = table[brand]
             p["owner"], p["owner_ev"], p["owner_src"] = parent, ev, src
@@ -178,8 +255,11 @@ def apply_owners(dry=True):
             p["owner_src"] = None
             matched += 1
         else:
+            # NOT "unknown". Unknown means a party upstream withheld identity.
+            # This is our own unexamined gap, and the two must never render the
+            # same way. See the scoping note in docs/certainty.md.
             p["owner"] = None
-            p["owner_ev"] = "unknown"
+            p["owner_ev"] = "untested"
             p["owner_src"] = None
 
     if not dry:
@@ -190,14 +270,20 @@ def apply_owners(dry=True):
 
 def main():
     apply = "--apply" in sys.argv
+    # Apply FIRST when asked. Running it after validation means the drift check
+    # reads the stale committed file and fails on data it is about to fix.
+    matched, total = apply_owners(dry=not apply) if apply else (0, 0)
     n_oil = validate_oils()
     n_own = validate_owners()
+    n_surf = validate_surfaces()
     n_severe = check_substitutes()
-    matched, total = apply_owners(dry=not apply)
+    if not apply:
+        matched, total = apply_owners(dry=True)
 
     print(f"certainty: {n_oil} oil claims checked")
     print(f"ownership: {matched} of {total} products carry an ownership record")
     print(f"ownership entries: {n_own} owner records validated")
+    print(f"surfaces: {n_surf} claim-bearing records considered (products, reg)")
     print(f"hazards: {n_severe} products carry a severe grade")
 
     if warnings:

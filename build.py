@@ -74,7 +74,7 @@ def certainty_guard():
     """
     import subprocess
     r = subprocess.run(
-        [sys.executable, str(REPO / "tools" / "validate_certainty.py")],
+        [sys.executable, str(REPO / "tools" / "validate_certainty.py"), "--apply"],
         capture_output=True, text=True)
     if r.returncode != 0:
         print(r.stdout or r.stderr)
@@ -82,8 +82,11 @@ def certainty_guard():
             "build halted: certainty validation failed. Fix the claims, "
             "do not silence the check.")
     for line in (r.stdout or "").splitlines():
-        if line.startswith(("certainty:", "ownership:")):
+        if line.startswith(("certainty:", "ownership:", "surfaces:", "hazards:")):
             print("  " + line)
+        elif line.strip().startswith("warn:"):
+            # Warnings are lanes, not failures. Printed so they stay visible.
+            print("  " + line.strip())
 
 
 def main():
