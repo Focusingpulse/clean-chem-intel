@@ -85,11 +85,20 @@ ING_EXTRA = {
   "Methylisothiazolinone": {"gr": {"resp": "C", "repro": "C", "canc": "B"}, "impacts": ["allerg", "derm", "resp"], "reclassified": ["MIT was the 'safe' preservative replacing parabens; became 2013 'Allergen of the Year' — epidemic of allergic contact dermatitis, now restricted in leave-on products (EU)."]},
   "Benzisothiazolinone": {"gr": {"resp": "C", "repro": "C"}, "impacts": ["allerg", "derm", "aqua"], "reclassified": ["BIT, a cousin of MIT, followed the same arc: marketed safe, became a recognized sensitizer with occupational dermatitis reports."]},
   "Phenoxyethanol": {"gr": {"repro": "C"}, "impacts": ["derm"], "reclassified": ["Phenoxyethanol replaced parabens as 'clean' preservative; repro/developmental flags in animal studies led to EU restrictions in cosmetics (2012)."]},
-  "Propylene Glycol": {"gr": {"repro": "B"}, "impacts": ["derm"], "note": "Low acute hazard; mild skin irritant at high concentration."},
+  # gr removed 2026-09-23: the seed carried repro B with no source. Linnea's
+  # two-level review (CCI-004) verified this substance Not Classified
+  # (6762/6899 notifiers, 98.0%) and displaced the dimension grades that came
+  # from single-notifier codes. Seeding it back is drift, not nuance.
+  "Propylene Glycol": {"impacts": ["derm"], "note": "Low acute hazard; mild skin irritant at high concentration."},
   "Butyloxyethanol": {"gr": {"repro": "D", "resp": "C", "work": "C"}, "impacts": ["repro", "resp", "derm"], "reclassified": ["2-Butoxyethanol (EGBE) was once in every window & all-purpose cleaner as a 'safe' solvent; CA Prop 65 lists it for reproductive/developmental harm; EPA risk reviews followed."]},
   "Ammonium Hydroxide": {"gr": {"resp": "C", "repro": "C"}, "impacts": ["resp", "derm"], "reclassified": ["Ammonia was grandma's go-to; strong respiratory irritant, and mixing with bleach produces chloramine gas — a documented household emergency."]},
   "Alcohol Ethoxylate": {"gr": {"repro": "C"}, "impacts": ["derm", "aqua", "repro"], "reclassified": ["Ethoxylated surfactants can carry trace 1,4-dioxane (IARC 2B probable carcinogen) from manufacturing — process contaminant, not on the label."]},
-  "Enzymes": {"gr": {"resp": "D", "repro": "B"}, "impacts": ["resp", "allerg"], "reclassified": ["Enzymes were added to laundry products as 'natural' boosters; they are potent respiratory sensitizers — industry adopted encapsulation after occupational asthma outbreaks (1970s)."], "note": "Encapsulated in modern products to reduce aerosolization."},
+  # repro B removed 2026-09-23: the extrapolation exemption is PER DIMENSION.
+  # The enzyme-protein class analogy supports respiratory sensitisation and
+  # says nothing about reproductive toxicity (Linnea, two-level review). The
+  # record carries extrapolation_supports: ["resp"]; repro was riding an
+  # exemption it had not earned.
+  "Enzymes": {"gr": {"resp": "D"}, "impacts": ["resp", "allerg"], "reclassified": ["Enzymes were added to laundry products as 'natural' boosters; they are potent respiratory sensitizers — industry adopted encapsulation after occupational asthma outbreaks (1970s)."], "note": "Encapsulated in modern products to reduce aerosolization."},
   "Trichloroisocyanuric Acid": {"impacts": ["derm", "aqua"]},
   "Tetrasodium Glutamate Diacetate": {"impacts": []},
   "Norwex Cloth": {"impacts": []},
@@ -187,7 +196,31 @@ for name, extra in ING_EXTRA.items():
         continue
     for k, v in extra.items():
         if k == "gr":
-            ings[name].setdefault("gr", {}).update(v)
+            # FILL-ONLY PER DIMENSION, and never over a dimension the
+            # verification lane has ruled on. Same doctrine as MISSING above:
+            # dimension grades are owned by the verification lane (PubChem/ECHA
+            # GHS, CCI-004/005 revisions), and this table is a seed.
+            #
+            # The old code was a blind .update(), which meant every run reverted
+            # a ruled grade to the seed value. Verified 2026-09-23: Linnea's
+            # two-level review dropped repro B from Propylene Glycol and Enzymes
+            # (both rulings written into the records' own notes), and the next
+            # enrich run put it straight back — leaving each record asserting a
+            # grade its own note says was removed. The self-conflict validator
+            # did not catch it: it only fires on g in ("Not Classified","",None)
+            # with a D/F dimension, and these were B on a Not Classified and an
+            # Extrapolated record.
+            #
+            # Two mechanisms, because a removal is not the same as a never-set:
+            #   gr_ruled: ["repro"]  -> the lane ruled this dimension; absent
+            #                           means "not a hazard", not "unknown".
+            #   setdefault per dim   -> a seed can never overwrite a grade that
+            #                           is already there.
+            ruled = set(ings[name].get("gr_ruled") or [])
+            for dim, grade in v.items():
+                if dim in ruled:
+                    continue
+                ings[name].setdefault("gr", {}).setdefault(dim, grade)
         elif k == "impacts":
             ings[name]["impacts"] = sorted(set(ings[name].get("impacts", []) + v))
         elif k == "reclassified":

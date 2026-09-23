@@ -5215,7 +5215,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Pods are roughly 30% of detergent volume (Mintel, US home laundry 2026); Tide is the category leader."
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Pods are roughly 30% of detergent volume (Mintel, US home laundry 2026); Tide is the category leader.",
+  "heritage": false
  },
  {
   "name": "Dawn Powerwash Dish Spray, Fresh",
@@ -5256,7 +5257,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Dawn is 68.3% of Amazon top-10 dish-soap volume, July 2026; Powerwash is one line within Dawn."
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Dawn is 68.3% of Amazon top-10 dish-soap volume, July 2026; Powerwash is one line within Dawn.",
+  "heritage": false
  },
  {
   "name": "Lysol Disinfecting Wipes, Crisp Linen",
@@ -5294,7 +5296,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "Lysol Disinfecting Wipes appear among Amazon Best Sellers in Household Cleaning (Sep 2026). Rank-based channel signal."
+  "exposure_basis": "Lysol Disinfecting Wipes appear among Amazon Best Sellers in Household Cleaning (Sep 2026). Rank-based channel signal.",
+  "heritage": false
  },
  {
   "name": "Clorox Toilet Bowl Cleaner with Bleach, Fresh Scent",
@@ -5346,7 +5349,8 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "Clorox Toilet Bowl Cleaner Clinging Bleach Gel (ASIN B00W5D1MDE) moved about 100,000 units in April 2026 with 40,100 ratings. Channel figure.",
   "tier_src": null,
-  "tier_basis": "searched for a published definition of this tier and found none that names the product. The tier was assigned by exclusion rather than by a source, so it is downgraded to untested rather than left marked reported with nothing to point at. A guessed tier is worse than no tier."
+  "tier_basis": "searched for a published definition of this tier and found none that names the product. The tier was assigned by exclusion rather than by a source, so it is downgraded to untested rather than left marked reported with nothing to point at. A guessed tier is worse than no tier.",
+  "heritage": false
  },
  {
   "name": "Great Value Lemon Scent All Purpose Cleaner",

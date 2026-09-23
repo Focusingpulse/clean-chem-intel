@@ -107,6 +107,42 @@ products keep grading off softened keys and the two-level rule renders as a lie.
 
 ---
 
+## 2026-09-23 — The growth lane was reverting ruled grades (enrich_data.py)
+
+Found by the nightly growth run, not by a validator. `enrich_data.py`'s `ING_EXTRA` seed table
+merged its `gr` block with a blind `.update()`, so **every run wrote the seed's dimension grades
+over whatever the record already held.** Linnea's two-level review that morning had dropped
+`repro B` from **Propylene Glycol** (CCI-004: Not Classified, 6762/6899 notifiers, the dimension
+grades came from single-notifier codes below the 40% threshold) and from **Enzymes** (the
+extrapolation exemption is per dimension; the enzyme-protein analogy supports `resp` and says
+nothing about reproductive toxicity). Both rulings were written into the records' own notes. The
+next enrich run put `repro B` back on both — leaving each record asserting a grade its own note
+says was removed.
+
+**Why nothing caught it.** The `ingredient_self_conflict` screen only fires on
+`g in ("Not Classified", "", None)` with a **D/F** dimension. These were **B** grades on a
+Not Classified and an Extrapolated record, so they passed every check. The clobber also *created*
+a new `case_duplicate_grades` conflict (Propylene Glycol's capitalised key drifted away from its
+lowercase mirror), which is the only trace it left.
+
+**The rule now.** `ING_EXTRA` is a **seed**, the same as `MISSING` above it, and dimension grades
+are owned by the verification lane. Two mechanisms, because *a removal is not the same as a
+never-set*:
+
+- **`gr_ruled: ["repro"]`** on a record means the verification lane has ruled that dimension.
+  Absent from `gr` then means "not a hazard", not "unknown" — and the seed will not fill it.
+  Without this, a dropped dimension is indistinguishable from an unset one at the field level,
+  which is the whole reason the clobber was invisible.
+- **`setdefault` per dimension**, so a seed can never overwrite a grade that is already there.
+
+The two stale seed rows were also corrected at the source. Verified by negative test: re-adding
+`repro B` to the seed while the record carries `gr_ruled: ["repro"]` no longer lands.
+
+**For the verification lane:** when you drop a dimension, add it to `gr_ruled` on that record.
+Editing the seed table is not enough on its own — the table is hand-authored and drifts.
+
+---
+
 ## Standing decisions carried from elsewhere
 
 - **Vinegar and borax**: the marketing ban does NOT apply to this database.

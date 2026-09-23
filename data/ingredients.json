@@ -169,7 +169,10 @@
   "impacts": [
    "derm"
   ],
-  "note": "Ruled by Linnea, two-level-grade review 2026-09-23. CCI-004 verified this substance as Not Classified: 6762 of 6899 notifiers (98.0%), headline ECHA block, CID 1030. The displaced dimension grades (organ D, repro B) came from single-notifier H336/H370/H372 codes, below the 40 percent consensus threshold the rubric codified. The repro B carried no source at all. This is drift from the verified value, not a disagreement between two sourced values. A product presenting this substance at a stated high concentration may carry a CNS dimension at product level if the concentration mapping supports it, which is what the two-level rule is for."
+  "note": "Ruled by Linnea, two-level-grade review 2026-09-23. CCI-004 verified this substance as Not Classified: 6762 of 6899 notifiers (98.0%), headline ECHA block, CID 1030. The displaced dimension grades (organ D, repro B) came from single-notifier H336/H370/H372 codes, below the 40 percent consensus threshold the rubric codified. The repro B carried no source at all. This is drift from the verified value, not a disagreement between two sourced values. A product presenting this substance at a stated high concentration may carry a CNS dimension at product level if the concentration mapping supports it, which is what the two-level rule is for.",
+  "gr_ruled": [
+   "repro"
+  ]
  },
  "Enzymes": {
   "g": "Extrapolated",
@@ -188,6 +191,9 @@
   ],
   "extrapolation_supports": [
    "resp"
+  ],
+  "gr_ruled": [
+   "repro"
   ]
  },
  "Tetrasodium Glutamate Diacetate": {
