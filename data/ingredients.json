@@ -3047,5 +3047,21 @@
   "gr": {},
   "impacts": [],
   "note": "PubChem GHS (CID 86751): 1584 of 1619 ECHA C&L notifiers report no classification. Fragrance component disclosed by Clorox SmartLabel."
+ },
+ "Acetic Acid": {
+  "g": "H226,H314,H318",
+  "s": "Concentrated acetic acid (glacial) is flammable and corrosive (H314 severe skin burns and eye damage). Household vinegar is 4-8% acetic acid, below the strength where the corrosion classification applies.",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "work": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "reclassified": [
+   "Vinegar was treated as the one cleaner with nothing to check, because it is food. The chemistry does not follow the food label: acetic acid carries H314 severe skin burns and eye damage at full strength, and 20-30% cleaning vinegar is still a corrosive acid. Mild is not the same as inert."
+  ],
+  "note": "Graded from PubChem GHS (CID 176): H314 >99.9%, H226 99.7%, H318 14.7% notifier consensus. derm F is the pure acid. work C is the rubric's PPE band, not a GHS code. Concentration decides this grade and the record has to say so: household vinegar at 4-8% is an eye and skin irritant, not a corrosive. Whether an ingredient grade follows the substance or the strength as sold is an open convention question raised with Trellis 2026-09-23, and it changes how many products land at D or F. Kept out of BMVC marketing copy per Sandra's Sep 12 2026 ruling. Graded here because this database grades chemistry, not brand story."
  }
 }
