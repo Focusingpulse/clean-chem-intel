@@ -73,6 +73,38 @@ inherit the severe grade of the concentrated form. This also affects existing
 entries graded on the pure-substance basis, hydrogen peroxide at household 3%
 among them.
 
+### Consequences of decision 4, as ruled (Linnea, two-level review 2026-09-23)
+
+**The as-sold grade needs two traces, not one.** Both must be present:
+- `conc` + `conc_src` — the concentration stated in **this product's own source**
+- `grade_as_sold` + `grade_as_sold_src` — the concentration-to-hazard mapping from an authority
+  (CLP generic concentration limits, a harmonized classification, or an SDS classifying that strength)
+
+A concentration alone is not enough: it would let a harvester read "5% acetic acid" and still
+grade it F because the substance is acetic acid.
+
+**The ingredient entry is NOT softened.** The rule cuts both ways. Acetic acid stays F on the
+ingredient entry. The softening exists only at product level. Anyone "fixing" vinegar by
+downgrading the ingredient has broken the rule rather than applied it.
+
+**A typical-range note is context, not data.** Only a stated concentration counts.
+
+**No concentration given: `strength_disclosure = "not disclosed"`.** Not a silent blank, which
+reads as benign, and not an inherited severe grade either. This is an `unknown`-class state on
+the concentration dimension and carries two obligations: it owes a substitute the way an F does,
+and the product still shows the substance grade **as reference, not as inheritance**, so the
+reader is not nudged toward benign.
+
+**"As sold" means the form the product presents**, not only its strength. Form and route change
+hazard too: the respirable-silica concern on alumina and feldspar is a product-form question
+rather than a concentration one. Noted where it matters.
+
+**Sequencing, and the most likely way this fails:** products.json holds no concentration and no
+stored product grade today, so grades derive at build time from the ingredient keys. Fields
+before grades before guard, or the "both directions" rule has nothing to check and verification
+is by eye across 157 products. The capitalised-key drift must be fixed in the same pass or
+products keep grading off softened keys and the two-level rule renders as a lie.
+
 ---
 
 ## Standing decisions carried from elsewhere

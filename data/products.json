@@ -25,7 +25,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Formula 409",
@@ -52,7 +58,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Mr. Clean",
@@ -79,7 +91,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Pine-Sol",
@@ -105,7 +123,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Lysol All-Purpose",
@@ -132,7 +156,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Fabuloso",
@@ -159,7 +189,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Simple Green",
@@ -186,7 +222,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Method All-Purpose",
@@ -212,7 +254,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Mrs. Meyer's Multi-Surface",
@@ -237,7 +285,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Seventh Gen All-Purpose",
@@ -262,7 +316,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Clorox Bleach",
@@ -288,7 +348,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Lysol Disinfectant Spray",
@@ -316,7 +382,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Lysol Toilet Bowl",
@@ -341,7 +413,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Scrubbing Bubbles",
@@ -367,7 +445,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Comet Bathroom",
@@ -393,7 +477,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Tilex Mold & Mildew",
@@ -420,7 +510,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Kaboom Foam-Tastic",
@@ -445,7 +541,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Clorox ToiletWand",
@@ -469,7 +571,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Soft Scrub",
@@ -494,7 +602,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Bar Keepers Friend",
@@ -530,7 +644,13 @@
   ],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Pledge",
@@ -557,7 +677,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Febreze",
@@ -583,7 +709,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Drano Max Gel",
@@ -609,7 +741,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "CLR",
@@ -633,7 +771,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Bon Ami",
@@ -659,7 +803,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Ajax Powder",
@@ -686,7 +836,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Swiffer WetJet",
@@ -712,7 +868,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Green Works",
@@ -738,7 +900,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "ECOS Dishmate",
@@ -763,7 +931,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Biokleen All-Purpose",
@@ -788,7 +962,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Dr. Bronner's Sal Suds",
@@ -813,7 +993,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Grove Co. Multi-Purpose",
@@ -838,7 +1024,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Dawn Ultra",
@@ -866,7 +1058,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Palmolive",
@@ -894,7 +1092,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Tide",
@@ -921,7 +1125,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Gain",
@@ -945,7 +1155,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Cascade",
@@ -981,7 +1197,13 @@
   ],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Finish",
@@ -1012,7 +1234,13 @@
   ],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Arm & Hammer",
@@ -1037,7 +1265,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Seventh Gen Dish",
@@ -1062,7 +1296,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Mrs. Meyer's Dish",
@@ -1087,7 +1327,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Method Dish",
@@ -1113,7 +1359,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Isopropyl Alcohol 70% (BMVC)",
@@ -1135,7 +1387,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "18-in-1 Pure-Castile Soap, Peppermint (BMVC)",
@@ -1160,7 +1418,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Essential Oil Spray (BMVC)",
@@ -1187,7 +1451,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Peppermint Pure Essential Oil (BMVC)",
@@ -1208,7 +1478,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Organic Essential Oils Kit (BMVC)",
@@ -1234,7 +1510,13 @@
   "exposure_ev": "untested",
   "exposure_src": null,
   "no_substitute_known": true,
-  "no_substitute_note": "Accepted constraint, not a research gap. This is our own kit. The severe grade comes from the oils themselves, so there is no same-price product swap that solves it. What the entry documents instead is use guidance: dilution, ventilation, and the population cautions on each oil. Reclassified from warning lane to an honest per-item state per Linnea, because escalating a known constraint forever is alarm fatigue."
+  "no_substitute_note": "Accepted constraint, not a research gap. This is our own kit. The severe grade comes from the oils themselves, so there is no same-price product swap that solves it. What the entry documents instead is use guidance: dilution, ventilation, and the population cautions on each oil. Reclassified from warning lane to an honest per-item state per Linnea, because escalating a known constraint forever is alarm fatigue.",
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Granite & Stone Cleaner (BMVC)",
@@ -1263,7 +1545,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Wood Surface Cleaner (BMVC)",
@@ -1292,7 +1580,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Power Cleaning Paste (BMVC)",
@@ -1324,7 +1618,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Norwex Cloth + Water (BMVC)",
@@ -1346,7 +1646,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Pumie Toilet Bowl Ring Remover (BMVC)",
@@ -1367,7 +1673,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Dishwasher Pods Zero Plastic, Unscented",
@@ -1393,7 +1705,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Zero Plastic Dishwasher Powder",
@@ -1418,7 +1736,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Dishwasher Detergent, Fragrance-free",
@@ -1440,7 +1764,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Dishwasher Tablets, Fragrance Free",
@@ -1464,7 +1794,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "UltraWash Dishwasher Pods",
@@ -1487,7 +1823,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Dishwasher Gel, Free & Clear",
@@ -1509,7 +1851,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Laundry Detergent Pods, Eucalyptus & Rosemary",
@@ -1534,7 +1882,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Laundry Detergent Pods, Unscented",
@@ -1558,7 +1912,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Laundry Detergent, Unscented",
@@ -1581,7 +1941,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Baby Laundry Detergent, Unscented",
@@ -1605,7 +1971,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Liquid Laundry Detergent, Unscented",
@@ -1627,7 +1999,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Oxi Booster Pods",
@@ -1649,7 +2027,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Laundry Powder",
@@ -1672,7 +2056,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Free & Clear Laundry Detergent",
@@ -1695,7 +2085,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Chlorine Free Bleach",
@@ -1717,7 +2113,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Super Washing Soda",
@@ -1738,7 +2140,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Castile Soap, Peppermint",
@@ -1764,7 +2172,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Castile Soap, Lavender",
@@ -1790,7 +2204,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Sal Suds Liquid Cleaner",
@@ -1815,7 +2235,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "All-Purpose Cleaner, Geranium & Lemongrass",
@@ -1843,7 +2269,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Daily Shower & Tile Cleaner, Citrus Zest",
@@ -1866,7 +2298,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Bathroom Cleaner Spray, Citrus Zest",
@@ -1889,7 +2327,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Bathroom Cleaner Spray, Unscented",
@@ -1911,7 +2355,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Floor Surface Cleaner, Citrus Zest",
@@ -1934,7 +2384,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Concentrate, Fragrance-Free",
@@ -1960,7 +2416,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Oxygen Boost",
@@ -1982,7 +2444,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Gel Hand Soap",
@@ -2005,7 +2473,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Bathroom Cleaner, Fresh",
@@ -2027,7 +2501,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Toilet Bowl Cleaner",
@@ -2049,7 +2529,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "All-Purpose Degreaser, Fresh",
@@ -2071,7 +2557,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Glass Cleaner Fresh",
@@ -2093,7 +2585,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Toilet Bowl Cleaner, Emerald Cypress & Fir",
@@ -2116,7 +2614,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Tub & Tile Cleaner, Emerald Cypress & Fir",
@@ -2139,7 +2643,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Shower Kleener",
@@ -2162,7 +2672,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Toilet Kleener, Natural Cedar",
@@ -2185,7 +2701,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Toilet Bowl Cleaner Pine Fresh",
@@ -2208,7 +2730,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Cream Scrub",
@@ -2231,7 +2759,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Glass Cleaner, Unscented",
@@ -2253,7 +2787,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "All-Purpose Spray, Lemon Zest",
@@ -2275,7 +2815,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "All-Purpose Surface Cleaner, Ginger Yuzu",
@@ -2298,7 +2844,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Powder Cleanser",
@@ -2322,7 +2874,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Dishwashing Liquid, Hypo-Allergenic",
@@ -2344,7 +2902,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Dish Liquid, Unscented",
@@ -2366,7 +2930,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Dish Liquid, Free & Clear",
@@ -2388,7 +2958,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "All-Purpose Cleaner, Free & Clear",
@@ -2410,7 +2986,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "All-Purpose Home Cleaner",
@@ -2434,7 +3016,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Meliora Dish Soap",
@@ -2458,7 +3046,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Laundry Detergent, Free & Clear",
@@ -2479,7 +3073,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Multi-Purpose Cleaner, Free & Clear",
@@ -2500,7 +3100,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Hand Soap, Meyer Lemon Mandarin",
@@ -2523,7 +3129,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Floor Cleaner",
@@ -2545,7 +3157,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Concentrated All-Purpose",
@@ -2568,7 +3186,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Calcium Lime Rust Cleaner",
@@ -2591,7 +3215,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "OxiClean Baby Stain Soaker",
@@ -2613,7 +3243,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Dishwasher Pacs, Free & Clear",
@@ -2636,7 +3272,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Dishwasher Powder, Free & Clear",
@@ -2659,7 +3301,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Wave Dishwashing Gel Lavender",
@@ -2681,7 +3329,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Glass Cleaner Concentrate 1A",
@@ -2700,7 +3354,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Focus MP 11 Multi-Purpose",
@@ -2719,7 +3379,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Green Link Multi-Clean Degreaser",
@@ -2738,7 +3404,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Green Link Neutral Floor Cleaner",
@@ -2757,7 +3429,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "HOST Dry Carpet Cleaner",
@@ -2776,7 +3454,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Carpet & Upholstery Concentrate",
@@ -2795,7 +3479,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "20 Mule Team Borax (BMVC)",
@@ -2824,7 +3514,13 @@
   ],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Easy-Off Heavy Duty Oven Cleaner",
@@ -2849,7 +3545,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Dawn Ultra Dish Soap",
@@ -2877,7 +3579,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Tide Original Liquid Laundry",
@@ -2905,7 +3613,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Clorox Disinfecting Bleach",
@@ -2931,7 +3645,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Lysol Multi-Surface Cleaner",
@@ -2958,7 +3678,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Seventh Generation Free & Clear Dish",
@@ -2985,7 +3711,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Zud Heavy Duty Cleanser",
@@ -3010,7 +3742,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Dawn Ultra Dishwashing Liquid",
@@ -3041,7 +3779,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Glass Cleaner",
@@ -3067,7 +3811,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "The Honest Company Dish Soap",
@@ -3095,7 +3845,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Murphy Oil Soap",
@@ -3122,7 +3878,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Cascade Complete ActionPacs",
@@ -3164,7 +3926,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Fresh Gel Toilet Cleaning Stamp",
@@ -3196,7 +3964,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Biokleen Bac-Out Stain & Odor Eliminator",
@@ -3227,7 +4001,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Puracy Natural Multi-Surface Cleaner (Green Tea & Lime)",
@@ -3261,7 +4041,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Better Life What-Ever All-Purpose Cleaner (Unscented)",
@@ -3290,7 +4076,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Granite Gold Daily Cleaner",
@@ -3318,7 +4110,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Resolve Heavy Traffic Foam Carpet Cleaner",
@@ -3354,7 +4152,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Krud Kutter Original Cleaner & Degreaser",
@@ -3381,7 +4185,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Weiman Stainless Steel Cleaner & Polish",
@@ -3412,7 +4222,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "LA's Totally Awesome All-Purpose Cleaner",
@@ -3440,7 +4256,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Clorox Disinfecting Wipes, Fresh Scent",
@@ -3472,7 +4294,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "OxiClean Versatile Stain Remover",
@@ -3500,7 +4328,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Woolite Delicates Laundry Detergent",
@@ -3539,7 +4373,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Mr. Clean Magic Eraser",
@@ -3563,7 +4403,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Persil ProClean Liquid Laundry Detergent, Intense Fresh",
@@ -3607,7 +4453,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Clorox Clean-Up All Purpose Cleaner with Bleach, Original",
@@ -3641,7 +4493,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Spic and Span All-Purpose Disinfecting Spray and Glass Cleaner",
@@ -3673,7 +4531,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Downy Ultra Free & Gentle Liquid Fabric Conditioner",
@@ -3702,7 +4566,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Purex Free & Clear Liquid Laundry Detergent",
@@ -3735,7 +4605,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Spray 'n Wash Laundry Stain Remover",
@@ -3770,7 +4646,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Ivory Concentrated Dishwashing Liquid, Classic Scent",
@@ -3802,7 +4684,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Fantastik Disinfectant Multi-Purpose Cleaner, Fresh Scent",
@@ -3832,7 +4720,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Goo Gone Original",
@@ -3861,7 +4755,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Shout Advanced Stain Remover Action Gel",
@@ -3895,7 +4795,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "The Works Toilet Bowl Cleaner",
@@ -3929,7 +4835,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Bounce Fabric Softener Sheets, Outdoor Fresh",
@@ -3957,7 +4869,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Tide PODS Laundry Detergent Pacs, Original Scent",
@@ -4003,7 +4921,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Dawn Powerwash Dish Spray, Fresh",
@@ -4037,7 +4961,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Lysol Disinfecting Wipes, Crisp Linen",
@@ -4068,7 +4998,13 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  },
  {
   "name": "Clorox Toilet Bowl Cleaner with Bleach, Fresh Scent",
@@ -4111,6 +5047,12 @@
   "substitutes": [],
   "exposure": null,
   "exposure_ev": "untested",
-  "exposure_src": null
+  "exposure_src": null,
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed"
  }
 ]

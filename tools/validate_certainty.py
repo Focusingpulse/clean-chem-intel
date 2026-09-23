@@ -44,6 +44,32 @@ LANE_REGISTRY = {
                 "detail": "ingredient headline grade contradicts its own dimension grades"},
     "case_duplicate_grades": {"class": "B", "opened": "2026-09-23", "deadline": "2026-09-30",
                 "detail": "the same chemical stored under two keys with different grades"},
+    # NOTE: this lane is a SCREEN, not a verdict. Absence of a supporting code
+    # is evidence of possible drift, not proof of it. Some grades come from a
+    # mechanism the g field cannot express (respirable silica for a resp grade,
+    # a separate toxicology finding for an organ grade on a carcinogen record).
+    # Those are legitimate and need a documented basis rather than an H-code.
+    # Linnea's merge rule requires re-deriving from the codified source per
+    # substance, which is research, not a mechanical fix. Do not auto-drop.
+    "dimension_without_hcode": {"class": "B", "opened": "2026-09-23", "deadline": "2026-09-30",
+                "detail": "SCREEN: a dimension grade that no H-code in its own g supports. "
+                          "Review, do not auto-drop."},
+    "strength_not_disclosed": {"class": "A", "opened": "2026-09-23",
+                "detail": "products whose source states no concentration, so no as-sold grade is derivable"},
+}
+
+# Which GHS hazard codes can support which rubric dimension. A dimension grade
+# that no code in the record's own g supports is drift, not a grading. Linnea,
+# two-level-grade-rule review 2026-09-23. "work" is excluded deliberately: it is
+# the rubric's PPE band, not a GHS code, and has no code to trace to.
+DIMENSION_HCODES = {
+    "derm":  ("H314", "H315", "H316", "H317", "H318"),
+    "organ": ("H370", "H371", "H372", "H373"),
+    "repro": ("H360", "H361", "H362", "H360D", "H360F", "H360FD"),
+    "canc":  ("H350", "H351"),
+    "resp":  ("H334", "H335", "H336"),
+    "endo":  ("H361", "H360", "H360F", "H360FD"),
+    "env":   ("H400", "H410", "H411", "H412", "H413"),
 }
 
 
@@ -298,6 +324,29 @@ def validate_surfaces():
         dupes = {k: v for k, v in by_lower.items() if len(v) > 1}
         conflicting = [k for k, v in dupes.items() if len({str(x[1]) for x in v}) > 1]
         track_lane("case_duplicate_grades", len(conflicting))
+
+        # A dimension grade no code in the record's own g supports is drift.
+        # Products read the capitalised keys, so drift there is live drift.
+        unsupported = []
+        for name, rec in ings.items():
+            if not isinstance(rec, dict):
+                continue
+            g = rec.get("g") or ""
+            for dim, grade in (rec.get("gr") or {}).items():
+                if dim == "work":          # rubric PPE band, not a GHS code
+                    continue
+                codes = DIMENSION_HCODES.get(dim)
+                if not codes:
+                    continue
+                # An extrapolated record has no H-code by definition: the grade
+                # is an inference from a relative, so absence is expected and is
+                # not drift. Excluded rather than counted.
+                if g == "Extrapolated":
+                    continue
+                if grade in ("D", "F") and not any(c in g for c in codes):
+                    unsupported.append(f"{name}.{dim}={grade}")
+        track_lane("dimension_without_hcode", len(unsupported))
+
         n += len(self_conflict)
 
     # --- reg.json: 40 regulatory claims, none carrying a source ---
