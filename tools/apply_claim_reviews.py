@@ -32,12 +32,11 @@ CONFLICTS = {
         "manufacturer_claim": (
             "The manufacturer's own care guide states: \"Bar Keepers Friend is "
             "non-toxic, but to avoid skin irritation, put on rubber gloves before "
-            "wiping the area with a wet sponge or cloth.\" A second company post "
-            "describes the cleanser as a cleaner's alternative to harsh chemicals: "
-            "\"Soap scum and hard water deposits make shower doors look cloudy. You "
-            "can use harsh chemicals to remove that film, but you might also damage "
-            "your shower door in the process. Bar Keepers Friend Cleanser is a "
-            "smarter alternative, it's non-toxic and safe for most surfaces.\""
+            "wiping the area with a wet sponge or cloth.\" A second company post, "
+            "excerpting the brand's shower-door article, reads: \"Bar Keepers "
+            "Friend Cleanser is a smarter alternative \u2013 it's non-toxic and safe "
+            "for most surfaces.\" (The dash in that quotation is the source's own "
+            "en dash, kept as written.)"
         ),
         "manufacturer_src": "https://barkeepersfriend.com/blogs/bar-keepers-blog/best-way-to-clean-shower-rust",
         "toxicology_finding": (
