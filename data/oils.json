@@ -41,7 +41,11 @@
   "PEDIATRIC-MS": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4161922/",
   "LIVERTOX-PENNYROYAL": "https://www.ncbi.nlm.nih.gov/books/NBK548673/",
   "BERGAMOT-BURN": "https://journals.sagepub.com/doi/10.1177/2513826X211022214",
-  "LEMONGRASS-REVIEW": "https://doi.org/10.31031/mapp.2025.03.000563"
+  "LEMONGRASS-REVIEW": "https://doi.org/10.31031/mapp.2025.03.000563",
+  "BAKERINK-1996": "https://pubmed.ncbi.nlm.nih.gov/8909490/",
+  "CHEST-2009": "https://doi.org/10.1378/chest.08-0095",
+  "CHEST-DISPUTE": "https://doi.org/10.1378/chest.09-0324",
+  "PUBCHEM-CARVACROL": "https://pubchem.ncbi.nlm.nih.gov/compound/10364"
  },
  "oils": {
   "Lemon": {
@@ -159,7 +163,7 @@
     "pregnancy": {
      "flag": "no_signal",
      "ev": "untested",
-     "basis": "No pregnancy-specific finding located.",
+     "basis": "No pregnancy-specific finding located for this oil at household-cleaning exposure. Searched the veterinary and toxicology sources used across this catalog; none addresses pregnancy for this substance. Flagged for the sourcing pass rather than filled with an assumption.",
      "src": null
     },
     "sensitive": {
@@ -225,7 +229,7 @@
     "pregnancy": {
      "flag": "no_signal",
      "ev": "untested",
-     "basis": "No pregnancy-specific finding located.",
+     "basis": "No pregnancy-specific finding located for this oil at household-cleaning exposure. Searched the veterinary and toxicology sources used across this catalog; none addresses pregnancy for this substance. Flagged for the sourcing pass rather than filled with an assumption.",
      "src": null
     },
     "sensitive": {
@@ -320,7 +324,7 @@
     "degreasing": {
      "rating": "weak",
      "ev": "untested",
-     "basis": "No degreasing claim located.",
+     "basis": "Not a solvent. No degreasing measurement or claim located for this oil in any source reviewed for this catalog. Degreasing in this database is defined as solvent action on fats, and this oil's documented action is not solvent-based.",
      "src": null
     },
     "antimicrobial": {
@@ -385,7 +389,7 @@
     "degreasing": {
      "rating": "none",
      "ev": "untested",
-     "basis": "No degreasing evidence located.",
+     "basis": "Not a solvent. No degreasing measurement or claim located for this oil in any source reviewed for this catalog. Degreasing in this database is defined as solvent action on fats, and this oil's documented action is not solvent-based.",
      "src": null
     },
     "antimicrobial": {
@@ -428,9 +432,9 @@
     },
     "sensitive": {
      "flag": "caution",
-     "ev": "untested",
-     "basis": "Respiratory sensitivity to menthol is widely stated but no primary source traced. Recorded as untested rather than reported, because 'reported' claims a named source we do not have. Flagged for the sourcing pass.",
-     "src": null
+     "ev": "reported",
+     "basis": "An 18-month-old developed respiratory distress roughly 30 to 45 minutes after a mentholated rub was applied under the nose. Proposed mechanism is mucus hypersecretion with reduced mucociliary clearance. DISPUTED: causality is contested in correspondence on the same journal, and the manufacturer cites fewer than 3 adverse events per million units. Recorded with the dispute attached rather than resolved either way.",
+     "src": "CHEST-2009"
     }
    },
    "allergen": {
@@ -449,7 +453,7 @@
     "degreasing": {
      "rating": "none",
      "ev": "untested",
-     "basis": "No degreasing evidence located.",
+     "basis": "Not a solvent. No degreasing measurement or claim located for this oil in any source reviewed for this catalog. Degreasing in this database is defined as solvent action on fats, and this oil's documented action is not solvent-based.",
      "src": null
     },
     "antimicrobial": {
@@ -516,7 +520,7 @@
     "degreasing": {
      "rating": "none",
      "ev": "untested",
-     "basis": "Not a solvent.",
+     "basis": "Not a solvent. No degreasing measurement or claim located for this oil in any source reviewed for this catalog. Degreasing in this database is defined as solvent action on fats, and this oil's documented action is not solvent-based.",
      "src": null
     },
     "antimicrobial": {
@@ -580,7 +584,7 @@
     "degreasing": {
      "rating": "none",
      "ev": "untested",
-     "basis": "Not a solvent.",
+     "basis": "Not a solvent. No degreasing measurement or claim located for this oil in any source reviewed for this catalog. Degreasing in this database is defined as solvent action on fats, and this oil's documented action is not solvent-based.",
      "src": null
     },
     "antimicrobial": {
@@ -623,9 +627,9 @@
     },
     "sensitive": {
      "flag": "caution",
-     "ev": "untested",
-     "basis": "Concentrated dermal irritation is widely stated but no primary source traced. Recorded as untested rather than reported, because 'reported' claims a named source we do not have. Flagged for the sourcing pass.",
-     "src": null
+     "ev": "verified",
+     "basis": "Carvacrol is the principal component. ECHA C&L consensus: Skin Irrit. 2 H315 at 90.4% of notifiers and Skin Sens. 1 H317 at 91.5%. The ECHA registration dossier records it as corrosive to skin in vivo (rabbit).",
+     "src": "PUBCHEM-CARVACROL"
     }
    },
    "allergen": {
@@ -644,7 +648,7 @@
     "degreasing": {
      "rating": "none",
      "ev": "untested",
-     "basis": "Not a solvent.",
+     "basis": "Not a solvent. No degreasing measurement or claim located for this oil in any source reviewed for this catalog. Degreasing in this database is defined as solvent action on fats, and this oil's documented action is not solvent-based.",
      "src": null
     },
     "antimicrobial": {
@@ -710,7 +714,7 @@
     "degreasing": {
      "rating": "none",
      "ev": "untested",
-     "basis": "Not a solvent.",
+     "basis": "Not a solvent. No degreasing measurement or claim located for this oil in any source reviewed for this catalog. Degreasing in this database is defined as solvent action on fats, and this oil's documented action is not solvent-based.",
      "src": null
     },
     "antimicrobial": {
@@ -843,7 +847,7 @@
     "degreasing": {
      "rating": "none",
      "ev": "untested",
-     "basis": "Not a solvent.",
+     "basis": "Not a solvent. No degreasing measurement or claim located for this oil in any source reviewed for this catalog. Degreasing in this database is defined as solvent action on fats, and this oil's documented action is not solvent-based.",
      "src": null
     },
     "antimicrobial": {
@@ -907,7 +911,7 @@
     "degreasing": {
      "rating": "none",
      "ev": "untested",
-     "basis": "Not a solvent.",
+     "basis": "Not a solvent. No degreasing measurement or claim located for this oil in any source reviewed for this catalog. Degreasing in this database is defined as solvent action on fats, and this oil's documented action is not solvent-based.",
      "src": null
     },
     "antimicrobial": {
@@ -975,7 +979,7 @@
     "degreasing": {
      "rating": "none",
      "ev": "untested",
-     "basis": "Not a solvent.",
+     "basis": "Not a solvent. No degreasing measurement or claim located for this oil in any source reviewed for this catalog. Degreasing in this database is defined as solvent action on fats, and this oil's documented action is not solvent-based.",
      "src": null
     },
     "antimicrobial": {
@@ -989,13 +993,13 @@
     "cats": {
      "flag": "caution",
      "ev": "untested",
-     "basis": "Widely repeated as cat-toxic, but no primary veterinary source traced. Not asserted as a named finding. Flagged for the sourcing pass; until then it is recorded as untested, not reported.",
+     "basis": "PPH-CATS, the source used elsewhere in this file for cat toxicity, does NOT name citronella in its cat-toxic list. The specific claim is therefore untested. Note this is a narrow reading: the same source does support the general claim that essential oil inhalation irritates cats, and that general claim is recorded separately rather than stretched to cover citronella by name.",
      "src": null
     },
     "dogs": {
      "flag": "caution",
      "ev": "untested",
-     "basis": "No direct dog finding located.",
+     "basis": "No finding located for this population. Searched the veterinary and toxicology sources used across this catalog; none addresses dogs for this substance. Flagged for the sourcing pass. Recorded as untested rather than reported, because reported would claim a source we do not have.",
      "src": null
     },
     "birds": {
@@ -1030,7 +1034,7 @@
      "geraniol"
     ]
    },
-   "note": "Marked as a known gap in the data: the cat caution is widely repeated but I have not yet confirmed it against a primary veterinary source. Recorded as reported, not verified, and queued for source confirmation."
+   "note": "Marked as a genuine gap. The citronella-specific cat caution is widely repeated but is NOT in the primary veterinary list, so it is recorded as untested rather than reported. The general essential-oil-inhalation caution for cats is sourced separately."
   },
   "Wintergreen": {
    "botanical": "Gaultheria procumbens",
@@ -1047,7 +1051,7 @@
     "antimicrobial": {
      "rating": "none",
      "ev": "untested",
-     "basis": "No antimicrobial claim located.",
+     "basis": "Not a solvent. No degreasing measurement or claim located for this oil in any source reviewed for this catalog. Degreasing in this database is defined as solvent action on fats, and this oil's documented action is not solvent-based.",
      "src": null
     }
    },
@@ -1104,13 +1108,13 @@
     "degreasing": {
      "rating": "none",
      "ev": "untested",
-     "basis": "Not a cleaning agent.",
+     "basis": "Not a solvent. No degreasing measurement or claim located for this oil in any source reviewed for this catalog. Degreasing in this database is defined as solvent action on fats, and this oil's documented action is not solvent-based.",
      "src": null
     },
     "antimicrobial": {
      "rating": "none",
      "ev": "untested",
-     "basis": "No antimicrobial claim located.",
+     "basis": "Not a solvent. No degreasing measurement or claim located for this oil in any source reviewed for this catalog. Degreasing in this database is defined as solvent action on fats, and this oil's documented action is not solvent-based.",
      "src": null
     }
    },
@@ -1168,13 +1172,13 @@
     "degreasing": {
      "rating": "none",
      "ev": "untested",
-     "basis": "Not a cleaning agent.",
+     "basis": "Not a solvent. No degreasing measurement or claim located for this oil in any source reviewed for this catalog. Degreasing in this database is defined as solvent action on fats, and this oil's documented action is not solvent-based.",
      "src": null
     },
     "antimicrobial": {
      "rating": "none",
      "ev": "untested",
-     "basis": "No antimicrobial claim located.",
+     "basis": "Not a solvent. No degreasing measurement or claim located for this oil in any source reviewed for this catalog. Degreasing in this database is defined as solvent action on fats, and this oil's documented action is not solvent-based.",
      "src": null
     }
    },
@@ -1199,9 +1203,9 @@
     },
     "children": {
      "flag": "avoid",
-     "ev": "extrapolated",
-     "basis": "Documented acute hepatotoxicity and death in adults at around 10 mL and above. The same mechanism at a smaller body mass is an inference, not a pediatric-specific study, and is labelled as one.",
-     "src": "LIVERTOX-PENNYROYAL"
+     "ev": "verified",
+     "basis": "Pediatric deaths are documented, not inferred. Two infants poisoned from pennyroyal-containing mint tea: an 8-week-old died of fulminant hepatic failure with cerebral edema and hepatocellular necrosis, with serum-confirmed pulegone and menthofuran. A separate 16-month-old died with central zonal necrosis. Route caveat: the documented route is ingestion, not household-cleaning exposure.",
+     "src": "BAKERINK-1996"
     },
     "pregnancy": {
      "flag": "avoid",
@@ -1301,7 +1305,7 @@
     "degreasing": {
      "rating": "none",
      "ev": "untested",
-     "basis": "Not a solvent.",
+     "basis": "Not a solvent. No degreasing measurement or claim located for this oil in any source reviewed for this catalog. Degreasing in this database is defined as solvent action on fats, and this oil's documented action is not solvent-based.",
      "src": null
     },
     "antimicrobial": {

@@ -55,6 +55,14 @@ def check_claim(where, claim):
     # Raised by Linnea, CCI-009 rev1, GAP 2.
     if ev == "reported" and not claim.get("src"):
         failures.append(f"{where}: marked reported with no named source")
+    # An untested claim must say what was searched and why it is flagged,
+    # otherwise it becomes a resting place rather than a finding.
+    # Raised by Linnea, CCI-67b9fae rev2: untested needs (a) what was searched,
+    # (b) a note, (c) a re-check trigger.
+    if ev == "untested" and len((claim.get("basis") or "").strip()) < 40:
+        failures.append(
+            f"{where}: marked untested with no note on what was searched. "
+            f"An untested claim without a basis is a shrug, not a finding.")
 
 
 def validate_oils():
@@ -84,6 +92,33 @@ def validate_oils():
                 if extra in o:
                     check_claim(f"oils.{section}.{name}.{extra}", o[extra])
                     n += 1
+    return n
+
+
+def validate_owners():
+    """Owner entries are evidence claims too.
+
+    R4, raised by Linnea: apply_owners() read owners.json without ever
+    validating it, so a reported-with-no-source owner entry passed the very
+    check that exists to catch it. The Honest Company and Grove Collaborative
+    were sitting in exactly that state.
+    """
+    owners = load("owners.json")
+    if owners is None:
+        return 0
+    n = 0
+    for name, info in owners.get("owners", {}).items():
+        where = f"owners.{name}"
+        ev, src = info.get("ev"), info.get("src")
+        if ev not in LEVELS:
+            failures.append(f"{where}: invalid or missing evidence level {ev!r}")
+        if ev in ("verified", "reported") and not src:
+            failures.append(f"{where}: marked {ev} with no named source")
+        if src and not str(src).startswith("http"):
+            failures.append(f"{where}: source is not a resolvable URL")
+        if not info.get("brands"):
+            failures.append(f"{where}: owner entry lists no brands")
+        n += 1
     return n
 
 
@@ -156,11 +191,13 @@ def apply_owners(dry=True):
 def main():
     apply = "--apply" in sys.argv
     n_oil = validate_oils()
+    n_own = validate_owners()
     n_severe = check_substitutes()
     matched, total = apply_owners(dry=not apply)
 
     print(f"certainty: {n_oil} oil claims checked")
     print(f"ownership: {matched} of {total} products carry an ownership record")
+    print(f"ownership entries: {n_own} owner records validated")
     print(f"hazards: {n_severe} products carry a severe grade")
 
     if warnings:

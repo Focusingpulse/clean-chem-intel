@@ -14,7 +14,7 @@
    "claim_b_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
    "corroboration": "UK Competition and Markets Authority final decision on the SC Johnson / People Against Dirty acquisition, which names Ecover and Method as PAD's brands and SC Johnson as the acquirer: https://assets.publishing.service.gov.uk/media/5a68b48340f0b63b5bc90fef/SCJ-PAD-final-decision.pdf",
    "resolution": "Contradicted by primary sources. Two independent sources, one of them a regulator's published merger decision, support claim B. Verified by Linnea, CCI-009 rev1: claim A is current, not stale, and remains wrong.",
-   "status": "flagged for Linnea"
+   "status": "verified by Linnea, CCI-009 rev1 and CCI-67b9fae rev2"
   }
  },
  "owners": {
@@ -124,26 +124,26 @@
   "Country Life LLC": {
    "type": "private",
    "detail": "Aura Cacia moved from Frontier Co-op to Country Life LLC in July 2026 (BusinessWire, 6 July 2026). Verified by Linnea.",
-   "ev": "reported",
-   "src": "https://www.businesswire.com/",
+   "ev": "verified",
+   "src": "https://www.businesswire.com/news/home/20260706890520/en/Country-Life-LLC-Acquires-Aura-Cacia-Strengthening-Its-Commitment-to-Holistic-Wellness",
    "brands": [
     "Aura Cacia"
    ]
   },
   "The Honest Company": {
    "type": "public (HNST)",
-   "detail": null,
-   "ev": "reported",
-   "src": null,
+   "detail": "Public, Nasdaq: HNST, listed May 2021. Verified against SEC EDGAR.",
+   "ev": "verified",
+   "src": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HNST",
    "brands": [
     "The Honest Company"
    ]
   },
   "Grove Collaborative": {
    "type": "public (GROV)",
-   "detail": null,
-   "ev": "reported",
-   "src": null,
+   "detail": "Public, NYSE: GROV, listed June 2022. Verified against SEC EDGAR.",
+   "ev": "verified",
+   "src": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GROV",
    "brands": [
     "Grove",
     "Ever Spring"
