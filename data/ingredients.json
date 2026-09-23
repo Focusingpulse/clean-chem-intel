@@ -3076,5 +3076,83 @@
    "Vinegar was treated as the one cleaner with nothing to check, because it is food. The chemistry does not follow the food label: acetic acid carries H314 severe skin burns and eye damage at full strength, and 20-30% cleaning vinegar is still a corrosive acid. Mild is not the same as inert."
   ],
   "note": "Graded from PubChem GHS (CID 176): H314 >99.9%, H226 99.7%, H318 14.7% notifier consensus. derm F is the pure acid. work C is the rubric's PPE band, not a GHS code. Concentration decides this grade and the record has to say so: household vinegar at 4-8% is an eye and skin irritant, not a corrosive. Whether an ingredient grade follows the substance or the strength as sold is an open convention question raised with Trellis 2026-09-23, and it changes how many products land at D or F. Kept out of BMVC marketing copy per Sandra's Sep 12 2026 ruling. Graded here because this database grades chemistry, not brand story."
+ },
+ "Didecyldimethylammonium Chloride": {
+  "g": "H302,H314,H400",
+  "s": "Quaternary ammonium disinfectant active. Corrosive, harmful if swallowed, very toxic to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "env": "F",
+   "work": "D"
+  },
+  "impacts": [
+   "aqua",
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 23558, returned title 'Didecyldimethylammonium Chloride' - matches). Dominant ECHA C&L notifier block: H314 100% (corrosive -> derm F), H302 85.8% (harmful if swallowed -> work D), H400 47.6% (very toxic to aquatic life -> env F). H318 28.4%, H410 22.4% and H411 34.7% fall below the house >=40% consensus threshold and are not graded. PubChem's aggregated view also lists H317/H330/H370/H373 without notifier percentages - noted, not graded. Alias: also written 'Didecyl Dimethyl Ammonium Chloride' (Reckitt and P&G SmartLabel)."
+ },
+ "Dioctyldimethylammonium Chloride": {
+  "g": "H301,H310,H314,H400",
+  "s": "Quaternary ammonium disinfectant active. Corrosive, fatal in contact with skin, very toxic to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "env": "F",
+   "work": "F"
+  },
+  "impacts": [
+   "aqua",
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 62581, returned title 'Dioctyldimethylammonium chloride' - matches). ECHA C&L notifier consensus: H314 99.6% (corrosive -> derm F), H400 90.1% (very toxic to aquatic life -> env F), H301 62.8% (toxic if swallowed) and H310 62.4% (fatal in contact with skin) -> work F. H410 57.4% also clears the threshold but env is already F; H318 62.4% would only reach derm D against an existing F; H302 36.8% is below threshold. Alias: also written 'Dioctyl Dimethyl Ammonium Chloride' (Reckitt and P&G SmartLabel)."
+ },
+ "Octyl Decyl Dimethyl Ammonium Chloride": {
+  "g": "Not Classified",
+  "s": "Quaternary ammonium disinfectant active. ECHA C&L notifier consensus sits below the house grading threshold.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "PubChem GHS (CID 61906, returned title 'Decyl dimethyl octyl ammonium chloride' - matches the disclosed substance). ECHA C&L notifier consensus reports H302, H314 and H400 each at 31.4% - all below the house >=40% threshold, so no dimension grade is justified. The substance is a BAC-type quaternary ammonium disinfectant active whose class hazards are corrosive and aquatic toxicity. Recorded unclassified rather than extrapolated because a real CID exists."
+ },
+ "Alkyl C12-16 Dimethylbenzyl Ammonium Chloride": {
+  "g": "Extrapolated",
+  "s": "Quaternary ammonium disinfectant (BAC-type). Class hazards: corrosive, aquatic toxicity, respiratory/allergic sensitization.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB benzalkonium chloride blend (CAS 68424-85-1) - PubChem name lookup resolves no CID (PUG REST 404). Recorded extrapolated, not graded, matching the existing 'Alkyl C12-18 Dimethylbenzyl Ammonium Chloride' entry. Disclosed by Walmart (California Cleaning Product Right to Know) for Great Value Lemon Scent and by P&G SmartLabel for Microban 24."
+ },
+ "C12-15 Alcohols Ethoxylated": {
+  "g": "Extrapolated",
+  "s": "Alcohol ethoxylate nonionic surfactant (C12-15). UVCB; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB (CAS 68131-39-5) - no PubChem entry (PUG REST 404). Class-analogous to the existing 'C10-16 Pareth' and 'Ethoxylated Alcohol' entries (derm C, env C; trace 1,4-dioxane from ethoxylation). Recorded extrapolated, not graded. Disclosed by Henkel for all free clear."
+ },
+ "Alkylbenzene Sulfonic Acid": {
+  "g": "Extrapolated",
+  "s": "Linear alkylbenzene sulfonic acid (LAS, acid form). UVCB; class hazards: skin/eye irritant, aquatic toxicity.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB (CAS 68584-22-5) - no PubChem entry (PUG REST 404). Class-analogous to the existing 'Sodium Dodecylbenzenesulfonate' entry (derm D, env C). Recorded extrapolated, not graded. Disclosed by KIK for Comet with Bleach Cleanser."
+ },
+ "Polyethyloxazoline": {
+  "g": "Not Classified",
+  "s": "Polymeric additive (UVCB). No discrete PubChem CID.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Polymer/UVCB - PubChem name lookup resolves no CID (PUG REST 404) and therefore no GHS classification. Recorded unclassified rather than assigned an unsourced grade; high-MW polymers are generally not bioavailable. Disclosed by P&G SmartLabel for Microban 24."
+ },
+ "Sodium Phosphate": {
+  "g": "Not Classified",
+  "s": "Inorganic phosphate builder, disclosed by generic name only (mono-, di- or trisodium phosphate not specified).",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Disclosed by Walmart (California Cleaning Product Right to Know) for Great Value Clear Ammonia as 'Sodium Phosphate' - a generic name. PubChem resolves 'Trisodium Phosphate' (CID 24243) with H315 90.2%, H319 90.1%, H335 85.1%, but the disclosure does not say which sodium phosphate salt is used, so no grade is assigned to the generic name. Recorded unclassified rather than graded on a guess."
  }
 }
