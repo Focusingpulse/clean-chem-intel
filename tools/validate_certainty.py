@@ -117,6 +117,50 @@ def track_lane(name, count, today=None):
     return count
 
 
+def load(name, default=None):
+    p = DATA / name
+    if not p.exists():
+        return default
+    return json.loads(p.read_text(encoding="utf-8"))
+
+
+def check_claim(where, claim):
+    """A claim is a dict with an 'ev' key from LEVELS."""
+    if not isinstance(claim, dict):
+        failures.append(f"{where}: claim is not an object")
+        return
+    ev = claim.get("ev")
+    if ev is None:
+        failures.append(f"{where}: claim has no evidence level")
+    elif ev not in LEVELS:
+        failures.append(f"{where}: invalid evidence level {ev!r}")
+    # A verified claim must resolve to a source.
+    if ev == "verified" and not claim.get("src"):
+        failures.append(f"{where}: marked verified with no source")
+    # 'reported' means 'we name the source'. A reported claim with no source
+    # renders as 'Reported by [source]' with nothing to put there, which is
+    # indistinguishable from verified. Either name the source or downgrade.
+    if ev == "reported" and not claim.get("src"):
+        failures.append(f"{where}: marked reported with no named source")
+    # extrapolated must say what was searched for DIRECT data. A false basis is
+    # worse than a shrug: it renders as a finding with a fake reason.
+    # The Pennyroyal.children failure, caught mechanically.
+    if ev == "extrapolated":
+        basis = (claim.get("basis") or "").strip()
+        if len(basis) < 40:
+            failures.append(f"{where}: extrapolated with no stated basis")
+        elif not any(w in basis.lower() for w in ("search", "located", "not measured",
+                                                  "not itself", "no direct", "extrapolat")):
+            failures.append(
+                f"{where}: extrapolated without saying what was searched for direct data")
+    # An untested claim must say what was searched and why it is flagged,
+    # otherwise it becomes a resting place rather than a finding.
+    if ev == "untested" and len((claim.get("basis") or "").strip()) < 40:
+        failures.append(
+            f"{where}: marked untested with no note on what was searched. "
+            f"An untested claim without a basis is a shrug, not a finding.")
+
+
 def validate_oils():
     oils = load("oils.json")
     if oils is None:
