@@ -43,6 +43,23 @@ LANE_REGISTRY = {
 }
 
 
+def _read_state():
+    """Read the lane state tolerantly.
+
+    Linnea hit this during her replay and read it as a test artifact. It is a
+    real latent fault: a zero-byte or truncated state file is a valid thing to
+    find on disk (interrupted write, disk pressure) and it crashed the guard
+    with JSONDecodeError. Lane history is disposable; failing the build over it
+    is not. A corrupted file is treated as an empty one and rebuilt.
+    """
+    if not LANE_STATE.exists():
+        return {}
+    try:
+        return json.loads(LANE_STATE.read_text(encoding="utf-8") or "{}")
+    except (json.JSONDecodeError, OSError, UnicodeDecodeError):
+        return {}
+
+
 def track_lane(name, count, today=None):
     """Record a lane's count, its delta, and enforce its deadline.
 
@@ -59,9 +76,7 @@ def track_lane(name, count, today=None):
     if today is None:
         today = date.today().isoformat()
 
-    state = {}
-    if LANE_STATE.exists():
-        state = json.loads(LANE_STATE.read_text(encoding="utf-8"))
+    state = _read_state()
     prev = state.get(name, {})
     lane = {
         "count": prev.get("count"),
