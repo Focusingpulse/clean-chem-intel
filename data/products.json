@@ -22,7 +22,10 @@
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Formula 409",
@@ -46,7 +49,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Mr. Clean",
@@ -70,7 +76,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Pine-Sol",
@@ -93,7 +102,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Lysol All-Purpose",
@@ -117,7 +129,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Fabuloso",
@@ -141,7 +156,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Simple Green",
@@ -165,7 +183,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Method All-Purpose",
@@ -188,7 +209,10 @@
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Mrs. Meyer's Multi-Surface",
@@ -210,7 +234,10 @@
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Seventh Gen All-Purpose",
@@ -232,7 +259,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Clorox Bleach",
@@ -255,7 +285,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Lysol Disinfectant Spray",
@@ -280,7 +313,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Lysol Toilet Bowl",
@@ -302,7 +338,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Scrubbing Bubbles",
@@ -325,7 +364,10 @@
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Comet Bathroom",
@@ -348,7 +390,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Tilex Mold & Mildew",
@@ -372,7 +417,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Kaboom Foam-Tastic",
@@ -394,7 +442,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Clorox ToiletWand",
@@ -415,7 +466,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Soft Scrub",
@@ -437,7 +491,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Bar Keepers Friend",
@@ -470,7 +527,10 @@
     "tier": "grocery",
     "note": "Feldspar-based abrasive. Check the feldspar silica entry before choosing it for a sealed stone counter."
    }
-  ]
+  ],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Pledge",
@@ -494,7 +554,10 @@
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Febreze",
@@ -517,7 +580,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Drano Max Gel",
@@ -540,7 +606,10 @@
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "CLR",
@@ -561,7 +630,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Bon Ami",
@@ -584,7 +656,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Ajax Powder",
@@ -608,7 +683,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Swiffer WetJet",
@@ -631,7 +709,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Green Works",
@@ -654,7 +735,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "ECOS Dishmate",
@@ -676,7 +760,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Biokleen All-Purpose",
@@ -698,7 +785,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Dr. Bronner's Sal Suds",
@@ -720,7 +810,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Grove Co. Multi-Purpose",
@@ -742,7 +835,10 @@
   "owner_src": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GROV",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Dawn Ultra",
@@ -767,7 +863,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Palmolive",
@@ -792,7 +891,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Tide",
@@ -816,7 +918,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Gain",
@@ -837,7 +942,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Cascade",
@@ -870,7 +978,10 @@
     "tier": "grocery",
     "note": "Tablet format, no plastic tub."
    }
-  ]
+  ],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Finish",
@@ -898,7 +1009,10 @@
     "tier": "grocery",
     "note": "Same swap as Cascade; the hazard is the percarbonate and silicate load, not the brand."
    }
-  ]
+  ],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Arm & Hammer",
@@ -920,7 +1034,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Seventh Gen Dish",
@@ -942,7 +1059,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Mrs. Meyer's Dish",
@@ -964,7 +1084,10 @@
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Method Dish",
@@ -987,7 +1110,10 @@
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Isopropyl Alcohol 70% (BMVC)",
@@ -1006,7 +1132,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "18-in-1 Pure-Castile Soap, Peppermint (BMVC)",
@@ -1028,7 +1157,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Essential Oil Spray (BMVC)",
@@ -1052,7 +1184,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Peppermint Pure Essential Oil (BMVC)",
@@ -1070,7 +1205,10 @@
   "owner_src": "https://www.businesswire.com/news/home/20260706890520/en/Country-Life-LLC-Acquires-Aura-Cacia-Strengthening-Its-Commitment-to-Holistic-Wellness",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Organic Essential Oils Kit (BMVC)",
@@ -1091,7 +1229,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Granite & Stone Cleaner (BMVC)",
@@ -1117,7 +1258,10 @@
   "owner_src": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GROV",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Wood Surface Cleaner (BMVC)",
@@ -1143,7 +1287,10 @@
   "owner_src": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GROV",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Power Cleaning Paste (BMVC)",
@@ -1172,7 +1319,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Norwex Cloth + Water (BMVC)",
@@ -1191,7 +1341,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Pumie Toilet Bowl Ring Remover (BMVC)",
@@ -1209,7 +1362,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Dishwasher Pods Zero Plastic, Unscented",
@@ -1232,7 +1388,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Zero Plastic Dishwasher Powder",
@@ -1254,7 +1413,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Dishwasher Detergent, Fragrance-free",
@@ -1273,7 +1435,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Dishwasher Tablets, Fragrance Free",
@@ -1294,7 +1459,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "UltraWash Dishwasher Pods",
@@ -1314,7 +1482,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Dishwasher Gel, Free & Clear",
@@ -1333,7 +1504,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Laundry Detergent Pods, Eucalyptus & Rosemary",
@@ -1355,7 +1529,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Laundry Detergent Pods, Unscented",
@@ -1376,7 +1553,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Laundry Detergent, Unscented",
@@ -1396,7 +1576,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Baby Laundry Detergent, Unscented",
@@ -1417,7 +1600,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Liquid Laundry Detergent, Unscented",
@@ -1436,7 +1622,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Oxi Booster Pods",
@@ -1455,7 +1644,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Laundry Powder",
@@ -1475,7 +1667,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Free & Clear Laundry Detergent",
@@ -1495,7 +1690,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Chlorine Free Bleach",
@@ -1514,7 +1712,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Super Washing Soda",
@@ -1532,7 +1733,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Castile Soap, Peppermint",
@@ -1555,7 +1759,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Castile Soap, Lavender",
@@ -1578,7 +1785,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Sal Suds Liquid Cleaner",
@@ -1600,7 +1810,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "All-Purpose Cleaner, Geranium & Lemongrass",
@@ -1625,7 +1838,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Daily Shower & Tile Cleaner, Citrus Zest",
@@ -1645,7 +1861,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Bathroom Cleaner Spray, Citrus Zest",
@@ -1665,7 +1884,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Bathroom Cleaner Spray, Unscented",
@@ -1684,7 +1906,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Floor Surface Cleaner, Citrus Zest",
@@ -1704,7 +1929,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Concentrate, Fragrance-Free",
@@ -1727,7 +1955,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Oxygen Boost",
@@ -1746,7 +1977,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Gel Hand Soap",
@@ -1766,7 +2000,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Bathroom Cleaner, Fresh",
@@ -1785,7 +2022,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Toilet Bowl Cleaner",
@@ -1804,7 +2044,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "All-Purpose Degreaser, Fresh",
@@ -1823,7 +2066,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Glass Cleaner Fresh",
@@ -1842,7 +2088,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Toilet Bowl Cleaner, Emerald Cypress & Fir",
@@ -1862,7 +2111,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Tub & Tile Cleaner, Emerald Cypress & Fir",
@@ -1882,7 +2134,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Shower Kleener",
@@ -1902,7 +2157,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Toilet Kleener, Natural Cedar",
@@ -1922,7 +2180,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Toilet Bowl Cleaner Pine Fresh",
@@ -1942,7 +2203,10 @@
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Cream Scrub",
@@ -1962,7 +2226,10 @@
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Glass Cleaner, Unscented",
@@ -1981,7 +2248,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "All-Purpose Spray, Lemon Zest",
@@ -2000,7 +2270,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "All-Purpose Surface Cleaner, Ginger Yuzu",
@@ -2020,7 +2293,10 @@
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Powder Cleanser",
@@ -2041,7 +2317,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Dishwashing Liquid, Hypo-Allergenic",
@@ -2060,7 +2339,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Dish Liquid, Unscented",
@@ -2079,7 +2361,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Dish Liquid, Free & Clear",
@@ -2098,7 +2383,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "All-Purpose Cleaner, Free & Clear",
@@ -2117,7 +2405,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "All-Purpose Home Cleaner",
@@ -2138,7 +2429,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Meliora Dish Soap",
@@ -2159,7 +2453,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Laundry Detergent, Free & Clear",
@@ -2177,7 +2474,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Multi-Purpose Cleaner, Free & Clear",
@@ -2195,7 +2495,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Hand Soap, Meyer Lemon Mandarin",
@@ -2215,7 +2518,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Floor Cleaner",
@@ -2234,7 +2540,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Concentrated All-Purpose",
@@ -2254,7 +2563,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Calcium Lime Rust Cleaner",
@@ -2274,7 +2586,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "OxiClean Baby Stain Soaker",
@@ -2293,7 +2608,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Dishwasher Pacs, Free & Clear",
@@ -2313,7 +2631,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Dishwasher Powder, Free & Clear",
@@ -2333,7 +2654,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Wave Dishwashing Gel Lavender",
@@ -2352,7 +2676,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Glass Cleaner Concentrate 1A",
@@ -2368,7 +2695,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Focus MP 11 Multi-Purpose",
@@ -2384,7 +2714,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Green Link Multi-Clean Degreaser",
@@ -2400,7 +2733,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Green Link Neutral Floor Cleaner",
@@ -2416,7 +2752,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "HOST Dry Carpet Cleaner",
@@ -2432,7 +2771,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Carpet & Upholstery Concentrate",
@@ -2448,7 +2790,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "20 Mule Team Borax (BMVC)",
@@ -2474,7 +2819,10 @@
     "tier": "dollar",
     "note": "The classic laundry-boost swap. Cheaper than borax and no reproductive-toxicity flag."
    }
-  ]
+  ],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Easy-Off Heavy Duty Oven Cleaner",
@@ -2496,7 +2844,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Dawn Ultra Dish Soap",
@@ -2521,7 +2872,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Tide Original Liquid Laundry",
@@ -2546,7 +2900,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Clorox Disinfecting Bleach",
@@ -2569,7 +2926,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Lysol Multi-Surface Cleaner",
@@ -2593,7 +2953,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Seventh Generation Free & Clear Dish",
@@ -2617,7 +2980,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Zud Heavy Duty Cleanser",
@@ -2639,7 +3005,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Dawn Ultra Dishwashing Liquid",
@@ -2667,7 +3036,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Glass Cleaner",
@@ -2690,7 +3062,10 @@
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "The Honest Company Dish Soap",
@@ -2715,7 +3090,10 @@
   "owner_src": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HNST",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Murphy Oil Soap",
@@ -2739,7 +3117,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Cascade Complete ActionPacs",
@@ -2778,7 +3159,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Fresh Gel Toilet Cleaning Stamp",
@@ -2807,7 +3191,10 @@
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Biokleen Bac-Out Stain & Odor Eliminator",
@@ -2835,7 +3222,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Puracy Natural Multi-Surface Cleaner (Green Tea & Lime)",
@@ -2866,7 +3256,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Better Life What-Ever All-Purpose Cleaner (Unscented)",
@@ -2892,7 +3285,10 @@
   "owner_src": null,
   "tier": "natural",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Granite Gold Daily Cleaner",
@@ -2917,7 +3313,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Resolve Heavy Traffic Foam Carpet Cleaner",
@@ -2950,7 +3349,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Krud Kutter Original Cleaner & Degreaser",
@@ -2974,7 +3376,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Weiman Stainless Steel Cleaner & Polish",
@@ -3002,7 +3407,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "LA's Totally Awesome All-Purpose Cleaner",
@@ -3027,7 +3435,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Clorox Disinfecting Wipes, Fresh Scent",
@@ -3056,7 +3467,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "OxiClean Versatile Stain Remover",
@@ -3081,7 +3495,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Woolite Delicates Laundry Detergent",
@@ -3117,7 +3534,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Mr. Clean Magic Eraser",
@@ -3138,7 +3558,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Persil ProClean Liquid Laundry Detergent, Intense Fresh",
@@ -3179,7 +3602,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Clorox Clean-Up All Purpose Cleaner with Bleach, Original",
@@ -3210,7 +3636,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Spic and Span All-Purpose Disinfecting Spray and Glass Cleaner",
@@ -3239,7 +3668,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Downy Ultra Free & Gentle Liquid Fabric Conditioner",
@@ -3265,7 +3697,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Purex Free & Clear Liquid Laundry Detergent",
@@ -3295,7 +3730,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Spray 'n Wash Laundry Stain Remover",
@@ -3327,7 +3765,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Ivory Concentrated Dishwashing Liquid, Classic Scent",
@@ -3356,7 +3797,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Fantastik Disinfectant Multi-Purpose Cleaner, Fresh Scent",
@@ -3383,7 +3827,10 @@
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Goo Gone Original",
@@ -3409,7 +3856,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Shout Advanced Stain Remover Action Gel",
@@ -3440,7 +3890,10 @@
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "The Works Toilet Bowl Cleaner",
@@ -3471,7 +3924,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Bounce Fabric Softener Sheets, Outdoor Fresh",
@@ -3496,7 +3952,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Tide PODS Laundry Detergent Pacs, Original Scent",
@@ -3539,7 +3998,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Dawn Powerwash Dish Spray, Fresh",
@@ -3570,7 +4032,10 @@
   "owner_src": null,
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Lysol Disinfecting Wipes, Crisp Linen",
@@ -3598,7 +4063,10 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": null,
   "tier_ev": "untested",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  },
  {
   "name": "Clorox Toilet Bowl Cleaner with Bleach, Fresh Scent",
@@ -3638,6 +4106,9 @@
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
   "tier": "mass",
   "tier_ev": "reported",
-  "substitutes": []
+  "substitutes": [],
+  "exposure": null,
+  "exposure_ev": "untested",
+  "exposure_src": null
  }
 ]

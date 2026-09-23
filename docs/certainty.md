@@ -93,6 +93,22 @@ is different from "nobody has checked yet."
 - Never soften it into "we don't have information on this." The subject of the
   sentence is the manufacturer, not us.
 
+## Ordering: exposure, not price tier
+
+The database is ordered by **exposure**: how many homes actually use a product.
+Not by price tier. Trellis's call, Sep 22 2026, and it is the right one. Price
+tier is a filing cabinet; exposure is the signal. A product used in two million
+homes matters more than a product used in two thousand, regardless of which
+shelf either sits on.
+
+Tiers are then **named after the breakpoints appear in the data**, rather than
+being sorting bins chosen in advance. If the dollar-store generics and the
+mass-market staples cluster at the top, that is a finding, not an assumption.
+
+Every product carries `exposure`, `exposure_ev` and `exposure_src`. A product
+with no exposure estimate is `untested` at that dimension, which is a gap in our
+research and not a statement about the product.
+
 ## Rules
 
 1. **Never upgrade a level to make a page look more complete.** A page full of
