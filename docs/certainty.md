@@ -163,6 +163,29 @@ manufacturer claim is not something a validator can know, so severe-grade
 products with no block on file are named in a warning each build rather than
 being treated as failures.
 
+## No claim located
+
+Some manufacturers make no safety claim at all, and a warning that simply names
+those products forever is alarm fatigue with a source attached. The honest close
+is `claim_review`, a second state on the product:
+
+- `ev` — `reported`: we are naming a page we read, not running our own analysis.
+- `src` — the page the review was actually done against.
+- `result` — `no_safety_claim_located`, and nothing else yet. A second value
+  would need a rule for what it means.
+- `note` — what was searched, and what the manufacturer publishes instead.
+
+`claim_review` and `claim_conflict` are mutually exclusive in practice: one says
+a claim exists and it is in tension with the record, the other says the claim
+could not be found. `tools/validate_certainty.py` enforces the shape of both, and
+the severe-grade warning counts a product as reviewed when it carries either.
+
+Two things the field is not allowed to become. It is not reassurance: it says the
+manufacturer publishes no safety claim, not that the product is safe, and the
+render says so. And it is not a shortcut: an absence with no named page is
+indistinguishable from an absence nobody looked for, so a review with no source
+halts the build like any other unbacked claim.
+
 ## Rules
 
 1. **Never upgrade a level to make a page look more complete.** A page full of

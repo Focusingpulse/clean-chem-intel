@@ -442,14 +442,57 @@ def validate_claim_conflicts():
     # claim or a written note that none was located. Warning, not a halt: some
     # manufacturers simply do not make a safety claim, and inventing one to
     # satisfy a check is the failure mode this whole file exists to prevent.
+    #
+    # "None located" is a claim-bearing surface of its own (claim_review): it
+    # asserts that a search was done and names the page it was done against, so
+    # it is validated with the same strictness as a conflict block. An absence
+    # recorded with no source is indistinguishable from an absence never looked
+    # for, and the warning would then read as reviewed in both cases.
     unreviewed = []
     for p in products:
         safe = p.get("safe")
         is_severe = isinstance(safe, str) and "grade" in safe and (
             "grade D" in safe or "grade F" in safe)
-        if is_severe and not p.get("claim_conflict"):
+        if is_severe and not (p.get("claim_conflict") or p.get("claim_review")):
             unreviewed.append(p.get("name"))
     return n, unreviewed
+
+
+CLAIM_REVIEW_FIELDS = ("result", "note")
+
+
+def validate_claim_reviews():
+    """A written 'no claim located' is a claim too, so it gets a shape.
+
+    Added 2026-09-23 with the first claim_review blocks. The point of the field
+    is to close the severe-grade warning honestly for products whose maker makes
+    no safety claim, without letting "we looked and found nothing" be asserted
+    for free. A review with no result, no note, or no named page is exactly that
+    free assertion, so it halts the build.
+    """
+    products = load("products.json")
+    if products is None:
+        return 0
+    n = 0
+    for p in products:
+        cr = p.get("claim_review")
+        if cr is None:
+            continue
+        n += 1
+        where = f"claim_review[{p.get('name','?')}]"
+        if not isinstance(cr, dict):
+            failures.append(f"{where}: not an object")
+            continue
+        ev = cr.get("ev")
+        if ev not in LEVELS:
+            failures.append(f"{where}: invalid or missing evidence level {ev!r}")
+        for field in CLAIM_REVIEW_FIELDS:
+            if not (cr.get(field) or "").strip():
+                failures.append(f"{where}: missing {field}")
+        src = (cr.get("src") or "").strip()
+        if not src.startswith("http"):
+            failures.append(f"{where}: src is not a resolvable URL")
+    return n
 
 
 def check_substitutes():
@@ -594,9 +637,10 @@ def main():
     n_exp = validate_exposure()
     n_severe = check_substitutes()
     n_cf, cf_unreviewed = validate_claim_conflicts()
+    n_cr = validate_claim_reviews()
     if cf_unreviewed:
         warnings.append(
-            f"severe-grade product with no claim conflict on file ({len(cf_unreviewed)} of "
+            f"severe-grade product with no manufacturer claim on file ({len(cf_unreviewed)} of "
             f"{n_severe}): " + ", ".join(cf_unreviewed)
             + " -- record the manufacturer's claim, or record that none was located")
     if not apply:
@@ -607,6 +651,7 @@ def main():
     print(f"ownership entries: {n_own} owner records validated")
     print(f"exposure: {n_exp} exposure claims checked")
     print(f"claim conflicts: {n_cf} product records carry both sides of a claim")
+    print(f"claim reviews: {n_cr} product records state that no manufacturer claim was located")
     print(f"surfaces: {n_surf} claim-bearing records considered (products, reg)")
     print(f"hazards: {n_severe} products carry a severe grade")
 

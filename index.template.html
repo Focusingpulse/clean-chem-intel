@@ -511,6 +511,7 @@ function render(){
     if(flagged) badges.push(`<span class="bdg flag">⚠ reclassified ingredient</span>`);
     if(hasRestrictedElsewhere(p)) badges.push(`<span class="bdg" style="background:#fdeede;color:#b06a24;border:1px solid #f0d7b8">🌍 restricted elsewhere</span>`);
     if(p.claim_conflict) badges.push(`<span class="bdg" style="background:#eef4fb;color:#2f6bb0;border:1px solid #cfdff2">⚖ manufacturer claim on file</span>`);
+    if(!p.claim_conflict && p.claim_review) badges.push(`<span class="bdg" style="background:#f2f2f5;color:#5a5a68;border:1px solid #dcdce4">🔎 claim reviewed</span>`);
     const shiftBadge=shifted?`<div class="shift">${base}→${grade} · ${shifts.join(", ")}</div>`:"";
     return `<div class="card">
       <div class="card-top">
@@ -598,6 +599,13 @@ function openModal(idx){
     <p>${esc(cf.toxicology_finding||"")}</p>
     ${cf.note?`<p class="cf-n">${esc(cf.note)}</p>`:""}
   </div>` : "";
+  const cr=p.claim_review;
+  const crHtml = cr ? `<div class="cfbox">
+    <div class="cf-t">🔎 Manufacturer claim reviewed</div>
+    <div class="cf-l">What the review found</div>
+    <p>No manufacturer safety claim was located for this product. The search and its result are recorded on the entry rather than left blank.</p>
+    ${cr.note?`<p class="cf-n">${esc(cr.note)}</p>`:""}
+  </div>` : "";
   document.getElementById("modal").innerHTML=`
     <button class="modal-x" onclick="closeModal()">✕</button>
     <div class="mrow">
@@ -609,6 +617,7 @@ function openModal(idx){
     <div class="mbrand">${esc(p.brand)} · graded ${gradeClass(productGrade(p.ings)).replace("g-","")}</div>
     ${noteLine}
     ${cfHtml}
+    ${crHtml}
     ${rcHtml}
     <div class="mimg">${rows.join("")}</div>`;
   document.getElementById("modal-bg").classList.add("show");

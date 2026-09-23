@@ -653,7 +653,7 @@
   "heritage_year": 1882,
   "heritage_note": "A stainless-steel polish from 1882 with a cult following that skipped generations entirely via word of mouth.",
   "added": "2026-08-18",
-  "updated": "2026-09-19",
+  "updated": "2026-09-23",
   "owner": null,
   "owner_ev": "untested",
   "owner_src": null,
@@ -680,7 +680,16 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Specialty oxalic-acid cleanser; a small share of surface care."
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Specialty oxalic-acid cleanser; a small share of surface care.",
+  "claim_conflict": {
+   "ev": "reported",
+   "src": "https://barkeepersfriend.com/blogs/bar-keepers-blog/best-way-to-clean-shower-rust",
+   "manufacturer_claim": "The manufacturer's own care guide states: \"Bar Keepers Friend is non-toxic, but to avoid skin irritation, put on rubber gloves before wiping the area with a wet sponge or cloth.\" A second company post describes the cleanser as a cleaner's alternative to harsh chemicals: \"Soap scum and hard water deposits make shower doors look cloudy. You can use harsh chemicals to remove that film, but you might also damage your shower door in the process. Bar Keepers Friend Cleanser is a smarter alternative, it's non-toxic and safe for most surfaces.\"",
+   "manufacturer_src": "https://barkeepersfriend.com/blogs/bar-keepers-blog/best-way-to-clean-shower-rust",
+   "toxicology_finding": "The disclosed ingredient set includes feldspar, graded D on the organ and respiratory dimensions (GHS H373: may cause damage to organs through prolonged or repeated exposure; the respirable crystalline silica concern; High evidence), and oxalic acid, graded D on the dermal and organ dimensions (H302, H312: harmful if swallowed or in contact with skin; High evidence). Both carry their own evidence levels in ingredients.json.",
+   "toxicology_src": "https://pubchem.ncbi.nlm.nih.gov/compound/3080680",
+   "note": "Recorded as a tension, not as a verdict. \"Non-toxic\" is a safety assertion about a formula whose own hazard record carries organ and dermal effects, and the same page advises gloves, which is the manufacturer naming a dermal route in its own instructions. Both pages were reached by direct fetch of the manufacturer's site."
+  }
  },
  {
   "name": "Pledge",
@@ -1231,7 +1240,7 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-09-19",
+  "updated": "2026-09-23",
   "owner": null,
   "owner_ev": "untested",
   "owner_src": null,
@@ -1258,7 +1267,16 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Cascade was 17.5% of Amazon top-10 dish-soap volume, July 2026; automatic dish care is growing with dishwasher ownership above 70% of households."
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Cascade was 17.5% of Amazon top-10 dish-soap volume, July 2026; automatic dish care is growing with dishwasher ownership above 70% of households.",
+  "claim_conflict": {
+   "ev": "reported",
+   "src": "https://directionsforme.org/product/54693",
+   "manufacturer_claim": "The manufacturer's own pack copy for the Cascade Free & Clear line reads: \"No phosphates. No chlorine bleach. Safe for septic tanks.\" and \"Cascade believes in the safety and quality of our products. Visit Cascadeclean.com to learn more about what goes into our products and why we make those choices.\"",
+   "manufacturer_src": "https://directionsforme.org/product/54693",
+   "toxicology_finding": "The brand's disclosed ingredient set across its dishwasher line includes sodium percarbonate, graded D on the dermal dimension (GHS H272, H302, H318: oxidizer, harmful if swallowed, causes serious eye damage; High evidence), and sodium silicate, graded D on dermal (H314, H335: causes severe skin burns and eye damage, may cause respiratory irritation; Medium evidence). P&G's own SmartLabel disclosure for Cascade Complete ActionPacs lists both substances.",
+   "toxicology_src": "https://smartlabel.pg.com/00037000982081.html",
+   "note": "Recorded as a tension, not as a verdict. \"No phosphates\" and \"safe for septic tanks\" are environmental and plumbing claims, not toxicological findings about the people using the product; the same pack carries \"Caution: Irritant. Harmful if swallowed or put in mouth.\" Our entry is brand-level, so the claim quoted is the brand's own line copy rather than one SKU's. The pack wording was reached through a label mirror, not by fetching the physical pack."
+  }
  },
  {
   "name": "Finish",
@@ -1274,7 +1292,7 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-09-19",
+  "updated": "2026-09-23",
   "owner": "Reckitt",
   "owner_ev": "reported",
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
@@ -1296,7 +1314,16 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Reckitt's automatic dish brand; automatic dish care is a growing share but a fraction of the category."
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Reckitt's automatic dish brand; automatic dish care is a growing share but a fraction of the category.",
+  "claim_conflict": {
+   "ev": "reported",
+   "src": "https://www.finishdishwashing.com/products/detergents/quantum-detergent/84/",
+   "manufacturer_claim": "The manufacturer's product page for its leading detergent states: \"FINISH QUANTUM® is safe for septic systems.\" The same page's benefit list reads \"Care & protect For your glasses, dishes & machines,\" and its FAQ describes the tablets as containing \"safe bleaches\": \"They also include enzymes (to break down starchy foods and protein), builders (to tackle hard water) and safe bleaches.\"",
+   "manufacturer_src": "https://www.finishdishwashing.com/products/detergents/quantum-detergent/84/",
+   "toxicology_finding": "The brand's disclosed ingredient set across its dishwasher line includes sodium percarbonate, graded D on the dermal dimension (GHS H272, H302, H318; High evidence), and sodium silicate, graded D on dermal (H314, H335; Medium evidence). Reckitt's own SmartLabel for the Finish dishwasher cleaner line carries \"CAUTION: MAY IRRITATE EYES\" and a poison-control first-aid instruction.",
+   "toxicology_src": "https://www.rbnainfo.com/smart-label.php?productLineId=2294",
+   "note": "Recorded as a tension, not as a verdict. \"Safe for septic systems\" is a plumbing and environmental claim, and \"safe bleaches\" is a reassurance attached to an oxidizer whose own GHS classification includes serious eye damage. Our entry is brand-level, so the claim is quoted from the brand's leading detergent SKU page rather than a SKU-matched page."
+  }
  },
  {
   "name": "Arm & Hammer",
@@ -1565,7 +1592,7 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-09-19",
+  "updated": "2026-09-23",
   "owner": null,
   "owner_ev": "untested",
   "owner_src": null,
@@ -1583,7 +1610,13 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated."
+  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated.",
+  "claim_review": {
+   "ev": "reported",
+   "src": "https://www.nowfoods.com/products/essential-oils/lemon-oil",
+   "result": "no_safety_claim_located",
+   "note": "Reviewed 2026-09-23: this kit as sold, and the constituent brand's own product pages. No manufacturer safety claim was located. What the brand's page publishes instead is a purity claim and a caution, and they are not the same kind of statement: \"NOW® Essential Oils are analytically tested for identity, purity and adulteration to assure the highest quality\" is a quality claim, while the label caution reads \"Keep out of reach of children. Avoid contact with eyes. If pregnant or lactating, consult your healthcare practitioner before using. Do not use on skin\" and \"Natural essential oils are highly concentrated and should be used with care.\" The caution direction agrees with the hazard record rather than opposing it, which is why there is no tension to show here. The absence of a safety claim is recorded as an absence, not as reassurance about the product."
+  }
  },
  {
   "name": "Granite & Stone Cleaner (BMVC)",
@@ -3728,7 +3761,7 @@
   "heritage_year": 1891,
   "heritage_note": "Mined in Death Valley and hauled by 20-mule teams since 1891 — the all-purpose laundry booster grandma swore by. Still in most US grocery aisles; restricted across the EU for reproductive toxicity.",
   "added": "2026-08-28",
-  "updated": "2026-09-19",
+  "updated": "2026-09-23",
   "owner": "Henkel",
   "owner_ev": "reported",
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
@@ -3752,7 +3785,16 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Borax is a legacy laundry booster; laundry care exceeds 95% of US households but boosters are a small share of that.",
   "tier_src": "https://www.20muleteamlaundry.com/",
-  "tier_note": "Borax is sold as a bulk laundry and cleaning staple, not as a finished branded cleaner."
+  "tier_note": "Borax is sold as a bulk laundry and cleaning staple, not as a finished branded cleaner.",
+  "claim_conflict": {
+   "ev": "reported",
+   "src": "https://www.20muleteamlaundry.com/safety-information.html",
+   "manufacturer_claim": "The manufacturer's safety page asks \"How safe is 20 MULE TEAM® Borax?\" and answers: \"20 MULE TEAM® Borax has been used safely by hundreds of people for over 127 years! While no one can say their product is 100% safe in all circumstances (even table salt can be deadly if you ingest too much), Borax is safe when used as directed.\" The same page states \"Borax is a 100% all-natural mineral that we mine, refine and package for your use,\" and the brand's home page adds \"The only ingredient in Borax is a naturally occuring mineral called sodium tetraborate. It's free of phosphates, chlorine and other chemicals.\"",
+   "manufacturer_src": "https://www.20muleteamlaundry.com/safety-information.html",
+   "toxicology_finding": "Sodium tetraborate is graded F on the reproductive dimension: EU/CLP-classified reproductive toxicant 1B (H360FD, may damage fertility or the unborn child; High evidence). The manufacturer's own SDS lists \"Suspected of damaging fertility or the unborn child\" in its hazard statements while also stating \"This product is a laundry care product. The use of this product by consumers is safe under normal and reasonable foreseen use.\"",
+   "toxicology_src": "https://assets.unilogcorp.com/267/ITEM/DOC/20MULETEAMBORAXtrade_DIA00201_1.pdf",
+   "note": "Recorded as a tension, not as a verdict. \"Safe when used as directed\" and \"all-natural\" stand opposite a 1B reproductive classification that the same company's SDS repeats on this product. \"Natural\" describes where the substance came from, not what it does, and the manufacturer's own \"no one can say their product is 100% safe\" is the claim conceding its own limit. The SDS was reached through a distributor's document mirror of the sheet naming Henkel Corporation as manufacturer, not from a Henkel-hosted URL."
+  }
  },
  {
   "name": "Easy-Off Heavy Duty Oven Cleaner",
