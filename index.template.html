@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clean Chem Intel — Know What's Under Your Sink</title>
-<meta name="description" content="A living database of cleaning products — graded ingredient by ingredient. Search by health impact: respiratory, reproductive, endocrine, skin, aquatic, cancer, allergen.">
+<title>Clean Chem Intel. Know What's Under Your Sink</title>
+<meta name="description" content="A living database of cleaning products, graded ingredient by ingredient. Search by health impact: respiratory, reproductive, endocrine, skin, aquatic, cancer, allergen.">
 <style>
   :root{
     --pine:#1d5c45; --pine-2:#2e7d5b; --pine-soft:#e6f0ea;
@@ -215,38 +215,11 @@
   .watch-card .w-rule{font-size:.73rem;color:#4c5e56;margin-top:6px}
   .watch-card .w-why{font-size:.7rem;color:#7a6a4a;margin-top:5px;font-style:italic}
 
-  /* ---------- DIY mixer ---------- */
-  .mixer{background:linear-gradient(160deg,#eef5f0,#e2efe7);border:1px solid rgba(29,92,69,.2);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
-  .mixer-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:12px}
-  @media(min-width:760px){.mixer-grid{grid-template-columns:1fr 1fr}}
-  .mixer-cat{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-  .mcat{padding:8px 13px;border-radius:11px;border:1.5px solid var(--line);background:var(--surface);font-size:.82rem;font-weight:600;color:#44544e;cursor:pointer;transition:all .13s}
-  .mcat:hover{border-color:#c4d3cb}
-  .mcat.active{background:var(--pine);border-color:var(--pine);color:#fff}
-  .ing-pool{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-  .ing-tile{display:flex;flex-direction:column;gap:2px;padding:8px 11px;border-radius:11px;border:1.5px solid var(--line);background:var(--surface);font-size:.78rem;font-weight:600;color:#33443e;cursor:pointer;transition:all .13s;text-align:left;max-width:170px}
-  .ing-tile:hover{border-color:var(--pine-2)}
-  .ing-tile.active{border-color:var(--pine);background:var(--pine-soft)}
-  .ing-tile .ip{font-size:.62rem;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
-  .ing-tile .it{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .mixer-slider-row{display:flex;align-items:center;gap:8px;margin-top:8px;flex-wrap:wrap}
-  .mixer-slider-row .ms-label{font-size:.8rem;font-weight:700;color:#33443e;width:120px;flex:none}
-  .mixer-slider-row input[type=range]{flex:1;min-width:90px}
-  .recipe-card{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:13px 15px;box-shadow:var(--shadow)}
-  .recipe-card h4{font-size:.98rem;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:8px}
-  .recipe-uses{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-  .ru{display:flex;align-items:center;gap:5px;background:var(--pine-soft);color:var(--pine);font-size:.76rem;font-weight:700;padding:4px 10px;border-radius:999px;border:1px solid #cfe3d8}
-  .ru b{font-size:.78rem}
-  .recipe-notes{font-size:.8rem;color:#4c5e56;margin-top:9px;line-height:1.5}
-  .ph-note{font-size:.72rem;color:#7a6a4a;background:#fdf8ec;border:1px solid #f0e4c6;border-radius:8px;padding:6px 9px;margin-top:8px}
-  .rule-list{font-size:.8rem;color:#5a4038;line-height:1.55}
-  .rule-list li{margin-left:1.1rem;margin-bottom:3px}
-  .bottle{display:flex;align-items:flex-end;gap:2px;height:90px;margin-top:12px;padding:0 4px;background:rgba(255,255,255,.4);border-radius:0 0 8px 8px;border:1px solid var(--line);border-top:none;position:relative;overflow:hidden}
-  .bottle-seg{width:28px;border-radius:3px 3px 0 0;display:flex;align-items:flex-start;justify-content:center;font-size:.6rem;font-weight:800;color:#fff;padding-top:2px;min-height:4px;transition:height .3s}
-  .bottle-labels{display:flex;gap:2px;margin-top:4px}
-  .bottle-labels span{width:28px;font-size:.55rem;text-align:center;color:var(--muted);line-height:1.1;word-break:break-word}
-  .myblend{font-size:.82rem;color:#44554e;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:10px}
-  .myblend b{color:var(--pine)}
+  /* ---------- why I do this ---------- */
+  .why-i-do-this{background:linear-gradient(160deg,#eef5f0,#e2efe7);border:1px solid rgba(29,92,69,.2);border-radius:18px;padding:20px;box-shadow:var(--shadow)}
+  .why-i-do-this p{font-size:.95rem;color:#3d5049;line-height:1.6;max-width:70ch}
+  .quote-cta{display:inline-flex;align-items:center;justify-content:center;margin-top:16px;background:var(--pine);color:#fff;font-weight:700;font-size:.9rem;padding:12px 22px;border-radius:11px;text-decoration:none;min-height:44px;box-shadow:0 2px 6px rgba(29,92,69,.3)}
+  .quote-cta:hover{background:var(--pine-2)}
 
   /* ---------- footer ---------- */
   footer{border-top:1px solid var(--line);margin-top:44px;background:#eef2f0}
@@ -294,7 +267,7 @@
     <div class="sec-title"><h2>Search by how it can affect you</h2><span class="sub">tap an impact to see products containing ingredients flagged for it</span></div>
     <div class="chips" id="harm-chips"></div>
 
-    <div class="impact-label">Or search for what's <i>not</i> flagged — products with no ingredient carrying that impact</div>
+    <div class="impact-label">Or search for what's <i>not</i> flagged, products with no ingredient carrying that impact</div>
     <div class="chips" id="safe-chips"></div>
 
     <div class="row2">
@@ -311,79 +284,68 @@
   </section>
 
   <section>
-    <div class="sec-title"><h2>🧪 DIY Mix &amp; Match Solution Lab</h2><span class="sub">pick a surface, choose your base ingredients, set your ratios — get a safe, effective cleaner</span></div>
-    <div class="mixer">
-      <div class="sec-title" style="margin-bottom:6px;"><h2 style="font-size:1rem;">🎯 What are you cleaning?</h2></div>
-      <div class="mixer-cat" id="mixer-cats"></div>
-      <div class="sec-title" style="margin-top:14px;margin-bottom:6px;"><h2 style="font-size:1rem;">🧴 Your base ingredients</h2><span class="sub" style="font-size:.72rem;color:var(--muted);">tap to add — then set ratios below</span></div>
-      <div class="ing-pool" id="mixer-ingredients"></div>
-      <div class="sec-title" style="margin-top:14px;margin-bottom:6px;"><h2 style="font-size:1rem;">⚖️ Ratios (how much in your bottle)</h2></div>
-      <div id="mixer-sliders"></div>
-      <div class="bottle" id="mixer-bottle"></div>
-      <div class="bottle-labels" id="mixer-bottle-labels"></div>
-      <div class="myblend" id="mixer-myblend" style="display:none;"></div>
-      <div class="sec-title" style="margin-top:14px;margin-bottom:6px;"><h2 style="font-size:1rem;">📖 Safe starter recipes</h2><span class="sub" style="font-size:.72rem;color:var(--muted);">vetted combinations for each surface</span></div>
-      <div class="mixer-grid" id="mixer-recipes"></div>
-      <div class="sec-title" style="margin-top:14px;margin-bottom:6px;"><h2 style="font-size:1rem;">⚠️ The rules of mixing</h2></div>
-      <div class="rule-list" id="mixer-rules"></div>
+    <div class="sec-title"><h2>Why I do this so you don't have to</h2><span class="sub">the difference between mixing something that smells clean and knowing what cleans</span></div>
+    <div class="why-i-do-this">
+      <p>Anyone can mix something that smells clean. Knowing what actually cleans, what's safe around your kids and dogs, and what to never let touch your stone counters, that's the job. I built this database so you can check my work. Look up any product I bring into your home. Then let me handle it.</p>
+      <a class="quote-cta" href="/contact-us/">Get a Quote</a>
     </div>
   </section>
 
   <section>
-    <div class="sec-title"><h2>🌍 The planet's verdict</h2><span class="sub">banned or restricted elsewhere — still on US shelves</span></div>
+    <div class="sec-title"><h2>🌍 The planet's verdict</h2><span class="sub">banned or restricted elsewhere, still on US shelves</span></div>
     <div class="region-grid" id="region-grid"></div>
     <div class="catchup" id="catchup"></div>
-    <div style="margin:18px 0 8px" class="impact-label">Watch list — chemicals the US hasn't caught up on yet</div>
+    <div style="margin:18px 0 8px" class="impact-label">Watch list, chemicals the US hasn't caught up on yet</div>
     <div class="watch" id="watch"></div>
   </section>
 
   <section>
-    <div class="sec-title"><h2>⚠️ Once safe, now flagged</h2><span class="sub">chemicals that were marketed as harmless — and the research that changed the story</span></div>
+    <div class="sec-title"><h2>⚠️ Once safe, now flagged</h2><span class="sub">chemicals that were marketed as harmless, and the research that changed the story</span></div>
     <div class="strip" id="rc-strip"></div>
   </section>
 
   <section>
-    <div class="sec-title"><h2>🏺 Grandma's cupboard</h2><span class="sub">heritage cleaners passed down generations — still under the sink today</span></div>
+    <div class="sec-title"><h2>🏺 Grandma's cupboard</h2><span class="sub">heritage cleaners passed down generations, still under the sink today</span></div>
     <div class="heritage-grid" id="heritage-grid"></div>
   </section>
 
   <section>
-    <div class="sec-title"><h2>📚 What's new</h2><span class="sub">this database grows on a schedule — watch the changelog</span></div>
+    <div class="sec-title"><h2>📚 What's new</h2><span class="sub">this database grows on a schedule, watch the changelog</span></div>
     <div class="cl" id="changelog"></div>
   </section>
 
   <section>
     <div class="geno">
       <button class="geno-btn" id="geno-toggle-btn" onclick="toggleGenoPanel()">
-        <span>🧬 Genetic sensitivity layer — is this product right for *your* body?</span>
+        <span>🧬 Genetic sensitivity layer, is this product right for *your* body?</span>
         <span class="arrow">▼</span>
       </button>
       <div class="geno-body" id="geno-body">
-        <div class="geno-intro">These are <strong>common human genetic variations</strong>, not defects — ~75–90% of people carry at least one. Toggle the ones that apply to you and watch product grades shift. Your personal experience is valid data; if a product bothers you, it bothers you.</div>
+        <div class="geno-intro">These are <strong>common human genetic variations</strong>, not defects ,  ~75–90% of people carry at least one. Toggle the ones that apply to you and watch product grades shift. Your personal experience is valid data; if a product bothers you, it bothers you.</div>
         <div class="geno-grid">
           <div class="gcard" id="gcard-gstm1" onclick="toggleGene('gstm1')">
             <div class="gcard-top"><b>GSTM1 Deletion</b><span class="gpre">~50%</span></div>
-            <div class="gdesc">Reduced glutathione detoxification — your body clears certain chemicals more slowly.</div>
+            <div class="gdesc">Reduced glutathione detoxification, your body clears certain chemicals more slowly.</div>
             <div class="gaf">Affects: <span>Isothiazolinones (MI, BIT)</span></div>
-            <div class="gev ev-moderate">Moderate evidence — strong mechanism, indirect for cleaners</div>
+            <div class="gev ev-moderate">Moderate evidence, strong mechanism, indirect for cleaners</div>
           </div>
           <div class="gcard" id="gcard-tnf" onclick="toggleGene('tnf')">
             <div class="gcard-top"><b>TNF-α -308A</b><span class="gpre">~25–28%</span></div>
-            <div class="gdesc">Higher inflammatory response — your immune system reacts more strongly to irritants.</div>
+            <div class="gdesc">Higher inflammatory response, your immune system reacts more strongly to irritants.</div>
             <div class="gaf">Affects: <span>SLS, benzalkonium chloride, NaOH</span></div>
-            <div class="gev ev-strong">Strong evidence — lower irritation threshold shown</div>
+            <div class="gev ev-strong">Strong evidence, lower irritation threshold shown</div>
           </div>
           <div class="gcard" id="gcard-mhc" onclick="toggleGene('mhc')">
             <div class="gcard-top"><b>MHC / HLA-DP</b><span class="gpre">varies</span></div>
             <div class="gdesc">Immune-system variants linked to stronger skin reactions to common cleaners (NIOSH study, n=585).</div>
             <div class="gaf">Affects: <span>Benzalkonium chloride, SLS, NaOH</span></div>
-            <div class="gev ev-moderate">Moderate — direct occupational study, not yet replicated</div>
+            <div class="gev ev-moderate">Moderate, direct occupational study, not yet replicated</div>
           </div>
           <div class="gcard" id="gcard-dao" onclick="toggleGene('dao')">
             <div class="gcard-top"><b>DAO / HNMT slow</b><span class="gpre">~66–80%</span></div>
-            <div class="gdesc">Slower histamine clearance — chemical-triggered histamine lingers, amplifying the response.</div>
+            <div class="gdesc">Slower histamine clearance, chemical-triggered histamine lingers, amplifying the response.</div>
             <div class="gaf">Affects: <span>SLS, benzalkonium chloride, VOCs</span></div>
-            <div class="gev ev-plausible">Plausible — enzyme evidence strong, cleaner link inferred</div>
+            <div class="gev ev-plausible">Plausible, enzyme evidence strong, cleaner link inferred</div>
           </div>
         </div>
       </div>
@@ -400,8 +362,9 @@
       <a href="docs/scoring-rubric.md">Scoring rubric</a>
       <a href="https://github.com/Focusingpulse/clean-chem-intel">GitHub</a>
     </div>
-    <div>Built for <b>Bella's Mountain Vacation Cleaning</b> — because Sandra vets what she uses, and you should know what you're using too.</div>
-    <div class="note"><strong>Not medical advice.</strong> Grades reflect documented hazard data (GHS classifications, peer-reviewed toxicology, regulatory listings) mapped to health endpoints. Evidence is labeled honestly — Low/Medium/High/Extrapolated. Absence of a flag is not proof of safety; it means our database documents no signal. This is a transparency tool, not a diagnosis.</div>
+    <div>Built for <b>Bellas Mountain Vacation Cleaning</b>. I vet what I use, and you should know what you're using too.</div>
+    <div style="margin-top:12px;"><a class="quote-cta" href="/contact-us/">Get a Quote</a></div>
+    <div class="note"><strong>Not medical advice.</strong> Grades reflect documented hazard data (GHS classifications, peer-reviewed toxicology, regulatory listings) mapped to health endpoints. Evidence is labeled honestly. Low/Medium/High/Extrapolated. Absence of a flag is not proof of safety; it means our database documents no signal. This is a transparency tool, not a diagnosis.</div>
     <div class="built"><span class="dot"></span>Built <span id="built-at"></span> · generated from data pipeline</div>
   </div>
 </footer>
@@ -417,7 +380,6 @@ const CHANGELOG = __CHANGELOG__;
 const META = __META__;
 const REG = __REG__;
 const SCOREBOARD = __SCOREBOARD__;
-const RECIPES = __RECIPES__;
 
 /* ---------- bootstrap ---------- */
 document.getElementById("live-date").textContent = META.last_updated;
@@ -559,7 +521,7 @@ function render(){
       <div class="card-foot"><span class="ing-count">${p.ings.length} ingredient${p.ings.length===1?"":"s"}</span><button class="more-btn" onclick="openModal(${PRODUCTS.indexOf(p)})">Breakdown →</button></div>
     </div>`;
   }).join("");
-  document.getElementById("results").innerHTML=html||`<div class="no-results">No products match. Try clearing filters — or this might be a product we haven't cataloged yet. <b>We add products regularly.</b></div>`;
+  document.getElementById("results").innerHTML=html||`<div class="no-results">No products match. Try clearing filters, or this might be a product we haven't cataloged yet. <b>We add products regularly.</b></div>`;
 }
 function toggleSafeOnly(btn){safeOnly=!safeOnly;btn.classList.toggle("active");render();}
 function toggleHeritage(btn){heritageOnly=!heritageOnly;btn.classList.toggle("active");render();}
@@ -598,7 +560,7 @@ function openModal(idx){
   const flags=[];
   const rows=p.ings.map(n=>{
     const d=INGS[n];
-    if(!d) return `<div class="ming"><h4>${esc(n)} <span style="font-size:.68rem;color:var(--muted)">uncataloged</span></h4><div class="isum">No hazard data in our database yet — we're adding ingredients regularly.</div></div>`;
+    if(!d) return `<div class="ming"><h4>${esc(n)} <span style="font-size:.68rem;color:var(--muted)">uncataloged</span></h4><div class="isum">No hazard data in our database yet, we're adding ingredients regularly.</div></div>`;
     const g=d.gr||{};
     const dims=DIMS.filter(dim=>g[dim]).map(dim=>`<span class="idim">${DIM_LABEL[dim]} <b>${g[dim]}</b></span>`).join("");
     const ev=d.ev||"Low";
@@ -619,7 +581,7 @@ function openModal(idx){
     </div>`;
   });
   const rcs=p.ings.map(n=>INGS[n]).filter(d=>d&&d.reclassified);
-  const rcHtml=rcs.map(d=>`<div class="rcbox"><div class="rc-t">Once safe, now flagged — ${esc(d.s?d.s.split(".")[0]:"")}</div>${d.reclassified.map(r=>`<p>${esc(r)}</p>`).join("")}</div>`).join("");
+  const rcHtml=rcs.map(d=>`<div class="rcbox"><div class="rc-t">Once safe, now flagged ,  ${esc(d.s?d.s.split(".")[0]:"")}</div>${d.reclassified.map(r=>`<p>${esc(r)}</p>`).join("")}</div>`).join("");
   const noteLine = p.heritage ? `<div class="noteline">🏺 <b>Heirloom:</b> ${esc(p.heritage_note||"")}</div>` : "";
   document.getElementById("modal").innerHTML=`
     <button class="modal-x" onclick="closeModal()">✕</button>
@@ -654,7 +616,7 @@ function buildRegions(){
     for(const st of ["banned","restricted","review","flagged","allowed"]){
       if(sb[st]) parts.push(`<span class="rpc ${st}">${sb[st]} ${STATUS_LABEL[st]}</span>`);
     }
-    return `<div class="region-card"><div class="rname">${info.flag} ${info.name}</div><div class="rstat">${parts.join("")||"<span class='rpc'>—</span>"}</div><div class="rblurb">${esc(info.blurb)}</div></div>`;
+    return `<div class="region-card"><div class="rname">${info.flag} ${info.name}</div><div class="rstat">${parts.join("")||"<span class='rpc'>n/a</span>"}</div><div class="rblurb">${esc(info.blurb)}</div></div>`;
   }).join("");
   grid.innerHTML=rows;
 }
@@ -679,7 +641,7 @@ function buildCatchup(){
     }
   }
   if(!stories.length){ el.style.display="none"; return; }
-  el.innerHTML=`<h3>🇺🇸 The catch-up scoreboard — restricted elsewhere, still here</h3>`+
+  el.innerHTML=`<h3>🇺🇸 The catch-up scoreboard, restricted elsewhere, still here</h3>`+
     stories.map(f=>
       `<div class="cu-item"><div class="cu-flag">${f.flag}</div><div><div class="cu-who">${esc(f.ing)} <span style="font-weight:600;color:var(--d)">· ${STATUS_LABEL[f.status]||f.status} in ${esc(f.region)}${f.since?" since "+f.since:""} · US: ${esc(f.usStatus)}</span></div><div class="cu-what">${esc(f.rule||"")}</div></div></div>`
     ).join("");
@@ -688,94 +650,6 @@ function buildWatch(){
   const el=document.getElementById("watch");
   el.innerHTML=REG.watchlist.map(w=>
     `<div class="watch-card"><div class="w-name">${esc(w.name)}<span class="w-reg">${w.region}</span></div><div class="w-rule">${esc(w.rule)}</div><div class="w-why">Why: ${esc(w.reason)}</div></div>`).join("");
-}
-
-/* ---------- DIY mixer ---------- */
-let mCat = null, mSelected = new Set(), mRatios = {};
-function ingById(id){ return RECIPES.ingredients.find(i=>i.id===id); }
-function buildMixerCats(){
-  document.getElementById("mixer-cats").innerHTML = RECIPES.categories.map(c =>
-    `<button class="mcat ${c.id===mCat?'active':''}" data-id="${c.id}" onclick="setMCat('${c.id}')">${c.icon} ${c.name}</button>`).join("") +
-    `<button class="mcat ${mCat===null?'active':''}" onclick="setMCat(null)">✨ Any</button>`;
-}
-function setMCat(id){
-  mCat = id;
-  buildMixerCats();
-  renderMixerRecipes();
-  const pool = document.getElementById("mixer-ingredients");
-  if (!pool) return;
-  // highlight ingredients used by recipes in this category
-  pool.querySelectorAll(".ing-tile").forEach(t => {
-    const uses = RECIPES.recipes.filter(r => !id || r.cat === id);
-    const used = uses.some(r => r.uses.some(u => u.ing === t.dataset.id));
-    t.style.opacity = used || !id ? "1" : ".5";
-  });
-}
-function buildMixerPool(){
-  document.getElementById("mixer-ingredients").innerHTML = RECIPES.ingredients.map(i =>
-    `<button class="ing-tile ${mSelected.has(i.id)?'active':''}" data-id="${i.id}" onclick="toggleMIng('${i.id}')">
-      <span class="ip">${i.ph}</span><span class="it">${i.icon} ${i.name}</span>
-    </button>`).join("");
-}
-function toggleMIng(id){
-  if (mSelected.has(id)) { mSelected.delete(id); delete mRatios[id]; }
-  else { mSelected.add(id); mRatios[id] = 1; }
-  buildMixerPool(); renderMixerSliders(); renderBottle(); renderMyBlend();
-  document.getElementById("mixer-ingredients").querySelectorAll(".ing-tile").forEach(t => {
-    const uses = RECIPES.recipes.filter(r => !mCat || r.cat === mCat);
-    const used = uses.some(r => r.uses.some(u => u.ing === t.dataset.id));
-    t.style.opacity = used || !mCat ? "1" : ".5";
-  });
-}
-function renderMixerSliders(){
-  const el = document.getElementById("mixer-sliders");
-  if (mSelected.size === 0) { el.innerHTML = `<div style="font-size:.8rem;color:var(--muted);">Tap ingredients above to add them to your bottle.</div>`; return; }
-  el.innerHTML = [...mSelected].map(id => {
-    const ing = ingById(id); const v = mRatios[id] || 1;
-    return `<div class="mixer-slider-row"><span class="ms-label">${ing.icon} ${ing.name}</span>
-      <input type="range" min="0" max="4" step="0.25" value="${v}" oninput="mRatios['${id}']=parseFloat(this.value);renderBottle();renderMyBlend();document.getElementById('ms-val-${id}').textContent=this.value">
-      <span style="font-size:.72rem;color:var(--muted);min-width:30px;" id="ms-val-${id}">${v}</span>
-      <span style="font-size:.62rem;color:var(--muted);">parts</span></div>`;
-  }).join("");
-}
-function renderBottle(){
-  const el = document.getElementById("mixer-bottle");
-  const labels = document.getElementById("mixer-bottle-labels");
-  const items = [...mSelected].filter(id => (mRatios[id]||0) > 0);
-  const colors = { water:"#5aa9d6", vinegar:"#e8d9a0", rubbing_alcohol:"#bcd4e8", castile:"#c9a97c", baking_soda:"#f0ede4", washing_soda:"#e6e2d8", lemon:"#f5d76a", teatree:"#7ba37b", lavender:"#9c8cc0", lemon_oil:"#e8b84c", peroxide:"#cfeaf2", salt:"#e8e6e2" };
-  if (items.length === 0){ el.innerHTML = `<div style="font-size:.78rem;color:var(--muted);padding:8px;">Pick ingredients to see your bottle fill.</div>`; labels.innerHTML=''; return; }
-  const total = items.reduce((s,id)=>s+(mRatios[id]||0),0) || 1;
-  el.innerHTML = items.map(id => {
-    const h = ((mRatios[id]||0)/total*100).toFixed(1);
-    return `<div class="bottle-seg" style="height:${h}%;background:${colors[id]||'#999'};" title="${ingById(id).name} ${(mRatios[id]||0)} parts"></div>`;
-  }).join("");
-  labels.innerHTML = items.map(id => `<span>${ingById(id).name.split(' ')[0]}</span>`).join("");
-}
-function renderMyBlend(){
-  const el = document.getElementById("mixer-myblend");
-  const items = [...mSelected].filter(id => (mRatios[id]||0) > 0);
-  if (items.length === 0){ el.style.display="none"; return; }
-  el.style.display="block";
-  const total = items.reduce((s,id)=>s+(mRatios[id]||0),0) || 1;
-  const parts = items.map(id => {
-    const pct = ((mRatios[id]||0)/total*100).toFixed(0);
-    return `${ingById(id).name} ${pct}%`;
-  }).join(" · ");
-  el.innerHTML = `<b>🧴 Your blend:</b> ${parts}<br><span style="font-size:.72rem;color:var(--muted);">${mCat ? "Made for: " + RECIPES.categories.find(c=>c.id===mCat).name : "Try picking a surface for a tailored recipe."} · ${items.length} ingredient${items.length>1?"s":""}</span>`;
-}
-function renderMixerRecipes(){
-  const el = document.getElementById("mixer-recipes");
-  const list = RECIPES.recipes.filter(r => !mCat || r.cat === mCat);
-  el.innerHTML = list.map(r => {
-    const uses = r.uses.map(u => { const ing = ingById(u.ing); return `<span class="ru">${ing.icon} ${ing.name} <b>${u.ratio}</b></span>`; }).join("");
-    return `<div class="recipe-card"><h4>${r.icon} ${r.name}</h4><div class="recipe-uses">${uses}</div><div class="recipe-notes">${r.notes}</div><div class="ph-note">${r.phNote}</div></div>`;
-  }).join("") || `<div style="font-size:.8rem;color:var(--muted);">No recipes yet for this surface — pick another or use the ingredients.</div>`;
-}
-function buildMixerRules(){
-  const el = document.getElementById("mixer-rules");
-  const rules = [...RECIPES.rules.never_mix.map(r=>`<li>🚫 ${r}</li>`), ...RECIPES.rules.safety.map(r=>`<li>🛡️ ${r}</li>`)];
-  const ph = RECIPES.rules.ph_guide.map(g=>`<li>${g.label}: <b>${g.value}</b></li>`).join("");
-  el.innerHTML = `<ul class="rule-list">${rules.join("")}</ul><div style="margin-top:8px;"><b style="font-size:.72rem;text-transform:uppercase;letter-spacing:.5px;color:var(--pine);">pH cheat sheet:</b><ul class="rule-list">${ph}</ul></div>`;
 }
 
 /* ---------- genetic ---------- */
@@ -808,7 +682,7 @@ function buildHeritage(){
 }
 
 /* ---------- init ---------- */
-buildChips();buildFilters();buildChangelog();buildRCStrip();buildHeritage();buildRegions();buildCatchup();buildWatch();buildMixerCats();buildMixerPool();renderMixerSliders();renderBottle();renderMixerRecipes();buildMixerRules();render();
+buildChips();buildFilters();buildChangelog();buildRCStrip();buildHeritage();buildRegions();buildCatchup();buildWatch();render();
 </script>
 </body>
 </html>

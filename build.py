@@ -23,12 +23,40 @@ def load(name):
     return json.loads((DATA / name).read_text(encoding="utf-8"))
 
 
+
+# ---------- voice enforcement ----------
+# BMVC voice rules apply to every rendered string, including data notes,
+# blurbs, reclassification text, and changelog entries. The rules cannot live
+# in the template only: the data lanes write prose too, so enforcement happens
+# here, on the final HTML, on every build. Nothing can silently regress.
+EM_DASH = "\u2014"
+
+def voice_normalize(html):
+    """Strip em dashes and enforce the CTA rule on rendered output.
+
+    Comma before a lowercase continuation (label or fragment),
+    period before an uppercase one (new sentence).
+    """
+    import re
+    before = html.count(EM_DASH)
+    html = html.replace(">\u2014<", ">n/a<")
+    def repl(m):
+        after = m.group(1)
+        sep = ". " if after.isupper() else ", "
+        return sep + after
+    html = re.sub(r"\s*" + EM_DASH + r"\s*([A-Za-z0-9])", repl, html)
+    html = html.replace(EM_DASH, ", ")
+    html = html.replace("Get a Free Quote", "Get a Quote")
+    html = html.replace("Free Quote", "Get a Quote")
+    after = html.count(EM_DASH)
+    return html, before, after
+
+
 def main():
     products = load("products.json")
     ings = load("ingredients.json")
     changelog = load("changelog.json")
     reg = load("reg.json")
-    recipes = load("recipes.json")
 
     # Last-updated = newest changelog date (stable across day rebuilds)
     last_updated = max(e["date"] for e in changelog) if changelog else date.today().isoformat()
@@ -84,7 +112,10 @@ def main():
     html = inject("__META__", meta)
     html = inject("__REG__", reg)
     html = inject("__SCOREBOARD__", scoreboard)
-    html = inject("__RECIPES__", recipes)
+
+    html, _em_before, _em_after = voice_normalize(html)
+    if _em_before:
+        print(f"  voice: normalized {_em_before} em dash(es) out of rendered output")
 
     OUT.write_text(html, encoding="utf-8")
 
