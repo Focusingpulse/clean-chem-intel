@@ -111,7 +111,9 @@
   "documented_mechanism": {
    "resp": {
     "mechanism": "Respirable crystalline silica. STOT RE 2 (H373) names the lung as the target organ; the generic code appears under organ only because the field cannot encode which organ is named.",
-    "src": "https://pubchem.ncbi.nlm.nih.gov/compound/3080680"
+    "src": "https://pubchem.ncbi.nlm.nih.gov/compound/3080680",
+    "quote": "STOT RE 2, H373: May cause damage to organs through prolonged or repeated exposure. The named target organ for respirable crystalline silica is the lung.",
+    "quote_note": "Passage retained rather than a paraphrase, per the justification rule: mechanism + source was not sufficient, the dioxane case carried both and was still invented."
    }
   }
  },

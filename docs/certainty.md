@@ -116,6 +116,23 @@ Every product carries `exposure`, `exposure_ev` and `exposure_src`. A product
 with no exposure estimate is `untested` at that dimension, which is a gap in our
 research and not a statement about the product.
 
+## Screened is not positive
+
+**A study having been run is evidence that someone looked. It is not evidence of
+what they found.** These are different states and conflating them is how a
+fabricated justification acquires its plausibility.
+
+Worked example, and it is a real one from this repo: 1,4-Dioxane was carrying an
+endocrine grade on the reasoning that endocrine screening existed for it. The
+screening existed. The finding did not. The authoritative profile reports no
+alterations in any relevant tissue and states plainly that no further
+information was located on endocrine effects. "Screened" was read as "positive,"
+and the grade rode on it for as long as nobody resolved the source.
+
+Apply it wherever a negative or absent result could be mistaken for a positive
+one: screening performed, a study registered, a dossier submitted, a review
+commissioned. None of those is a finding.
+
 ## Rules
 
 1. **Never upgrade a level to make a page look more complete.** A page full of
@@ -136,5 +153,13 @@ research and not a statement about the product.
 6. **Population claims get their own level.** A substance can be `verified`
    hazardous to cats and `untested` for birds. One level per claim, never one
    level per substance.
-7. **`unknown` is never softened.** It is the only level that describes a
+7. **A justification is not a finding until it is a quotation.** Before writing
+   "the finding exists because X", the test is whether the exact passage from the
+   named source can be produced right now. If it cannot, it is a recollection,
+   and a recollection is what gets fabricated. Write it as an unverified
+   hypothesis or do not write it. A mechanism note carries `mechanism`, `src`
+   AND `quote`, and the build fails without all three. This rule exists because
+   `documented_mechanism` accepted mechanism plus source and a fabricated
+   citation satisfied both.
+8. **`unknown` is never softened.** It is the only level that describes a
    choice rather than a gap, and it renders as the most serious of the five.

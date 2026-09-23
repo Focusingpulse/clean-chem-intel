@@ -366,8 +366,15 @@ def validate_surfaces():
                 # basis is written INTO the record and names a source. A basis
                 # living in decisions.md is not a trace a page reader can audit.
                 dm = (rec.get("documented_mechanism") or {}).get(dim)
-                if dm and dm.get("src") and dm.get("mechanism"):
+                if dm and dm.get("src") and dm.get("mechanism") and dm.get("quote"):
                     continue
+                if dm and not dm.get("quote"):
+                    # mechanism + src is not enough. The dioxane failure carried
+                    # BOTH and was still invented. What it could not have carried
+                    # is the passage: a real justification is a quotation, and a
+                    # recollection is what got fabricated.
+                    unsupported.append(
+                        f"{name}.{dim}={grade} [documented_mechanism has no quotable passage]")
                 unsupported.append(f"{name}.{dim}={grade}")
         track_lane("dimension_without_hcode", len(unsupported))
 
