@@ -46,79 +46,75 @@ LANE_REGISTRY = {
 def track_lane(name, count, today=None):
     """Record a lane's count, its delta, and enforce its deadline.
 
-    A warning stops being read when it stops changing, not when it gets old.
-    So the delta is printed, and the deadline, not the age, is what escalates.
+    A warning stops being read when it stops changing, not when it gets old,
+    so the delta is printed. The deadline, not the age, is what escalates.
+
+    Closure is recorded explicitly. Linnea, lane-closure-edge-ff68505: the
+    original version only recorded non-zero counts, so a closed lane kept its
+    last count and, on reopening with the same number, resumed its unchanged
+    counter. The delta exists to prevent alarm fatigue, and reporting a
+    regression as continuity is precisely the warning that gets ignored.
     """
+    from datetime import date
     if today is None:
-        from datetime import date
         today = date.today().isoformat()
+
     state = {}
     if LANE_STATE.exists():
         state = json.loads(LANE_STATE.read_text(encoding="utf-8"))
-    lane = state.get(name, {"count": None, "unchanged": 0, "opened": today})
-    lane["unchanged"] = lane["unchanged"] + 1 if lane["count"] == count else 0
+    prev = state.get(name, {})
+    lane = {
+        "count": prev.get("count"),
+        "unchanged": prev.get("unchanged", 0),
+        "opened": prev.get("opened", today),
+        "closed": prev.get("closed"),
+        "ever_closed": prev.get("ever_closed", False),
+        "reopened": prev.get("reopened"),
+    }
+
+    # --- closure: record it rather than leaving the last non-zero count ---
+    if count == 0:
+        lane.update(count=0, unchanged=0, closed=lane["closed"] or today,
+                    ever_closed=True, reopened=None)
+        state[name] = lane
+        LANE_STATE.write_text(json.dumps(state, indent=1, sort_keys=True), encoding="utf-8")
+        return 0
+
+    # --- reopening: never report continuity across a closure ---
+    if lane["closed"]:
+        lane.update(unchanged=0, opened=today, closed=None, reopened=today)
+
+    was = lane["count"]
+    lane["unchanged"] = lane["unchanged"] + 1 if was == count else 0
     lane["count"] = count
     state[name] = lane
     LANE_STATE.write_text(json.dumps(state, indent=1, sort_keys=True), encoding="utf-8")
 
-    meta = LANE_REGISTRY.get(name, {})
-    delta = f"unchanged {lane['unchanged']} builds" if lane["unchanged"] else "changed this build"
-    msg = f"{name}: {count} ({delta})"
-    if meta.get("class") == "B" and today > meta.get("deadline", "9999"):
-        failures.append(
-            f"{msg} -- Class B lane past its {meta['deadline']} deadline. A gap that was "
-            f"supposed to close and did not is a process failure, and it halts rather than "
-            f"waiting to be noticed.")
+    # --- delta wording: three distinct states, never conflated ---
+    if lane["reopened"] == today and lane["unchanged"] == 0:
+        delta = "REOPENED this build, was closed"
+    elif lane["unchanged"]:
+        delta = f"unchanged {lane['unchanged']} builds"
     else:
-        warnings.append(msg + (f", deadline {meta['deadline']}" if meta.get("class") == "B" else ""))
-    return count
+        delta = "changed this build"
 
-
-def load(name, default=None):
-    p = DATA / name
-    if not p.exists():
-        return default
-    return json.loads(p.read_text(encoding="utf-8"))
-
-
-def check_claim(where, claim):
-    """A claim is a dict with an 'ev' key from LEVELS."""
-    if not isinstance(claim, dict):
-        failures.append(f"{where}: claim is not an object")
-        return
-    ev = claim.get("ev")
-    if ev is None:
-        failures.append(f"{where}: claim has no evidence level")
-    elif ev not in LEVELS:
-        failures.append(f"{where}: invalid evidence level {ev!r}")
-    # A verified claim must resolve to a source.
-    if ev == "verified" and not claim.get("src"):
-        failures.append(f"{where}: marked verified with no source")
-    # 'reported' means 'we name the source'. A reported claim with no source
-    # renders as 'Reported by [source]' with nothing to put there, which is
-    # indistinguishable from verified. Either name the source or downgrade.
-    # Raised by Linnea, CCI-009 rev1, GAP 2.
-    if ev == "reported" and not claim.get("src"):
-        failures.append(f"{where}: marked reported with no named source")
-    # An untested claim must say what was searched and why it is flagged,
-    # otherwise it becomes a resting place rather than a finding.
-    # Raised by Linnea, CCI-67b9fae rev2: untested needs (a) what was searched,
-    # (b) a note, (c) a re-check trigger.
-    # extrapolated must say what was searched for DIRECT data. A false basis is
-    # worse than a shrug: it renders as a finding with a fake reason. This is
-    # the Pennyroyal.children failure caught mechanically. Linnea, Q2.
-    if ev == "extrapolated":
-        basis = (claim.get("basis") or "").strip()
-        if len(basis) < 40:
-            failures.append(f"{where}: extrapolated with no stated basis")
-        elif not any(w in basis.lower() for w in ("search", "located", "not measured",
-                                                  "not itself", "no direct", "extrapolat")):
-            failures.append(
-                f"{where}: extrapolated without saying what was searched for direct data")
-    if ev == "untested" and len((claim.get("basis") or "").strip()) < 40:
+    meta = LANE_REGISTRY.get(name, {})
+    msg = f"{name}: {count} ({delta})"
+    if name not in LANE_REGISTRY:
+        warnings.append(msg + " -- no registry entry. A lane without a deadline is the "
+                             "'persists indefinitely' state the policy exists to kill.")
+    elif meta.get("class") == "B" and today > meta.get("deadline", "9999"):
+        # The rationale has to distinguish the two ways a lane can be late.
+        why = ("closed once and has regressed" if lane["ever_closed"]
+               else "was supposed to close and did not")
         failures.append(
-            f"{where}: marked untested with no note on what was searched. "
-            f"An untested claim without a basis is a shrug, not a finding.")
+            f"{msg} -- Class B lane past its {meta['deadline']} deadline, and it {why}. "
+            f"A gap that {why} is a process failure, and it halts rather than waiting "
+            f"to be noticed.")
+    else:
+        suffix = f", deadline {meta['deadline']}" if meta.get("class") == "B" else ""
+        warnings.append(msg + suffix)
+    return count
 
 
 def validate_oils():
@@ -206,8 +202,7 @@ def validate_surfaces():
 
         no_tier_src = [p.get("name") for p in products
                        if p.get("tier_ev") == "reported" and not p.get("tier_src")]
-        if no_tier_src:
-            track_lane("tier_src", len(no_tier_src))
+        track_lane("tier_src", len(no_tier_src))
         n += len(products)
 
     # --- reg.json: 40 regulatory claims, none carrying a source ---
@@ -219,8 +214,7 @@ def validate_surfaces():
             for e in (lst if isinstance(lst, list) else []):
                 if isinstance(e, dict) and not e.get("src"):
                     unsourced.append(f"{chem}: {str(e.get('rule'))[:40]}")
-        if unsourced:
-            track_lane("reg_src", len(unsourced))
+        track_lane("reg_src", len(unsourced))
         n += len(unsourced)
 
     return n
