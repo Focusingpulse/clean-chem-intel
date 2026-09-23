@@ -153,6 +153,11 @@
   .rcbox{margin-top:14px;background:#fdf1e6;border:1px solid #f3d9c0;border-left:4px solid var(--d);border-radius:11px;padding:11px 13px}
   .rcbox .rc-t{font-size:.66rem;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--d)}
   .rcbox p{font-size:.79rem;color:#4c5e56;margin-top:4px;line-height:1.5}
+  .cfbox{margin-top:14px;background:#eef4fb;border:1px solid #cfdff2;border-left:4px solid #2f6bb0;border-radius:11px;padding:11px 13px}
+  .cfbox .cf-t{font-size:.66rem;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:#2f6bb0}
+  .cfbox .cf-l{font-size:.72rem;font-weight:800;color:#2f6bb0;margin-top:7px;text-transform:uppercase;letter-spacing:.5px}
+  .cfbox p{font-size:.79rem;color:#4c5e56;margin-top:3px;line-height:1.5}
+  .cfbox .cf-n{font-size:.75rem;color:var(--muted);margin-top:7px;border-top:1px solid #d6e4f4;padding-top:7px}
   .modal .noteline{margin-top:14px;font-size:.75rem;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
   .flagged-ing{font-size:.66rem;font-weight:800;color:#b33838;background:#fdeaea;border:1px solid #f3cdcd;padding:2px 8px;border-radius:999px;margin-top:4px;display:inline-block}
 
@@ -505,6 +510,7 @@ function render(){
     const flagged = p.ings.some(n=>INGS[n]&&INGS[n].reclassified);
     if(flagged) badges.push(`<span class="bdg flag">⚠ reclassified ingredient</span>`);
     if(hasRestrictedElsewhere(p)) badges.push(`<span class="bdg" style="background:#fdeede;color:#b06a24;border:1px solid #f0d7b8">🌍 restricted elsewhere</span>`);
+    if(p.claim_conflict) badges.push(`<span class="bdg" style="background:#eef4fb;color:#2f6bb0;border:1px solid #cfdff2">⚖ manufacturer claim on file</span>`);
     const shiftBadge=shifted?`<div class="shift">${base}→${grade} · ${shifts.join(", ")}</div>`:"";
     return `<div class="card">
       <div class="card-top">
@@ -583,6 +589,15 @@ function openModal(idx){
   const rcs=p.ings.map(n=>INGS[n]).filter(d=>d&&d.reclassified);
   const rcHtml=rcs.map(d=>`<div class="rcbox"><div class="rc-t">Once safe, now flagged ,  ${esc(d.s?d.s.split(".")[0]:"")}</div>${d.reclassified.map(r=>`<p>${esc(r)}</p>`).join("")}</div>`).join("");
   const noteLine = p.heritage ? `<div class="noteline">🏺 <b>Heirloom:</b> ${esc(p.heritage_note||"")}</div>` : "";
+  const cf=p.claim_conflict;
+  const cfHtml = cf ? `<div class="cfbox">
+    <div class="cf-t">⚖ Manufacturer claim vs. what the record shows</div>
+    <div class="cf-l">The manufacturer says</div>
+    <p>${esc(cf.manufacturer_claim||"")}</p>
+    <div class="cf-l">The ingredient record shows</div>
+    <p>${esc(cf.toxicology_finding||"")}</p>
+    ${cf.note?`<p class="cf-n">${esc(cf.note)}</p>`:""}
+  </div>` : "";
   document.getElementById("modal").innerHTML=`
     <button class="modal-x" onclick="closeModal()">✕</button>
     <div class="mrow">
@@ -593,6 +608,7 @@ function openModal(idx){
     <h3>${esc(p.name)}</h3>
     <div class="mbrand">${esc(p.brand)} · graded ${gradeClass(productGrade(p.ings)).replace("g-","")}</div>
     ${noteLine}
+    ${cfHtml}
     ${rcHtml}
     <div class="mimg">${rows.join("")}</div>`;
   document.getElementById("modal-bg").classList.add("show");

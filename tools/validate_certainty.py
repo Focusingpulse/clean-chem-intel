@@ -395,6 +395,63 @@ def validate_surfaces():
     return n
 
 
+CLAIM_CONFLICT_FIELDS = ("manufacturer_claim", "manufacturer_src",
+                         "toxicology_finding", "toxicology_src")
+
+
+def validate_claim_conflicts():
+    """A claim conflict is a claim-bearing surface too.
+
+    Linnea, SPX spectrum build verdict, R1 (2026-09-23): the new dollar-store
+    and drugstore entries carried the hazard side and no manufacturer side, so a
+    safety claim stood unopposed in the record. docs/certainty.md rule 5 says
+    both sides get recorded and the page shows the tension.
+
+    The shape is enforced here so the next automated writer cannot add a
+    half-block: every block must carry a level, a resolving block source, both
+    sides, and a resolving source for each side. Whether a product HAS a
+    manufacturer safety claim is not something a validator can know, so that
+    half is a warning that names the severe-grade products still unreviewed
+    rather than a halt.
+    """
+    products = load("products.json")
+    if products is None:
+        return 0, []
+    n = 0
+    for p in products:
+        cf = p.get("claim_conflict")
+        if cf is None:
+            continue
+        n += 1
+        where = f"claim_conflict[{p.get('name','?')}]"
+        if not isinstance(cf, dict):
+            failures.append(f"{where}: not an object")
+            continue
+        ev = cf.get("ev")
+        if ev not in LEVELS:
+            failures.append(f"{where}: invalid or missing evidence level {ev!r}")
+        for field in CLAIM_CONFLICT_FIELDS:
+            if not (cf.get(field) or "").strip():
+                failures.append(f"{where}: missing {field}")
+        for field in ("src", "manufacturer_src", "toxicology_src"):
+            val = (cf.get(field) or "").strip()
+            if val and not val.startswith("http"):
+                failures.append(f"{where}: {field} is not a resolvable URL")
+
+    # Every severe-grade product should carry either a recorded manufacturer
+    # claim or a written note that none was located. Warning, not a halt: some
+    # manufacturers simply do not make a safety claim, and inventing one to
+    # satisfy a check is the failure mode this whole file exists to prevent.
+    unreviewed = []
+    for p in products:
+        safe = p.get("safe")
+        is_severe = isinstance(safe, str) and "grade" in safe and (
+            "grade D" in safe or "grade F" in safe)
+        if is_severe and not p.get("claim_conflict"):
+            unreviewed.append(p.get("name"))
+    return n, unreviewed
+
+
 def check_substitutes():
     """Every hazard must name a usable substitute, or say it has none.
 
@@ -536,6 +593,12 @@ def main():
     n_surf = validate_surfaces()
     n_exp = validate_exposure()
     n_severe = check_substitutes()
+    n_cf, cf_unreviewed = validate_claim_conflicts()
+    if cf_unreviewed:
+        warnings.append(
+            f"severe-grade product with no claim conflict on file ({len(cf_unreviewed)} of "
+            f"{n_severe}): " + ", ".join(cf_unreviewed)
+            + " -- record the manufacturer's claim, or record that none was located")
     if not apply:
         matched, total = apply_owners(dry=True)
 
@@ -543,6 +606,7 @@ def main():
     print(f"ownership: {matched} of {total} products carry an ownership record")
     print(f"ownership entries: {n_own} owner records validated")
     print(f"exposure: {n_exp} exposure claims checked")
+    print(f"claim conflicts: {n_cf} product records carry both sides of a claim")
     print(f"surfaces: {n_surf} claim-bearing records considered (products, reg)")
     print(f"hazards: {n_severe} products carry a severe grade")
 

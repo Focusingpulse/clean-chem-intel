@@ -133,6 +133,36 @@ Apply it wherever a negative or absent result could be mistaken for a positive
 one: screening performed, a study registered, a dossier submitted, a review
 commissioned. None of those is a finding.
 
+## Claim conflicts on products
+
+Rule 5 applies to products, not only to essential oils. When a product's
+manufacturer asserts safety or a use that bears on safety, and the ingredient
+record documents hazard on the same product, both sides are recorded on the
+product as `claim_conflict`, and the modal shows them as a tension.
+
+Fields, and what each one is for:
+
+- `ev` — the level of the block. A claim conflict is `reported`: we are naming
+  sources rather than running our own study.
+- `src` — the block's resolving source, the page a reader can open to see the
+  conflict for themselves.
+- `manufacturer_claim` / `manufacturer_src` — the manufacturer's words, quoted
+  exactly, and the URL they came from. Under rule 7 this must be a quotation; a
+  paraphrase of a safety claim is a recollection and does not qualify.
+- `toxicology_finding` / `toxicology_src` — the hazard side, as it stands in
+  `ingredients.json`, and the source that establishes which substances are
+  present.
+- `note` — what kind of tension this is, so the block is not read as a verdict.
+  Say plainly when the manufacturer's wording is an efficacy or use claim rather
+  than a safety claim, and say when a claim's source could only be reached
+  indirectly (a blocked or mirrored page) rather than implying a direct fetch.
+
+The shape is enforced in `tools/validate_certainty.py`: a block missing a level,
+either side, or a resolving source halts the build. Whether a product *has* a
+manufacturer claim is not something a validator can know, so severe-grade
+products with no block on file are named in a warning each build rather than
+being treated as failures.
+
 ## Rules
 
 1. **Never upgrade a level to make a page look more complete.** A page full of

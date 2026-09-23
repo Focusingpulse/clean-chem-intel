@@ -2262,7 +2262,9 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "Arm & Hammer Super Washing Soda (ASIN B0029XNTEU) sold 70,000 units at $4.98 in July 2026 with 57,000 ratings, and appears in the Amazon top-10 liquid laundry ranking. Channel figure, not national share.",
   "tier_src": "https://churchdwight.com/ingredient-disclosure/laundry-fabric-care/40002697-arm-hammer-super-washing-soda.aspx",
-  "tier_note": "Washing soda is sold in the bulk and laundry-booster aisle as a commodity builder; manufacturer confirms sodium carbonate as the builder."
+  "tier_note": "Washing soda is sold in the bulk and laundry-booster aisle as a commodity builder; manufacturer confirms sodium carbonate as the builder.",
+  "source_url": "https://churchdwight.com/ingredient-disclosure/laundry-fabric-care/40002697-arm-hammer-super-washing-soda.aspx",
+  "source": "Church & Dwight ingredient disclosure (sodium carbonate) + manufacturer SDS"
  },
  {
   "name": "Castile Soap, Peppermint",
@@ -4527,9 +4529,18 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Eco all-purpose lines are a low-single-digit share of surface care.",
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. No published per-product figure exists for dollar-store all-purpose cleaners, so the estimate is derived from dollar-channel share of the surface-care category times LA's share within that channel.",
   "tier_src": "http://004f876.netsolhost.com/html/faqs.html",
-  "tier_note": "Manufacturer FAQ directs customers to 99 Cents Only, Dollar Tree and Family Dollar; the product is not sold online or direct."
+  "tier_note": "Manufacturer FAQ directs customers to 99 Cents Only, Dollar Tree and Family Dollar; the product is not sold online or direct.",
+  "claim_conflict": {
+   "ev": "reported",
+   "src": "http://004f876.netsolhost.com/html/faqs.html",
+   "manufacturer_claim": "The manufacturer FAQ states: \"LA's Totally Awesome All Purpose Cleaner ® is non-toxic. Therefore, the listing of ingredients on the label is not required by law.\" On pets it states: \"There is no information to suggest that pets are sensitive to this product\" and \"LA's Totally Awesome All Purpose Cleaner ® can be safely used around pets if certain 'common sense' precautions are taken.\" The product page describes it as \"a safe, naturally gentle soap\" and says it contains \"No Acid, No Ammonia, No Bleach.\"",
+   "manufacturer_src": "http://004f876.netsolhost.com/html/faqs.html",
+   "toxicology_finding": "The disclosed ingredient set includes sodium metasilicate, graded F on the dermal dimension (GHS H302, H314, H315, H318, H335, H371: harmful if swallowed, causes severe skin burns and eye damage, may cause respiratory irritation, may cause damage to organs) and diethylene glycol monobutyl ether (DEGBE), a glycol ether carrying an EU and California Prop 65 reproductive-developmental concern. Both carry their own evidence levels in ingredients.json (High and Medium).",
+   "toxicology_src": "https://www.lastotallyawesome.com/shop/all-purpose/awesome128oz-all-purpose-cleaner/",
+   "note": "Recorded as a tension, not as a verdict. The manufacturer's safety assertion carries no cited basis and is the stated reason the ingredient list is not on the label; the hazard side is graded from harmonised GHS classifications. Dose matters, and the manufacturer's own FAQ still recommends removing pets from the area and ventilating while cleaning. Both sides are shown; neither is resolved for the reader."
+  }
  },
  {
   "name": "Clorox Disinfecting Wipes, Fresh Scent",
@@ -5406,7 +5417,16 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated."
+  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated.",
+  "claim_conflict": {
+   "ev": "reported",
+   "src": "https://cooklist.com/product/great-value-lemon-scent-all-purpose-cleaner-892832",
+   "manufacturer_claim": "The retail listing copy for this SKU reads: \"Great Value Lemon Scent All Purpose Cleaner kills 99.9% of germs, making it an ideal go-to cleaning solution for households, medical facilities, work areas, and daycare centers. The antibacterial formula cleans and disinfects in one easy step.\" The bullet list adds \"No rinsing necessary.\"",
+   "manufacturer_src": "https://cooklist.com/product/great-value-lemon-scent-all-purpose-cleaner-892832",
+   "toxicology_finding": "Four quaternary ammonium actives are disclosed as the disinfecting agents (alkyl C12-16 dimethylbenzyl ammonium chloride, octyldecyldimethylammonium chloride, dioctyldimethylammonium chloride, didecyldimethylammonium chloride), graded F on the dermal and environmental dimensions, plus a fragrance blend withheld as confidential business information and nonoxynol, listed on the Marine Priority Action Chemicals list.",
+   "toxicology_src": "https://i5.walmartimages.com/dfw/4ff9c6c9-4aaa/k2-_7865d767-2806-4c89-b5df-ebc58306684e.v1.pdf",
+   "note": "Recorded as a claim, not as a verdict, and the claim type matters: this is an efficacy and use-surface claim, not a safety assertion. It is recorded because \"no rinsing necessary\" is a residue statement and \"daycare centers\" is a child-adjacency statement, and both sit on a product whose dermal and environmental grades are F. Retrieval note: walmart.com blocks automated retrieval, so the listing copy was confirmed through a retail listing mirror of the Walmart product page (cooklist, UPC 078742105147); the ingredient side is from Walmart's own California Right to Know disclosure."
+  }
  },
  {
   "name": "Great Value All Purpose Cleaner With Bleach",
@@ -5448,7 +5468,16 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated."
+  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated.",
+  "claim_conflict": {
+   "ev": "reported",
+   "src": "https://www.walmart.com/ip/Great-Value-32oz-All-Purpose-Cleaner-with-Bleach/13023513",
+   "manufacturer_claim": "The Walmart listing copy for this SKU reads: \"Great Value All Purpose Cleaner with Bleach, 32 fl oz disinfects surfaces and kills 99.9% of germs,\" with the feature list stating \"Kills 99.9% of germs and viruses, including flu viruses\" and \"Ideal for kitchens, bathrooms, and high-touch areas.\"",
+   "manufacturer_src": "https://www.walmart.com/ip/Great-Value-32oz-All-Purpose-Cleaner-with-Bleach/13023513",
+   "toxicology_finding": "The manufacturer-published SDS for this SKU discloses sodium hypochlorite as the active at 1 to 3 percent, exact strength withheld as a trade secret, and states an EPA registration number. Sodium hypochlorite grades F on the dermal and environmental dimensions. The inert fraction is not published at all.",
+   "toxicology_src": "https://msdsdigital.com/system/files/Great%20Value%20All%20Purpose%20Cleaner%20with%20Bleach%20Safety%20Data%20Sheet.pdf",
+   "note": "Recorded as a claim, not as a verdict. As with the lemon SKU this is a use-surface and efficacy claim rather than a safety assertion, and it is recorded because the product is directed at kitchens and high-touch areas while the record shows a corrosive active at an undisclosed concentration beside an undisclosed inert fraction. Retrieval note: walmart.com blocks automated retrieval; this listing copy was confirmed through a search index of the Walmart product page rather than a direct fetch."
+  }
  },
  {
   "name": "Great Value Clear Ammonia All Purpose Cleaner",
@@ -5573,7 +5602,16 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated."
+  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated.",
+  "claim_conflict": {
+   "ev": "reported",
+   "src": "https://es.cvs.com/shop/cvs-all-purpose-cleaner-bleach-spray-32-oz-prodid-100640",
+   "manufacturer_claim": "The CVS product page states: \"Keep your home clean and your family safe from germs and viruses with this all purpose cleaner, working to disinfect every surface in your house,\" and closes: \"leave your household sparkling and your family safe.\"",
+   "manufacturer_src": "https://es.cvs.com/shop/cvs-all-purpose-cleaner-bleach-spray-32-oz-prodid-100640",
+   "toxicology_finding": "The page's own active-ingredient line is 2 percent sodium hypochlorite and sodium hydroxide. Sodium hypochlorite grades F on the dermal and environmental dimensions and sodium hydroxide grades F on dermal with a B (lower-concern) reproductive flag; the inert fraction is not disclosed anywhere by the retailer, so a large share of the formula carries no hazard information at all.",
+   "toxicology_src": "https://es.cvs.com/shop/cvs-all-purpose-cleaner-bleach-spray-32-oz-prodid-100640",
+   "note": "Recorded as a tension, not as a verdict. The \"family safe\" wording describes disinfection efficacy, not a toxicological finding, and the manufacturer offers no basis for it. It is recorded because the record carries a hazard side, and an unopposed safety claim beside a graded hazard is exactly the asymmetry the certainty rules exist to prevent. The undisclosed inert fraction is a separate gap: the claim cannot be fully assessed in either direction."
+  }
  },
  {
   "name": "LA's Totally Awesome All-Purpose Cleaner with Bleach",
@@ -5620,7 +5658,16 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Eco all-purpose lines are a low-single-digit share of surface care."
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. No published per-product figure exists for dollar-store all-purpose cleaners, so the estimate is derived from dollar-channel share of the surface-care category times LA's share within that channel.",
+  "claim_conflict": {
+   "ev": "reported",
+   "src": "https://www.lastotallyawesome.com/shop/household/bleach-cleaner-spray-32oz/",
+   "manufacturer_claim": "The manufacturer’s product page for the bleach variant states that the product is \"formulated with safety in mind, following recommended usage instructions to ensure proper handling and effectiveness.\" The same page recommends it for \"countertops, floors, tiles, sinks, and toilets\" without noting any restriction on food-contact or kitchen surfaces.",
+   "manufacturer_src": "https://www.lastotallyawesome.com/shop/household/bleach-cleaner-spray-32oz/",
+   "toxicology_finding": "The manufacturer's own SDS for this SKU lists sodium hydroxide and sodium hypochlorite. Sodium hypochlorite is graded F on the dermal and environmental dimensions (H314, H318, H400: corrosive, severe eye damage, very toxic to aquatic life); sodium hydroxide is graded F on dermal (H290, H314, H318).",
+   "toxicology_src": "https://visalia-keenan.safeschoolssds.com/document/repo/aac9721e-a6a9-47f4-ad5e-374d5f9d2c63",
+   "note": "Recorded as a tension, not as a verdict. This is the more hazardous of the two dollar-store SKUs: the bleach variant's safety framing is generic (\"formulated with safety in mind\") and points at following usage instructions rather than at any toxicological basis, while the SDS for the same product documents two corrosive substances. Both are shown."
+  }
  },
  {
   "name": "Citric Acid (bulk)",
