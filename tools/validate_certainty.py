@@ -40,6 +40,10 @@ LANE_REGISTRY = {
                  "detail": "products carry tier_ev=reported with no tier_src"},
     "reg_src": {"class": "B", "opened": "2026-09-23", "deadline": "2026-09-30",
                 "detail": "reg.json entries name no source"},
+    "ingredient_self_conflict": {"class": "B", "opened": "2026-09-23", "deadline": "2026-09-30",
+                "detail": "ingredient headline grade contradicts its own dimension grades"},
+    "case_duplicate_grades": {"class": "B", "opened": "2026-09-23", "deadline": "2026-09-30",
+                "detail": "the same chemical stored under two keys with different grades"},
 }
 
 
@@ -263,6 +267,38 @@ def validate_surfaces():
                        if p.get("tier_ev") == "reported" and not p.get("tier_src")]
         track_lane("tier_src", len(no_tier_src))
         n += len(products)
+
+    # --- ingredients.json: records that contradict themselves ---
+    # Same shape as R1/R2/R4: a record saying two things and passing every
+    # check because nothing compares the two fields. A "Not Classified"
+    # headline sitting on an F dimension means the page shows whichever renders
+    # first. Found while checking Chris's vinegar commit, Sep 23.
+    ings = load("ingredients.json")
+    if isinstance(ings, dict):
+        self_conflict = []
+        for name, rec in ings.items():
+            if not isinstance(rec, dict):
+                continue
+            g = rec.get("g") or ""
+            dims = rec.get("gr") or {}
+            if g in ("Not Classified", "", None) and any(
+                    v in ("D", "F") for v in dims.values()):
+                self_conflict.append(name)
+        track_lane("ingredient_self_conflict", len(self_conflict))
+
+        # The same chemical under two keys with different grades: products
+        # reference whichever the ingest lane wrote, so the answer changes by
+        # spelling. Propylene Glycol carries {organ D, repro B}; propylene
+        # glycol carries {organ D}.
+        by_lower = {}
+        for name, rec in ings.items():
+            if not isinstance(rec, dict):
+                continue
+            by_lower.setdefault(name.strip().lower(), []).append((name, rec.get("gr") or {}))
+        dupes = {k: v for k, v in by_lower.items() if len(v) > 1}
+        conflicting = [k for k, v in dupes.items() if len({str(x[1]) for x in v}) > 1]
+        track_lane("case_duplicate_grades", len(conflicting))
+        n += len(self_conflict)
 
     # --- reg.json: 40 regulatory claims, none carrying a source ---
     reg = load("reg.json")
