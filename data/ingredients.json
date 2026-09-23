@@ -107,7 +107,13 @@
   },
   "impacts": [],
   "sensitive": true,
-  "note": "Graded from PubChem GHS classifications (CID 3080680) — crystalline silica (respirable) concern; H373 at 100% consensus."
+  "note": "Graded from PubChem GHS classifications (CID 3080680) — crystalline silica (respirable) concern; H373 at 100% consensus.",
+  "documented_mechanism": {
+   "resp": {
+    "mechanism": "Respirable crystalline silica. STOT RE 2 (H373) names the lung as the target organ; the generic code appears under organ only because the field cannot encode which organ is named.",
+    "src": "https://pubchem.ncbi.nlm.nih.gov/compound/3080680"
+   }
+  }
  },
  "Limestone": {
   "g": "Not Classified",
@@ -168,16 +174,18 @@
   "s": "Insufficient direct GHS data — graded by analogy within enzyme (protein, potential respiratory sensitizer class) class",
   "ev": "Extrapolated",
   "gr": {
-   "resp": "D",
-   "repro": "B"
+   "resp": "D"
   },
   "impacts": [
    "allerg",
    "resp"
   ],
-  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification.",
+  "note": "Extrapolated per launch package: no direct GHS record for this trade-name/blend entry. Grade based on class chemistry; flagged for Linnea verification. resp D retained: the enzyme-protein class analogy supports respiratory sensitisation. repro B dropped, Linnea 2026-09-23: nothing in the record or the launch package analogizes enzymes to reproductive toxicity, so it was riding an extrapolation exemption it had not earned.",
   "reclassified": [
    "Enzymes were added to laundry products as 'natural' boosters; they are potent respiratory sensitizers — industry adopted encapsulation after occupational asthma outbreaks (1970s)."
+  ],
+  "extrapolation_supports": [
+   "resp"
   ]
  },
  "Tetrasodium Glutamate Diacetate": {
@@ -1630,19 +1638,15 @@
   "s": "May cause cancer",
   "ev": "High",
   "gr": {
-   "derm": "B",
-   "repro": "C",
-   "endo": "D",
    "canc": "A"
   },
   "impacts": [
-   "canc",
-   "repro"
+   "canc"
   ],
   "reclassified": [
    "1,4-dioxane was historically treated as a harmless manufacturing byproduct in ethoxylated surfactants. Now recognized as a probable human carcinogen (IARC 2B). NY State banned it in cleaning products above 1 ppm (2023). EU considering REACH restriction."
   ],
-  "note": null
+  "note": "Dropped endo D, derm B and repro C as drift, Linnea 2026-09-23. Checked against the authorities and the endocrine finding does not exist: ATSDR's profile reports no gross or microscopic alterations in pituitary, adrenal, thyroid or parathyroid tissues across the published studies, and states no further information was located on endocrine effects. The SVHC entry's environmental concern is persistence and mobility, not endocrine activity, and the substance is not on the EU endocrine disruptor lists. An ED screening test having been run is not a positive finding. Harmonized classification is Carc 1B H350, Eye Irrit 2 H319, STOT SE 3 H335, Flam Liq 2 H225: no dermal and no reproductive classification to trace to. canc A retained, it traces to H350."
  },
  "Yellow 5": {
   "g": "Not Classified",
@@ -2409,7 +2413,10 @@
    "allerg",
    "resp"
   ],
-  "note": "No PubChem CID (PUG VIEW 404). Extrapolated by enzyme class, consistent with the existing 'Enzymes' and 'Amylase Enzyme' entries — detergent enzyme proteins are respiratory sensitizers (H334 class hazard). Flagged for verification."
+  "note": "No PubChem CID (PUG VIEW 404). Extrapolated by enzyme class, consistent with the existing 'Enzymes' and 'Amylase Enzyme' entries — detergent enzyme proteins are respiratory sensitizers (H334 class hazard). Flagged for verification.",
+  "extrapolation_supports": [
+   "resp"
+  ]
  },
  "Cellulase Enzyme": {
   "g": "H334",
@@ -2618,7 +2625,10 @@
    "resp"
   ],
   "sens": true,
-  "note": "No PubChem CID for the generic label term 'Protease' - the name lookup returns an unrelated compound (Bacillomycin, CID 3086051) which is not used. Extrapolated by enzyme class, consistent with the existing 'Subtilisin', 'Amylase Enzyme' and 'Cellulase Enzyme' entries - detergent protease proteins are respiratory sensitizers (H334 class hazard). Disclosed by Reckitt for Spray 'n Wash."
+  "note": "No PubChem CID for the generic label term 'Protease' - the name lookup returns an unrelated compound (Bacillomycin, CID 3086051) which is not used. Extrapolated by enzyme class, consistent with the existing 'Subtilisin', 'Amylase Enzyme' and 'Cellulase Enzyme' entries - detergent protease proteins are respiratory sensitizers (H334 class hazard). Disclosed by Reckitt for Spray 'n Wash.",
+  "extrapolation_supports": [
+   "resp"
+  ]
  },
  "PEI-14 PEG-24/PPG-16 Copolymer": {
   "g": "Not Classified",

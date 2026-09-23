@@ -67,7 +67,12 @@ DIMENSION_HCODES = {
     "organ": ("H370", "H371", "H372", "H373"),
     "repro": ("H360", "H361", "H362", "H360D", "H360F", "H360FD"),
     "canc":  ("H350", "H351"),
-    "resp":  ("H334", "H335", "H336"),
+    # H373 (STOT RE 2) is listed under resp as well as organ on purpose: its
+    # canonical statement is "May cause damage to organs through prolonged or
+    # repeated exposure", and when the named organ is the lung it IS the
+    # respiratory code. Respirable crystalline silica is the textbook STOT RE
+    # lung case. Linnea, dimension-traceability-rubric-2026-09-23.
+    "resp":  ("H334", "H335", "H336", "H373"),
     "endo":  ("H361", "H360", "H360F", "H360FD"),
     "env":   ("H400", "H410", "H411", "H412", "H413"),
 }
@@ -338,13 +343,32 @@ def validate_surfaces():
                 codes = DIMENSION_HCODES.get(dim)
                 if not codes:
                     continue
-                # An extrapolated record has no H-code by definition: the grade
-                # is an inference from a relative, so absence is expected and is
-                # not drift. Excluded rather than counted.
+                # An extrapolated record has no H-code by definition. But the
+                # exemption is PER DIMENSION, not per record: an extrapolation
+                # justifies the dimension its class analogy supports and nothing
+                # else. The generic Enzymes key is g=Extrapolated with resp D
+                # AND repro B; the enzyme-protein analogy supports respiratory
+                # sensitisation and says nothing about reproductive toxicity, so
+                # repro B is drift riding an exemption it did not earn.
+                # Linnea caught this hole in my first version.
                 if g == "Extrapolated":
+                    if dim in (rec.get("documented_mechanism") or {}):
+                        continue
+                    mech = rec.get("extrapolation_supports") or []
+                    if dim in mech:
+                        continue
+                if grade not in ("D", "F"):
                     continue
-                if grade in ("D", "F") and not any(c in g for c in codes):
-                    unsupported.append(f"{name}.{dim}={grade}")
+                if any(c in g for c in codes):
+                    continue
+                # Documented mechanism is a third state, not a defect: real and
+                # sourced, but GHS cannot encode it. Acceptable only when the
+                # basis is written INTO the record and names a source. A basis
+                # living in decisions.md is not a trace a page reader can audit.
+                dm = (rec.get("documented_mechanism") or {}).get(dim)
+                if dm and dm.get("src") and dm.get("mechanism"):
+                    continue
+                unsupported.append(f"{name}.{dim}={grade}")
         track_lane("dimension_without_hcode", len(unsupported))
 
         n += len(self_conflict)
