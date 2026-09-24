@@ -1827,19 +1827,20 @@
   "note": "Graded from PubChem GHS classifications (CID 134692469)."
  },
  "Benzotriazole": {
-  "g": "H302,H315,H319,H410",
-  "s": "Metal corrosion inhibitor. Oral/eye irritant, very toxic to aquatic life; EU watch-list substance.",
+  "g": "H302,H319",
+  "s": "Metal corrosion inhibitor. Oral/eye irritant; EU watch-list substance.",
   "ev": "Medium",
   "gr": {
    "derm": "C",
-   "env": "D",
    "work": "C"
   },
   "impacts": [
-   "aqua",
    "derm"
   ],
-  "note": null
+  "note": "Corrected 2026-09-22 Sifter verify run: PubChem CID 7220 ECHA C&L consensus shows H302 (96.7%) and H319 (87.8%) above the 40% threshold. H315 and H410 in the previous g-string were not supported by notifier consensus; env D grade withdrawn (gr_ruled per docs/decisions.md 2026-09-23 rule). H332 (37.7%, harmful if inhaled) sub-threshold, noted not graded.",
+  "gr_ruled": [
+   "env"
+  ]
  },
  "Subtilisin": {
   "g": "H315,H319,H334",
