@@ -3154,5 +3154,14 @@
   "gr": {},
   "impacts": [],
   "note": "Disclosed by Walmart (California Cleaning Product Right to Know) for Great Value Clear Ammonia as 'Sodium Phosphate' - a generic name. PubChem resolves 'Trisodium Phosphate' (CID 24243) with H315 90.2%, H319 90.1%, H335 85.1%, but the disclosure does not say which sodium phosphate salt is used, so no grade is assigned to the generic name. Recorded unclassified rather than graded on a guess."
+ },
+ "Sapindus Saponins": {
+  "g": "Not Classified",
+  "s": "No harmonised GHS classification located for the saponin extract",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "The triterpenoid saponins of Sapindus mukorossi are the surfactant in soap nuts. No harmonised GHS classification exists and the toxicology is thin, so this is recorded as no-classification with weak evidence rather than graded: grading a substance with no harmonised classification would be invention. What the literature does say, and it cuts both ways: the saponins reduce water surface tension below 40 mN/m and match a commercial detergent on greasy and oily soil, while a 2023 wastewater study found soapnut effluent acutely more toxic to zebrafish than commercial detergent, with saponin degradation slow enough that treatment matters. Compare Quillaja Saponaria Bark Extract, which carries the same grading gap.",
+  "src": "https://hrcak.srce.hr/file/485163"
  }
 }

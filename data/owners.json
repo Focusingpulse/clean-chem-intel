@@ -148,6 +148,78 @@
     "Grove",
     "Ever Spring"
    ]
+  },
+  "Costco Wholesale Corporation": {
+   "type": "public (COST)",
+   "detail": "Owns and distributes the Kirkland Signature house brand, sold only on Costco shelves.",
+   "ev": "reported",
+   "src": "https://customerservice.costco.com/euf/assets/answer_pdfs/SDS%201677453%20-%20Kirkland%20Signature%20Ultra%20Shine%20Plant-Based%20Dish%20Detergent.pdf",
+   "brands": [
+    "Kirkland Signature"
+   ]
+  },
+  "Target Corporation": {
+   "type": "public (TGT)",
+   "detail": "Owns the up&up house brand.",
+   "ev": "reported",
+   "src": "https://www.target.com/p/lemon-all-purpose-disinfecting-cleaner-without-bleach-32oz-up-38-up-8482/-/A-90283206",
+   "brands": [
+    "up&up"
+   ]
+  },
+  "WinCo Foods, LLC": {
+   "type": "private, employee-owned",
+   "detail": "Western-US grocery chain. Its All Purpose Cleaner with Bleach is distributed by WinCo and manufactured by KIK International.",
+   "ev": "reported",
+   "src": "https://cms-uploads-prd.mctimg.com/public/winco/wp-content/uploads/declarations/winco_foods_all_purpose_cleaner_with_bleach.pdf",
+   "brands": [
+    "WinCo Foods"
+   ]
+  },
+  "Delta Brands & Products LLC": {
+   "type": "private",
+   "detail": "Owns the PowerHouse value brand. The brand is sold through the Walgreens value shelf and other retailers; Walgreens is the channel, not the owner, which the value presentation is designed not to make obvious.",
+   "ev": "reported",
+   "src": "https://www.deltabrands.com/products/all-purpose-cleaner-with-bleach",
+   "brands": [
+    "PowerHouse"
+   ]
+  },
+  "Greenbrier International": {
+   "type": "private",
+   "detail": "Dollar Tree's product-development and import arm; the FDA labeler of record for Assured-brand products.",
+   "ev": "reported",
+   "src": "https://ndclist.com/ndc/33992-3033/label",
+   "brands": [
+    "Assured"
+   ]
+  },
+  "Dollar General Corporation": {
+   "type": "public (DG)",
+   "detail": "Owns the True Living house brand.",
+   "ev": "reported",
+   "src": "https://www.dollargeneral.com/p/true-living-multi-purpose-cleaner-lavender-scent-56-fl-oz/59647560446",
+   "brands": [
+    "True Living"
+   ]
+  },
+  "Dollar Tree, Inc.": {
+   "type": "public (DLTR)",
+   "detail": "Owns Family Dollar; the Homeline house brand sits under it.",
+   "ev": "reported",
+   "src": "https://sameday.familydollar.com/store/family-dollar/products/20662818-homeline-all-purpose-cleaner-lemon-scented-1-qt",
+   "brands": [
+    "Homeline"
+   ]
+  },
+  "commodity": {
+   "type": "n/a - no brand owner",
+   "detail": "Commodity goods sold by the pound or out of a bulk bin, with no brand owner to hold accountable. Recorded as 'commodity', which is not a company and is not the same as an unexamined gap. Without this entry apply_owners() silently stamped the two commodity products added on 2026-09-23 back to untested on the next build; the field was reverting.",
+   "ev": "reported",
+   "src": "https://pubchem.ncbi.nlm.nih.gov/",
+   "brands": [
+    "commodity"
+   ]
   }
  },
  "independents": {
