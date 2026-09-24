@@ -1023,7 +1023,7 @@
     "sensitive": {
      "flag": "caution",
      "ev": "verified",
-     "basis": "citronellol and geraniol is individually labelled as a fragrance allergen under Regulation (EC) 1223/2009 Annex III.",
+     "basis": "citronellol and geraniol are individually labelled as fragrance allergens under Regulation (EC) 1223/2009 Annex III.",
      "src": "https://eur-lex.europa.eu/eli/reg/2009/1223/oj"
     }
    },
@@ -1349,7 +1349,7 @@
     "sensitive": {
      "flag": "caution",
      "ev": "verified",
-     "basis": "geraniol and citronellol is individually labelled as a fragrance allergen under Regulation (EC) 1223/2009 Annex III. Commission Regulation (EU) 2023/1545 expanded the labelled allergen list from 24 to over 80 and is in force for new products from 31 July 2026; geranium oil itself is a newly labelled allergen entry.",
+     "basis": "geraniol and citronellol are individually labelled as fragrance allergens under Regulation (EC) 1223/2009 Annex III. Commission Regulation (EU) 2023/1545 expanded the labelled allergen list from 24 to over 80 and is in force for new products from 31 July 2026; geranium oil itself is a newly labelled allergen entry.",
      "src": "https://eur-lex.europa.eu/eli/reg/2009/1223/oj"
     }
    },
