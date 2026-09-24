@@ -1275,7 +1275,7 @@
    "manufacturer_src": "https://directionsforme.org/product/54693",
    "toxicology_finding": "The brand's disclosed ingredient set across its dishwasher line includes sodium percarbonate, graded D on the dermal dimension (GHS H272, H302, H318: oxidizer, harmful if swallowed, causes serious eye damage; High evidence), and sodium silicate, graded D on dermal (H314, H335: causes severe skin burns and eye damage, may cause respiratory irritation; Medium evidence). P&G's own SmartLabel disclosure for Cascade Complete ActionPacs lists both substances.",
    "toxicology_src": "https://smartlabel.pg.com/00037000982081.html",
-   "note": "Recorded as a tension, not as a verdict. \"No phosphates\" and \"safe for septic tanks\" are environmental and plumbing claims, not toxicological findings about the people using the product; the same pack carries \"Caution: Irritant. Harmful if swallowed or put in mouth.\" Our entry is brand-level, so the claim quoted is the brand's own line copy rather than one SKU's. The pack wording was reached through a label mirror, not by fetching the physical pack."
+   "note": "Recorded as a tension, not as a verdict. \"No phosphates\" and \"safe for septic tanks\" are environmental and plumbing claims, not toxicological findings about the people using the product; the same pack carries \"Caution: Irritant. Harmful if swallowed or put in mouth.\" This entry is brand-level, so the claim quoted is the brand's own line copy rather than one SKU's. The pack wording was reached through a label mirror, not by fetching the physical pack."
   }
  },
  {
@@ -1322,7 +1322,7 @@
    "manufacturer_src": "https://www.finishdishwashing.com/products/detergents/quantum-detergent/84/",
    "toxicology_finding": "The brand's disclosed ingredient set across its dishwasher line includes sodium percarbonate, graded D on the dermal dimension (GHS H272, H302, H318; High evidence), and sodium silicate, graded D on dermal (H314, H335; Medium evidence). Reckitt's own SmartLabel for the Finish dishwasher cleaner line carries \"CAUTION: MAY IRRITATE EYES\" and a poison-control first-aid instruction.",
    "toxicology_src": "https://www.rbnainfo.com/smart-label.php?productLineId=2294",
-   "note": "Recorded as a tension, not as a verdict. \"Safe for septic systems\" is a plumbing and environmental claim, and \"safe bleaches\" is a reassurance attached to an oxidizer whose own GHS classification includes serious eye damage. Our entry is brand-level, so the claim is quoted from the brand's leading detergent SKU page rather than a SKU-matched page."
+   "note": "Recorded as a tension, not as a verdict. \"Safe for septic systems\" is a plumbing and environmental claim, and \"safe bleaches\" is a reassurance attached to an oxidizer whose own GHS classification includes serious eye damage. This entry is brand-level, so the claim is quoted from the brand's leading detergent SKU page rather than a SKU-matched page."
   }
  },
  {
@@ -1603,7 +1603,7 @@
   "exposure_ev": "untested",
   "exposure_src": null,
   "no_substitute_known": true,
-  "no_substitute_note": "Accepted constraint, not a research gap. This is our own kit. The severe grade comes from the oils themselves, so there is no same-price product swap that solves it. What the entry documents instead is use guidance: dilution, ventilation, and the population cautions on each oil. Reclassified from warning lane to an honest per-item state per Linnea, because escalating a known constraint forever is alarm fatigue.",
+  "no_substitute_note": "Accepted constraint, not a research gap. This is the house kit. The severe grade comes from the oils themselves, so there is no same-price product swap that solves it. What the entry documents instead is use guidance: dilution, ventilation, and the population cautions on each oil. Reclassified from warning lane to an honest per-item state per Linnea, because escalating a known constraint forever is alarm fatigue.",
   "conc": null,
   "conc_src": null,
   "conc_ev": "untested",
@@ -6281,7 +6281,7 @@
   ],
   "heritage": false,
   "source": "Manufacturer ingredient disclosure (sodium bicarbonate)",
-  "source_url": "https://churchdwight.com/ingredient-disclosure/household-products/40002501-arm-hammer-pure-baking-soda.aspx",
+  "source_url": "https://churchdwight.com/ingredient-disclosure/cleaning-products/42000845-ah-Baking-Soda.aspx",
   "added": "2026-09-24",
   "updated": "2026-09-24",
   "note": "One substance, no fragrance, no surfactant, no preservative. It is the default non-abrasive scouring substitute in this database, which is why it is entered as a product rather than only as an ingredient: a person reading a D grade on a cream cleanser needs its name and its price band. Graded no-hazard at Medium evidence; the substance record says why.",
@@ -6290,7 +6290,7 @@
   "owner_src": "https://pubchem.ncbi.nlm.nih.gov/",
   "tier": "apothecary-bulk",
   "tier_ev": "reported",
-  "tier_src": "https://churchdwight.com/ingredient-disclosure/household-products/40002501-arm-hammer-pure-baking-soda.aspx",
+  "tier_src": "https://churchdwight.com/ingredient-disclosure/cleaning-products/42000845-ah-Baking-Soda.aspx",
   "tier_note": "Sold by the box and the bulk bag as a single-substance commodity; usable as a mild abrasive and deodoriser.",
   "substitutes": [],
   "no_substitute_known": false,

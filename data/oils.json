@@ -824,7 +824,7 @@
     "sensitive": {
      "flag": "caution",
      "ev": "untested",
-     "basis": "Terpene airway irritation is widely stated but no primary source traced. Recorded as untested rather than reported, because 'reported' claims a named source we do not have. Flagged for the sourcing pass. Pinene, pine oil's principal component, is listed in Commission Regulation (EU) 2023/1545 as a newly labelled allergen, in force for new products from 31 July 2026. This applies to pine oil directly, not by inference.",
+     "basis": "Terpene airway irritation is widely stated but no primary source traced. Recorded as untested rather than reported, because 'reported' claims a named source that does not exist. Flagged for the sourcing pass. Pinene, pine oil's principal component, is listed in Commission Regulation (EU) 2023/1545 as a newly labelled allergen, in force for new products from 31 July 2026. This applies to pine oil directly, not by inference.",
      "src": null
     }
    },
@@ -891,7 +891,7 @@
     "sensitive": {
      "flag": "caution",
      "ev": "untested",
-     "basis": "Camphor-class respiratory irritation is widely stated but no primary source traced. Recorded as untested rather than reported, because 'reported' claims a named source we do not have. Flagged for the sourcing pass.",
+     "basis": "Camphor-class respiratory irritation is widely stated but no primary source traced. Recorded as untested rather than reported, because 'reported' claims a named source that does not exist. Flagged for the sourcing pass.",
      "src": null
     }
    },
@@ -999,7 +999,7 @@
     "dogs": {
      "flag": "caution",
      "ev": "untested",
-     "basis": "No finding located for this population. Searched the veterinary and toxicology sources used across this catalog; none addresses dogs for this substance. Flagged for the sourcing pass. Recorded as untested rather than reported, because reported would claim a source we do not have.",
+     "basis": "No finding located for this population. Searched the veterinary and toxicology sources used across this catalog; none addresses dogs for this substance. Flagged for the sourcing pass. Recorded as untested rather than reported, because reported would claim a source that does not exist.",
      "src": null
     },
     "birds": {
