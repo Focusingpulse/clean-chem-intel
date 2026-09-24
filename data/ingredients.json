@@ -3163,5 +3163,65 @@
   "impacts": [],
   "note": "The triterpenoid saponins of Sapindus mukorossi are the surfactant in soap nuts. No harmonised GHS classification exists and the toxicology is thin, so this is recorded as no-classification with weak evidence rather than graded: grading a substance with no harmonised classification would be invention. What the literature does say, and it cuts both ways: the saponins reduce water surface tension below 40 mN/m and match a commercial detergent on greasy and oily soil, while a 2023 wastewater study found soapnut effluent acutely more toxic to zebrafish than commercial detergent, with saponin degradation slow enough that treatment matters. Compare Quillaja Saponaria Bark Extract, which carries the same grading gap.",
   "src": "https://hrcak.srce.hr/file/485163"
+ },
+ "Compound Based on Anionic and Nonionic Surfactants": {
+  "g": "Extrapolated",
+  "s": "Undisclosed surfactant class - the disclosure names a category, not a substance.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Disclosed by Delta Brands for PowerHouse All Purpose Cleaner with Bleach as the literal string 'Compound Based on Anionic and Nonionic Surfactants' - a class descriptor, not a chemical name, so no CAS and no PubChem entry exist to grade. Recorded extrapolated, not graded. Class hazards for an anionic/nonionic surfactant blend are skin/eye irritation and aquatic toxicity. The class-level disclosure is itself the finding: the product names its bleach and its caustic but not its surfactant."
+ },
+ "Benzenesulfonic acid, C10-16-alkyl derivs., magnesium salts": {
+  "g": "Not Classified",
+  "s": "Magnesium salt of linear alkylbenzene sulfonate (LAS). Sub-threshold notifier consensus.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB (CAS 68584-26-9) with no discrete PubChem record; looked up by the class analog 'Magnesium dodecyl benzene sulfonate' (CID 168704, returned title matches the class), whose ECHA C&L notifier block reports H302, H315 and H319 each at 16.7% - all below the house >=40% consensus threshold, so no dimension grade is justified. Class-analogous to the existing 'Sodium Dodecylbenzenesulfonate' entry (derm D, env C). Disclosed by Colgate-Palmolive for Ajax Dishwashing Liquid."
+ },
+ "C12-14 Alcohol EO 3:1 Sodium Sulfate": {
+  "g": "Extrapolated",
+  "s": "Alcohol ethoxylate sulfate (C12-14, 3 EO) sodium salt. UVCB; class hazards: skin/eye irritant, aquatic toxicity.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB - PubChem name lookup resolves no CID (PUG REST 404). Class-analogous to the existing 'Sodium Laureth Sulfate' and 'Ethoxylated Alcohol' entries (derm C, env C; trace 1,4-dioxane from ethoxylation). Recorded extrapolated, not graded. Disclosed by Colgate-Palmolive for Ajax Dishwashing Liquid."
+ },
+ "TEA Dodecylbenzene Sulfonate": {
+  "g": "H315,H319",
+  "s": "Triethanolamine salt of linear alkylbenzene sulfonate. Causes skin and serious eye irritation.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 33782, returned title 'dodecylbenzenesulfonic acid, triethanolamine salt' - matches the disclosed substance). ECHA C&L notifier consensus: H315 87.1% (skin irritation -> derm D) and H319 55.2% (serious eye irritation -> derm D). H301 15.2%, H302 20.6% and H318 26.3% all fall below the house >=40% threshold and are not graded. Disclosed by Colgate-Palmolive for Ajax Dishwashing Liquid."
+ },
+ "Acrylic Polymer": {
+  "g": "Not Classified",
+  "s": "Polymeric soil-suspension agent. No discrete PubChem CID.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Polymer - PubChem name lookup resolves no CID (PUG REST 404) and therefore no GHS classification. Recorded unclassified rather than assigned an unsourced grade; high-MW polymers are generally not bioavailable. The California disclosure states the polymer carries no free acrylic acid. Disclosed by Folex for Instant Carpet Spot Remover."
+ },
+ "Primary Amine": {
+  "g": "Extrapolated",
+  "s": "Undisclosed primary amine used as a pH buffer - the disclosure names a class, not a substance.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Disclosed by Folex on its California Ingredient Disclosure as 'Primary Amine (No DEA)' with the CAS withheld - a class descriptor, so no specific substance can be graded. Recorded extrapolated, not graded; class hazards for a primary amine buffer are skin/eye irritation. The '(No DEA)' qualifier is the manufacturer ruling out one specific member of the class, not identifying the one used."
+ },
+ "Distillates (petroleum), hydrotreated middle": {
+  "g": "Not Classified",
+  "s": "Hydrotreated middle petroleum distillate (UVCB). Current manufacturer SDS reports no hazardous components requiring reporting.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB (CAS 64742-46-7) - no discrete PubChem record to grade. The current Reckitt SDS for Old English Lemon Oil reports this as the only component (>60%) and states no additional ingredients are classified as hazardous. Recorded unclassified per the current SDS. An earlier (2008) SDS for the same product line carried 'DANGER: HARMFUL OR FATAL IF SWALLOWED - contains petroleum distillates greater than 10%', an aspiration-hazard warning that does not map to any of the house grade dimensions; the two SDS versions disagree and both are noted rather than reconciled."
  }
 }
