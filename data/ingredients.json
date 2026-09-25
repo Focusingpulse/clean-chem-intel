@@ -3446,7 +3446,7 @@
    "aqua",
    "resp"
   ],
-  "note": "PubChem CID 6694 (Rhodamine B), ECHA C&L notifier consensus. Used as the whitening dye in the pink Zote laundry bar."
+  "note": "Rhodamine B. Identified as CI 45170 by the FDA UNII record K7G5SCF8IL, whose synonym list carries Basic Violet 10 and CI 45170 for Rhodamine B (https://precision.fda.gov/uniisearch/srs/unii/K7G5SCF8IL). Hazard from PubChem CID 6694, ECHA C&L notifier consensus. Used as the whitening dye in the pink Zote laundry bar."
  },
  "Cocamide MEA": {
   "g": "Extrapolated",

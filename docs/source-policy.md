@@ -35,6 +35,36 @@
 - **Access**: Free download + API
 - **Terms**: Public domain data
 
+### DailyMed (NLM)
+- **URL**: https://dailymed.nlm.nih.gov/
+- **What we use**: Ingredient lists from FDA OTC drug labels. This is the only route to a full
+  active + inactive ingredient list for several classes of cleaning-adjacent product, including
+  store-brand antibacterial hand soaps, where the manufacturer publishes nothing on its own site.
+- **Why it counts as a primary source**: the label is the manufacturer's own regulatory filing,
+  and it names the labeler of record. It is a government host serving a manufacturer document,
+  which is the same structure as an EPA-listed SDS.
+- **Access**: Free, no API key. `drugInfo.cfm?setid=...` and `getFile.cfm?setid=...&type=pdf`.
+- **Added**: 2026-09-25, Dolman (spectrum build station 2).
+
+### FDA UNII Search Service
+- **URL**: https://precision.fda.gov/uniisearch/srs/unii/
+- **What we use**: Substance identity, specifically colour-index and trade-name synonyms, so a
+  label term like "Violet 10" can be resolved to a chemical with a PubChem CID before grading.
+  Without this step the grade would rest on a guessed identity.
+- **Terms**: Public domain (FDA).
+- **Added**: 2026-09-25, Dolman.
+
+### Manufacturer SB-258 disclosure pages (California Cleaning Product Right to Know)
+- **What we use**: Intentionally-added ingredient lists with CAS numbers, published by the
+  manufacturer on its own site because California requires it. Whole Foods Market and Sprouts
+  Farmers Market both publish per-product declarations this way.
+- **Why it counts as a primary source**: it is the manufacturer's own published specification,
+  which `docs/certainty.md` already accepts at the `verified` level. The law is what makes it
+  exist, not what makes it trustworthy.
+- **Note**: this is the only route that has produced full ingredient lists for private-label
+  grocery cleaners so far. Treat a private label with no such page as a disclosure gap.
+- **Added**: 2026-09-25, Dolman.
+
 ## Sources we do NOT use
 
 ### EWG Skin Deep Database
