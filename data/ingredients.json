@@ -3224,5 +3224,274 @@
   "gr": {},
   "impacts": [],
   "note": "UVCB (CAS 64742-46-7) - no discrete PubChem record to grade. The current Reckitt SDS for Old English Lemon Oil reports this as the only component (>60%) and states no additional ingredients are classified as hazardous. Recorded unclassified per the current SDS. An earlier (2008) SDS for the same product line carried 'DANGER: HARMFUL OR FATAL IF SWALLOWED - contains petroleum distillates greater than 10%', an aspiration-hazard warning that does not map to any of the house grade dimensions; the two SDS versions disagree and both are noted rather than reconciled."
+ },
+ "Chloroxylenol": {
+  "g": "H302,H315,H317,H319",
+  "s": "Antimicrobial (PCMX). Harmful if swallowed; skin and eye irritant; skin sensitizer.",
+  "ev": "High",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "allerg",
+   "derm"
+  ],
+  "note": "PubChem CID 2723 (4-chloro-3,5-dimethylphenol), ECHA C&L notifier consensus. Active at 0.3% in the Dollar Tree Power Force antibacterial hand soap."
+ },
+ "Lauramidopropylamine Oxide": {
+  "g": "Extrapolated",
+  "s": "Amine oxide surfactant; graded by analogy within the amine-oxide class.",
+  "ev": "Extrapolated",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Searched PubChem for a discrete record; none returned (UVCB). Class analogues Lauramine Oxide (H315,H319) and Myristamine Oxide (H318,H315,H400) both carry skin/eye irritation, so derm D is carried here rather than left blank."
+ },
+ "Myristamidopropylamine Oxide": {
+  "g": "H302,H315,H318,H373,H400,H410,H411",
+  "s": "Amine oxide surfactant. Serious eye damage, harmful if swallowed, organ damage on repeated exposure, very toxic to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "env": "F",
+   "organ": "D",
+   "work": "D"
+  },
+  "impacts": [
+   "derm",
+   "aqua"
+  ],
+  "note": "PubChem CID 64680 (myristamidopropylamine oxide), ECHA C&L notifier consensus."
+ },
+ "Disteareth-75 IPDI": {
+  "g": "Not Classified",
+  "s": "Polymeric rheology modifier (UVCB); no discrete identity, so no classification.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Searched PubChem for a discrete record and found none; no CAS disclosed on the label. Recorded unclassified rather than guessed."
+ },
+ "PEG-150 Distearate": {
+  "g": "Not Classified",
+  "s": "Polymeric thickener (UVCB); no discrete PubChem CID.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Searched PubChem for a discrete record and found none. PEG distearates are tallied as no-hazard polymers in the ECHA polymer register."
+ },
+ "Benzophenone-4": {
+  "g": "H315,H317,H318,H319,H335",
+  "s": "UV absorber (sulisobenzone). Skin and eye irritant, skin sensitizer, respiratory irritation.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "resp": "D"
+  },
+  "impacts": [
+   "allerg",
+   "derm",
+   "resp"
+  ],
+  "note": "PubChem CID 19988 (sulisobenzone), ECHA C&L notifier consensus."
+ },
+ "Red 4": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "FD&C Red No. 4 (Ponceau SX). PubChem GHS lookup returns no hazard data and no discrete CID for the dye name. Medium confidence."
+ },
+ "Red 33": {
+  "g": "H319,H412",
+  "s": "Azo dye. Causes serious eye irritation; harmful to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "env": "D"
+  },
+  "impacts": [
+   "derm",
+   "aqua"
+  ],
+  "note": "PubChem CID 19116 (azo fuchsine), ECHA C&L notifier consensus."
+ },
+ "Red 40": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (345 of 345 notifiers)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "FD&C Red No. 40 (Allura Red AC). PubChem CID 33258; reported as not meeting GHS hazard criteria by 345 of 345 companies in the ECHA C&L consensus."
+ },
+ "Blue 1": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "FD&C Blue No. 1 (Brilliant Blue FCF). PubChem CID 19700; no GHS section returned by the PUG-view lookup."
+ },
+ "Methanol": {
+  "g": "H225,H301,H311,H331,H370",
+  "s": "Toxic if swallowed, inhaled or in contact with skin; causes organ damage; highly flammable.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "resp": "D",
+   "organ": "F",
+   "work": "D"
+  },
+  "impacts": [
+   "derm",
+   "organ",
+   "resp"
+  ],
+  "note": "PubChem CID 887, ECHA C&L notifier consensus. Present as a denaturant in denatured-alcohol cleaners, disclosed by Whole Foods at the ingredient level."
+ },
+ "Ethyl Acetate": {
+  "g": "H225,H319,H336",
+  "s": "Flammable solvent; eye irritant; may cause drowsiness or dizziness.",
+  "ev": "High",
+  "gr": {
+   "derm": "C",
+   "resp": "B"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": "PubChem CID 8857, ECHA C&L notifier consensus."
+ },
+ "Saponins": {
+  "g": "H319,H335",
+  "s": "Causes serious eye irritation; may cause respiratory irritation.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D",
+   "resp": "D"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": "PubChem CID 6540709 (saponins, CAS 8047-15-2), ECHA C&L notifier consensus. Whole Foods discloses saponins as a surfactant in its Organic Multisurface Cleaner."
+ },
+ "Potassium Cocoate": {
+  "g": "Not Classified",
+  "s": "Soap salt (potassium salt of coconut fatty acids); no discrete PubChem CID.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Searched PubChem for a discrete record; none returned for the coconut-derived soap salt. The potassium-oleate analogue carries H315/H319 (derm C). Recorded unclassified rather than guessed."
+ },
+ "Japanese Honeysuckle Extract": {
+  "g": "Not Classified",
+  "s": "Botanical extract; no GHS classification located.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Lonicera japonica flower extract, disclosed by Whole Foods as an antimicrobial in its Organic Multisurface Cleaner. Searched PubChem and found no discrete CID and no GHS classification."
+ },
+ "Cocamidopropylamine Oxide": {
+  "g": "Extrapolated",
+  "s": "Amine oxide surfactant; graded by analogy within the amine-oxide class.",
+  "ev": "Extrapolated",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Searched PubChem for a discrete record; none returned (UVCB). Class analogues carry skin/eye irritation, so derm D is carried here rather than left blank."
+ },
+ "Sodium Cocoate": {
+  "g": "Not Classified",
+  "s": "Soap salt (sodium salt of coconut fatty acids); no H-code at 40% ECHA C&L notifier consensus.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "PubChem returns no discrete CID for the coconut soap salt; ECHA C&L consensus for the class reports no classification. The primary surfactant of Kirk's Castile and the Zote bars."
+ },
+ "Sodium Tallowate": {
+  "g": "Not Classified",
+  "s": "Soap salt (sodium salt of tallow fatty acids); no discrete PubChem CID.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Searched PubChem for a discrete record; none returned. The sodium-stearate analogue is reported as not classified by ECHA C&L consensus. Primary surfactant of the Zote laundry bars."
+ },
+ "Optical Brightener": {
+  "g": "Not Classified",
+  "s": "Disclosed by generic class name only; identity withheld.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "No CAS, no discrete identity and no PubChem CID, so no classification is possible. Recorded unclassified rather than guessed. Disclosed on the Zote laundry soap ingredient panels."
+ },
+ "Violet 10": {
+  "g": "H302,H318,H335,H412",
+  "s": "Rhodamine B (CI 45170). Harmful if swallowed; serious eye damage; respiratory irritation; harmful to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "env": "D",
+   "resp": "D"
+  },
+  "impacts": [
+   "derm",
+   "aqua",
+   "resp"
+  ],
+  "note": "PubChem CID 6694 (Rhodamine B), ECHA C&L notifier consensus. Used as the whitening dye in the pink Zote laundry bar."
+ },
+ "Cocamide MEA": {
+  "g": "Extrapolated",
+  "s": "Coconut-derived foam booster; graded by analogy within the ethanolamide class.",
+  "ev": "Extrapolated",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Searched PubChem for a discrete record; none returned (UVCB). Class analogues carry skin/eye irritation, so derm C is carried here rather than left blank."
+ },
+ "Cocamide DEA": {
+  "g": "Extrapolated",
+  "s": "Coconut diethanolamide. Structurally related to diethanolamine; graded by analogy.",
+  "ev": "Extrapolated",
+  "gr": {
+   "derm": "C",
+   "canc": "D"
+  },
+  "impacts": [
+   "canc",
+   "derm"
+  ],
+  "note": "Searched PubChem for a discrete record and found none (UVCB). The cancer flag is an extrapolation from the diethanolamine moiety, not a classification of the amide itself; no harmonised GHS classification was located for cocamide DEA."
+ },
+ "Disodium EDTA": {
+  "g": "Not Classified",
+  "s": "Chelating agent; no GHS classification in the authoritative block.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "PubChem CID 13020083 (disodium EDTA); no GHS section returned. Distinct from the tetrasodium salt, which carries a fuller classification."
+ },
+ "Sodium Oleate": {
+  "g": "H412",
+  "s": "Harmful to aquatic life with long lasting effects.",
+  "ev": "High",
+  "gr": {
+   "env": "D"
+  },
+  "impacts": [
+   "aqua"
+  ],
+  "note": "PubChem CID 23665730, ECHA C&L notifier consensus."
  }
 }
