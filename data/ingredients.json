@@ -3347,7 +3347,6 @@
   },
   "impacts": [
    "derm",
-   "organ",
    "resp"
   ],
   "note": "PubChem CID 887, ECHA C&L notifier consensus. Present as a denaturant in denatured-alcohol cleaners, disclosed by Whole Foods at the ingredient level."
@@ -3493,5 +3492,295 @@
    "aqua"
   ],
   "note": "PubChem CID 23665730, ECHA C&L notifier consensus."
+ },
+ "Pentasodium DTPA": {
+  "g": "H332,H361",
+  "s": "Chelating agent (pentasodium pentetate). Harmful if inhaled; suspected reproductive or developmental toxicant.",
+  "ev": "Medium",
+  "gr": {
+   "resp": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "repro"
+  ],
+  "note": "PubChem CID 8779, ECHA C&L notifier consensus: H332 87.7% -> resp C; H361 67.4% -> repro C. H360D (18.5%), H373 (31.3%), H315 (17.7%) and H319 (18.2%) are below the 40% house bar and do not drive grades. Disclosed by Church & Dwight as Pentasodium DTPA (CAS 140-01-2) in the Arm & Hammer and Xtra liquid laundry detergents; the disclosure itself flags it EU CMRs."
+ },
+ "Nitrilotriacetic Acid": {
+  "g": "H319,H351",
+  "s": "Chelating agent. Eye irritant; suspected carcinogen.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "C",
+   "canc": "C"
+  },
+  "impacts": [
+   "canc"
+  ],
+  "note": "PubChem CID 8758, ECHA C&L notifier consensus: H319 83% -> derm C; H351 67% -> canc C. H302 (22.4%) is below the 40% bar. Non-consensus notifier blocks also carry H340 (may cause genetic defects) and H411 (aquatic), which are recorded here but do not drive a grade. Disclosed by Church & Dwight as a non-functional constituent of Arm & Hammer liquid laundry detergent; the disclosure itself flags it California Prop 65."
+ },
+ "Methoxyisopropanol": {
+  "g": "H226,H336",
+  "s": "Glycol-ether solvent (1-methoxy-2-propanol). Flammable; may cause drowsiness or dizziness.",
+  "ev": "Medium",
+  "gr": {
+   "work": "C"
+  },
+  "impacts": [],
+  "note": "PubChem CID 7900, ECHA C&L notifier consensus: H226 (>99.9%) and H336 (99%). Non-consensus notifier blocks also carry H320/H332/H316/H319, which do not drive grades under the >=40% house rule. Disclosed by Reckitt SmartLabel for Glass Plus; the disclosure flags it on California's non-cancer hazard list."
+ },
+ "Methyl Salicylate": {
+  "g": "H302,H319",
+  "s": "Fragrance component (wintergreen). Harmful if swallowed; serious eye irritant.",
+  "ev": "High",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "PubChem CID 4133, ECHA C&L notifier consensus: H302 97.5%, H319 91.1% -> derm C. Non-consensus notifier blocks also carry H317 (skin sensitizer) and H361d (suspected developmental toxicant), which are recorded here but do not drive a grade under the >=40% rule. Disclosed by Reckitt SmartLabel for Lime-A-Way Toilet Bowl Cleaner; flagged EU fragrance allergen."
+ },
+ "Tetramethyl Acetyloctahydronaphthalenes": {
+  "g": "H315,H317,H410",
+  "s": "Fragrance component (polycyclic musk). Skin irritant and sensitizer; toxic to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "env": "D"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm"
+  ],
+  "note": "PubChem CID 108242, ECHA C&L notifier consensus: H315 84.7%, H317 89.5% -> derm D + allerg; H410 75.2% -> env D. H411 (24.8%) is below the 40% bar. Disclosed by Church & Dwight as a fragrance component of Arm & Hammer and Xtra liquid laundry detergents; flagged EU fragrance allergen."
+ },
+ "Verdyl Acetate": {
+  "g": "H412",
+  "s": "Fragrance component. Harmful to aquatic life with long lasting effects.",
+  "ev": "Medium",
+  "gr": {
+   "env": "C"
+  },
+  "impacts": [
+   "aqua"
+  ],
+  "note": "PubChem CID 110655, ECHA C&L notifier consensus: H412 47.7% -> env C. H226 (24.5%) is below the 40% bar. Disclosed by Church & Dwight as a fragrance component of Arm & Hammer and Xtra liquid laundry detergents."
+ },
+ "Cyclamen Aldehyde": {
+  "g": "H315,H317,H412",
+  "s": "Fragrance component. Skin irritant and sensitizer; harmful to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "env": "C"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm"
+  ],
+  "note": "PubChem CID 517827, ECHA C&L notifier consensus: H315 98.8%, H317 95.9% -> derm D + allerg; H412 76.6% -> env C. H361 (12.3%) and H411 (15.1%) are below the 40% bar. Disclosed by Church & Dwight as a fragrance component of Arm & Hammer liquid laundry detergent."
+ },
+ "Allyl Cyclohexanepropionate": {
+  "g": "H302,H312,H317,H332,H400,H410",
+  "s": "Fragrance component. Harmful if swallowed or in contact with skin; skin sensitizer; harmful if inhaled; very toxic to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "resp": "C",
+   "env": "F"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm",
+   "resp"
+  ],
+  "note": "PubChem CID 17617, ECHA C&L notifier consensus: H302 99.9%, H312 98%, H317 83% -> derm D + allerg; H332 84% -> resp C; H400 81.9% -> env F; H410 83.2%. H315 (13%) is below the 40% bar. Disclosed by Church & Dwight as a fragrance component of Arm & Hammer liquid laundry detergent."
+ },
+ "Allyl Heptanoate": {
+  "g": "H302,H311,H315,H319,H373,H400,H410",
+  "s": "Fragrance component. Toxic in contact with skin; harmful if swallowed; skin and eye irritant; organ effects at repeated exposure; very toxic to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "C",
+   "organ": "C",
+   "env": "F"
+  },
+  "impacts": [
+   "aqua",
+   "derm"
+  ],
+  "note": "PubChem CID 8878, ECHA C&L notifier consensus: H302 85.4%, H311 79.9%, H315 62.5%, H319 74.7% -> derm C; H373 53.7% -> organ C; H400 58.9% -> env F; H410 69.1%. H301 (14.6%), H312 (20%) and H412 (15%) are below the 40% bar. H311 (toxic in contact with skin) is carried in the summary but has no house grade dimension. Disclosed by Church & Dwight as a fragrance component of Arm & Hammer liquid laundry detergent."
+ },
+ "Dihydromyrcenol": {
+  "g": "H315,H319",
+  "s": "Fragrance component (2,6-dimethyl-7-octen-2-ol). Skin and eye irritant.",
+  "ev": "High",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "PubChem CID 29096, ECHA C&L notifier consensus: H315 74.6%, H319 94.6% -> derm C. Disclosed by Church & Dwight as '2,6-Dimethyl-7-Octen-2-ol' (CAS 18479-58-8) in Arm & Hammer and Xtra liquid laundry detergents, and by Reckitt SmartLabel as 'Dihydromyrcenol' (same CAS) in Lime-A-Way."
+ },
+ "Galaxolide": {
+  "g": "H400,H410",
+  "s": "Fragrance component (polycyclic musk, hexamethylindanopyran). Very toxic to aquatic life; persistent.",
+  "ev": "High",
+  "gr": {
+   "env": "F"
+  },
+  "impacts": [
+   "aqua"
+  ],
+  "note": "PubChem CID 91497, ECHA C&L notifier consensus: H400 97.9% -> env F; H410 100%. Non-consensus notifier blocks also carry H360/H361 (reproductive toxicity), which are recorded here but do not drive a grade under the >=40% rule; the compound is a well-documented persistent musk. Disclosed by Church & Dwight as a fragrance component of Arm & Hammer liquid laundry detergent; the disclosure flags it US EPA PBTs."
+ },
+ "Hexyl Cinnamal": {
+  "g": "H317,H400,H411",
+  "s": "Fragrance component. Skin sensitizer; very toxic to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "env": "F"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm"
+  ],
+  "note": "PubChem CID 1550884 (alpha-hexylcinnamaldehyde), ECHA C&L notifier consensus: H317 99.6% -> derm D + allerg; H400 65.1% -> env F; H411 62.4%. One of the 26 fragrance allergens that must be declared on EU cosmetic labels (Reg. 1223/2009 Annex III). Disclosed by Church & Dwight as a fragrance component of Arm & Hammer and Xtra liquid laundry detergents."
+ },
+ "Hydroxycitronellal": {
+  "g": "H317,H319",
+  "s": "Fragrance component. Skin sensitizer; serious eye irritant.",
+  "ev": "High",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "allerg",
+   "derm"
+  ],
+  "note": "PubChem CID 7888, ECHA C&L notifier consensus: H317 (>99.9%) -> derm D + allerg; H319 (>99.9%). One of the 26 fragrance allergens that must be declared on EU cosmetic labels (Reg. 1223/2009 Annex III). Disclosed by Church & Dwight as a fragrance component of Xtra liquid laundry detergent."
+ },
+ "Tricyclodecenyl Propionate": {
+  "g": "H319,H411",
+  "s": "Fragrance component. Serious eye irritant; toxic to aquatic life with long lasting effects.",
+  "ev": "High",
+  "gr": {
+   "derm": "C",
+   "env": "D"
+  },
+  "impacts": [
+   "aqua",
+   "derm"
+  ],
+  "note": "PubChem CID 86579, ECHA C&L notifier consensus: H319 72.9% -> derm C; H411 100% -> env D. Church & Dwight lists this component under two names in two disclosures: 'Hexahydro-methanoindenyl propionate' (CAS 68912-13-0) in Arm & Hammer and 'Tricyclodecenyl propionate' (CAS 17511-60-3) in Xtra. Both CAS numbers resolve to the same PubChem record (CID 86579)."
+ },
+ "Dodecanenitrile": {
+  "g": "H315,H400,H410",
+  "s": "Fragrance component. Skin irritant; very toxic to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "C",
+   "env": "F"
+  },
+  "impacts": [
+   "aqua",
+   "derm"
+  ],
+  "note": "PubChem CID 17092, ECHA C&L notifier consensus: H315 86.3% -> derm C; H400 95.2% -> env F; H410 97.5%. Disclosed by Reckitt SmartLabel for Lime-A-Way Cleaner; the disclosure flags it California toxic air contaminants."
+ },
+ "Fructone": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Fragrance component (ethyl acetoacetate ethylene glycol ketal, CAS 6413-10-1). PubChem CID 80865 — no H-codes at >=40% consensus; treated as minimal hazard with Medium confidence. Disclosed by Church & Dwight as a fragrance component of Arm & Hammer liquid laundry detergent."
+ },
+ "2-Methoxynaphthalene": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "PubChem CID 7119 — the only classified H-code, H411 (aquatic), sits at 18.5% consensus, below the 40% house bar, so no grade is justified. Disclosed by Church & Dwight as a fragrance component of Arm & Hammer and Xtra liquid laundry detergents."
+ },
+ "Gamma-Undecalactone": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "PubChem CID 7714 — H411 (10.3%) and H412 (19.3%) are both below the 40% house bar, so no grade is justified. Disclosed by Church & Dwight as a fragrance component of Arm & Hammer liquid laundry detergent."
+ },
+ "Orange Terpenes": {
+  "g": "Extrapolated",
+  "s": "Citrus terpene mixture (orange terpenes). UVCB; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB (CAS 68647-72-3) — PubChem PUG REST returns no CID. Class-analogous to the existing 'Limonene' entry (derm D, env F, allerg): the terpene class is a skin sensitizer on oxidation and is very toxic to aquatic life. Recorded extrapolated, not graded. Disclosed by Church & Dwight as a fragrance component of Arm & Hammer and Xtra liquid laundry detergents."
+ },
+ "Rosin, Hydrogenated": {
+  "g": "Extrapolated",
+  "s": "Hydrogenated rosin (fragrance fixative). UVCB; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB (CAS 65997-06-0) — PubChem PUG REST returns no CID. Recorded extrapolated, not graded. Disclosed by Reckitt SmartLabel for Lime-A-Way Cleaner; the disclosure flags it on Canada's PBT list (persistent, bioaccumulative, inherently toxic)."
+ },
+ "Acrylic Acid Homopolymer": {
+  "g": "Extrapolated",
+  "s": "Polymeric dispersing agent (acrylic acid homopolymer). UVCB; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB/polymer (CAS 66019-18-9) — no discrete PubChem entry. Class-analogous to the existing polyacrylate dispersant entries: the polymer itself is not classified; the hazard of the class is residual acrylic-acid monomer. Recorded extrapolated, not graded. Disclosed by Church & Dwight for Arm & Hammer and Xtra liquid laundry detergents."
+ },
+ "C12-13 Alcohols Ethoxylated": {
+  "g": "Extrapolated",
+  "s": "Alcohol ethoxylate nonionic surfactant (C12-13). UVCB; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB (CAS 66455-14-9) — no discrete PubChem entry. Class-analogous to the existing 'C10-16 Pareth' and 'C12-15 Alcohols Ethoxylated' entries (derm C, env C; trace 1,4-dioxane from ethoxylation). Recorded extrapolated, not graded. Disclosed by Church & Dwight for Xtra liquid laundry detergent."
+ },
+ "PEG-2 Hydrogenated Tallow Amine": {
+  "g": "Extrapolated",
+  "s": "Ethoxylated tallow amine thickener (PEG-2 hydrogenated tallow amine). UVCB; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB (CAS 61791-26-2) — no discrete PubChem entry. Class-analogous to the ethoxylated-amine surfactant class (skin/eye irritant; ethoxylated amines are the more irritating end of the nonionic class). Recorded extrapolated, not graded. Disclosed by Reckitt SmartLabel for Lime-A-Way Toilet Bowl Cleaner, whose label states 'contains sulfamic acid and ethoxylated tallow amine'."
+ },
+ "C.I. Acid Blue 182": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Colorant (CI 61585, CAS 12219-26-0). PubChem CID 20846229 — reported as not meeting GHS hazard criteria by 2155 of 2156 companies. Disclosed by Reckitt SmartLabel for Glass Plus."
+ },
+ "Acid Yellow 23": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met; FDA-certified color additive (FD&C Yellow No. 5).",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Tartrazine (CI 19140, CAS 1934-21-0), PubChem CID 164825. PubChem PUG View carries no GHS classification section for this CID, so no ECHA C&L consensus exists to grade from; recorded unclassified rather than guessed. Disclosed by Reckitt SmartLabel for Lime-A-Way Toilet Bowl Cleaner."
+ },
+ "Acid Blue 93": {
+  "g": "Not Classified",
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Colorant (CI 42780, CAS 28983-56-4; PubChem title 'Methyl Blue'). PubChem CID 76956083 — reported as not meeting GHS hazard criteria by 2165 of 2210 companies. Disclosed by Reckitt SmartLabel for Lime-A-Way Toilet Bowl Cleaner; the disclosure flags it an AOEC asthmagen."
  }
 }
