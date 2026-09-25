@@ -30,10 +30,23 @@ DM_WAG_SOAP = ("https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm"
 DM_POWER_FORCE = ("https://dailymed.nlm.nih.gov/dailymed/getFile.cfm"
                   "?setid=aefc76f5-c3c9-4d0a-855b-5123325f93b5&type=pdf")
 ZOTE_DIRECTIONS = "https://directionsforme.org/product/7383"
+ZOTE_WHITE = "https://directionsforme.org/product/7384"
 ZOTE_SDS = "https://www.soapgoods.com/documents/sds/Pink-Zote-Soap.pdf"
 KIRKS_ING = "https://kirkssoap.com/pages/our-ingredients"
 INDEXBOX = ("https://www.indexbox.io/store/united-states-laundry-home-products-market-"
             "analysis-forecast-size-trends-and-insights/")
+# R1: the source that actually states La Corona's export share. The live page returns 403
+# to curl; the sentence is confirmed in Wayback snapshots 20200117150407 / 20200221121903 /
+# 20241201: "un 15% de esta llega a distintos mercados, principalmente el sudamericano y
+# estadounidense."
+MEXICO_DESCONOCIDO = ("https://www.mexicodesconocido.com.mx/"
+                      "historia-y-usos-del-jabon-zote-el-favorito-de-las-familias-mexicanas.html")
+# R2: the category figure indexbox actually publishes, replacing a ">95% dish soap" number
+# that no cited source stated. Dishwashing is named in the category's own scope.
+NEARLY_UNIVERSAL_CATEGORY = (
+    "The category-penetration figure published for US laundry and home products is household "
+    "penetration above 98% (indexbox), and dishwashing is named in that category's scope; no "
+    "dish-soap-specific penetration figure is published.")
 AMZ_APC = ("https://www.amazon.com/Best-Sellers-Health-Household-All-Purpose-Household-"
            "Cleaners/zgbs/hpc/15356141")
 ASINSIGHT_DISH = "https://www.asinsight.com/market-analysis/US/dish-soap"
@@ -500,10 +513,10 @@ PRODUCTS = [
          ["Water", "Sodium Laureth Sulfate", "Cocamidopropylamine Oxide", "Sodium Chloride",
           "Benzisothiazolinone"],
          "grocery", "reported", SPROUTS,
-         1, "extrapolated", ASINSIGHT_DISH,
-         BASE_BASIS + "Liquid dish soap is owned by over 95% of US households; that category "
-                      "figure is the one published number here, and Sprouts' own share of it is "
-                      "small. Channel share, not a measured product share.",
+         1, "extrapolated", INDEXBOX,
+         BASE_BASIS + NEARLY_UNIVERSAL_CATEGORY +
+                      " Sprouts' own share of the category is small. Channel share, not a "
+                      "measured product share.",
          subs=[{"name": "Seventh Generation Dish Liquid, Free & Clear",
                 "tier": "natural",
                 "note": "Fragrance-free and preservative-free at a comparable per-ounce price. "
@@ -515,12 +528,13 @@ PRODUCTS = [
          ["Sodium Tallowate", "Sodium Cocoate", "Glycerin", "Fragrance", "Optical Brightener",
           "Violet 10"],
          "grocery", "reported", ZOTE_DIRECTIONS,
-         2, "extrapolated", ZOTE_EXPANSION,
-         BASE_BASIS + "The pink bar is the brand's highest-volume line and about 15% of the "
-                      "brand's sales leave Mexico, primarily to the United States, so the product "
-                      "is genuinely common in US households even though no US penetration figure "
-                      "is published. The figure is a share of the laundry-bar segment, not of all "
-                      "US households.",
+         2, "extrapolated", MEXICO_DESCONOCIDO,
+         BASE_BASIS + "The pink bar is the brand's highest-volume line (expansion.mx, 2022), and "
+                      "about 15% of La Corona's production reaches markets outside Mexico, mainly "
+                      "South America and the United States (Mexico Desconocido, 2020), so the "
+                      "product is genuinely common in US households even though no US penetration "
+                      "figure is published. The figure is a share of the laundry-bar segment, not "
+                      "of all US households.",
          subs=[{"name": "Zote Laundry Soap, White",
                 "tier": "grocery",
                 "note": "Same brand, same price, same store. Drops the Violet 10 (Rhodamine B) "
@@ -536,11 +550,12 @@ PRODUCTS = [
 
     prod("Zote Laundry Soap, White", "Zote", "Laundry",
          ["Sodium Tallowate", "Sodium Cocoate", "Fragrance", "Optical Brightener"],
-         "grocery", "reported", ZOTE_DIRECTIONS,
-         1, "extrapolated", ZOTE_EXPANSION,
-         BASE_BASIS + "The white bar is a smaller line than the pink bar, and about 15% of the "
-                      "brand's sales leave Mexico primarily to the United States. The figure is a "
-                      "share of the laundry-bar segment, not of all US households.",
+         "grocery", "reported", ZOTE_WHITE,
+         1, "extrapolated", MEXICO_DESCONOCIDO,
+         BASE_BASIS + "The white bar is a smaller line than the pink bar, and about 15% of La "
+                      "Corona's production reaches markets outside Mexico, mainly South America "
+                      "and the United States (Mexico Desconocido, 2020). The figure is a share of "
+                      "the laundry-bar segment, not of all US households.",
          subs=[{"name": "Kirk's Original Coco Castile Soap",
                 "tier": "apothecary-bulk",
                 "note": "Same price point, vegetable-oil bar, no optical brightener. The brightener "
@@ -565,6 +580,41 @@ PRODUCTS = [
          tier_note="Filled under SPX-004 as a second castile brand alongside Dr. Bronner's; the "
                    "bin is ingredient-tier soap sold on chemistry rather than brand story."),
 ]
+
+
+# R4 (Linnea, SPX station-2 verdict 2026-09-25): every other harvest script writes
+# source + source_url. This one originally parked the ingredient-list citation only in
+# tier_src, so source_url was unset on all 11 records. The label names the disclosure
+# the ingredient list was read from; the URL is the same disclosure URL as tier_src.
+SRC_LABEL = {
+    "CVS Health Moisturizing Antibacterial Hand Soap": "FDA OTC drug label (DailyMed), labeler CVS Pharmacy",
+    "Walgreens Antibacterial Hand Soap, Amber": "FDA OTC drug label (DailyMed), labeler Walgreen Co.",
+    "Power Force Antibacterial Hand Soap, Green Apple": "FDA OTC drug label (DailyMed), labeler Korex Chicago LLC",
+    "365 Everyday Value All-Purpose Cleaner, Wild Orange": "Whole Foods Market household-cleaner ingredient disclosure (CA SB-258)",
+    "365 by Whole Foods Market All Purpose Cleaner, Citrus": "Whole Foods Market household-cleaner ingredient disclosure (CA SB-258)",
+    "Whole Foods Market Organic Multisurface Cleaner, Lavender Lemon": "Whole Foods Market household-cleaner ingredient disclosure (CA SB-258)",
+    "Sprouts Citrus Scent All Purpose Cleaner": "Sprouts California Cleaning Product Right to Know Act declaration",
+    "Sprouts Free & Clear Dish Soap": "Sprouts California Cleaning Product Right to Know Act declaration",
+    "Zote Laundry Soap, Pink": "Retailer ingredient panel (directionsforme) + La Corona SDS",
+    "Zote Laundry Soap, White": "Retailer ingredient panel (directionsforme) + La Corona SDS",
+    "Kirk's Original Coco Castile Soap": "Kirk's manufacturer ingredient page",
+}
+
+
+def attach_sources(records):
+    """Pair source + source_url on each record, defaulting the URL to tier_src."""
+    filled = 0
+    for p in records:
+        label = SRC_LABEL.get(p["name"])
+        url = p.get("tier_src") if p["name"] != "Zote Laundry Soap, White" else ZOTE_WHITE
+        if not label or not url:
+            continue
+        if p.get("source") == label and p.get("source_url") == url:
+            continue
+        p["source"] = label
+        p["source_url"] = url
+        filled += 1
+    return filled
 
 
 def main():
@@ -619,6 +669,12 @@ def main():
             backfilled += 1
     if backfilled:
         print(f"tier_src backfilled on {backfilled} existing products")
+
+    # R4: pair source + source_url on new and existing station-2 records alike, so a
+    # re-run repairs records written before the field contract was fixed.
+    sourced = attach_sources(prods)
+    if sourced:
+        print(f"source/source_url attached on {sourced} products")
 
     (DATA / "products.json").write_text(
         json.dumps(prods, indent=1, ensure_ascii=False), encoding="utf-8")

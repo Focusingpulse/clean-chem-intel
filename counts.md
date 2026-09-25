@@ -4,7 +4,7 @@ description: Live database counts for Clean Chem Intel — regenerated from data
 
 # Clean Chem Intel — Live Counts
 
-_Updated: 2026-09-25 10:09 UTC_
+_Updated: 2026-09-25 10:35 UTC_
 
 | Metric | Count |
 |---|---:|
@@ -16,7 +16,7 @@ _Updated: 2026-09-25 10:09 UTC_
 | **Regulatory entries** | 28 |
 
 ## Sources of products
-curated: 136, ca sb258 disclosure (public via cpid): 4, reckitt smartlabel public ingredient disclosure: 3, walmart ingredient disclosure (california cleaning right to know): 3
+curated: 125, ca sb258 disclosure (public via cpid): 4, reckitt smartlabel public ingredient disclosure: 3, walmart ingredient disclosure (california cleaning right to know): 3
 
 ## Note
 - Raw product count grows mainly from **curated additions** (Dolman's lane, Mon/Wed/Fri).

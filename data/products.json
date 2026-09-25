@@ -3163,7 +3163,7 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Eco hand-dish brands are a small fraction of the >95% of households that own liquid dish soap.",
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Eco hand-dish brands are a small fraction of that category, which indexbox reports at above 98% household penetration.",
   "tier_src": null,
   "tier_basis": "searched for a published definition of this tier and found none that names the product. The tier was assigned by exclusion rather than by a source, so it is downgraded to untested rather than left marked reported with nothing to point at. A guessed tier is worse than no tier."
  },
@@ -3194,7 +3194,7 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Eco hand-dish brands are a small fraction of the >95% of households that own liquid dish soap.",
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Eco hand-dish brands are a small fraction of that category, which indexbox reports at above 98% household penetration.",
   "tier_src": "https://www.epa.gov/saferchoice/products",
   "tier_note": "Tier rests on the recorded EPA Safer Choice certification."
  },
@@ -3788,7 +3788,7 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Borax is a legacy laundry booster; laundry care exceeds 95% of US households but boosters are a small share of that.",
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Borax is a legacy laundry booster; the laundry and home products category is reported at above 98% household penetration (indexbox), but boosters are a small share of that.",
   "tier_src": "https://www.20muleteamlaundry.com/",
   "tier_note": "Borax is sold as a bulk laundry and cleaning staple, not as a finished branded cleaner.",
   "claim_conflict": {
@@ -6536,7 +6536,9 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Hand soap is used in nearly every US household and this is the house brand of a national pharmacy chain, so the estimate stops at the brand's channel share rather than a measured product share.",
   "tier_note": "House brand of a pharmacy chain; the drugstore bin is the brand's own definition, not an inference from the shelf it was found on.",
-  "tier_src": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=63798c63-94fe-4ba8-8692-ca8be43c151e"
+  "tier_src": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=63798c63-94fe-4ba8-8692-ca8be43c151e",
+  "source": "FDA OTC drug label (DailyMed), labeler CVS Pharmacy",
+  "source_url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=63798c63-94fe-4ba8-8692-ca8be43c151e"
  },
  {
   "name": "Walgreens Antibacterial Hand Soap, Amber",
@@ -6591,7 +6593,9 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Hand soap is used in nearly every US household and this is the house brand of a national pharmacy chain, so the estimate stops at the brand's channel share rather than a measured product share.",
   "tier_note": "House brand of a pharmacy chain; the drugstore bin is the brand's own definition, not an inference from the shelf it was found on.",
-  "tier_src": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b45cbd3b-cba7-4c26-90bf-ec729dae3f28"
+  "tier_src": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b45cbd3b-cba7-4c26-90bf-ec729dae3f28",
+  "source": "FDA OTC drug label (DailyMed), labeler Walgreen Co.",
+  "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b45cbd3b-cba7-4c26-90bf-ec729dae3f28"
  },
  {
   "name": "Power Force Antibacterial Hand Soap, Green Apple",
@@ -6644,7 +6648,9 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. The house brand of a national dollar-store chain, sold at a dollar-store price point. The label is public because it is an FDA OTC drug label, not because the brand chose to publish an ingredient list.",
   "tier_note": "Dollar Tree house brand. The FDA drug label names Korex Chicago LLC as the labeler of record, so the contract manufacturer is visible even though the retail brand owner is Dollar Tree.",
-  "tier_src": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=aefc76f5-c3c9-4d0a-855b-5123325f93b5&type=pdf"
+  "tier_src": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=aefc76f5-c3c9-4d0a-855b-5123325f93b5&type=pdf",
+  "source": "FDA OTC drug label (DailyMed), labeler Korex Chicago LLC",
+  "source_url": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=aefc76f5-c3c9-4d0a-855b-5123325f93b5&type=pdf"
  },
  {
   "name": "365 Everyday Value All-Purpose Cleaner, Wild Orange",
@@ -6685,7 +6691,9 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Whole Foods is a national grocery chain but a small share of US households; the private label is a fraction of that. The estimate is the channel share of the category, not a measured product share.",
   "tier_note": "Grocery-chain private label. Disclosed under California SB-258 with CAS numbers on the Whole Foods household-cleaner page.",
-  "tier_src": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure"
+  "tier_src": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure",
+  "source": "Whole Foods Market household-cleaner ingredient disclosure (CA SB-258)",
+  "source_url": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure"
  },
  {
   "name": "365 by Whole Foods Market All Purpose Cleaner, Citrus",
@@ -6724,7 +6732,9 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Whole Foods is a national grocery chain but a small share of US households; the private label is a fraction of that. Channel share, not a measured product share.",
   "tier_note": "Grocery-chain private label. Disclosed under California SB-258.",
-  "tier_src": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure"
+  "tier_src": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure",
+  "source": "Whole Foods Market household-cleaner ingredient disclosure (CA SB-258)",
+  "source_url": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure"
  },
  {
   "name": "Whole Foods Market Organic Multisurface Cleaner, Lavender Lemon",
@@ -6763,7 +6773,9 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Whole Foods is a national grocery chain but a small share of US households. Channel share, not a measured product share.",
   "tier_note": "Grocery-chain private label, organic line. Disclosed under California SB-258. The formula is soap- and peroxide-based rather than preservative-based, so the fragrance allergens are what carries the hazard.",
-  "tier_src": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure"
+  "tier_src": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure",
+  "source": "Whole Foods Market household-cleaner ingredient disclosure (CA SB-258)",
+  "source_url": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure"
  },
  {
   "name": "Sprouts Citrus Scent All Purpose Cleaner",
@@ -6805,7 +6817,9 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Sprouts is a national grocery chain and a small share of US households. Channel share, not a measured product share.",
   "tier_note": "Grocery-chain private label. Disclosed under California SB-258 with CAS numbers.",
-  "tier_src": "https://www.sprouts.com/california-cleaning-product-right-to-know-act/"
+  "tier_src": "https://www.sprouts.com/california-cleaning-product-right-to-know-act/",
+  "source": "Sprouts California Cleaning Product Right to Know Act declaration",
+  "source_url": "https://www.sprouts.com/california-cleaning-product-right-to-know-act/"
  },
  {
   "name": "Sprouts Free & Clear Dish Soap",
@@ -6835,16 +6849,18 @@
   ],
   "exposure": 1,
   "exposure_ev": "extrapolated",
-  "exposure_src": "https://www.asinsight.com/market-analysis/US/dish-soap",
+  "exposure_src": "https://www.indexbox.io/store/united-states-laundry-home-products-market-analysis-forecast-size-trends-and-insights/",
   "conc": null,
   "conc_src": null,
   "conc_ev": "untested",
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Liquid dish soap is owned by over 95% of US households; that category figure is the one published number here, and Sprouts' own share of it is small. Channel share, not a measured product share.",
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. The category-penetration figure published for US laundry and home products is household penetration above 98% (indexbox), and dishwashing is named in that category's scope; no dish-soap-specific penetration figure is published. Sprouts' own share of the category is small. Channel share, not a measured product share.",
   "tier_note": "Grocery-chain private label. Disclosed under California SB-258, including a fragrance-allergen row (none declared for this variant).",
-  "tier_src": "https://www.sprouts.com/california-cleaning-product-right-to-know-act/"
+  "tier_src": "https://www.sprouts.com/california-cleaning-product-right-to-know-act/",
+  "source": "Sprouts California Cleaning Product Right to Know Act declaration",
+  "source_url": "https://www.sprouts.com/california-cleaning-product-right-to-know-act/"
  },
  {
   "name": "Zote Laundry Soap, Pink",
@@ -6863,7 +6879,7 @@
   "updated": "2026-09-25",
   "owner": "Fabrica de Jabon La Corona, S.A. de C.V.",
   "owner_ev": "reported",
-  "owner_src": "https://expansion.mx/empresas/2022/01/27/jabon-zote-elaboracion-tradicional-exportacion-mundial",
+  "owner_src": "https://www.mexicodesconocido.com.mx/historia-y-usos-del-jabon-zote-el-favorito-de-las-familias-mexicanas.html",
   "tier": "grocery",
   "tier_ev": "reported",
   "substitutes": [
@@ -6880,18 +6896,20 @@
   ],
   "exposure": 2,
   "exposure_ev": "extrapolated",
-  "exposure_src": "https://expansion.mx/empresas/2022/01/27/jabon-zote-elaboracion-tradicional-exportacion-mundial",
+  "exposure_src": "https://www.mexicodesconocido.com.mx/historia-y-usos-del-jabon-zote-el-favorito-de-las-familias-mexicanas.html",
   "conc": null,
   "conc_src": null,
   "conc_ev": "untested",
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. The pink bar is the brand's highest-volume line and about 15% of the brand's sales leave Mexico, primarily to the United States, so the product is genuinely common in US households even though no US penetration figure is published. The figure is a share of the laundry-bar segment, not of all US households.",
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. The pink bar is the brand's highest-volume line (expansion.mx, 2022), and about 15% of La Corona's production reaches markets outside Mexico, mainly South America and the United States (Mexico Desconocido, 2020), so the product is genuinely common in US households even though no US penetration figure is published. The figure is a share of the laundry-bar segment, not of all US households.",
   "heritage": true,
   "heritage_year": 1970,
   "heritage_note": "A Mexican laundry bar from 1970, sold from Ecatepec, that became a standard stain-treatment bar in US households long before any brand marketed to them.",
-  "tier_src": "https://directionsforme.org/product/7383"
+  "tier_src": "https://directionsforme.org/product/7383",
+  "source": "Retailer ingredient panel (directionsforme) + La Corona SDS",
+  "source_url": "https://directionsforme.org/product/7383"
  },
  {
   "name": "Zote Laundry Soap, White",
@@ -6908,7 +6926,7 @@
   "updated": "2026-09-25",
   "owner": "Fabrica de Jabon La Corona, S.A. de C.V.",
   "owner_ev": "reported",
-  "owner_src": "https://expansion.mx/empresas/2022/01/27/jabon-zote-elaboracion-tradicional-exportacion-mundial",
+  "owner_src": "https://www.mexicodesconocido.com.mx/historia-y-usos-del-jabon-zote-el-favorito-de-las-familias-mexicanas.html",
   "tier": "grocery",
   "tier_ev": "reported",
   "substitutes": [
@@ -6920,18 +6938,20 @@
   ],
   "exposure": 1,
   "exposure_ev": "extrapolated",
-  "exposure_src": "https://expansion.mx/empresas/2022/01/27/jabon-zote-elaboracion-tradicional-exportacion-mundial",
+  "exposure_src": "https://www.mexicodesconocido.com.mx/historia-y-usos-del-jabon-zote-el-favorito-de-las-familias-mexicanas.html",
   "conc": null,
   "conc_src": null,
   "conc_ev": "untested",
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. The white bar is a smaller line than the pink bar, and about 15% of the brand's sales leave Mexico primarily to the United States. The figure is a share of the laundry-bar segment, not of all US households.",
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. The white bar is a smaller line than the pink bar, and about 15% of La Corona's production reaches markets outside Mexico, mainly South America and the United States (Mexico Desconocido, 2020). The figure is a share of the laundry-bar segment, not of all US households.",
   "heritage": true,
   "heritage_year": 1970,
   "heritage_note": "The same 1970 laundry bar in its white line, minimum 66% fatty acid content.",
-  "tier_src": "https://directionsforme.org/product/7383"
+  "tier_src": "https://directionsforme.org/product/7384",
+  "source": "Retailer ingredient panel (directionsforme) + La Corona SDS",
+  "source_url": "https://directionsforme.org/product/7384"
  },
  {
   "name": "Kirk's Original Coco Castile Soap",
@@ -6968,7 +6988,9 @@
   "heritage": true,
   "heritage_year": 1839,
   "heritage_note": "Castile soap made with coconut oil since 1839, one of the few bars in the database whose full ingredient list is short enough to read on the package.",
-  "tier_src": "https://kirkssoap.com/pages/our-ingredients"
+  "tier_src": "https://kirkssoap.com/pages/our-ingredients",
+  "source": "Kirk's manufacturer ingredient page",
+  "source_url": "https://kirkssoap.com/pages/our-ingredients"
  },
  {
   "name": "Arm & Hammer Liquid Laundry Detergent, Baking Soda Fresh",
