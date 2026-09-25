@@ -2,7 +2,7 @@
  {
   "name": "Windex Original",
   "brand": "SC Johnson",
-  "cat": "Glass Cleaner",
+  "cat": "Glass",
   "safe": null,
   "ings": [
    "Water",
@@ -249,7 +249,7 @@
  {
   "name": "Method All-Purpose",
   "brand": "SC Johnson",
-  "cat": "Eco-Friendly",
+  "cat": "All-Purpose",
   "safe": null,
   "ings": [
    "Water",
@@ -282,7 +282,7 @@
  {
   "name": "Mrs. Meyer's Multi-Surface",
   "brand": "SC Johnson",
-  "cat": "Eco-Friendly",
+  "cat": "All-Purpose",
   "safe": null,
   "ings": [
    "Water",
@@ -314,7 +314,7 @@
  {
   "name": "Seventh Gen All-Purpose",
   "brand": "Unilever",
-  "cat": "Eco-Friendly",
+  "cat": "All-Purpose",
   "safe": null,
   "ings": [
    "Water",
@@ -416,7 +416,7 @@
  {
   "name": "Lysol Toilet Bowl",
   "brand": "Reckitt",
-  "cat": "Toilet Cleaner",
+  "cat": "Bathroom",
   "safe": null,
   "ings": [
    "Hydrochloric Acid",
@@ -582,7 +582,7 @@
  {
   "name": "Clorox ToiletWand",
   "brand": "Clorox",
-  "cat": "Toilet Cleaner",
+  "cat": "Bathroom",
   "safe": null,
   "ings": [
    "Water",
@@ -615,7 +615,7 @@
  {
   "name": "Soft Scrub",
   "brand": "Henkel",
-  "cat": "Abrasive",
+  "cat": "Abrasive Cleanser",
   "safe": null,
   "ings": [
    "Limestone",
@@ -647,7 +647,7 @@
  {
   "name": "Bar Keepers Friend",
   "brand": "BKF",
-  "cat": "Specialty",
+  "cat": "Abrasive Cleanser",
   "safe": "Sifter grade D — worst credible dimension: organ D (feldspar H373 silica, oxalic acid H372-class organ effects; High evidence)",
   "ings": [
    "Feldspar",
@@ -699,7 +699,7 @@
  {
   "name": "Pledge",
   "brand": "SC Johnson",
-  "cat": "Polish",
+  "cat": "Wood & Stone Care",
   "safe": null,
   "ings": [
    "Water",
@@ -733,7 +733,7 @@
  {
   "name": "Febreze",
   "brand": "P&G",
-  "cat": "Fabric",
+  "cat": "Laundry",
   "safe": null,
   "ings": [
    "Water",
@@ -766,7 +766,7 @@
  {
   "name": "Drano Max Gel",
   "brand": "SC Johnson",
-  "cat": "Drain",
+  "cat": "Specialty",
   "safe": null,
   "ings": [
    "Water",
@@ -830,7 +830,7 @@
  {
   "name": "Bon Ami",
   "brand": "Faultless",
-  "cat": "Eco-Friendly",
+  "cat": "Abrasive Cleanser",
   "safe": null,
   "ings": [
    "Calcium Carbonate",
@@ -863,7 +863,7 @@
  {
   "name": "Ajax Powder",
   "brand": "Colgate-Palmolive",
-  "cat": "Abrasive",
+  "cat": "Abrasive Cleanser",
   "safe": null,
   "ings": [
    "Calcium Carbonate",
@@ -897,7 +897,7 @@
  {
   "name": "Swiffer WetJet",
   "brand": "P&G",
-  "cat": "Floor",
+  "cat": "Floor & Carpet",
   "safe": null,
   "ings": [
    "Water",
@@ -930,7 +930,7 @@
  {
   "name": "Green Works",
   "brand": "Clorox",
-  "cat": "Eco-Friendly",
+  "cat": "All-Purpose",
   "safe": null,
   "ings": [
    "Water",
@@ -965,7 +965,7 @@
  {
   "name": "ECOS Dishmate",
   "brand": "ECOS",
-  "cat": "Eco-Friendly",
+  "cat": "Dish Soap",
   "safe": null,
   "ings": [
    "Water",
@@ -999,7 +999,7 @@
  {
   "name": "Biokleen All-Purpose",
   "brand": "Biokleen",
-  "cat": "Eco-Friendly",
+  "cat": "All-Purpose",
   "safe": null,
   "ings": [
    "Water",
@@ -1033,7 +1033,7 @@
  {
   "name": "Dr. Bronner's Sal Suds",
   "brand": "Dr. Bronner's",
-  "cat": "Eco-Friendly",
+  "cat": "All-Purpose",
   "safe": null,
   "ings": [
    "Water",
@@ -1067,7 +1067,7 @@
  {
   "name": "Grove Co. Multi-Purpose",
   "brand": "Grove",
-  "cat": "Eco-Friendly",
+  "cat": "All-Purpose",
   "safe": null,
   "ings": [
    "Water",
@@ -1559,7 +1559,7 @@
  {
   "name": "Peppermint Pure Essential Oil (BMVC)",
   "brand": "Aura Cacia",
-  "cat": "Essential Oil",
+  "cat": "Specialty",
   "safe": null,
   "ings": [
    "Organic Peppermint Oil"
@@ -1587,7 +1587,7 @@
  {
   "name": "Organic Essential Oils Kit (BMVC)",
   "brand": "NOW Foods",
-  "cat": "Essential Oil",
+  "cat": "Specialty",
   "safe": "Sifter grade F — env F (lemon oil H400 aquatic toxin) and derm D across oils; Low evidence (undisclosed oil composition)",
   "ings": [
    "Lavender Oil",
@@ -1626,7 +1626,7 @@
  {
   "name": "Granite & Stone Cleaner (BMVC)",
   "brand": "Ever Spring",
-  "cat": "Surface Cleaner",
+  "cat": "Wood & Stone Care",
   "safe": null,
   "ings": [
    "Water",
@@ -1662,7 +1662,7 @@
  {
   "name": "Wood Surface Cleaner (BMVC)",
   "brand": "Ever Spring",
-  "cat": "Surface Cleaner",
+  "cat": "Wood & Stone Care",
   "safe": null,
   "ings": [
    "Water",
@@ -2543,7 +2543,7 @@
  {
   "name": "Floor Surface Cleaner, Citrus Zest",
   "brand": "ATTITUDE",
-  "cat": "Floor",
+  "cat": "Floor & Carpet",
   "safe": "EWG Verified",
   "ings": [
    "Water",
@@ -2704,7 +2704,7 @@
  {
   "name": "Toilet Bowl Cleaner",
   "brand": "Green Shield Organic",
-  "cat": "Toilet",
+  "cat": "Bathroom",
   "safe": "EWG top-rated",
   "ings": [
    "Plant-based surfactants",
@@ -2797,7 +2797,7 @@
  {
   "name": "Toilet Bowl Cleaner, Emerald Cypress & Fir",
   "brand": "Seventh Generation",
-  "cat": "Toilet",
+  "cat": "Bathroom",
   "safe": "EWG top-rated, EPA Safer Choice",
   "ings": [
    "Plant-based surfactants",
@@ -2893,7 +2893,7 @@
  {
   "name": "Toilet Kleener, Natural Cedar",
   "brand": "ECOS",
-  "cat": "Toilet",
+  "cat": "Bathroom",
   "safe": "EWG top-rated",
   "ings": [
    "Water",
@@ -2925,7 +2925,7 @@
  {
   "name": "Toilet Bowl Cleaner Pine Fresh",
   "brand": "Ecover",
-  "cat": "Toilet",
+  "cat": "Bathroom",
   "safe": "EWG top-rated, EPA Safer Choice",
   "ings": [
    "Water",
@@ -2957,7 +2957,7 @@
  {
   "name": "Cream Scrub",
   "brand": "Ecover",
-  "cat": "Abrasive",
+  "cat": "Abrasive Cleanser",
   "safe": "EWG top-rated",
   "ings": [
    "Calcium Carbonate",
@@ -3079,7 +3079,7 @@
  {
   "name": "Powder Cleanser",
   "brand": "Bon Ami",
-  "cat": "Abrasive",
+  "cat": "Abrasive Cleanser",
   "safe": "EWG top-rated",
   "ings": [
    "Limestone",
@@ -3386,7 +3386,7 @@
  {
   "name": "Floor Cleaner",
   "brand": "Bona",
-  "cat": "Floor",
+  "cat": "Floor & Carpet",
   "safe": "EPA Safer Choice",
   "ings": [
    "Water",
@@ -3475,7 +3475,7 @@
  {
   "name": "OxiClean Baby Stain Soaker",
   "brand": "OxiClean",
-  "cat": "Laundry",
+  "cat": "Stain & Odor",
   "safe": "EWG top-rated",
   "ings": [
    "Sodium Carbonate Peroxide",
@@ -3601,7 +3601,7 @@
  {
   "name": "Glass Cleaner Concentrate 1A",
   "brand": "3M",
-  "cat": "Glass (Commercial)",
+  "cat": "Glass",
   "safe": "Green Seal",
   "ings": [],
   "heritage": false,
@@ -3627,7 +3627,7 @@
  {
   "name": "Focus MP 11 Multi-Purpose",
   "brand": "Focus",
-  "cat": "All-Purpose (Commercial)",
+  "cat": "All-Purpose",
   "safe": "Green Seal",
   "ings": [],
   "heritage": false,
@@ -3653,7 +3653,7 @@
  {
   "name": "Green Link Multi-Clean Degreaser",
   "brand": "Zep",
-  "cat": "All-Purpose (Commercial)",
+  "cat": "All-Purpose",
   "safe": "Green Seal",
   "ings": [],
   "heritage": false,
@@ -3679,7 +3679,7 @@
  {
   "name": "Green Link Neutral Floor Cleaner",
   "brand": "Zep",
-  "cat": "Floor (Commercial)",
+  "cat": "Floor & Carpet",
   "safe": "Green Seal",
   "ings": [],
   "heritage": false,
@@ -3705,7 +3705,7 @@
  {
   "name": "HOST Dry Carpet Cleaner",
   "brand": "HOST",
-  "cat": "Carpet",
+  "cat": "Floor & Carpet",
   "safe": "Green Seal",
   "ings": [],
   "heritage": false,
@@ -3731,7 +3731,7 @@
  {
   "name": "Carpet & Upholstery Concentrate",
   "brand": "Procyon",
-  "cat": "Carpet",
+  "cat": "Floor & Carpet",
   "safe": "Green Seal",
   "ings": [],
   "heritage": false,
@@ -3804,7 +3804,7 @@
  {
   "name": "Easy-Off Heavy Duty Oven Cleaner",
   "brand": "Reckitt",
-  "cat": "Oven Cleaner",
+  "cat": "Specialty",
   "safe": null,
   "ings": [
    "Water",
@@ -3871,7 +3871,7 @@
  {
   "name": "Tide Original Liquid Laundry",
   "brand": "P&G",
-  "cat": "Laundry Detergent",
+  "cat": "Laundry",
   "safe": null,
   "ings": [
    "Water",
@@ -3941,7 +3941,7 @@
  {
   "name": "Lysol Multi-Surface Cleaner",
   "brand": "Reckitt",
-  "cat": "Multi-Surface Cleaner",
+  "cat": "All-Purpose",
   "safe": null,
   "ings": [
    "Water",
@@ -4043,7 +4043,7 @@
  {
   "name": "Dawn Ultra Dishwashing Liquid",
   "brand": "Dawn",
-  "cat": "dish",
+  "cat": "Dish Soap",
   "safe": false,
   "cert": null,
   "ings": [
@@ -4083,7 +4083,7 @@
  {
   "name": "Glass Cleaner",
   "brand": "Method",
-  "cat": "Glass Cleaner",
+  "cat": "Glass",
   "safe": null,
   "ings": [
    "Water",
@@ -4153,7 +4153,7 @@
  {
   "name": "Murphy Oil Soap",
   "brand": "Colgate-Palmolive",
-  "cat": "Wood Cleaner",
+  "cat": "Wood & Stone Care",
   "safe": null,
   "ings": [
    "Water",
@@ -4187,7 +4187,7 @@
  {
   "name": "Cascade Complete ActionPacs",
   "brand": "P&G",
-  "cat": "Dishwasher Detergent",
+  "cat": "Dishwasher",
   "safe": null,
   "ings": [
    "Sodium Carbonate",
@@ -4236,7 +4236,7 @@
  {
   "name": "Fresh Gel Toilet Cleaning Stamp",
   "brand": "SC Johnson",
-  "cat": "Toilet Cleaner",
+  "cat": "Bathroom",
   "safe": null,
   "ings": [
    "Water",
@@ -4275,7 +4275,7 @@
  {
   "name": "Biokleen Bac-Out Stain & Odor Eliminator",
   "brand": "Biokleen",
-  "cat": "Specialty",
+  "cat": "Stain & Odor",
   "safe": null,
   "ings": [
    "Water",
@@ -4315,7 +4315,7 @@
  {
   "name": "Puracy Natural Multi-Surface Cleaner (Green Tea & Lime)",
   "brand": "Puracy",
-  "cat": "Multi-Surface Cleaner",
+  "cat": "All-Purpose",
   "safe": null,
   "ings": [
    "Water",
@@ -4396,7 +4396,7 @@
  {
   "name": "Granite Gold Daily Cleaner",
   "brand": "Granite Gold",
-  "cat": "Stone & Granite",
+  "cat": "Wood & Stone Care",
   "safe": null,
   "ings": [
    "Water",
@@ -4431,7 +4431,7 @@
  {
   "name": "Resolve Heavy Traffic Foam Carpet Cleaner",
   "brand": "Reckitt",
-  "cat": "Carpet",
+  "cat": "Floor & Carpet",
   "safe": null,
   "ings": [
    "Water",
@@ -4474,7 +4474,7 @@
  {
   "name": "Krud Kutter Original Cleaner & Degreaser",
   "brand": "Rust-Oleum",
-  "cat": "Degreaser",
+  "cat": "Specialty",
   "safe": null,
   "ings": [
    "Water",
@@ -4633,7 +4633,7 @@
  {
   "name": "OxiClean Versatile Stain Remover",
   "brand": "Church & Dwight",
-  "cat": "Stain Remover",
+  "cat": "Stain & Odor",
   "safe": null,
   "ings": [
    "Sodium Carbonate",
@@ -4668,7 +4668,7 @@
  {
   "name": "Woolite Delicates Laundry Detergent",
   "brand": "Reckitt",
-  "cat": "Laundry Detergent",
+  "cat": "Laundry",
   "safe": null,
   "ings": [
    "Water",
@@ -4714,7 +4714,7 @@
  {
   "name": "Mr. Clean Magic Eraser",
   "brand": "P&G",
-  "cat": "Specialty",
+  "cat": "Physical",
   "safe": null,
   "ings": [
    "Formaldehyde-Melamine-Sodium Bisulfite Copolymer"
@@ -4878,7 +4878,7 @@
  {
   "name": "Downy Ultra Free & Gentle Liquid Fabric Conditioner",
   "brand": "P&G",
-  "cat": "Fabric Softener",
+  "cat": "Laundry",
   "safe": null,
   "ings": [
    "Water",
@@ -4954,7 +4954,7 @@
  {
   "name": "Spray 'n Wash Laundry Stain Remover",
   "brand": "Reckitt",
-  "cat": "Stain Remover",
+  "cat": "Stain & Odor",
   "safe": null,
   "ings": [
    "Water",
@@ -5108,7 +5108,7 @@
  {
   "name": "Shout Advanced Stain Remover Action Gel",
   "brand": "SC Johnson",
-  "cat": "Stain Remover",
+  "cat": "Stain & Odor",
   "safe": null,
   "ings": [
    "Water",
@@ -5149,7 +5149,7 @@
  {
   "name": "The Works Toilet Bowl Cleaner",
   "brand": "HomeCare Labs",
-  "cat": "Toilet",
+  "cat": "Bathroom",
   "safe": null,
   "ings": [
    "Water",
@@ -5190,7 +5190,7 @@
  {
   "name": "Bounce Fabric Softener Sheets, Outdoor Fresh",
   "brand": "P&G",
-  "cat": "Fabric Softener",
+  "cat": "Laundry",
   "safe": null,
   "ings": [
    "Polyester Sheet",
@@ -5360,7 +5360,7 @@
  {
   "name": "Clorox Toilet Bowl Cleaner with Bleach, Fresh Scent",
   "brand": "Clorox",
-  "cat": "Toilet Cleaner",
+  "cat": "Bathroom",
   "safe": null,
   "ings": [
    "Water",
@@ -5529,7 +5529,7 @@
  {
   "name": "Great Value Clear Ammonia All Purpose Cleaner",
   "brand": "Great Value",
-  "cat": "Glass",
+  "cat": "All-Purpose",
   "safe": null,
   "ings": [
    "Water",
@@ -5792,7 +5792,7 @@
  {
   "name": "all free clear Original Concentrated Liquid Laundry Detergent",
   "brand": "Henkel",
-  "cat": "Laundry Detergent",
+  "cat": "Laundry",
   "safe": null,
   "ings": [
    "Water",
@@ -6005,7 +6005,7 @@
  {
   "name": "Kirkland Signature Ultra Shine Plant-Based Dish Soap",
   "brand": "Kirkland Signature",
-  "cat": "Dish",
+  "cat": "Dish Soap",
   "safe": "Sifter grade F - worst credible dimension: env F (limonene, GHS H400 aquatic acute toxicity and H315/H317 skin hazard; High evidence)",
   "ings": [
    "Sodium Lauryl Sulfate",
@@ -6054,7 +6054,7 @@
  {
   "name": "Kirkland Signature Ultra Shine Premium Dish Soap (Citrus Scent)",
   "brand": "Kirkland Signature",
-  "cat": "Dish",
+  "cat": "Dish Soap",
   "safe": null,
   "ings": [
    "Sodium Lauryl Sulfate"
@@ -6349,7 +6349,7 @@
  {
   "name": "Liquid-Plumr Pro-Strength Clog Destroyer Gel with Pipeguard",
   "brand": "Clorox",
-  "cat": "Drain",
+  "cat": "Specialty",
   "safe": null,
   "ings": [
    "Water",
@@ -6418,7 +6418,7 @@
  {
   "name": "Folex Instant Carpet Spot Remover",
   "brand": "Folex",
-  "cat": "Carpet",
+  "cat": "Floor & Carpet",
   "safe": null,
   "ings": [
    "Water",
@@ -6454,7 +6454,7 @@
  {
   "name": "Old English Lemon Oil Furniture Polish",
   "brand": "Reckitt",
-  "cat": "Polish",
+  "cat": "Wood & Stone Care",
   "safe": null,
   "ings": [
    "Distillates (petroleum), hydrotreated middle"
@@ -6739,7 +6739,7 @@
  {
   "name": "Whole Foods Market Organic Multisurface Cleaner, Lavender Lemon",
   "brand": "Whole Foods",
-  "cat": "Multi-Surface Cleaner",
+  "cat": "All-Purpose",
   "safe": null,
   "ings": [
    "Water",
@@ -6995,7 +6995,7 @@
  {
   "name": "Arm & Hammer Liquid Laundry Detergent, Baking Soda Fresh",
   "brand": "Church & Dwight",
-  "cat": "Laundry Detergent",
+  "cat": "Laundry",
   "safe": null,
   "ings": [
    "Water",
@@ -7065,7 +7065,7 @@
  {
   "name": "Xtra Liquid Laundry Detergent, Tropical Passion",
   "brand": "Church & Dwight",
-  "cat": "Laundry Detergent",
+  "cat": "Laundry",
   "safe": null,
   "ings": [
    "Water",
@@ -7129,7 +7129,7 @@
  {
   "name": "Glass Plus Cleaner",
   "brand": "Reckitt",
-  "cat": "Glass Cleaner",
+  "cat": "Glass",
   "safe": null,
   "ings": [
    "Water",
@@ -7180,7 +7180,7 @@
  {
   "name": "Lime-A-Way Toilet Bowl Cleaner",
   "brand": "Reckitt",
-  "cat": "Toilet Bowl Cleaner",
+  "cat": "Bathroom",
   "safe": null,
   "ings": [
    "Water",

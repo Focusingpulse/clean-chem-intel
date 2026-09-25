@@ -1,0 +1,6 @@
+{
+ "next_run": "C",
+ "last_run": "B",
+ "last_run_date": "2026-09-25",
+ "note": "RUN A = product additions (research-driven). RUN B = presentation / EWG-killer layer. RUN C = data quality pass. This file is the rotation state for the clean-chem-grow cron (Mon/Wed/Fri 12:00 UTC). Recreated 2026-09-25 because it was missing; the previous rotation is not recoverable, so the last verified position is recorded here from this fire forward."
+}
