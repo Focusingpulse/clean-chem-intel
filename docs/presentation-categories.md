@@ -9,6 +9,26 @@ description: The 14 category values the database uses, the alias map that produc
 **Implemented by:** `tools/normalize_categories.py` (idempotent; run it, do not hand-edit `cat`)
 **Current run:** 38 distinct values -> **14**, 72 records rewritten, 0 other fields touched
 
+## Revision 1 — 2026-09-25: the migration was not idempotent when first committed
+
+The first commit of the script (`351abe5`) described it as idempotent. **It was not.** The
+alias map's *values* were not also *keys*, so a second run hit the unmapped-value halt on
+`Wood & Stone Care`. The claim was measured on the run that changed things and asserted on the
+run that did not exist. Corrected in the next commit:
+
+- identity maps added for the three split-out canonical values,
+- a startup assertion that every canonical value in the map resolves to itself, so this
+  specific false-idempotency cannot ship again,
+- the writer no longer appends a trailing newline, which the source file does not have, so a
+  no-change run now leaves the tree clean instead of showing a one-line diff every time.
+
+Verified after the fix: two consecutive runs both report `records changed: 0` and
+`git diff data/products.json` is empty.
+
+**A lesson worth keeping:** "idempotent" is a claim about the second run, and the second run
+has to be executed before the word is used. Running the migration once proves the
+migration; it does not prove the re-run.
+
 ## Why
 
 The `cat` field is rendered directly as the filter chip row on the public page

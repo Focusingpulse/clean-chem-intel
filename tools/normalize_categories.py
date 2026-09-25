@@ -61,6 +61,7 @@ ALIASES: dict[str, str] = {
     "Floor": "Floor & Carpet",
     "Floor (Commercial)": "Floor & Carpet",
     "Carpet": "Floor & Carpet",
+    "Floor & Carpet": "Floor & Carpet",
     # split out of CCI-006's Specialty tail (each 5+ items)
     "Hand Soap": "Hand Soap",
     "Abrasive": "Abrasive Cleanser",
@@ -70,6 +71,7 @@ ALIASES: dict[str, str] = {
     "Wood Cleaner": "Wood & Stone Care",
     "Stone & Granite": "Wood & Stone Care",
     "Surface Cleaner": "Wood & Stone Care",  # both records are BMVC granite/wood care
+    "Wood & Stone Care": "Wood & Stone Care",
     "Physical": "Physical",
     # honest remainder
     "Specialty": "Specialty",
@@ -77,6 +79,10 @@ ALIASES: dict[str, str] = {
     "Drain": "Specialty",
     "Oven Cleaner": "Specialty",
     "Degreaser": "Specialty",
+    # identity maps for the split-out clusters, so a second run is a no-op
+    "Hand Soap": "Hand Soap",
+    "Abrasive Cleanser": "Abrasive Cleanser",
+    "Stain & Odor": "Stain & Odor",
 }
 
 # Per-product overrides where the old cat value was simply wrong for that item.
@@ -102,6 +108,14 @@ PRODUCT_OVERRIDES: dict[str, str] = {
     "Bon Ami": "Abrasive Cleanser",
     "ECOS Dishmate": "Dish Soap",
 }
+
+
+_CANONICAL = set(ALIASES.values()) | set(PRODUCT_OVERRIDES.values())
+_MISSING = sorted(c for c in _CANONICAL if c not in ALIASES)
+if _MISSING:
+    # A canonical value with no identity map halts on the second run and makes this
+    # script look idempotent when it is not. Fail loudly instead of shipping that.
+    raise SystemExit(f"HALT: canonical value(s) missing an identity map: {_MISSING}")
 
 
 def target(rec: dict) -> str:
@@ -142,8 +156,9 @@ def main() -> int:
         return 0
 
     with open(PRODUCTS, "w", encoding="utf-8") as fh:
+        # no trailing newline: match the file's existing bytes so a no-change run
+        # leaves the tree clean instead of showing a one-line diff every time.
         json.dump(products, fh, indent=1, ensure_ascii=False)
-        fh.write("\n")
     print(f"\nwrote {PRODUCTS}")
     return 0
 
