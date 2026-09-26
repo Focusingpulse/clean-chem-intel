@@ -270,6 +270,28 @@
    "brands": [
     "Zote"
    ]
+  },
+  "Albertsons Companies, Inc.": {
+   "type": "public (ACI)",
+   "detail": "Operates Albertsons, Safeway, Vons, Jewel-Osco and others; the Signature Select and Signature SELECT house brands are its private label, distributed through Better Living Brands LLC, Pleasanton, CA.",
+   "ev": "reported",
+   "src": "https://smartlabel.labelinsight.com/product/4844505/ingredients",
+   "brands": [
+    "Signature Select",
+    "Signature SELECT",
+    "Better Living Brands",
+    "O Organics"
+   ]
+  },
+  "Rite Aid Corporation": {
+   "type": "public (RAD, formerly NYSE)",
+   "detail": "Owns the Rite Aid and Simplify house brands; labeler of record on the FDA OTC listings.",
+   "ev": "verified",
+   "src": "https://ndclist.com/ndc/11822-2003",
+   "brands": [
+    "Rite Aid",
+    "Simplify"
+   ]
   }
  },
  "independents": {

@@ -3579,5 +3579,133 @@
   "gr": {},
   "impacts": [],
   "note": "Colorant (CI 42780, CAS 28983-56-4; PubChem title 'Methyl Blue'). PubChem CID 76956083 — reported as not meeting GHS hazard criteria by 2165 of 2210 companies. Disclosed by Reckitt SmartLabel for Lime-A-Way Toilet Bowl Cleaner; the disclosure flags it an AOEC asthmagen."
+ },
+ "Benzenesulfonic acid, C10-16-alkyl derivs., compds. with triethanolamine": {
+  "g": null,
+  "s": "Benzenesulfonic acid, C10-16-alkyl derivs., compds. with triethanolamine. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional."
+ },
+ "Fatty acids, C12-18, Me esters, sulfonated, sodium salts": {
+  "g": null,
+  "s": "Fatty acids, C12-18, Me esters, sulfonated, sodium salts. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional."
+ },
+ "Alcohols, C12-15, Ethoxylated": {
+  "g": null,
+  "s": "Alcohols, C12-15, Ethoxylated. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional."
+ },
+ "Benzene, C10-13 alkyl derivatives": {
+  "g": null,
+  "s": "Benzene, C10-13 alkyl derivatives. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional."
+ },
+ "Isobornyl Acetate": {
+  "g": null,
+  "s": "Isobornyl Acetate. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional."
+ },
+ "2,6-Dimethyl-7-octen-2-ol": {
+  "g": null,
+  "s": "2,6-Dimethyl-7-octen-2-ol. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional."
+ },
+ "Citronellyl Nitrile": {
+  "g": null,
+  "s": "Citronellyl Nitrile. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional."
+ },
+ "Terpinolene": {
+  "g": null,
+  "s": "Terpinolene. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional."
+ },
+ "Hexahydro-methanoindenyl propionate": {
+  "g": null,
+  "s": "Hexahydro-methanoindenyl propionate. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional."
+ },
+ "Terpineol": {
+  "g": null,
+  "s": "Terpineol. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional."
+ },
+ "Buteth-3": {
+  "g": null,
+  "s": "Buteth-3. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional."
+ },
+ "Colorant": {
+  "g": null,
+  "s": "Colorant. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional."
+ },
+ "Sodium Benzotriazolyl Butylphenol Sulfonate": {
+  "g": null,
+  "s": "Sodium Benzotriazolyl Butylphenol Sulfonate. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional."
+ },
+ "Tributyl Citrate": {
+  "g": null,
+  "s": "Tributyl Citrate. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional."
+ },
+ "Poloxamer 124": {
+  "g": null,
+  "s": "Poloxamer 124. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional."
+ },
+ "Hydroxyethylcellulose": {
+  "g": null,
+  "s": "Hydroxyethylcellulose. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "ev": "Low",
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional."
  }
 }
