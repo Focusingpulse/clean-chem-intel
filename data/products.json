@@ -16,7 +16,7 @@
   "heritage_year": 1933,
   "heritage_note": "Blue glass cleaner since the 1930s — most families' first window spray. Formula evolved (DBC solvent era → 2-butoxyethanol → modern).",
   "added": "2026-08-18",
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "owner": "SC Johnson",
   "owner_ev": "reported",
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
@@ -33,7 +33,7 @@
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Glass cleaner is a staple surface-cleaner segment; Windex is the category-defining brand. No per-product penetration figure published.",
-  "grade_note": "Sifter grade D — worst credible dimension: organ D (propylene glycol; Medium evidence)"
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (ammonium hydroxide H314 corrosive; High evidence). Rechecked 2026-09-26: prior D cited propylene glycol organ D, since dropped by verifier ruling."
  },
  {
   "name": "Formula 409",
@@ -159,7 +159,7 @@
   "heritage_year": 1889,
   "heritage_note": "Sold since the 1889 flu era as 'household disinfectant'. Early formulas even contained cresol; generations of sickness-cleaning trust.",
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-09-26",
   "owner": "Reckitt",
   "owner_ev": "reported",
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
@@ -175,7 +175,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "Lysol All Purpose Cleaner Spray sits in Amazon's Best Sellers in All-Purpose Household Cleaners (top-ranked listings, Sep 2026). Rank-based channel signal, not a measured share."
+  "exposure_basis": "Lysol All Purpose Cleaner Spray sits in Amazon's Best Sellers in All-Purpose Household Cleaners (top-ranked listings, Sep 2026). Rank-based channel signal, not a measured share.",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (quaternary ammonium H314 corrosive; High evidence)"
  },
  {
   "name": "Fabuloso",
@@ -193,7 +194,7 @@
   "heritage_year": 1980,
   "heritage_note": "Colgate's brightly colored multi-surface cleaner — a 1980s–90s kitchen fixture, passed down by scent loyalty.",
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-09-26",
   "owner": "Colgate-Palmolive",
   "owner_ev": "reported",
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
@@ -209,7 +210,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Fabuloso appears in Amazon Best Sellers in All-Purpose Household Cleaners (Sep 2026); Colgate-Palmolive's mass-market floor and surface cleaner."
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Fabuloso appears in Amazon Best Sellers in All-Purpose Household Cleaners (Sep 2026); Colgate-Palmolive's mass-market floor and surface cleaner.",
+  "grade_note": "Sifter grade D — worst credible dimension: derm D (sodium dodecylbenzenesulfonate H318 serious eye damage; Medium evidence)"
  },
  {
   "name": "Simple Green",
@@ -227,7 +229,7 @@
   "heritage_year": 1975,
   "heritage_note": "The 1970s 'environmentally friendly' pioneer — one of the first green-label cleaners in ordinary homes.",
   "added": "2026-08-18",
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "owner": null,
   "owner_ev": "untested",
   "owner_src": null,
@@ -244,7 +246,7 @@
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated.",
-  "grade_note": "Sifter grade C — worst credible dimension: derm C (tetrasodium glutamate diacetate H319 eye irritant; Medium evidence)"
+  "grade_note": "Sifter grade A — no credible hazard dimension at Medium+ evidence after the tetrasodium glutamate diacetate H319 grade was withdrawn (below 40% consensus). Undisclosed 'surfactant' and fragrance limit confidence. Rechecked 2026-09-26; prior C cited the withdrawn grade."
  },
  {
   "name": "Method All-Purpose",
@@ -293,7 +295,7 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-09-26",
   "owner": "SC Johnson",
   "owner_ev": "reported",
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
@@ -309,7 +311,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated."
+  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated.",
+  "grade_note": "Sifter grade C — worst credible dimension: derm C (citric acid H319 eye irritant; High evidence)"
  },
  {
   "name": "Seventh Gen All-Purpose",
@@ -325,7 +328,7 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-09-26",
   "owner": "Unilever",
   "owner_ev": "reported",
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
@@ -341,7 +344,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Eco all-purpose lines are a low-single-digit share of surface care."
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Eco all-purpose lines are a low-single-digit share of surface care.",
+  "grade_note": "Sifter grade C — worst credible dimension: derm C (citric acid H319 eye irritant; High evidence)"
  },
  {
   "name": "Clorox Bleach",
@@ -358,7 +362,7 @@
   "heritage_year": 1913,
   "heritage_note": "The original household disinfectant, in cupboards for 100+ years. Effective but carries respiratory + repro flags on routine indoor use.",
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-09-26",
   "owner": "Clorox",
   "owner_ev": "reported",
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
@@ -376,7 +380,8 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Bleach retains broad institutional and residential use; Clorox is the leading bleach brand. No per-product penetration figure published.",
   "tier_src": null,
-  "tier_basis": "searched for a published definition of this tier and found none that names the product. The tier was assigned by exclusion rather than by a source, so it is downgraded to untested rather than left marked reported with nothing to point at. A guessed tier is worse than no tier."
+  "tier_basis": "searched for a published definition of this tier and found none that names the product. The tier was assigned by exclusion rather than by a source, so it is downgraded to untested rather than left marked reported with nothing to point at. A guessed tier is worse than no tier.",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (sodium hypochlorite H314 corrosive; High evidence)"
  },
  {
   "name": "Lysol Disinfectant Spray",

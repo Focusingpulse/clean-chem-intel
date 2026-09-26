@@ -315,7 +315,7 @@
   "ev": "High",
   "g": "H314,H318",
   "gr": {
-   "derm": "D",
+   "derm": "F",
    "repro": "C",
    "resp": "C",
    "work": "C"
@@ -324,7 +324,7 @@
    "derm",
    "resp"
   ],
-  "note": null,
+  "note": "Verify lane 2026-09-26 (Sifter, PubChem CID 14923): H314 100% -> derm D -> F (corrosive; was an undergraded v2 hand grade). H331 100% supports resp C. repro C carries no repro H-code in this record - flagged for the verification lane's dimension_without_hcode screen, not auto-dropped.",
   "reclassified": [
    "Ammonia was grandma's go-to; strong respiratory irritant, and mixing with bleach produces chloramine gas — a documented household emergency."
   ],
@@ -1403,19 +1403,19 @@
  },
  "Formaldehyde": {
   "ev": "High",
-  "g": "H350,H317,H341",
+  "g": "H314,H317,H331,H334,H341,H350",
   "gr": {
    "canc": "A",
-   "derm": "D",
-   "resp": "C"
+   "derm": "F",
+   "resp": "D"
   },
   "impacts": [
-   "canc",
    "allerg",
+   "canc",
    "derm",
    "resp"
   ],
-  "note": "Rarely a direct cleaning-product ingredient; included to anchor formaldehyde-releaser entries.",
+  "note": "Verify lane 2026-09-26 (Sifter, PubChem CID 712): harmonized classification H314 (100%), H330 (14% only, so not F), H331 77.6%, H334 respiratory sensitizer 100%, H350 100%. derm D -> F (H314 corrosive, harmonized); resp C -> D (H334 sensitizer + H331 toxic-if-inhaled at consensus). canc A retained per house convention (canc traces to H350; see 1,4-Dioxane note). Rarely a direct cleaning-product ingredient; included to anchor formaldehyde-releaser entries.",
   "reclassified": [
    "Once a common preservative in consumer products; now CLP Category 1B carcinogen. US bans it in cosmetics but formaldehyde-RELEASING preservatives (DMDM Hydantoin etc.) remain unlabeled."
   ],
@@ -1569,12 +1569,12 @@
   "ev": "High",
   "g": "H314",
   "gr": {
-   "derm": "D"
+   "derm": "F"
   },
   "impacts": [
    "derm"
   ],
-  "note": null,
+  "note": "Graded from PubChem GHS (CID 757): H314 99.7% (corrosive), H302 82.6%. derm D -> F corrected by Sifter verify lane 2026-09-26 (H314 at >=40% consensus is F per scorer mapping; was an undergraded v2 hand grade).",
   "s": "Corrosive"
  },
  "Helianthus Annuus Seed Oil": {
@@ -2659,13 +2659,13 @@
   "ev": "High",
   "g": "H290,H314,H318",
   "gr": {
-   "derm": "B"
+   "derm": "F"
   },
   "impacts": [
    "derm"
   ],
-  "note": "Corrosive in pure form; neutralized in finished products.",
-  "s": "Corrosive in pure form, but neutralized in final product"
+  "note": "Verify lane 2026-09-26 (Sifter, PubChem CID 14797): H314 100% -> derm B -> F. Per decision 4 the ingredient entry grades the pure substance; the neutralized-in-finished-product consideration belongs to the product's as-sold grade, not here.",
+  "s": "Corrosive (H314 100% consensus); neutralized in final product"
  },
  "Potassium Iodide": {
   "ev": "Medium",
@@ -3309,7 +3309,7 @@
   "ev": "Medium",
   "g": "H314,H335",
   "gr": {
-   "derm": "D",
+   "derm": "F",
    "resp": "C",
    "work": "C"
   },
@@ -3317,7 +3317,7 @@
    "resp",
    "derm"
   ],
-  "note": null,
+  "note": "Verify lane 2026-09-26 (Sifter, PubChem CID 23266): H314 100%, H318 61.5%, H335 100% -> derm D -> F (corrosive; was an undergraded v2 hand grade). resp C traces to H335 100%.",
   "s": "Alkaline silicate. Corrosive; dust respiratory irritant."
  },
  "Sodium Stearate": {
@@ -3538,12 +3538,13 @@
  "Tetrasodium Glutamate Diacetate": {
   "ev": "Medium",
   "g": "Not Classified",
-  "gr": {
-   "derm": "C"
-  },
+  "gr": {},
   "impacts": [],
-  "note": "Graded from PubChem GHS (CID 44630158). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. H290 22.8%, H319 31.7%, H335 22.4% — all below the 40% threshold, so none drive a grade. Earlier H319 grade withdrawn.",
-  "s": "No GHS hazard criteria met"
+  "note": "Graded from PubChem GHS (CID 44630158). Health grades driven solely by the headline ECHA C&L aggregated block (largest company count) via PubChem GHS; only H-codes at >=40% notifier consensus count. Revised 2026-09-17 per Linnea CCI-004/005 FAIL verdicts. H290 22.8%, H319 31.7%, H335 22.4% — all below the 40% threshold, so none drive a grade. Earlier H319 grade withdrawn. Sifter verify 2026-09-26: derm C was still present in gr despite this note's withdrawal ruling - removed, gr_ruled derm added so seeds cannot refill it.",
+  "s": "No GHS hazard criteria met",
+  "gr_ruled": [
+   "derm"
+  ]
  },
  "Tetrasodium Iminodisuccinate": {
   "ev": "High",
