@@ -63,7 +63,7 @@ LANE_REGISTRY = {
 # two-level-grade-rule review 2026-09-23. "work" is excluded deliberately: it is
 # the rubric's PPE band, not a GHS code, and has no code to trace to.
 DIMENSION_HCODES = {
-    "derm":  ("H314", "H315", "H316", "H317", "H318"),
+    "derm":  ("H311", "H312", "H314", "H315", "H316", "H317", "H318"),
     "organ": ("H370", "H371", "H372", "H373"),
     "repro": ("H360", "H361", "H362", "H360D", "H360F", "H360FD"),
     "canc":  ("H350", "H351"),
@@ -72,7 +72,7 @@ DIMENSION_HCODES = {
     # repeated exposure", and when the named organ is the lung it IS the
     # respiratory code. Respirable crystalline silica is the textbook STOT RE
     # lung case. Linnea, dimension-traceability-rubric-2026-09-23.
-    "resp":  ("H334", "H335", "H336", "H373"),
+    "resp":  ("H330", "H331", "H332", "H334", "H335", "H336", "H373"),
     "endo":  ("H361", "H360", "H360F", "H360FD"),
     "env":   ("H400", "H410", "H411", "H412", "H413"),
 }
