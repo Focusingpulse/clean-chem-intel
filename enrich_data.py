@@ -176,6 +176,9 @@ HERITAGE = {
   "Febreze": {"year": 1998, "note": "Younger than the rest, but already inherited: the 'spray the couch' reflex is now a household ritual."},
   "Swiffer WetJet": {"year": 1999, "note": "P&G's mop reinvention — the modern 'clean floor' default already being handed down."},
   "Tilex Mold & Mildew": {"year": 1980, "note": "The bleach-based mold spray that bathrooms across two generations have reached for without gloves."},
+  "Zote Laundry Soap, Pink": {"year": 1970, "note": "A Mexican laundry bar from 1970, sold from Ecatepec, that became a standard stain-treatment bar in US households long before any brand marketed to them."},
+  "Zote Laundry Soap, White": {"year": 1970, "note": "The same 1970 laundry bar in its white line, minimum 66% fatty acid content."},
+  "Kirk's Original Coco Castile Soap": {"year": 1839, "note": "Castile soap made with coconut oil since 1839, one of the few bars in the database whose full ingredient list is short enough to read on the package."},
 }
 
 # ------------------------------------------------------------------
@@ -239,12 +242,22 @@ for v in ings.values():
     v.setdefault("note", None)
 
 # heritage on products
+# A seed table can only ADD a heritage flag; it must never UNDO one set on the
+# record itself. A sibling lane (spectrum build, f360db3) marks heritage products
+# with their own year+note, and a blind `else: heritage = False` silently erased
+# them on the next enrich run (Zote Pink/White, Kirk's Original Coco Castile).
+# "Removed" and "never set" are indistinguishable at the field level, so the rule
+# is: only write False when the field is genuinely absent.
+heritage_preserved = 0
 for p in products:
     if p["name"] in HERITAGE:
         h = HERITAGE[p["name"]]
         p["heritage"] = True
         p["heritage_year"] = h["year"]
         p["heritage_note"] = h["note"]
+    elif p.get("heritage") is True:
+        # set by another lane with its own evidence trail — do not downgrade
+        heritage_preserved += 1
     else:
         p["heritage"] = False
 

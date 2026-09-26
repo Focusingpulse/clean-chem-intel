@@ -6538,7 +6538,8 @@
   "tier_note": "House brand of a pharmacy chain; the drugstore bin is the brand's own definition, not an inference from the shelf it was found on.",
   "tier_src": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=63798c63-94fe-4ba8-8692-ca8be43c151e",
   "source": "FDA OTC drug label (DailyMed), labeler CVS Pharmacy",
-  "source_url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=63798c63-94fe-4ba8-8692-ca8be43c151e"
+  "source_url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=63798c63-94fe-4ba8-8692-ca8be43c151e",
+  "heritage": false
  },
  {
   "name": "Walgreens Antibacterial Hand Soap, Amber",
@@ -6595,7 +6596,8 @@
   "tier_note": "House brand of a pharmacy chain; the drugstore bin is the brand's own definition, not an inference from the shelf it was found on.",
   "tier_src": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b45cbd3b-cba7-4c26-90bf-ec729dae3f28",
   "source": "FDA OTC drug label (DailyMed), labeler Walgreen Co.",
-  "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b45cbd3b-cba7-4c26-90bf-ec729dae3f28"
+  "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b45cbd3b-cba7-4c26-90bf-ec729dae3f28",
+  "heritage": false
  },
  {
   "name": "Power Force Antibacterial Hand Soap, Green Apple",
@@ -6650,7 +6652,8 @@
   "tier_note": "Dollar Tree house brand. The FDA drug label names Korex Chicago LLC as the labeler of record, so the contract manufacturer is visible even though the retail brand owner is Dollar Tree.",
   "tier_src": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=aefc76f5-c3c9-4d0a-855b-5123325f93b5&type=pdf",
   "source": "FDA OTC drug label (DailyMed), labeler Korex Chicago LLC",
-  "source_url": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=aefc76f5-c3c9-4d0a-855b-5123325f93b5&type=pdf"
+  "source_url": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=aefc76f5-c3c9-4d0a-855b-5123325f93b5&type=pdf",
+  "heritage": false
  },
  {
   "name": "365 Everyday Value All-Purpose Cleaner, Wild Orange",
@@ -6693,7 +6696,8 @@
   "tier_note": "Grocery-chain private label. Disclosed under California SB-258 with CAS numbers on the Whole Foods household-cleaner page.",
   "tier_src": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure",
   "source": "Whole Foods Market household-cleaner ingredient disclosure (CA SB-258)",
-  "source_url": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure"
+  "source_url": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure",
+  "heritage": false
  },
  {
   "name": "365 by Whole Foods Market All Purpose Cleaner, Citrus",
@@ -6734,7 +6738,8 @@
   "tier_note": "Grocery-chain private label. Disclosed under California SB-258.",
   "tier_src": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure",
   "source": "Whole Foods Market household-cleaner ingredient disclosure (CA SB-258)",
-  "source_url": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure"
+  "source_url": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure",
+  "heritage": false
  },
  {
   "name": "Whole Foods Market Organic Multisurface Cleaner, Lavender Lemon",
@@ -6775,7 +6780,8 @@
   "tier_note": "Grocery-chain private label, organic line. Disclosed under California SB-258. The formula is soap- and peroxide-based rather than preservative-based, so the fragrance allergens are what carries the hazard.",
   "tier_src": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure",
   "source": "Whole Foods Market household-cleaner ingredient disclosure (CA SB-258)",
-  "source_url": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure"
+  "source_url": "https://www.wholefoodsmarket.com/legal/all-purpose-cleaner-disclosure",
+  "heritage": false
  },
  {
   "name": "Sprouts Citrus Scent All Purpose Cleaner",
@@ -6819,7 +6825,8 @@
   "tier_note": "Grocery-chain private label. Disclosed under California SB-258 with CAS numbers.",
   "tier_src": "https://www.sprouts.com/california-cleaning-product-right-to-know-act/",
   "source": "Sprouts California Cleaning Product Right to Know Act declaration",
-  "source_url": "https://www.sprouts.com/california-cleaning-product-right-to-know-act/"
+  "source_url": "https://www.sprouts.com/california-cleaning-product-right-to-know-act/",
+  "heritage": false
  },
  {
   "name": "Sprouts Free & Clear Dish Soap",
@@ -6860,7 +6867,8 @@
   "tier_note": "Grocery-chain private label. Disclosed under California SB-258, including a fragrance-allergen row (none declared for this variant).",
   "tier_src": "https://www.sprouts.com/california-cleaning-product-right-to-know-act/",
   "source": "Sprouts California Cleaning Product Right to Know Act declaration",
-  "source_url": "https://www.sprouts.com/california-cleaning-product-right-to-know-act/"
+  "source_url": "https://www.sprouts.com/california-cleaning-product-right-to-know-act/",
+  "heritage": false
  },
  {
   "name": "Zote Laundry Soap, Pink",
@@ -7060,7 +7068,8 @@
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Arm & Hammer is one of the largest US laundry brands and this is its mainstream scented liquid; the estimate stops at the brand's share of the mass channel rather than a measured product share.",
-  "tier_note": "Fragrance components are listed individually because the manufacturer disclosure lists them individually (Church & Dwight publishes fragrance components at or above 100 ppm or on a designated list); the DB's existing fragrance-allergen pattern."
+  "tier_note": "Fragrance components are listed individually because the manufacturer disclosure lists them individually (Church & Dwight publishes fragrance components at or above 100 ppm or on a designated list); the DB's existing fragrance-allergen pattern.",
+  "heritage": false
  },
  {
   "name": "Xtra Liquid Laundry Detergent, Tropical Passion",
@@ -7124,7 +7133,8 @@
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Xtra is a value-priced laundry brand sold through mass and dollar channels; the estimate stops at the brand's share of that channel rather than a measured product share.",
-  "tier_note": "Fragrance components are listed individually because the manufacturer disclosure lists them individually (Church & Dwight publishes fragrance components at or above 100 ppm or on a designated list); the DB's existing fragrance-allergen pattern."
+  "tier_note": "Fragrance components are listed individually because the manufacturer disclosure lists them individually (Church & Dwight publishes fragrance components at or above 100 ppm or on a designated list); the DB's existing fragrance-allergen pattern.",
+  "heritage": false
  },
  {
   "name": "Glass Plus Cleaner",
@@ -7175,7 +7185,8 @@
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Glass cleaner is a near-universal US household product and Glass Plus is a long-standing national brand; the estimate stops at the brand's share of the category rather than a measured product share.",
-  "tier_note": "Glass Plus is a Reckitt mass-market glass cleaner; the disclosure flags methoxyisopropanol on California's non-cancer hazard list and ethanolamine as an AOEC asthmagen."
+  "tier_note": "Glass Plus is a Reckitt mass-market glass cleaner; the disclosure flags methoxyisopropanol on California's non-cancer hazard list and ethanolamine as an AOEC asthmagen.",
+  "heritage": false
  },
  {
   "name": "Lime-A-Way Toilet Bowl Cleaner",
@@ -7221,6 +7232,7 @@
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Toilet-bowl cleaner is used in most US households and Lime-A-Way is a long-standing national brand; the estimate stops at the brand's share of the category rather than a measured product share.",
-  "tier_note": "A hydrochloric-acid bowl cleaner. The disclosure flags Acid Blue 93 as an AOEC asthmagen and methyl salicylate as an EU fragrance allergen."
+  "tier_note": "A hydrochloric-acid bowl cleaner. The disclosure flags Acid Blue 93 as an AOEC asthmagen and methyl salicylate as an EU fragrance allergen.",
+  "heritage": false
  }
 ]
