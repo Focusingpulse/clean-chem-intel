@@ -96,7 +96,8 @@
     "Purex",
     "All",
     "Dial",
-    "20 Mule Team"
+    "20 Mule Team",
+    "Fels-Naptha"
    ]
   },
   "Colgate-Palmolive": {
@@ -108,7 +109,8 @@
     "Ajax",
     "Fabuloso",
     "Palmolive",
-    "Softsoap"
+    "Softsoap",
+    "Suavitel"
    ]
   },
   "Clorox": {
@@ -187,9 +189,9 @@
   },
   "Greenbrier International": {
    "type": "private",
-   "detail": "Dollar Tree's product-development and import arm; the FDA labeler of record for Assured-brand products.",
-   "ev": "reported",
-   "src": "https://ndclist.com/ndc/33992-3033/label",
+   "detail": "Dollar Tree's product-development and import arm; the FDA labeler of record for Assured-brand products. DailyMed's label for Assured Antiseptic Wet Wipes names Greenbrier International, Inc. as both packager and labeler.",
+   "ev": "verified",
+   "src": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=c04e2921-20d7-43c2-b9b9-07df8e425312",
    "brands": [
     "Assured"
    ]
