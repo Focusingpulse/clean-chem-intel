@@ -3783,6 +3783,7 @@
   "impacts": [],
   "note": "Graded from PubChem GHS (CID 8146, CAS 111-90-0, title 'Diethylene Glycol Monoethyl Ether'): the ECHA C&L aggregate reports no hazard criteria met by 4397 of 4862 reports (90.4%). 11 notifications covering 465 of 4862 reports (9.6%) carry H227, H320 and H372 - all far below the 40% house bar, so no dimension grade is justified. H372 (organ damage on prolonged or repeated exposure) is noted here rather than graded, because a 9.6% notification ratio is not a consensus. Disclosed as a fragrance component by Reckitt SmartLabel for Vanish Oxi Action In-Wash Fabric Stain Remover; the disclosure flags it on California's toxic air contaminant list."
  },
+<<<<<<< Updated upstream
  "sodium lauryl sulfate": {
   "name": "Sodium Lauryl Sulfate",
   "cas": "",
@@ -3962,5 +3963,446 @@
   "impacts": [],
   "gr": {},
   "note": null
+=======
+ "Fragrance Oil": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Fragrance Oil. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "2-t-Butylcyclohexyl Acetate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "2-t-Butylcyclohexyl Acetate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Ethyl Hexanoate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Ethyl Hexanoate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "PPG-2 Methyl Ether Acetate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "PPG-2 Methyl Ether Acetate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Ethyl 2-Methylbutyrate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Ethyl 2-Methylbutyrate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "2-Phenoxyethyl Isobutyrate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "2-Phenoxyethyl Isobutyrate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "3a,4,5,6,7,7a-Hexahydro-4,7-methanoinden-6-yl Acetate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "3a,4,5,6,7,7a-Hexahydro-4,7-methanoinden-6-yl Acetate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Diethyl Malonate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Diethyl Malonate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Dimethylcyclohex-3-ene-1-carbaldehyde": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Dimethylcyclohex-3-ene-1-carbaldehyde. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Hexyl Acetate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Hexyl Acetate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "gamma-Undecalactone": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "gamma-Undecalactone. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Amyl Acetate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Amyl Acetate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "gamma-Nonalactone": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "gamma-Nonalactone. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Cinnamal": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Cinnamal. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Ionone": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Ionone. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Isopentyl Cyclohexyl Acetate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Isopentyl Cyclohexyl Acetate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Methylbenzyl Acetate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Methylbenzyl Acetate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Ethyl Butyrate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Ethyl Butyrate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "3-Hexenol": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "3-Hexenol. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "3-Methylbutyl Butyrate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "3-Methylbutyl Butyrate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Mixed Ionones": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Mixed Ionones. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Citrus Aurantium Dulcis (Orange) Peel Oil": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Citrus Aurantium Dulcis (Orange) Peel Oil. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Ethyl Hydroxypyrone": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Ethyl Hydroxypyrone. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Allyl 3-Cyclohexylpropionate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Allyl 3-Cyclohexylpropionate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Undecanal": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Undecanal. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Ethyl 2,4-Dimethyl-1,3-dioxolane-2-acetate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Ethyl 2,4-Dimethyl-1,3-dioxolane-2-acetate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Octanal": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Octanal. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Dimethyl Phenethyl Butyrate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Dimethyl Phenethyl Butyrate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Phenethyl Isobutyrate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Phenethyl Isobutyrate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Chouji Yu": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Chouji Yu. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Methyl N-Methylanthranilate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Methyl N-Methylanthranilate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Vanillin": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Vanillin. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Ethyl Vanillin": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Ethyl Vanillin. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "1-Methyl-4-(4-methylpentyl)cyclohex-3-ene-1-carbaldehyde": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "1-Methyl-4-(4-methylpentyl)cyclohex-3-ene-1-carbaldehyde. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Decanal": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Decanal. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Geranyl Acetate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Geranyl Acetate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "beta-Caryophyllene": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "beta-Caryophyllene. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Linalyl Acetate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Linalyl Acetate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Terpineol Acetate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Terpineol Acetate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Alcohol Denat.": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Alcohol Denat.. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "PEG-60 Hydrogenated Castor Oil": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "PEG-60 Hydrogenated Castor Oil. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Diethylhexyl Sodium Sulfosuccinate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Diethylhexyl Sodium Sulfosuccinate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Nitrogen": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Nitrogen. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Dihydrogenated Tallowamidoethyl Hydroxyethylmonium Methosulfate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Dihydrogenated Tallowamidoethyl Hydroxyethylmonium Methosulfate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Polyquaternium-32": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Polyquaternium-32. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Polyquaternium-7": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Polyquaternium-7. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Octylisothiazolinone": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Octylisothiazolinone. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Fatty Acids, Tallow, Sodium Salts": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Fatty Acids, Tallow, Sodium Salts. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Fatty Acids, Coconut Oil, Sodium Salts": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Fatty Acids, Coconut Oil, Sodium Salts. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Fatty Acids, Tallow": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Fatty Acids, Tallow. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Cineole": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Cineole. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Aloe Vera Leaf Extract": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Aloe Vera Leaf Extract. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Disodium Cocoamphodiacetate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Disodium Cocoamphodiacetate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Sorbitol": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Sorbitol. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Tocopheryl Acetate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "s": "Tocopheryl Acetate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+>>>>>>> Stashed changes
  }
 }
