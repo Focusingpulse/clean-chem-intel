@@ -33,6 +33,23 @@ products = json.loads(PRODUCTS.read_text(encoding="utf-8")) if PRODUCTS.exists()
 ings = json.loads(INGREDIENTS.read_text(encoding="utf-8")) if INGREDIENTS.exists() else {}
 def norm(s): return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
 
+# Ingredient keys must reuse an existing record that differs only by case.
+# Keying new records by `name.lower()` while the curated records are stored
+# capitalised re-created 18 case-variant duplicate keys on every run
+# ("Glycerin" + "glycerin", "Limonene" + "limonene", ...), which reopened the
+# `case_duplicate_grades` Class B lane each time it was closed and would have
+# halted the build on 2026-10-01. This resolves the existing key instead of
+# minting a second one for the same chemical.
+_INGS_BY_CASE = {k.lower(): k for k in ings}
+
+def ing_key(name: str) -> str:
+    """Existing ingredient key for `name`, case-insensitively, else name.lower()."""
+    return _INGS_BY_CASE.get(name.lower(), name.lower())
+
+def note_ing_key(key: str) -> None:
+    """Register a freshly created ingredient key so later lookups find it."""
+    _INGS_BY_CASE.setdefault(key.lower(), key)
+
 # Dedupe index MUST use the same normalization as add_product()'s lookup.
 # Keying this raw (strip().lower()) while looking up with norm() silently
 # re-added every seed product whose name/brand contains punctuation
@@ -77,11 +94,13 @@ def ingest_epa_scil(max_rows=500):
         chem = (row.get("Chemical Name") or row.get("Ingredient") or "").strip()
         cas = (row.get("CASRN") or row.get("CAS") or "").strip()
         if not chem: continue
-        if chem.lower() not in ings:
-            ings[chem.lower()] = {
+        _k = ing_key(chem)
+        if _k not in ings:
+            ings[_k] = {
                 "name": chem, "cas": cas, "source": "EPA SCIL",
                 "epa_safer": True, "ghs": None, "added": datetime.date.today().isoformat(),
             }
+            note_ing_key(_k)
             added += 1
     return added
 
@@ -135,10 +154,11 @@ def ingest_pubchem_sync():
     added = 0
     for name in INGREDIENT_SYNC_LIST:
         cas, canonical = verify_ingredient(name)
-        key = name.lower()
+        key = ing_key(name)
         if key not in ings:
             ings[key] = {"name": name, "cas": cas, "source": "PubChem PUG REST",
                          "ghs": None, "added": datetime.date.today().isoformat()}
+            note_ing_key(key)
             added += 1
         time.sleep(0.4)
     return added

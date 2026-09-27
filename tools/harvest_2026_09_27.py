@@ -52,12 +52,13 @@ GLADE_INGS = [
     "Tricyclodecenyl Propionate",
     "Dimethylcyclohex-3-ene-1-carbaldehyde",
     "Hexyl Acetate",
-    "gamma-Undecalactone",
+    # The SC Johnson page prints "gamma-undecalactone"; recorded under the existing
+    # key "Gamma-Undecalactone" to avoid re-creating a case-variant duplicate.
+    "Gamma-Undecalactone",
     "Amyl Acetate",
     "4-tert-Butylcyclohexyl Acetate",
     "gamma-Nonalactone",
-    "Cinnamal",
-    "Ionone",
+    "Cinnamal",    "Ionone",
     "Isopentyl Cyclohexyl Acetate",
     "Methylbenzyl Acetate",
     "Ethyl Butyrate",

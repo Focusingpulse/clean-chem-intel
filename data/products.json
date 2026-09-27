@@ -7556,11 +7556,8 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Gain is one of the largest US dish-soap brands and this is its mainstream original-scent liquid; the estimate stops at the brand's share of the mass channel rather than a measured product share.",
   "tier_note": "A mainstream hand dish liquid. The disclosure lists a colorant and a fragrance with no component breakdown, so the fragrance allergens are not enumerable from this source.",
-<<<<<<< Updated upstream
   "disclosure_note": "Source spellings mapped to canonical keys: 'C10-16 Alkyldimethylamine Oxide' -> Alkyldimethylamine Oxide; 'Colorants' -> Colorant; 'Fragrances' -> Fragrance.",
   "heritage": false
-=======
-  "disclosure_note": "Source spellings mapped to canonical keys: 'C10-16 Alkyldimethylamine Oxide' -> Alkyldimethylamine Oxide; 'Colorants' -> Colorant; 'Fragrances' -> Fragrance."
  },
  {
   "name": "Glade PlugIns Scented Oil Air Freshener Refills, Hawaiian Breeze",
@@ -7582,7 +7579,7 @@
    "Tricyclodecenyl Propionate",
    "Dimethylcyclohex-3-ene-1-carbaldehyde",
    "Hexyl Acetate",
-   "gamma-Undecalactone",
+   "Gamma-Undecalactone",
    "Amyl Acetate",
    "4-tert-Butylcyclohexyl Acetate",
    "gamma-Nonalactone",
@@ -7816,6 +7813,5 @@
   "strength_disclosure": "not_reviewed",
   "added": "2026-09-27",
   "updated": "2026-09-27"
->>>>>>> Stashed changes
  }
 ]
