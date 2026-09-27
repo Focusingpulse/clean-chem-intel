@@ -4257,5 +4257,162 @@
   "impacts": [],
   "note": "Added by the night-shift spectrum harvest (2026-09-27) from a manufacturer or manufacturer-filing disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
   "s": "Tocopheryl Acetate. Listed in a manufacturer disclosure read 2026-09-27; not yet graded against GHS."
+ },
+ "Distilled White Vinegar": {
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Label term for dilute acetic acid (food-grade white vinegar, ~4-8% acidity; the Aunt Fannie's page specifies food-grade). The hazard carrier is Acetic Acid, graded separately (derm F at the pure substance). At vinegar concentration the mixture is not GHS-classified; the two-level grading rule (docs/decisions.md #4) applies — the as-sold strength is far milder than the pure-acid grade.",
+  "s": "Dilute acetic acid and water; irritant at most at cleaning-vinegar strength."
+ },
+ "Caprylyl/Myristyl Glucoside": {
+  "ev": "Extrapolated",
+  "g": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Alkyl polyglucoside surfactant blend (label term); no direct PubChem record. Class-analogous to the existing glucoside entries (Caprylyl/Capryl Glucoside, Decyl Glucoside — mild, majority not classified or H315/H319 at ~50% consensus). Flagged for Linnea verification.",
+  "s": "Sugar-derived nonionic surfactant."
+ },
+ "Rosemary Oil": {
+  "ev": "Extrapolated",
+  "g": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Essential oil (Rosmarinus officinalis); no direct PubChem GHS record (PUG REST 404). The essential-oil class in this database carries skin-sensitization grades (H315/H317, derm C-D); extrapolated from class chemistry, not graded directly. Flagged for Linnea verification.",
+  "s": "Essential oil; sensitizer risk by class."
+ },
+ "Juniperus Mexicana Oil": {
+  "ev": "Low",
+  "g": "H315,H317",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "allerg"
+  ],
+  "note": "Texas cedarwood oil — same substance as the existing 'Cedar essential oil' entry; grades carried with cross-reference, not re-derived.",
+  "s": "Cedarwood essential oil; may cause skin sensitization."
+ },
+ "Lavandin Oil": {
+  "ev": "Extrapolated",
+  "g": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Lavandula hybrida (lavandin) oil — lavender/spike lavender hybrid, composition dominated by linalool and linalyl acetate like Lavender Oil (derm D, sensitizer). No direct PubChem record; extrapolated from the class, not graded directly. Flagged for Linnea verification.",
+  "s": "Lavender-family essential oil; sensitizer risk by class."
+ },
+ "Glass Oxide Abrasive": {
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Inorganic glass abrasive (CAS 65997-17-3 per the BKF SB-258 disclosure); no PubChem GHS record. Insoluble inert solid; recorded unclassified rather than assigned an unsourced grade. Nuisance-dust mechanical irritation at most.",
+  "s": "Inert glass abrasive."
+ },
+ "Smectite Clay": {
+  "ev": "Medium",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "CAS 1302-78-9 (bentonite). PubChem CID 71586775: 96% of reporting notifiers (99 of 103) classify as not meeting GHS criteria; a ~32% minority files H315/H319/H335. Recorded not classified per the majority, with the minority codes noted here.",
+  "s": "Clay thickener; nuisance dust."
+ },
+ "Xanthan Gum": {
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Polymer — no PubChem CID/GHS record. High-MW polysaccharide, not bioavailable; recorded unclassified rather than assigned an unsourced grade (same convention as Acrylic Polymer).",
+  "s": "Polysaccharide thickener."
+ },
+ "Citrus Limon Peel Oil": {
+  "ev": "Low",
+  "g": "H226,H304,H315,H317,H400",
+  "gr": {
+   "derm": "D",
+   "env": "F"
+  },
+  "impacts": [
+   "allerg",
+   "aqua",
+   "derm"
+  ],
+  "note": "INCI term for lemon oil — same substance as the existing 'Lemon Oil' entry; grades carried with cross-reference, not re-derived.",
+  "s": "Flammable, sensitizer, aquatic toxicity."
+ },
+ "Sodium Ethylhexylsulfate": {
+  "ev": "Medium",
+  "g": "H315,H318",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 23662383, Sodium Ethasulfate; CAS 126-92-1): H315 96.9%, H318 90.8% notifier consensus; H335 10.5% and H228 15% below grading threshold.",
+  "s": "Skin irritant; causes serious eye damage (notifier consensus)."
+ },
+ "Alcohols, C13, branched, ethoxylated": {
+  "ev": "Extrapolated",
+  "g": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB (CAS 69011-36-5, isotridecanol ethoxylated); no PubChem CID. Class-analogous to Alcohol Ethoxylates (H315,H319,H412 — derm C, env C), including the class's trace 1,4-dioxane contaminant concern. Flagged for Linnea verification.",
+  "s": "Branched C13 alcohol ethoxylate surfactant."
+ },
+ "Ethylhexanol": {
+  "ev": "Medium",
+  "g": "H315,H319,H332,H335",
+  "gr": {
+   "derm": "C",
+   "resp": "C"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": "Graded from PubChem GHS (CID 7720, 2-ethylhexanol): H315 88.6%, H319 98.7%, H332 71.2%, H335 72.5% consensus. Several notifiers add H361 (suspected reproductive toxicity) without a clear consensus percentage — noted, not graded.",
+  "s": "Skin, eye, and respiratory irritant; some notifiers flag suspected reproductive toxicity."
+ },
+ "DTPMPA": {
+  "ev": "Medium",
+  "g": "H315,H318",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Diethylenetriaminepentakis(methylenephosphonic acid), a phosphonate chelant (INCI abbreviation). Graded from PubChem GHS (CID 85128): H315 70.6%, H318 81.7% consensus; H314 17.9% and H290 39.1% below grading threshold.",
+  "s": "Chelant; skin irritant and serious eye damage per notifier consensus."
+ },
+ "Magnesium Chloride": {
+  "ev": "Medium",
+  "g": "H315,H318",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 5360315) with weak consensus: H315 37.6%, H318 27.6%, H290/H302 27.6% — a substantial minority of notifiers, not a majority. derm C reflects the recognized mild-irritant profile; consensus weakness recorded here rather than smoothed.",
+  "s": "Salt; mild irritant per a minority of GHS notifiers."
+ },
+ "Hydrocarbon Propellant": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB aerosol propellant (CAS 68476-86-8); no PubChem GHS record for the mixture. The SDS warns of gas-under-pressure explosion hazard and CNS depression at high inhalation concentration; the liquefied-hydrocarbon class is flammable and asphyxiant. Recorded without codes rather than assigning unsourced ones.",
+  "s": "Liquefied hydrocarbon gas; flammable and asphyxiant by class."
+ },
+ "Proprietary Hydrocarbon Blend": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Withheld as trade secret by the manufacturer (Stoner SDS 91164, 1-15%). This is a disclosure gap, not a verified-benign ingredient — unknown composition is the most serious state on the page (docs/decisions.md). No grades by policy.",
+  "s": "Trade-secret solvent blend; composition unknown."
  }
 }
