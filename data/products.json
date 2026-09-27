@@ -7399,7 +7399,8 @@
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Clorox 2 is the leading color-safe bleach/booster in US laundry and this is its mainstream scented liquid; the estimate stops at the brand's share of the mass channel rather than a measured product share.",
-  "tier_note": "A hydrogen-peroxide color-safe bleach. The disclosure names an undisclosed 'Confidential Stabilizer Package' with no CAS number, and lists linalool as an EU fragrance allergen."
+  "tier_note": "A hydrogen-peroxide color-safe bleach. The disclosure names an undisclosed 'Confidential Stabilizer Package' with no CAS number, and lists linalool as an EU fragrance allergen.",
+  "heritage": false
  },
  {
   "name": "OdoBan Ready-to-Use Multi-Purpose Disinfectant & Deodorizer, Original Eucalyptus Scent",
@@ -7452,7 +7453,8 @@
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. OdoBan is a long-standing national disinfectant/deodorizer sold through mass, grocery and janitorial channels; the estimate stops at the brand's share of the category rather than a measured product share.",
-  "tier_note": "A quaternary-ammonium disinfectant/deodorizer. The disclosure lists five fragrance allergens individually and includes DMDM hydantoin, a formaldehyde-releasing preservative."
+  "tier_note": "A quaternary-ammonium disinfectant/deodorizer. The disclosure lists five fragrance allergens individually and includes DMDM hydantoin, a formaldehyde-releasing preservative.",
+  "heritage": false
  },
  {
   "name": "Vanish Oxi Action In-Wash Fabric Stain Remover",
@@ -7503,7 +7505,8 @@
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Vanish is Reckitt's global in-wash stain-remover brand and is sold in the US through mass and grocery channels, but its US household penetration is well below the domestic stain-remover leaders; the estimate stops at the brand's share of that channel rather than a measured product share.",
-  "tier_note": "An oxygen-bleach in-wash booster (sodium percarbonate + TAED activator). The disclosure flags the protease enzyme as an EU respiratory sensitizer and an AOEC asthmagen, and ethoxydiglycol on California's toxic air contaminant list."
+  "tier_note": "An oxygen-bleach in-wash booster (sodium percarbonate + TAED activator). The disclosure flags the protease enzyme as an EU respiratory sensitizer and an AOEC asthmagen, and ethoxydiglycol on California's toxic air contaminant list.",
+  "heritage": false
  },
  {
   "name": "Gain Ultra Dishwashing Liquid, Original Scent",
@@ -7553,6 +7556,7 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Gain is one of the largest US dish-soap brands and this is its mainstream original-scent liquid; the estimate stops at the brand's share of the mass channel rather than a measured product share.",
   "tier_note": "A mainstream hand dish liquid. The disclosure lists a colorant and a fragrance with no component breakdown, so the fragrance allergens are not enumerable from this source.",
-  "disclosure_note": "Source spellings mapped to canonical keys: 'C10-16 Alkyldimethylamine Oxide' -> Alkyldimethylamine Oxide; 'Colorants' -> Colorant; 'Fragrances' -> Fragrance."
+  "disclosure_note": "Source spellings mapped to canonical keys: 'C10-16 Alkyldimethylamine Oxide' -> Alkyldimethylamine Oxide; 'Colorants' -> Colorant; 'Fragrances' -> Fragrance.",
+  "heritage": false
  }
 ]
