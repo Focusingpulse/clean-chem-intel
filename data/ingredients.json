@@ -843,7 +843,10 @@
    "derm"
   ],
   "note": "Searched PubChem for a discrete record and found none (UVCB). The cancer flag is an extrapolation from the diethanolamine moiety, not a classification of the amide itself; no harmonised GHS classification was located for cocamide DEA.",
-  "s": "Coconut diethanolamide. Structurally related to diethanolamine; graded by analogy."
+  "s": "Coconut diethanolamide. Structurally related to diethanolamine; graded by analogy.",
+  "extrapolation_supports": [
+   "canc"
+  ]
  },
  "Cocamide MEA": {
   "ev": "Extrapolated",
@@ -883,7 +886,10 @@
    "derm"
   ],
   "note": "Searched PubChem for a discrete record; none returned (UVCB). Class analogues carry skin/eye irritation, so derm D is carried here rather than left blank.",
-  "s": "Amine oxide surfactant; graded by analogy within the amine-oxide class."
+  "s": "Amine oxide surfactant; graded by analogy within the amine-oxide class.",
+  "extrapolation_supports": [
+   "derm"
+  ]
  },
  "Coco-Glucoside": {
   "ev": "Extrapolated",
@@ -984,7 +990,15 @@
   "reclassified": [
    "Denatured alcohol is ethanol + bitterants; inherits ethanol's high-exposure repro flags. Often the hidden volatile in 'natural' spray cleaners."
   ],
-  "s": "Ethanol denatured with bitterants, flammable, eye irritant"
+  "s": "Ethanol denatured with bitterants, flammable, eye irritant",
+  "documented_mechanism": {
+   "repro": {
+    "mechanism": "Denatured alcohol is ethanol with bitterants added; it inherits ethanol's developmental-toxicity basis. GHS does not encode it: the record's own g carries H225,H319 only.",
+    "quote": "Robust evidence has identified ethanol as a known human teratogen and neurotoxicant.",
+    "quote_note": "Same route caveat as Ethanol: the quoted passage is about ethanol as a substance, and the cited effects are from high-dose ingestion. Basis for a documented mechanism, not a finding about household use.",
+    "src": "https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NHEERL&dirEntryId=287674"
+   }
+  }
  },
  "Dialkylester Dimethyl Ammonium Methosulfate": {
   "ev": "Low",
@@ -1252,7 +1266,15 @@
   "reclassified": [
    "Ethanol was long marketed as a harmless 'natural' solvent; high-exposure studies documented fetal harm (FAS), and occupational exposure is now treated more cautiously."
   ],
-  "s": "Highly flammable liquid and vapor"
+  "s": "Highly flammable liquid and vapor",
+  "documented_mechanism": {
+   "repro": {
+    "mechanism": "Ethanol is a known human teratogen. The reproductive concern is a developmental one that GHS does not encode: the record's own g carries H225 only, with no harmonised reproductive classification.",
+    "quote": "Robust evidence has identified ethanol as a known human teratogen and neurotoxicant.",
+    "quote_note": "Route caveat, and it matters: the EPA record this passage comes from is an inhalation study in rats, and the FASD effects it cites are from ingestion at high doses. The passage establishes that ethanol is a known human teratogen; it does not establish a risk from a cleaning-product exposure. Read it as the basis for a documented mechanism, not as a finding about household use.",
+    "src": "https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NHEERL&dirEntryId=287674"
+   }
+  }
  },
  "Ethanolamine": {
   "ev": "Medium",
@@ -1476,7 +1498,15 @@
   "reclassified": [
    "'Fragrance' was historically treated as one harmless scent note; undisclosed blends routinely contain phthalates & synthetic musks — endocrine/repro flags (Prop 65 phthalates) and contact allergens."
   ],
-  "s": "May cause allergic skin reaction"
+  "s": "May cause allergic skin reaction",
+  "documented_mechanism": {
+   "endo": {
+    "mechanism": "An undisclosed fragrance blend is a documented route to endocrine-active phthalates. DEP is used as a solvent for fragrance and was the most frequently detected phthalate in this study's consumer products, at its highest concentrations in fragranced items. The record's own g carries H317 only; GHS does not encode endocrine activity.",
+    "quote": "DEP, a common solvent for fragrance (Hubinger and Havery 2006), was detected most frequently; the highest DEP concentrations were in fragrance/perfume (14,000 µg/g) and car air freshener (8,000 µg/g).",
+    "quote_note": "The study also found none of the tested products listed 'phthalate' on the label, so the route is real but unlabelled. The passage establishes the fragrance-to-phthalate route and the phthalate class; it does not grade DEP itself.",
+    "src": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3404651/"
+   }
+  }
  },
  "Fructone": {
   "ev": "Medium",
@@ -1851,7 +1881,10 @@
    "derm"
   ],
   "note": "Searched PubChem for a discrete record; none returned (UVCB). Class analogues Lauramine Oxide (H315,H319) and Myristamine Oxide (H318,H315,H400) both carry skin/eye irritation, so derm D is carried here rather than left blank.",
-  "s": "Amine oxide surfactant; graded by analogy within the amine-oxide class."
+  "s": "Amine oxide surfactant; graded by analogy within the amine-oxide class.",
+  "extrapolation_supports": [
+   "derm"
+  ]
  },
  "Lauramine Oxide": {
   "ev": "High",
@@ -1978,8 +2011,7 @@
   "gr": {
    "derm": "D",
    "env": "F",
-   "repro": "B",
-   "resp": "D"
+   "repro": "B"
   },
   "impacts": [
    "allerg",
@@ -1987,11 +2019,14 @@
    "derm",
    "resp"
   ],
-  "note": null,
+  "note": "resp D dropped by ruling 2026-09-27 (Linnea): no primary source establishes respiratory sensitisation. EU CLP classifies skin sensitisation (H317) only; US EPA registration review identifies d-limonene as a dermal sensitizer with no toxicological points of departure; Danish EPA finds the oxidation products are contact (dermal) allergens. derm D remains supported by H317 in g. Basis: findings/CCI-classB-deferred-mechanism-sources-2026-09-26.md.",
   "reclassified": [
    "Citrus limonene was sold as the 'natural' scent; on air exposure it oxidizes into potent sensitizers (limonene hydroperoxides) — now a known contact-allergen source."
   ],
-  "s": "Flammable, skin sensitizer, aspiration hazard, aquatic toxicity"
+  "s": "Flammable, skin sensitizer, aspiration hazard, aquatic toxicity",
+  "gr_ruled": [
+   "resp"
+  ]
  },
  "Linalool": {
   "ev": "Medium",
@@ -2368,7 +2403,15 @@
    "repro"
   ],
   "note": null,
-  "s": "Harmful if swallowed or contacted"
+  "s": "Harmful if swallowed or contacted",
+  "documented_mechanism": {
+   "organ": {
+    "mechanism": "Ingested oxalic acid is a nephrotoxin: it precipitates as calcium oxalate in the renal tubules, and the resulting tubular injury is the organ-level harm. The record's own g carries H302,H312 only, with no H373 and no organ code, so the organ grade cannot trace to g.",
+    "quote": "Precipitation of calcium oxalate in the renal system (proximal tubules of the kidney) may lead to local necrosis of the tubular epithelium, producing kidney dysfunction and electrolyte imbalance",
+    "quote_note": "From a peer-reviewed case report of acute renal failure after oxalic acid ingestion (Dassanayake & Gnanathasan 2012, J Occup Med Toxicol 7:17, DOI 10.1186/1745-6673-7-17). The route in the source is ingestion; the case report notes oxalic acid is a component of household laundry detergents in the region studied. It establishes the renal mechanism, not a dose-response for cleaning use.",
+    "src": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3527234/"
+   }
+  }
  },
  "PEG-136 Polyvinyl Alcohol": {
   "ev": "Low",
