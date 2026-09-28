@@ -287,12 +287,23 @@
   },
   "Rite Aid Corporation": {
    "type": "public (RAD, formerly NYSE)",
-   "detail": "Owns the Rite Aid and Simplify house brands; labeler of record on the FDA OTC listings.",
+   "detail": "Owns the Rite Aid and Simplify house brands; labeler of record on the FDA OTC listings. Owner source repointed from an NDC mirror to the DailyMed SPL for NDC 11822-2003 on 2026-09-28.",
    "ev": "verified",
-   "src": "https://ndclist.com/ndc/11822-2003",
+   "src": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20d8b8a8-9d15-ad76-e063-6294a90a0521",
    "brands": [
     "Rite Aid",
     "Simplify"
+   ]
+  },
+  "Walmart Inc.": {
+   "type": "public (WMT)",
+   "detail": "Bentonville, Arkansas. Parent of the Great Value and Equate private labels and, through Sam's West, Inc., of Member's Mark. The SB-258 filings name Walmart, Inc. as distributor of Great Value and Sam's West, Inc. as distributor of Member's Mark.",
+   "ev": "reported",
+   "src": "https://corporate.walmart.com/about",
+   "brands": [
+    "Great Value",
+    "Member's Mark",
+    "Equate"
    ]
   }
  },

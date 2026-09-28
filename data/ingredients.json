@@ -4414,5 +4414,93 @@
   "impacts": [],
   "note": "Withheld as trade secret by the manufacturer (Stoner SDS 91164, 1-15%). This is a disclosure gap, not a verified-benign ingredient — unknown composition is the most serious state on the page (docs/decisions.md). No grades by policy.",
   "s": "Trade-secret solvent blend; composition unknown."
+ },
+ "Isopropylideneglycerol": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
+  "s": "Isopropylideneglycerol. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
+ },
+ "Sodium C10-16 Alkylbenzene Sulfonate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
+  "s": "Sodium C10-16 Alkylbenzene Sulfonate. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
+ },
+ "Alkyl (50% C14, 40% C12, 10% C16) Dimethyl Benzyl Ammonium Chloride": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
+  "s": "Alkyl (50% C14, 40% C12, 10% C16) Dimethyl Benzyl Ammonium Chloride. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
+ },
+ "Secondary Alcohol Ethoxylate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
+  "s": "Secondary Alcohol Ethoxylate. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
+ },
+ "Didecyl Dimethyl Ammonium Chloride": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
+  "s": "Didecyl Dimethyl Ammonium Chloride. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
+ },
+ "Sodium Silicate Pentahydrate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
+  "s": "Sodium Silicate Pentahydrate. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
+ },
+ "Dioctyl Dimethyl Ammonium Chloride": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
+  "s": "Dioctyl Dimethyl Ammonium Chloride. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
+ },
+ "Sodium Carboxylate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
+  "s": "Sodium Carboxylate. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
+ },
+ "Polyvinyl Alcohol": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
+  "s": "Polyvinyl Alcohol. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
+ },
+ "Protease": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
+  "s": "Protease. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
+ },
+ "Amylase": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
+  "s": "Amylase. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
  }
 }
