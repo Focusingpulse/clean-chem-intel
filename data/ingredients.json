@@ -4502,5 +4502,70 @@
   "impacts": [],
   "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
   "s": "Amylase. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
+ },
+ "Sodium Palmate": {
+  "g": "Extrapolated",
+  "s": "Soap salt (sodium salts of palm-oil fatty acids). UVCB; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB soap salt (sodium salts of palm fatty acids). PubChem PUG REST returns no CID for the name (404), so no ECHA C&L consensus can be read. Recorded extrapolated by soap-salt class rather than invented; the sibling 'Sodium Palmitate' entry (a single-chain soap salt) is Not Classified, its only quantified code H319 at 23.3% falling below the house 40% bar. Disclosed by the manufacturer EU detergent product-information filing for The Pink Stuff Miracle Cleaning Paste."
+ },
+ "Sodium Palm Kernelate": {
+  "g": "Extrapolated",
+  "s": "Soap salt (sodium salts of palm-kernel fatty acids). UVCB; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB soap salt (sodium salts of palm-kernel fatty acids). PubChem PUG REST returns no CID for the name (404). Recorded extrapolated by soap-salt class rather than invented, matching 'Sodium Palmate' and the existing 'Sodium Palmitate' entry. Disclosed by the manufacturer EU detergent product-information filing for The Pink Stuff Miracle Cleaning Paste."
+ },
+ "Polyquaternium-37": {
+  "g": "Extrapolated",
+  "s": "Polymeric cationic conditioner (polyquaternium). Polymer; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Polymeric quaternary-ammonium conditioner. PubChem PUG REST returns no CID for the name (404). Recorded extrapolated by polyquaternium class rather than invented; the sibling 'Polyquaternium-32' entry is likewise ungraded. Disclosed by the Snuggle label for SuperFresh Liquid Fabric Conditioner, Original."
+ },
+ "Laurylamine Dipropylenediamine": {
+  "g": "H301,H314,H318,H373,H400,H410",
+  "s": "Corrosive amine. Toxic if swallowed; causes severe skin burns and eye damage; organ damage on prolonged or repeated exposure; very toxic to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "organ": "C",
+   "env": "F"
+  },
+  "impacts": [
+   "derm",
+   "aqua"
+  ],
+  "note": "Graded from PubChem GHS (CID 75407, title 'N,N-Bis(3-aminopropyl)dodecylamine', CAS 2372-82-9): ECHA C&L notifier consensus H314 96% -> derm F; H318 71.2%; H301 95.4%; H373 90.5% -> organ C; H400 90.9% and H410 90.3% -> env F. The PubChem title is the systematic name for the substance the disclosure calls 'Laurylamine Dipropylenediamine' (a C12 alkyl dipropylenetriamine), verified by structure. Disclosed by the manufacturer EU detergent product-information filing for The Pink Stuff Miracle Cleaning Paste."
+ },
+ "Glutaral": {
+  "g": "H301,H314,H317,H331,H334,H400",
+  "s": "Corrosive biocide/preservative. Toxic if swallowed or inhaled; causes severe skin burns; skin and respiratory sensitizer; very toxic to aquatic life.",
+  "ev": "High",
+  "gr": {
+   "derm": "F",
+   "resp": "D",
+   "env": "F"
+  },
+  "impacts": [
+   "allerg",
+   "derm",
+   "resp",
+   "aqua"
+  ],
+  "sens": true,
+  "note": "Graded from PubChem GHS (CID 3485, title 'Glutaraldehyde', CAS 111-30-8): ECHA C&L notifier consensus H314 >99.9% -> derm F; H317 >99.9% -> allerg; H334 >99.9% and H331 82.6% -> resp D; H301 >99.9%; H400 99.9% -> env F. H330 (20.1%), H318 (18.7%), H335 (19%) and H411 (16.1%) are below the 40% bar and do not drive grades. A potent respiratory sensitizer used as a preservative/biocide; disclosed by the Snuggle label for SuperFresh Liquid Fabric Conditioner, Original."
+ },
+ "Chamomilla Recutita (Matricaria) Flower Extract": {
+  "g": "Extrapolated",
+  "s": "Botanical (chamomile) extract. No discrete PubChem CID; graded by analogy within botanicals.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Botanical extract (chamomile). PubChem PUG REST returns no CID for the name (404). Recorded extrapolated by botanical class rather than invented, matching the existing 'Aloe Barbadensis Leaf Juice' and 'Ginger Extract' entries. Disclosed by Branch Basics for The Concentrate."
  }
 }

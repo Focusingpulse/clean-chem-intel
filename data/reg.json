@@ -2,27 +2,27 @@
  "regions": {
   "eu": {
    "name": "European Union",
-   "flag": "\ud83c\uddea\ud83c\uddfa",
-   "blurb": "Regulates via REACH, CLP, and the Cosmetics Regulation \u2014 the world's strictest chemical framework. Often years ahead of US federal action."
+   "flag": "🇪🇺",
+   "blurb": "Regulates via REACH, CLP, and the Cosmetics Regulation — the world's strictest chemical framework. Often years ahead of US federal action."
   },
   "uk": {
    "name": "United Kingdom",
-   "flag": "\ud83c\uddec\ud83c\udde7",
+   "flag": "🇬🇧",
    "blurb": "Retained EU chemicals law post-Brexit (UK REACH); continues banning/restricting in lockstep with the EU."
   },
   "ca": {
    "name": "Canada",
-   "flag": "\ud83c\udde8\ud83c\udde6",
+   "flag": "🇨🇦",
    "blurb": "Health Canada restricts cosmetics/consumer chemicals; lists under CEPA, often ahead of the US."
   },
   "jp": {
    "name": "Japan",
-   "flag": "\ud83c\uddef\ud83c\uddf5",
+   "flag": "🇯🇵",
    "blurb": "CSCL + cosmetics standards; restricts several preservatives and allergens the US allows."
   },
   "us": {
    "name": "United States",
-   "flag": "\ud83c\uddfa\ud83c\uddf8",
+   "flag": "🇺🇸",
    "blurb": "No federal cosmetics ban list; EPA registration + CA Prop 65 are the main levers. Prop 65 (California) often outruns the FDA."
   }
  },
@@ -32,8 +32,8 @@
     "region": "eu",
     "status": "restricted",
     "since": "2017",
-    "rule": "EU Cosmetics Reg. Annex V \u2014 15 ppm max in leave-on products (was 100). Effectively banned in leave-on cosmetics.",
-    "reason": "Epidemic of allergic contact dermatitis \u2014 named Contact Allergen of the Year 2013. Dermatology clinics saw mass patch-test spikes from wet wipes and cosmetics.",
+    "rule": "EU Cosmetics Reg. Annex V — 15 ppm max in leave-on products (was 100). Effectively banned in leave-on cosmetics.",
+    "reason": "Epidemic of allergic contact dermatitis — named Contact Allergen of the Year 2013. Dermatology clinics saw mass patch-test spikes from wet wipes and cosmetics.",
     "confidence": "High",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"
    },
@@ -52,7 +52,7 @@
     "region": "eu",
     "status": "restricted",
     "since": "2017",
-    "rule": "EU Cosmetics Reg. \u2014 rinse-off use only; prohibited in leave-on products; labeled as a sensitizer.",
+    "rule": "EU Cosmetics Reg. — rinse-off use only; prohibited in leave-on products; labeled as a sensitizer.",
     "reason": "Cross-reacting isothiazolinone; occupational contact dermatitis (paints, cleaners) and consumer allergy burden.",
     "confidence": "Medium",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"
@@ -63,7 +63,7 @@
     "region": "eu",
     "status": "review",
     "since": "2013",
-    "rule": "EU Biocidal Products Regulation \u2014 quats (incl. DDAC, BAC) under rolling approval reviews with tightening conditions.",
+    "rule": "EU Biocidal Products Regulation — quats (incl. DDAC, BAC) under rolling approval reviews with tightening conditions.",
     "reason": "Occupational asthma and allergic sensitization studies; aquatic toxicity; overuse concerns post-pandemic.",
     "confidence": "Medium",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32012R0528"
@@ -74,7 +74,7 @@
     "region": "eu",
     "status": "review",
     "since": "2013",
-    "rule": "EU BPR approval review \u2014 DDAC use conditions being tightened.",
+    "rule": "EU BPR approval review — DDAC use conditions being tightened.",
     "reason": "Respiratory sensitization in occupational cleaning studies; very toxic to aquatic life (H400).",
     "confidence": "Medium",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32012R0528"
@@ -85,7 +85,7 @@
     "region": "eu",
     "status": "restricted",
     "since": "2012",
-    "rule": "EU Cosmetics Reg. Annex V \u2014 max 0.1% in cosmetics, extra conditions for spray products.",
+    "rule": "EU Cosmetics Reg. Annex V — max 0.1% in cosmetics, extra conditions for spray products.",
     "reason": "Skin/respiratory sensitization documented in healthcare and cleaning workers (NIOSH n=585 HLA-DP study); repro concerns in animal data.",
     "confidence": "Medium",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"
@@ -96,7 +96,7 @@
     "region": "eu",
     "status": "restricted",
     "since": "2018",
-    "rule": "EU CLP \u2014 classified Reproductive toxicant 1B (H360FD); restricted in consumer products from 2019. Effectively out of EU household cleaners.",
+    "rule": "EU CLP — classified Reproductive toxicant 1B (H360FD); restricted in consumer products from 2019. Effectively out of EU household cleaners.",
     "reason": "Reproductive/developmental harm evidence (the same class as 2-methoxy/2-ethoxyethanol bans).",
     "confidence": "High",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008R1272"
@@ -105,7 +105,7 @@
     "region": "us",
     "status": "flagged",
     "since": "1987",
-    "rule": "California Prop 65 \u2014 listed for reproductive/developmental harm. No federal consumer ban; still sold in US glass cleaners.",
+    "rule": "California Prop 65 — listed for reproductive/developmental harm. No federal consumer ban; still sold in US glass cleaners.",
     "reason": "State-level 'catch-up' signal: US federal law never restricted it, so California stepped in.",
     "confidence": "High",
     "src": "https://oehha.ca.gov/proposition-65/proposition-65-list"
@@ -116,8 +116,8 @@
     "region": "eu",
     "status": "restricted",
     "since": "2005",
-    "rule": "EU Cosmetics Reg. \u2014 mandatory labeling of 26 known fragrance allergens above thresholds; several phthalates (DEHP, DBP, BBP) banned outright in cosmetics.",
-    "reason": "Contact allergy burden from undisclosed fragrance; endocrine concerns over phthalates. US law treats fragrance as a trade secret \u2014 no allergen labeling required.",
+    "rule": "EU Cosmetics Reg. — mandatory labeling of 26 known fragrance allergens above thresholds; several phthalates (DEHP, DBP, BBP) banned outright in cosmetics.",
+    "reason": "Contact allergy burden from undisclosed fragrance; endocrine concerns over phthalates. US law treats fragrance as a trade secret — no allergen labeling required.",
     "confidence": "High",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"
    }
@@ -127,8 +127,8 @@
     "region": "eu",
     "status": "restricted",
     "since": "2005",
-    "rule": "EU \u2014 one of the 26 mandatory-labeled fragrance allergens (d-limonene).",
-    "reason": "Oxidizes on exposure to air into potent contact sensitizers (limonene hydroperoxides) \u2014 a major allergy source in cleaning products.",
+    "rule": "EU — one of the 26 mandatory-labeled fragrance allergens (d-limonene).",
+    "reason": "Oxidizes on exposure to air into potent contact sensitizers (limonene hydroperoxides) — a major allergy source in cleaning products.",
     "confidence": "High",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"
    }
@@ -138,7 +138,7 @@
     "region": "eu",
     "status": "restricted",
     "since": "2005",
-    "rule": "EU \u2014 linalool, limonene, geraniol, citral etc. must be labeled when present above thresholds.",
+    "rule": "EU — linalool, limonene, geraniol, citral etc. must be labeled when present above thresholds.",
     "reason": "Common sensitizers; consumers deserve to know which specific oils are in 'essential oil' blends.",
     "confidence": "High",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"
@@ -149,8 +149,8 @@
     "region": "eu",
     "status": "restricted",
     "since": "2005",
-    "rule": "EU \u2014 mandatory-labeled fragrance allergen.",
-    "reason": "Sensitization (oxidized citral) \u2014 H317 classification.",
+    "rule": "EU — mandatory-labeled fragrance allergen.",
+    "reason": "Sensitization (oxidized citral) — H317 classification.",
     "confidence": "High",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"
    }
@@ -160,7 +160,7 @@
     "region": "eu",
     "status": "restricted",
     "since": "2015",
-    "rule": "EU \u2014 1,4-dioxane (ethoxylation byproduct, IARC 2B probable carcinogen) restricted as a cosmetic contaminant.",
+    "rule": "EU — 1,4-dioxane (ethoxylation byproduct, IARC 2B probable carcinogen) restricted as a cosmetic contaminant.",
     "reason": "SLES is not banned, but the process contaminant 1,4-dioxane is capped. US: no federal limit; CA Prop 65 lists it.",
     "confidence": "Medium",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"
@@ -171,7 +171,7 @@
     "region": "eu",
     "status": "restricted",
     "since": "2015",
-    "rule": "EU \u2014 1,4-dioxane contaminant monitoring; CLP classification of the byproduct.",
+    "rule": "EU — 1,4-dioxane contaminant monitoring; CLP classification of the byproduct.",
     "reason": "Same ethoxylation byproduct issue as SLES.",
     "confidence": "Medium",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008R1272"
@@ -182,7 +182,7 @@
     "region": "eu",
     "status": "restricted",
     "since": "2015",
-    "rule": "EU \u2014 1,4-dioxane contaminant monitoring; CLP classification of the byproduct.",
+    "rule": "EU — 1,4-dioxane contaminant monitoring; CLP classification of the byproduct.",
     "reason": "Same ethoxylation byproduct issue as SLES.",
     "confidence": "Medium",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008R1272"
@@ -193,7 +193,7 @@
     "region": "eu",
     "status": "restricted",
     "since": "2012",
-    "rule": "EU Cosmetics Reg. \u2014 max 1% in cosmetics; additional warnings for use around infants.",
+    "rule": "EU Cosmetics Reg. — max 1% in cosmetics; additional warnings for use around infants.",
     "reason": "Repro/developmental toxicity signals in animal studies at higher doses.",
     "confidence": "Medium",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"
@@ -202,7 +202,7 @@
     "region": "jp",
     "status": "restricted",
     "since": "2010",
-    "rule": "Japan \u2014 restricted to 1% in cosmetics.",
+    "rule": "Japan — restricted to 1% in cosmetics.",
     "reason": "Same reproductive/developmental safety review.",
     "confidence": "Medium",
     "src": "https://www.mhlw.go.jp/file/06-Seisakujouhou-11120000-Iyakushokuhinkyoku/0000032704.pdf",
@@ -214,7 +214,7 @@
     "region": "eu",
     "status": "restricted",
     "since": "2013",
-    "rule": "EU Cosmetics Reg. Annex III \u2014 concentration caps by use (e.g., 12% in hair products).",
+    "rule": "EU Cosmetics Reg. Annex III — concentration caps by use (e.g., 12% in hair products).",
     "reason": "Corrosive/oxidizer exposure risk (H314/H318).",
     "confidence": "High",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"
@@ -225,8 +225,8 @@
     "region": "eu",
     "status": "restricted",
     "since": "2010",
-    "rule": "EU CLP \u2014 Reproductive toxicant 1B (H360FD). Borates restricted in many consumer products; EU banned in cosmetic leave-on.",
-    "reason": "Reproductive/developmental harm classification \u2014 the reason 'grandma's borax' is banned across much of Europe while sold freely in US grocery aisles.",
+    "rule": "EU CLP — Reproductive toxicant 1B (H360FD). Borates restricted in many consumer products; EU banned in cosmetic leave-on.",
+    "reason": "Reproductive/developmental harm classification — the reason 'grandma's borax' is banned across much of Europe while sold freely in US grocery aisles.",
     "confidence": "High",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008R1272"
    },
@@ -246,7 +246,7 @@
     "region": "eu",
     "status": "restricted",
     "since": "2016",
-    "rule": "EU \u2014 restricted in certain consumer uses; strong oxidizer handling rules.",
+    "rule": "EU — restricted in certain consumer uses; strong oxidizer handling rules.",
     "reason": "Oxidizer (H271) + chlorinated byproduct formation (chlorine gas in misuse).",
     "confidence": "Medium",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008R1272"
@@ -257,7 +257,7 @@
     "region": "eu",
     "status": "restricted",
     "since": "2004",
-    "rule": "EU Cosmetics Reg. \u2014 diethanolamine (DEA) banned outright (2004); monoethanolamine (MEA) restricted with nitrosamine safeguards; CLP classifies MEA H312/H332.",
+    "rule": "EU Cosmetics Reg. — diethanolamine (DEA) banned outright (2004); monoethanolamine (MEA) restricted with nitrosamine safeguards; CLP classifies MEA H312/H332.",
     "reason": "Occupational asthma documented in cleaning-product formulation workers; nitrosamine contamination concern in amine-based formulas under acidic conditions.",
     "confidence": "Medium",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"
@@ -268,7 +268,7 @@
     "region": "eu",
     "status": "restricted",
     "since": "2022",
-    "rule": "EU Cosmetics Reg. Annex V, Entry 33 \u2014 allowed as preservative up to 0.6%, but must be labeled \"releases formaldehyde\" if formaldehyde released exceeds 0.001% (10 ppm) per Reg. 2022/1181.",
+    "rule": "EU Cosmetics Reg. Annex V, Entry 33 — allowed as preservative up to 0.6%, but must be labeled \"releases formaldehyde\" if formaldehyde released exceeds 0.001% (10 ppm) per Reg. 2022/1181.",
     "reason": "Formaldehyde is a Category 1B carcinogen and skin sensitizer. DMDM Hydantoin releases formaldehyde to preserve products. EU tightened labeling threshold from 0.05% to 0.001% in 2022 to protect formaldehyde-sensitive consumers.",
     "confidence": "High",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"
@@ -289,7 +289,7 @@
     "region": "eu",
     "status": "banned",
     "since": "2026-03-19",
-    "rule": "Commission Implementing Decision (EU) 2026/599 \u2014 Not approved as active substance for PT6 biocides (in-can preservatives). Products containing it must be withdrawn or reformulated.",
+    "rule": "Commission Implementing Decision (EU) 2026/599 — Not approved as active substance for PT6 biocides (in-can preservatives). Products containing it must be withdrawn or reformulated.",
     "reason": "Formaldehyde-releasing preservative failed EU BPR approval for product-type 6. EU requires reformulation with approved alternatives.",
     "confidence": "High",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026D0599"
@@ -300,7 +300,7 @@
     "region": "eu",
     "status": "restricted",
     "since": "2026-08-06",
-    "rule": "REACH Annex XVII Entry 77 \u2014 Indoor articles must not emit formaldehyde above 0.062 mg/m\u00b3 (furniture/wood) or 0.080 mg/m\u00b3 (other articles). Applies to furniture, wood-based products, foams, textiles, toys, electrical appliances.",
+    "rule": "REACH Annex XVII Entry 77 — Indoor articles must not emit formaldehyde above 0.062 mg/m³ (furniture/wood) or 0.080 mg/m³ (other articles). Applies to furniture, wood-based products, foams, textiles, toys, electrical appliances.",
     "reason": "Formaldehyde classified as carcinogen (CLP). EU set strict indoor emission limits while US has no comparable federal standard.",
     "confidence": "High",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006R1907",
@@ -335,7 +335,7 @@
     "status": "banned",
     "since": "2016",
     "rule": "EU Cosmetics Reg. Annex V: the CMIT/MIT (3:1) mixture is banned in leave-on cosmetics; permitted only in rinse-off products at 15 ppm. CMIT alone may not be used in cosmetics at all.",
-    "reason": "Contact-allergy epidemic \u2014 CMIT/MIT (trade name Kathon) became one of the most frequent causes of occupational and consumer allergic contact dermatitis, especially in cleaners and personal care. The rinse-off restriction followed sustained patch-test evidence.",
+    "reason": "Contact-allergy epidemic — CMIT/MIT (trade name Kathon) became one of the most frequent causes of occupational and consumer allergic contact dermatitis, especially in cleaners and personal care. The rinse-off restriction followed sustained patch-test evidence.",
     "confidence": "High",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"
    },
@@ -351,7 +351,7 @@
    {
     "region": "us",
     "status": "allowed",
-    "since": "\u2014",
+    "since": "—",
     "rule": "No US federal ban or ppm cap for CMIT/MIT in household cleaning products. It remains a common in-can preservative in US carpet cleaners, detergents and hard-surface cleaners.",
     "reason": "US regulation of isothiazolinone preservatives in cleaning products is largely absent, so the same chemistry restricted in EU leave-on products is routine in US cleaners.",
     "confidence": "Medium",
@@ -364,7 +364,7 @@
     "region": "eu",
     "status": "banned",
     "since": "2022",
-    "rule": "EU Cosmetics Regulation Annex II \u2014 BMHCA (Lilial) classified CMR 1B (Repr. 1B) by Delegated Reg. (EU) 2020/1182; added to the prohibited list by Commission Reg. (EU) 2021/1902, applying from 1 March 2022. Note: the ban covers cosmetics \u2014 SCCS documentation records BMHCA is also used in household cleaners and detergents, which the cosmetics ban does not reach.",
+    "rule": "EU Cosmetics Regulation Annex II — BMHCA (Lilial) classified CMR 1B (Repr. 1B) by Delegated Reg. (EU) 2020/1182; added to the prohibited list by Commission Reg. (EU) 2021/1902, applying from 1 March 2022. Note: the ban covers cosmetics — SCCS documentation records BMHCA is also used in household cleaners and detergents, which the cosmetics ban does not reach.",
     "reason": "CMR 1B (reprotoxic) classification; SCCS found it not safe as a fragrance ingredient under aggregate exposure.",
     "confidence": "High",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021R1902",
@@ -386,8 +386,8 @@
     "region": "eu",
     "status": "banned",
     "since": "2023",
-    "rule": "EU Cosmetics Regulation 1223/2009, Annex II (prohibited substances), Entry 1703 \u2014 as amended by Regulation (EU) 2023/1490. No concentration limit; must not be present in any cosmetic product on the EU market.",
-    "reason": "Classified Carc. 1B (H350) and IARC Group 2B. The cosmetics ban does not reach household cleaning products \u2014 benzophenone is disclosed on the US label of Clorox Clean-Up with Bleach.",
+    "rule": "EU Cosmetics Regulation 1223/2009, Annex II (prohibited substances), Entry 1703 — as amended by Regulation (EU) 2023/1490. No concentration limit; must not be present in any cosmetic product on the EU market.",
+    "reason": "Classified Carc. 1B (H350) and IARC Group 2B. The cosmetics ban does not reach household cleaning products — benzophenone is disclosed on the US label of Clorox Clean-Up with Bleach.",
     "confidence": "High",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1490",
     "src_note": "Commission Regulation (EU) 2023/1490 added benzophenone to Cosmetics Reg. Annex II (Entry 1703)."
@@ -456,6 +456,26 @@
     "src": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/prohibited-restricted-ingredients-cosmetics",
     "src_note": "Absence claim. No US requirement to name individual fragrance allergens on cleaning-product labels."
    }
+  ],
+  "Glutaral": [
+   {
+    "region": "eu",
+    "status": "restricted",
+    "since": "2016",
+    "rule": "EU Cosmetics Reg. 1223/2009 Annex V, entry 48 — permitted preservative at max 0.1%, not to be used in aerosols (sprays).",
+    "reason": "A potent skin and respiratory sensitizer (H317/H334); the aerosol ban reflects the inhalation-sensitization risk. EU caps the concentration; US cleaning-product law does not.",
+    "confidence": "High",
+    "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"
+   },
+   {
+    "region": "us",
+    "status": "allowed",
+    "since": null,
+    "rule": "No federal concentration limit in cleaning products; glutaraldehyde is an EPA-registered biocide. Occupational exposure is bounded by a NIOSH REL ceiling of 0.2 ppm (no in-force OSHA PEL).",
+    "reason": "US law regulates the biocide registration and workplace air rather than the consumer product concentration, so a sensitizer capped at 0.1% in EU cosmetics can appear unrestricted in a US cleaning product.",
+    "confidence": "High",
+    "src": "https://www.cdc.gov/niosh/npg/npgd0301.html"
+   }
   ]
  },
  "watchlist": [
@@ -464,7 +484,7 @@
    "region": "eu",
    "status": "banned",
    "since": "2010",
-   "rule": "EU banned in cosmetics. US FDA banned OTC antibacterial soaps 2016 \u2014 but it remains in some consumer products; the ban took 40+ years to catch up.",
+   "rule": "EU banned in cosmetics. US FDA banned OTC antibacterial soaps 2016 — but it remains in some consumer products; the ban took 40+ years to catch up.",
    "reason": "Endocrine disruption (thyroid), bacterial resistance, aquatic toxicity."
   },
   {
@@ -481,7 +501,7 @@
    "status": "banned",
    "since": "2013",
    "rule": "EU banned phosphates in laundry detergent (2013) and dishwasher detergent (2017). US: no federal ban; a few state-level limits.",
-   "reason": "Eutrophication \u2014 algal blooms and dead zones in waterways."
+   "reason": "Eutrophication — algal blooms and dead zones in waterways."
   },
   {
    "name": "Parabens (propyl/butyl)",
@@ -512,7 +532,7 @@
    "region": "eu",
    "status": "banned",
    "since": "2023",
-   "rule": "EU banned intentionally-added microplastics (phased 2023\u20132035). US: state-level only.",
+   "rule": "EU banned intentionally-added microplastics (phased 2023–2035). US: state-level only.",
    "reason": "Persistence and bioaccumulation; cleaning products with plastic scrubbing particles affected."
   },
   {
