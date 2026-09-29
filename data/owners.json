@@ -202,7 +202,8 @@
    "ev": "reported",
    "src": "https://www.dollargeneral.com/p/true-living-multi-purpose-cleaner-lavender-scent-56-fl-oz/59647560446",
    "brands": [
-    "True Living"
+    "True Living",
+    "Dollar General"
    ]
   },
   "Dollar Tree, Inc.": {
@@ -305,6 +306,42 @@
     "Member's Mark",
     "Equate"
    ]
+  },
+  "KIK Consumer Products": {
+   "type": "private (KIK International LLC / KIK Custom Products)",
+   "detail": "North American contract and private-brand manufacturer. On 2018-07-02 KIK International LLC bought Prestige Brands' household cleaning business for $69.0M, acquiring the Comet, Spic and Span, Cinch, Chore Boy and Chlorinol brands; Procter & Gamble retained the professional-market Spic and Span rights. KIK's own site additionally names Top Job, Greased Lightning and The Works as household brands its U.S. Household business markets. The Comet, Spic and Span and The Works listings in this database name KIK or its Homecare Labs arm as the disclosing manufacturer. Evidence split: the SEC-filed asset purchase agreement is the source for Comet, Spic and Span, Chore Boy, Cinch and Chlorinol; KIK's own published product page is the source for Top Job, Greased Lightning and The Works, and for the Homecare Labs name that appears as the disclosing manufacturer on The Works filing.",
+   "ev": "verified",
+   "src": "https://www.sec.gov/Archives/edgar/data/1295947/000129594718000020/exhibit101-assetpurchaseag.htm",
+   "brands": [
+    "KIK",
+    "Comet",
+    "Spic and Span",
+    "Chore Boy",
+    "Cinch",
+    "Chlorinol",
+    "Top Job",
+    "Greased Lightning",
+    "The Works",
+    "HomeCare Labs",
+    "Cinch"
+   ],
+   "brand_sources": {
+    "verified_by_apa": [
+     "Comet",
+     "Spic and Span",
+     "Chore Boy",
+     "Cinch",
+     "Chlorinol"
+    ],
+    "reported_by_kik_site": [
+     "Top Job",
+     "Greased Lightning",
+     "The Works",
+     "HomeCare Labs",
+     "KIK"
+    ]
+   },
+   "src_brands_marketed": "https://www.kikcorp.com/our-products/"
   }
  },
  "independents": {
@@ -326,7 +363,6 @@
    "Norwex",
    "Bona",
    "Zep",
-   "KIK",
    "Bon Ami",
    "BKF",
    "Weiman",

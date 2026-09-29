@@ -4567,5 +4567,69 @@
   "gr": {},
   "impacts": [],
   "note": "Botanical extract (chamomile). PubChem PUG REST returns no CID for the name (404). Recorded extrapolated by botanical class rather than invented, matching the existing 'Aloe Barbadensis Leaf Juice' and 'Ginger Extract' entries. Disclosed by Branch Basics for The Concentrate."
+ },
+ "Edetate Sodium": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-29; not yet graded against GHS.",
+  "s": "Edetate Sodium. Listed in a manufacturer disclosure read 2026-09-29; not yet graded against GHS."
+ },
+ "Green Tea Leaf": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-29; not yet graded against GHS.",
+  "s": "Green Tea Leaf. Listed in a manufacturer disclosure read 2026-09-29; not yet graded against GHS."
+ },
+ "Sulisobenzone": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-29; not yet graded against GHS.",
+  "s": "Sulisobenzone. Listed in a manufacturer disclosure read 2026-09-29; not yet graded against GHS."
+ },
+ "Cetrimonium Chloride": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-29; not yet graded against GHS.",
+  "s": "Cetrimonium Chloride. Listed in a manufacturer disclosure read 2026-09-29; not yet graded against GHS."
+ },
+ "PEG-120 Methyl Glucose Dioleate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-29; not yet graded against GHS.",
+  "s": "PEG-120 Methyl Glucose Dioleate. Listed in a manufacturer disclosure read 2026-09-29; not yet graded against GHS."
+ },
+ "Sodium Metasilicate Pentahydrate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-29; not yet graded against GHS.",
+  "s": "Sodium Metasilicate Pentahydrate. Listed in a manufacturer disclosure read 2026-09-29; not yet graded against GHS."
+ },
+ "Undeceth-40": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-29; not yet graded against GHS.",
+  "s": "Undeceth-40. Listed in a manufacturer disclosure read 2026-09-29; not yet graded against GHS."
+ },
+ "Butoxyethanol": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-29; not yet graded against GHS.",
+  "s": "Butoxyethanol. Listed in a manufacturer disclosure read 2026-09-29; not yet graded against GHS."
  }
 }
