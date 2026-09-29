@@ -400,7 +400,7 @@
   "heritage_year": 1950,
   "heritage_note": "The aerosol that 'kills 99.9% of germs' — a 1950s icon passed down as the default sick-day spray.",
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-09-29",
   "owner": "Reckitt",
   "owner_ev": "reported",
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
@@ -416,7 +416,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "Lysol Disinfectant Spray appears among Amazon Best Sellers in Household Cleaning (Sep 2026). Rank-based channel signal."
+  "exposure_basis": "Lysol Disinfectant Spray appears among Amazon Best Sellers in Household Cleaning (Sep 2026). Rank-based channel signal.",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (quaternary ammonium H314 corrosive; High evidence)"
  },
  {
   "name": "Lysol Toilet Bowl",
@@ -432,7 +433,7 @@
   "heritage_year": 1930,
   "heritage_note": "The acid-based toilet cleaner many inherited without reading the label.",
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-09-29",
   "owner": "Reckitt",
   "owner_ev": "reported",
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
@@ -448,7 +449,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Toilet care is a small share of the cleaners category; Lysol is a leading brand within it."
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Toilet care is a small share of the cleaners category; Lysol is a leading brand within it.",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (hydrochloric acid H314 corrosive; High evidence)"
  },
  {
   "name": "Scrubbing Bubbles",
@@ -498,7 +500,7 @@
   "heritage_year": 1956,
   "heritage_note": "Comet cleanser (1956) — chlorinated scouring powder era, tub rings beware.",
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-09-29",
   "owner": "KIK Consumer Products",
   "owner_ev": "verified",
   "owner_src": "https://www.sec.gov/Archives/edgar/data/1295947/000129594718000020/exhibit101-assetpurchaseag.htm",
@@ -514,7 +516,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Comet is a long-standing mass scouring-powder brand; scouring powders are a small share of surface care."
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Comet is a long-standing mass scouring-powder brand; scouring powders are a small share of surface care.",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (sodium hydroxide H314 corrosive; High evidence)"
  },
  {
   "name": "Tilex Mold & Mildew",
@@ -532,7 +535,7 @@
   "heritage_year": 1980,
   "heritage_note": "The bleach-based mold spray that bathrooms across two generations have reached for without gloves.",
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-09-29",
   "owner": "Clorox",
   "owner_ev": "reported",
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
@@ -550,7 +553,8 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Specialty mold and mildew cleaner; a small share of surface care.",
   "tier_src": null,
-  "tier_basis": "searched for a published definition of this tier and found none that names the product. The tier was assigned by exclusion rather than by a source, so it is downgraded to untested rather than left marked reported with nothing to point at. A guessed tier is worse than no tier."
+  "tier_basis": "searched for a published definition of this tier and found none that names the product. The tier was assigned by exclusion rather than by a source, so it is downgraded to untested rather than left marked reported with nothing to point at. A guessed tier is worse than no tier.",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (sodium hypochlorite + sodium hydroxide H314 corrosive; High evidence)"
  },
  {
   "name": "Kaboom Foam-Tastic",
@@ -566,7 +570,7 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-09-29",
   "owner": "Church & Dwight",
   "owner_ev": "reported",
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
@@ -582,7 +586,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated."
+  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated.",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (sodium hydroxide H314 corrosive; High evidence)"
  },
  {
   "name": "Clorox ToiletWand",
@@ -783,7 +788,7 @@
   "heritage_year": 1923,
   "heritage_note": "Drano (1923) — the caustic drain unclogger every household inherited, lye and all.",
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-09-29",
   "owner": "SC Johnson",
   "owner_ev": "reported",
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
@@ -799,7 +804,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated."
+  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated.",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (sodium hypochlorite + sodium hydroxide H314 corrosive; High evidence)"
  },
  {
   "name": "CLR",
@@ -814,7 +820,7 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-09-29",
   "owner": null,
   "owner_ev": "untested",
   "owner_src": null,
@@ -830,7 +836,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated."
+  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated.",
+  "grade_note": "Sifter grade C — worst credible dimension: derm C (lactic acid H315 irritant; High evidence)"
  },
  {
   "name": "Bon Ami",
