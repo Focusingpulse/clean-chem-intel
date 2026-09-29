@@ -4631,5 +4631,84 @@
   "impacts": [],
   "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-29; not yet graded against GHS.",
   "s": "Butoxyethanol. Listed in a manufacturer disclosure read 2026-09-29; not yet graded against GHS."
+ },
+ "Lauryl Betaine": {
+  "g": "H302,H312,H315,H318",
+  "s": "Betaine surfactant. Harmful if swallowed or in contact with skin; causes skin irritation and serious eye damage.",
+  "ev": "High",
+  "gr": {
+   "derm": "D",
+   "work": "D"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 4292413, returned title 'Lauryldimethylbetaine' - the systematic name for the C12 alkylbetaine the disclosure calls 'Lauryl betaine', CAS 683-10-3). Dominant ECHA C&L block (935 reports, 13 notifications): H318 86.8% -> derm D; H315 88.4% -> derm C (subsumed); H302 53% and H312 57.6% -> work D. H317 22.6% (skin sensitization) and H319 13.6% fall below the house >=40% consensus bar and are noted, not graded. PubChem's aggregated view also lists H371/H373/H400/H401/H412 without notifier percentages - noted, not graded. Disclosed by the P&G SmartLabel for Mr. Clean Clean Freak Deep Cleaning Mist, Lemon Zest."
+ },
+ "PEG PPG Ethylhexyl Ether": {
+  "g": "Extrapolated",
+  "s": "Polymeric alkoxylated ether (PEG/PPG ethylhexyl ether). Polymer; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Polymeric alkoxylated ether. PubChem PUG REST returns no CID for the name (404), so no ECHA C&L consensus can be read. Recorded extrapolated by the PEG/PPG ether class rather than invented; the sibling 'PEG/PPG/Propylheptyl Ether' entry is likewise ungraded. Disclosed by the P&G SmartLabel for Mr. Clean Clean Freak Deep Cleaning Mist, Lemon Zest."
+ },
+ "PEG": {
+  "g": "Extrapolated",
+  "s": "Polyethylene glycol (PEG). Polymer family; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Polyethylene glycol. PubChem PUG REST returns no CID for the bare name (404); PEG is a polymer family, not a discrete substance. Recorded extrapolated by the PEG class rather than invented; the DB's 'PEG-150' entry is likewise ungraded. Disclosed by the P&G SmartLabel for Mr. Clean Clean Freak Deep Cleaning Mist, Lemon Zest."
+ },
+ "Tetrapotassium EDTA": {
+  "g": "H302,H318,H319,H332,H361,H373",
+  "s": "Chelating agent (tetrapotassium salt of EDTA). Harmful if swallowed or inhaled; serious eye damage; suspected reproductive toxicity; organ damage on prolonged exposure.",
+  "ev": "Medium",
+  "gr": {
+   "derm": "D",
+   "resp": "C",
+   "organ": "C",
+   "work": "D",
+   "repro": "C"
+  },
+  "impacts": [
+   "derm",
+   "repro",
+   "resp"
+  ],
+  "note": "Graded from PubChem GHS (CID 62595, returned title 'Edetate tetrapotassium' - matches; CAS 2001-91-0). Dominant ECHA C&L block (241 reports, 9 notifications): H302 66.4% -> work D; H318 46.5% -> derm D; H332 45.2% -> resp C; H373 45.2% -> organ C; H319 54.4% (subsumed by H318); H302+H332 43.2%. A second ECHA C&L block on the same CID (129 reports, 2 notifications) reports H361 80.6% (suspected reproductive toxicity) -> repro C and H319 100%; both blocks are ECHA C&L consensus, so the reproductive code is graded and its provenance named here. Disclosed by the Clorox SmartLabel for Scentiva Disinfecting Multi-Surface Cleaner, Tuscan Lavender & Jasmine."
+ },
+ "Copolymer of Acrylic and Sulphonic Acids": {
+  "g": "Extrapolated",
+  "s": "Polymeric antiredeposition agent (acrylic/sulphonic acid copolymer). Polymer; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Polymeric antiredeposition agent. PubChem PUG REST returns no CID for the name (404). Recorded extrapolated by polymer class rather than invented, matching the existing 'Copolymer of Acrylic Maleic and Sulphonic Acids' entry, which is likewise ungraded. Disclosed by the P&G SmartLabel for Cascade Platinum Plus ActionPacs, Fresh."
+ },
+ "Tolyltriazole": {
+  "g": "Extrapolated",
+  "s": "Metal corrosion inhibitor (mixture of methylbenzotriazole isomers). UVCB; no discrete PubChem CID.",
+  "ev": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Tolyltriazole (CAS 29385-43-1) is a UVCB mixture of methylbenzotriazole isomers; PubChem PUG REST returns no CID for the name (404). Recorded extrapolated by the benzotriazole class rather than invented; the sibling 'Benzotriazole' entry is graded derm C / work C (H302 96.7%, H319 87.8%). Disclosed by the P&G SmartLabel for Cascade Platinum Plus ActionPacs, Fresh."
+ },
+ "Acid Yellow 17": {
+  "g": "Not Classified",
+  "s": "Azo dye (CI 18965). No GHS hazard criteria met by the notifier majority.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 22842, returned title 'benzenesulfonic acid, 2,5-dichloro-4-(4,5-dihydro-3-methyl-5-oxo-4-((4-sulfophenyl)azo)-1h-pyrazol-1-yl)-, disodium salt' - the IUPAC name for the dye the disclosure calls 'Acid Yellow 17', CAS 6359-98-4). ECHA C&L: 2269 of 2296 reports (98.8%) report not meeting hazard criteria; only 2 notifications of 2296 carry hazard codes, all below the house 40% bar, so no dimension grade is justified. Disclosed by the P&G SmartLabel for Cascade Platinum Plus ActionPacs, Fresh."
+ },
+ "Acid Blue 3": {
+  "g": "Not Classified",
+  "s": "Triarylmethane dye (CI 42051, Patent Blue V). No GHS hazard criteria met.",
+  "ev": "Medium",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 77073, returned title 'Acid Blue 3' - matches; CAS 3536-49-0). ECHA C&L: 182 of 182 reports (100%) report not meeting hazard criteria; 0 notifications carry hazard codes, so no dimension grade is justified. Disclosed by the P&G SmartLabel for Cascade Platinum Plus ActionPacs, Fresh."
  }
 }

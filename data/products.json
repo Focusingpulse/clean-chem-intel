@@ -8694,5 +8694,217 @@
   "updated": "2026-09-29",
   "owner_ev": "verified",
   "owner_src": "https://www.sec.gov/Archives/edgar/data/1295947/000129594718000020/exhibit101-assetpurchaseag.htm"
+ },
+ {
+  "name": "Mr. Clean Clean Freak Deep Cleaning Mist, Lemon Zest",
+  "brand": "Mr. Clean",
+  "cat": "All-Purpose",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Triethanolamine",
+   "Lauryl Betaine",
+   "PEG PPG Ethylhexyl Ether",
+   "Dipropylene Glycol Butyl Ether",
+   "Sodium Carbonate",
+   "Ethanolamine",
+   "Xanthan Gum",
+   "PEG",
+   "Fragrance"
+  ],
+  "added": "2026-09-29",
+  "updated": "2026-09-29",
+  "owner": "Procter & Gamble",
+  "owner_ev": "reported",
+  "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
+  "tier": "mass",
+  "tier_ev": "reported",
+  "tier_src": "https://smartlabel.pg.com/00037000791294.html",
+  "substitutes": [
+   {
+    "name": "Mr. Clean",
+    "tier": "mass",
+    "note": "The base Mr. Clean multi-surface spray from the same brand; a similar surfactant/solvent base without the mist delivery."
+   },
+   {
+    "name": "Seventh Gen All-Purpose",
+    "tier": "natural",
+    "note": "Plant-derived surfactant base, fragrance disclosed by component. Avoids the undisclosed perfume."
+   }
+  ],
+  "exposure": 6,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://smartlabel.pg.com/00037000791294.html",
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed",
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Clean Freak is a line extension of Mr. Clean, the leading US all-purpose spray brand (the base Mr. Clean record carries an extrapolated exposure of 10); the mist line is a fraction of the brand's total spray volume, so the estimate stops at the brand's share of the category rather than a measured product share.",
+  "source": "Procter & Gamble SmartLabel ingredient disclosure",
+  "source_url": "https://smartlabel.pg.com/00037000791294.html",
+  "tier_note": "A mainstream all-purpose cleaning spray. The disclosure lists triethanolamine and ethanolamine (amines used to cut grease) plus an undisclosed perfume; the finished product is not a disinfectant.",
+  "disclosure_note": "Source spelling mapped to canonical key: 'Perfume' -> Fragrance. The P&G SmartLabel for UPC 00037000791294 is the manufacturer's own current disclosure; a distributor spec sheet (P&G part 79129) lists a longer set that also names alcohol ethoxylate, benzisothiazolinone and C10-16 alkyldimethylamine oxide."
+ },
+ {
+  "name": "Clorox Scentiva Disinfecting Multi-Surface Cleaner, Tuscan Lavender & Jasmine",
+  "brand": "Clorox",
+  "cat": "Disinfectant",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Lauramine Oxide",
+   "Ethanolamine",
+   "Alkyl C12-16 Dimethylbenzyl Ammonium Chloride",
+   "Myristamine Oxide",
+   "Tetrapotassium EDTA",
+   "Ethanol",
+   "Fragrance",
+   "Limonene",
+   "Butylphenyl Methylpropional",
+   "Citronellol"
+  ],
+  "added": "2026-09-29",
+  "updated": "2026-09-29",
+  "owner": "Clorox",
+  "owner_ev": "reported",
+  "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
+  "tier": "mass",
+  "tier_ev": "reported",
+  "tier_src": "https://smartlabel.labelinsight.com/product/6096788/ingredients",
+  "substitutes": [
+   {
+    "name": "Clorox Clean-Up All Purpose Cleaner with Bleach, Original",
+    "tier": "mass",
+    "note": "Same brand, bleach-based disinfectant; a different active (sodium hypochlorite) and no quaternary ammonium compound."
+   },
+   {
+    "name": "Seventh Generation All-Purpose Cleaner, Free & Clear",
+    "tier": "natural",
+    "note": "Fragrance-free, no quaternary ammonium active; a weaker disinfecting claim."
+   }
+  ],
+  "exposure": 6,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://smartlabel.labelinsight.com/product/6096788/ingredients",
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed",
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Scentiva is a line extension of Clorox, the leading US bleach brand (the Clorox Bleach record carries an extrapolated exposure of 15); the bleach-free multi-surface spray is a fraction of the brand's total disinfecting volume, so the estimate stops at the brand's share of the category rather than a measured product share.",
+  "source": "Clorox SmartLabel ingredient disclosure",
+  "source_url": "https://smartlabel.labelinsight.com/product/6096788/ingredients",
+  "tier_note": "A bleach-free disinfecting multi-surface spray. The active is a C12-16 alkyl dimethylbenzyl ammonium chloride (a quaternary ammonium compound); the label also names three fragrance allergens individually (d-limonene, butylphenyl methylpropional, citronellol).",
+  "disclosure_note": "Source spelling mapped to canonical key: 'd-Limonene' -> Limonene. The Clorox SmartLabel for UPC 044600313870 is the manufacturer's own disclosure (updated 2025-04-09) and names the fragrance allergens individually."
+ },
+ {
+  "name": "Cascade Platinum Plus ActionPacs, Fresh",
+  "brand": "Cascade",
+  "cat": "Dishwasher",
+  "safe": null,
+  "ings": [
+   "Trisodium Dicarboxymethyl Alaninate",
+   "Sodium Carbonate",
+   "Sodium Sulfate",
+   "Sodium Carbonate Peroxide",
+   "Isotridecanol Ethoxylated",
+   "Copolymer of Acrylic and Sulphonic Acids",
+   "Water",
+   "PEG/PPG/Propylheptyl Ether",
+   "Dipropylene Glycol",
+   "Tolyltriazole",
+   "Subtilisin",
+   "Fragrance",
+   "Glycerin",
+   "Amylase Enzyme",
+   "Benzotriazole",
+   "Transition Metal Catalyst",
+   "Acid Yellow 17",
+   "Acid Blue 182",
+   "Acid Blue 3",
+   "Red 33",
+   "Polyvinyl Alcohol Polymer"
+  ],
+  "added": "2026-09-29",
+  "updated": "2026-09-29",
+  "owner": "Procter & Gamble",
+  "owner_ev": "reported",
+  "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
+  "tier": "mass",
+  "tier_ev": "reported",
+  "tier_src": "https://smartlabel.pg.com/en-us/00030772064726.html",
+  "substitutes": [
+   {
+    "name": "Finish",
+    "tier": "mass",
+    "note": "The other leading dishwasher-tab brand; a different builder and enzyme package."
+   },
+   {
+    "name": "Seventh Generation Dishwasher Pacs, Free & Clear",
+    "tier": "natural",
+    "note": "Fragrance-free and dye-free; no bleach activator."
+   }
+  ],
+  "exposure": 10,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://smartlabel.pg.com/en-us/00030772064726.html",
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed",
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Cascade is the leading US automatic-dishwasher detergent brand (the base Cascade record carries an extrapolated exposure of 15); Platinum Plus is the brand's premium tier, so the estimate stops at the brand's share of the category rather than a measured product share.",
+  "source": "Procter & Gamble SmartLabel ingredient disclosure",
+  "source_url": "https://smartlabel.pg.com/en-us/00030772064726.html",
+  "tier_note": "A premium dishwasher pod. The disclosure lists a percarbonate bleach system with a TAED-type activator, two enzymes (subtilisin protease and amylase), a benzotriazole/tolyltriazole corrosion-inhibitor pair and five dyes; the pod film is polyvinyl alcohol.",
+  "disclosure_note": "Source spellings mapped to canonical keys: 'Fragrances' -> Fragrance; 'PEG/PPG Propylheptyl Ether' -> PEG/PPG/Propylheptyl Ether; 'Acid Red 33' -> Red 33; 'Acid Blue 182' kept as the DB's existing key."
+ },
+ {
+  "name": "Mean Green Super Strength Cleaner & Degreaser",
+  "brand": "Mean Green",
+  "cat": "All-Purpose",
+  "safe": null,
+  "ings": [
+   "Potassium Hydroxide",
+   "Trisodium Dicarboxymethyl Alaninate"
+  ],
+  "added": "2026-09-29",
+  "updated": "2026-09-29",
+  "owner": null,
+  "owner_ev": "untested",
+  "owner_src": null,
+  "tier": "dollar-store",
+  "tier_ev": "reported",
+  "tier_src": "https://www.rustoleum.com/MSDS/ENGLISH/932.pdf",
+  "substitutes": [
+   {
+    "name": "Simple Green",
+    "tier": "mass",
+    "note": "The original concentrate-and-dilute degreaser; discloses its surfactant and solvent classes and carries EPA Safer Choice certification on some SKUs."
+   },
+   {
+    "name": "LA's Totally Awesome All-Purpose Cleaner",
+    "tier": "dollar-store",
+    "note": "Same dollar-store channel and price point; discloses a fuller ingredient list."
+   }
+  ],
+  "exposure": 5,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://www.rustoleum.com/MSDS/ENGLISH/932.pdf",
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed",
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Mean Green is a long-standing dollar-store and mass degreaser sold under the Rust-Oleum umbrella; no per-product US penetration figure exists, so the estimate stops at the brand's share of its channel rather than a measured product share.",
+  "source": "Rust-Oleum GHS SDS (product 932) + technical data sheet",
+  "source_url": "https://www.rustoleum.com/MSDS/ENGLISH/932.pdf",
+  "tier_note": "A concentrate-and-dilute alkaline degreaser (pH 12.5-13.0) sold through dollar stores and mass retail. The label markets it 'Non-Toxic', but the SDS names potassium hydroxide (corrosive; H314/H318/H301) at 0.1-1.0% and withholds the rest of the formula as trade secret - a product whose marketing claim and disclosure both point away from its own SDS.",
+  "disclosure_note": "Disclosure gap: the Rust-Oleum GHS SDS (product 932, rev. 2026-03-31) names only two hazardous substances and states that actual concentrations are withheld as trade secret; the technical data sheet describes the balance only as a 'proprietary blend of biodegradable surfactants, biodegradable solvent, detergents and dye'. The record carries the two disclosed components and the gap, not a guess. Source spelling mapped to canonical key: 'Alanine, N,N-bis(carboxymethyl)-, trisodium salt' -> Trisodium Dicarboxymethyl Alaninate."
  }
 ]
