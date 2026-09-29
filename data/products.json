@@ -8217,7 +8217,8 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. The Pink Stuff is a viral UK-born abrasive paste sold in the US through mass, grocery and online channels; its US household penetration is well below the legacy US cleanser leaders, so the estimate stops at the brand's share of its channel rather than a measured product share.",
   "tier_note": "An abrasive cleaning paste. The manufacturer filing lists quartz (crystalline silica) as the bulk abrasive and a C12 alkyl dipropylenetriamine as a surfactant/emulsifier; the SDS reports the quartz fraction at >=50-60% with STOT RE 2 (H373).",
-  "disclosure_note": "Source spellings mapped to canonical keys: 'Quartz' -> Silica; 'Parfum' -> Fragrance; 'Polydimethylsiloxane' -> Dimethicone; 'Colorant' kept as the DB's existing Colorant key."
+  "disclosure_note": "Source spellings mapped to canonical keys: 'Quartz' -> Silica; 'Parfum' -> Fragrance; 'Polydimethylsiloxane' -> Dimethicone; 'Colorant' kept as the DB's existing Colorant key.",
+  "heritage": false
  },
  {
   "name": "Snuggle SuperFresh Liquid Fabric Conditioner, Original",
@@ -8265,7 +8266,8 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Snuggle is one of the largest US liquid fabric-softener brands, sold through mass, grocery and dollar channels; the estimate stops at the brand's share of the category rather than a measured product share.",
   "tier_note": "A mainstream liquid fabric softener. The label lists glutaral (glutaraldehyde) as a preservative - a potent skin and respiratory sensitizer - plus an undisclosed fragrance and a colorant.",
-  "disclosure_note": "Source spellings mapped to canonical keys: 'Diethyl Ester Dimethyl Ammonium Chloride' -> Diethylester Dimethyl Ammonium Chloride; 'Colorants' -> Colorant."
+  "disclosure_note": "Source spellings mapped to canonical keys: 'Diethyl Ester Dimethyl Ammonium Chloride' -> Diethylester Dimethyl Ammonium Chloride; 'Colorants' -> Colorant.",
+  "heritage": false
  },
  {
   "name": "Ultra Joy Dishwashing Liquid, Lemon Scent",
@@ -8315,7 +8317,8 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Joy is a long-standing US hand-dish brand now well behind Dawn in share; the estimate stops at the brand's share of the mass channel rather than a measured product share.",
   "tier_note": "A mainstream hand dish liquid. The label lists methylisothiazolinone, a contact-allergen preservative, and FD&C Yellow 5 (tartrazine), a colorant that carries an EU warning for attention-deficit effects in children.",
-  "disclosure_note": "Source spelling mapped to canonical key: 'FD&C Yellow 5' -> Yellow 5. The current US retail label lists Joysuds (Greenwich, CT) as the marketer; the P&G SDS (RQ1400299) covers the same Joy Ultra Lemon formula family, which is the basis for the owner attribution."
+  "disclosure_note": "Source spelling mapped to canonical key: 'FD&C Yellow 5' -> Yellow 5. The current US retail label lists Joysuds (Greenwich, CT) as the marketer; the P&G SDS (RQ1400299) covers the same Joy Ultra Lemon formula family, which is the basis for the owner attribution.",
+  "heritage": false
  },
  {
   "name": "Branch Basics The Concentrate",
@@ -8361,6 +8364,7 @@
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times the brand's share of its channel. Rounded to one significant figure. Branch Basics is a direct-to-consumer refillable concentrate; it is not carried in mass retail, so its US household penetration is a small fraction of the mass all-purpose cleaners.",
-  "tier_note": "A seven-ingredient plant- and mineral-based concentrate diluted to make all-purpose, bathroom, glass and laundry cleaners. Fragrance-free; the chamomile extract is listed as a botanical, not a fragrance."
+  "tier_note": "A seven-ingredient plant- and mineral-based concentrate diluted to make all-purpose, bathroom, glass and laundry cleaners. Fragrance-free; the chamomile extract is listed as a botanical, not a fragrance.",
+  "heritage": false
  }
 ]
