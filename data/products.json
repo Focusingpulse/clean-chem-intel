@@ -8752,7 +8752,8 @@
   "source": "Procter & Gamble SmartLabel ingredient disclosure",
   "source_url": "https://smartlabel.pg.com/00037000791294.html",
   "tier_note": "A mainstream all-purpose cleaning spray. The disclosure lists triethanolamine and ethanolamine (amines used to cut grease) plus an undisclosed perfume; the finished product is not a disinfectant.",
-  "disclosure_note": "Source spelling mapped to canonical key: 'Perfume' -> Fragrance. The P&G SmartLabel for UPC 00037000791294 is the manufacturer's own current disclosure; a distributor spec sheet (P&G part 79129) lists a longer set that also names alcohol ethoxylate, benzisothiazolinone and C10-16 alkyldimethylamine oxide."
+  "disclosure_note": "Source spelling mapped to canonical key: 'Perfume' -> Fragrance. The P&G SmartLabel for UPC 00037000791294 is the manufacturer's own current disclosure; a distributor spec sheet (P&G part 79129) lists a longer set that also names alcohol ethoxylate, benzisothiazolinone and C10-16 alkyldimethylamine oxide.",
+  "heritage": false
  },
  {
   "name": "Clorox Scentiva Disinfecting Multi-Surface Cleaner, Tuscan Lavender & Jasmine",
@@ -8805,7 +8806,8 @@
   "source": "Clorox SmartLabel ingredient disclosure",
   "source_url": "https://smartlabel.labelinsight.com/product/6096788/ingredients",
   "tier_note": "A bleach-free disinfecting multi-surface spray. The active is a C12-16 alkyl dimethylbenzyl ammonium chloride (a quaternary ammonium compound); the label also names three fragrance allergens individually (d-limonene, butylphenyl methylpropional, citronellol).",
-  "disclosure_note": "Source spelling mapped to canonical key: 'd-Limonene' -> Limonene. The Clorox SmartLabel for UPC 044600313870 is the manufacturer's own disclosure (updated 2025-04-09) and names the fragrance allergens individually."
+  "disclosure_note": "Source spelling mapped to canonical key: 'd-Limonene' -> Limonene. The Clorox SmartLabel for UPC 044600313870 is the manufacturer's own disclosure (updated 2025-04-09) and names the fragrance allergens individually.",
+  "heritage": false
  },
  {
   "name": "Cascade Platinum Plus ActionPacs, Fresh",
@@ -8868,7 +8870,8 @@
   "source": "Procter & Gamble SmartLabel ingredient disclosure",
   "source_url": "https://smartlabel.pg.com/en-us/00030772064726.html",
   "tier_note": "A premium dishwasher pod. The disclosure lists a percarbonate bleach system with a TAED-type activator, two enzymes (subtilisin protease and amylase), a benzotriazole/tolyltriazole corrosion-inhibitor pair and five dyes; the pod film is polyvinyl alcohol.",
-  "disclosure_note": "Source spellings mapped to canonical keys: 'Fragrances' -> Fragrance; 'PEG/PPG Propylheptyl Ether' -> PEG/PPG/Propylheptyl Ether; 'Acid Red 33' -> Red 33; 'Acid Blue 182' kept as the DB's existing key."
+  "disclosure_note": "Source spellings mapped to canonical keys: 'Fragrances' -> Fragrance; 'PEG/PPG Propylheptyl Ether' -> PEG/PPG/Propylheptyl Ether; 'Acid Red 33' -> Red 33; 'Acid Blue 182' kept as the DB's existing key.",
+  "heritage": false
  },
  {
   "name": "Mean Green Super Strength Cleaner & Degreaser",
@@ -8912,6 +8915,7 @@
   "source": "Rust-Oleum GHS SDS (product 932) + technical data sheet",
   "source_url": "https://www.rustoleum.com/MSDS/ENGLISH/932.pdf",
   "tier_note": "A concentrate-and-dilute alkaline degreaser (pH 12.5-13.0) sold through dollar stores and mass retail. The label markets it 'Non-Toxic', but the SDS names potassium hydroxide (corrosive; H314/H318/H301) at 0.1-1.0% and withholds the rest of the formula as trade secret - a product whose marketing claim and disclosure both point away from its own SDS.",
-  "disclosure_note": "Disclosure gap: the Rust-Oleum GHS SDS (product 932, rev. 2026-03-31) names only two hazardous substances and states that actual concentrations are withheld as trade secret; the technical data sheet describes the balance only as a 'proprietary blend of biodegradable surfactants, biodegradable solvent, detergents and dye'. The record carries the two disclosed components and the gap, not a guess. Source spelling mapped to canonical key: 'Alanine, N,N-bis(carboxymethyl)-, trisodium salt' -> Trisodium Dicarboxymethyl Alaninate."
+  "disclosure_note": "Disclosure gap: the Rust-Oleum GHS SDS (product 932, rev. 2026-03-31) names only two hazardous substances and states that actual concentrations are withheld as trade secret; the technical data sheet describes the balance only as a 'proprietary blend of biodegradable surfactants, biodegradable solvent, detergents and dye'. The record carries the two disclosed components and the gap, not a guess. Source spelling mapped to canonical key: 'Alanine, N,N-bis(carboxymethyl)-, trisodium salt' -> Trisodium Dicarboxymethyl Alaninate.",
+  "heritage": false
  }
 ]
