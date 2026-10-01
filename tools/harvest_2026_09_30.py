@@ -70,7 +70,15 @@ IB_TOILET = ("https://www.indexbox.io/store/"
 ALIASES = {
     # Same substance, two spellings across two filings by the same maker.
     "Alcohols C12-15 Ethoxylated": "Alcohols, C12-15, Ethoxylated",
-    "Diethylene Glycol Monobutyl Ether": "Butoxydiglycol",
+    # DIRECTION CORRECTED 2026-10-01. This read the wrong way round: it sent the
+    # EXISTING graded key ("Diethylene Glycol Monobutyl Ether", CAS 112-34-5,
+    # derm C / repro C / work C, already used by four products) to a key that did
+    # not exist, so the writer minted an ungraded duplicate ("Butoxydiglycol")
+    # and the two products read the duplicate instead of the graded key. That is
+    # the exact class the ingest guard exists to prevent. Flagged by Linnea as
+    # R1 on the 2026-09-30 verdict; merged back the same night by
+    # tools/repair_2026_10_01.py. Label wording -> existing key, always.
+    "Butoxydiglycol": "Diethylene Glycol Monobutyl Ether",
     # NOTE: "Sodium Metasilicate" (anhydrous, CAS 6834-92-0, The Works filing)
     # and "Sodium Metasilicate Pentahydrate" (CAS 10213-79-3, Great Value filing)
     # are DIFFERENT substances and must stay two keys. Do not alias them.

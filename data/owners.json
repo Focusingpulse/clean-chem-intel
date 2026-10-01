@@ -323,7 +323,16 @@
     "Greased Lightning",
     "The Works",
     "HomeCare Labs",
-    "Cinch"
+    "Cinch",
+    "101",
+    "A-1",
+    "Arctic White",
+    "Hi-lex",
+    "Pure Bright",
+    "SMART",
+    "Value Star",
+    "Austin's",
+    "James Austin Company"
    ],
    "brand_sources": {
     "verified_by_apa": [
@@ -339,9 +348,27 @@
      "The Works",
      "HomeCare Labs",
      "KIK"
+    ],
+    "reported_by_austins_site": [
+     "101",
+     "A-1",
+     "Austin's",
+     "James Austin Company"
+    ],
+    "reported_by_kik_ingredients_index": [
+     "Arctic White",
+     "Hi-lex",
+     "Pure Bright",
+     "SMART",
+     "Value Star"
     ]
    },
-   "src_brands_marketed": "https://www.kikcorp.com/our-products/"
+   "src_brands_marketed": "https://www.kikcorp.com/our-products/",
+   "brands_added_2026_10_01": {
+    "added": [],
+    "why": "The value bleach shelf. 101, A-1 and Austin's are the James Austin Company, acquired by KIK Custom Products in 2018 (kikcorp.com timeline; austinsbleach.com/meet-austins/ states 'Austin's became part of KIK Custom Products, America's largest bleach supplier'). Arctic White, Hi-lex, Pure Bright, SMART and Value Star disclose as KIK International LLC on the KIK disclosure index.",
+    "known_limitation": "apply_owners() stamps ONE src per owner record, so every brand on this list receives the KIK record's src (the SEC asset purchase agreement for the Comet/Spic and Span business), which does not mention the value brands. The per-brand sources are recorded in brand_sources and are read by nothing. Filed as a gap, not fixed silently."
+   }
   }
  },
  "independents": {

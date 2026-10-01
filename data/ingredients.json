@@ -4791,14 +4791,6 @@
   "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-30; not yet graded against GHS.",
   "s": "Tetramethyl Acetyloctahydro-Naphthalenes. Listed in a manufacturer disclosure read 2026-09-30; not yet graded against GHS."
  },
- "Butoxydiglycol": {
-  "ev": "Low",
-  "g": null,
-  "gr": {},
-  "impacts": [],
-  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-30; not yet graded against GHS.",
-  "s": "Butoxydiglycol. Listed in a manufacturer disclosure read 2026-09-30; not yet graded against GHS."
- },
  "Sodium Lauryl Sarcosinate": {
   "ev": "Low",
   "g": null,
@@ -4902,14 +4894,6 @@
   "impacts": [],
   "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-30; not yet graded against GHS.",
   "s": "Direct Blue 86. Listed in a manufacturer disclosure read 2026-09-30; not yet graded against GHS."
- },
- "Sodium Xylene Sulfonate": {
-  "ev": "Low",
-  "g": null,
-  "gr": {},
-  "impacts": [],
-  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-30; not yet graded against GHS.",
-  "s": "Sodium Xylene Sulfonate. Listed in a manufacturer disclosure read 2026-09-30; not yet graded against GHS."
  },
  "Alcohols, C10-16, Ethoxylated": {
   "ev": "Low",
@@ -5378,5 +5362,29 @@
   "gr": {},
   "impacts": [],
   "note": "Terpene fraction of sweet orange oil - a botanical UVCB, not a discrete substance. PubChem PUG REST returns no CID for the name (404). Recorded extrapolated rather than invented; its principal constituent d-limonene is graded derm D / env F in this database. Disclosed as a fragrance component by the Reckitt SmartLabel for Air Wick Scented Oil, Ocean Spray."
+ },
+ "Sodium Metaperiodate": {
+  "s": "Sodium metaperiodate. Strong inorganic oxidizer; used as a detergent builder/bleach stabilizer on two value bleach labels.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the A-1 Concentrated Bleach and Hi-lex Bleach disclosures (both James Austin Company / KIK) with CAS 7790-28-5, listed as a detergent builder. Not yet graded against GHS; recorded rather than guessed. Note for the grading lane: periodate is an oxidizer and the usual builder in this shelf is sodium silicate, which both labels also carry, so the pair is worth a second look."
+ },
+ "PEG-8": {
+  "s": "Polyethylene glycol 8. Solvent/humectant; CAS 25322-68-3.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Pure Bright Stain Remover & Color Booster disclosure with CAS 25322-68-3, the generic polyethylene glycol CAS. Kept as its own key rather than folded into 'PEG' because the registry already carries grade-specific keys (PEG-9, PEG-150) and the label names a grade. Not yet graded."
+ },
+ "C.I. Acid Blue 40": {
+  "s": "Acid Blue 40, a blue anthraquinone dye (Colour Index 61585).",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Pure Bright Stain Remover & Color Booster disclosure with CAS 6424-85-7, as a dye. Kept as its own key because the registry already keeps named dyes distinct (Acid Blue 93, Direct Blue 86, CI Acid Blue 145). Not yet graded."
  }
 }
