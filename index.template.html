@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>Clean Chem Intel. Know What's Under Your Sink</title>
 <meta name="description" content="A living database of cleaning products, graded ingredient by ingredient. Search by health impact: respiratory, reproductive, endocrine, skin, aquatic, cancer, allergen.">
 <style>
@@ -20,15 +22,23 @@
 
   /* ---------- header ---------- */
   .topbar{position:sticky;top:0;z-index:40;background:rgba(250,249,246,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-  .topbar-in{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
-  .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .topbar-in{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 16px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex:0 0 auto}
   .mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--pine),var(--pine-2));display:flex;align-items:center;justify-content:center;color:#fff;font-size:17px;box-shadow:0 2px 6px rgba(29,92,69,.35)}
-  .brand-name{font-weight:800;font-size:1.02rem;color:var(--ink);letter-spacing:-.2px}
+  .brand-name{font-weight:800;font-size:1.02rem;color:var(--ink);letter-spacing:-.2px;white-space:nowrap}
   .brand-name span{color:var(--pine)}
-  .live{display:flex;align-items:center;gap:6px;font-size:.72rem;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 11px}
+  .live{display:flex;align-items:center;gap:6px;font-size:.72rem;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 11px;flex:0 1 auto;white-space:nowrap}
   .live .dot{width:8px;height:8px;border-radius:50%;background:var(--a);animation:pulse 2s infinite}
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
-  .live b{color:var(--pine)}
+  .live b{color:var(--pine);white-space:nowrap}
+  .live .lbl-short{display:none}
+  /* narrow phones: the status pill must not wrap the date across two lines */
+  @media(max-width:430px){
+    .brand-name{font-size:.95rem}
+    .live{padding:5px 9px;font-size:.68rem;gap:5px}
+    .live .lbl-full{display:none}
+    .live .lbl-short{display:inline}
+  }
 
   /* ---------- hero ---------- */
   .hero{background:linear-gradient(160deg,#eef5f0 0%,#e2efe7 55%,#d7e8de 100%);border-bottom:1px solid var(--line);overflow:hidden;position:relative}
@@ -247,7 +257,7 @@
       <div class="mark">🧪</div>
       <div class="brand-name">Clean Chem <span>Intel</span></div>
     </a>
-    <div class="live"><span class="dot"></span>Living database · updated <b id="live-date"></b></div>
+    <div class="live"><span class="dot"></span><span class="lbl-full">Living database · updated </span><span class="lbl-short">Updated </span><b id="live-date"></b></div>
   </div>
 </div>
 
