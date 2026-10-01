@@ -9369,7 +9369,8 @@
   "source": "Clorox SmartLabel ingredient disclosure",
   "source_url": "https://smartlabel.labelinsight.com/product/6096885/ingredients",
   "tier_note": "A mainstream drain cleaner sold at mass retail. The label carries a bleach-and-lye formula: sodium hypochlorite (the bleach) plus sodium hydroxide (lye) plus sodium orthosilicate, which is why the product carries corrosive warnings and a 'do not mix with other drain cleaners' instruction. The disclosure is unusually complete for the category.",
-  "disclosure_note": "The Clorox SmartLabel for UPC 044600002217 (updated 2026-03-25) is the manufacturer's own current disclosure and names every intentionally-added component; no canonical-key remapping was needed. The companion foaming SKU (UPC 044600002149) carries the same base plus hydrogen peroxide, sulfuric acid and a confidential stabilizer package, so the gel and the foam are not the same formula."
+  "disclosure_note": "The Clorox SmartLabel for UPC 044600002217 (updated 2026-03-25) is the manufacturer's own current disclosure and names every intentionally-added component; no canonical-key remapping was needed. The companion foaming SKU (UPC 044600002149) carries the same base plus hydrogen peroxide, sulfuric acid and a confidential stabilizer package, so the gel and the foam are not the same formula.",
+  "heritage": false
  },
  {
   "name": "Softsoap Antibacterial Liquid Hand Soap Pump, Gentle Clean, Sparkling Pear",
@@ -9414,7 +9415,8 @@
   "source": "Colgate-Palmolive SmartLabel ingredient disclosure",
   "source_url": "https://www.colgatepalmolive.com/en-us/smartlabel/35000985408",
   "tier_note": "A mass-market antibacterial hand soap. The active is benzalkonium chloride, a quaternary ammonium compound; the base is a betaine/amine-oxide surfactant blend with a fragrance that is not broken out by component. Entered ungraded: product grading is the Sifter lane.",
-  "disclosure_note": "Source spelling mapped to canonical key: 'FD&C Blue No. 1' -> Blue 1 (PubChem CID 19700 returns title 'FD&C Blue No. 1'). The Colgate-Palmolive SmartLabel for UPC 35000985408 (updated 2024-05-29) is the manufacturer's own current disclosure and separates the active from the inactive ingredients."
+  "disclosure_note": "Source spelling mapped to canonical key: 'FD&C Blue No. 1' -> Blue 1 (PubChem CID 19700 returns title 'FD&C Blue No. 1'). The Colgate-Palmolive SmartLabel for UPC 35000985408 (updated 2024-05-29) is the manufacturer's own current disclosure and separates the active from the inactive ingredients.",
+  "heritage": false
  },
  {
   "name": "Dial Complete Foaming Antibacterial Hand Wash, Spring Water",
@@ -9461,7 +9463,8 @@
   "source": "FDA DailyMed OTC drug label (SPL), NDC 54340-249",
   "source_url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0a70d7e2-d29f-27cc-e054-00144ff8d46c",
   "tier_note": "A mass-market foaming antibacterial hand soap. The active is benzethonium chloride, a quaternary ammonium compound; the inactive list also names chlorhexidine digluconate (an antiseptic) and DMDM hydantoin (a formaldehyde-releasing preservative). Two antimicrobial actives plus a preservative is a heavier antimicrobial load than the Softsoap sibling.",
-  "disclosure_note": "The FDA DailyMed OTC drug label (SPL) for NDC 54340-249 is the labeler's own regulatory filing and names the active (benzethonium chloride 0.20%) at its declared strength, plus the full inactive list. This is the same structure as an EPA-listed SDS: a government host serving a manufacturer document. The label names The Dial Corporation, a Henkel company, as labeler of record."
+  "disclosure_note": "The FDA DailyMed OTC drug label (SPL) for NDC 54340-249 is the labeler's own regulatory filing and names the active (benzethonium chloride 0.20%) at its declared strength, plus the full inactive list. This is the same structure as an EPA-listed SDS: a government host serving a manufacturer document. The label names The Dial Corporation, a Henkel company, as labeler of record.",
+  "heritage": false
  },
  {
   "name": "Air Wick Scented Oil, Ocean Spray",
@@ -9540,6 +9543,7 @@
   "source": "Reckitt SmartLabel ingredient disclosure (California Cleaning Product Right to Know Act)",
   "source_url": "https://www.rbnainfo.com/smart-label.php?productLineId=3404",
   "tier_note": "A plug-in scented-oil air freshener. This is the disclosure that most of the category does not make: an air freshener is normally a single line reading 'fragrance', which is an unidentifiable blend. Reckitt publishes the blend at component level, so it resolves into named substances instead of staying a blank. The formula is a fragrance oil in a glycol solvent base with a bittering agent (denatonium benzoate). Entered ungraded: product grading is the Sifter lane.",
-  "disclosure_note": "Source spellings mapped to canonical keys: 'Fragrance/Parfum' -> Fragrance; 'd-Limonene' -> Limonene; 'Eucalyptus oil' kept as the DB's existing key. The Reckitt SmartLabel (UPC 0-62338-02326-7) is the manufacturer's own disclosure, published under the California Cleaning Product Right to Know Act, and resolves the fragrance into named components instead of a single 'fragrance' line. The page flags which components sit on a California designated list and which are EU fragrance allergens."
+  "disclosure_note": "Source spellings mapped to canonical keys: 'Fragrance/Parfum' -> Fragrance; 'd-Limonene' -> Limonene; 'Eucalyptus oil' kept as the DB's existing key. The Reckitt SmartLabel (UPC 0-62338-02326-7) is the manufacturer's own disclosure, published under the California Cleaning Product Right to Know Act, and resolves the fragrance into named components instead of a single 'fragrance' line. The page flags which components sit on a California designated list and which are EU fragrance allergens.",
+  "heritage": false
  }
 ]
