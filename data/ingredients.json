@@ -5386,5 +5386,81 @@
   "gr": {},
   "impacts": [],
   "note": "Named on the Pure Bright Stain Remover & Color Booster disclosure with CAS 6424-85-7, as a dye. Kept as its own key because the registry already keeps named dyes distinct (Acid Blue 93, Direct Blue 86, CI Acid Blue 145). Not yet graded."
+ },
+ "Sodium Salts of C12-18 Fatty Acids": {
+  "ev": "Extrapolated",
+  "g": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "s": "Sodium soap of C12-18 fatty acids (suds reducer). UVCB; no discrete PubChem CID.",
+  "note": "PubChem PUG REST returns no CID for the name (404); it is a UVCB sodium soap cut, not a discrete substance. Recorded extrapolated rather than invented; the DB's sibling soap entries (MEA Salts of C12-18 Fatty Acids; Fatty Acids, C8-18 and C18-Unsaturated Sodium Salts) carry no dimension grade either. Suds reducer disclosed by the P&G SmartLabel for Dreft Stage 1 Newborn."
+ },
+ "Sodium Cumenesulfonate": {
+  "ev": "High",
+  "g": "H319",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "s": "Causes serious eye irritation",
+  "note": "Graded from PubChem GHS (CID 23679813, returned title 'Sodium p-cumenesulfonate' - the para isomer the label term denotes; CAS 28348-53-0). Headline ECHA C&L block: 258 reports from 2 notifications; H319 at 100% consensus -> derm C (serious eye irritation). No skin-hazard code reaches the house >=40% bar. Hydrotrope disclosed by the P&G SmartLabel for Dreft Stage 1 Newborn."
+ },
+ "Calcium Formate": {
+  "ev": "High",
+  "g": "H318",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "s": "Causes serious eye damage",
+  "note": "Graded from PubChem GHS (CID 10997, returned title 'Calcium formate' - matches; CAS 544-17-2). Headline ECHA C&L block: 543 reports from 8 notifications; H318 at 90.4% consensus -> derm D (serious eye damage). Disclosed by the P&G SmartLabel for Dreft Stage 1 Newborn."
+ },
+ "C6-12 Alcohol Ethoxylates": {
+  "ev": "Extrapolated",
+  "g": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "s": "C6-12 alcohol ethoxylate surfactant. UVCB; no discrete PubChem CID.",
+  "note": "PubChem PUG REST returns no CID for the name or for CAS 68439-45-2 (404); it is a UVCB alcohol-ethoxylate cut, not a discrete substance. Recorded extrapolated rather than invented; the DB's sibling ethoxylate cuts (Alcohols, C9-11, ethoxylated; Alcohols, C10-16, Ethoxylated) carry no dimension grade. Surfactant disclosed by the Church & Dwight ingredient-disclosure form for Scrub Free Total Bathroom Cleaner - Lemon Scent (material 42000220)."
+ },
+ "Sodium Acrylic Acid/MA Copolymer": {
+  "ev": "Extrapolated",
+  "g": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "s": "Acrylic acid / maleic anhydride copolymer, sodium salt (antiredeposition polymer). Polymer; no discrete PubChem CID.",
+  "note": "PubChem PUG REST returns no CID for the name or for CAS 52255-49-9 (404); it is a polymer (acrylic acid / maleic anhydride copolymer, sodium salt), not a discrete substance. Recorded extrapolated by polymer class rather than invented; the DB's sibling carboxylate polymers (Sodium Polyacrylate, Sodium Polycarboxylate) carry no dimension grade either. Antiredeposition agent disclosed by the Reckitt SmartLabel for Calgon Water Softener - Liquid."
+ },
+ "Sodium Benzeneoxybispropylenesulfonate": {
+  "ev": "Extrapolated",
+  "g": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "s": "Diphenyl-oxide disulfonate surfactant (fragrance component). UVCB; no discrete PubChem CID.",
+  "note": "PubChem PUG REST returns no CID for the name or for CAS 119345-04-9 (404); it is a UVCB surfactant (sodium dodecyl diphenyl oxide disulfonate class), not a discrete substance. Recorded extrapolated rather than invented; class-analogous to the DB's Sodium Dodecylbenzenesulfonate (derm D, env C), which is a class signal, not a grade for this substance. Fragrance component disclosed by the Reckitt SmartLabel for Calgon Water Softener - Liquid."
+ },
+ "Magnesium Nitrate": {
+  "ev": "Medium",
+  "g": "H272,H319",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "s": "May intensify fire; oxidizer",
+  "note": "Graded from PubChem GHS (CID 25212, returned title 'Magnesium nitrate' - matches; CAS 10377-60-3). Headline ECHA C&L block: 2789 reports from 32 notifications; H319 at 64.2% -> derm C. H315 37.3% and H335 18.9% fall below the house bars; H272 78.4% is a physical oxidizer hazard and is not a graded dimension. Two secondary notifier blocks carry H370/H372/H371 without percentages and are noted, not graded. Non-functional constituent (nitrate salt) disclosed by the Reckitt SmartLabel for Calgon Water Softener - Liquid."
+ },
+ "Sorbitan Monooleate": {
+  "ev": "Medium",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "note": "PubChem GHS (CID 9920342, returned title 'Sorbitan mono-(9Z)-9-octadecenoate' - the monooleate ester the label calls 'Sorbitan Monooleate'; CAS 1338-43-8). Headline ECHA C&L block: 1221 of 1224 reports not meeting hazard criteria; no H-code reaches the house >=40% bar, so no dimension grade is justified. Emulsifier disclosed by Endust for Multi-Surface Dusting & Cleaning Spray."
  }
 }
