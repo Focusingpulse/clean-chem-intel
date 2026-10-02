@@ -52,15 +52,17 @@
   "Procter & Gamble": {
    "type": "public (PG)",
    "detail": "Largest US household products manufacturer.",
-   "ev": "reported",
-   "src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
+   "ev": "verified",
+   "src": "https://us.pg.com/brands/",
    "brands": [
     "Dawn",
     "Tide",
     "Gain",
     "Febreze",
     "Mr. Clean",
-    "Cascade"
+    "Cascade",
+    "P&G",
+    "Dreft"
    ]
   },
   "Reckitt": {
@@ -73,31 +75,34 @@
     "Vanish",
     "Air Wick",
     "Woolite",
-    "Finish"
+    "Finish",
+    "Reckitt Benckiser"
    ]
   },
   "Church & Dwight": {
    "type": "public (CHD)",
    "detail": null,
-   "ev": "reported",
-   "src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
+   "ev": "verified",
+   "src": "https://churchdwight.com/our-brands/",
    "brands": [
     "Arm & Hammer",
-    "OxiClean"
+    "OxiClean",
+    "Scrub Free"
    ]
   },
   "Henkel": {
    "type": "public (HEN3)",
    "detail": "German. Both 'Henkel' and 'Persil' appear as brand values in products.json.",
    "ev": "reported",
-   "src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
+   "src": "https://www.henkel.com/resource/blob/691626/23138f37b922dddd872440abc0f3f8ae/data/2016-06-24-ad-hoc-sun-acquisition-en.pdf",
    "brands": [
     "Persil",
     "Purex",
     "All",
     "Dial",
     "20 Mule Team",
-    "Fels-Naptha"
+    "Fels-Naptha",
+    "Snuggle"
    ]
   },
   "Colgate-Palmolive": {
@@ -116,11 +121,12 @@
   "Clorox": {
    "type": "public (CLX)",
    "detail": "Owns Burt's Bees as its natural-products arm.",
-   "ev": "reported",
-   "src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
+   "ev": "verified",
+   "src": "https://www.thecloroxcompany.com/brands/",
    "brands": [
     "Clorox",
-    "Burt's Bees"
+    "Burt's Bees",
+    "Liquid-Plumr"
    ]
   },
   "Country Life LLC": {
@@ -423,7 +429,8 @@
    "ev": "verified",
    "src": "https://faultlessbrands.com/our-brands/",
    "brands": [
-    "Bon Ami"
+    "Bon Ami",
+    "Faultless"
    ]
   },
   "BRANDED Group": {
