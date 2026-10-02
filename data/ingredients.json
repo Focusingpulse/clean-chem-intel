@@ -1533,8 +1533,8 @@
   "g": "Not Classified",
   "gr": {},
   "impacts": [],
-  "note": "PubChem CID 7714 — H411 (10.3%) and H412 (19.3%) are both below the 40% house bar, so no grade is justified. Disclosed by Church & Dwight as a fragrance component of Arm & Hammer liquid laundry detergent.",
-  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)"
+  "note": "PubChem CID 7714 (returned title 'Gamma-undecalactone', matches; CAS 104-67-6). H411 (10.3%) and H412 (19.3%) are both below the 40% house bar and H401 appears without a notifier percentage, so no grade is justified. Disclosed as a fragrance component by Church & Dwight (Arm & Hammer liquid laundry detergent) and by the Reckitt SmartLabel for Air Wick Scented Oil, Ocean Spray.",
+  "s": "Lactone fragrance (peach). No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)."
  },
  "Geraniol": {
   "ev": "Medium",
@@ -5105,14 +5105,6 @@
    "allerg"
   ],
   "note": "Graded from PubChem GHS (CID 2758, returned title '1,8-Cineole' - the systematic name for the terpene oxide the disclosure calls 'Eucalyptol'; CAS 470-82-6). H317 84.2% -> derm D (sensitizer, tagged allerg); H226 98.7% is a physical hazard and is not a graded dimension. Disclosed as a fragrance component by the Reckitt SmartLabel for Air Wick Scented Oil, Ocean Spray."
- },
- "gamma-Undecalactone": {
-  "g": "Not Classified",
-  "s": "Lactone fragrance (peach). No GHS hazard criteria met by the notifier majority.",
-  "ev": "Medium",
-  "gr": {},
-  "impacts": [],
-  "note": "PubChem GHS (CID 7714, returned title 'Gamma-undecalactone' - matches; CAS 104-67-6). H411 10.3% and H412 19.3% fall below the house >=40% consensus bar; H401 appears without a notifier percentage. No dimension grade is justified. Disclosed as a fragrance component by the Reckitt SmartLabel for Air Wick Scented Oil, Ocean Spray."
  },
  "Hexenyl Acetate": {
   "g": "Not Classified",

@@ -78,6 +78,24 @@ def validate():
         if ev not in (None, "High", "Medium", "Low", "Extrapolated"):
             issues.append(f"ingredient {name}: odd evidence {ev!r}")
 
+    # Case-variant duplicate keys are a recurring defect class in this database:
+    # the ingest and gather lanes key new records by name.lower() while curated
+    # records are stored capitalised, so one chemical can sit under two keys and
+    # the answer changes by spelling. The 2026-09-26 case_duplicate_grades lane
+    # removed the unreferenced member of each group, but a gather script re-minted
+    # one (gamma-Undecalactone vs Gamma-Undecalactone) on 2026-09-30 and nothing
+    # reported it -- the lane tool asserts exactly one referenced key per group,
+    # so a group where BOTH members are referenced was invisible to it. This check
+    # means the shape cannot recur unnoticed.
+    by_lower = {}
+    for name in ings:
+        by_lower.setdefault(name.strip().lower(), []).append(name)
+    for key, names in sorted(by_lower.items()):
+        if len(names) > 1:
+            issues.append(
+                f"ingredients.json: case-variant duplicate keys {sorted(names)} "
+                f"(identical ignoring case) -- merge to one canonical spelling")
+
     # products must not reference unknown ingredients
     for p in products:
         for ing in p.get("ings", []):
