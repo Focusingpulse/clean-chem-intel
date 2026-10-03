@@ -5454,5 +5454,133 @@
   "impacts": [],
   "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
   "note": "PubChem GHS (CID 9920342, returned title 'Sorbitan mono-(9Z)-9-octadecenoate' - the monooleate ester the label calls 'Sorbitan Monooleate'; CAS 1338-43-8). Headline ECHA C&L block: 1221 of 1224 reports not meeting hazard criteria; no H-code reaches the house >=40% bar, so no dimension grade is justified. Emulsifier disclosed by Endust for Multi-Surface Dusting & Cleaning Spray."
+ },
+ "Acid Blue 204": {
+  "s": "Acid Blue 204, a blue anthraquinone dye (Colour Index 61554).",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Comet Multi-Surface Spray Cleaner (Country Apple) disclosure with CAS 61724-00-3, as a dye. Not yet graded."
+ },
+ "Alcohols, C6-C12, Ethoxylated": {
+  "s": "Ethoxylated C6-C12 alcohols, a non-ionic surfactant; CAS 68439-45-2.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Comet Bath Cleaner disclosure (both sizes) with CAS 68439-45-2, as a surfactant. Not yet graded. Kept as its own key rather than folded into the C10-16 alcohol ethoxylate: the chain length and the CAS differ."
+ },
+ "Alkyl (67% C12, 25% C14, 7% C16, 1% C8+C10+C18) Dimethyl Benzyl Ammonium Chloride": {
+  "s": "A dialkyl dimethyl benzyl ammonium chloride disinfectant active (benzalkonium chloride type), CAS 63449-41-2.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Comet Ultra Bathroom Spray disclosure with CAS 63449-41-2, as an active ingredient. Not yet graded. Kept as its own record rather than folded into Benzalkonium Chloride, matching the registry's existing practice of keeping each UVCB quat blend under its own filing wording for traceability (see Alkyl C12-16 Dimethylbenzyl Ammonium Chloride)."
+ },
+ "Ammonium Laureth Sulfate": {
+  "s": "Ammonium lauryl ether sulfate, an anionic surfactant; CAS 67762-19-0.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Comet Classic Window Cleaner disclosure with CAS 67762-19-0, as a surfactant. Not yet graded."
+ },
+ "Coconut Fatty Acid": {
+  "s": "Coconut fatty acid, a mixture of C8-C18 saturated fatty acids from coconut oil; CAS 61788-47-4.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on The Works Power Gel disclosure with CAS 61788-47-4, as a surfactant. Not yet graded. Kept separate from the existing C8-C18 fatty acid key: the CAS differs and the filings name them separately."
+ },
+ "Dipropylene Glycol Methyl Ether": {
+  "s": "Dipropylene glycol methyl ether (DPM). Glycol ether solvent; CAS 34590-94-8.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on The Works Tub & Shower Cleaner disclosure with CAS 34590-94-8, as a solvent. Not yet graded. Kept as its own key rather than folded into the butyl glycol ether key: this is the methyl ether, a different substance and a different CAS."
+ },
+ "Morpholine": {
+  "s": "Morpholine. Secondary amine used as a corrosion inhibitor; CAS 110-91-8.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Comet Foaming Bath Spray disclosure with CAS 110-91-8, as a corrosion inhibitor. Not yet graded. Worth the grading lane's attention: it is a secondary amine co-listed here with sodium nitrite, and secondary amines plus nitrite are the classic nitrosamine precursor pair."
+ },
+ "Non-ionic Surfactant": {
+  "s": "An ethoxylated non-ionic surfactant, named only by class on the disclosure.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Comet Ultra Bathroom Spray disclosure as 'Non-ionic Surfactant' with CAS 'Not available'. The disclosure gives the class and withholds the identity; recorded as such rather than folded into a guessed key."
+ },
+ "PEG-40 Castor Oil": {
+  "s": "PEG-40 castor oil, an ethoxylated castor oil used as an emulsifier/solubiliser; CAS 61791-12-6.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Spic and Span Cinch Glass Cleaner disclosure with CAS 61791-12-6, as an emulsifier. Not yet graded."
+ },
+ "Polyacrylic Acid": {
+  "s": "Polyacrylic acid. Water-soluble polymer used as a dispersant and thickener in cream cleansers; CAS 9003-01-4.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Comet Soft Cleanser with Bleach disclosure (2023-04-19) with CAS 9003-01-4, listed as a surfactant. Not yet graded against GHS; recorded rather than guessed."
+ },
+ "Silicone Emulsion": {
+  "s": "Silicone emulsion, an antifoam. Composition not specified on the disclosure.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on The Works Limeosol Cleaner disclosure as a foam suppressant with no CAS ('not available'). Recorded as an unidentified constituent rather than a substance; the disclosure does not say which silicone."
+ },
+ "Sodium Cumene Sulfonate": {
+  "s": "Sodium cumene sulfonate, a hydrotrope used to keep surfactants in solution; CAS 28348-53-0.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Comet Bath Cleaner disclosure (both sizes) with CAS 28348-53-0, listed in the chelant role. Not yet graded."
+ },
+ "Sodium Nitrite": {
+  "s": "Sodium nitrite. Inorganic salt used here as a corrosion inhibitor; CAS 7632-00-0.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Comet Foaming Bath Spray disclosure with CAS 7632-00-0, as a corrosion inhibitor. Not yet graded. Listed on the same filing as morpholine; see that entry."
+ },
+ "Solvent Green 7": {
+  "s": "Solvent Green 7, a green fluorescent dye (Colour Index 59040).",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Comet Multi-Surface Spray Cleaner (Country Apple) disclosure with CAS 6358-69-6, as a dye. Not yet graded."
+ },
+ "Tris(N-Hydroxyethyl) Hexahydrotriazine": {
+  "s": "1,3,5-Tris(2-hydroxyethyl)-hexahydro-s-triazine. A preservative that releases formaldehyde; CAS 4719-04-4.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Comet Multi-Surface Spray Cleaner (Country Apple) disclosure with CAS 4719-04-4, listed as a preservative. Not yet graded here; the grading lane should resolve it, because this is a formaldehyde-releasing preservative disclosed on a value-price kitchen surface spray."
+ },
+ "Yellow 8": {
+  "s": "Yellow 8 (Fluorescein sodium), a yellow dye; CAS 518-47-8.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Top Job Lemon Ammonia disclosure with CAS 518-47-8, as a dye. Not yet graded."
  }
 }

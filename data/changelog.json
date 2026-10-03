@@ -1,5 +1,9 @@
 [
  {
+  "date": "2026-10-03",
+  "text": "Spectrum harvest: 17 products added to the bathroom, glass, cleanser and ammonia shelf from KIK manufacturer SB-258 filings read 2026-10-03 (Comet, The Works, Spic and Span, Top Job, Austin's). Comet Bathroom list completed and sourced; The Works Toilet Bowl Cleaner given a dollar-channel tier source."
+ },
+ {
   "date": "2026-10-02",
   "text": "Data-quality pass (RUN C): merged a case-variant duplicate ingredient key. gamma-Undecalactone and Gamma-Undecalactone were the same substance (PubChem CID 7714, CAS 104-67-6) sitting under two spellings with identical grade and evidence, because the 2026-09-30 gather minted the lowercase key while the curated record already existed capitalised. Air Wick Scented Oil, Ocean Spray repointed to the canonical key; both records' facts preserved on the survivor. No grade, evidence level or product grade changed. 513 -> 512 ingredient records. Guard added: chem_maintain.py now reports any case-insensitive duplicate ingredient key, a shape the 2026-09-26 lane tool could not see because it asserts exactly one referenced key per group and this pair had both members referenced."
  },
