@@ -1,6 +1,10 @@
 [
  {
   "date": "2026-10-03",
+  "text": "Daily maintenance: rebuilt the published index and counts ledger, which had drifted behind the data (headline counts were 17 products stale) while this lane was blocked by a multi-day sandbox shell outage. No product or ingredient data changed this run."
+ },
+ {
+  "date": "2026-10-03",
   "text": "Spectrum harvest: 17 products added to the bathroom, glass, cleanser and ammonia shelf from KIK manufacturer SB-258 filings read 2026-10-03 (Comet, The Works, Spic and Span, Top Job, Austin's). Comet Bathroom list completed and sourced; The Works Toilet Bowl Cleaner given a dollar-channel tier source."
  },
  {
