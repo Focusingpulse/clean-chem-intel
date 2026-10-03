@@ -482,34 +482,38 @@
   {
    "name": "Triclosan",
    "region": "eu",
-   "status": "banned",
-   "since": "2010",
-   "rule": "EU banned in cosmetics. US FDA banned OTC antibacterial soaps 2016 — but it remains in some consumer products; the ban took 40+ years to catch up.",
-   "reason": "Endocrine disruption (thyroid), bacterial resistance, aquatic toxicity."
+   "status": "restricted",
+   "since": "2014",
+   "rule": "EU restricts triclosan in cosmetics to 0.3% in listed product types and 0.2% in mouthwash (Reg. 358/2014) — a restriction, not a general ban. US: FDA banned OTC consumer antiseptic washes in 2016, but it remains in some consumer products.",
+   "reason": "Endocrine disruption (thyroid), bacterial resistance, aquatic toxicity.",
+   "src": "https://eur-lex.europa.eu/eli/reg/2014/358/oj/eng"
   },
   {
    "name": "Nonylphenol Ethoxylates",
    "region": "eu",
    "status": "banned",
    "since": "2005",
-   "rule": "EU banned in cleaning products. US: EPA restricts industrial use only; consumer cleaning products can still contain them.",
-   "reason": "Endocrine disruption (estrogenic), aquatic toxicity, persistence."
+   "rule": "EU restricts nonylphenol and NPEs at 0.1% or more in domestic and industrial cleaning, textiles, cosmetics and other uses (Directive 2003/53/EC, applied from 17 January 2005). US: EPA's 2010 action plan pursued a voluntary industrial-laundry phase-out and proposed TSCA rules; no consumer cleaning ban.",
+   "reason": "Endocrine disruption (estrogenic), aquatic toxicity, persistence.",
+   "src": "https://eur-lex.europa.eu/eli/dir/2003/53/oj/eng"
   },
   {
    "name": "Phosphates (detergents)",
    "region": "eu",
    "status": "banned",
    "since": "2013",
-   "rule": "EU banned phosphates in laundry detergent (2013) and dishwasher detergent (2017). US: no federal ban; a few state-level limits.",
-   "reason": "Eutrophication — algal blooms and dead zones in waterways."
+   "rule": "EU banned phosphates in consumer laundry detergent from 30 June 2013 and in consumer dishwasher detergent from 1 January 2017 (Reg. 259/2012). US: no federal ban; a few state-level limits.",
+   "reason": "Eutrophication — algal blooms and dead zones in waterways.",
+   "src": "https://eur-lex.europa.eu/eli/reg/2012/259/oj"
   },
   {
    "name": "Parabens (propyl/butyl)",
    "region": "eu",
    "status": "restricted",
    "since": "2014",
-   "rule": "EU banned propyl/butyl parabens in leave-on cosmetics for under-3s; ongoing endocrine review. US: allowed without age restriction.",
-   "reason": "Weak estrogenic activity; endocrine disruption concerns."
+   "rule": "EU prohibits propylparaben and butylparaben in leave-on products for the nappy area of children under 3 (Reg. 1004/2014, Annex V entry 12a; applied from 16 April 2015), and caps them at 0.14% as acid elsewhere. US: allowed without that age restriction.",
+   "reason": "Weak estrogenic activity; endocrine disruption concerns.",
+   "src": "https://eur-lex.europa.eu/eli/reg/2014/1004/oj"
   },
   {
    "name": "Formaldehyde",
@@ -517,40 +521,45 @@
    "status": "banned",
    "since": "2004",
    "rule": "EU banned in cosmetics (Annex II). US: no federal cosmetics ban; some states restrict.",
-   "reason": "Carcinogenic (IARC 1); occupational asthma."
+   "reason": "Carcinogenic (IARC 1); occupational asthma.",
+   "src": "https://echa.europa.eu/cosmetics-prohibited-substances"
   },
   {
    "name": "Titanium Dioxide (powder)",
    "region": "eu",
    "status": "restricted",
-   "since": "2020",
-   "rule": "EU classified Carcinogen 1B by inhalation (2020); banned as food additive 2022. US: allowed in food and cosmetics.",
-   "reason": "Inhalation carcinogenicity (powder form)."
+   "since": "2022",
+   "rule": "The 2020 EU classification of titanium dioxide powder as a carcinogen by inhalation was annulled by the EU General Court (23 November 2022) and the annulment was upheld by the Court of Justice on 1 August 2025, so no harmonised classification applies. Separately, the EU banned TiO2 (E171) as a food additive from 7 August 2022. US: allowed in food and cosmetics.",
+   "reason": "Inhalation carcinogenicity was the basis for the (now annulled) EU classification; the E171 food-additive ban rested on genotoxicity concerns.",
+   "src": "https://eur-lex.europa.eu/eli/C/2025/6670/oj/eng"
   },
   {
    "name": "Microplastics (intentionally added)",
    "region": "eu",
    "status": "banned",
    "since": "2023",
-   "rule": "EU banned intentionally-added microplastics (phased 2023–2035). US: state-level only.",
-   "reason": "Persistence and bioaccumulation; cleaning products with plastic scrubbing particles affected."
+   "rule": "EU banned intentionally added microplastics (Reg. 2023/2055), applying from 17 October 2023 with transitional periods running to 2035 for uses such as rinse-off cosmetics. US: state-level only.",
+   "reason": "Persistence and bioaccumulation; cleaning products with plastic scrubbing particles affected.",
+   "src": "https://single-market-economy.ec.europa.eu/sectors/chemicals/reach/restrictions/commission-regulation-eu-20232055-restriction-microplastics-intentionally-added-products_en"
   },
   {
-   "name": "Talc (asbestos-contaminated)",
+   "name": "Talc",
    "region": "eu",
-   "status": "restricted",
-   "since": "2016",
-   "rule": "EU tightens asbestos-in-talc limits; ongoing litigation. US: FDA testing program, no ban.",
-   "reason": "Asbestos contamination/possible carcinogenicity; talc-based cleaning powders affected."
+   "status": "review",
+   "since": "2025",
+   "rule": "ECHA's Risk Assessment Committee has recommended classifying talc as a Category 1B carcinogen and as STOT RE 1 by inhalation. The recommendation is not yet adopted; the Commission is facing parliamentary questions over the evidence. US: FDA testing programme, no ban.",
+   "reason": "Proposed carcinogenicity by inhalation; talc-based cleaning powders affected.",
+   "src": "https://www.europarl.europa.eu/doceo/document/E-10-2025-004190_EN.html"
   },
   {
    "name": "1,4-Dioxane",
    "region": "eu",
    "status": "restricted",
-   "since": "2026",
-   "rule": "EU REACH 2026 Restrictions Roadmap lists certain uses of 1,4-dioxane for potential restriction. Not yet adopted but under evaluation. US: NY State banned 1,4-dioxane in cleaning/personal care products above 1 ppm (effective 2023); CA requires disclosure above 1 ppm.",
+   "since": "2023",
+   "rule": "EU: 1,4-dioxane is on the REACH Restrictions Roadmap for potential restriction; nothing is adopted. US: New York caps it in household cleansing and personal care products at 2 ppm from 31 December 2022 and 1 ppm from 31 December 2023 (ECL 35-0105); California requires cleaning-product makers to list it online at 10 ppm or more (HSC 108954.5).",
    "reason": "1,4-dioxane is a common contaminant in ethoxylated surfactants (SLES, etc.) used in dish soaps and detergents. Probable human carcinogen (IARC 2B). EU considering restriction; US has state-level action but no federal ban.",
-   "confidence": "Medium"
+   "confidence": "Medium",
+   "src": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=&chapter=13.&division=104.&lawCode=HSC&part=3.&title="
   }
  ]
 }
