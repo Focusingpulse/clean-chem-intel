@@ -1,6 +1,10 @@
 [
   {
     "date": "2026-10-03",
+    "text": "Repointed eight product citations from rbnainfo.com to vestacyinfo.com. The Essential Home brands (Air Wick, Calgon, Glass Plus, Lime-A-Way, Old English, Resolve, Spray 'n Wash, Woolite) moved their US ingredient disclosures to Vestacy, the company carved out of Reckitt's Essential Home business. The old links returned errors; the same product pages are live at the new address. Woolite is recorded under Vestacy now, which closes an open ownership question."
+  },
+  {
+    "date": "2026-10-03",
     "text": "Sifter lane: verified 8 graded ingredients vs PubChem GHS consensus (BHT, benzisothiazolinone, 2-butoxyethanol, benzethonium chloride, benzophenone, chlorhexidine digluconate, citronellol, acetic acid). 6 consistent; 2 corrected: Butyloxyethanol H360FD -> H361 consensus (repro D->C, derm D->C, organ D added for H370/H373) and Benzisothiazolinone missing H318 added (>99.9% consensus). Enriched 5 fully-covered ungraded products with grade_note (Method All-Purpose F, Scrubbing Bubbles F, Bon Ami D, Ajax Powder F, ECOS Dishmate C). No duplicates found (278 unique)."
   },
   {

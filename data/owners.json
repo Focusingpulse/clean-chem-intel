@@ -67,13 +67,12 @@
   },
   "Reckitt": {
    "type": "public (RKT)",
-   "detail": "Trades as Reckitt Benckiser in some markets. Reckitt's own brand page (www.reckitt.com/our-brands/, read 2026-10-02) lists eleven Powerbrands: Dettol, Lysol, Harpic, Finish, Vanish, Strepsils, Nurofen, Mucinex, Gaviscon, Durex, Veet. Air Wick and Calgon were REMOVED from this record on 2026-10-02: Reckitt divested its Essential Home business (Air Wick, Calgon, Cillit Bang, Mortein and ~80 brands in all) to Advent International, L.P. - announced 2024-07-24, completed 2025-12-31, Reckitt retaining a 30% equity stake. They are now recorded under 'Essential Home (Advent International)'. OPEN FLAG: Woolite is kept on this record but Reckitt's own brand page does not list it and no primary source for its current ownership was located this fire; unverified, not corrected. The previous src for this record was the whobrands.com blog, a bot-walled secondary source flagged defective on 2026-10-01; replaced with Reckitt's own brand page.",
+   "detail": "Trades as Reckitt Benckiser in some markets. Reckitt's own brand page (www.reckitt.com/our-brands/, read 2026-10-02) lists eleven Powerbrands: Dettol, Lysol, Harpic, Finish, Vanish, Strepsils, Nurofen, Mucinex, Gaviscon, Durex, Veet. Air Wick and Calgon were REMOVED from this record on 2026-10-02: Reckitt divested its Essential Home business (Air Wick, Calgon, Cillit Bang, Mortein and ~80 brands in all) to Advent International, L.P. - announced 2025-07-18, completed 2025-12-31, Reckitt retaining a 30% equity stake. They are now recorded under 'Essential Home (Advent International)'. Woolite was REMOVED from this record on 2026-10-03: Vestacy's own brand page (vestacyinfo.com/brands.php, read 2026-10-03) lists WOOLITE among its brands, resolving the open flag raised 2026-10-02. The previous src for this record was the whobrands.com blog, a bot-walled secondary source flagged defective on 2026-10-01; replaced with Reckitt's own brand page.",
    "ev": "verified",
    "src": "https://www.reckitt.com/our-brands/",
    "brands": [
     "Lysol",
     "Vanish",
-    "Woolite",
     "Finish",
     "Reckitt Benckiser"
    ],
@@ -84,7 +83,6 @@
      "Finish"
     ],
     "unverified_kept_pending_primary": [
-     "Woolite",
      "Reckitt Benckiser"
     ]
    }
@@ -595,14 +593,28 @@
   },
   "Essential Home (Advent International)": {
    "type": "private equity (Advent International, L.P.); Reckitt retains 30%",
-   "detail": "Reckitt Benckiser divested its Essential Home business to Advent International, L.P. - announced 2024-07-24, completed 2025-12-31. Essential Home spans roughly 80 brands including Air Wick, Calgon, Cillit Bang and Mortein, sold across about 70 countries; Reckitt retains a 30% equity stake in Advent's acquisition vehicle. Air Wick and Calgon were previously recorded under Reckitt and were moved here on 2026-10-02.",
+   "detail": "Reckitt Benckiser divested its Essential Home business to Advent International, L.P. - agreement announced 2025-07-18, completed 2025-12-31 (both dates read from Reckitt's own press releases on 2026-10-03; an earlier note in this record said 2024-07-24 for the announcement, which no source supports). Essential Home spans roughly 80 brands sold across about 70 countries; Reckitt retains a 30% equity stake in Advent's acquisition vehicle. The business now trades as Vestacy, which describes itself as home to Air Wick, Calgon, Cillit Bang and Mortein, and publishes the US ingredient disclosures for the wider North American portfolio (Brasso, d-CON, Easy-Off, Glass Plus, Lime-A-Way, Mop & Glo, Old English, Resolve, Rid-X, Silvo, Spray 'n Wash, Woolite) at vestacyinfo.com. Air Wick and Calgon were moved here from Reckitt on 2026-10-02; Woolite was moved here on 2026-10-03 once Vestacy's own brand page listed it.",
    "ev": "verified",
-   "src": "https://www.reckitt.com/news/reckitt-to-sharpen-its-portfolio-and-simplify-organisation-for-accelerated-growth-and-value-creation/",
+   "src": "https://www.reckitt.com/news/reckitt-completes-divestment-of-essential-home/",
    "brands": [
     "Air Wick",
     "Calgon",
     "Cillit Bang",
-    "Mortein"
+    "Mortein",
+    "Woolite",
+    "Brasso",
+    "d-CON",
+    "Easy-Off",
+    "Glass Plus",
+    "Lime-A-Way",
+    "Mop & Glo",
+    "Old English",
+    "Resolve",
+    "Rid-X",
+    "Silvo",
+    "Spray 'n Wash",
+    "Botanical Origin",
+    "Vestacy"
    ]
   },
   "JoySuds, LLC": {
