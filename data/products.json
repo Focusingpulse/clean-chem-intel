@@ -263,7 +263,7 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-10-03",
   "owner": "SC Johnson",
   "owner_ev": "reported",
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
@@ -279,7 +279,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Eco all-purpose lines are a low-single-digit share of surface care."
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Eco all-purpose lines are a low-single-digit share of surface care.",
+  "grade_note": "Sifter grade F — worst credible dimension: env F (limonene H400 very toxic to aquatic life; High evidence)"
  },
  {
   "name": "Mrs. Meyer's Multi-Surface",
@@ -467,7 +468,7 @@
   "heritage_year": 1972,
   "heritage_note": "The 1970s bathroom spray that foamed 'up and at 'em' — a shower-scrub icon.",
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-10-03",
   "owner": "SC Johnson",
   "owner_ev": "reported",
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
@@ -483,7 +484,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated."
+  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated.",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F and env F (benzalkonium chloride H314 corrosive, H400 aquatic; High evidence)"
  },
  {
   "name": "Comet Bathroom",
@@ -861,7 +863,7 @@
   "heritage_year": 1886,
   "heritage_note": "'Hasn't scratched yet' since 1886 — the feldspar-based powder that outlived every competitor.",
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-10-03",
   "owner": "Faultless Brands",
   "owner_ev": "verified",
   "owner_src": "https://faultlessbrands.com/our-brands/",
@@ -877,7 +879,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Legacy feldspar scouring powder; a small share of surface care."
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Legacy feldspar scouring powder; a small share of surface care.",
+  "grade_note": "Sifter grade D — worst credible dimension: organ D (feldspar H373 silica, prolonged exposure; High evidence)"
  },
  {
   "name": "Ajax Powder",
@@ -895,7 +898,7 @@
   "heritage_year": 1947,
   "heritage_note": "The 1940s scouring powder with the knight — gritty, cheap, and grandma's cabinet standby.",
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-10-03",
   "owner": "Colgate-Palmolive",
   "owner_ev": "reported",
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
@@ -911,7 +914,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Ajax is a long-standing mass scouring-powder brand; scouring powders are a small share of surface care."
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Ajax is a long-standing mass scouring-powder brand; scouring powders are a small share of surface care.",
+  "grade_note": "Sifter grade F — worst credible dimension: env F (trichloroisocyanuric acid H410 aquatic, H271 oxidizer; High evidence)"
  },
  {
   "name": "Swiffer WetJet",
@@ -995,7 +999,7 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-10-03",
   "owner": "ECOS (Earth Friendly Products)",
   "owner_ev": "verified",
   "owner_src": "https://www.ecos.com/wp-content/uploads/2024/03/ECOS_SR_24Mar2024_R3-2.pdf",
@@ -1013,7 +1017,8 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Small eco hand-dish brand.",
   "tier_src": null,
-  "tier_basis": "searched for a published definition of this tier and found none that names the product. The tier was assigned by exclusion rather than by a source, so it is downgraded to untested rather than left marked reported with nothing to point at. A guessed tier is worse than no tier."
+  "tier_basis": "searched for a published definition of this tier and found none that names the product. The tier was assigned by exclusion rather than by a source, so it is downgraded to untested rather than left marked reported with nothing to point at. A guessed tier is worse than no tier.",
+  "grade_note": "Sifter grade C — worst credible dimension: derm C (lauramine oxide/phenoxyethanol/citric acid H315/H319 irritants; High evidence)"
  },
  {
   "name": "Biokleen All-Purpose",
