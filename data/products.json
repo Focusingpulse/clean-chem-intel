@@ -10178,7 +10178,8 @@
   "source": "P&G SmartLabel ingredient disclosure",
   "source_url": "https://smartlabel.pg.com/en-us/00037000748113.html",
   "tier_note": "A mass-market newborn laundry detergent. The formula is an anionic/nonionic surfactant base with a soap suds reducer, a sodium cumenesulfonate hydrotrope, enzymes (subtilisin, amylase, cellulase), a benzisothiazolinone preservative and a fragrance that is not broken out by component. Entered ungraded: product grading is the Sifter lane.",
-  "disclosure_note": "Source spellings mapped to canonical keys: 'C10-16 Alketh' -> 'C10-16 Pareth' (P&G's own 40-oz Dreft label uses the older INCI name for the same alcohol-alkoxylate; the DB key already exists); 'C10-16 Alkyldimethylamine Oxide' -> 'Alkyldimethylamine Oxide' (the DB's generic amine-oxide key); 'Fragrances' -> 'Fragrance'. The P&G SmartLabel (UPC 00037000748113, updated 2024-06-12) is the manufacturer's own current disclosure and names every intentionally-added component. The 40-oz SKU (UPC 00037000926986, 2022) carries a slightly different base - sodium borate and no sodium lauryl sulfate - so the two sizes are not the same formula."
+  "disclosure_note": "Source spellings mapped to canonical keys: 'C10-16 Alketh' -> 'C10-16 Pareth' (P&G's own 40-oz Dreft label uses the older INCI name for the same alcohol-alkoxylate; the DB key already exists); 'C10-16 Alkyldimethylamine Oxide' -> 'Alkyldimethylamine Oxide' (the DB's generic amine-oxide key); 'Fragrances' -> 'Fragrance'. The P&G SmartLabel (UPC 00037000748113, updated 2024-06-12) is the manufacturer's own current disclosure and names every intentionally-added component. The 40-oz SKU (UPC 00037000926986, 2022) carries a slightly different base - sodium borate and no sodium lauryl sulfate - so the two sizes are not the same formula.",
+  "heritage": false
  },
  {
   "name": "Scrub Free Total Bathroom Cleaner, Lemon Scent",
@@ -10218,7 +10219,8 @@
   "source": "Church & Dwight ingredient disclosure form",
   "source_url": "https://churchdwight.com/ingredient-disclosure/cleaning-products/42000220-scrub-free-total-bathroom-cleaner-lemon-scent.aspx",
   "tier_note": "A mass-market bathroom cleaner. The active is sulfamic acid (an acid descaler) with a lauramine-oxide surfactant and a C6-12 ethoxylate surfactant; the fragrance is published at component level under the California Cleaning Product Right to Know Act, which is why four fragrance constituents appear by name instead of one 'fragrance' line. Entered ungraded: product grading is the Sifter lane.",
-  "disclosure_note": "Source spellings mapped to canonical keys: 'Hexamethylindanopyran' -> 'Galaxolide' (CAS 1222-05-5; the disclosure names the synonym, the DB key is the trade name); 'Fragrances' -> 'Fragrance'. The Church & Dwight ingredient-disclosure form (material 42000220, dated 2024-05-14) is the manufacturer's own disclosure and lists the fragrance components present at or above 100 ppm or on a California designated list separately from the rest of the base."
+  "disclosure_note": "Source spellings mapped to canonical keys: 'Hexamethylindanopyran' -> 'Galaxolide' (CAS 1222-05-5; the disclosure names the synonym, the DB key is the trade name); 'Fragrances' -> 'Fragrance'. The Church & Dwight ingredient-disclosure form (material 42000220, dated 2024-05-14) is the manufacturer's own disclosure and lists the fragrance components present at or above 100 ppm or on a California designated list separately from the rest of the base.",
+  "heritage": false
  },
  {
   "name": "Calgon Water Softener, Liquid",
@@ -10257,7 +10259,8 @@
   "source": "Reckitt SmartLabel ingredient disclosure",
   "source_url": "https://www.rbnainfo.com/smart-label/192",
   "tier_note": "A liquid laundry water softener. The sequestering role is carried by sodium citrate with an acrylic-acid/maleic-anhydride antiredeposition copolymer; two isothiazolinone preservatives are present, and the fragrance resolves into a diphenyl-oxide disulfonate component. This is a whole product class the corpus did not previously hold. Entered ungraded: product grading is the Sifter lane.",
-  "disclosure_note": "'Fragrance/Parfum' mapped to 'Fragrance'. The Reckitt SmartLabel (UPC 0-51700-20900-2, updated 2022-01-01) is the manufacturer's own current disclosure and groups the list into intentionally added, fragrance component and non-functional constituent, each with a CAS number. The page carries the claim 'Contains no phosphate' in the manufacturer's own words. A 2014 SDS served from the same site names sodium hydroxide under Clean Water Act 311, which does not appear on the current list - either the formula changed or one document is incomplete; the manufacturer does not say which, so the current SmartLabel list is used here."
+  "disclosure_note": "'Fragrance/Parfum' mapped to 'Fragrance'. The Reckitt SmartLabel (UPC 0-51700-20900-2, updated 2022-01-01) is the manufacturer's own current disclosure and groups the list into intentionally added, fragrance component and non-functional constituent, each with a CAS number. The page carries the claim 'Contains no phosphate' in the manufacturer's own words. A 2014 SDS served from the same site names sodium hydroxide under Clean Water Act 311, which does not appear on the current list - either the formula changed or one document is incomplete; the manufacturer does not say which, so the current SmartLabel list is used here.",
+  "heritage": false
  },
  {
   "name": "Endust Multi-Surface Dusting & Cleaning Spray",
@@ -10296,6 +10299,7 @@
   "source": "Endust manufacturer product page",
   "source_url": "https://www.endust.com/multisurface-dusting-cleaning-spray",
   "tier_note": "A mass-market aerosol dusting spray. Unlike a furniture polish it is silicone-free and is meant to be sprayed on the cloth, not the surface; the label warns against applying it directly to floors. Entered ungraded: product grading is the Sifter lane.",
-  "disclosure_note": "The manufacturer's own product page prints the full intentionally-added list. The retail pack also names the maker as Nakoma Products LLC, which the live ENDUST trademark (reg. 2309332) confirms. The formula is silicone-free: mineral oil and isoparaffin carry the dust-trapping action, propane is the propellant, and an ethoxylated alcohol plus sorbitan monooleate are the emulsifiers. The fragrance is not broken out by component."
+  "disclosure_note": "The manufacturer's own product page prints the full intentionally-added list. The retail pack also names the maker as Nakoma Products LLC, which the live ENDUST trademark (reg. 2309332) confirms. The formula is silicone-free: mineral oil and isoparaffin carry the dust-trapping action, propane is the propellant, and an ethoxylated alcohol plus sorbitan monooleate are the emulsifiers. The fragrance is not broken out by component.",
+  "heritage": false
  }
 ]
