@@ -11764,7 +11764,7 @@
  },
  {
   "name": "Affresh Washer Cleaner Tablets",
-  "brand": "Whirlpool",
+  "brand": "Affresh",
   "cat": "Specialty",
   "safe": "EPA Safer Choice",
   "ings": [
@@ -11781,9 +11781,9 @@
   "source": "Manufacturer ingredient disclosure (affresh.com product page, Washing Machine Cleaner Tablets 6-count): sodium percarbonate (oxidizer), sodium carbonate (builder), glucono-delta-lactone, polyethylene glycol, sodium acetate (processing aids), fragrance (proprietary). Concentration ranges on the manufacturer SDS (2025-12-29): sodium percarbonate >30-<60%, sodium carbonate 15-40%, the rest 1-15%, fragrance <1%.",
   "source_url": "https://www.affresh.com/products/washing-machine-cleaner-6ct/",
   "note": "An oxygen-bleach tablet: sodium percarbonate releases hydrogen peroxide in the wash water, and soda ash builds the alkalinity. The EPA Safer Choice certification is the manufacturer's own claim on the label and the affresh site; the SDS states the product contains no chlorine bleach, phosphates, borates or EDTA. The older 2017 SDS listed boric acid 20-30% and tetrasodium EDTA; the current formula has neither.",
-  "owner": null,
-  "owner_ev": "untested",
-  "owner_src": null,
+  "owner": "Whirlpool Corporation",
+  "owner_ev": "verified",
+  "owner_src": "https://www.whirlpoolcorp.com/",
   "tier": "mass",
   "tier_ev": "reported",
   "tier_src": "https://www.affresh.com/products/washing-machine-cleaner-6ct/",
@@ -11802,7 +11802,7 @@
  },
  {
   "name": "Iron OUT Powder Rust & Stain Remover",
-  "brand": "Summit Brands",
+  "brand": "Iron OUT",
   "cat": "Specialty",
   "safe": null,
   "ings": [
@@ -11818,9 +11818,9 @@
   "source": "Manufacturer SDS (summitbrands.com, Iron OUT Powder, GHS revision 2018-12-02): sodium hydrosulfite 15-40%, sodium carbonate 10-30%, sodium metabisulfite 10-30%, citric acid 1-5%, sodium sulfite 1-5%. Exact percentages withheld as trade secret per 1910.1200(i).",
   "source_url": "https://summitbrands.com/wp-content/uploads/2018/03/Iron-OUT-Powder-English-GHS-Rev-02-12-2018.pdf",
   "note": "A reducing-agent rust remover: sodium hydrosulfite reduces insoluble rust (Fe(III)) to soluble Fe(II) so it rinses away, with sulfite/metabisulfite keeping the reducing environment and soda ash plus citric acid managing pH. The hazard is the gas: sulfite salts release sulfur dioxide on contact with acid, and hydrosulfite self-heats (H251) if it gets wet in storage. The liquid Iron OUT is a different formula (oxalic acid); this entry is the powder.",
-  "owner": null,
-  "owner_ev": "untested",
-  "owner_src": null,
+  "owner": "Summit Brands",
+  "owner_ev": "verified",
+  "owner_src": "https://summitbrands.com/about/",
   "tier": "mass",
   "tier_ev": "untested",
   "tier_src": null,

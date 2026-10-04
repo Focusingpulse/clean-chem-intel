@@ -804,6 +804,25 @@
    "brands": [
     "Homemade"
    ]
+  },
+  "Whirlpool Corporation": {
+   "type": "public company",
+   "detail": "Affresh is one of Whirlpool Corporation's own brands: the corporate site whirlpoolcorp.com serves the brand asset 'Our Brands_Affresh_logo.png' on its brands block, and affresh.com carries the Whirlpool logo and links to whirlpoolcorp.com legal notices. Whirlpool Corporation (NYSE: WHR) is the parent. The 'Whirlpool' string is also kept here so a product labelled with the corporate name still resolves.",
+   "ev": "verified",
+   "src": "https://www.whirlpoolcorp.com/",
+   "brands": [
+    "Affresh",
+    "Whirlpool"
+   ]
+  },
+  "Summit Brands": {
+   "type": "private, family-owned",
+   "detail": "Summit Brands' own site lists Iron OUT among its brand family (Glisten, Iron OUT, Pumie, Dryel, Zout, OUT, Plink, EarthStone, Septobac) and hosts the Iron OUT SDS on summitbrands.com. Family-owned and privately held since 1958, Fort Wayne, Indiana. The company publishes no legal suffix, so the record name is the name it uses. NOTE: Pumie is listed on this site too; the Pumie ownership flag on the U.S. Pumice Company record stays OPEN -- do not reassign it here.",
+   "ev": "verified",
+   "src": "https://summitbrands.com/about/",
+   "brands": [
+    "Iron OUT"
+   ]
   }
  },
  "independents": {
