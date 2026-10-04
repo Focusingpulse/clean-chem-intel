@@ -5583,5 +5583,109 @@
   "gr": {},
   "impacts": [],
   "note": "Named on the Top Job Lemon Ammonia disclosure with CAS 518-47-8, as a dye. Not yet graded."
+ },
+ "1,3-Dichloro-5,5-dimethylhydantoin": {
+  "s": "1,3-Dichloro-5,5-dimethylhydantoin (DCDMH), a chlorinating agent used in toilet-bowl and spa tablets; CAS 118-52-5.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on The Works Toilet Bowl Cleaner with Bleach (tablets) disclosure, 2019-12-27, with CAS 118-52-5, as an antimicrobial active. Not yet graded. A chlorinated hydantoin, not a hypochlorite."
+ },
+ "1,3-Dichloro-5-ethyl-5-methylimidazolidine-2,4-dione": {
+  "s": "1,3-Dichloro-5-ethyl-5-methylhydantoin, a chlorinating agent used in toilet-bowl and spa tablets; CAS 89415-87-2.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on The Works Toilet Bowl Cleaner with Bleach (tablets) disclosure, 2019-12-27, with CAS 89415-87-2, as an antimicrobial active. Not yet graded. Third of the three chlorinated hydantoins on the same tablet."
+ },
+ "1-Bromo-3-chloro-5,5-dimethylimidazolidine-2,4-dione": {
+  "s": "1-Bromo-3-chloro-5,5-dimethylhydantoin (BCDMH), a chlorinating and brominating agent used in toilet-bowl and spa tablets; CAS 16079-88-2.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on The Works Toilet Bowl Cleaner with Bleach (tablets) disclosure, 2019-12-27, with CAS 16079-88-2, as an antimicrobial active. Not yet graded. This is the substance behind a 'with bleach' claim on a tablet; it is not sodium hypochlorite, and it releases a bromine/chlorine species in water rather than hypochlorite."
+ },
+ "Alkoxylated Amine Compound": {
+  "s": "An alkoxylated amine, a class of ethoxylated/propoxylated amine used as a thickener and surfactant; exact identity proprietary, CAS not disclosed.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on The Works Professional Strength Drain Opener disclosure, 2019-12-27, as 'Alkoxylated Amine Compound' with CAS 'Proprietary', as a thickener. Recorded as an unidentified constituent rather than a specific amine."
+ },
+ "Benzyl Salicylate": {
+  "s": "Benzyl salicylate, a fragrance material; CAS 118-58-1. Listed on Annex III of the EU Cosmetics Regulation as a fragrance allergen that must be declared above 0.01%.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Spic and Span Sun Fresh Extra Strength Powder disclosure, 2019-10-18, with CAS 118-58-1, flagged by the filing itself as an EU fragrance allergen. Not yet graded here; the grading lane should resolve it, because it is a declared allergen on a scented value powder cleanser."
+ },
+ "Capric Acid": {
+  "s": "Capric acid (decanoic acid), a saturated C10 fatty acid; CAS 334-48-5.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Austin's Wipe Away Professional Drain Opener disclosure, 2019-08-21, with CAS 334-48-5, as a surfactant. Not yet graded."
+ },
+ "Caprylic Acid": {
+  "s": "Caprylic acid (octanoic acid), a saturated C8 fatty acid; CAS 124-07-2.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Austin's Wipe Away Professional Drain Opener disclosure, 2019-08-21, with CAS 124-07-2, as a surfactant. Not yet graded. Kept separate from Sodium Caprylate, which is the salt, a different substance."
+ },
+ "Myristic Acid": {
+  "s": "Myristic acid (tetradecanoic acid), a saturated C14 fatty acid; CAS 544-63-8.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Austin's Wipe Away Professional Drain Opener disclosure, 2019-08-21, with CAS 544-63-8, as a surfactant. Not yet graded. Kept as its own key rather than folded into a mixed fatty-acid record: the filing names the individual acid and gives its own CAS."
+ },
+ "Oleic Acid": {
+  "s": "Oleic acid, a monounsaturated C18 fatty acid; CAS 112-80-1.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Austin's Wipe Away Professional Drain Opener disclosure, 2019-08-21, with CAS 112-80-1, as a surfactant. Not yet graded."
+ },
+ "Palmitic Acid": {
+  "s": "Palmitic acid (hexadecanoic acid), a saturated C16 fatty acid; CAS 57-10-3.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Austin's Wipe Away Professional Drain Opener disclosure, 2019-08-21, with CAS 57-10-3, as a surfactant. Not yet graded."
+ },
+ "Proprietary Chelating Agent": {
+  "s": "A chelating agent named only by function on the disclosure; identity withheld as proprietary, CAS not available.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Comet Classic Shower Cleaner disclosure, 2019-03-25, as 'Proprietary chelating agent' with CAS not available. The manufacturer disclosed the function and withheld the identity. Recorded as an unidentified constituent, not as a substance; this renders as not disclosed, which is the honest state."
+ },
+ "Proprietary Surfactant": {
+  "s": "A surfactant named only by function on the disclosure; identity withheld as proprietary, CAS not available.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Comet Classic Shower Cleaner disclosure, 2019-03-25, as 'Proprietary surfactant' with CAS not available. Recorded as an unidentified constituent rather than folded into a guessed surfactant key."
+ },
+ "Stearic Acid": {
+  "s": "Stearic acid (octadecanoic acid), a saturated C18 fatty acid; CAS 57-11-4.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Austin's Wipe Away Professional Drain Opener disclosure, 2019-08-21, with CAS 57-11-4, as a surfactant. Not yet graded."
  }
 }
