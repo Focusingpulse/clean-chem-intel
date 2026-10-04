@@ -1,8 +1,7 @@
 {
- "schema_version": 1,
- "generator": "chem-curation cron",
- "generated": "2026-09-27T21:00Z",
- "lane": "cairn-chem-curation",
+ "schema_version": 2,
+ "generated": "2026-10-04T21:06:50Z",
+ "scope": "top 30 of 218 ungraded products, plus research and verification lanes",
  "weights": {
   "sales": 0.3,
   "str": 0.25,
@@ -10,745 +9,1257 @@
   "hazard": 0.15,
   "ungraded": 0.1
  },
- "scope": "Scored 136 ungraded products from products.json (safe is None). Top 30 ranked below. All have full ingredient lists, so every ranked product routes to enrichment.",
- "routing_vocabulary": {
-  "research": "Dolman lane - no ingredient list on file; get verified list from CPID/SDS",
-  "enrichment": "run scorer (ingredient list present, no grade yet)",
-  "verification": "Linnea lane - label only; identity owned by Dolman side"
- },
  "ranked": [
   {
-   "rank": 1,
-   "name": "Lysol Disinfectant Spray",
-   "brand": "Reckitt",
-   "cat": "Disinfectant",
-   "score": 8.11,
-   "dominant": "hazard",
-   "factors": {
-    "sales": 9.1,
-    "str": 9,
-    "mountain": 3.5,
-    "hazard": 9.5,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=12 (reported, https://www.amazon.com/Best-Sellers-Health-Household-All-Purpose-Household-Cleaners/zgbs/hpc/15356141)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "quats, undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (quats, undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 2,
-   "name": "Clorox Disinfecting Wipes, Fresh Scent",
-   "brand": "Clorox",
-   "cat": "Disinfectant",
-   "score": 8.07,
-   "dominant": "hazard",
-   "factors": {
-    "sales": 9.0,
-    "str": 9,
-    "mountain": 3.5,
-    "hazard": 9.5,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=10 (reported, https://www.asinsight.com/report/US/household-cleaning)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "quats, undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (quats, undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 3,
    "name": "Clorox Bleach",
    "brand": "Clorox",
    "cat": "Disinfectant",
-   "score": 7.78,
-   "dominant": "sales",
-   "factors": {
-    "sales": 9.25,
-    "str": 9,
-    "mountain": 3.5,
-    "hazard": 7.0,
-    "ungraded": 10.0
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
    },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=15 (extrapolated, https://www.indexbox.io/store/united-states-laundry-home-products-market-analysis-forecast-size-trends-and-insights/)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "sodium hypochlorite",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (sodium hypochlorite (bleach))",
-   "route": "enrichment"
-  },
-  {
-   "rank": 4,
-   "name": "Clorox Disinfecting Bleach",
-   "brand": "Clorox",
-   "cat": "Disinfectant",
-   "score": 7.78,
-   "dominant": "sales",
-   "factors": {
-    "sales": 9.25,
-    "str": 9,
-    "mountain": 3.5,
-    "hazard": 7.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=15 (extrapolated, https://www.indexbox.io/store/united-states-laundry-home-products-market-analysis-forecast-size-trends-and-insights/)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "sodium hypochlorite",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (sodium hypochlorite (bleach))",
-   "route": "enrichment"
-  },
-  {
-   "rank": 5,
-   "name": "Dawn Powerwash Dish Spray, Fresh",
-   "brand": "P&G",
-   "cat": "Dish Soap",
-   "score": 7.72,
-   "dominant": "hazard",
-   "factors": {
-    "sales": 9.0,
-    "str": 6,
-    "mountain": 5.5,
-    "hazard": 9.5,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=10 (extrapolated, https://www.asinsight.com/market-analysis/US/dish-soap)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "quats, undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (quats, undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 6,
-   "name": "Lysol Disinfecting Wipes, Crisp Linen",
-   "brand": "Reckitt",
-   "cat": "Disinfectant",
-   "score": 7.7,
-   "dominant": "sales",
-   "factors": {
-    "sales": 9.0,
-    "str": 9,
-    "mountain": 3.5,
-    "hazard": 7.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=10 (reported, https://www.amazon.com/Best-Sellers-Health-Household-All-Purpose-Household-Cleaners/zgbs/hpc/15356141)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 7,
-   "name": "Tide Original Liquid Laundry",
-   "brand": "P&G",
-   "cat": "Laundry",
-   "score": 7.67,
-   "dominant": "sales",
-   "factors": {
-    "sales": 9.75,
-    "str": 8,
-    "mountain": 3.5,
-    "hazard": 7.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=25 (extrapolated, https://www.giiresearch.com/report/moi2119204-united-states-laundry-care-market-share-analysis.html)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 8,
-   "name": "Tide PODS Laundry Detergent Pacs, Original Scent",
-   "brand": "P&G",
-   "cat": "Laundry",
-   "score": 7.48,
-   "dominant": "sales",
-   "factors": {
-    "sales": 9.1,
-    "str": 8,
-    "mountain": 3.5,
-    "hazard": 7.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=12 (extrapolated, https://www.giiresearch.com/report/moi2119204-united-states-laundry-care-market-share-analysis.html)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 9,
-   "name": "Gain",
-   "brand": "P&G",
-   "cat": "Laundry",
-   "score": 7.42,
-   "dominant": "sales",
-   "factors": {
-    "sales": 8.9,
-    "str": 8,
-    "mountain": 3.5,
-    "hazard": 7.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=8 (extrapolated, https://www.giiresearch.com/report/moi2119204-united-states-laundry-care-market-share-analysis.html)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 10,
-   "name": "Scrubbing Bubbles",
-   "brand": "SC Johnson",
-   "cat": "Bathroom",
-   "score": 7.4,
-   "dominant": "sales",
-   "factors": {
-    "sales": 8.5,
-    "str": 8,
-    "mountain": 4,
-    "hazard": 7.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED (known mass-market category staple)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 11,
-   "name": "Kaboom Foam-Tastic",
-   "brand": "Church & Dwight",
-   "cat": "Bathroom",
-   "score": 7.4,
-   "dominant": "sales",
-   "factors": {
-    "sales": 8.5,
-    "str": 8,
-    "mountain": 4,
-    "hazard": 7.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED (known mass-market category staple)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 12,
-   "name": "Murphy Oil Soap",
-   "brand": "Colgate-Palmolive",
-   "cat": "Wood & Stone Care",
-   "score": 7.4,
-   "dominant": "mountain",
-   "factors": {
-    "sales": 8.5,
-    "str": 4,
-    "mountain": 9,
-    "hazard": 7.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED (known mass-market category staple)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 13,
-   "name": "The Works Toilet Bowl Cleaner",
-   "brand": "HomeCare Labs",
-   "cat": "Bathroom",
-   "score": 7.4,
-   "dominant": "sales",
-   "factors": {
-    "sales": 8.5,
-    "str": 8,
-    "mountain": 4,
-    "hazard": 7.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED (known mass-market category staple)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 14,
-   "name": "Hydrogen Peroxide 3% (drugstore)",
-   "brand": "commodity",
-   "cat": "Disinfectant",
-   "score": 7.4,
-   "dominant": "str",
-   "factors": {
-    "sales": 8.5,
-    "str": 9,
-    "mountain": 3.5,
-    "hazard": 6.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED (known mass-market category staple)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "oxidizers",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (oxidizers)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 15,
-   "name": "Tilex Mold & Mildew",
-   "brand": "Clorox",
-   "cat": "Bathroom",
-   "score": 7.36,
-   "dominant": "str",
-   "factors": {
-    "sales": 4.6,
-    "str": 10.0,
-    "mountain": 6,
-    "hazard": 8.5,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=4 (extrapolated, https://www.indexbox.io/store/united-states-laundry-home-products-market-analysis-forecast-size-trends-and-insights/)",
-    "str": "ESTIMATED (turnover-domain category + STR staple)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "sodium hypochlorite",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (sodium hypochlorite (bleach), undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 16,
-   "name": "Febreze",
-   "brand": "P&G",
-   "cat": "Laundry",
-   "score": 7.3,
-   "dominant": "sales",
-   "factors": {
-    "sales": 8.5,
-    "str": 8,
-    "mountain": 3.5,
-    "hazard": 7.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED (known mass-market category staple)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 17,
-   "name": "Gain Ultra Dishwashing Liquid, Original Scent",
-   "brand": "P&G",
-   "cat": "Dish Soap",
-   "score": 7.29,
-   "dominant": "hazard",
-   "factors": {
-    "sales": 8.9,
-    "str": 6,
-    "mountain": 3.5,
-    "hazard": 9.5,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=8 (extrapolated, https://www.heb.com/product-detail/gain-ultra-original-scent-dish-soap/1414999)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "quats, undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (quats, undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 18,
-   "name": "Swiffer WetJet",
-   "brand": "P&G",
-   "cat": "Floor & Carpet",
-   "score": 7.27,
-   "dominant": "sales",
-   "factors": {
-    "sales": 8.9,
-    "str": 7,
-    "mountain": 4,
-    "hazard": 7.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=8 (extrapolated, https://www.amazon.com/Best-Sellers-Health-Household-All-Purpose-Household-Cleaners/zgbs/hpc/15356141)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 19,
-   "name": "Dawn Ultra",
-   "brand": "P&G",
-   "cat": "Dish Soap",
-   "score": 7.25,
-   "dominant": "sales",
    "factors": {
     "sales": 10.0,
-    "str": 6,
-    "mountain": 3.5,
-    "hazard": 7.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=30 (reported, https://www.asinsight.com/market-analysis/US/dish-soap)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 20,
-   "name": "Windex Original",
-   "brand": "SC Johnson",
-   "cat": "Glass",
-   "score": 7.23,
-   "dominant": "hazard",
-   "factors": {
-    "sales": 9.25,
-    "str": 5,
-    "mountain": 3.5,
-    "hazard": 10.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=15 (extrapolated, https://www.indexbox.io/store/united-states-laundry-home-products-market-analysis-forecast-size-trends-and-insights/)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "2-butoxyethanol / BGE, undisclosed fragrance, ammonia",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (2-butoxyethanol / BGE, undisclosed fragrance, ammonia)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 21,
-   "name": "Mr. Clean",
-   "brand": "P&G",
-   "cat": "All-Purpose",
-   "score": 7.07,
-   "dominant": "hazard",
-   "factors": {
-    "sales": 9.0,
-    "str": 5,
-    "mountain": 3.5,
-    "hazard": 9.5,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=10 (extrapolated, https://www.amazon.com/Best-Sellers-Health-Household-All-Purpose-Household-Cleaners/zgbs/hpc/15356141)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "quats, undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (quats, undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 22,
-   "name": "Lysol All-Purpose",
-   "brand": "Reckitt",
-   "cat": "All-Purpose",
-   "score": 7.07,
-   "dominant": "hazard",
-   "factors": {
-    "sales": 9.0,
-    "str": 5,
-    "mountain": 3.5,
-    "hazard": 9.5,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=10 (reported, https://www.amazon.com/Best-Sellers-Health-Household-All-Purpose-Household-Cleaners/zgbs/hpc/15356141)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "quats, undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (quats, undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 23,
-   "name": "Formula 409",
-   "brand": "Clorox",
-   "cat": "All-Purpose",
-   "score": 7.01,
-   "dominant": "hazard",
-   "factors": {
-    "sales": 8.8,
-    "str": 5,
-    "mountain": 3.5,
-    "hazard": 9.5,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=6 (extrapolated, https://www.amazon.com/Best-Sellers-Health-Household-All-Purpose-Household-Cleaners/zgbs/hpc/15356141)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "quats, undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (quats, undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 24,
-   "name": "Fels-Naptha Heavy Duty Laundry Bar Soap",
-   "brand": "Fels-Naptha",
-   "cat": "Laundry",
-   "score": 6.85,
-   "dominant": "sales",
-   "factors": {
-    "sales": 8.5,
-    "str": 8,
-    "mountain": 3.5,
-    "hazard": 4.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED (known mass-market category staple)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (clean ingredient act list)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 25,
-   "name": "Palmolive",
-   "brand": "Colgate-Palmolive",
-   "cat": "Dish Soap",
-   "score": 6.8,
-   "dominant": "sales",
-   "factors": {
-    "sales": 8.5,
-    "str": 6,
-    "mountain": 3.5,
-    "hazard": 7.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED (known mass-market category staple)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 26,
-   "name": "Signature Select Dish Soap, Ultra Concentrated, Ocean Scent",
-   "brand": "Signature Select",
-   "cat": "Dish Soap",
-   "score": 6.8,
-   "dominant": "sales",
-   "factors": {
-    "sales": 8.5,
-    "str": 6,
-    "mountain": 3.5,
-    "hazard": 7.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED (known mass-market category staple)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 27,
-   "name": "Clorox ToiletWand",
-   "brand": "Clorox",
-   "cat": "Bathroom",
-   "score": 6.75,
-   "dominant": "str",
-   "factors": {
-    "sales": 4.65,
     "str": 10.0,
-    "mountain": 4,
-    "hazard": 7.0,
-    "ungraded": 10.0
-   },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=6 (extrapolated, https://www.indexbox.io/store/united-states-laundry-home-products-market-analysis-forecast-size-trends-and-insights/)",
-    "str": "ESTIMATED (turnover-domain category + STR staple)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (undisclosed fragrance)",
-   "route": "enrichment"
-  },
-  {
-   "rank": 28,
-   "name": "Lysol Laundry Sanitizer, Free & Clear",
-   "brand": "Reckitt",
-   "cat": "Laundry",
-   "score": 6.75,
-   "dominant": "str",
-   "factors": {
-    "sales": 4.5,
-    "str": 10.0,
-    "mountain": 3.5,
+    "mountain": 6.0,
     "hazard": 8.0,
     "ungraded": 10.0
    },
-   "evidence": {
-    "sales": "ESTIMATED (product/brand positioning, no volume data held)",
-    "str": "ESTIMATED (turnover-domain category + STR staple)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "quats",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (quats)",
+   "score": 8.9,
+   "dominant": "sales",
+   "hazard_factors": [
+    "sodium hypochlorite",
+    "caustic alkali"
+   ],
    "route": "enrichment"
   },
   {
-   "rank": 29,
-   "name": "OdoBan Ready-to-Use Multi-Purpose Disinfectant & Deodorizer, Original Eucalyptus Scent",
-   "brand": "Clean Control Corporation",
+   "name": "Clorox Disinfecting Bleach",
+   "brand": "Clorox",
    "cat": "Disinfectant",
-   "score": 6.75,
-   "dominant": "hazard",
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
    "factors": {
-    "sales": 4.6,
-    "str": 9,
-    "mountain": 3.5,
+    "sales": 10.0,
+    "str": 10.0,
+    "mountain": 6.0,
+    "hazard": 8.0,
+    "ungraded": 10.0
+   },
+   "score": 8.9,
+   "dominant": "sales",
+   "hazard_factors": [
+    "sodium hypochlorite",
+    "caustic alkali"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Clorox Toilet Bowl Cleaner with Bleach, Fresh Scent",
+   "brand": "Clorox",
+   "cat": "Bathroom",
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "MEASURED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 7.0,
+    "str": 10.0,
+    "mountain": 8.5,
     "hazard": 9.5,
     "ungraded": 10.0
    },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=4 (extrapolated, https://odobanpro.com/wp-content/uploads/2022/05/910062-RTU-Eucalyptus-7-29-19-Ingredients-1.pdf)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "quats, undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
-   },
-   "hazard_factors": "MEASURED (quats, undisclosed fragrance)",
+   "score": 8.72,
+   "dominant": "str",
+   "hazard_factors": [
+    "sodium hypochlorite",
+    "caustic alkali",
+    "undisclosed fragrance"
+   ],
    "route": "enrichment"
   },
   {
-   "rank": 30,
-   "name": "Fabuloso",
-   "brand": "Colgate-Palmolive",
-   "cat": "All-Purpose",
-   "score": 6.73,
-   "dominant": "sales",
+   "name": "Clorox Disinfecting Wipes, Fresh Scent",
+   "brand": "Clorox",
+   "cat": "Disinfectant",
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "MEASURED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
    "factors": {
-    "sales": 9.1,
-    "str": 5,
-    "mountain": 3.5,
-    "hazard": 7.0,
+    "sales": 8.0,
+    "str": 10.0,
+    "mountain": 6.0,
+    "hazard": 8.5,
     "ungraded": 10.0
    },
-   "evidence": {
-    "sales": "ESTIMATED + exposure=12 (extrapolated, https://www.amazon.com/Best-Sellers-Health-Household-All-Purpose-Household-Cleaners/zgbs/hpc/15356141)",
-    "str": "ESTIMATED (turnover-domain category)",
-    "mountain": "ESTIMATED (product purpose -> hard water/soot/mildew/wood)",
-    "hazard": "undisclosed fragrance",
-    "ungraded": "MEASURED (full ingredient list present, no grade)"
+   "score": 8.38,
+   "dominant": "str",
+   "hazard_factors": [
+    "quats",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Lysol Disinfectant Spray",
+   "brand": "Reckitt",
+   "cat": "Disinfectant",
+   "tier": null,
+   "evidence_class": {
+    "sales": "MEASURED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
    },
-   "hazard_factors": "MEASURED (undisclosed fragrance)",
+   "factors": {
+    "sales": 8.0,
+    "str": 10.0,
+    "mountain": 6.0,
+    "hazard": 8.5,
+    "ungraded": 10.0
+   },
+   "score": 8.38,
+   "dominant": "str",
+   "hazard_factors": [
+    "quats",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Tilex Mold & Mildew",
+   "brand": "Clorox",
+   "cat": "Bathroom",
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 5.0,
+    "str": 10.0,
+    "mountain": 9.5,
+    "hazard": 9.5,
+    "ungraded": 10.0
+   },
+   "score": 8.32,
+   "dominant": "str",
+   "hazard_factors": [
+    "sodium hypochlorite",
+    "caustic alkali",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Clorox Clean-Up All Purpose Cleaner with Bleach, Original",
+   "brand": "Clorox",
+   "cat": "Disinfectant",
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 7.0,
+    "str": 10.0,
+    "mountain": 6.0,
+    "hazard": 9.5,
+    "ungraded": 10.0
+   },
+   "score": 8.22,
+   "dominant": "str",
+   "hazard_factors": [
+    "sodium hypochlorite",
+    "caustic alkali",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Windex Original",
+   "brand": "SC Johnson",
+   "cat": "Glass",
+   "tier": null,
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 9.0,
+    "str": 7.0,
+    "mountain": 8.0,
+    "hazard": 7.5,
+    "ungraded": 10.0
+   },
+   "score": 8.17,
+   "dominant": "sales",
+   "hazard_factors": [
+    "ammonia",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Clorox 2 for Colors Stain Remover & Laundry Additive, Original",
+   "brand": "Clorox",
+   "cat": "Laundry",
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 8.0,
+    "str": 10.0,
+    "mountain": 5.5,
+    "hazard": 7.5,
+    "ungraded": 10.0
+   },
+   "score": 8.12,
+   "dominant": "str",
+   "hazard_factors": [
+    "caustic alkali",
+    "undisclosed fragrance"
+   ],
+   "route": "research"
+  },
+  {
+   "name": "Great Value Bathroom Cleaner with Bleach",
+   "brand": "Great Value",
+   "cat": "Bathroom",
+   "tier": "grocery",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 5.0,
+    "str": 10.0,
+    "mountain": 8.5,
+    "hazard": 9.5,
+    "ungraded": 10.0
+   },
+   "score": 8.12,
+   "dominant": "str",
+   "hazard_factors": [
+    "sodium hypochlorite",
+    "caustic alkali",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Lysol Toilet Bowl",
+   "brand": "Reckitt",
+   "cat": "Bathroom",
+   "tier": null,
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 6.0,
+    "str": 9.5,
+    "mountain": 8.5,
+    "hazard": 8.0,
+    "ungraded": 10.0
+   },
+   "score": 8.07,
+   "dominant": "str",
+   "hazard_factors": [
+    "strong acid",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Tide Original Liquid Laundry",
+   "brand": "P&G",
+   "cat": "Laundry",
+   "tier": null,
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 9.5,
+    "str": 9.0,
+    "mountain": 5.5,
+    "hazard": 5.5,
+    "ungraded": 10.0
+   },
+   "score": 8.02,
+   "dominant": "sales",
+   "hazard_factors": [
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Comet Classic Toilet Bowl Cleaner",
+   "brand": "Comet",
+   "cat": "Bathroom",
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 5.5,
+    "str": 9.5,
+    "mountain": 8.5,
+    "hazard": 8.0,
+    "ungraded": 10.0
+   },
+   "score": 7.93,
+   "dominant": "str",
+   "hazard_factors": [
+    "strong acid",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Member's Mark Hard Surface Disinfecting Wipes",
+   "brand": "Member's Mark",
+   "cat": "Disinfectant",
+   "tier": "grocery",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 6.5,
+    "str": 10.0,
+    "mountain": 6.0,
+    "hazard": 8.5,
+    "ungraded": 10.0
+   },
+   "score": 7.93,
+   "dominant": "str",
+   "hazard_factors": [
+    "quats",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Lysol Disinfecting Wipes, Crisp Linen",
+   "brand": "Reckitt",
+   "cat": "Disinfectant",
+   "tier": null,
+   "evidence_class": {
+    "sales": "MEASURED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 7.0,
+    "str": 10.0,
+    "mountain": 6.0,
+    "hazard": 7.5,
+    "ungraded": 10.0
+   },
+   "score": 7.92,
+   "dominant": "str",
+   "hazard_factors": [
+    "caustic alkali",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Cascade Complete ActionPacs",
+   "brand": "P&G",
+   "cat": "Dishwasher",
+   "tier": null,
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 9.0,
+    "str": 7.5,
+    "mountain": 7.5,
+    "hazard": 5.5,
+    "ungraded": 10.0
+   },
+   "score": 7.9,
+   "dominant": "sales",
+   "hazard_factors": [
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Tide",
+   "brand": "P&G",
+   "cat": "Laundry",
+   "tier": null,
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 9.5,
+    "str": 8.5,
+    "mountain": 5.5,
+    "hazard": 5.5,
+    "ungraded": 10.0
+   },
+   "score": 7.9,
+   "dominant": "sales",
+   "hazard_factors": [
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Arm & Hammer Liquid Laundry Detergent, Baking Soda Fresh",
+   "brand": "Church & Dwight",
+   "cat": "Laundry",
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 8.0,
+    "str": 9.0,
+    "mountain": 5.5,
+    "hazard": 7.5,
+    "ungraded": 10.0
+   },
+   "score": 7.88,
+   "dominant": "str",
+   "hazard_factors": [
+    "caustic alkali",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Lime-A-Way Toilet Bowl Cleaner",
+   "brand": "Reckitt",
+   "cat": "Bathroom",
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 5.0,
+    "str": 9.5,
+    "mountain": 10.0,
+    "hazard": 6.5,
+    "ungraded": 10.0
+   },
+   "score": 7.85,
+   "dominant": "mountain",
+   "hazard_factors": [
+    "strong acid"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "The Works Basic Bathroom Cleaner with Bleach",
+   "brand": "The Works",
+   "cat": "Bathroom",
+   "tier": "dollar-store",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 4.0,
+    "str": 10.0,
+    "mountain": 8.5,
+    "hazard": 9.5,
+    "ungraded": 10.0
+   },
+   "score": 7.83,
+   "dominant": "str",
+   "hazard_factors": [
+    "sodium hypochlorite",
+    "caustic alkali",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Top Job Bathroom Cleaner with Bleach",
+   "brand": "Top Job",
+   "cat": "Bathroom",
+   "tier": "dollar-store",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 4.0,
+    "str": 10.0,
+    "mountain": 8.5,
+    "hazard": 9.5,
+    "ungraded": 10.0
+   },
+   "score": 7.83,
+   "dominant": "str",
+   "hazard_factors": [
+    "sodium hypochlorite",
+    "caustic alkali",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Comet Foaming Bath Spray, Fresh Lemon Scent",
+   "brand": "Comet",
+   "cat": "Bathroom",
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 4.5,
+    "str": 9.0,
+    "mountain": 8.5,
+    "hazard": 10.0,
+    "ungraded": 10.0
+   },
+   "score": 7.8,
+   "dominant": "hazard",
+   "hazard_factors": [
+    "quats",
+    "glycol ethers",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Scrub Free Total Bathroom Cleaner, Lemon Scent",
+   "brand": "Scrub Free",
+   "cat": "Bathroom",
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 5.5,
+    "str": 9.0,
+    "mountain": 8.5,
+    "hazard": 8.0,
+    "ungraded": 10.0
+   },
+   "score": 7.8,
+   "dominant": "str",
+   "hazard_factors": [
+    "strong acid",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "The Works Foaming Bathroom Cleaner, Fresh Citrus Scent",
+   "brand": "The Works",
+   "cat": "Bathroom",
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 4.5,
+    "str": 9.0,
+    "mountain": 8.5,
+    "hazard": 10.0,
+    "ungraded": 10.0
+   },
+   "score": 7.8,
+   "dominant": "hazard",
+   "hazard_factors": [
+    "quats",
+    "glycol ethers",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Clorox Scentiva Disinfecting Multi-Surface Cleaner, Tuscan Lavender & Jasmine",
+   "brand": "Clorox",
+   "cat": "Disinfectant",
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 6.0,
+    "str": 10.0,
+    "mountain": 6.0,
+    "hazard": 8.5,
+    "ungraded": 10.0
+   },
+   "score": 7.78,
+   "dominant": "str",
+   "hazard_factors": [
+    "quats",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Dawn Ultra Dishwashing Liquid",
+   "brand": "Dawn",
+   "cat": "Dish Soap",
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "MEASURED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 10.0,
+    "str": 6.0,
+    "mountain": 5.5,
+    "hazard": 7.5,
+    "ungraded": 10.0
+   },
+   "score": 7.72,
+   "dominant": "sales",
+   "hazard_factors": [
+    "isothiazolinone preservative",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Great Value Ultimate Fresh Original Clean Laundry Detergent",
+   "brand": "Great Value",
+   "cat": "Laundry",
+   "tier": "grocery",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 7.5,
+    "str": 9.0,
+    "mountain": 5.5,
+    "hazard": 7.5,
+    "ungraded": 10.0
+   },
+   "score": 7.72,
+   "dominant": "str",
+   "hazard_factors": [
+    "isothiazolinone preservative",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Great Value Ultra Dishwashing Liquid, Original Scent",
+   "brand": "Great Value",
+   "cat": "Dish Soap",
+   "tier": "grocery",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 10.0,
+    "str": 6.0,
+    "mountain": 5.5,
+    "hazard": 7.5,
+    "ungraded": 10.0
+   },
+   "score": 7.72,
+   "dominant": "sales",
+   "hazard_factors": [
+    "isothiazolinone preservative",
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "Clorox ToiletWand",
+   "brand": "Clorox",
+   "cat": "Bathroom",
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 6.0,
+    "str": 9.5,
+    "mountain": 8.5,
+    "hazard": 5.5,
+    "ungraded": 10.0
+   },
+   "score": 7.7,
+   "dominant": "str",
+   "hazard_factors": [
+    "undisclosed fragrance"
+   ],
+   "route": "enrichment"
+  },
+  {
+   "name": "OdoBan Ready-to-Use Multi-Purpose Disinfectant & Deodorizer, Original Eucalyptus Scent",
+   "brand": "Clean Control Corporation",
+   "cat": "Disinfectant",
+   "tier": "mass",
+   "evidence_class": {
+    "sales": "ESTIMATED",
+    "str": "ESTIMATED",
+    "mountain": "ESTIMATED",
+    "hazard": "MEASURED",
+    "ungraded": "MEASURED"
+   },
+   "factors": {
+    "sales": 5.0,
+    "str": 10.0,
+    "mountain": 6.0,
+    "hazard": 10.0,
+    "ungraded": 10.0
+   },
+   "score": 7.7,
+   "dominant": "str",
+   "hazard_factors": [
+    "quats",
+    "formaldehyde releaser",
+    "undisclosed fragrance"
+   ],
    "route": "enrichment"
   }
  ],
  "routing_split": {
-  "enrichment": 30,
-  "research": 0,
+  "enrichment": 29,
+  "research": 1,
   "verification": 0
  },
+ "lane_totals": {
+  "ranked": 30,
+  "research_lane": 14,
+  "verification_lane": 9,
+  "ungraded_population": 218,
+  "products_total": 294
+ },
+ "research_lane": [
+  {
+   "name": "Fresh Gel Toilet Cleaning Stamp",
+   "brand": "SC Johnson",
+   "cat": "Bathroom",
+   "reason": "no note held; the ingredient list itself carries a line entered only as Proprietary Polymer Solution",
+   "priority": "borderline",
+   "score": 6.8,
+   "in_ranked": false,
+   "gap_to_cutoff": 0.9
+  },
+  {
+   "name": "Granite Gold Daily Cleaner",
+   "brand": "Granite Gold",
+   "cat": "Wood & Stone Care",
+   "reason": "Newer manufacturer SDS lists 'proprietary ingredients 1-10%' \u2014 partial disclosure flag: the 5 named ingredients are from the earlier full SDS; current formula may differ. Mountain-relevant: granite/stone counter care.",
+   "priority": "firm",
+   "score": 6.1,
+   "in_ranked": false,
+   "gap_to_cutoff": 1.6
+  },
+  {
+   "name": "Krud Kutter Original Cleaner & Degreaser",
+   "brand": "Rust-Oleum",
+   "cat": "Specialty",
+   "reason": "Concentrated alkaline degreaser, pH <12.2 (manufacturer TDS), 0% VOC. TDS describes the surfactant blend only as 'proprietary blend of biodegradable surfactants' \u2014 ingredient identity is taken from the SDS Section 3 hazardous-substances block, which lists only",
+   "priority": "firm",
+   "score": 4.78,
+   "in_ranked": false,
+   "gap_to_cutoff": 2.92
+  },
+  {
+   "name": "Goo Gone Original",
+   "brand": "Goo Gone",
+   "cat": "Specialty",
+   "reason": "Adhesive/sticker remover - the household default for tape and label residue. Solvent base is a light hydrotreated petroleum distillate (80-95% per SDS) with d-limonene and orange oil; two solvents are disclosed by class name only (aliphatic ether alcohol, glyc",
+   "priority": "borderline",
+   "score": 4.85,
+   "in_ranked": false,
+   "gap_to_cutoff": 2.85
+  },
+  {
+   "name": "CVS All Purpose Cleaner + Bleach Spray",
+   "brand": "CVS Health",
+   "cat": "Disinfectant",
+   "reason": "EPA-registered disinfectant. The page states the actives (2 percent sodium hypochlorite and sodium hydroxide); the inert fraction is not disclosed anywhere by the retailer, which is a wider disclosure gap than the bleach products whose manufacturers publish fu",
+   "priority": "borderline",
+   "score": 6.8,
+   "in_ranked": false,
+   "gap_to_cutoff": 0.9
+  },
+  {
+   "name": "Kirkland Signature Ultra Shine Premium Dish Soap (Citrus Scent)",
+   "brand": "Kirkland Signature",
+   "cat": "Dish Soap",
+   "reason": "One disclosed substance. The SDS records sodium lauryl sulfate at 5 to 10 percent and states no substance is hazardous at its given concentration. Sodium lauryl sulfate carries a moderate dermal grade, not a severe one, so no substitute is owed; the note is he",
+   "priority": "firm",
+   "score": 4.85,
+   "in_ranked": false,
+   "gap_to_cutoff": 2.85
+  },
+  {
+   "name": "Clorox 2 for Colors Stain Remover & Laundry Additive, Original",
+   "brand": "Clorox",
+   "cat": "Laundry",
+   "reason": "no note held; the ingredient list itself carries a line entered only as Confidential Stabilizer Package",
+   "priority": "borderline",
+   "score": 8.12,
+   "in_ranked": true,
+   "gap_to_cutoff": -0.42
+  },
+  {
+   "name": "Fels-Naptha Heavy Duty Laundry Bar Soap",
+   "brand": "Fels-Naptha",
+   "cat": "Laundry",
+   "reason": "Entered from the manufacturer's SDS composition section, not from a consumer pack list. The SDS prints concentration ranges only and withholds the balance as trade secret, so this is a partial disclosure and is recorded as partial rather than smoothed. A Canad",
+   "priority": "firm",
+   "score": 5.85,
+   "in_ranked": false,
+   "gap_to_cutoff": 1.85
+  },
+  {
+   "name": "Invisible Glass (Aerosol)",
+   "brand": "Stoner",
+   "cat": "Glass",
+   "reason": "The SDS composition section lists only Water 80-100%, Hydrocarbon propellant 1-20% (CAS 68476-86-8), and a Proprietary hydrocarbon blend 1-15% withheld as trade secret. This is a partial disclosure recorded as partial: the solvent blend behind the 'ClearDry' f",
+   "priority": "firm",
+   "score": 5.45,
+   "in_ranked": false,
+   "gap_to_cutoff": 2.25
+  },
+  {
+   "name": "Mean Green Super Strength Cleaner & Degreaser",
+   "brand": "Mean Green",
+   "cat": "All-Purpose",
+   "reason": "Disclosure gap: the Rust-Oleum GHS SDS (product 932, rev. 2026-03-31) names only two hazardous substances and states that actual concentrations are withheld as trade secret; the technical data sheet describes the balance only as a 'proprietary blend of biodegr",
+   "priority": "firm",
+   "score": 5.9,
+   "in_ranked": false,
+   "gap_to_cutoff": 1.8
+  },
+  {
+   "name": "Great Value Lemon Scent Foaming Bathroom Cleaner",
+   "brand": "Great Value",
+   "cat": "Bathroom",
+   "reason": "The filing's own 'Description of Product' field reads 'Air Freshener', which is wrong: the list is an aerosol bathroom-cleaner formula with a propellant and four quat actives. The mismatch is recorded rather than corrected, because the document is the manufact",
+   "priority": "firm",
+   "score": 7.65,
+   "in_ranked": false,
+   "gap_to_cutoff": 0.05
+  },
+  {
+   "name": "Great Value Carpet & Upholstery Cleaner Oxy",
+   "brand": "Great Value",
+   "cat": "Floor & Carpet",
+   "reason": "A third manufacturer of record on Walmart's own house brand: BISSELL Homecare, not KIK and not Henkel. Four of the ten lines are printed as 'Proprietary' with no CAS -- alcohol alkoxylate, linear alcohol ethoxylate, alkyl polyglucoside and sodium polyacrylate ",
+   "priority": "firm",
+   "score": 6.4,
+   "in_ranked": false,
+   "gap_to_cutoff": 1.3
+  },
+  {
+   "name": "Comet Ultra Bathroom Spray, Lemon Scent",
+   "brand": "Comet",
+   "cat": "Bathroom",
+   "reason": "A ready-to-use bathroom spray with two dialkyl benzyl ammonium chloride actives. Nine disclosed lines, and one of them is a surfactant named only as 'Non-ionic Surfactant' with no CAS. That is the honest edge of this tool: eight lines are identified and one is",
+   "priority": "firm",
+   "score": 7.57,
+   "in_ranked": false,
+   "gap_to_cutoff": 0.13
+  },
+  {
+   "name": "Comet Classic Shower Cleaner",
+   "brand": "Comet",
+   "cat": "Bathroom",
+   "reason": "Five lines, and two of them are classes rather than substances: the manufacturer disclosed a chelating agent and a surfactant and withheld what they are. This is the honest edge of the tool. A reader can see the hydroxide and the preservative by name, and can ",
+   "priority": "firm",
+   "score": 7.32,
+   "in_ranked": false,
+   "gap_to_cutoff": 0.38
+  }
+ ],
+ "excluded_from_research": [
+  {
+   "name": "Weiman Stainless Steel Cleaner & Polish",
+   "reason": "identities listed, 8 lines; concentrations withheld as trade secret - a concentration gap, not a component gap"
+  },
+  {
+   "name": "Murphy Original Oil Soap",
+   "reason": "undisclosed fragrance blend only; fragrance-only withholding is a category pattern carried in the hazard factor, not a product-specific research target"
+  },
+  {
+   "name": "Folex Instant Carpet Spot Remover",
+   "reason": "components named; CAS withheld on 4 of 5. The disclosure_note hit was an incidental source-spelling mapping"
+  },
+  {
+   "name": "Liquid-Plumr Pro-Strength Clog Destroyer Gel with Pipeguard",
+   "reason": "disclosure_note states the SmartLabel names every intentionally-added component - no gap"
+  }
+ ],
+ "routing_exceptions": [
+  {
+   "name": "Fresh Gel Toilet Cleaning Stamp",
+   "brand": "SC Johnson",
+   "cat": "Bathroom",
+   "reason": "no note held; the ingredient list itself carries a line entered only as Proprietary Polymer Solution",
+   "priority": "borderline",
+   "score": 6.8
+  },
+  {
+   "name": "Granite Gold Daily Cleaner",
+   "brand": "Granite Gold",
+   "cat": "Wood & Stone Care",
+   "reason": "Newer manufacturer SDS lists 'proprietary ingredients 1-10%' \u2014 partial disclosure flag: the 5 named ingredients are from the earlier full SDS; current formula may differ. Mountain-relevant: granite/stone counter care.",
+   "priority": "firm",
+   "score": 6.1
+  },
+  {
+   "name": "Krud Kutter Original Cleaner & Degreaser",
+   "brand": "Rust-Oleum",
+   "cat": "Specialty",
+   "reason": "Concentrated alkaline degreaser, pH <12.2 (manufacturer TDS), 0% VOC. TDS describes the surfactant blend only as 'proprietary blend of biodegradable surfactants' \u2014 ingredient identity is taken from the SDS Section 3 hazardous-substances block, which lists only",
+   "priority": "firm",
+   "score": 4.78
+  },
+  {
+   "name": "Goo Gone Original",
+   "brand": "Goo Gone",
+   "cat": "Specialty",
+   "reason": "Adhesive/sticker remover - the household default for tape and label residue. Solvent base is a light hydrotreated petroleum distillate (80-95% per SDS) with d-limonene and orange oil; two solvents are disclosed by class name only (aliphatic ether alcohol, glyc",
+   "priority": "borderline",
+   "score": 4.85
+  },
+  {
+   "name": "CVS All Purpose Cleaner + Bleach Spray",
+   "brand": "CVS Health",
+   "cat": "Disinfectant",
+   "reason": "EPA-registered disinfectant. The page states the actives (2 percent sodium hypochlorite and sodium hydroxide); the inert fraction is not disclosed anywhere by the retailer, which is a wider disclosure gap than the bleach products whose manufacturers publish fu",
+   "priority": "borderline",
+   "score": 6.8
+  },
+  {
+   "name": "Kirkland Signature Ultra Shine Premium Dish Soap (Citrus Scent)",
+   "brand": "Kirkland Signature",
+   "cat": "Dish Soap",
+   "reason": "One disclosed substance. The SDS records sodium lauryl sulfate at 5 to 10 percent and states no substance is hazardous at its given concentration. Sodium lauryl sulfate carries a moderate dermal grade, not a severe one, so no substitute is owed; the note is he",
+   "priority": "firm",
+   "score": 4.85
+  },
+  {
+   "name": "Fels-Naptha Heavy Duty Laundry Bar Soap",
+   "brand": "Fels-Naptha",
+   "cat": "Laundry",
+   "reason": "Entered from the manufacturer's SDS composition section, not from a consumer pack list. The SDS prints concentration ranges only and withholds the balance as trade secret, so this is a partial disclosure and is recorded as partial rather than smoothed. A Canad",
+   "priority": "firm",
+   "score": 5.85
+  },
+  {
+   "name": "Invisible Glass (Aerosol)",
+   "brand": "Stoner",
+   "cat": "Glass",
+   "reason": "The SDS composition section lists only Water 80-100%, Hydrocarbon propellant 1-20% (CAS 68476-86-8), and a Proprietary hydrocarbon blend 1-15% withheld as trade secret. This is a partial disclosure recorded as partial: the solvent blend behind the 'ClearDry' f",
+   "priority": "firm",
+   "score": 5.45
+  },
+  {
+   "name": "Mean Green Super Strength Cleaner & Degreaser",
+   "brand": "Mean Green",
+   "cat": "All-Purpose",
+   "reason": "Disclosure gap: the Rust-Oleum GHS SDS (product 932, rev. 2026-03-31) names only two hazardous substances and states that actual concentrations are withheld as trade secret; the technical data sheet describes the balance only as a 'proprietary blend of biodegr",
+   "priority": "firm",
+   "score": 5.9
+  },
+  {
+   "name": "Great Value Lemon Scent Foaming Bathroom Cleaner",
+   "brand": "Great Value",
+   "cat": "Bathroom",
+   "reason": "The filing's own 'Description of Product' field reads 'Air Freshener', which is wrong: the list is an aerosol bathroom-cleaner formula with a propellant and four quat actives. The mismatch is recorded rather than corrected, because the document is the manufact",
+   "priority": "firm",
+   "score": 7.65
+  },
+  {
+   "name": "Great Value Carpet & Upholstery Cleaner Oxy",
+   "brand": "Great Value",
+   "cat": "Floor & Carpet",
+   "reason": "A third manufacturer of record on Walmart's own house brand: BISSELL Homecare, not KIK and not Henkel. Four of the ten lines are printed as 'Proprietary' with no CAS -- alcohol alkoxylate, linear alcohol ethoxylate, alkyl polyglucoside and sodium polyacrylate ",
+   "priority": "firm",
+   "score": 6.4
+  },
+  {
+   "name": "Comet Ultra Bathroom Spray, Lemon Scent",
+   "brand": "Comet",
+   "cat": "Bathroom",
+   "reason": "A ready-to-use bathroom spray with two dialkyl benzyl ammonium chloride actives. Nine disclosed lines, and one of them is a surfactant named only as 'Non-ionic Surfactant' with no CAS. That is the honest edge of this tool: eight lines are identified and one is",
+   "priority": "firm",
+   "score": 7.57
+  },
+  {
+   "name": "Comet Classic Shower Cleaner",
+   "brand": "Comet",
+   "cat": "Bathroom",
+   "reason": "Five lines, and two of them are classes rather than substances: the manufacturer disclosed a chelating agent and a surfactant and withheld what they are. This is the honest edge of the tool. A reader can see the hydroxide and the preservative by name, and can ",
+   "priority": "firm",
+   "score": 7.32
+  }
+ ],
+ "verification_lane": [
+  {
+   "name": "Bar Keepers Friend",
+   "cat": "Abrasive Cleanser",
+   "graded": true,
+   "manufacturer_claim": "The manufacturer's own care guide states: \"Bar Keepers Friend is non-toxic, but to avoid skin irritation, put on rubber gloves before wiping the area with a wet sponge or cloth.\" A second company post, excerpting the brand's shower-door article, reads: \"Bar Keepers Friend Cleanser is a smarter alter",
+   "conflict_note": "Recorded as a tension, not as a verdict. \"Non-toxic\" is a safety assertion about a formula whose own hazard record carries organ and dermal effects, and the same page advises gloves, which is the manufacturer naming a dermal route in its own instructions. Both pages were reached by direct fetch of t",
+   "src": "https://barkeepersfriend.com/blogs/bar-keepers-blog/best-way-to-clean-shower-rust"
+  },
+  {
+   "name": "Cascade",
+   "cat": "Dishwasher",
+   "graded": true,
+   "manufacturer_claim": "The manufacturer's own pack copy for the Cascade Free & Clear line reads: \"No phosphates. No chlorine bleach. Safe for septic tanks.\" and \"Cascade believes in the safety and quality of our products. Visit Cascadeclean.com to learn more about what goes into our products and why we make those choices.",
+   "conflict_note": "Recorded as a tension, not as a verdict. \"No phosphates\" and \"safe for septic tanks\" are environmental and plumbing claims, not toxicological findings about the people using the product; the same pack carries \"Caution: Irritant. Harmful if swallowed or put in mouth.\" This entry is brand-level, so th",
+   "src": "https://directionsforme.org/product/54693"
+  },
+  {
+   "name": "Finish",
+   "cat": "Dishwasher",
+   "graded": true,
+   "manufacturer_claim": "The manufacturer's product page for its leading detergent states: \"FINISH QUANTUM\u00ae is safe for septic systems.\" The same page's benefit list reads \"Care & protect For your glasses, dishes & machines,\" and its FAQ describes the tablets as containing \"safe bleaches\": \"They also include enzymes (to bre",
+   "conflict_note": "Recorded as a tension, not as a verdict. \"Safe for septic systems\" is a plumbing and environmental claim, and \"safe bleaches\" is a reassurance attached to an oxidizer whose own GHS classification includes serious eye damage. This entry is brand-level, so the claim is quoted from the brand's leading ",
+   "src": "https://www.finishdishwashing.com/products/detergents/quantum-detergent/84/"
+  },
+  {
+   "name": "20 Mule Team Borax (BMVC)",
+   "cat": "Laundry",
+   "graded": true,
+   "manufacturer_claim": "The manufacturer's safety page asks \"How safe is 20 MULE TEAM\u00ae Borax?\" and answers: \"20 MULE TEAM\u00ae Borax has been used safely by hundreds of people for over 127 years! While no one can say their product is 100% safe in all circumstances (even table salt can be deadly if you ingest too much), Borax i",
+   "conflict_note": "Recorded as a tension, not as a verdict. \"Safe when used as directed\" and \"all-natural\" stand opposite a 1B reproductive classification that the same company's SDS repeats on this product. \"Natural\" describes where the substance came from, not what it does, and the manufacturer's own \"no one can say",
+   "src": "https://www.20muleteamlaundry.com/safety-information.html"
+  },
+  {
+   "name": "LA's Totally Awesome All-Purpose Cleaner",
+   "cat": "All-Purpose",
+   "graded": false,
+   "manufacturer_claim": "The manufacturer FAQ states: \"LA's Totally Awesome All Purpose Cleaner \u00ae is non-toxic. Therefore, the listing of ingredients on the label is not required by law.\" On pets it states: \"There is no information to suggest that pets are sensitive to this product\" and \"LA's Totally Awesome All Purpose Cle",
+   "conflict_note": "Recorded as a tension, not as a verdict. The manufacturer's safety assertion carries no cited basis and is the stated reason the ingredient list is not on the label; the hazard side is graded from harmonised GHS classifications. Dose matters, and the manufacturer's own FAQ still recommends removing ",
+   "src": "http://004f876.netsolhost.com/html/faqs.html"
+  },
+  {
+   "name": "Great Value Lemon Scent All Purpose Cleaner",
+   "cat": "All-Purpose",
+   "graded": true,
+   "manufacturer_claim": "The retail listing copy for this SKU reads: \"Great Value Lemon Scent All Purpose Cleaner kills 99.9% of germs, making it an ideal go-to cleaning solution for households, medical facilities, work areas, and daycare centers. The antibacterial formula cleans and disinfects in one easy step.\" The bullet",
+   "conflict_note": "Recorded as a claim, not as a verdict, and the claim type matters: this is an efficacy and use-surface claim, not a safety assertion. It is recorded because \"no rinsing necessary\" is a residue statement and \"daycare centers\" is a child-adjacency statement, and both sit on a product whose dermal and ",
+   "src": "https://cooklist.com/product/great-value-lemon-scent-all-purpose-cleaner-892832"
+  },
+  {
+   "name": "Great Value All Purpose Cleaner With Bleach",
+   "cat": "Disinfectant",
+   "graded": false,
+   "manufacturer_claim": "The Walmart listing copy for this SKU reads: \"Great Value All Purpose Cleaner with Bleach, 32 fl oz disinfects surfaces and kills 99.9% of germs,\" with the feature list stating \"Kills 99.9% of germs and viruses, including flu viruses\" and \"Ideal for kitchens, bathrooms, and high-touch areas.\"",
+   "conflict_note": "Recorded as a claim, not as a verdict. As with the lemon SKU this is a use-surface and efficacy claim rather than a safety assertion, and it is recorded because the product is directed at kitchens and high-touch areas while the record shows a corrosive active at an undisclosed concentration beside a",
+   "src": "https://www.walmart.com/ip/Great-Value-32oz-All-Purpose-Cleaner-with-Bleach/13023513"
+  },
+  {
+   "name": "CVS All Purpose Cleaner + Bleach Spray",
+   "cat": "Disinfectant",
+   "graded": false,
+   "manufacturer_claim": "The CVS product page states: \"Keep your home clean and your family safe from germs and viruses with this all purpose cleaner, working to disinfect every surface in your house,\" and closes: \"leave your household sparkling and your family safe.\"",
+   "conflict_note": "Recorded as a tension, not as a verdict. The \"family safe\" wording describes disinfection efficacy, not a toxicological finding, and the manufacturer offers no basis for it. It is recorded because the record carries a hazard side, and an unopposed safety claim beside a graded hazard is exactly the a",
+   "src": "https://es.cvs.com/shop/cvs-all-purpose-cleaner-bleach-spray-32-oz-prodid-100640"
+  },
+  {
+   "name": "LA's Totally Awesome All-Purpose Cleaner with Bleach",
+   "cat": "Disinfectant",
+   "graded": false,
+   "manufacturer_claim": "The manufacturer\u2019s product page for the bleach variant states that the product is \"formulated with safety in mind, following recommended usage instructions to ensure proper handling and effectiveness.\" The same page recommends it for \"countertops, floors, tiles, sinks, and toilets\" without noting an",
+   "conflict_note": "Recorded as a tension, not as a verdict. This is the more hazardous of the two dollar-store SKUs: the bleach variant's safety framing is generic (\"formulated with safety in mind\") and points at following usage instructions rather than at any toxicological basis, while the SDS for the same product do",
+   "src": "https://www.lastotallyawesome.com/shop/household/bleach-cleaner-spray-32oz/"
+  }
+ ],
+ "coverage": {
+  "products_total": 294,
+  "graded": 76,
+  "ungraded": 218,
+  "ungraded_with_ingredient_list": 218,
+  "ungraded_exposure_basis": {
+   "extrapolated": 141,
+   "reported": 8,
+   "untested": 69
+  },
+  "ungraded_by_tier": {
+   "untiered": 74,
+   "mass": 87,
+   "natural": 9,
+   "dollar-store": 15,
+   "grocery": 21,
+   "drugstore": 6,
+   "apothecary-bulk": 6
+  },
+  "ungraded_by_cat": {
+   "Glass": 13,
+   "All-Purpose": 40,
+   "Disinfectant": 32,
+   "Bathroom": 23,
+   "Abrasive Cleanser": 9,
+   "Wood & Stone Care": 8,
+   "Laundry": 25,
+   "Specialty": 23,
+   "Floor & Carpet": 5,
+   "Dish Soap": 19,
+   "Physical": 3,
+   "Dishwasher": 3,
+   "Stain & Odor": 6,
+   "Hand Soap": 9
+  },
+  "graded_by_cat": {
+   "Abrasive Cleanser": 3,
+   "Dishwasher": 11,
+   "Specialty": 4,
+   "Physical": 1,
+   "Laundry": 13,
+   "All-Purpose": 15,
+   "Bathroom": 10,
+   "Floor & Carpet": 5,
+   "Hand Soap": 2,
+   "Glass": 3,
+   "Dish Soap": 5,
+   "Stain & Odor": 1,
+   "Disinfectant": 3
+  },
+  "claim_conflicts_open": 9,
+  "claim_reviews_on_record": 6,
+  "ranked_also_carrying_open_conflict": 0,
+  "ranked_by_cat": {
+   "Disinfectant": 9,
+   "Bathroom": 12,
+   "Glass": 1,
+   "Laundry": 5,
+   "Dishwasher": 1,
+   "Dish Soap": 2
+  },
+  "ranked_top_cat": {
+   "cat": "Bathroom",
+   "count": 12,
+   "share_of_ranked": 0.4
+  }
+ },
+ "data_flags": [
+  {
+   "flag": "safe holds a boolean False, not None",
+   "products": [
+    "Dawn Ultra Dishwashing Liquid"
+   ],
+   "impact": "a third value in a two-value field; a `safe is None` selector drops these rows silently"
+  }
+ ],
  "notes": [
-  "All 136 currently-ungraded products already carry full ingredient lists, so the research lane got 0 this run and enrichment got every ranked item.",
-  "No sales-volume score is UNSOURCED: every sales factor is grounded in either a product/category mass-market position (ESTIMATED) or the stored exposure field with its source.",
-  "Hazard factors are MEASURED from the actual ingredient acts in products.json (quats, 2-butoxyethanol/BGE, undisclosed fragrance, sodium hypochlorite, ammonia, borates, glyph ethers).",
-  "Mountain factor is ESTIMATED from product purpose (hard water, wood stove soot, seasonal mildew, wood care) - the CCI mountain-matter axis.",
-  "STR factor is ESTIMATED from turnover-checklist/host-forum domain knowledge.",
-  "Verification lane note: 76 graded products exist; none carry a gr_ruled/verified marker in products.json. Verification ownership is Linnea's lane (Dolman side) - no identity or contact fields fabricated here."
+  "research = ingredient list deliberately incomplete, not 'unranked'. Matched on the note, not the score.",
+  "enrichment = list present, grade absent. Every ungraded product qualifies, so enrichment alone is not a priority signal.",
+  "verification = a manufacturer claim-vs-toxicology tension recorded but not resolved. verification_lane is a SEPARATE list, not part of routing_split: an item can be ungraded and carry an open conflict at once.",
+  "routing_split partitions the ranked set only and sums to lane_totals.ranked.",
+  "the research lane is carried separately because the weighted score usually cannot surface it: hazard is MEASURED from the ingredient acts we hold, so a product with an undisclosed list scores LOW on hazard. On the run that wrote this file, 1 of 14 research items reached the ranked set; the highest-scoring research item is 8.12 (Clorox 2 for Colors Stain Remover & Laundry Additive, Original), 0.42 above the rank-30 cutoff of 7.70.",
+  "ranked concentration on the run that wrote this file: Bathroom 12 + Disinfectant 9 = 21 of 30, the bleach/bathroom cluster fed by the Sep 28-Oct 1 value-shelf harvest.",
+  "sales is anchored on the exposure field where held; products with no exposure fall back to a brand anchor and are marked UNSOURCED or ESTIMATED."
  ]
 }
