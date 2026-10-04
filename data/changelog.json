@@ -1,6 +1,10 @@
 [
   {
     "date": "2026-10-04",
+    "text": "Sifter lane grow+sort: 4 products added from manufacturer disclosures (Liquid-Plumr Pro-Strength Clog Destroyer Gel via Clorox SmartLabel, Murphy Original Oil Soap via the Murphy product page, Affresh Washer Cleaner Tablets via the affresh page + SDS, Iron OUT Powder via the Summit Brands SDS), each with a grade_note. 9 new ingredient profiles, 7 graded from PubChem consensus (sodium hydrosulfite H251 self-heating 100%, sodium metabisulfite H318 99.5% + H334/H372 minority block flagged for Linnea, sodium sulfite H314 51.8% -> derm D, lauramidopropyl dimethylamine H317 83.8% sensitizer -> derm D, trisodium MGDA H290 only, sodium acetate and glucono-delta-lactone Not Classified), sodium tallate and generic PEG recorded ungraded per the UVCB/polymer policy. Sort pass merged 7 punctuation-variant duplicate ingredient keys onto their graded/canonical keys (Didecyl/Dioctyl-dimethylammonium chloride, Sodium (C10-16) Alkylbenzenesulfonate, Tetramethyl Acetyloctahydronaphthalenes, Sodium Cumenesulfonate, Benzene C10-13 alkyl derivatives); 15 products that disclosed the dropped spellings now read the verified grades."
+  },
+  {
+    "date": "2026-10-04",
     "text": "Station-4 close: merged the Butoxyethanol / Butyloxyethanol duplicate pair (same substance, CAS 111-76-2, two keys; Linnea flag F1 2026-10-04) onto the graded key so the corrected Sifter grade reaches the four value-brand products that disclose it; corrected the Top Job Bathroom Cleaner with Bleach note (Linnea R1: Comet Classic Foaming Bath Cleaner discloses four lines, no fragrance). No grade, evidence level or product grade changed."
   },
   {

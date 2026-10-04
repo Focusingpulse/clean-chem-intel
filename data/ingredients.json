@@ -418,7 +418,7 @@
   "g": null,
   "gr": {},
   "impacts": [],
-  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional. Merged 2026-10-04 (Sifter sort lane): the same substance sat under a second key, Benzene, C10-13, alkyl derivatives, minted ungraded from a manufacturer disclosure; 1 product disclosed it under that spelling and now read this key, so the verified grade reaches them.",
   "s": "Benzene, C10-13 alkyl derivatives. Listed in the manufacturer disclosure; not yet graded against GHS."
  },
  "Benzenesulfonic acid, C10-16-alkyl derivs., compds. with triethanolamine": {
@@ -1021,7 +1021,7 @@
    "aqua",
    "derm"
   ],
-  "note": "Graded from PubChem GHS (CID 23558, returned title 'Didecyldimethylammonium Chloride' - matches). Dominant ECHA C&L notifier block: H314 100% (corrosive -> derm F), H302 85.8% (harmful if swallowed -> work D), H400 47.6% (very toxic to aquatic life -> env F). H318 28.4%, H410 22.4% and H411 34.7% fall below the house >=40% consensus threshold and are not graded. PubChem's aggregated view also lists H317/H330/H370/H373 without notifier percentages - noted, not graded. Alias: also written 'Didecyl Dimethyl Ammonium Chloride' (Reckitt and P&G SmartLabel).",
+  "note": "Graded from PubChem GHS (CID 23558, returned title 'Didecyldimethylammonium Chloride' - matches). Dominant ECHA C&L notifier block: H314 100% (corrosive -> derm F), H302 85.8% (harmful if swallowed -> work D), H400 47.6% (very toxic to aquatic life -> env F). H318 28.4%, H410 22.4% and H411 34.7% fall below the house >=40% consensus threshold and are not graded. PubChem's aggregated view also lists H317/H330/H370/H373 without notifier percentages - noted, not graded. Alias: also written 'Didecyl Dimethyl Ammonium Chloride' (Reckitt and P&G SmartLabel). Merged 2026-10-04 (Sifter sort lane): the same substance sat under a second key, Didecyl Dimethyl Ammonium Chloride, minted ungraded from a manufacturer disclosure; 3 products disclosed it under that spelling and now read this key, so the verified grade reaches them.",
   "s": "Quaternary ammonium disinfectant active. Corrosive, harmful if swallowed, very toxic to aquatic life."
  },
  "Didecyldimonium Chloride": {
@@ -1123,7 +1123,7 @@
    "aqua",
    "derm"
   ],
-  "note": "Graded from PubChem GHS (CID 62581, returned title 'Dioctyldimethylammonium chloride' - matches). ECHA C&L notifier consensus: H314 99.6% (corrosive -> derm F), H400 90.1% (very toxic to aquatic life -> env F), H301 62.8% (toxic if swallowed) and H310 62.4% (fatal in contact with skin) -> work F. H410 57.4% also clears the threshold but env is already F; H318 62.4% would only reach derm D against an existing F; H302 36.8% is below threshold. Alias: also written 'Dioctyl Dimethyl Ammonium Chloride' (Reckitt and P&G SmartLabel).",
+  "note": "Graded from PubChem GHS (CID 62581, returned title 'Dioctyldimethylammonium chloride' - matches). ECHA C&L notifier consensus: H314 99.6% (corrosive -> derm F), H400 90.1% (very toxic to aquatic life -> env F), H301 62.8% (toxic if swallowed) and H310 62.4% (fatal in contact with skin) -> work F. H410 57.4% also clears the threshold but env is already F; H318 62.4% would only reach derm D against an existing F; H302 36.8% is below threshold. Alias: also written 'Dioctyl Dimethyl Ammonium Chloride' (Reckitt and P&G SmartLabel). Merged 2026-10-04 (Sifter sort lane): the same substance sat under a second key, Dioctyl Dimethyl Ammonium Chloride, minted ungraded from a manufacturer disclosure; 3 products disclosed it under that spelling and now read this key, so the verified grade reaches them.",
   "s": "Quaternary ammonium disinfectant active. Corrosive, fatal in contact with skin, very toxic to aquatic life."
  },
  "Dipropylene Glycol": {
@@ -2962,7 +2962,7 @@
   "g": "Extrapolated",
   "gr": {},
   "impacts": [],
-  "note": "UVCB (CAS 68081-81-2) — no PubChem entry. Class-analogous to the existing 'Sodium Dodecylbenzenesulfonate' entry (derm D, env C). Recorded extrapolated, not graded. Disclosed by Reckitt SmartLabel for Woolite Delicates.",
+  "note": "UVCB (CAS 68081-81-2) — no PubChem entry. Class-analogous to the existing 'Sodium Dodecylbenzenesulfonate' entry (derm D, env C). Recorded extrapolated, not graded. Disclosed by Reckitt SmartLabel for Woolite Delicates. Merged 2026-10-04 (Sifter sort lane): the same substance sat under a second key, Sodium C10-16 Alkylbenzenesulfonate, minted ungraded from a manufacturer disclosure; 5 products disclosed it under that spelling and now read this key, so the verified grade reaches them. Merged 2026-10-04 (Sifter sort lane): the same substance sat under a second key, Sodium C10-16 Alkylbenzene Sulfonate, minted ungraded from a manufacturer disclosure; 1 product disclosed it under that spelling and now read this key, so the verified grade reaches them.",
   "s": "Linear alkylbenzene sulfonate (LAS) surfactant. UVCB; class hazards: skin/eye irritant, aquatic toxicity."
  },
  "Sodium Benzoate": {
@@ -3560,7 +3560,7 @@
    "aqua",
    "derm"
   ],
-  "note": "PubChem CID 108242, ECHA C&L notifier consensus: H315 84.7%, H317 89.5% -> derm D + allerg; H410 75.2% -> env D. H411 (24.8%) is below the 40% bar. Disclosed by Church & Dwight as a fragrance component of Arm & Hammer and Xtra liquid laundry detergents; flagged EU fragrance allergen.",
+  "note": "PubChem CID 108242, ECHA C&L notifier consensus: H315 84.7%, H317 89.5% -> derm D + allerg; H410 75.2% -> env D. H411 (24.8%) is below the 40% bar. Disclosed by Church & Dwight as a fragrance component of Arm & Hammer and Xtra liquid laundry detergents; flagged EU fragrance allergen. Merged 2026-10-04 (Sifter sort lane): the same substance sat under a second key, Tetramethyl Acetyloctahydro-Naphthalenes, minted ungraded from a manufacturer disclosure; 1 product disclosed it under that spelling and now read this key, so the verified grade reaches them.",
   "s": "Fragrance component (polycyclic musk). Skin irritant and sensitizer; toxic to aquatic life."
  },
  "Tetrasodium EDTA": {
@@ -4424,14 +4424,6 @@
   "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
   "s": "Isopropylideneglycerol. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
  },
- "Sodium C10-16 Alkylbenzene Sulfonate": {
-  "ev": "Low",
-  "g": null,
-  "gr": {},
-  "impacts": [],
-  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
-  "s": "Sodium C10-16 Alkylbenzene Sulfonate. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
- },
  "Alkyl (50% C14, 40% C12, 10% C16) Dimethyl Benzyl Ammonium Chloride": {
   "ev": "Low",
   "g": null,
@@ -4448,14 +4440,6 @@
   "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
   "s": "Secondary Alcohol Ethoxylate. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
  },
- "Didecyl Dimethyl Ammonium Chloride": {
-  "ev": "Low",
-  "g": null,
-  "gr": {},
-  "impacts": [],
-  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
-  "s": "Didecyl Dimethyl Ammonium Chloride. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
- },
  "Sodium Silicate Pentahydrate": {
   "ev": "Low",
   "g": null,
@@ -4463,14 +4447,6 @@
   "impacts": [],
   "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
   "s": "Sodium Silicate Pentahydrate. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
- },
- "Dioctyl Dimethyl Ammonium Chloride": {
-  "ev": "Low",
-  "g": null,
-  "gr": {},
-  "impacts": [],
-  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
-  "s": "Dioctyl Dimethyl Ammonium Chloride. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
  },
  "Sodium Carboxylate": {
   "ev": "Low",
@@ -4712,14 +4688,6 @@
   "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-30; not yet graded against GHS.",
   "s": "Triethanolamine Alkyl C10-16-benzenesulfate. Listed in a manufacturer disclosure read 2026-09-30; not yet graded against GHS."
  },
- "Sodium C10-16 Alkylbenzenesulfonate": {
-  "ev": "Low",
-  "g": null,
-  "gr": {},
-  "impacts": [],
-  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-30; not yet graded against GHS.",
-  "s": "Sodium C10-16 Alkylbenzenesulfonate. Listed in a manufacturer disclosure read 2026-09-30; not yet graded against GHS."
- },
  "Benzenesulfonic acid, 2,2'-(1,2-ethenediyl)bis[5-[[4-[(2-hydroxyethyl)methylamino]-6-(phenylamino)-1,3,5-triazin-2-yl]amino]-, disodium salt": {
   "ev": "Low",
   "g": null,
@@ -4744,14 +4712,6 @@
   "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-30; not yet graded against GHS.",
   "s": "2-Butenedioic acid (2E), with ethylene esters. Listed in a manufacturer disclosure read 2026-09-30; not yet graded against GHS."
  },
- "Benzene, C10-13, alkyl derivatives": {
-  "ev": "Low",
-  "g": null,
-  "gr": {},
-  "impacts": [],
-  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-30; not yet graded against GHS.",
-  "s": "Benzene, C10-13, alkyl derivatives. Listed in a manufacturer disclosure read 2026-09-30; not yet graded against GHS."
- },
  "2-Bromo-2-Nitropropane-1,3-Diol": {
   "ev": "Low",
   "g": null,
@@ -4775,14 +4735,6 @@
   "impacts": [],
   "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-30; not yet graded against GHS.",
   "s": "Ethylene Brassylate. Listed in a manufacturer disclosure read 2026-09-30; not yet graded against GHS."
- },
- "Tetramethyl Acetyloctahydro-Naphthalenes": {
-  "ev": "Low",
-  "g": null,
-  "gr": {},
-  "impacts": [],
-  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-30; not yet graded against GHS.",
-  "s": "Tetramethyl Acetyloctahydro-Naphthalenes. Listed in a manufacturer disclosure read 2026-09-30; not yet graded against GHS."
  },
  "Sodium Lauryl Sarcosinate": {
   "ev": "Low",
@@ -5390,7 +5342,7 @@
    "derm"
   ],
   "s": "Causes serious eye irritation",
-  "note": "Graded from PubChem GHS (CID 23679813, returned title 'Sodium p-cumenesulfonate' - the para isomer the label term denotes; CAS 28348-53-0). Headline ECHA C&L block: 258 reports from 2 notifications; H319 at 100% consensus -> derm C (serious eye irritation). No skin-hazard code reaches the house >=40% bar. Hydrotrope disclosed by the P&G SmartLabel for Dreft Stage 1 Newborn."
+  "note": "Graded from PubChem GHS (CID 23679813, returned title 'Sodium p-cumenesulfonate' - the para isomer the label term denotes; CAS 28348-53-0). Headline ECHA C&L block: 258 reports from 2 notifications; H319 at 100% consensus -> derm C (serious eye irritation). No skin-hazard code reaches the house >=40% bar. Hydrotrope disclosed by the P&G SmartLabel for Dreft Stage 1 Newborn. Merged 2026-10-04 (Sifter sort lane): the same substance sat under a second key, Sodium Cumene Sulfonate, minted ungraded from a manufacturer disclosure; 1 product disclosed it under that spelling and now read this key, so the verified grade reaches them."
  },
  "Calcium Formate": {
   "ev": "High",
@@ -5536,14 +5488,6 @@
   "impacts": [],
   "note": "Named on The Works Limeosol Cleaner disclosure as a foam suppressant with no CAS ('not available'). Recorded as an unidentified constituent rather than a substance; the disclosure does not say which silicone."
  },
- "Sodium Cumene Sulfonate": {
-  "s": "Sodium cumene sulfonate, a hydrotrope used to keep surfactants in solution; CAS 28348-53-0.",
-  "ev": "Low",
-  "g": null,
-  "gr": {},
-  "impacts": [],
-  "note": "Named on the Comet Bath Cleaner disclosure (both sizes) with CAS 28348-53-0, listed in the chelant role. Not yet graded."
- },
  "Sodium Nitrite": {
   "s": "Sodium nitrite. Inorganic salt used here as a corrosion inhibitor; CAS 7632-00-0.",
   "ev": "Low",
@@ -5679,5 +5623,105 @@
   "gr": {},
   "impacts": [],
   "note": "Named on the Austin's Wipe Away Professional Drain Opener disclosure, 2019-08-21, with CAS 57-11-4, as a surfactant. Not yet graded."
+ },
+ "Sodium Tallate": {
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Searched PubChem for a discrete record (name and CAS 61790-45-2); none returned. Sodium salt of tall oil fatty acids, a soap. The sodium-stearate analogue is reported as not classified by ECHA C&L consensus, matching the DB's Sodium Tallowate precedent. Disclosed by the Murphy Oil Soap manufacturer page.",
+  "s": "Soap salt (sodium salt of tall oil fatty acids); no discrete PubChem CID."
+ },
+ "Trisodium MGDA": {
+  "ev": "High",
+  "g": "H290",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 11021984, trisodium dicarboxymethyl alaninate): H290 may be corrosive to metals at 22.8-35.8% ECHA C&L notifier consensus, signal Warning. No human-health hazard codes in any notifier block; no dimension graded. Disclosed by the Murphy Oil Soap manufacturer page.",
+  "s": "Chelant (methylglycinediacetic acid trisodium salt); may be corrosive to metals (H290)."
+ },
+ "Lauramidopropyl Dimethylamine": {
+  "ev": "High",
+  "g": "H302,H314,H315,H317,H318,H400,H411",
+  "gr": {
+   "derm": "D",
+   "env": "F"
+  },
+  "impacts": [
+   "allerg",
+   "derm",
+   "aqua"
+  ],
+  "note": "Graded from PubChem GHS (CID 51392): aggregate ECHA C&L consensus H302 25.7%, H314 26.2%, H315 73.7%, H317 83.8%, H318 83.9%, H400 17.9%, H411 16.1%; a major 105-report notifier block carries H302/H314/H317/H318/H400/H411 at 99-100%. Sensitizer (H317) and serious eye damage (H318) at high consensus -> derm D per the BIT precedent; H400 aquatic at 100% in the largest coherent block -> env F. Disclosed by the Murphy Oil Soap manufacturer page.",
+  "s": "Fatty amidoamine surfactant; skin sensitizer, serious eye damage, aquatic toxin."
+ },
+ "Glucono-delta-lactone": {
+  "ev": "High",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 7027, delta-Gluconolactone): reported as not meeting GHS hazard criteria by 231 of 234 companies. A food-additive-class processing aid. Disclosed by the affresh manufacturer page and SDS.",
+  "s": "Not classified; oxidation product of glucose used as a processing aid."
+ },
+ "Polyethylene Glycol": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Polyethylene glycol with no grade number named on the affresh disclosure (CAS 25322-68-3, the generic PEG CAS). Polymer family, not a discrete substance; PubChem PUG REST returns no CID for the bare name. The DB already carries class keys PEG (extrapolated), PEG-8 (ungraded) and PEG-9 (graded); this key is kept for the label spelling rather than folded into PEG, same reasoning as the PEG-8 note. Not yet graded.",
+  "s": "Polyethylene glycol (generic, no grade number); polymer family, no discrete PubChem CID."
+ },
+ "Sodium Acetate": {
+  "ev": "High",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 517045): reported as not meeting GHS hazard criteria by 1320 of 1383 companies. Disclosed by the affresh manufacturer page and SDS.",
+  "s": "Not classified; food-additive-class salt used as a tablet binder."
+ },
+ "Sodium Hydrosulfite": {
+  "ev": "High",
+  "g": "H251,H302,H315,H319,H402,H412",
+  "gr": {
+   "derm": "C",
+   "resp": "C",
+   "work": "C"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": "Graded from PubChem GHS (CID 24489, sodium dithionite): H251 self-heating 100%, H302 99.7% consensus; H315 23.1% and H319 33.4% minority notifier codes below the 40% threshold, recorded in g for completeness but not graded. The physical hazard (H251, may catch fire if damp in storage) is the reason this powder is dangerous in the cupboard, not the derm dimension. Disclosed by the Iron OUT Powder manufacturer SDS.",
+  "s": "Self-heating solid (H251); harmful if swallowed; skin and eye irritant (minority consensus)."
+ },
+ "Sodium Metabisulfite": {
+  "ev": "High",
+  "g": "H302,H318,H317,H334,H335,H372,H402,H412",
+  "gr": {
+   "derm": "D",
+   "resp": "D",
+   "organ": "D",
+   "env": "C",
+   "work": "D"
+  },
+  "impacts": [
+   "allerg",
+   "derm",
+   "resp"
+  ],
+  "note": "Graded from PubChem GHS (CID 656671, sodium pyrosulfite): aggregate consensus H302 98.9%, H318 99.5%; minority notifier blocks carry H334 respiratory sensitizer, H317, H335, H372 (organ damage through prolonged exposure) and H402/H412. The H334/H372 block is a minority of notifiers but is the coherent severe classification of the substance and the reason the powder carries a Danger signal; graded worst-credible rather than consensus-only, flagged for Linnea verification. Releases sulfur dioxide on contact with acid. Disclosed by the Iron OUT Powder manufacturer SDS.",
+  "s": "Eye-damaging (H318 99.5%); respiratory sensitizer (H334) and organ toxin (H372) in minority notifiers; releases SO2 with acid."
+ },
+ "Sodium Sulfite": {
+  "ev": "High",
+  "g": "H302,H314,H315,H318,H319",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 24437): aggregate ECHA C&L consensus H302 18.3%, H314 51.8%, H315 19.3%, H319 21%; a second notifier block carries H302/H318. H314 majority consensus -> derm D (corrosive at 51.8% is short of the near-unanimous H314 that earns derm F per the 2026-09-26 correction convention). Disclosed by the Iron OUT Powder manufacturer SDS.",
+  "s": "Corrosive in majority notifier consensus (H314 51.8%); skin/eye irritant."
  }
 }
