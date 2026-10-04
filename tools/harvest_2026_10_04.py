@@ -696,7 +696,7 @@ PRODUCTS = [
         "cat": "All-Purpose",
         "ings": ["Water", "Alkylbenzene Sulfonic Acid",
                  "Dipropylene Glycol Butyl Ether", "Undeceth-40",
-                 "Sodium Hydroxide", "Butoxyethanol", "Tetrasodium EDTA",
+                 "Sodium Hydroxide", "Butyloxyethanol", "Tetrasodium EDTA",
                  "Fragrance Ingredients", "Limonene"],
         "source": ("HomeCare Labs / KIK Consumer Products California Cleaning "
                    "Product Right to Know (SB-258) ingredient disclosure for "

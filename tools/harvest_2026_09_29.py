@@ -173,7 +173,7 @@ GL_TOJOB_INGS = [
     "Dipropylene Glycol Butyl Ether",
     "Undeceth-40",
     "Sodium Hydroxide",
-    "Butoxyethanol",
+    "Butyloxyethanol",
     "Tetrasodium EDTA",
     "Fragrance",
     "Limonene",

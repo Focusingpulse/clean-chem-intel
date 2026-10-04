@@ -432,7 +432,7 @@ PRODUCTS = [
         "brand": "Comet",
         "cat": "Glass",
         "ings": ["Water", "Tetrasodium EDTA", "Ammonium Hydroxide",
-                 "Butoxyethanol", "Ammonium Laureth Sulfate",
+                 "Butyloxyethanol", "Ammonium Laureth Sulfate",
                  "Ethoxylated C10-16 Alcohols", "Isopropanol", "Blue Dye"],
         "source": ("HomeCare Labs / KIK Consumer Products California Cleaning "
                    "Product Right to Know (SB-258) ingredient disclosure for "

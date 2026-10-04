@@ -571,7 +571,7 @@
    "repro",
    "resp"
   ],
-  "note": "Corrected 2026-10-03 (Sifter verify vs PubChem CID 8133): prior H360FD not supported by any notifier; consensus is H361 (suspected, multiple notifiers). derm D->C (H315/H319 irritant only, no H314/H318 consensus), repro D->C per H361 convention, organ D added (H370+H373, BHT precedent). CA Prop 65 listing history retained in reclassified.",
+  "note": "Corrected 2026-10-03 (Sifter verify vs PubChem CID 8133): prior H360FD not supported by any notifier; consensus is H361 (suspected, multiple notifiers). derm D->C (H315/H319 irritant only, no H314/H318 consensus), repro D->C per H361 convention, organ D added (H370+H373, BHT precedent). CA Prop 65 listing history retained in reclassified. Merged 2026-10-04 (dedupe lane, flag F1 of Linnea's 2026-10-04 delta verdict): the same substance (2-butoxyethanol, CAS 111-76-2) sat under a second key, Butoxyethanol, minted ungraded 2026-09-29 from a KIK SB-258 manufacturer filing. Four value-brand products disclosed it under that spelling -- Greased Lightning All Purpose Cleaner, Top Job Basic Multi-Purpose Cleaner & Degreaser, Comet Classic Window Cleaner and Greased Lightning Classic Cleaner & Degreaser -- and now read this key, so the verified grade reaches them.",
   "reclassified": [
    "2-Butoxyethanol (EGBE) was once in every window & all-purpose cleaner as a 'safe' solvent; CA Prop 65 lists it for reproductive/developmental harm; EPA risk reviews followed."
   ],
@@ -4624,14 +4624,6 @@
   "impacts": [],
   "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-29; not yet graded against GHS.",
   "s": "Undeceth-40. Listed in a manufacturer disclosure read 2026-09-29; not yet graded against GHS."
- },
- "Butoxyethanol": {
-  "ev": "Low",
-  "g": null,
-  "gr": {},
-  "impacts": [],
-  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-29; not yet graded against GHS.",
-  "s": "Butoxyethanol. Listed in a manufacturer disclosure read 2026-09-29; not yet graded against GHS."
  },
  "Lauryl Betaine": {
   "g": "H302,H312,H315,H318",
