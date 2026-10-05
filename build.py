@@ -138,6 +138,69 @@ def main():
         "tagline": "A living database of cleaning products — graded ingredient by ingredient, updated regularly.",
     }
 
+    # ---- machine-readable layer (added 2026-10-05) ----
+    # The tool is the citable surface for this asset, so it carries its own
+    # structured data rather than leaving that to the BMVC page that embeds it.
+    # Counts are read from the same lists the page renders from, so the schema
+    # cannot drift from the page it describes. Entity ids match the live BMVC
+    # homepage nodes (#business) exactly; never mint a second business node.
+    TOOL_URL = "https://focusingpulse.github.io/clean-chem-intel/"
+    BMVC_BUSINESS = "https://bellasmountainvacationcleaning.com/#business"
+    schema = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebApplication",
+                "@id": TOOL_URL + "#app",
+                "name": "Clean Chem Intel",
+                "url": TOOL_URL,
+                "applicationCategory": "ReferenceApplication",
+                "operatingSystem": "Any",
+                "isAccessibleForFree": True,
+                "inLanguage": "en-US",
+                "description": (
+                    "A living database of %d cleaning products and %d ingredient "
+                    "profiles, graded ingredient by ingredient and searchable by "
+                    "health impact." % (len(products), len(ings))
+                ),
+                "dateModified": last_updated,
+                "publisher": {"@id": BMVC_BUSINESS},
+            },
+            {
+                "@type": "Dataset",
+                "@id": TOOL_URL + "#dataset",
+                "name": "Clean Chem Intel cleaning product database",
+                "description": (
+                    "Cleaning products with ingredient-level health-impact grading "
+                    "and regulatory status by region."
+                ),
+                "isPartOf": {"@id": TOOL_URL + "#app"},
+                "creator": {"@id": BMVC_BUSINESS},
+                "inLanguage": "en-US",
+                "dateModified": last_updated,
+                # Each dimension is a qualitative grade the page assigns per
+                # ingredient, not a scalar with a population value, so it carries
+                # a description and NOT a made-up "value".
+                "variableMeasured": [
+                    {"@type": "PropertyValue", "name": "Respiratory impact",
+                     "description": "Graded from the ingredient's published respiratory-sensitization and inhalation hazard data."},
+                    {"@type": "PropertyValue", "name": "Reproductive impact",
+                     "description": "Graded from the ingredient's published reproductive and developmental toxicity data."},
+                    {"@type": "PropertyValue", "name": "Endocrine impact",
+                     "description": "Graded from the ingredient's published endocrine-disruption data."},
+                    {"@type": "PropertyValue", "name": "Skin impact",
+                     "description": "Graded from the ingredient's published dermal-irritation and sensitization data."},
+                    {"@type": "PropertyValue", "name": "Aquatic impact",
+                     "description": "Graded from the ingredient's published aquatic-toxicity data."},
+                    {"@type": "PropertyValue", "name": "Cancer impact",
+                     "description": "Graded from the ingredient's published carcinogenicity classifications."},
+                    {"@type": "PropertyValue", "name": "Allergen impact",
+                     "description": "Graded from the ingredient's published allergen and sensitization data."},
+                ],
+            },
+        ],
+    }
+
     tpl = TPL.read_text(encoding="utf-8")
 
     def inject(token, obj):
@@ -148,6 +211,7 @@ def main():
     html = inject("__INGS__", ings)
     html = inject("__CHANGELOG__", changelog)
     html = inject("__META__", meta)
+    html = inject("__SCHEMA__", schema)
     html = inject("__REG__", reg)
     html = inject("__SCOREBOARD__", scoreboard)
 
