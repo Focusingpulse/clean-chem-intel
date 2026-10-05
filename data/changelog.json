@@ -1,6 +1,10 @@
 [
   {
     "date": "2026-10-05",
+    "text": "Gather lane: 4 products added from manufacturer disclosures read 2026-10-05 -- Method Foaming Hand Wash Sweet Water (full list, methodproducts.com), Bona Pro Series Hardwood Floor Cleaner (full list with CAS and roles, bona.com TDS), Lemi Shine Dish Detergent Pods (full list, lemishine.com) and Nature's Miracle Stain & Odor Remover (functional list with CAS, two components withheld by the maker). 12 new ingredient profiles: 6 graded from PubChem ECHA consensus (potassium sorbate H319 94.1% + H315 64.4% -> derm C; sodium xylene sulfonate H319 66.8% -> derm C; pentasodium triphosphate H315 62.2%/H319 63.6% -> derm C + H335 60.4% -> resp C; tetrasodium pyrophosphate H318 49.6% -> derm D; butoxypropanol H315 97.8%/H319 >99.9% -> derm C; zinc citrate H319 87.2% -> derm C + H400 89.4% -> env F), and 6 recorded Not Classified / ungraded with a sourcing note (three polymers, a botanical, a dye below the 40% bar, and an ambiguous DPGME block). Two of the label terms -- alcohol ethoxylate and protease enzyme -- already had graded keys, so no duplicate was minted. Two owner-registry entries added: Spectrum Brands (Nature's Miracle) and AlEn USA (Lemi Shine). tools/grade_batch.py still parses minority notifier blocks and omits H319, so grades were applied by hand from the headline block; the tool gap is unchanged."
+  },
+  {
+    "date": "2026-10-05",
     "text": "Spectrum harvest: 7 products added to the drugstore tier from FDA OTC drug labels read 2026-10-05 via DailyMed (CVS Health and Walgreens house-brand rubbing alcohol, hydrogen peroxide and wipes). The drugstore house brands are contract-manufactured: Nice-Pak Products (both chains' peroxide), Kleen Test Products (both chains' alcohol wipes), FillTech USA (Walgreens sanitizing wipes). The simplest formulas are the cheapest products -- peroxide is two lines."
   },
   {

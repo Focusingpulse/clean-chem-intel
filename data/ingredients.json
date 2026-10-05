@@ -5771,5 +5771,129 @@
   "gr": {},
   "impacts": [],
   "note": "Named on the Walgreens Sanitizing Wipes OTC label (DailyMed) as an inactive ingredient. Not yet graded."
+ },
+ "Aloe Barbadensis Extract": {
+  "s": "Aloe barbadensis (Aloe vera) leaf extract; a botanical skin conditioner and soothing agent.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Method Foaming Hand Wash ingredient list (methodproducts.com). A botanical extract with no discrete PubChem CID, so no GHS classification is available; recorded Not Classified rather than guessed."
+ },
+ "Amphoteric Modified Starch": {
+  "s": "A modified-starch polymer; a biobased anti-redeposition agent that prevents spotting and filming.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Lemi Shine Dish Detergent Pods ingredient table (listed Proprietary). Polymer with no discrete PubChem CID and no published GHS classification; recorded Not Classified rather than guessed."
+ },
+ "Butoxypropanol": {
+  "s": "Propylene glycol n-butyl ether (PnB); a glycol-ether solvent and coupling agent.",
+  "ev": "High",
+  "g": "H315,H319",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 21210, title 'n-Butoxy-2-propanol', CAS 5131-66-8 -- the same substance): headline ECHA C&L block H315 97.8% and H319 >99.9%, both >=40% -> derm C. Named on the Bona Pro Series Hardwood Floor Cleaner technical data sheet."
+ },
+ "External Violet 2": {
+  "s": "CI 60730 (C.I. Acid Violet 43); a synthetic violet dye used at trace level to tint the product.",
+  "ev": "Medium",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "PubChem GHS (CID 23669622, title 'C.I. Acid Violet 43'): the only classified codes sit below the house bar -- H318 37.4% and H412 36.8%, both under 40% -- so no grade is justified. Named on the Method Foaming Hand Wash list as 'External Violet 2 (CI 60730)'."
+ },
+ "PPG-2 Methyl Ether": {
+  "s": "Dipropylene glycol monomethyl ether (DPGME); a glycol-ether solvent that speeds drying.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Bona Pro Series Hardwood Floor Cleaner technical data sheet (CAS 34590-94-8). PubChem GHS (CID 25484, title 'Dipropylene glycol monomethyl ether') is ambiguous: the ECHA aggregate block reports not-classified by 5042 of 5116 companies, while a separate self-classification block lists H320, H335, H336 and H227 without consensus percentages. Neither block meets the >=40% house rule cleanly, so no grade is applied rather than a guess. Flagged for the grading lane."
+ },
+ "Pentasodium Triphosphate": {
+  "s": "Sodium tripolyphosphate (STPP); a builder that softens water and boosts detergent performance.",
+  "ev": "Medium",
+  "g": "H315,H319,H335",
+  "gr": {
+   "derm": "C",
+   "resp": "C"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": "Graded from PubChem GHS (CID 24455, title 'Sodium Tripolyphosphate' -- the same substance): headline ECHA C&L block H315 62.2%, H319 63.6% -> derm C; H335 60.4% >=20% -> resp C. Named on the Nature's Miracle Stain & Odor Remover ingredient table."
+ },
+ "Polyalkylene Glycol": {
+  "s": "A polyalkylene-glycol nonionic surfactant (poloxamer family, CAS 9003-11-6); a low-foam wetting agent.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Lemi Shine Dish Detergent Pods ingredient table (CAS 9003-11-6). Polymer/UVCB -- PubChem name lookup resolves no discrete CID and therefore no GHS classification; recorded Not Classified rather than guessed."
+ },
+ "Polyitaconic Acid": {
+  "s": "A polyitaconic-acid scale inhibitor; a water-soluble polymer that dissolves limescale and prevents new scale.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Lemi Shine Dish Detergent Pods ingredient table (listed Proprietary). Polymer with no discrete PubChem CID and no published GHS classification; recorded Not Classified rather than guessed."
+ },
+ "Potassium Sorbate": {
+  "s": "The potassium salt of sorbic acid (E202); a food-grade preservative that inhibits mould and yeast.",
+  "ev": "High",
+  "g": "H315,H319",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 23676745, title 'Potassium Sorbate'): headline ECHA C&L block H319 94.1% and H315 64.4%, both >=40% -> derm C. H335 sits at 35.4%, below the 40% house bar, so no respiratory grade. Named on the Method Foaming Hand Wash list."
+ },
+ "Sodium Xylene Sulfonate": {
+  "s": "The sodium salt of xylene sulfonic acid; an anionic hydrotrope that keeps surfactants in solution.",
+  "ev": "Medium",
+  "g": "H319",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 23668192, title 'Sodium Xylenesulfonate', CAS 1300-72-7): headline ECHA C&L block H319 66.8% >=40% -> derm C. Named on the Nature's Miracle Stain & Odor Remover ingredient table."
+ },
+ "Tetrasodium Pyrophosphate": {
+  "s": "TSPP; a water-softening builder and buffering agent.",
+  "ev": "Medium",
+  "g": "H302,H318,H319",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 24403, title 'Tetrasodium Pyrophosphate'): headline ECHA C&L aggregate block H318 49.6% >=40% -> derm D (H319 44.2% subsumed). H302 51.1% is an oral endpoint and not a graded dimension; H335 11.7% is below the respiratory bar. Named on the Nature's Miracle Stain & Odor Remover ingredient table."
+ },
+ "Zinc Citrate": {
+  "s": "The zinc salt of citric acid; a hard-water chelant that prevents mineral buildup.",
+  "ev": "Medium",
+  "g": "H319,H400,H410,H411",
+  "gr": {
+   "derm": "C",
+   "env": "F"
+  },
+  "impacts": [
+   "derm",
+   "aqua"
+  ],
+  "note": "Graded from PubChem GHS (CID 11023, title 'Zinc Citrate'): headline ECHA C&L block H319 87.2% -> derm C; H400 89.4% >=40% -> env F (H410 42.7%, H411 85.9% subsumed). Zinc is a documented aquatic toxicant. Named on the Lemi Shine Dish Detergent Pods ingredient table."
  }
 }

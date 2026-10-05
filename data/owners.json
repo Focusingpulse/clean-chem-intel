@@ -823,6 +823,24 @@
    "brands": [
     "Iron OUT"
    ]
+  },
+  "Spectrum Brands": {
+   "type": "public (NYSE: SPB)",
+   "detail": "Nature's Miracle is a brand of Spectrum Brands Pet, LLC, part of Spectrum Brands Holdings, Inc. (NYSE: SPB), a diversified consumer-products company. The brand's own authorized-retailer policy names Spectrum Brands Pet, LLC as the brand owner.",
+   "ev": "reported",
+   "src": "https://www.naturesmiracle.com/authorized-retailer-policy.aspx",
+   "brands": [
+    "Nature's Miracle"
+   ]
+  },
+  "AlEn USA": {
+   "type": "private, family-owned (US arm of Grupo AlEn, Mexico)",
+   "detail": "Lemi Shine joined the AlEn family in 2023; AlEn USA (Houston, TX) is the US arm of Grupo AlEn, a private, family-owned Mexican cleaning-products company. The brand's own 'Our Story' page says it is 'backed by the expertise of the AlEn family' and lists AlEn USA as the company.",
+   "ev": "reported",
+   "src": "https://lemishine.com/pages/our-story",
+   "brands": [
+    "Lemi Shine"
+   ]
   }
  },
  "independents": {
