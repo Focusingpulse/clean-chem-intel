@@ -418,7 +418,7 @@
   "g": null,
   "gr": {},
   "impacts": [],
-  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional. Merged 2026-10-04 (Sifter sort lane): the same substance sat under a second key, Benzene, C10-13, alkyl derivatives, minted ungraded from a manufacturer disclosure; 1 product disclosed it under that spelling and now read this key, so the verified grade reaches them.",
+  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional. Merged 2026-10-04 (Sifter sort lane): the same substance sat under a second key, Benzene, C10-13, alkyl derivatives, minted ungraded from a manufacturer disclosure; 1 product disclosed it under that spelling and now reads this single record. This record is ungraded (g is null): the merge is a canonicalization of two spellings for one substance, not a grade delivery.",
   "s": "Benzene, C10-13 alkyl derivatives. Listed in the manufacturer disclosure; not yet graded against GHS."
  },
  "Benzenesulfonic acid, C10-16-alkyl derivs., compds. with triethanolamine": {
@@ -2962,7 +2962,7 @@
   "g": "Extrapolated",
   "gr": {},
   "impacts": [],
-  "note": "UVCB (CAS 68081-81-2) — no PubChem entry. Class-analogous to the existing 'Sodium Dodecylbenzenesulfonate' entry (derm D, env C). Recorded extrapolated, not graded. Disclosed by Reckitt SmartLabel for Woolite Delicates. Merged 2026-10-04 (Sifter sort lane): the same substance sat under a second key, Sodium C10-16 Alkylbenzenesulfonate, minted ungraded from a manufacturer disclosure; 5 products disclosed it under that spelling and now read this key, so the verified grade reaches them. Merged 2026-10-04 (Sifter sort lane): the same substance sat under a second key, Sodium C10-16 Alkylbenzene Sulfonate, minted ungraded from a manufacturer disclosure; 1 product disclosed it under that spelling and now read this key, so the verified grade reaches them.",
+  "note": "UVCB (CAS 68081-81-2) — no PubChem entry. Class-analogous to the existing 'Sodium Dodecylbenzenesulfonate' entry (derm D, env C). Recorded extrapolated, not graded. Disclosed by Reckitt SmartLabel for Woolite Delicates. Merged 2026-10-04 (Sifter sort lane): the same substance sat under a second key, Sodium C10-16 Alkylbenzenesulfonate, minted ungraded from a manufacturer disclosure; 5 products disclosed it under that spelling and now read this key, so the extrapolated grade reaches them. Merged 2026-10-04 (Sifter sort lane): the same substance sat under a second key, Sodium C10-16 Alkylbenzene Sulfonate, minted ungraded from a manufacturer disclosure; 1 product disclosed it under that spelling and now read this key, so the extrapolated grade reaches them.",
   "s": "Linear alkylbenzene sulfonate (LAS) surfactant. UVCB; class hazards: skin/eye irritant, aquatic toxicity."
  },
  "Sodium Benzoate": {
@@ -5709,7 +5709,7 @@
    "derm",
    "resp"
   ],
-  "note": "Graded from PubChem GHS (CID 656671, sodium pyrosulfite): aggregate consensus H302 98.9%, H318 99.5%; minority notifier blocks carry H334 respiratory sensitizer, H317, H335, H372 (organ damage through prolonged exposure) and H402/H412. The H334/H372 block is a minority of notifiers but is the coherent severe classification of the substance and the reason the powder carries a Danger signal; graded worst-credible rather than consensus-only, flagged for Linnea verification. Releases sulfur dioxide on contact with acid. Disclosed by the Iron OUT Powder manufacturer SDS.",
+  "note": "Graded from PubChem GHS (CID 656671, sodium pyrosulfite): aggregate consensus H302 98.9%, H318 99.5%; minority notifier blocks carry H334 respiratory sensitizer, H317, H335, H372 (organ damage through prolonged exposure) and H402/H412. The Danger signal is driven by H318 (Eye Dam. 1 at 99.5% consensus) on its own; the minority H334/H372 block is not the reason for the signal word. Those minority severe codes are graded worst-credible rather than consensus-only, consistent with the Butyloxyethanol organ-D precedent; the low-severity minority codes (H317, H335) are recorded but not graded. The EU harmonised classification for sodium metabisulfite is H302 + H318 only, and the 2021 RAC opinion on the SO2 releaser concluded that respiratory sensitisation does not apply to sodium metabisulfite (the asthma-like effects are SO2-mediated and classified as STOT SE, not H334). The respiratory D here is therefore a conservative worst-credible notifier-block call and must not be read as the EU harmonised position. Releases sulfur dioxide on contact with acid. Disclosed by the Iron OUT Powder manufacturer SDS.",
   "s": "Eye-damaging (H318 99.5%); respiratory sensitizer (H334) and organ toxin (H372) in minority notifiers; releases SO2 with acid."
  },
  "Sodium Sulfite": {
@@ -5723,5 +5723,53 @@
   ],
   "note": "Graded from PubChem GHS (CID 24437): aggregate ECHA C&L consensus H302 18.3%, H314 51.8%, H315 19.3%, H319 21%; a second notifier block carries H302/H318. H314 majority consensus -> derm D (corrosive at 51.8% is short of the near-unanimous H314 that earns derm F per the 2026-09-26 correction convention). Disclosed by the Iron OUT Powder manufacturer SDS.",
   "s": "Corrosive in majority notifier consensus (H314 51.8%); skin/eye irritant."
+ },
+ "Caprylyl Glycol": {
+  "s": "1,2-Octanediol; a glycol used as a skin-conditioning agent and preservative booster.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Walgreens Sanitizing Wipes OTC label (DailyMed) as an inactive ingredient. The printed Drug Facts panel words it as '1,2-octanediol'; the SPL ingredient entry resolves it to Caprylyl Glycol. Not yet graded."
+ },
+ "Isosteareth-10": {
+  "s": "Ethoxylated isostearyl alcohol surfactant (average 10 EO units); a nonionic emulsifier and wetting agent.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Walgreens Sanitizing Wipes OTC label (DailyMed) as an inactive ingredient. The printed Drug Facts panel words this class as 'ethoxylated fatty alcohol'; the SPL ingredient entry resolves it to Isosteareth-10. Not yet graded."
+ },
+ "Laureth-4": {
+  "s": "Ethoxylated lauryl alcohol surfactant (average 4 EO units); a nonionic detergent and wetting agent used in wipes and cleaners.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Walgreens Sanitizing Wipes OTC label (DailyMed, labeler Walgreens, maker FillTech USA, LLC) as an inactive ingredient. The printed Drug Facts panel words this class as 'alkoxylated alcohol'; the SPL ingredient entry resolves it to Laureth-4. Not yet graded."
+ },
+ "Polysorbate 80": {
+  "s": "Polyoxyethylene (20) sorbitan monooleate; a nonionic surfactant and emulsifier.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the CVS Hydrogen Peroxide Wipes OTC label (DailyMed, labeler CVS Pharmacy, maker Kleen Test Products Corporation) as an inactive ingredient. Not yet graded."
+ },
+ "Sorbic Acid": {
+  "s": "A naturally occurring straight-chain unsaturated fatty acid used as a preservative (E200).",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Walgreens Sanitizing Wipes OTC label (DailyMed) as an inactive ingredient. Not yet graded."
+ },
+ "Steareth-21": {
+  "s": "Ethoxylated stearyl alcohol surfactant (average 21 EO units); a nonionic emulsifier used to keep a wipe's lotion stable.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Walgreens Sanitizing Wipes OTC label (DailyMed) as an inactive ingredient. Not yet graded."
  }
 }
