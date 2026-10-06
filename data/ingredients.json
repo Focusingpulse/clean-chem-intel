@@ -5895,5 +5895,101 @@
    "aqua"
   ],
   "note": "Graded from PubChem GHS (CID 11023, title 'Zinc Citrate'): headline ECHA C&L block H319 87.2% -> derm C; H400 89.4% >=40% -> env F (H410 42.7%, H411 85.9% subsumed). Zinc is a documented aquatic toxicant. Named on the Lemi Shine Dish Detergent Pods ingredient table."
+ },
+ "2-Anthracenesulfonic acid, 1-amino-9,10-dihydro-9,10-dioxo-4-(phenylamino)-, monosodium salt": {
+  "s": "Acid Blue 25 (CI 62055), CAS 6408-78-2; an anthraquinone dye.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the up&up Multi-Surface Cleaner (Pine) SB-258 disclosure as a colorant. Not yet graded."
+ },
+ "2-Propenoic acid, polymer with 2-methyl-2-[(1-oxo-2-propenyl)amino]-1-propanesulfonic acid monosodium salt, sodium salt": {
+  "s": "An acrylate/AMPS copolymer, CAS 136903-34-9; a dispersing agent.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the up&up Ultimate Dishwasher Detergent Packs SB-258 disclosure as a dispersing agent. Not yet graded."
+ },
+ "Aziridine, homopolymer, ethoxylated": {
+  "s": "Ethoxylated polyethyleneimine (CAS 68130-99-4); a soil-release polymer.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the up&up Stain Remover SB-258 disclosure as a dispersing agent. Not yet graded."
+ },
+ "CI 14700": {
+  "s": "Ponceau SX, CAS 4548-53-2; a synthetic azo dye (CI 14700).",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the up&up Multi-Surface Cleaner (Pine) SB-258 disclosure as a colorant. Not yet graded."
+ },
+ "CI 61585": {
+  "s": "Acid Blue 80, CAS 4474-24-2; an anthraquinone dye (CI 61585).",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the up&up Multi-Surface Cleaner (Lavender) SB-258 disclosure as a colorant. Not yet graded."
+ },
+ "PEG/PPG-10/2 PROPYLHEPTYL ETHER": {
+  "s": "An alkyl-capped PEG/PPG ether, CAS 166736-08-9; a low-foam surfactant.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the up&up Ultimate Dishwasher Detergent Packs SB-258 disclosure as a surfactant. Not yet graded."
+ },
+ "Periodic acid (HIO4), sodium salt": {
+  "s": "Sodium periodate, CAS 7790-28-5; an oxidising agent used here as a bleach stabiliser.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the up&up Regular Bleach with Fabric Protection SB-258 disclosure as a corrosion inhibitor. Not yet graded."
+ },
+ "Quaternary ammonium compounds, C12-14-alkyl[(ethylphenyl)methyl]dimethyl, chlorides": {
+  "s": "A dialkyl ethylbenzyl quaternary ammonium chloride blend, CAS 85409-23-0; a disinfectant active.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the up&up Fresh Scent Disinfectant Spray SB-258 disclosure as an antimicrobial agent. Distinct CAS from the benzyl-C12-18 quat already in the registry (68391-01-5) and from the benzyl-C8-18 quat (63449-41-2). Not yet graded."
+ },
+ "Quaternary ammonium compounds, benzyl-C8-18-alkyldimethyl, chlorides": {
+  "s": "A benzyl quaternary ammonium chloride blend, CAS 63449-41-2; a disinfectant active.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the up&up Multi-Surface (Pine and Lavender) and Bathroom Disinfecting Cleaner SB-258 disclosures as an antimicrobial agent. Distinct CAS from the benzyl-C12-18 quat already in the registry (68391-01-5): the chain range differs, so it is kept as its own key rather than aliased. Not yet graded."
+ },
+ "SODIUM C10-16 ALKETH-2 SULFATE": {
+  "s": "Sodium C10-16 pareth-2 sulfate, CAS 68585-34-2; an anionic surfactant.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the up&up Liquid Dishwashing Soap and Stain Remover SB-258 disclosures. The product page words the same slot as 'sodium laureth sulfate', which is a different CAS (9004-82-4); the filing governs. Not yet graded."
+ },
+ "SODIUM C10-16 ALKYL SULFATE": {
+  "s": "Sodium C10-16 alkyl sulfate, CAS 68585-47-7; an anionic surfactant.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the up&up Liquid Dishwashing Soap SB-258 disclosure. The product page words the same slot as 'sodium lauryl sulfate', a different CAS (151-21-3). Not yet graded."
+ },
+ "SOYETHYL MORPHOLINIUM ETHOSULFATE": {
+  "s": "A quaternary ammonium morpholinium ethosulfate, CAS 61791-34-2; a surfactant.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the up&up Fresh Scent Disinfectant Spray SB-258 disclosure as a surfactant. Not yet graded."
  }
 }
