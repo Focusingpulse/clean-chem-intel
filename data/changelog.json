@@ -1,6 +1,10 @@
 [
   {
     "date": "2026-10-06",
+    "text": "Sifter lane: verify run — spot-checked 10 graded ingredients against PubChem GHS consensus (DTPMPA, hexyl salicylate, silica, disodium cocoyl glutamate, Nympheal, sodium laureth sulfate, eucalyptus oil, sodium carbonate, butane, protease enzyme); all 10 consistent with repo grades, zero corrections. Enriched 5 fully-covered ungraded products into grade_note: Citric Acid bulk C, Kirkland Ultra Shine Dish Soap C, Clorox ToiletWand F (glycolic acid H314), Dawn Ultra D (methylisothiazolinone H317), Swiffer WetJet F (didecyldimonium chloride H314). Validator green, counts and index rebuilt."
+  },
+  {
+    "date": "2026-10-06",
     "text": "Station-4 close: recorded the withheld-ingredient state in the Target up&up block (Linnea R1/R2 2026-10-06). The Fresh Scent Disinfecting Wipes filing declares seven withheld ingredients the first pass said were absent; six of the block's documents declare withheld rows (23 in all), and the Free & Clear note now records its one. The Pine substitute note's \"no declared withheld ingredient\" clause was removed because R2 made it false. No ingredient, grade, evidence level or ownership value changed."
   },
   {

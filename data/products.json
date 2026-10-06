@@ -611,7 +611,7 @@
   ],
   "heritage": false,
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-10-06",
   "owner": "Clorox",
   "owner_ev": "reported",
   "owner_src": "https://www.thecloroxcompany.com/brands/",
@@ -629,7 +629,8 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Disposable toilet-cleaning system; toilet care is a small share of the cleaners category.",
   "tier_src": null,
-  "tier_basis": "searched for a published definition of this tier and found none that names the product. The tier was assigned by exclusion rather than by a source, so it is downgraded to untested rather than left marked reported with nothing to point at. A guessed tier is worse than no tier."
+  "tier_basis": "searched for a published definition of this tier and found none that names the product. The tier was assigned by exclusion rather than by a source, so it is downgraded to untested rather than left marked reported with nothing to point at. A guessed tier is worse than no tier.",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (glycolic acid H314 corrosive; High evidence)."
  },
  {
   "name": "Soft Scrub",
@@ -932,7 +933,7 @@
   "heritage_year": 1999,
   "heritage_note": "P&G's mop reinvention — the modern 'clean floor' default already being handed down.",
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-10-06",
   "owner": "Procter & Gamble",
   "owner_ev": "verified",
   "owner_src": "https://us.pg.com/brands/",
@@ -948,7 +949,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Swiffer WetJet appears in Amazon Best Sellers in Household Cleaning Tools (Sep 2026)."
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Swiffer WetJet appears in Amazon Best Sellers in Household Cleaning Tools (Sep 2026).",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (didecyldimonium chloride H314 corrosive; Medium evidence)."
  },
  {
   "name": "Green Works",
@@ -1137,7 +1139,7 @@
   "heritage_year": 1973,
   "heritage_note": "Dawn (1973) — the dish soap that doubles as wildlife-cleanup icon; generations trust it on their greasiest pots.",
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-10-06",
   "owner": "Procter & Gamble",
   "owner_ev": "verified",
   "owner_src": "https://us.pg.com/brands/",
@@ -1153,7 +1155,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "Dawn moved 430,000 units across six ASINs in July 2026, 68.3% of Amazon top-10 dish-soap volume. Channel figure, not national share."
+  "exposure_basis": "Dawn moved 430,000 units across six ASINs in July 2026, 68.3% of Amazon top-10 dish-soap volume. Channel figure, not national share.",
+  "grade_note": "Sifter grade D — worst credible dimension: derm D (methylisothiazolinone H317 sensitizer; High evidence)."
  },
  {
   "name": "Palmolive",
@@ -5759,7 +5762,7 @@
   "source": "PubChem compound record (CID 311) and commodity supplier specification",
   "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/Citric-Acid",
   "added": "2026-09-23",
-  "updated": "2026-09-23",
+  "updated": "2026-10-06",
   "note": "The ingredient tier in its purest form: a food-grade acid sold by the pound for descaling kettles, humidifiers and coffee makers. Graded as the pure chemical, per docs/decisions.md rule 4; the household dilution is far below the concentration at which the eye-irritant classification attaches.",
   "owner": "commodity",
   "owner_ev": "reported",
@@ -5780,7 +5783,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated."
+  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated.",
+  "grade_note": "Sifter grade C — worst credible dimension: derm C (citric acid H319 eye irritant; High evidence)."
  },
  {
   "name": "Hydrogen Peroxide 3% (drugstore)",
@@ -6092,7 +6096,7 @@
   "source": "Costco distributor SDS for the citrus-scent premium line",
   "source_url": "https://www.msdsdigital.com/system/files/Kirkland-Signature-Ultra-Shine-Premium-Dish-Soap-Citrus-Scent.pdf",
   "added": "2026-09-24",
-  "updated": "2026-09-24",
+  "updated": "2026-10-06",
   "note": "One disclosed substance. The SDS records sodium lauryl sulfate at 5 to 10 percent and states no substance is hazardous at its given concentration. Sodium lauryl sulfate carries a moderate dermal grade, not a severe one, so no substitute is owed; the note is here because the near-identical sibling SKU is graded F.",
   "owner": "Costco Wholesale Corporation",
   "owner_ev": "reported",
@@ -6113,7 +6117,8 @@
   "conc_ev": "untested",
   "grade_as_sold": null,
   "grade_as_sold_src": null,
-  "strength_disclosure": "not_reviewed"
+  "strength_disclosure": "not_reviewed",
+  "grade_note": "Sifter grade C — worst credible dimension: derm C (sodium lauryl sulfate H315 skin irritant; High evidence)."
  },
  {
   "name": "up&up Lemon All-Purpose Disinfecting Cleaner without Bleach",
