@@ -5991,5 +5991,29 @@
   "gr": {},
   "impacts": [],
   "note": "Named on the up&up Fresh Scent Disinfectant Spray SB-258 disclosure as a surfactant. Not yet graded."
+ },
+ "Caustic Replacement": {
+  "s": "The manufacturer's trade name for the active in Green Gobbler's drain opener; a non-caustic, non-hypochlorite clog dissolver.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "This is a label term, not a substance name: Green Gobbler's own ingredient sheet and SDS both print 'Caustic Replacement' and withhold the chemical name, CAS and exact concentration as a trade secret (5-10% per the SDS). No substance can be graded, so the key is recorded Not Classified with this note rather than assigned a grade. The brand's own claim is that it contains no sodium hydroxide and no chlorine/chloride or halide chemicals; that claim is the manufacturer's, not independently verified here."
+ },
+ "Kaolin": {
+  "s": "Hydrated aluminium silicate clay (china clay); a mineral builder and opacifier.",
+  "ev": "Medium",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Earth Breeze Laundry Detergent Sheets ingredient table as 'kaolin' (manufacturer CAS column 92704-41-1; the CAS registry entry for kaolin is 1332-58-7). PubChem PUG REST returns 404 for the name — no discrete CID resolves for this UVCB mineral — so no GHS classification is available. Recorded Not Classified rather than guessed, the same way the DB already carries Bentonite and Smectite Clay."
+ },
+ "Silicone Defoamer": {
+  "s": "A silicone antifoam, typically a polydimethylsiloxane emulsion; added to suppress foam during machine cleaning.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the BISSELL CPIC ingredient list as 'Silicone Defoamer' with no CAS. PubChem PUG REST returns 404 for the name and for 'Polydimethylsiloxane' — no discrete CID resolves — so no GHS classification is available. Recorded Not Classified rather than guessed. Distinct from the DB key 'Dimethicone' (a named polymer) and from 'Silicone Emulsion' (a formulated emulsion); this is the label's class term."
  }
 }

@@ -392,8 +392,10 @@
    "brands": [
     "Weiman",
     "Goo Gone",
-    "Biokleen"
-   ]
+    "Biokleen",
+    "Green Gobbler"
+   ],
+   "brand_note": "Green Gobbler is a PurposeBuilt Brands brand: the Green Gobbler SDS names 'PurposeBuilt Brands, 755 Tri-State Parkway, Gurnee, IL 60031' as the manufacturer, and the brand's own site prints the same Gurnee address. Added to the brand list on 2026-10-06."
   },
   "RPM International Inc.": {
    "type": "public (RPM)",
@@ -840,6 +842,33 @@
    "src": "https://lemishine.com/pages/our-story",
    "brands": [
     "Lemi Shine"
+   ]
+  },
+  "Bissell": {
+   "type": "private, family-owned",
+   "detail": "BISSELL Homecare, Inc., founded 1876 by Melville R. Bissell in Grand Rapids, Michigan, and still owned by the Bissell family; Anna Bissell led the company from 1889 and is described by the company as the first female CEO in America. Headquartered in Walker, Michigan. The company states it is the number-one floor-care manufacturer in North America by sales. It publishes CPIC-format ingredient lists for its machine formulas on its own supplier site.",
+   "ev": "verified",
+   "src": "https://www.bissell.com/en-us/about-us/our-history/",
+   "brands": [
+    "BISSELL"
+   ]
+  },
+  "Highline Warren": {
+   "type": "private",
+   "detail": "Highline Warren LLC, a private supplier of automotive and household care products. It acquired the Sprayway brand from PLZ Corp in January 2026; before that the brand sat inside PLZ Corp, which had acquired Sprayway Inc. in 2005. The acquirer's own announcement states Sprayway is the number-two US glass brand by unit share with the category's number-one sales velocity.",
+   "ev": "reported",
+   "src": "https://www.highlinewarren.com/blog/976-Highline-Warren-Acquires-Sprayway-a-Leader-in-Glass-Surface-Care",
+   "brands": [
+    "Sprayway"
+   ]
+  },
+  "Earth Breeze": {
+   "type": "private, venture-backed",
+   "detail": "Earth Breeze (Earth Breeze Inc), founded 2019, headquartered in Medford, Oregon. The brand's own About page states it is the number-one laundry detergent sheet with over 3 million customers and that its core Fresh Scent and Fragrance Free sheets are made at its Harrodsburg, Kentucky plant. It is independently operated and not owned by a consumer-goods conglomerate; third-party profiles list a single identified minority investor, the climate-focused fund Something Good Ventures, with day-to-day control held by the company's own leadership.",
+   "ev": "reported",
+   "src": "https://earthbreeze.com/pages/about-us",
+   "brands": [
+    "Earth Breeze"
    ]
   }
  },

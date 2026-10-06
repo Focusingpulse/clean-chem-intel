@@ -1,6 +1,10 @@
 [
   {
     "date": "2026-10-06",
+    "text": "Gather lane: 4 products added from manufacturer disclosures read 2026-10-06 -- BISSELL Advanced Clean + Protect (full CPIC list with CAS, supplier.bissell.com), Earth Breeze Laundry Detergent Sheets Fragrance Free (full per-SKU list, help.earthbreeze.com), Green Gobbler Drain Clog Remover (four lines, active withheld as a trade secret, greengobbler.com) and Sprayway Glass Cleaner (SDS section 3, hazardous components only). Four brand families new to the corpus: BISSELL, Earth Breeze, Green Gobbler and Sprayway. Three new ingredient keys, all recorded Not Classified with a sourcing note rather than graded -- Silicone Defoamer (no PubChem CID), Kaolin (UVCB mineral, no discrete CID) and Caustic Replacement (a trade-secret label term, not a substance). Three owner-registry entries added: BISSELL Homecare (private, family-owned since 1876), Highline Warren (acquired the Sprayway brand from PLZ Corp in January 2026) and Earth Breeze (private, founded 2019, Medford OR); Green Gobbler added to the existing PurposeBuilt Brands brand list. Fills the thinnest category (Floor & Carpet, 11 products) and adds the first laundry SHEET and the first non-caustic drain opener to the corpus."
+  },
+  {
+    "date": "2026-10-06",
     "text": "Spectrum harvest: 13 products added to the grocery house-brand block from Target's California SB-258 chemical disclosures (up&up dish soap, toilet gel, two multi-surface concentrates, bathroom disinfectant, glass cleaner, bleach, aerosol disinfectant, disinfecting wipes, free-and-clear multi-purpose, mould remover, stain remover, dishwasher packs). Also repaired the one existing up&up record, whose three-item list came from the product page while its own filing discloses eight. Two served disclosure shapes were found and both handled: some tables label their columns in the reverse of their own header."
   },
   {
