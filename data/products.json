@@ -12461,7 +12461,7 @@
    {
     "name": "up&up Multi-Purpose Cleaner, Free & Clear",
     "tier": "grocery",
-    "note": "Same store, same price band, and the only up&up multi-surface formula in this set with no quaternary ammonium active and no declared withheld ingredient."
+    "note": "Same store, same price band, and the only up&up multi-surface formula in this set with no quaternary ammonium active."
    }
   ],
   "no_substitute_known": null,
@@ -12731,7 +12731,7 @@
   ],
   "source": "Target California SB-258 chemical disclosure for this SKU, read 2026-10-06. Product page: https://www.target.com/p/fresh-scent-disinfecting-wipes-35ct-up-38-up-8482/-/A-13972114",
   "source_url": "https://digitalcontent.target.com/vault/1663891200/CLOUD_2ccd7122-df96-4b6d-a244-5b9fb4a9e6a9.html",
-  "note": "The shortest and the sharpest list in this block: four quaternary ammonium compounds and nothing else declared. No water, no surfactant, no fragrance component is listed as intentionally added, so what the filing describes is the active system on the wipe rather than the whole wet formula. Four different quats in one wipe is the reason this class shows up as a contact irritant and, in the environment, as a persistent aquatic toxicant. Keep them off food-contact surfaces you will not rinse.",
+  "note": "The shortest and the sharpest list in this block: four named quaternary ammonium compounds, plus seven withheld ingredients the filing declares without naming, so the list is complete as filed but not complete as chemistry. No water, no surfactant, no fragrance component is listed as intentionally added, so what the filing describes is the active system on the wipe rather than the whole wet formula. Four different quats in one wipe is the reason this class shows up as a contact irritant and, in the environment, as a persistent aquatic toxicant. Keep them off food-contact surfaces you will not rinse.",
   "owner": "Target Corporation",
   "owner_ev": "reported",
   "owner_src": "https://www.target.com/p/lemon-all-purpose-disinfecting-cleaner-without-bleach-32oz-up-38-up-8482/-/A-90283206",
@@ -12779,7 +12779,7 @@
   ],
   "source": "Target California SB-258 chemical disclosure for this SKU, read 2026-10-06. Product page: https://www.target.com/p/multi-purpose-cleaners-liquid-free-38-clear-32-fl-oz-up-38-up-8482/-/A-94762127",
   "source_url": "https://digitalcontent.target.com/vault/1780012800/CLOUD_18f92a5e-01d2-4afa-a103-1d6619b20d1a.html",
-  "note": "The one formula in this block with no quaternary ammonium active and no declared fragrance: two glucoside surfactants, a citric acid / sodium carbonate buffer, sodium gluconate as a chelator, and benzisothiazolinone as the preservative. It is the mildest list here and the one to reach for when the job is cleaning rather than disinfecting. Benzisothiazolinone is still a contact allergen, so it is not allergen-free, only fragrance-free.",
+  "note": "The one formula in this block with no quaternary ammonium active and no declared fragrance: two glucoside surfactants, a citric acid / sodium carbonate buffer, sodium gluconate as a chelator, and benzisothiazolinone as the preservative. It is the mildest list here and the one to reach for when the job is cleaning rather than disinfecting. Benzisothiazolinone is still a contact allergen, so it is not allergen-free, only fragrance-free. The filing declares one withheld ingredient (purpose: solvent), so the list is complete as filed but not complete as chemistry.",
   "owner": "Target Corporation",
   "owner_ev": "reported",
   "owner_src": "https://www.target.com/p/lemon-all-purpose-disinfecting-cleaner-without-bleach-32oz-up-38-up-8482/-/A-90283206",
