@@ -6015,5 +6015,333 @@
   "gr": {},
   "impacts": [],
   "note": "Named on the BISSELL CPIC ingredient list as 'Silicone Defoamer' with no CAS. PubChem PUG REST returns 404 for the name and for 'Polydimethylsiloxane' — no discrete CID resolves — so no GHS classification is available. Recorded Not Classified rather than guessed. Distinct from the DB key 'Dimethicone' (a named polymer) and from 'Silicone Emulsion' (a formulated emulsion); this is the label's class term."
+ },
+ "Wheat Protein Silanetriol": {
+  "s": "Wheat Protein Silanetriol. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Polyvinyl Pyridine-N-Oxide": {
+  "s": "Polyvinyl Pyridine-N-Oxide. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Alpha-Hexylcinnamaldehyde": {
+  "s": "Alpha-Hexylcinnamaldehyde. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "C12-14 Alcohols Ethoxylate": {
+  "s": "C12-14 Alcohols Ethoxylate. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Sodium Diethylenetriamine Pentamethylene Phosphonate": {
+  "s": "Sodium Diethylenetriamine Pentamethylene Phosphonate. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Copolymer of 1-vinylimidazole and 1-vinyl-2-pyrrolidone": {
+  "s": "Copolymer of 1-vinylimidazole and 1-vinyl-2-pyrrolidone. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Hydrolyzed Keratin": {
+  "s": "Hydrolyzed Keratin. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "C.I. Acid Yellow 3": {
+  "s": "C.I. Acid Yellow 3. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Acid Red 52": {
+  "s": "Acid Red 52. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Acetyl Cedrene": {
+  "s": "Acetyl Cedrene. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Alpha-Cyclohexylidene Benzeneacetonitrile": {
+  "s": "Alpha-Cyclohexylidene Benzeneacetonitrile. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Coumarin": {
+  "s": "Coumarin. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Trichloromethyl phenyl carbinyl acetate": {
+  "s": "Trichloromethyl phenyl carbinyl acetate. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "3-Methyl-5-Phenylpentanol": {
+  "s": "3-Methyl-5-Phenylpentanol. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Acetoxydihydrodicyclopentadiene": {
+  "s": "Acetoxydihydrodicyclopentadiene. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Dipalmitoylyethyl Hydroxyethylmonium Methosulfate": {
+  "s": "Dipalmitoylyethyl Hydroxyethylmonium Methosulfate. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "4-Methyl-3-Decen-5-Ol": {
+  "s": "4-Methyl-3-Decen-5-Ol. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Acrylates/methacryloyl propyltrimethoxysilane crosspolymer": {
+  "s": "Acrylates/methacryloyl propyltrimethoxysilane crosspolymer. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "gamma-Decalactone": {
+  "s": "gamma-Decalactone. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Undeceth-5": {
+  "s": "Undeceth-5. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Modified Acrylic Polymer": {
+  "s": "Modified Acrylic Polymer. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "C13-15 Alcohols Ethoxylated": {
+  "s": "C13-15 Alcohols Ethoxylated. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Oxidized Polyethylene": {
+  "s": "Oxidized Polyethylene. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Maleic Modified Rosin Resin": {
+  "s": "Maleic Modified Rosin Resin. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "PEG-11 Methyl Ether Dimethicone": {
+  "s": "PEG-11 Methyl Ether Dimethicone. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Isolaureth-3": {
+  "s": "Isolaureth-3. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "3,7-Dimethyl-2,6-Nonadienenitrile": {
+  "s": "3,7-Dimethyl-2,6-Nonadienenitrile. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Diphenyl Ether": {
+  "s": "Diphenyl Ether. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Dipropylene Glycol Propyl Ether": {
+  "s": "Dipropylene Glycol Propyl Ether. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Benzyl Alcohol": {
+  "s": "Benzyl Alcohol. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Paraffin Wax": {
+  "s": "Paraffin Wax. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Orange, sour, extract": {
+  "s": "Orange, sour, extract. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Hexyl Ethoxylate": {
+  "s": "Hexyl Ethoxylate. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Sodium Acrylates Copolymer": {
+  "s": "Sodium Acrylates Copolymer. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Delta-3-Carene": {
+  "s": "Delta-3-Carene. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Tetrahydrolinalool": {
+  "s": "Tetrahydrolinalool. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Sorbitan Sesquioleate": {
+  "s": "Sorbitan Sesquioleate. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Octamethylcyclotetrasiloxane": {
+  "s": "Octamethylcyclotetrasiloxane. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Cyclopentasiloxane": {
+  "s": "Cyclopentasiloxane. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Tall Oil": {
+  "s": "Tall Oil. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Aluminum Magnesium Silicate": {
+  "s": "Aluminum Magnesium Silicate. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
  }
 }
