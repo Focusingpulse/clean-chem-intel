@@ -870,6 +870,22 @@
    "brands": [
     "Earth Breeze"
    ]
+  },
+  "WD-40 Company": {
+   "type": "public (WDFC)",
+   "detail": "WD-40 Company, founded 1953, headquartered in San Diego, California; trades on Nasdaq as WDFC. The company's own 10-K describes the household-cleaning family it assembled by acquisition: 3-IN-ONE Oil (December 1995, from affiliates of Reckitt & Colman), Lava heavy-duty hand cleaner (April 1999, from Block Drug), Solvol (October 2000, from Unilever Australia), the Global Household Brands -- 2000 Flushes and X-14 automatic toilet bowl cleaners, X-14 hard surface cleaners and Carpet Fresh rug and room deodorizers (April 2001) -- the Spot Shot brand (May 2002, from Heartland Corporation) and the UK 1001 line of carpet and household cleaners (April 2004, from PZ Cussons). The filing describes Spot Shot as 'an aerosol stain remover and a leading brand in the carpet stain remover category'.",
+   "ev": "verified",
+   "src": "https://www.sec.gov/Archives/edgar/data/105132/000119312504179631/d10k.htm",
+   "brands": [
+    "Spot Shot",
+    "2000 Flushes",
+    "X-14",
+    "Carpet Fresh",
+    "WD-40",
+    "3-IN-ONE",
+    "Lava",
+    "Solvol"
+   ]
   }
  },
  "independents": {

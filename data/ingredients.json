@@ -6343,5 +6343,69 @@
   "gr": {},
   "impacts": [],
   "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Cocamidopropyl Hydroxysultaine": {
+  "s": "An amphoteric surfactant of the hydroxysultaine class (CAS 68139-30-0); a mild foam booster and viscosity builder.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Mrs. Meyer's own ingredient list for the Lavender Liquid Hand Soap, first in the surfactant pair. PubChem PUG REST returns 404 for the name and for the CAS number 68139-30-0 — no discrete CID resolves — so no GHS classification is available. Recorded Not Classified rather than guessed. Distinct from the DB's 'Cocamidopropyl Betaine' (a different amphoteric) and from 'Cocamidopropylamine Oxide'."
+ },
+ "Disodium 2-Sulfolaurate": {
+  "s": "The disodium salt of 2-sulfolauric acid (CAS 68015-67-8); an anionic surfactant of the alpha-sulfo methyl ester class.",
+  "ev": "Medium",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 23139701, returned title 'Disodium 2-sulfolaurate'). The record carries H302, H315, H319 and H412 but every one sits at 11.1% notifier consensus, below the 40% house bar, so no dimension grade is minted and the key is recorded Not Classified. Named on Mrs. Meyer's own ingredient list for the Lavender Liquid Hand Soap."
+ },
+ "Lavandula Angustifolia (Lavender) Oil": {
+  "s": "Lavender essential oil (Lavandula angustifolia); the scent component named on the label.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Mrs. Meyer's own ingredient list for the Lavender Liquid Hand Soap. This is a UVCB botanical oil: PubChem PUG REST returns 404 for the name and for the CAS number 8000-28-0, so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed. The DB carries essential oils under class keys ('Essential Oils') and under named single-constituent keys (Linalool, Limonene); this is the label's own oil name and is kept separate for the same reason the DB keeps 'Basil Oil'."
+ },
+ "Olea Europaea (Olive) Fruit Oil": {
+  "s": "Olive fruit oil (CAS 8001-25-0); the emollient named on the label.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Mrs. Meyer's own ingredient list for the Lavender Liquid Hand Soap. This is a UVCB triglyceride oil: PubChem PUG REST returns 404 for the name and for the CAS number 8001-25-0, so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed, the same way the DB already carries Brassica Campestris Seed Oil."
+ },
+ "Polyoxyalkylene Substituted Chromophore (Cyan)": {
+  "s": "A polymeric colourant (a polyoxyalkylene-substituted chromophore) used to tint the scent-booster beads; the label's own class term.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on P&G's own SmartLabel for Downy Unstopables In-Wash Scent Booster Beads, Fresh. This is a label class term for a proprietary polymeric dye, not a discrete substance: PubChem PUG REST returns 404 for the name, so no CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed. Distinct from the DB's discrete dye keys (Acid Blue 9, Acid Blue 182, Acid Red 52 and so on); the DB already carries the sibling class term 'Polyoxyalkylene Substituted Chromophore' from the Tide PODS disclosure."
+ },
+ "Polyquaternium-2": {
+  "s": "A cationic polymeric conditioner (CAS 68555-36-2); a film-forming polymer used for sheeting and anti-spotting.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Reckitt's own SmartLabel for Finish Jet-Dry Rinse Aid with CAS 68555-36-2. PubChem PUG REST returns 404 for the name — no discrete CID resolves for this polymer — so no GHS classification is available. Recorded Not Classified rather than guessed, the same way the DB already carries other polymer class keys."
+ },
+ "Sodium Methyl 2-Sulfolaurate": {
+  "s": "The sodium salt of the methyl ester of 2-sulfolauric acid (CAS 149458-07-1); an anionic surfactant of the alpha-sulfo methyl ester class.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Mrs. Meyer's own ingredient list for the Lavender Liquid Hand Soap, second in the surfactant pair. PubChem PUG REST resolves a CID for the name but its PUG View record carries no GHS section (the fetch returns PUGVIEW.NotFound), and the CAS number 149458-07-1 returns 404 — so no classification is available from the approved source. Recorded Not Classified rather than guessed."
+ },
+ "Trideceth-3": {
+  "s": "A tridecyl alcohol ethoxylate with an average of 3 ethylene oxide units (CAS 78330-21-9); a nonionic surfactant/solvent.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Reckitt's own SmartLabel for Finish Jet-Dry Rinse Aid with CAS 78330-21-9. PubChem PUG REST resolves the name to CID 78116 (title 'Trideceth-3') but that record carries no Safety and Hazards / GHS section, so no classification is available from the approved source. Recorded Not Classified rather than guessed. Distinct from the DB's 'Isotridecanol Ethoxylated' (a branched C13 alcohol ethoxylate) and from 'Alcohols, C13, branched, ethoxylated'."
  }
 }
