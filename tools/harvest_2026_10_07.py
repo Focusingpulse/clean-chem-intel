@@ -489,7 +489,7 @@ def main():
     dump(REPO / "data/products.json", products, 1, False)
     dump(REPO / "data/ingredients.json", ingredients, 1, False)
 
-    if not args.no_changelog:
+    if not args.no_changelog and added:
         cl = json.loads((REPO / "data/changelog.json").read_text(encoding="utf-8"))
         cl.insert(0, {
             "date": TODAY,
