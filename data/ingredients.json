@@ -6407,5 +6407,230 @@
   "gr": {},
   "impacts": [],
   "note": "Named on Reckitt's own SmartLabel for Finish Jet-Dry Rinse Aid with CAS 78330-21-9. PubChem PUG REST resolves the name to CID 78116 (title 'Trideceth-3') but that record carries no Safety and Hazards / GHS section, so no classification is available from the approved source. Recorded Not Classified rather than guessed. Distinct from the DB's 'Isotridecanol Ethoxylated' (a branched C13 alcohol ethoxylate) and from 'Alcohols, C13, branched, ethoxylated'."
+ },
+ "Acrylic Acid/Sulfonate Copolymer/Terpolymer": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Acrylic Acid/Sulfonate Copolymer/Terpolymer. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Maleic/Olefin Copolymer": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Maleic/Olefin Copolymer. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "2-Propenoic Acid, Telomer with Sodium Hydrogen Sulfite, Sodium Salt": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "2-Propenoic Acid, Telomer with Sodium Hydrogen Sulfite, Sodium Salt. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Alcohols, C10-12, Ethoxylated, Propoxylated": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Alcohols, C10-12, Ethoxylated, Propoxylated. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Phosphonic Acid, (1-Hydroxyethylidene)bis-, Tetrasodium Salt": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Phosphonic Acid, (1-Hydroxyethylidene)bis-, Tetrasodium Salt. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Myrcene": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Myrcene. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Titanium Dioxide": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Titanium Dioxide. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Polyoxyethylene Trimethyldecyl Alcohol": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Polyoxyethylene Trimethyldecyl Alcohol. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Sucrose": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Sucrose. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Starch": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Starch. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Benzyl Benzoate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Benzyl Benzoate. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Sodium Formate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Sodium Formate. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Ethylene Glycol Monobutyl Ether Acetate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Ethylene Glycol Monobutyl Ether Acetate. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "1-Bromo-3-chloro-5,5-dimethylhydantoin": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "1-Bromo-3-chloro-5,5-dimethylhydantoin. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "1,3-Dichloro-5-ethyl-5-methylhydantoin": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "1,3-Dichloro-5-ethyl-5-methylhydantoin. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Modified Polycarboxylate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Modified Polycarboxylate. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "1-Butanone, 3-(dodecylthio)-1-(2,6,6-trimethyl-3-cyclohexen-1-yl)-": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "1-Butanone, 3-(dodecylthio)-1-(2,6,6-trimethyl-3-cyclohexen-1-yl)-. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Anisaldehyde": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Anisaldehyde. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Methyl Decenol": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Methyl Decenol. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Ethanaminium, 2-hydroxy-N-(2-hydroxyethyl)-N,N-dimethyl-, esters with C16-18 and C18-unsatd. fatty acids, chlorides": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Ethanaminium, 2-hydroxy-N-(2-hydroxyethyl)-N,N-dimethyl-, esters with C16-18 and C18-unsatd. fatty acids, chlorides. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Melamine Resin": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Melamine Resin. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Isobutyl Methyl Tetrahydropyranol": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Isobutyl Methyl Tetrahydropyranol. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Hydroxyisohexyl 3-Cyclohexene Carboxaldehyde": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Hydroxyisohexyl 3-Cyclohexene Carboxaldehyde. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Nerol": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Nerol. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
+ },
+ "Prenyl Acetate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Prenyl Acetate. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-08"
  }
 }
