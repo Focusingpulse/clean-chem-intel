@@ -886,6 +886,24 @@
     "Lava",
     "Solvol"
    ]
+  },
+  "B&G Foods, Inc.": {
+   "type": "public (BGS)",
+   "detail": "B&G Foods, Inc., headquartered in Parsippany, New Jersey; trades on the New York Stock Exchange as BGS. Primarily a packaged-foods company that has acquired and integrated more than 50 brands since 1996, it also carries one household brand. It acquired Static Guard from Unilever as part of the Culver Specialty Brands purchase, completed 1 December 2011 for $325 million in cash (the package also included Mrs. Dash, Molly McButter, Sugar Twin, Baker's Joy and Kleen Guard). The company's own 10-K describes the brand as 'the number one brand name in static elimination sprays' and says it 'created the anti-static spray category when it was launched in 1978'. B&G Foods sells Static Guard through the same food-channel distribution system it uses for its food brands. Acquisition facts from B&G Foods' own acquisition history and its 10-K; the brand page and the SDS both name B&G Foods, Inc. as supplier.",
+   "ev": "verified",
+   "src": "https://bgfoods.com/about/history/acquisition-history/",
+   "brands": [
+    "Static Guard"
+   ]
+  },
+  "Golden Ventures, Inc.": {
+   "type": "private",
+   "detail": "Golden Ventures, Inc., a privately held homecare-products company headquartered at 7687 Winton Drive, Indianapolis, Indiana. It owns the Cerama Bryte brand -- the CERAMA BRYTE word mark was filed by Golden Ventures, Inc. in 2016 -- and sells cooktop, stainless-steel and appliance cleaners under it. The company's own product page states that Cerama Bryte Cooktop Cleaner is recommended by GE Appliances and has been tested and approved for CERAN by SCHOTT, the manufacturer of the glass used on most smooth-top ranges.",
+   "ev": "verified",
+   "src": "https://ceramabryte.com/product/cerama-bryte-cooktop-cleaner/",
+   "brands": [
+    "Cerama Bryte"
+   ]
   }
  },
  "independents": {

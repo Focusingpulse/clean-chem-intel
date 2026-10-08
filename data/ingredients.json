@@ -6632,5 +6632,63 @@
   "note": "Minted 2026-10-08 from a retailer California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
   "s": "Prenyl Acetate. Listed in the manufacturer disclosure; not yet graded against GHS.",
   "added": "2026-10-08"
+ },
+ "Ammonium Acetate": {
+  "s": "No GHS hazard criteria met (majority not-classified per ECHA C&L via PubChem)",
+  "ev": "Medium",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS classifications (CID 517165, returned title 'Ammonium Acetate'; the name was confirmed against CAS 631-61-8 before the record was accepted). The record reports not meeting GHS hazard criteria by 2441 of 2536 notifying companies; no H-code reaches the 40% house bar, so the key is recorded Not Classified. Named on B&G Foods' own ingredient list for Static Guard Original."
+ },
+ "Butyl Acrylate Methacrylic Acid Copolymer": {
+  "s": "An acrylic copolymer (a film-forming softening agent); no discrete PubChem CID.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on P&G's own SmartLabel for Downy WrinkleGuard Wrinkle Releaser Fabric Spray. PubChem PUG REST returns 404 for the name -- no discrete CID resolves for this polymer -- so no GHS classification is available. Recorded Not Classified rather than guessed, the same way the DB already carries other polymer class keys (Acrylic Copolymer, Styrene/Acrylates Copolymer and so on)."
+ },
+ "Hydrofluorocarbon 152A": {
+  "s": "1,1-Difluoroethane (HFC-152a, CAS 75-37-6); a liquefied propellant gas and the majority of the Static Guard aerosol.",
+  "ev": "High",
+  "g": "H220,H280",
+  "gr": {
+   "work": "C"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 6368, returned title '1,1-Difluoroethane' -- the substance HFC-152a, CAS 75-37-6; the name was confirmed against the CAS before the record was accepted). H220 (extremely flammable gas) sits at 95% notifier consensus and H280 (contains gas under pressure) at 77.9%. A single H336 (may cause drowsiness or dizziness) appears without a notifier percentage, so it is not carried into a grade. Recorded with the same shape as the DB's existing Propane and Isobutane records (g 'H220,H280', work C): the hazard is the physical propellant, not a health endpoint. Named on B&G Foods' own ingredient list for Static Guard Original."
+ },
+ "PEG/PPG-18/18 Dimethicone": {
+  "s": "A silicone polyether copolymer (CAS 68937-54-2); the wrinkle-relaxing agent.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on P&G's own SmartLabel for Downy WrinkleGuard Wrinkle Releaser Fabric Spray. PubChem PUG REST returns 400 for the name and 404 for the CAS number 68937-54-2: this is a silicone/polyether block copolymer (a UVCB), so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed. Distinct from the DB's discrete dimethicone and PEG keys."
+ },
+ "Polyethylene-polypropylene glycol": {
+  "s": "A poloxamer (a polyoxyethylene-polyoxypropylene block copolymer, CAS 9003-11-6); a nonionic cleaning agent.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Cerama Bryte's own ingredient table for Cook Top Cleaner with CAS 9003-11-6. PubChem PUG REST returns 404 for both the name and the CAS number: this is the poloxamer polymer family, so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed. Distinct from the DB's 'Poloxamer 124', which is a single numbered grade of the same family."
+ },
+ "Quaternium-18": {
+  "s": "A dialkyl dimethyl quaternary ammonium chloride (CAS 61789-80-8); the anti-static active in the spray.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on B&G Foods' own ingredient list for Static Guard Original as 'Quaternium-18'; the same company's SDS names it more fully as 'Quaternary ammonium compounds, bis(hydrogenated tallow alkyl)dimethyl, chlorides' (CAS 61789-80-8, 3-7%). PubChem PUG REST returns 404 for both the name and the CAS number: this is a UVCB (a mixture of quaternary ammonium chlorides derived from hydrogenated tallow), so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed, the same way the DB carries other UVCB class keys. Distinct from the DB's discrete quaternary ammonium keys (the dialkyl dimethyl ammonium chlorides carried from the disinfectant filings)."
+ },
+ "Thickening Aid": {
+  "s": "A thickener named only as a class term on the manufacturer's own ingredient table; CAS withheld.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Cerama Bryte's own ingredient table for Cook Top Cleaner as 'Thickening Aid' with the CAS withheld. No substance identity is published, so no CID resolves and no GHS classification is available. Recorded Not Classified with the gap stated rather than guessed -- the same treatment the DB gives its other class-term keys (Proprietary Chelating Agent, Proprietary Surfactant, Proprietary Polymer Solution)."
  }
 }
