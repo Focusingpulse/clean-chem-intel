@@ -59,7 +59,14 @@ def voice_normalize(html):
         sep = ". " if after.isupper() else ", "
         return sep + after
     html = re.sub(r"\s*" + EM_DASH + r"\s*([A-Za-z0-9])", repl, html)
-    html = html.replace(EM_DASH, ", ")
+    # FALLBACK, and the rule above cannot cover every case: it requires an
+    # alphanumeric to follow the dash, so a dash before a quote, bracket or any
+    # other character falls through. The old bare replace here then left the
+    # original surrounding spaces untouched and emitted " ,  " (space, comma,
+    # two spaces) straight into the rendered page. Four of those were live on
+    # the site 2026-10-08, two from this path and two baked into the template.
+    # Consume the surrounding whitespace so the separator is always ", ".
+    html = re.sub(r"\s*" + EM_DASH + r"\s*", ", ", html)
     html = html.replace("Get a Free Quote", "Get a Quote")
     html = html.replace("Free Quote", "Get a Quote")
     after = html.count(EM_DASH)

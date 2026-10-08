@@ -350,7 +350,7 @@
         <span class="arrow">▼</span>
       </button>
       <div class="geno-body" id="geno-body">
-        <div class="geno-intro">These are <strong>common human genetic variations</strong>, not defects ,  ~75–90% of people carry at least one. Toggle the ones that apply to you and watch product grades shift. Your personal experience is valid data; if a product bothers you, it bothers you.</div>
+        <div class="geno-intro">These are <strong>common human genetic variations</strong>, not defects, ~75–90% of people carry at least one. Toggle the ones that apply to you and watch product grades shift. Your personal experience is valid data; if a product bothers you, it bothers you.</div>
         <div class="geno-grid">
           <div class="gcard" id="gcard-gstm1" onclick="toggleGene('gstm1')">
             <div class="gcard-top"><b>GSTM1 Deletion</b><span class="gpre">~50%</span></div>
@@ -612,7 +612,7 @@ function openModal(idx){
     </div>`;
   });
   const rcs=p.ings.map(n=>INGS[n]).filter(d=>d&&d.reclassified);
-  const rcHtml=rcs.map(d=>`<div class="rcbox"><div class="rc-t">Once safe, now flagged ,  ${esc(d.s?d.s.split(".")[0]:"")}</div>${d.reclassified.map(r=>`<p>${esc(r)}</p>`).join("")}</div>`).join("");
+  const rcHtml=rcs.map(d=>`<div class="rcbox"><div class="rc-t">Once safe, now flagged, ${esc(d.s?d.s.split(".")[0]:"")}</div>${d.reclassified.map(r=>`<p>${esc(r)}</p>`).join("")}</div>`).join("");
   const noteLine = p.heritage ? `<div class="noteline">🏺 <b>Heirloom:</b> ${esc(p.heritage_note||"")}</div>` : "";
   const cf=p.claim_conflict;
   const cfHtml = cf ? `<div class="cfbox">
