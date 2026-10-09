@@ -65,6 +65,36 @@
   grocery cleaners so far. Treat a private label with no such page as a disclosure gap.
 - **Added**: 2026-09-25, Dolman.
 
+### Retailer-hosted and brand-hosted SB-258 indices (named, working)
+
+Single served pages that carry a per-product SB-258 declaration for a whole brand
+family. Each is the manufacturer's (or the retailer's, for its own house brand)
+own publication of the filing, so they sit at the `verified` level in
+`docs/certainty.md`. Read the served HTML; none needs JavaScript.
+
+| Index | What it covers | Added |
+|---|---|---|
+| `kikcorp.com/ingredients/` | 176 PDF filings across KIK Consumer Products' house brands (Comet, Spic and Span, Top Job, The Works, Greased Lightning, A-1, Arctic White, SMART, Value Star, Pure Bright, Hi-lex, Austin's) | 2026-09-29 |
+| `vestacyinfo.com/brand.php?brandId=<n>` then `product.php?productLineId=<id>` | Essential Home (Advent International, formerly Reckitt's divested brands): Air Wick, Calgon, Glass Plus, Lime-A-Way, Old English, Resolve, Spray 'n Wash, Woolite, Mop & Glo, Brasso, d-CON, Rid-X, Easy-Off, Botanical Origin, Silvo | 2026-10-07 |
+| `summitbrands.com/ingredients/` | 44 product tables across Summit Brands (Glisten, Iron OUT, Lime OUT, Dryel, Zout, White Brite, Drain OUT, Whirl OUT, Filter Mate, Plink, EarthStone, SeptoBac, Woolite Dry Care). Each row is Ingredient Name, CAS, Functionality, SB-258 fragrance-allergen list number. | 2026-10-09 |
+
+Retailer-hosted routes that are machine-readable and have produced records:
+Walmart CDN (`i5.walmartimages.com/dfw/.../*.pdf`, Great Value), Sam's Club CDN
+(`scene7.samsclub.com/is/content/samsclub/<upc>_pdf`, Member's Mark), Target
+product pages (`environmental_segmentation.ingredient_chemical_disclosure_url`
+naming a document on `digitalcontent.target.com`, up&up), CVS house brands on the
+Spanish-locale host (`es.cvs.com/shop/ingredients/<slug>-prodid-<id>`, field
+`vendorIngredientsParagraph`; the prodid alone resolves), and the CVS SB-258 PDFs
+under `cvs.com/bizcontent/ca-cleaning-disclosure/` (the directory 404s by design;
+the per-product PDFs are live and search-indexed).
+
+**Known walls, do not log as broken links**: `walmart.com` product pages,
+`homedepot.com`, `kroger.com` (and Ralphs, King Soopers, Smith's), `lowes.com`,
+`amazon.com` product pages, `ewg.org`, `ndclist.com`. A 403/429/500 or a
+"Robot or human?" body is a bot wall, not a dead citation.
+
+- **Added**: 2026-10-09, Dolman (clean-chem-grow RUN A).
+
 ## Sources we do NOT use
 
 ### EWG Skin Deep Database

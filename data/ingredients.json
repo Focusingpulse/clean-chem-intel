@@ -6735,5 +6735,96 @@
   "note": "Minted 2026-10-09 from a CVS-hosted California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
   "s": "Triazine. Listed in the manufacturer disclosure; not yet graded against GHS.",
   "added": "2026-10-09"
+ },
+ "Sodium Octanesulfonate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-09 clean-chem-grow RUN A from Summit Brands' own California SB-258 ingredient-disclosure index, read 2026-10-09. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it.",
+  "s": "Sodium Octanesulfonate. Named on Summit Brands' own California SB-258 ingredient-disclosure index, read 2026-10-09; not yet graded against GHS.",
+  "added": "2026-10-09"
+ },
+ "Alcohols, C12-18, Ethoxylated": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-09 clean-chem-grow RUN A from Summit Brands' own California SB-258 ingredient-disclosure index, read 2026-10-09. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it.",
+  "s": "Alcohols, C12-18, Ethoxylated. Named on Summit Brands' own California SB-258 ingredient-disclosure index, read 2026-10-09; not yet graded against GHS.",
+  "added": "2026-10-09"
+ },
+ "C12-16 Alcohols Ethoxylated": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-09 clean-chem-grow RUN A from Summit Brands' own California SB-258 ingredient-disclosure index, read 2026-10-09. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it.",
+  "s": "C12-16 Alcohols Ethoxylated. Named on Summit Brands' own California SB-258 ingredient-disclosure index, read 2026-10-09; not yet graded against GHS.",
+  "added": "2026-10-09"
+ },
+ "Lipase Enzyme": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-09 clean-chem-grow RUN A from Summit Brands' own California SB-258 ingredient-disclosure index, read 2026-10-09. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it.",
+  "s": "Lipase Enzyme. Named on Summit Brands' own California SB-258 ingredient-disclosure index, read 2026-10-09; not yet graded against GHS.",
+  "added": "2026-10-09"
+ },
+ "Triethylene Glycol": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-09 clean-chem-grow RUN A from Summit Brands' own California SB-258 ingredient-disclosure index, read 2026-10-09. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it.",
+  "s": "Triethylene Glycol. Named on Summit Brands' own California SB-258 ingredient-disclosure index, read 2026-10-09; not yet graded against GHS.",
+  "added": "2026-10-09"
+ },
+ "Iodopropynyl Butylcarbamate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-09 clean-chem-grow RUN A from Summit Brands' own California SB-258 ingredient-disclosure index, read 2026-10-09. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it.",
+  "s": "Iodopropynyl Butylcarbamate. Named on Summit Brands' own California SB-258 ingredient-disclosure index, read 2026-10-09; not yet graded against GHS.",
+  "added": "2026-10-09"
+ },
+ "Zinc Ricinoleate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-09 clean-chem-grow RUN A from Summit Brands' own California SB-258 ingredient-disclosure index, read 2026-10-09. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it.",
+  "s": "Zinc Ricinoleate. Named on Summit Brands' own California SB-258 ingredient-disclosure index, read 2026-10-09; not yet graded against GHS.",
+  "added": "2026-10-09"
+ },
+ "Beta-Alanine, N-(2-Carboxyethyl)-N-(3-Decyloxypropyl)-, Sodium Salt": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-09 clean-chem-grow RUN A from Summit Brands' own California SB-258 ingredient-disclosure index, read 2026-10-09. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it.",
+  "s": "Beta-Alanine, N-(2-Carboxyethyl)-N-(3-Decyloxypropyl)-, Sodium Salt. Named on Summit Brands' own California SB-258 ingredient-disclosure index, read 2026-10-09; not yet graded against GHS.",
+  "added": "2026-10-09"
+ },
+ "Boric Acid": {
+  "ev": "High",
+  "g": "H360FD,H372,H319,H335",
+  "gr": {
+   "derm": "C",
+   "repro": "F",
+   "organ": "D",
+   "resp": "C",
+   "work": "D"
+  },
+  "impacts": [
+   "repro",
+   "derm",
+   "resp"
+  ],
+  "note": "Graded from PubChem GHS (CID 7628), fetched 2026-10-09. Headline hazard statement H360FD, 'May damage fertility; May damage the unborn child' [Danger, reproductive toxicity]; the ECHA C&L notifications summary on the same record reports H360 at 88.7% and H360FD at 11.2% of 2,123 reports. Codes also reported on that record: H372 (STOT RE), H319, H335, H315, H370 and H402. repro F mirrors the existing borate entries (Sodium Tetraborate, Sodium Metaborate), which carry the same H360FD.",
+  "s": "Boric acid. Boron compound; EU/CLP-classified reproductive toxicant 1B (H360FD) with STOT RE 1 (H372); eye and respiratory irritant.",
+  "added": "2026-10-09"
  }
 }

@@ -1,6 +1,10 @@
 [
   {
     "date": "2026-10-09",
+    "text": "clean-chem-grow RUN A (Dolman 2026-10-09): five products added to the registry from Summit Brands' own California SB-258 ingredient-disclosure index (summitbrands.com/ingredients), a single served page carrying a per-product table for 44 household products: Glisten Dishwasher Cleaner, Glisten Washing Machine Cleaner, Plink Washer & Dishwasher Freshener & Cleaner, Zout Laundry Stain Remover Spray and Dryel At Home Dry Cleaner. Nine new ingredient keys minted; one of them graded, because Boric Acid is a harmonised EU reproductive toxicant 1B (H360FD) and an ungraded reproductive toxicant renders as 'not yet graded'. The other eight keys enter ungraded. Every list is the manufacturer's own filing; nothing was approximated."
+  },
+  {
+    "date": "2026-10-09",
     "text": "Spectrum harvest station 2 (Dolman 2026-10-09): 4 Total Home (CVS) house-brand cleaners added to the drugstore tier, every list read from the manufacturer's California SB-258 declaration served on es.cvs.com. 5 new ingredient keys minted, all ungraded. Also repointed the product records that cited the smartlabel.pg.com shell host onto the keyless P&G SmartLabel API URL, which serves the same manufacturer's real disclosure; the two records whose own lists do not match the filing were left alone and named in the finding."
   },
   {
