@@ -6690,5 +6690,50 @@
   "gr": {},
   "impacts": [],
   "note": "Named on Cerama Bryte's own ingredient table for Cook Top Cleaner as 'Thickening Aid' with the CAS withheld. No substance identity is published, so no CID resolves and no GHS classification is available. Recorded Not Classified with the gap stated rather than guessed -- the same treatment the DB gives its other class-term keys (Proprietary Chelating Agent, Proprietary Surfactant, Proprietary Polymer Solution)."
+ },
+ "Sodium C14-16 Olefin Sulfonate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-09 from a CVS-hosted California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Sodium C14-16 Olefin Sulfonate. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-09"
+ },
+ "PPG-2 Butyl Ether": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-09 from a CVS-hosted California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "PPG-2 Butyl Ether. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-09"
+ },
+ "Dodecylbenzene Sulfonic Acid": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-09 from a CVS-hosted California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Dodecylbenzene Sulfonic Acid. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-09"
+ },
+ "Sodium Borate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-09 from a CVS-hosted California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Sodium Borate. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-09"
+ },
+ "Triazine": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-09 from a CVS-hosted California SB-258 ingredient disclosure and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Triazine. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-09"
  }
 }
