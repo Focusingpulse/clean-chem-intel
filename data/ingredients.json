@@ -1055,7 +1055,7 @@
  },
  "Diethylene Glycol Monobutyl Ether": {
   "ev": "Medium",
-  "g": "H302,H319",
+  "g": "H319",
   "gr": {
    "derm": "C",
    "repro": "C",
@@ -1065,11 +1065,11 @@
    "repro",
    "derm"
   ],
-  "note": "Common in fume-style oven cleaners where high heat vaporizes the solvent.",
+  "note": "Corrected 2026-10-10 (Sifter verify vs PubChem CID 8177, title 'Diethylene Glycol Monobutyl Ether' - matches; CAS 112-34-5): H302 in the prior g is not in the ECHA C&L consensus (headline block is H319 >99.9% only; H227/H336/H371/H372 appear in minority notifier blocks) - removed per the Benzotriazole 2026-09-24 precedent. derm C traces to H319 >99.9% (eye irritant). Legacy repro C and work C have no GHS basis - retained unverified, flagged for Linnea.",
   "reclassified": [
    "DEGBE is a glycol ether — the same family as 2-butoxyethanol (EGBE). Glycol ethers were adopted as 'safer' replacements for banned solvents through the 1980s-90s; EU CLP later flagged reproductive/developmental toxicity across the class and several are now CA Prop 65-listed. Lower acute toxicity than EGBE, but the class concern stands."
   ],
-  "s": "DEGBE — glycol ether solvent used in heavy-duty oven and floor cleaners. Harmful if swallowed, eye irritant. Glycol-ether class carries reproductive/developmental concern in EU/Prop 65 classifications."
+  "s": "DEGBE — glycol ether solvent used in heavy-duty oven and floor cleaners. Serious eye irritant (H319). Glycol-ether class carries reproductive/developmental concern in EU/Prop 65 classifications."
  },
  "Diethylester Dimethyl Ammonium Chloride": {
   "ev": "Extrapolated",
@@ -2008,7 +2008,7 @@
  },
  "Limonene": {
   "ev": "High",
-  "g": "H226,H304,H315,H317,H400",
+  "g": "H226,H304,H315,H317,H400,H410",
   "gr": {
    "derm": "D",
    "env": "F",
@@ -2020,7 +2020,7 @@
    "derm",
    "resp"
   ],
-  "note": "resp D dropped by ruling 2026-09-27 (Linnea): no primary source establishes respiratory sensitisation. EU CLP classifies skin sensitisation (H317) only; US EPA registration review identifies d-limonene as a dermal sensitizer with no toxicological points of departure; Danish EPA finds the oxidation products are contact (dermal) allergens. derm D remains supported by H317 in g. Basis: findings/CCI-classB-deferred-mechanism-sources-2026-09-26.md.",
+  "note": "resp D dropped by ruling 2026-09-27 (Linnea): no primary source establishes respiratory sensitisation. EU CLP classifies skin sensitisation (H317) only; US EPA registration review identifies d-limonene as a dermal sensitizer with no toxicological points of departure; Danish EPA finds the oxidation products are contact (dermal) allergens. derm D remains supported by H317 in g. Basis: findings/CCI-classB-deferred-mechanism-sources-2026-09-26.md. g completed 2026-10-10 (Sifter verify, CID 22311): H410 >99.9% headline consensus added; grades unchanged (env F already traces to H400 98.6% / H410).",
   "reclassified": [
    "Citrus limonene was sold as the 'natural' scent; on air exposure it oxidizes into potent sensitizers (limonene hydroperoxides) — now a known contact-allergen source."
   ],
@@ -2193,23 +2193,25 @@
  },
  "Methylisothiazolinone": {
   "ev": "High",
-  "g": "H317",
+  "g": "H314,H317,H318,H301,H311,H400,H410,H335",
   "gr": {
    "canc": "B",
-   "derm": "D",
+   "derm": "F",
+   "env": "F",
    "repro": "C",
    "resp": "C"
   },
   "impacts": [
    "allerg",
+   "aqua",
    "derm",
    "resp"
   ],
-  "note": null,
+  "note": "Corrected 2026-10-10 (Sifter verify vs PubChem CID 39800, title 'Methylisothiazolinone' - matches; CAS 2682-20-4): the record carried only H317 with no provenance note. Headline ECHA C&L consensus: H314 95.8%, H317 95.8%, H318 60.7%, H301 78%, H311 73.3%, H400 95.8%, H410 40.1%, H335 41% (H330 35.5% below the 40% bar). derm D->F per the H314-corrosive precedent (2026-09-26 run); env F added per H400 95.8% (Myristamine Oxide precedent); resp C retained, traces to H335 41%. Legacy canc B and repro C have no GHS basis and no provenance - retained unverified, flagged for Linnea. Pure-substance grade per decision 4; products carry it at ppm preservative levels (EU rinse-off limit 15 ppm).",
   "reclassified": [
    "MIT was the 'safe' preservative replacing parabens; became 2013 'Allergen of the Year' — epidemic of allergic contact dermatitis, now restricted in leave-on products (EU)."
   ],
-  "s": "Strong skin sensitizer, preservative"
+  "s": "Corrosive at concentrate, strong skin sensitizer, very toxic to aquatic life; preservative used at ppm levels"
  },
  "Mineral Oil": {
   "ev": "Medium",
@@ -3411,14 +3413,13 @@
  "Sodium Xylenesulfonate": {
   "ev": "Medium",
   "g": "H319",
-  "gr": {},
-  "gr_ruled": [
-   "derm"
-  ],
+  "gr": {
+   "derm": "C"
+  },
   "impacts": [
    "derm"
   ],
-  "note": "Graded from PubChem GHS (CID 23668192): H319 at 66.8% ECHA C&L notifier consensus -> derm D. Hydrotrope (solubilizer) disclosed by P&G SmartLabel for Dawn Powerwash.",
+  "note": "Graded from PubChem GHS (CID 23668192, CAS 1300-72-7): headline ECHA C&L block H319 66.8% >=40% -> derm C. Corrected 2026-10-10 (Sifter verify): merged the space-variant key 'Sodium Xylene Sulfonate' (1 product) onto this canonical PubChem-title key (14 products). The prior gr_ruled [derm] on this record contradicted its own note ('-> derm D') and the consensus; H319 alone maps to derm C by house precedent (Citric Acid, Sodium Cumenesulfonate), so the variant key's derm C was kept and the ruling withdrawn. Hydrotrope disclosed by P&G SmartLabel for Dawn Powerwash; also named on the Nature's Miracle Stain & Odor Remover ingredient table.",
   "s": "Causes serious eye irritation"
  },
  "Solvent Orange 60": {
@@ -5857,18 +5858,6 @@
    "derm"
   ],
   "note": "Graded from PubChem GHS (CID 23676745, title 'Potassium Sorbate'): headline ECHA C&L block H319 94.1% and H315 64.4%, both >=40% -> derm C. H335 sits at 35.4%, below the 40% house bar, so no respiratory grade. Named on the Method Foaming Hand Wash list."
- },
- "Sodium Xylene Sulfonate": {
-  "s": "The sodium salt of xylene sulfonic acid; an anionic hydrotrope that keeps surfactants in solution.",
-  "ev": "Medium",
-  "g": "H319",
-  "gr": {
-   "derm": "C"
-  },
-  "impacts": [
-   "derm"
-  ],
-  "note": "Graded from PubChem GHS (CID 23668192, title 'Sodium Xylenesulfonate', CAS 1300-72-7): headline ECHA C&L block H319 66.8% >=40% -> derm C. Named on the Nature's Miracle Stain & Odor Remover ingredient table."
  },
  "Tetrasodium Pyrophosphate": {
   "s": "TSPP; a water-softening builder and buffering agent.",

@@ -1139,7 +1139,7 @@
   "heritage_year": 1973,
   "heritage_note": "Dawn (1973) — the dish soap that doubles as wildlife-cleanup icon; generations trust it on their greasiest pots.",
   "added": "2026-08-18",
-  "updated": "2026-10-06",
+  "updated": "2026-10-10",
   "owner": "Procter & Gamble",
   "owner_ev": "verified",
   "owner_src": "https://us.pg.com/brands/",
@@ -1156,7 +1156,7 @@
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "Dawn moved 430,000 units across six ASINs in July 2026, 68.3% of Amazon top-10 dish-soap volume. Channel figure, not national share.",
-  "grade_note": "Sifter grade D — worst credible dimension: derm D (methylisothiazolinone H317 sensitizer; High evidence)."
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (methylisothiazolinone H314 corrosive at 95.8% consensus, pure-substance basis; High evidence). Rechecked 2026-10-10: prior D cited the old H317-only MI record, since corrected (ECHA C&L headline carries H314 95.8%)."
  },
  {
   "name": "Palmolive",
@@ -1175,7 +1175,7 @@
   "heritage_year": 1898,
   "heritage_note": "A brand since 1898 — 'Palmolive' dish liquid is literally a great-grandparent's soap.",
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-10-10",
   "owner": "Colgate-Palmolive",
   "owner_ev": "reported",
   "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
@@ -1191,7 +1191,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated."
+  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated.",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (methylisothiazolinone H314 corrosive at 95.8% consensus, pure-substance basis; High evidence)"
  },
  {
   "name": "Tide",
@@ -1209,7 +1210,7 @@
   "heritage_year": 1946,
   "heritage_note": "The 1946 laundry breakthrough that became the default 'family detergent' for 80 years.",
   "added": "2026-08-18",
-  "updated": "2026-08-18",
+  "updated": "2026-10-10",
   "owner": "Procter & Gamble",
   "owner_ev": "verified",
   "owner_src": "https://us.pg.com/brands/",
@@ -1225,7 +1226,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. P&G 59% of US laundry care retail value, 2025; Tide is the lead brand."
+  "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. P&G 59% of US laundry care retail value, 2025; Tide is the lead brand.",
+  "grade_note": "Sifter grade C — worst credible dimension: derm C (alcohol ethoxylate and SLES H315/H319 irritants; High evidence). Enzyme resp D (Extrapolated evidence) and the undisclosed fragrance dims (Low evidence) sit below the Medium bar and limit confidence rather than drive the grade."
  },
  {
   "name": "Gain",
@@ -3842,7 +3844,7 @@
   ],
   "heritage": false,
   "added": "2026-08-28",
-  "updated": "2026-08-28",
+  "updated": "2026-10-10",
   "owner": "Reckitt",
   "owner_ev": "reported",
   "owner_src": "https://www.reckitt.com/our-brands/",
@@ -3858,7 +3860,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated."
+  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated.",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (sodium hydroxide H314 corrosive at >99.9% consensus, pure-substance basis; High evidence)"
  },
  {
   "name": "Dawn Ultra Dish Soap",
@@ -4513,7 +4516,7 @@
   "source": "Manufacturer SDS (Rust-Oleum, rev. 2024)",
   "source_url": "https://images.thdstatic.com/catalog/pdfImages/59/599a1865-8dc9-423d-8d0e-dc8a19e6e551.pdf",
   "added": "2026-09-17",
-  "updated": "2026-09-17",
+  "updated": "2026-10-10",
   "note": "Concentrated alkaline degreaser, pH <12.2 (manufacturer TDS), 0% VOC. TDS describes the surfactant blend only as 'proprietary blend of biodegradable surfactants' — ingredient identity is taken from the SDS Section 3 hazardous-substances block, which lists only the classified components. Incomplete-by-design disclosure; noted rather than padded.",
   "owner": "RPM International Inc.",
   "owner_ev": "verified",
@@ -4530,7 +4533,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated."
+  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated.",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (sodium metasilicate + potassium hydroxide H314 corrosive; High evidence)"
  },
  {
   "name": "Weiman Stainless Steel Cleaner & Polish",
@@ -4842,7 +4846,7 @@
   "source": "Clorox SmartLabel public ingredient disclosure (updated 11/19/2024); SDS EPA Reg. 5813-21",
   "source_url": "https://smartlabel.labelinsight.com/product/6091200/ingredients",
   "added": "2026-09-19",
-  "updated": "2026-09-19",
+  "updated": "2026-10-10",
   "note": "EPA-registered disinfecting bleach spray (EPA Reg. 5813-21; SDS lists sodium hypochlorite 1-5%, sodium hydroxide 0.1-1%). Two notable disclosures on a mainstream bleach cleaner: benzophenone — prohibited in EU cosmetics (Annex II, Entry 1703) and DL-flagged on this label — and sodium chlorate, the oxidizer that accumulates as hypochlorite decays in storage.",
   "owner": "Clorox",
   "owner_ev": "reported",
@@ -4861,7 +4865,8 @@
   "strength_disclosure": "not_reviewed",
   "exposure_basis": "searched for a published per-product US household penetration figure; none exists in the open literature, so the estimate is derived from category penetration times brand share. Rounded to one significant figure. Clorox Clean-Up appears in Amazon Best Sellers in All-Purpose Household Cleaners (Sep 2026).",
   "tier_src": null,
-  "tier_basis": "searched for a published definition of this tier and found none that names the product. The tier was assigned by exclusion rather than by a source, so it is downgraded to untested rather than left marked reported with nothing to point at. A guessed tier is worse than no tier."
+  "tier_basis": "searched for a published definition of this tier and found none that names the product. The tier was assigned by exclusion rather than by a source, so it is downgraded to untested rather than left marked reported with nothing to point at. A guessed tier is worse than no tier.",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (sodium hypochlorite, sodium hydroxide and sodium orthosilicate H314 corrosive; High evidence)"
  },
  {
   "name": "Spic and Span All-Purpose Disinfecting Spray and Glass Cleaner",
@@ -12304,7 +12309,7 @@
    "Water",
    "Isopropyl Alcohol",
    "Alcohols, C9-11, ethoxylated",
-   "Sodium Xylene Sulfonate",
+   "Sodium Xylenesulfonate",
    "Sodium Sulfate",
    "Pentasodium Triphosphate",
    "Tetrasodium Pyrophosphate",
@@ -12327,7 +12332,7 @@
   "no_substitute_note": null,
   "strength_disclosure": "partial",
   "added": "2026-10-05",
-  "updated": "2026-10-05",
+  "updated": "2026-10-10",
   "exposure": null,
   "exposure_ev": "untested",
   "exposure_src": null,
@@ -15407,7 +15412,9 @@
   "disclosure_note": null,
   "added": "2026-10-10",
   "owner_ev": "verified",
-  "owner_src": "https://www.reckitt.com/our-brands/"
+  "owner_src": "https://www.reckitt.com/our-brands/",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (sodium hypochlorite + sodium hydroxide H314 corrosive; High evidence)",
+  "updated": "2026-10-10"
  },
  {
   "name": "Howard Butcher Block Conditioner",
@@ -15481,7 +15488,8 @@
   "conc_src": null,
   "conc_ev": "untested",
   "grade_as_sold": null,
-  "grade_as_sold_src": null
+  "grade_as_sold_src": null,
+  "grade_note": "Sifter grade F — worst credible dimension: derm F and resp F (hydrofluoric acid H314/H310/H330, fatal by skin contact and inhalation at >99.8% consensus; High evidence)"
  },
  {
   "name": "Weiman Leather Cleaner & Conditioner",
