@@ -262,9 +262,11 @@ for p in products:
         p["heritage"] = False
 
 # dates (seed: v1 data existed Aug 18; keep stable, cron will add 'added' for new ones)
+# 'updated' must never precede 'added': a product added by another lane without an
+# 'updated' field was getting the hardcoded seed date, producing updated < added.
 for p in products:
     p.setdefault("added", "2026-08-18")
-    p.setdefault("updated", "2026-08-18")
+    p.setdefault("updated", p["added"])
 
 (DATA / "ingredients.json").write_text(json.dumps(ings, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 (DATA / "products.json").write_text(json.dumps(products, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
