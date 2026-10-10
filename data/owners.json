@@ -909,6 +909,15 @@
    "brands": [
     "Cerama Bryte"
    ]
+  },
+  "Willert Home Products": {
+   "type": "private company",
+   "detail": "Family-owned household-products manufacturer, St. Louis, MO, founded 1946. Its own site names the brand family Ty-D-Bol, Bowl Fresh, Enoz and airBOSS.",
+   "ev": "verified",
+   "src": "https://tydbol.com/about/",
+   "brands": [
+    "Ty-D-Bol"
+   ]
   }
  },
  "independents": {

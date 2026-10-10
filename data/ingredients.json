@@ -6826,5 +6826,77 @@
   "note": "Graded from PubChem GHS (CID 7628), fetched 2026-10-09. Headline hazard statement H360FD, 'May damage fertility; May damage the unborn child' [Danger, reproductive toxicity]; the ECHA C&L notifications summary on the same record reports H360 at 88.7% and H360FD at 11.2% of 2,123 reports. Codes also reported on that record: H372 (STOT RE), H319, H335, H315, H370 and H402. repro F mirrors the existing borate entries (Sodium Tetraborate, Sodium Metaborate), which carry the same H360FD.",
   "s": "Boric acid. Boron compound; EU/CLP-classified reproductive toxicant 1B (H360FD) with STOT RE 1 (H372); eye and respiratory irritant.",
   "added": "2026-10-09"
+ },
+ "Cellulose Gum": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-10 from a retailer-served manufacturer California SB-258 ingredient declaration and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Cellulose Gum. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-10"
+ },
+ "Sodium Ferrocyanide": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-10 from a retailer-served manufacturer California SB-258 ingredient declaration and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Sodium Ferrocyanide. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-10"
+ },
+ "Aluminum Sulfate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-10 from a retailer-served manufacturer California SB-258 ingredient declaration and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Aluminum Sulfate. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-10"
+ },
+ "Sodium C14-17 Alkyl Sec Sulfonate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-10 from a retailer-served manufacturer California SB-258 ingredient declaration and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Sodium C14-17 Alkyl Sec Sulfonate. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-10"
+ },
+ "Capryleth-4": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-10 from a retailer-served manufacturer California SB-258 ingredient declaration and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Capryleth-4. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-10"
+ },
+ "C9-11 Pareth-8": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-10 from a retailer-served manufacturer California SB-258 ingredient declaration and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "C9-11 Pareth-8. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-10"
+ },
+ "C9-11 Pareth-6": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-10 from a retailer-served manufacturer California SB-258 ingredient declaration and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "C9-11 Pareth-6. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-10"
+ },
+ "Cocamine Oxide": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-10 from a retailer-served manufacturer California SB-258 ingredient declaration and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Cocamine Oxide. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-10"
  }
 }
