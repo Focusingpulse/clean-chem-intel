@@ -406,7 +406,8 @@
    "brands": [
     "Rust-Oleum",
     "Mean Green",
-    "The Pink Stuff"
+    "The Pink Stuff",
+    "Whink"
    ],
    "brand_sources": {
     "verified_by_sec_exhibit_21_1": [
@@ -837,7 +838,8 @@
    "ev": "reported",
    "src": "https://www.naturesmiracle.com/authorized-retailer-policy.aspx",
    "brands": [
-    "Nature's Miracle"
+    "Nature's Miracle",
+    "Rejuvenate"
    ]
   },
   "AlEn USA": {
@@ -917,6 +919,24 @@
    "src": "https://tydbol.com/about/",
    "brands": [
     "Ty-D-Bol"
+   ]
+  },
+  "Howard Products, Inc.": {
+   "type": "private",
+   "detail": "Privately held wood-care manufacturer, 560 Linne Road, Paso Robles, California. Publishes its California Cleaning Product Right to Know Act (SB-258) disclosure on its own site, and hosts its own SDS and technical data sheets. No parent company found; recorded as a standalone private company.",
+   "ev": "reported",
+   "src": "https://www.howardproducts.com/",
+   "brands": [
+    "Howard"
+   ]
+  },
+  "Weiman Products, LLC": {
+   "type": "private",
+   "detail": "Privately held surface-care manufacturer, 755 Tri-State Parkway, Gurnee, Illinois. Publishes a per-product ingredient table with CAS numbers and functions on its own site, alongside its SDS. No parent company found; recorded as a standalone private company.",
+   "ev": "reported",
+   "src": "https://weiman.com/",
+   "brands": [
+    "Weiman"
    ]
   }
  },

@@ -6898,5 +6898,167 @@
   "note": "Minted 2026-10-10 from a retailer-served manufacturer California SB-258 ingredient declaration and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
   "s": "Cocamine Oxide. Listed in the manufacturer disclosure; not yet graded against GHS.",
   "added": "2026-10-10"
+ },
+ "2,4,7,9-Tetramethyl-5-Decyne-4,7-Diol": {
+  "s": "Causes serious eye damage; causes serious eye irritation; harmful to aquatic life with long lasting effects.",
+  "ev": "Medium",
+  "g": "H318,H319,H412",
+  "gr": {
+   "derm": "D",
+   "env": "C"
+  },
+  "impacts": [
+   "derm",
+   "aqua"
+  ],
+  "note": "Graded from PubChem GHS (CID 31362, returned title '2,4,7,9-Tetramethyl-5-decyne-4,7-diol'; the name was confirmed against CAS 126-86-3 before the record was accepted). The headline block reports H318 (serious eye damage) 45.7%, H319 (serious eye irritation) 52.3% and H412 (harmful to aquatic life with long lasting effects) 75.2% notifier consensus; H317 (may cause an allergic skin reaction) sits at 33.6% and is below the 40% house bar, so no allergen impact is recorded. H318 sets derm D and H412 sets env C. A nonionic acetylenic-diol surfactant/wetting agent named on Rejuvenate's own All Floors Restorer ingredient list."
+ },
+ "Alkyl Aryl Inorganic Acid Salt": {
+  "s": "Class term for a surfactant/chelant salt; no discrete substance is identified by the label.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named verbatim on Rejuvenate's own All Floors Restorer ingredient list as 'Alkyl Aryl Inorganic Acid Salt'. This is a class term, not a substance: no CAS number is given and no discrete CID resolves, so no GHS classification is available. Recorded Not Classified rather than guessed, the same way the DB carries other class keys. The label's own wording is recorded unchanged."
+ },
+ "Avocado oil": {
+  "s": "Plant oil (CAS 8024-32-6); a polishing/conditioning agent in leather care.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Weiman's own published ingredient table for Leather Cleaner & Conditioner as 'Avocado oil' (CAS 8024-32-6, function 'Polishing agent'). PubChem PUG REST returns 404 for both the name and the CAS number: a plant oil is a UVCB triglyceride mixture, so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed."
+ },
+ "Beeswax": {
+  "s": "Natural wax (CAS 8012-89-3); the water-resistant film former in food-contact wood conditioners.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Howard Products' own California SB-258 intentionally-added list for Butcher Block Conditioner as 'Beeswax' (CAS 8012-89-3). PubChem PUG REST returns 404 for both the name and the CAS number: beeswax is a UVCB (a natural mixture of waxes, esters and hydrocarbons whose composition varies by source), so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed, the same way the DB carries other UVCB class keys. All ingredients in the product are declared food grade by the maker."
+ },
+ "C9-11 Alcohols Ethoxylated": {
+  "s": "Ethoxylated fatty-alcohol surfactant (CAS 68439-46-3); a UVCB with no discrete PubChem CID.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Rejuvenate's own All Floors Restorer ingredient list. PubChem PUG REST returns 404 for the name and for CAS 68439-46-3: this is a UVCB (an ethoxylated C9-C11 alcohol mixture whose chain length and ethylene-oxide count vary), so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed. Distinct from the DB's generic Alcohol Ethoxylate key."
+ },
+ "Carnauba wax": {
+  "s": "Natural plant wax (CAS 8015-86-9); the hardest of the natural waxes, used as the water-resistant film in food-contact wood conditioners.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Howard Products' own California SB-258 intentionally-added list for Butcher Block Conditioner as 'Carnauba wax' (CAS 8015-86-9). PubChem PUG REST returns 404 for both the name and the CAS number: carnauba is a UVCB (a plant wax mixture of esters, fatty alcohols and hydrocarbons), so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed. All ingredients in the product are declared food grade by the maker."
+ },
+ "Diethylene Glycol Dibutyl Ether": {
+  "s": "Glycol ether (CAS 112-73-2); reported as not meeting GHS hazard criteria by the great majority of notifiers.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Rejuvenate's own All Floors Restorer ingredient list. PubChem PUG REST resolves it to CID 8210, returned title 'Diethylene glycol dibutyl ether' (CAS 112-73-2); the title was confirmed before the record was accepted. The record reports not meeting GHS hazard criteria by 192 of 203 notifying companies (only 5.4% of companies provided GHS information), so no H-code reaches the 40% house bar and the key is recorded Not Classified. Distinct from the DB's Diethylene Glycol Monobutyl Ether key."
+ },
+ "Ethoxylated Tetramethyldecynediol": {
+  "s": "Ethoxylated acetylenic-diol surfactant (CAS 9014-85-1); no discrete PubChem CID resolves.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Rejuvenate's own All Floors Restorer ingredient list. PubChem PUG REST returns 404 for the name and for CAS 9014-85-1: this is the ethoxylated form of the acetylenic diol surfactant, a UVCB whose ethylene-oxide count varies, so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed. Distinct from the DB's 2,4,7,9-Tetramethyl-5-Decyne-4,7-Diol key, which is the unethoxylated parent."
+ },
+ "Hydrofluoric Acid": {
+  "s": "Fatal if swallowed, in contact with skin or if inhaled; causes severe skin burns and eye damage; causes damage to organs.",
+  "ev": "High",
+  "g": "H300,H310,H314,H330,H370,H372",
+  "gr": {
+   "derm": "F",
+   "resp": "F",
+   "organ": "D"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "sens": true,
+  "note": "Graded from PubChem GHS (CID 14917, returned title 'Hydrofluoric Acid'; the name was confirmed against CAS 7664-39-3 before the record was accepted). The headline (largest company-count) block reports H300 (fatal if swallowed) 99.8%, H310 (fatal in contact with skin) 99.8%, H314 (causes severe skin burns and eye damage) >99.9% and H330 (fatal if inhaled) 99.8% notifier consensus; H318 (serious eye damage) sits at 19.4% and is below the 40% house bar. Secondary blocks report H370/H372 (causes damage to organs, and through prolonged or repeated exposure), H311, H290 and H280 without a consensus percentage; the organ grade is taken from H370/H372 in the same way the DB's Methanol and Potassium Iodide records carry organ grades. Hydrofluoric acid is the only substance in this database whose primary hazard is systemic fluoride toxicity rather than corrosivity alone: the fluoride ion penetrates intact skin and sequesters calcium and magnesium, which is why the manufacturer's own first-aid text directs calcium gluconate and why the product is shipped as UN1790 hazard class 8(6.1). Disclosed by Whink Products for Rust Stain Remover at 1.5-3.5% in the 2012 MSDS and 1.0-2.5% in the current owner's 2023 SDS."
+ },
+ "Hydrotreated light alkanes": {
+  "s": "Petroleum distillate (CAS 64742-47-8); a solvent/thickener in leather care products.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Weiman's own published ingredient table for Leather Cleaner & Conditioner as 'Hydrotreated light alkanes' (CAS 64742-47-8, function 'Thickener'). PubChem PUG REST returns 404 for both the name and the CAS number: this is a petroleum UVCB (a hydrotreated distillate fraction), so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed. Distinct from the DB's Isoparaffin and other petroleum-distillate keys."
+ },
+ "Maleic Anhydride-Propylene Polymer": {
+  "s": "Polymeric dispersant/leveling aid; no discrete PubChem CID resolves.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Rejuvenate's own All Floors Restorer ingredient list. PubChem PUG REST returns 404 for the name: this is a polymer (a maleic anhydride/propylene copolymer), so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed. Note that maleic anhydride itself is a sensitiser; the polymer is a different substance and no grade is transferred from the monomer."
+ },
+ "Partially Fluorinated Alcohol, Reaction Products with Phosphorus Oxide (P2O5), Ammonium Salts": {
+  "s": "Fluorinated phosphate surfactant (class/UVCB); no discrete PubChem CID resolves.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named verbatim on Rejuvenate's own All Floors Restorer ingredient list. PubChem PUG REST returns 404 for the name: this is a UVCB class term for the ammonium salts of a partially fluorinated alcohol phosphate ester (a fluorinated wetting/leveling surfactant), so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed; the label's own wording is recorded unchanged. This is a fluorinated surfactant disclosed on a consumer floor product's own label; the record states what the label says and mints no PFAS claim, because the label names no specific substance and no CAS."
+ },
+ "Safflower oil": {
+  "s": "Plant oil (CAS 8001-23-8); a polishing/conditioning agent in leather care.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Weiman's own published ingredient table for Leather Cleaner & Conditioner as 'Safflower oil' (CAS 8001-23-8, function 'Polishing agent'). PubChem PUG REST returns 404 for both the name and the CAS number: a plant oil is a UVCB triglyceride mixture, so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed."
+ },
+ "Sesame oil": {
+  "s": "Plant oil (CAS 8008-74-0); a polishing/conditioning agent in leather care, and itself a known food allergen.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Weiman's own published ingredient table for Leather Cleaner & Conditioner as 'Sesame oil' (CAS 8008-74-0, function 'Polishing agent'), and the brand's own product page confirms it ('Yes, this product contains sesame oil'). PubChem PUG REST returns 404 for both the name and the CAS number: a plant oil is a UVCB triglyceride mixture, so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed. Sesame is one of the nine major food allergens in US law (FASTER Act, 2021); that is a food-labelling status, not a GHS hazard classification, so it is noted here rather than minted as a grade."
+ },
+ "Silicone Copolyol": {
+  "s": "Silicone polyether surfactant (class term); no discrete PubChem CID resolves.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Rejuvenate's own All Floors Restorer ingredient list. PubChem PUG REST returns 404 for the name: this is a class term for a silicone polyether copolymer (a wetting/leveling aid), so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed. Distinct from the DB's PEG/PPG-18/18 Dimethicone key, which is a specific silicone polyether."
+ },
+ "Styrene Acrylic Copolymer": {
+  "s": "Film-forming acrylic copolymer; the actual floor finish left behind after the water evaporates.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Rejuvenate's own All Floors Restorer ingredient list. PubChem PUG REST returns 404 for the name: this is a polymer (a styrene/acrylate copolymer of variable composition), so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed. It is the film-forming agent that makes the product a RESTORER rather than a cleaner -- the acrylic film left on the floor after the water carrier evaporates."
+ },
+ "Tributoxyethyl Phosphate": {
+  "s": "Organophosphate plasticizer/solvent (CAS 78-51-3); no H-code reaches the 40% house bar.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Rejuvenate's own All Floors Restorer ingredient list as 'Tributoxyethyl Phosphate'. PubChem PUG REST resolves it to CID 6540, returned title 'Tris(2-butoxyethyl) phosphate' (the same substance, CAS 78-51-3); the title was confirmed before the record was accepted. The headline (largest company-count) block reports only H335 (22.8%, respiratory irritation) and H336 (12.9%, drowsiness), both BELOW the 40% house bar, so no dimension grade is minted. Secondary notifier blocks report H317, H312, H315, H319, H332, H335, H402 and H412 without a consensus percentage, so none of them meets the house rule either. Recorded Not Classified with the below-bar codes stated rather than graded."
+ },
+ "Zinc Ammonium Carbonate": {
+  "s": "Harmful if swallowed; causes severe skin burns and eye damage.",
+  "ev": "Medium",
+  "g": "H302,H314,H318",
+  "gr": {
+   "derm": "F"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 12893660, returned title 'Carbonic acid, ammonium zinc salt (2:2:1)'; the CID's own synonym list carries 'zinc ammonium carbonate' verbatim, so the identity was confirmed before the record was accepted -- CAS 40861-29-8). The headline block reports H302 (harmful if swallowed) 65.8%, H314 (causes severe skin burns and eye damage) 81% and H318 (serious eye damage) 81% notifier consensus; H314 sets derm F. Named on Rejuvenate's own All Floors Restorer ingredient list. A zinc-ammonium complex salt used as a cross-linking/neutralising agent in acrylic floor films; it is the only substance on that list whose headline consensus is a corrosive skin classification."
  }
 }
