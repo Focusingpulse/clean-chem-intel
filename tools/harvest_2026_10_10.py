@@ -413,10 +413,14 @@ def main():
             text += "\n"
         path.write_text(text, encoding="utf-8")
 
-    # measured 2026-10-09/2026-10-10: products/ingredients/owners are indent=1
-    # with NO trailing newline; changelog.json is indent=2 with NO trailing newline.
+    # measured 2026-10-10 at upstream HEAD: products.json ends `]` with no
+    # trailing newline; owners.json ends `}` with no trailing newline;
+    # changelog.json is indent=2 and ends `]` with no trailing newline;
+    # ingredients.json ends `}` WITH a trailing newline (changed upstream in the
+    # 2026-10-10 ingest commit, which is why this run matches the newline rather
+    # than assuming the earlier no-newline reading still held).
     dump(prods_path, products, 1, False)
-    dump(ings_path, ingredients, 1, False)
+    dump(ings_path, ingredients, 1, True)
     dump(owners_path, owners, 1, False)
 
     if not args.no_changelog and (added_records or owner_added):
