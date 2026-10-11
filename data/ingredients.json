@@ -14,14 +14,6 @@
   ],
   "s": "May cause cancer"
  },
- "2,6-Dimethyl-7-octen-2-ol": {
-  "ev": "Low",
-  "g": null,
-  "gr": {},
-  "impacts": [],
-  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
-  "s": "2,6-Dimethyl-7-octen-2-ol. Listed in the manufacturer disclosure; not yet graded against GHS."
- },
  "2-Methoxynaphthalene": {
   "ev": "Medium",
   "g": "Not Classified",
@@ -162,14 +154,6 @@
    "Ethoxylated surfactants (SLES, alcohol ethoxylates) can carry trace 1,4-dioxane — a byproduct EPA flagged as a probable human carcinogen (IARC 2B). Not an added ingredient; a process contaminant."
   ],
   "s": "Ethoxylated surfactant family. Skin/eye irritant; 1,4-dioxane contaminant trace concern from ethoxylation."
- },
- "Alcohols, C12-15, Ethoxylated": {
-  "ev": "Low",
-  "g": null,
-  "gr": {},
-  "impacts": [],
-  "note": "Added by the night-shift harvest from a manufacturer ingredient disclosure. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. Sharing a key with an existing record is intentional.",
-  "s": "Alcohols, C12-15, Ethoxylated. Listed in the manufacturer disclosure; not yet graded against GHS."
  },
  "Alcohols, C9-11, ethoxylated": {
   "ev": "Extrapolated",
@@ -341,7 +325,7 @@
    "resp",
    "allerg"
   ],
-  "note": null,
+  "note": " Key merge 2026-10-11 (Sifter lane): 'Amylase' (ungraded Low, 7 product refs) merged onto this key -- same generic detergent-amylase class (CAS 9000-90-2), keyed by label spelling on the 2026-09-28 gather pass.",
   "s": "Starch-digesting detergent enzyme. Respiratory sensitizer, same class hazard as subtilisin."
  },
  "BHT": {
@@ -651,7 +635,7 @@
   "g": "Extrapolated",
   "gr": {},
   "impacts": [],
-  "note": "UVCB (CAS 68131-39-5) - no PubChem entry (PUG REST 404). Class-analogous to the existing 'C10-16 Pareth' and 'Ethoxylated Alcohol' entries (derm C, env C; trace 1,4-dioxane from ethoxylation). Recorded extrapolated, not graded. Disclosed by Henkel for all free clear.",
+  "note": "UVCB (CAS 68131-39-5) - no PubChem entry (PUG REST 404). Class-analogous to the existing 'C10-16 Pareth' and 'Ethoxylated Alcohol' entries (derm C, env C; trace 1,4-dioxane from ethoxylation). Recorded extrapolated, not graded. Disclosed by Henkel for all free clear. Key merge 2026-10-11 (Sifter lane): 'Alcohols, C12-15, Ethoxylated' (ungraded Low, 3 product refs) merged onto this key -- same UVCB class (CAS 68131-39-5), word-order duplicate of the kind the validator comment describes.",
   "s": "Alcohol ethoxylate nonionic surfactant (C12-15). UVCB; no discrete PubChem CID."
  },
  "C9-11 Alkyl Glucoside": {
@@ -1088,7 +1072,7 @@
   "impacts": [
    "derm"
   ],
-  "note": "PubChem CID 29096, ECHA C&L notifier consensus: H315 74.6%, H319 94.6% -> derm C. Disclosed by Church & Dwight as '2,6-Dimethyl-7-Octen-2-ol' (CAS 18479-58-8) in Arm & Hammer and Xtra liquid laundry detergents, and by Reckitt SmartLabel as 'Dihydromyrcenol' (same CAS) in Lime-A-Way.",
+  "note": "PubChem CID 29096, ECHA C&L notifier consensus: H315 74.6%, H319 94.6% -> derm C. Disclosed by Church & Dwight as '2,6-Dimethyl-7-Octen-2-ol' (CAS 18479-58-8) in Arm & Hammer and Xtra liquid laundry detergents, and by Reckitt SmartLabel as 'Dihydromyrcenol' (same CAS) in Lime-A-Way. Key merge 2026-10-11 (Sifter lane): '2,6-Dimethyl-7-octen-2-ol' (ungraded Low, 3 product refs) merged onto this key -- the two names are the same substance (CAS 18479-58-8; this record's own summary gives both names), keyed differently by different disclosures.",
   "s": "Fragrance component (2,6-dimethyl-7-octen-2-ol). Skin and eye irritant."
  },
  "Diisopropanolamine": {
@@ -2805,7 +2789,7 @@
    "allerg",
    "resp"
   ],
-  "note": "No PubChem CID for the generic label term 'Protease' - the name lookup returns an unrelated compound (Bacillomycin, CID 3086051) which is not used. Extrapolated by enzyme class, consistent with the existing 'Subtilisin', 'Amylase Enzyme' and 'Cellulase Enzyme' entries - detergent protease proteins are respiratory sensitizers (H334 class hazard). Disclosed by Reckitt for Spray 'n Wash.",
+  "note": "No PubChem CID for the generic label term 'Protease' - the name lookup returns an unrelated compound (Bacillomycin, CID 3086051) which is not used. Extrapolated by enzyme class, consistent with the existing 'Subtilisin', 'Amylase Enzyme' and 'Cellulase Enzyme' entries - detergent protease proteins are respiratory sensitizers (H334 class hazard). Disclosed by Reckitt for Spray 'n Wash. Key merge 2026-10-11 (Sifter lane): 'Protease' (ungraded Low, 5 product refs) merged onto this key -- same generic detergent-protease class at the same specificity; 'Subtilisin' stays separate as the CAS-specific (9014-01-1) High-evidence key.",
   "s": "Protein-degrading detergent enzyme. Enzyme proteins are respiratory sensitizers by class.",
   "sens": true
  },
@@ -4464,22 +4448,6 @@
   "impacts": [],
   "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
   "s": "Polyvinyl Alcohol. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
- },
- "Protease": {
-  "ev": "Low",
-  "g": null,
-  "gr": {},
-  "impacts": [],
-  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
-  "s": "Protease. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
- },
- "Amylase": {
-  "ev": "Low",
-  "g": null,
-  "gr": {},
-  "impacts": [],
-  "note": "Listed in a manufacturer or manufacturer-filing disclosure read 2026-09-28; not yet graded against GHS.",
-  "s": "Amylase. Listed in a manufacturer disclosure read 2026-09-28; not yet graded against GHS."
  },
  "Sodium Palmate": {
   "g": "Extrapolated",
@@ -6171,7 +6139,7 @@
   "g": null,
   "gr": {},
   "impacts": [],
-  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+  "note": "Added by the 2026-10-07 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it. The Church & Dwight SB-258 disclosure for OxiClean MaxForce names 'modified acrylic copolymer' (CAS 52255-49-9), the same dispersing-polymer class; that product references this key rather than minting a second near-identical polymer key."
  },
  "C13-15 Alcohols Ethoxylated": {
   "s": "C13-15 Alcohols Ethoxylated. Named on a Vestacy (Essential Home) California SB-258 ingredient disclosure, read 2026-10-07.",
@@ -6662,7 +6630,7 @@
   "g": "Not Classified",
   "gr": {},
   "impacts": [],
-  "note": "Named on Cerama Bryte's own ingredient table for Cook Top Cleaner with CAS 9003-11-6. PubChem PUG REST returns 404 for both the name and the CAS number: this is the poloxamer polymer family, so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed. Distinct from the DB's 'Poloxamer 124', which is a single numbered grade of the same family."
+  "note": "Named on Cerama Bryte's own ingredient table for Cook Top Cleaner with CAS 9003-11-6. PubChem PUG REST returns 404 for both the name and the CAS number: this is the poloxamer polymer family, so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed. Distinct from the DB's 'Poloxamer 124', which is a single numbered grade of the same family. Reckitt's SB-258 disclosure for Finish Quantum Lemon names 'Ethylene/Propylene Oxide Copolymer' (CAS 58205-99-5), the same EO/PO copolymer class; that product references this key rather than minting a class duplicate."
  },
  "Quaternium-18": {
   "s": "A dialkyl dimethyl quaternary ammonium chloride (CAS 61789-80-8); the anti-static active in the spray.",
@@ -7245,5 +7213,145 @@
    "resp"
   ],
   "note": "Graded from PubChem GHS (CID 101721, returned title 'Urea hydrochloride'; the name was confirmed against CAS 506-89-8 before the record was accepted). Headline ECHA C&L notifier consensus: H335 (respiratory irritation) 81%, H315 (skin irritation) 52.4%, H290 (may be corrosive to metals) 47.6% and H319 (serious eye irritation) 42.9%, all >=40%. H314 (severe skin burns) sits at 38.1% -- just below the 40% bar -- but maps to derm D under the >=10% corrosivity precedent, so derm lands at D rather than F. Disclosed by Zep Inc. for Grout Cleaner & Brightener at 10-20% by weight."
+ },
+ "Alkyl Imino Dipropionic Acid, Monosodium Salt": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Church & Dwight California SB-258 disclosure for OxiClean MaxForce (CAS 64972-18-5). PubChem resolves the CAS to CID 23695304, but the record carries no GHS classification section, so no consensus basis exists. Left ungraded rather than extrapolated from the amphoteric-surfactant class.",
+  "s": "Amphoteric iminodipropionate surfactant (CAS 64972-18-5). Not yet graded against GHS."
+ },
+ "Sandalore": {
+  "ev": "High",
+  "g": "H411",
+  "gr": {
+   "env": "D"
+  },
+  "impacts": [
+   "aqua"
+  ],
+  "note": "ECHA C&L consensus via PubChem CID 103212: H411 at 95.5% of notifiers. H319 (18.3%) sits below the 40% grading bar and is not graded. Named on the Church & Dwight SB-258 disclosure for OxiClean MaxForce (CAS 65113-99-7).",
+  "s": "Synthetic sandalwood fragrance (CAS 65113-99-7). Toxic to aquatic life with long lasting effects."
+ },
+ "Tetrasodium Etidronate": {
+  "ev": "High",
+  "g": "H302,H319",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "ECHA C&L consensus via PubChem CID 19629: H302 83.6%, H319 86.6%. Named on the Reckitt SB-258 disclosure for Finish Quantum Lemon (CAS 3794-83-0).",
+  "s": "Phosphonate chelant (HEDP tetrasodium salt, CAS 3794-83-0). Eye irritant; harmful if swallowed."
+ },
+ "Polyacrylic Acid, Sodium Bisulfite Terminated": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Reckitt SB-258 disclosure for Finish Quantum Lemon (CAS 68479-09-4). Polymer, not a discrete substance; PubChem PUG REST returns no CID for name or CAS. Unclassified by policy; not graded rather than extrapolated.",
+  "s": "Antiredeposition polymer (CAS 68479-09-4). Not yet graded against GHS."
+ },
+ "Alcohol Polyglycolether": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Reckitt SB-258 disclosure for Finish Quantum Lemon (CAS 501019-91-6). PubChem PUG REST returns no CID for name or CAS. Unclassified by policy; not graded rather than extrapolated.",
+  "s": "Nonionic polyglycol ether surfactant (CAS 501019-91-6). Not yet graded against GHS."
+ },
+ "Manganese Catalyst": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Bleach catalyst named on the Reckitt SB-258 disclosure for Finish Quantum Lemon (CAS 116633-52-4), where it is carried on the CA TACs, CA Non-Cancer Hazards and NY Air Toxics designated lists as a manganese compound. PubChem resolves the CAS to CID 138319435 but the record has no GHS classification section, so there is no consensus basis to grade. Placeholder profile; grades never guessed.",
+  "s": "Manganese-based bleach activator catalyst (CAS 116633-52-4). Not yet graded against GHS."
+ },
+ "Polymeric Red Colorant": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the Reckitt SB-258 disclosure for Finish Quantum Lemon with CAS given only as 'Proprietary'. Undisclosed composition: placeholder profile, never graded.",
+  "s": "Proprietary polymeric red colorant (CAS withheld by manufacturer)."
+ },
+ "Talc": {
+  "ev": "Medium",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Non-functional constituent on the Reckitt SB-258 disclosure for Finish Quantum Lemon, recorded there as containing no asbestiform fibres (CAS 14807-96-6). ECHA C&L via PubChem CID 165411828: reported as not meeting GHS hazard criteria by 4523 of 4758 notifiers (95.1%); H370/H372 carried only by a small minority, below the grading bar. The disclosure's designated-list flag traces to IARC, which classified talc Group 2A (probably carcinogenic) in 2024 on route-specific evidence -- a non-GHS finding, recorded here rather than invented as a grade.",
+  "s": "Magnesium silicate mineral (CAS 14807-96-6). Not GHS-classified by 95.1% of ECHA notifiers."
+ },
+ "Thymol": {
+  "ev": "High",
+  "g": "H302,H314,H411",
+  "gr": {
+   "derm": "F",
+   "env": "D"
+  },
+  "impacts": [
+   "derm",
+   "aqua"
+  ],
+  "note": "ECHA C&L consensus via PubChem CID 6989: H302 >99.9%, H314 99.4%, H411 99.5%; H318 (10.5%) below the bar. derm F on the H314 corrosive consensus per the 2026-09-26 H314 precedent. This is the pure-substance grade: the Seventh Generation disinfecting cleaner that carries it discloses the active at 0.05%, recorded as conc on the product. EPA-registered antimicrobial active.",
+  "s": "Thyme-oil phenolic antiseptic (CAS 89-83-8); the active in botanical disinfectants. Corrosive as the pure substance; toxic to aquatic life with long lasting effects."
+ },
+ "Copper Sulfate Pentahydrate": {
+  "ev": "High",
+  "g": "H302,H315,H319,H400,H410",
+  "gr": {
+   "derm": "C",
+   "env": "F"
+  },
+  "impacts": [
+   "derm",
+   "aqua"
+  ],
+  "note": "The pentahydrate's own C&L notification base (PubChem CID 24463) is sparse and internally mixed; the anhydrous salt (CID 24462) carries the strong aggregate (H302 96.3%, H315 79.3%) and the same copper(II) ion in solution drives the hazard, so the grade rests on the combined consensus: derm C (H315/H319), env F (H400/H410). Seventh Generation discloses it as the bluestone water mineralizer in its disinfecting cleaner (<0.1%).",
+  "s": "Copper(II) salt (CAS 7758-99-8). Skin and eye irritant; very toxic to aquatic life."
+ },
+ "Citronella Oil": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named as a fragrance component of Seventh Generation Disinfecting Multi-Surface Cleaner (Cymbopogon nardus, CAS 8000-29-1). UVCB essential oil; no discrete PubChem CID to grade against. Its named allergens (citral, geraniol) are carried on their own graded keys. Unclassified by policy.",
+  "s": "Essential oil from Cymbopogon nardus (CAS 8000-29-1). UVCB; not yet graded against GHS."
+ },
+ "Lemongrass Oil": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named as a fragrance component of Seventh Generation Disinfecting Multi-Surface Cleaner (Cymbopogon schoenanthus, CAS 8007-02-1). UVCB essential oil; no discrete PubChem CID to grade against. Its named allergens (citral, geraniol) are carried on their own graded keys. Unclassified by policy.",
+  "s": "Essential oil from Cymbopogon schoenanthus (CAS 8007-02-1). UVCB; not yet graded against GHS."
+ },
+ "PPG-26-Buteth-26": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the P&G SmartLabel disclosure for Swiffer Sweeper Wet cloths (polyoxypropylene/polyoxyethylene butyl ether, generic CAS 9038-95-3 class). Polymer family; PubChem PUG REST returns no CID for the name. Unclassified by policy.",
+  "s": "Polymeric PPG/PEG butyl ether surfactant. Not yet graded against GHS."
+ },
+ "PEG Hydrogenated Castor Oil": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Named on the P&G SmartLabel disclosure for Swiffer Sweeper Wet cloths with no ethoxylation number given (ethoxylated hydrogenated castor oil, CAS 61788-85-0 class). The DB already carries the specific PEG-40 Castor Oil and PEG-60 Hydrogenated Castor Oil keys; this key keeps the label's generic spelling rather than guessing a chain length. Polymer family, unclassified by policy.",
+  "s": "Ethoxylated hydrogenated castor oil, chain length unspecified on the label. Not yet graded against GHS."
+ },
+ "Polypropylene-Polyester-Cellulose Sheet": {
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Wet-wipe substrate (polypropylene/polyester/cellulose nonwoven) named first on the P&G SmartLabel disclosure for Swiffer Sweeper Wet cloths. Physical article, not a chemical; no hazard grading applicable. Polyester Sheet and Norwex Cloth precedent.",
+  "s": "Physical article, not a chemical"
  }
 }
