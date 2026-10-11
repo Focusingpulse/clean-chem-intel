@@ -7139,5 +7139,111 @@
   "note": "Minted 2026-10-11 from a manufacturer disclosure or a manufacturer's own product page and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
   "s": "Eucalyptus Globulus Leaf Extract. Listed in the manufacturer disclosure; not yet graded against GHS.",
   "added": "2026-10-11"
+ },
+ "Acetophenone": {
+  "s": "Acetophenone (CAS 98-86-2); a fragrance component (hypnotic/cherry note).",
+  "ev": "High",
+  "g": "H319,H302",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Named on Zep Inc.'s own California SB-258 disclosure for Grout Cleaner & Brightener as 'Acetophenone' (CAS 98-86-2, function 'Fragrance'). Graded from PubChem GHS (CID 7410, returned title 'Acetophenone'; the name was confirmed against the CAS before the record was accepted). Headline ECHA C&L notifier consensus: H302 (harmful if swallowed) >99.9% and H319 (serious eye irritation) 99.9% -> derm C. H360 (may damage fertility or the unborn child) and H361 (suspected of damaging fertility or the unborn child) are listed without a notifier consensus percentage, so under the >=40% rule they are recorded here but do not drive a grade -- the same treatment the DB gives Potassium Iodide's H360/H362. The sub-consensus reproductive signal is flagged rather than graded."
+ },
+ "Acrylic polymer emulsion": {
+  "s": "Acrylic polymer emulsion; a thickener. Composition not specified on the disclosure.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on J.A. Wright's own published ingredient table for Wright's Silver Cream as 'Acrylic polymer emulsion' (function 'Thickener') with the CAS number WITHHELD by the maker. No CAS, no discrete identity and no PubChem CID, so no classification is possible. Recorded Not Classified rather than guessed, the same way the DB carries other identity-withheld constituents (Silicone Emulsion, Glycol Ether)."
+ },
+ "Alcohols, C10-16": {
+  "s": "C10-16 linear alcohol (CAS 67762-41-8); a defoamer/surfactant co-component.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Summit Brands' own SDS composition section for Glisten Disposer Care as 'Alcohols, C10-16' (CAS 67762-41-8) at 0.1-1% by weight. PubChem PUG REST returns 404 for both the name and the CAS number: this is a UVCB (a straight-chain alcohol cut whose composition varies with the feedstock), so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed."
+ },
+ "Anhydrous aluminum silicate": {
+  "s": "Anhydrous aluminium silicate (CAS 66402-68-4); a calcined-clay polishing abrasive.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on J.A. Wright's own published ingredient table for Wright's Silver Cream as 'Anhydrous aluminum silicate' (CAS 66402-68-4, function 'Polishing agent'). PubChem PUG REST returns 404 for both the name and the CAS number -- no discrete CID resolves for this mineral -- so no GHS classification is available. Recorded Not Classified rather than guessed, the same way the DB carries Kaolin and other mineral keys. Distinct from the DB's Kaolin key (hydrated aluminium silicate, CAS 1332-58-7): this is the anhydrous (calcined) form."
+ },
+ "C9-11 Pareth-3": {
+  "s": "C9-11 alcohol ethoxylate (CAS 68439-46-3); the nonionic emulsifier/surfactant in an acidic grout cleaner.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Zep Inc.'s own California SB-258 disclosure for Grout Cleaner & Brightener as 'C9-11 Pareth-3 (ethoxylated C9-11 alcohols)' (CAS 68439-46-3, function 'Emulsifier'). PubChem PUG REST returns 404 for both the name and the CAS number: this is a UVCB (an alcohol-ethoxylate cut whose ethoxylate number and chain distribution vary), so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed. See the DB's 'Alcohol Ethoxylate' regulatory entry for the class-level EU/US story."
+ },
+ "Diethyl Phthalate": {
+  "s": "Diethyl phthalate (CAS 84-66-2); a fragrance solvent/carrier and a phthalate.",
+  "ev": "Medium",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Zep Inc.'s own California SB-258 disclosure for Grout Cleaner & Brightener as 'Diethyl Phthalate' (CAS 84-66-2, function 'Fragrance'). PubChem PUG REST resolves the CAS to CID 6781, returned title 'Diethyl Phthalate' -- the title was confirmed before the record was accepted. The headline ECHA C&L block reports 'not meeting GHS hazard criteria' by 1710 of 1769 companies, so no consensus code reaches the 40% house bar and no dimension grade is minted. Secondary notifier blocks carry H315, H317 (skin sensitizer), H320, H335, H336 and H401 without a consensus percentage; they are recorded here for auditability but do not drive a grade. Recorded Not Classified rather than graded. NOTE for the sifter lane: DEP is a phthalate, and its regulatory concern (endocrine activity, the EU's phthalate restrictions) is a non-GHS matter that this grade does not capture -- the same gap the DB already flags for the glycol-ether class."
+ },
+ "Iron oxides": {
+  "s": "Iron(III) oxide (CAS 1309-37-1); the red/pink colorant in metal polishes.",
+  "ev": "Medium",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on J.A. Wright's own published ingredient table for Wright's Silver Cream as 'Iron oxides' (CAS 1309-37-1, function 'Colorant'). PubChem PUG REST resolves the CAS to CID 518696, returned title 'Iron oxide (Fe2O3)' -- the title was confirmed before the record was accepted. The headline (largest company-count) ECHA C&L block reports only H319 (18.5%, serious eye irritation) and H411 (12%, aquatic toxicity), BOTH below the 40% house bar, so no dimension grade is minted. Secondary notifier blocks carry H315, H318, H335, H370 and H372 without a consensus percentage; under the strict >=40% rule they are recorded here for auditability but do not drive a grade. Recorded Not Classified with the sub-consensus codes stated rather than graded."
+ },
+ "Malic Acid": {
+  "s": "Fruit acid (CAS 6915-15-7); the acidulant that does the cleaning in a bleach-alternative foaming disposer cleaner.",
+  "ev": "High",
+  "g": "H319,H315",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 525, returned title 'Malic Acid'; the name was confirmed against CAS 6915-15-7 before the record was accepted). Headline ECHA C&L notifier consensus: H319 (serious eye irritation) 89.2% and H315 (skin irritation) 74.2%, both >=40% -> derm C by house precedent (Citric Acid, Sodium Xylenesulfonate). H318 (serious eye damage) sits at 10.5% and H302 (harmful if swallowed) at 10.5%, both below the 40% bar. Disclosed by Summit Brands for Glisten Disposer Care at 15-40% by weight."
+ },
+ "Quaternary Ammonium Compounds": {
+  "s": "Coco-alkyl bis(hydroxyethyl)methyl, ethoxylated, quaternary ammonium chlorides (CAS 61791-10-4); the cleaning agent.",
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Named on Zep Inc.'s own California SB-258 disclosure for Grout Cleaner & Brightener as 'Quaternary ammonium compounds, coco alkylbis(hydroxyethyl)methyl, ethoxylated, chlorides' (CAS 61791-10-4, function 'Cleaning Agent'). PubChem PUG REST returns 404 for both the name and the CAS number: this is a UVCB (a mixture of ethoxylated quaternary ammonium homologues keyed to the coco cut), so no discrete CID resolves and no GHS classification is available. Recorded Not Classified rather than guessed. The DB carries a separate class-level 'Quaternary Ammonium' regulatory entry; this key is kept distinct because the label names a specific CAS."
+ },
+ "Sodium Bisulfate": {
+  "s": "Sodium acid sulfate (CAS 7681-38-1); the acid pH adjuster in coffee-maker cleaning tablets.",
+  "ev": "High",
+  "g": "H318",
+  "gr": {
+   "derm": "D"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 516919, returned title 'Sodium Bisulfate'; the name was confirmed against CAS 7681-38-1 before the record was accepted). Headline ECHA C&L notifier consensus: H318 (causes serious eye damage) 99.6% -> derm D. Disclosed by Whirlpool Corporation for affresh Coffee Maker Cleaner at 30-40% by weight; the product is registered with the US EPA Safer Choice Program, which is why every component is listed on the SDS."
+ },
+ "Urea Hydrochloride": {
+  "s": "Urea hydrochloride (CAS 506-89-8); the acid that dissolves grout haze and mineral film.",
+  "ev": "Medium",
+  "g": "H335,H319,H315,H290",
+  "gr": {
+   "derm": "D",
+   "resp": "C"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": "Graded from PubChem GHS (CID 101721, returned title 'Urea hydrochloride'; the name was confirmed against CAS 506-89-8 before the record was accepted). Headline ECHA C&L notifier consensus: H335 (respiratory irritation) 81%, H315 (skin irritation) 52.4%, H290 (may be corrosive to metals) 47.6% and H319 (serious eye irritation) 42.9%, all >=40%. H314 (severe skin burns) sits at 38.1% -- just below the 40% bar -- but maps to derm D under the >=10% corrosivity precedent, so derm lands at D rather than F. Disclosed by Zep Inc. for Grout Cleaner & Brightener at 10-20% by weight."
  }
 }
