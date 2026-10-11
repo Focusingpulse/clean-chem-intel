@@ -120,6 +120,15 @@
     "reason": "Contact allergy burden from undisclosed fragrance; endocrine concerns over phthalates. US law treats fragrance as a trade secret — no allergen labeling required.",
     "confidence": "High",
     "src": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"
+   },
+   {
+    "region": "eu",
+    "status": "restricted",
+    "since": "2023",
+    "rule": "EU Cosmetics Reg. (EU) 2023/1545 (in force 16 August 2023) expanded the mandatory on-pack fragrance-allergen disclosure list from 24/26 substances to more than 80, at thresholds of 0.001% in leave-on and 0.01% in rinse-off products; prehaptens and prohaptens that oxidise or bioactivate into known contact allergens are treated as allergens. New products must comply from 31 July 2026; products on the market before that date may remain until 31 July 2028.",
+    "reason": "SCCS identified additional fragrance allergens with a potential risk to human health; the 2005 list of 26 was incomplete. US law still treats fragrance as a trade secret with no allergen labelling, so the same product carries a longer disclosure in the EU than in the US.",
+    "confidence": "High",
+    "src": "https://eur-lex.europa.eu/eli/reg/2023/1545/oj/eng"
    }
   ],
   "Limonene": [
