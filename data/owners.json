@@ -46,7 +46,8 @@
    "ev": "reported",
    "src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
    "brands": [
-    "Seventh Generation"
+    "Seventh Generation",
+    "Dove"
    ]
   },
   "Procter & Gamble": {
@@ -937,6 +938,15 @@
    "src": "https://weiman.com/",
    "brands": [
     "Weiman"
+   ]
+  },
+  "Illinois Tool Works Inc.": {
+   "type": "public company",
+   "detail": "Illinois Tool Works Inc. (ITW), Glenview, IL. Spray Nine and Permatex are ITW brands; spraynine.com's own footer states the trademark ownership and names Permatex as a division of ITW. Permatex hosts the California SB-258 ingredient disclosure for the Spray Nine line at permatex.com/tech-documents/ca-right-to-know-act/.",
+   "ev": "verified",
+   "src": "https://www.spraynine.com/",
+   "brands": [
+    "Spray Nine"
    ]
   }
  },

@@ -7049,5 +7049,95 @@
    "derm"
   ],
   "note": "Graded from PubChem GHS (CID 12893660, returned title 'Carbonic acid, ammonium zinc salt (2:2:1)'; the CID's own synonym list carries 'zinc ammonium carbonate' verbatim, so the identity was confirmed before the record was accepted -- CAS 40861-29-8). The headline block reports H302 (harmful if swallowed) 65.8%, H314 (causes severe skin burns and eye damage) 81% and H318 (serious eye damage) 81% notifier consensus; H314 sets derm F. Named on Rejuvenate's own All Floors Restorer ingredient list. A zinc-ammonium complex salt used as a cross-linking/neutralising agent in acrylic floor films; it is the only substance on that list whose headline consensus is a corrosive skin classification."
+ },
+ "Laureth-6": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-11 from a manufacturer disclosure or a manufacturer's own product page and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Laureth-6. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-11"
+ },
+ "Sodium Carboxymethyl Inulin": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-11 from a manufacturer disclosure or a manufacturer's own product page and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Sodium Carboxymethyl Inulin. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-11"
+ },
+ "Pectinase Enzyme": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-11 from a manufacturer disclosure or a manufacturer's own product page and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Pectinase Enzyme. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-11"
+ },
+ "Nonionic Polyester": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-11 from a manufacturer disclosure or a manufacturer's own product page and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Nonionic Polyester. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-11"
+ },
+ "Fluorescent Brightener 71": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-11 from a manufacturer disclosure or a manufacturer's own product page and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Fluorescent Brightener 71. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-11"
+ },
+ "Alkyl Dimethyl Benzyl Ammonium Chlorides": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-11 from a manufacturer disclosure or a manufacturer's own product page and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Alkyl Dimethyl Benzyl Ammonium Chlorides. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-11"
+ },
+ "Anisyl Alcohol": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-11 from a manufacturer disclosure or a manufacturer's own product page and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Anisyl Alcohol. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-11"
+ },
+ "Sodium Lauroyl Glycinate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-11 from a manufacturer disclosure or a manufacturer's own product page and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Sodium Lauroyl Glycinate. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-11"
+ },
+ "Hydroxystearic Acid": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-11 from a manufacturer disclosure or a manufacturer's own product page and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Hydroxystearic Acid. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-11"
+ },
+ "Eucalyptus Globulus Leaf Extract": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-11 from a manufacturer disclosure or a manufacturer's own product page and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Eucalyptus Globulus Leaf Extract. Listed in the manufacturer disclosure; not yet graded against GHS.",
+  "added": "2026-10-11"
  }
 }
