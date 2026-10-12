@@ -7353,5 +7353,95 @@
   "impacts": [],
   "note": "Wet-wipe substrate (polypropylene/polyester/cellulose nonwoven) named first on the P&G SmartLabel disclosure for Swiffer Sweeper Wet cloths. Physical article, not a chemical; no hazard grading applicable. Polyester Sheet and Norwex Cloth precedent.",
   "s": "Physical article, not a chemical"
+ },
+ "Thymolphthalein": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-12 from a manufacturer's own California SB-258 disclosure form and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Thymolphthalein. Named in a manufacturer California SB-258 disclosure; not yet graded.",
+  "added": "2026-10-12"
+ },
+ "Dimethylamino Methylpropanol": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-12 from a manufacturer's own California SB-258 disclosure form and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Dimethylamino Methylpropanol. Named in a manufacturer California SB-258 disclosure; not yet graded.",
+  "added": "2026-10-12"
+ },
+ "C10-12 Alcohol Ethoxylates": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-12 from a manufacturer's own California SB-258 disclosure form and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "C10-12 Alcohol Ethoxylates. Named in a manufacturer California SB-258 disclosure; not yet graded.",
+  "added": "2026-10-12"
+ },
+ "Octyl Dimethyl Amine Oxide": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-12 from a manufacturer's own California SB-258 disclosure form and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Octyl Dimethyl Amine Oxide. Named in a manufacturer California SB-258 disclosure; not yet graded.",
+  "added": "2026-10-12"
+ },
+ "Undeceth-7": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-12 from a manufacturer's own California SB-258 disclosure form and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Undeceth-7. Named in a manufacturer California SB-258 disclosure; not yet graded.",
+  "added": "2026-10-12"
+ },
+ "Alkyl C12-18 Dimethyl Ethylbenzyl Ammonium Chloride": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-12 from a manufacturer's own California SB-258 disclosure form and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Alkyl C12-18 Dimethyl Ethylbenzyl Ammonium Chloride. Named in a manufacturer California SB-258 disclosure; not yet graded.",
+  "added": "2026-10-12"
+ },
+ "Cocamidopropyl Dimethylamine": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-12 from a manufacturer's own California SB-258 disclosure form and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Cocamidopropyl Dimethylamine. Named in a manufacturer California SB-258 disclosure; not yet graded.",
+  "added": "2026-10-12"
+ },
+ "Solvent Yellow 72": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-12 from a manufacturer's own California SB-258 disclosure form and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Solvent Yellow 72. Named in a manufacturer California SB-258 disclosure; not yet graded.",
+  "added": "2026-10-12"
+ },
+ "Solvent Red 164": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-12 from a manufacturer's own California SB-258 disclosure form and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Solvent Red 164. Named in a manufacturer California SB-258 disclosure; not yet graded.",
+  "added": "2026-10-12"
+ },
+ "Modified Acrylic Copolymer": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-12 from a manufacturer's own California SB-258 disclosure form and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Modified Acrylic Copolymer. Named in a manufacturer California SB-258 disclosure; not yet graded.",
+  "added": "2026-10-12"
  }
 }
