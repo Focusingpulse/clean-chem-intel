@@ -4,7 +4,7 @@ description: Live database counts for Clean Chem Intel — regenerated from data
 
 # Clean Chem Intel — Live Counts
 
-_Updated: 2026-10-12 04:37 UTC_
+_Updated: 2026-10-12 10:34 UTC_
 
 | Metric | Count |
 |---|---:|
