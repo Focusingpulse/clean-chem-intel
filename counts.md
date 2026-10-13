@@ -4,15 +4,15 @@ description: Live database counts for Clean Chem Intel — regenerated from data
 
 # Clean Chem Intel — Live Counts
 
-_Updated: 2026-10-12 11:06 UTC_
+_Updated: 2026-10-13 04:37 UTC_
 
 | Metric | Count |
 |---|---:|
-| **Products** | 390 |
+| **Products** | 398 |
 | — Graded (safe set) | 76 |
-| — Ungraded (safe null) | 314 |
+| — Ungraded (safe null) | 322 |
 | — Heritage | 29 |
-| **Ingredients** | 737 |
+| **Ingredients** | 743 |
 | **Regulatory entries** | 29 |
 
 ## Sources of products
