@@ -4694,7 +4694,8 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "not_reviewed",
-  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated."
+  "exposure_basis": "searched for a category penetration or brand-share figure covering this product; none found in the open sources. Left as a research gap rather than estimated.",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (sodium metasilicate H314 corrosive; High evidence). Sodium percarbonate derm D (H318) corroborates; sodium polycarboxylate is Not Classified."
  },
  {
   "name": "Woolite Delicates Laundry Detergent",
@@ -16131,7 +16132,8 @@
   "conc_src": null,
   "conc_ev": "untested",
   "grade_as_sold": null,
-  "grade_as_sold_src": null
+  "grade_as_sold_src": null,
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (hydrochloric acid H314 corrosive; High evidence). Urea hydrochloride derm D and butoxyethanol organ D corroborate the acid-cleaner hazard class; quaternary ammonium compounds and C9-11 pareth-3 are Not Classified placeholders and limit confidence rather than drive the grade."
  },
  {
   "name": "OxiClean MaxForce Laundry Stain Remover Spray",
@@ -17136,7 +17138,8 @@
   "added": "2026-10-13",
   "owner_ev": "verified",
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
-  "updated": "2026-10-13"
+  "updated": "2026-10-13",
+  "grade_note": "Sifter grade C — worst credible dimension: derm C (lactic acid H315 skin irritant at High evidence). Lauryl glucoside is Not Classified; the undisclosed fragrance dims (Low evidence) sit below the Medium bar and limit confidence rather than drive the grade."
  },
  {
   "name": "Scrubbing Bubbles Mega Shower Foamer Aerosol",
@@ -17184,7 +17187,8 @@
   "added": "2026-10-13",
   "owner_ev": "verified",
   "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
-  "updated": "2026-10-13"
+  "updated": "2026-10-13",
+  "grade_note": "Sifter grade F — worst credible dimension: derm F (sodium hydroxide H314 corrosive; High evidence). Isobutane is a physical-hazard propellant only; the undisclosed fragrance dims (Low evidence) sit below the Medium bar and limit confidence rather than drive the grade."
  },
  {
   "name": "Lestoil Heavy Duty Multi-Purpose Cleaner",
@@ -17312,7 +17316,8 @@
   "conc_src": null,
   "conc_ev": "untested",
   "grade_as_sold": null,
-  "grade_as_sold_src": null
+  "grade_as_sold_src": null,
+  "grade_note": "Sifter grade C — worst credible dimension: derm C (calcium chloride H319 serious eye irritation; High evidence). Sodium chloride env C and potassium chloride (Not Classified) sit at or below the same tier."
  },
  {
   "name": "Ozium Air Sanitizer Spray, Original",

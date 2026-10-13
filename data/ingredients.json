@@ -7523,17 +7523,21 @@
   "ev": "High",
   "g": "H373,H332,H304,H225",
   "gr": {
-   "derm": "C",
    "resp": "C",
    "organ": "C"
   },
   "impacts": [
-   "derm",
    "resp"
   ],
-  "note": "Graded from PubChem GHS (CID 7500, returned title 'Ethylbenzene'; the returned title was confirmed against the intended substance before the record was accepted). Headline ECHA C&L notifier consensus: H225 (highly flammable) >99.9%, H332 (harmful if inhaled) 99.9% -> resp C; the EU harmonized classification adds H304 (aspiration hazard) and H373 (organ damage on prolonged or repeated exposure) -> organ C. H304 (17.3%) and H373 (17.2%) sit below the 40% notifier bar on their own and are carried here from the harmonized classification, which is stated in the note rather than silently folded in. Disclosed by Clorox on its California SB-258 SmartLabel page for Lestoil as 'Ethylbenzene' and flagged there with the SB-258 designated-list marker.",
+  "note": "Graded from PubChem GHS (CID 7500, returned title 'Ethylbenzene'; the returned title was confirmed against the intended substance before the record was accepted). Headline ECHA C&L notifier consensus: H225 (highly flammable) >99.9%, H332 (harmful if inhaled) 99.9% -> resp C; the EU harmonized classification adds H304 (aspiration hazard) and H373 (organ damage on prolonged or repeated exposure) -> organ C. H304 (17.3%) and H373 (17.2%) sit below the 40% notifier bar on their own and are carried here from the harmonized classification, which is stated in the note rather than silently folded in. Disclosed by Clorox on its California SB-258 SmartLabel page for Lestoil as 'Ethylbenzene' and flagged there with the SB-258 designated-list marker. Corrected 2026-10-13 Sifter verify run: derm C withdrawn -- no skin-irritation code (H315/H316/H317) appears in the ECHA C&L aggregate consensus for CID 7500 (headline: H225 >99.9%, H332 99.9%, H304 17.3%, H373 17.2%) nor in the EU harmonized classification (H225/H332/H304/H373); the original grading note cited no dermal basis. gr_ruled:[derm] per docs/decisions.md 2026-09-23 rule; resp C (H332 99.9%) and organ C (H373 harmonized) unchanged. Benzotriazole 2026-09-24 precedent.",
   "s": "Aromatic solvent. Flammable, harmful if inhaled, aspiration hazard, organ toxicant on repeated exposure.",
-  "added": "2026-10-13"
+  "added": "2026-10-13",
+  "gr_ruled": [
+   "derm"
+  ],
+  "reclassified": [
+   "2026-10-13"
+  ]
  },
  "Light Aromatic Hydrocarbons": {
   "ev": "Low",
