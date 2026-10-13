@@ -953,6 +953,15 @@
    "brands": [
     "Spray Nine"
    ]
+  },
+  "Wet & Forget USA Ltd.": {
+   "type": "private",
+   "detail": "US arm of the New Zealand Wet & Forget brand. PO Box 5805, Elgin, IL 60121 (from the manufacturer's own SDS/ingredients page). The company is named on the EPA-accepted label for its registered outdoor product.",
+   "ev": "verified",
+   "src": "https://www3.epa.gov/pesticides/chem_search/ppls/084115-00001-20120823.pdf",
+   "brands": [
+    "Wet & Forget"
+   ]
   }
  },
  "independents": {

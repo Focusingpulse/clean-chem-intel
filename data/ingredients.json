@@ -7443,5 +7443,53 @@
   "note": "Minted 2026-10-12 from a manufacturer's own California SB-258 disclosure form and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
   "s": "Modified Acrylic Copolymer. Named in a manufacturer California SB-258 disclosure; not yet graded.",
   "added": "2026-10-12"
+ },
+ "Sodium Molybdate Dihydrate": {
+  "s": "Sodium Molybdate Dihydrate (CAS 7631-95-0). Named on a Reckitt (Lysol) California SB-258 ingredient disclosure, read 2026-10-13.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-13 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "C6-10 Alcohols Ethoxylated Propoxylated": {
+  "s": "C6-10 Alcohols Ethoxylated Propoxylated (CAS 68987-81-5). Named on a Reckitt (Lysol) California SB-258 ingredient disclosure, read 2026-10-13.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-13 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. Not yet graded against GHS."
+ },
+ "PVP/MA Copolymer": {
+  "s": "PVP/MA Copolymer (CAS 30581-59-0). Named on a Reckitt (Lysol) California SB-258 ingredient disclosure, read 2026-10-13.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-13 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. Not yet graded against GHS."
+ },
+ "Alcohols, C10, Ethoxylated": {
+  "s": "Alcohols, C10, Ethoxylated (CAS 160875-66-1). Named on a Reckitt (Lysol) California SB-258 ingredient disclosure, read 2026-10-13.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-13 night-shift harvest. Kept separate from the C9-11 and C10-16 ethoxylate keys already in the registry because the disclosed CAS is C10-specific; the registry stores no CAS per ingredient, so the chain length is carried in the key name."
+ },
+ "Polyoxyethylene Tallow Ethylmonium Ethosulfate": {
+  "s": "Polyoxyethylene Tallow Ethylmonium Ethosulfate. Named on Wet & Forget's own SDS/ingredients page (California Cleaning Product Right to Know Act), read 2026-10-13.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-13 night-shift harvest from the manufacturer's own published ingredient table. Not yet graded against GHS."
+ },
+ "Trisodium NTA": {
+  "s": "Trisodium NTA. Named on Wet & Forget's own SDS/ingredients page (California Cleaning Product Right to Know Act), read 2026-10-13.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-13 night-shift harvest from the manufacturer's own published ingredient table. Not yet graded against GHS. The manufacturer's table lists it as a technically unavoidable byproduct not intentionally added, so it is recorded as disclosed rather than as an intentional ingredient."
  }
 }
