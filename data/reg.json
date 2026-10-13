@@ -569,6 +569,15 @@
    "reason": "1,4-dioxane is a common contaminant in ethoxylated surfactants (SLES, etc.) used in dish soaps and detergents. Probable human carcinogen (IARC 2B). EU considering restriction; US has state-level action but no federal ban.",
    "confidence": "Medium",
    "src": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=&chapter=13.&division=104.&lawCode=HSC&part=3.&title="
+  },
+  {
+   "name": "Air freshener VOCs (CARB)",
+   "region": "us",
+   "status": "enforced",
+   "since": "2023",
+   "rule": "California's consumer-products regulation caps air fresheners in the 'double phase aerosol' category at 20 percent VOC by weight (17 CCR 94509(a)). CARB settled with Niteo Products in 2023 over Ozium Air Sanitizer exceeding that limit -- a $160,000 penalty premised on 13.32 tons of excess VOC emissions, with the company modifying the product to comply. There is no federal equivalent: the US caps VOCs in consumer products only through state rules, of which California's is the strictest and the most actively enforced.",
+   "reason": "Aerosol air fresheners and sanitizers are mostly propellant and alcohol by weight -- Ozium's own SDS is 30-50% isopropanol plus 20-30% liquefied petroleum gas -- so the VOC cap is the one rule that directly limits that load, and it is enforced against the product rather than against a named ingredient. Carried because the corpus now holds the product the action was taken against.",
+   "src": "https://ww2.arb.ca.gov/sites/default/files/2023-12/niteo_products_llc_sa.pdf"
   }
  ]
 }

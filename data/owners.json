@@ -139,7 +139,8 @@
    "brands": [
     "Clorox",
     "Burt's Bees",
-    "Liquid-Plumr"
+    "Liquid-Plumr",
+    "Lestoil"
    ]
   },
   "Country Life LLC": {
@@ -767,7 +768,8 @@
    "ev": "reported",
    "src": "https://highlander-partners.com/news-posts/niteo-products-a-portfolio-company-of-highlander-partners-acquires-folex/",
    "brands": [
-    "Folex"
+    "Folex",
+    "Ozium"
    ]
   },
   "Consumer Product Partners, LLC": {
@@ -961,6 +963,15 @@
    "src": "https://www3.epa.gov/pesticides/chem_search/ppls/084115-00001-20120823.pdf",
    "brands": [
     "Wet & Forget"
+   ]
+  },
+  "W.M. Barr": {
+   "type": "private, employee-owned (ESOP)",
+   "detail": "Memphis, Tennessee. Founded 1946 by William M. Barr and sold to its employees in 1996; the company's own 'About WM Barr' page names DampRid as one of its brands and describes it as the largest national manufacturer of solvents, removers, fuels, and cleaning and surface prep products. The maker's own SDS for DampRid names W. M. Barr, 2105 Channel Avenue, Memphis, TN as the company. Recorded at verified: the evidence is the maker's own corporate and SDS pages, not a register or a corporate filing.",
+   "ev": "verified",
+   "src": "https://damprid.com/about-wm-barr/",
+   "brands": [
+    "DampRid"
    ]
   }
  },

@@ -7491,5 +7491,146 @@
   "gr": {},
   "impacts": [],
   "note": "Added by the 2026-10-13 night-shift harvest from the manufacturer's own published ingredient table. Not yet graded against GHS. The manufacturer's table lists it as a technically unavoidable byproduct not intentionally added, so it is recorded as disclosed rather than as an intentional ingredient."
+ },
+ "1,1-Difluoroethane": {
+  "ev": "High",
+  "g": "H280,H220",
+  "gr": {},
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 6368, returned title '1,1-Difluoroethane'; the returned title was confirmed against the intended substance before the record was accepted). ECHA C&L notifier consensus: H220 (extremely flammable gas) 95% -> physical hazard only; H280 (contains gas under pressure) 77.9%. No health dimension grade applies to the propellant itself. Disclosed by Niteo Products in the SDS composition section for Ozium Air Sanitizer Spray Original (>=5% to <10%).",
+  "s": "HFC-152a aerosol propellant. Extremely flammable gas; no health hazard grade.",
+  "added": "2026-10-13"
+ },
+ "Caramel": {
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Colorant. PubChem's name lookup for 'Caramel' resolves to CID 61634, whose returned title is '3,5-Dimethyl-1,2-cyclopentanedione' -- a DIFFERENT compound (a flavour substance), not caramel colour. That lookup was rejected rather than accepted, which is exactly the failure mode the house rule warns about. Caramel colour is a UVCB (CAS 8028-89-5) and PubChem PUG REST returns 404 for the CAS, so there is no discrete record to grade and no grade is assigned. Recorded unclassified rather than guessed. Disclosed by Clorox on its California SB-258 SmartLabel page for Lestoil as 'Caramel'.",
+  "s": "Caramel colourant (UVCB). No discrete PubChem record; not graded.",
+  "added": "2026-10-13"
+ },
+ "Cymbopogon Schoenanthus Oil": {
+  "ev": "Extrapolated",
+  "g": "Extrapolated",
+  "gr": {},
+  "impacts": [],
+  "note": "Lemongrass oil (CAS 8007-02-1). PubChem PUG REST returns 404 for the botanical name, the INCI name and the CAS, so there is no direct GHS record; the entry is extrapolated from the essential-oil class in this database, which carries skin-sensitization grades (H315/H317, derm C-D) across its members, not graded directly. Flagged for verification rather than assigned a sourced grade. Disclosed by Niteo Products in the SDS composition section for Ozium Air Sanitizer Spray Original (0.1-1%).",
+  "s": "Lemongrass oil (essential-oil class). No direct PubChem record; extrapolated, not graded directly.",
+  "added": "2026-10-13"
+ },
+ "Ethylbenzene": {
+  "ev": "High",
+  "g": "H373,H332,H304,H225",
+  "gr": {
+   "derm": "C",
+   "resp": "C",
+   "organ": "C"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": "Graded from PubChem GHS (CID 7500, returned title 'Ethylbenzene'; the returned title was confirmed against the intended substance before the record was accepted). Headline ECHA C&L notifier consensus: H225 (highly flammable) >99.9%, H332 (harmful if inhaled) 99.9% -> resp C; the EU harmonized classification adds H304 (aspiration hazard) and H373 (organ damage on prolonged or repeated exposure) -> organ C. H304 (17.3%) and H373 (17.2%) sit below the 40% notifier bar on their own and are carried here from the harmonized classification, which is stated in the note rather than silently folded in. Disclosed by Clorox on its California SB-258 SmartLabel page for Lestoil as 'Ethylbenzene' and flagged there with the SB-258 designated-list marker.",
+  "s": "Aromatic solvent. Flammable, harmful if inhaled, aspiration hazard, organ toxicant on repeated exposure.",
+  "added": "2026-10-13"
+ },
+ "Light Aromatic Hydrocarbons": {
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "UVCB petroleum distillate (the Stoddard-solvent stream, CAS 8052-41-3). PubChem PUG REST returns 404 for both the descriptive name and the CAS, so there is no discrete record to grade and no grade is assigned. Recorded unclassified per the UVCB convention already used here for 'Petroleum Distillates, Hydrotreated Light' and 'Distillates (petroleum), hydrotreated middle' -- this is NOT a finding that the substance is non-hazardous. The maker's own SDS for this product lists it as one of the formula's hazardous components (3-7% by weight). Disclosed by Clorox on its California SB-258 SmartLabel page for Lestoil as 'Light Aromatic Hydrocarbons'.",
+  "s": "Petroleum distillate (Stoddard-solvent type). No discrete PubChem record; not graded.",
+  "added": "2026-10-13"
+ },
+ "Naphthalene": {
+  "ev": "High",
+  "g": "H410,H400,H351,H302",
+  "gr": {
+   "canc": "C",
+   "env": "F"
+  },
+  "impacts": [
+   "canc",
+   "aqua"
+  ],
+  "note": "Graded from PubChem GHS (CID 931, returned title 'Naphthalene'; the returned title was confirmed against the intended substance before the record was accepted). ECHA C&L notifier consensus and the EU harmonized classification agree: H302 (harmful if swallowed) 99.8%, H351 (suspected of causing cancer) 98.9% -> canc C, H400 (very toxic to aquatic life) 99.6% -> env F, H410 (very toxic to aquatic life with long lasting effects) 99.9% -> env F. H228 (flammable solid, 38.8%) sits below the 40% house bar and is not graded. Disclosed by Clorox on its California SB-258 SmartLabel page for Lestoil as 'Naphthalene' and flagged there with the SB-258 designated-list marker.",
+  "s": "Mothball chemistry. Suspected carcinogen; very toxic to aquatic life.",
+  "added": "2026-10-13"
+ },
+ "Nonane": {
+  "ev": "High",
+  "g": "H336,H319,H315,H304,H226",
+  "gr": {
+   "derm": "C",
+   "resp": "C"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": "Graded from PubChem GHS (CID 8141, returned title 'Nonane'; the returned title was confirmed against the intended substance before the record was accepted). ECHA C&L notifier consensus: H226 (flammable liquid) 65.8%, H304 (may be fatal if swallowed and enters airways) 65.3%, H315 (skin irritation) 55% -> derm C, H319 (serious eye irritation) 53.4% -> derm C, H336 (may cause drowsiness or dizziness) 55.3% -> resp C. The aquatic codes sit below the house bar (H410 31%, H400 22.2%, H411 13.4%) and are not graded. Disclosed by Clorox on its California SB-258 SmartLabel page for Lestoil as 'Nonane'.",
+  "s": "Straight-chain C9 alkane; flammable, aspiration hazard, skin and eye irritant, causes drowsiness.",
+  "added": "2026-10-13"
+ },
+ "Sodium Linoleate": {
+  "ev": "High",
+  "g": "H315",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "Graded from PubChem GHS (CID 23676150, returned title 'Sodium Linoleate'; the returned title was confirmed against the intended substance before the record was accepted). Headline ECHA C&L notifier consensus: H315 (causes skin irritation) 100% -> derm C. Disclosed by Clorox on its California SB-258 SmartLabel page for Lestoil as 'Sodium Linoleate'.",
+  "s": "Soap salt (sodium salt of linoleic acid); skin irritant.",
+  "added": "2026-10-13"
+ },
+ "Toluene": {
+  "ev": "High",
+  "g": "H373,H361,H336,H315,H304,H225",
+  "gr": {
+   "derm": "C",
+   "resp": "C",
+   "organ": "C",
+   "repro": "C"
+  },
+  "impacts": [
+   "derm",
+   "repro",
+   "resp"
+  ],
+  "note": "Graded from PubChem GHS (CID 1140, returned title 'Toluene'; the returned title was confirmed against the intended substance before the record was accepted). ECHA C&L notifier consensus and the EU harmonized classification agree: H225 (highly flammable) 98.5-100%, H304 (may be fatal if swallowed and enters airways) 99.8-100%, H315 (skin irritation) 98.5-100% -> derm C, H336 (may cause drowsiness or dizziness) 98.3-100% -> resp C, H361 (suspected of damaging fertility or the unborn child) 95.3-100% -> repro C, H373 (may cause damage to organs through prolonged or repeated exposure) 98.4-100% -> organ C. H412 (16.5%) sits below the house bar and is not graded. Disclosed by Clorox on its California SB-258 SmartLabel page for Lestoil as 'Toluene' and flagged there with the SB-258 designated-list marker.",
+  "s": "Aromatic solvent. Flammable, aspiration hazard, reproductive toxicant, organ toxicant on repeated exposure.",
+  "added": "2026-10-13"
+ },
+ "Trimethylbenzene": {
+  "ev": "Medium",
+  "g": "H319,H315,H312,H302,H226",
+  "gr": {
+   "derm": "C"
+  },
+  "impacts": [
+   "derm"
+  ],
+  "note": "The maker discloses the label term 'Trimethylbenzene' with no isomer. PubChem's name lookup for 'Trimethylbenzene' resolves to the 1,2,3-isomer (CID 10686, returned title '1,2,3-Trimethylbenzene'), which is the record graded here; the 1,2,4-isomer (CID 7247, the most common commercial isomer) was cross-checked and agrees on the irritancy codes (H315, H319). Because the grade is taken from one isomer of a mixed-isomer label term, confidence is recorded as Medium rather than High. ECHA C&L notifier consensus for CID 10686: H226 (flammable) 96.1%, H315 (skin irritation) 91.7% -> derm C, H319 (serious eye irritation) 81.5% -> derm C, H312 (harmful in contact with skin) 77.8%, H302 (harmful if swallowed) 66.4%. H335 (35.7%) and H332 (28.5%) sit below the 40% house bar and are not graded. Disclosed by Clorox on its California SB-258 SmartLabel page for Lestoil as 'Trimethylbenzene'.",
+  "s": "Mixed trimethylbenzene isomers; flammable, skin and eye irritant.",
+  "added": "2026-10-13"
+ },
+ "Trimethylpentanediol": {
+  "ev": "High",
+  "g": "H319,H335",
+  "gr": {
+   "derm": "C",
+   "resp": "C"
+  },
+  "impacts": [
+   "derm",
+   "resp"
+  ],
+  "note": "Graded from PubChem GHS (CID 8946, returned title '2,2,4-Trimethyl-1,3-pentanediol'; the returned title was confirmed against the intended substance before the record was accepted). ECHA C&L notifier consensus: H319 (serious eye irritation) 96.3% -> derm C; H335 (may cause respiratory irritation) 59.4% -> resp C. H302 (18.4%) and H315 (17.2%) sit below the 40% house bar and are not graded. Disclosed by Clorox on its California SB-258 SmartLabel page for Lestoil as 'Trimethylpentanediol'.",
+  "s": "2,2,4-Trimethyl-1,3-pentanediol; eye and respiratory irritant.",
+  "added": "2026-10-13"
  }
 }
