@@ -7636,5 +7636,61 @@
   "note": "Graded from PubChem GHS (CID 8946, returned title '2,2,4-Trimethyl-1,3-pentanediol'; the returned title was confirmed against the intended substance before the record was accepted). ECHA C&L notifier consensus: H319 (serious eye irritation) 96.3% -> derm C; H335 (may cause respiratory irritation) 59.4% -> resp C. H302 (18.4%) and H315 (17.2%) sit below the 40% house bar and are not graded. Disclosed by Clorox on its California SB-258 SmartLabel page for Lestoil as 'Trimethylpentanediol'.",
   "s": "2,2,4-Trimethyl-1,3-pentanediol; eye and respiratory irritant.",
   "added": "2026-10-13"
+ },
+ "C.I. Pigment Blue 15:1": {
+  "s": "C.I. Pigment Blue 15:1. Named on a Church & Dwight California SB-258 ingredient disclosure, read 2026-10-14.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-14 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Sodium Fatty Acid Methyl Ester Sulfonate": {
+  "s": "Sodium Fatty Acid Methyl Ester Sulfonate. Named on a Church & Dwight California SB-258 ingredient disclosure, read 2026-10-14.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-14 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "PEG-12 Dimethicone": {
+  "s": "PEG-12 Dimethicone. Named on a Church & Dwight California SB-258 ingredient disclosure, read 2026-10-14.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-14 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Polypropylene Terephthalate": {
+  "s": "Polypropylene Terephthalate. Named on a Church & Dwight California SB-258 ingredient disclosure, read 2026-10-14.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-14 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Palm Kernel Fatty Acid": {
+  "s": "Palm Kernel Fatty Acid. Named on a Church & Dwight California SB-258 ingredient disclosure, read 2026-10-14.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-14 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "EDTA": {
+  "s": "EDTA. Named on a Church & Dwight California SB-258 ingredient disclosure, read 2026-10-14.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-14 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Dicapryl/Dicaprylyl Dimonium Chloride": {
+  "s": "Dicapryl/Dicaprylyl Dimonium Chloride. Named on a Church & Dwight California SB-258 ingredient disclosure, read 2026-10-14.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-14 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
  }
 }
