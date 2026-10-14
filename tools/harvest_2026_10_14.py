@@ -133,21 +133,24 @@ PRODUCTS = [
               "4,7-Methano-1H-inden-5-ol, 3a,4,5,6,7,7a-hexahydro-, 5-acetate and verdyl acetate 2500-83-6 / 5413-60-5",
               "Butylphenyl methylpropional 80-54-6 (EU Fragrance Allergens; EU CMRs)",
               "d-Limonene 5989-27-5 (EU Fragrance Allergens)"],
-        note=("The single highest-volume absent listing in the US Amazon detergent category: 100,000 units in "
-              "July 2026, the #1 ranked ASIN in that category. An oxygen-bleach stain-remover powder. Recorded "
-              "because it is the mainstream product a household is most likely to actually own and the corpus "
-              "should carry it with the manufacturer's own filing behind it. Entered ungraded: product grading is "
-              "the Sifter lane. Note the filing names a twin, 'OxiClean Triple Action Odor Blasters Odor & Stain "
-              "Remover' (material 42018220), with an identical seven-line intentionally-added list; that twin was "
-              "not entered as a second record because the formula is identical."),
+        note=("An oxygen-bleach stain-remover powder and the top-ranked absent listing in the corpus. asinsight's "
+              "August 2026 US Amazon laundry-detergents report puts this ASIN (B01BUNHFAS) first in the category "
+              "at an estimated 100,000 monthly sales; its July 2026 detergent analysis separately puts OxiClean "
+              "second by brand at 22.5 percent of top-10 unit volume, behind Tide. Recorded because it is the "
+              "mainstream product a household is most likely to actually own and the corpus should carry it with "
+              "the manufacturer's own filing behind it. Entered ungraded: product grading is the Sifter lane. "
+              "Note the filing names a twin, 'OxiClean Triple Action Odor Blasters Odor & Stain Remover' "
+              "(material 42018220), with an identical seven-line intentionally-added list; that twin was not "
+              "entered as a second record because the formula is identical."),
         exposure=5,
         exposure_src=ASINSIGHT_DET,
         exposure_basis=("Derived, not measured. Searched for a product-level US household figure for OxiClean "
                         "Odor Blasters (the Church & Dwight filing, the brand site, and a general web search) and "
                         "found none. IndexBox's US Laundry & Home Products page states household penetration above "
-                        "98 percent. asinsight's Amazon US detergent analysis for July 2026 puts this listing at "
-                        "100,000 units, the top-ranked ASIN, and OxiClean at 22.5 percent of top-10 unit volume "
-                        "(second only to Tide). Estimate is category penetration times a leading stain-remover "
+                        "98 percent. asinsight's August 2026 US Amazon laundry-detergents report ranks this ASIN "
+                        "(B01BUNHFAS) first in the category at an estimated 100,000 monthly sales, and its July "
+                        "2026 detergent analysis puts OxiClean at 22.5 percent of top-10 unit volume (second to "
+                        "Tide at 28.2 percent). Estimate is category penetration times a leading stain-remover "
                         "share, rounded to one significant figure."),
         substitutes=[dict(name="OxiClean Triple Action Versatile Stain Remover, Free", tier="mass",
                           note=("Same brand, same shelf, same price band, and the fragrance-free member of the "
