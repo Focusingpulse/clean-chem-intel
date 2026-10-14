@@ -973,6 +973,25 @@
    "brands": [
     "DampRid"
    ]
+  },
+  "Aiken Chemical Co., Inc.": {
+   "type": "private",
+   "detail": "Aiken Chemical Co., Inc. (Greenville, South Carolina) makes the Purple Power and Clean-Rite brands; the SDS and the SB-258 disclosure both name it as the responsible party, and its customer-service contact is served from clean-rite.com. The company states on its own SDS that it performs no animal testing.",
+   "ev": "verified",
+   "src": "https://www.clean-rite.com/",
+   "brands": [
+    "Purple Power",
+    "Clean-Rite"
+   ]
+  },
+  "Citra Solv LLC": {
+   "type": "private",
+   "detail": "Citra Solv LLC makes the Citra Solv line of citrus-solvent cleaners; the maker's own product page names the company and publishes the per-ingredient disclosure used for this record. The brand is sold direct and through natural-grocery and online channels.",
+   "ev": "verified",
+   "src": "https://citrasolv.com/pages/about-us",
+   "brands": [
+    "Citra Solv"
+   ]
   }
  },
  "independents": {
