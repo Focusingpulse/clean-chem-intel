@@ -7692,5 +7692,13 @@
   "gr": {},
   "impacts": [],
   "note": "Added by the 2026-10-14 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Pentetic Acid": {
+  "s": "Pentetic Acid. Named on a Church & Dwight California SB-258 ingredient disclosure, read 2026-10-14.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-14 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
  }
 }

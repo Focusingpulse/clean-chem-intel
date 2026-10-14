@@ -92,6 +92,11 @@ ALIAS = {
     "3-Bromo-1-chloro-5, 5-dimethylimidazolidine-2,4-dione": ("1-Bromo-3-chloro-5,5-dimethylhydantoin", "126-06-7", "Cleaning agent"),
     "1,3-Dichloro-5, 5-dimethlyhydantoin": ("1,3-Dichloro-5,5-dimethylhydantoin", "118-52-5", "Cleaning agent"),
     "1,3-Dichloro-5-ethyl-5-methylimidazolidine-2,4-dione": ("1,3-Dichloro-5-ethyl-5-methylhydantoin", "89415-87-2", "Cleaning agent"),
+    "Hydrogen peroxide": ("Hydrogen Peroxide", "7722-84-1", "Cleaning agent"),
+    "Sodium lauryl sulfate (CAS 68585-47-7)": ("SODIUM C10-16 ALKYL SULFATE", "68585-47-7", "Surfactant"),
+    "C10-12 alcohol ethoxylates": ("C10-12 Alcohol Ethoxylates", "66455-15-0", "Surfactant"),
+    "Pentetic Acid": ("Pentetic Acid", "67-43-6", "Chelating agent"),
+    "Sodium hydroxide": ("Sodium Hydroxide", "1310-73-2", "pH modifier"),
 }
 
 NEW_KEY_NOTE = ("Added by the {date} night-shift harvest from a manufacturer's California Cleaning Product "
@@ -599,6 +604,49 @@ PRODUCTS = [
                                 "flow agent. This is a genuine same-job swap: sprinkle, leave, vacuum. It avoids "
                                 "the entire fragrance class, which here is 18 disclosed components and the whole "
                                 "reason the product exists."))],
+    ),
+    dict(
+        name="OxiClean Carpet Stain Remover",
+        brand="OxiClean", cat="Floor & Carpet", safe=None,
+        ings=["Water", "Hydrogen Peroxide", "SODIUM C10-16 ALKYL SULFATE", "C10-12 Alcohol Ethoxylates",
+              "Pentetic Acid", "Sodium Hydroxide", "Fragrance"],
+        slug="cleaning-products/40501230-oxiclean-carpet-area-rug-stain-remover-spray.aspx",
+        served="OxiClean Carpet Stain Remover",
+        cas=[("Water", "7732-18-5", "Solvent"),
+             ("Hydrogen peroxide", "7722-84-1", "Cleaning agent"),
+             ("Sodium lauryl sulfate", "68585-47-7", "Surfactant"),
+             ("C10-12 alcohol ethoxylates", "66455-15-0", "Surfactant"),
+             ("Pentetic Acid", "67-43-6", "Chelating agent"),
+             ("Sodium hydroxide", "1310-73-2", "pH modifier")],
+        frag=["Butylphenyl Methylpropional 80-54-6 (EU Fragrance Allergens; EU CMRs)",
+              "Hexamethylindanopyran 1222-05-5 (US EPA PBTs)"],
+        note=("A hydrogen-peroxide carpet and area-rug spot remover spray. Recorded because the corpus's Floor & "
+              "Carpet category was thin on exposure evidence and because a peroxide carpet spray is a different "
+              "chemistry from the oxygen-powder stain removers already carried. Entered ungraded. Two mapping "
+              "notes: the filing prints the name 'Sodium lauryl sulfate' against CAS 68585-47-7, which is the "
+              "C10-16 alkyl sulfate the registry already carries under that CAS, so the CAS governs and the "
+              "existing key is used rather than the lauryl-sulfate key (CAS 151-21-3); and the filing's "
+              "'Pentetic Acid' is the free-acid form of DTPA and is a distinct substance from the registry's "
+              "existing Pentasodium DTPA, so it enters as its own key."),
+        exposure=3,
+        exposure_src=IDXBOX_CARPET,
+        exposure_basis=("Derived, not measured. Searched for a product-level US household figure for OxiClean "
+                        "Carpet Stain Remover (the manufacturer filing, the brand site, a general web search) "
+                        "and found none. IndexBox's US Carpet Cleaning Products page puts residential cleaning, "
+                        "including DIY carpet cleaning and retail purchases, at an estimated 35 to 40 percent of "
+                        "total product volume, with consumers favouring spot and stain removers. Estimate is that "
+                        "residential base times a mid-tier brand share, rounded to one significant figure, and "
+                        "set below the corpus's Resolve carpet spot remover record because Resolve holds the "
+                        "larger share of the carpet stain-remover segment."),
+        substitutes=[dict(name="OxiClean Triple Action Versatile Stain Remover, Free", tier="mass",
+                          note=("Same brand family, same shelf, same price band. A fragrance-free oxygen powder "
+                                "that the manufacturer markets for carpets as well as laundry, so a household can "
+                                "treat the same stain without the fragrance class (two disclosed components here, "
+                                "one of them an EU CMR).")),
+                     dict(name="Great Value Carpet & Upholstery Cleaner Oxy", tier="grocery",
+                          note=("Lower price, same aisle, same oxygen-based carpet job. A store brand, so this is "
+                                "the price substitute rather than the fragrance-avoiding one; it carries its own "
+                                "fragrance."))],
     ),
 ]
 

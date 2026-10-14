@@ -17967,5 +17967,58 @@
   "owner_ev": "verified",
   "owner_src": "https://churchdwight.com/our-brands/consumer-brands/",
   "updated": "2026-10-14"
+ },
+ {
+  "name": "OxiClean Carpet Stain Remover",
+  "brand": "OxiClean",
+  "cat": "Floor & Carpet",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Hydrogen Peroxide",
+   "SODIUM C10-16 ALKYL SULFATE",
+   "C10-12 Alcohol Ethoxylates",
+   "Pentetic Acid",
+   "Sodium Hydroxide",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "source": "Church & Dwight product ingredient disclosure form (California Cleaning Product Right to Know Act, SB-258), https://www.churchdwight.com/ingredient-disclosure/cleaning-products/40501230-oxiclean-carpet-area-rug-stain-remover-spray.aspx (HTTP 200), read 2026-10-14. The form's own PRODUCT NAME line reads \"OxiClean Carpet Stain Remover\". Served page carries the complete 'Intentionally Added Ingredients' table. Ingredients with CAS: Water 7732-18-5 (Solvent); Hydrogen peroxide 7722-84-1 (Cleaning agent); Sodium lauryl sulfate 68585-47-7 (Surfactant); C10-12 alcohol ethoxylates 66455-15-0 (Surfactant); Pentetic Acid 67-43-6 (Chelating agent); Sodium hydroxide 1310-73-2 (pH modifier). Fragrance components disclosed at or above 100 ppm: Butylphenyl Methylpropional 80-54-6 (EU Fragrance Allergens; EU CMRs); Hexamethylindanopyran 1222-05-5 (US EPA PBTs). Recorded in this prose only, not as ingredient keys, per the standing fragrance discipline while the fragrance-components-as-ingredient-keys ruling is open.",
+  "source_url": "https://www.churchdwight.com/ingredient-disclosure/cleaning-products/40501230-oxiclean-carpet-area-rug-stain-remover-spray.aspx",
+  "note": "A hydrogen-peroxide carpet and area-rug spot remover spray. Recorded because the corpus's Floor & Carpet category was thin on exposure evidence and because a peroxide carpet spray is a different chemistry from the oxygen-powder stain removers already carried. Entered ungraded. Two mapping notes: the filing prints the name 'Sodium lauryl sulfate' against CAS 68585-47-7, which is the C10-16 alkyl sulfate the registry already carries under that CAS, so the CAS governs and the existing key is used rather than the lauryl-sulfate key (CAS 151-21-3); and the filing's 'Pentetic Acid' is the free-acid form of DTPA and is a distinct substance from the registry's existing Pentasodium DTPA, so it enters as its own key.",
+  "owner": "Church & Dwight",
+  "tier": "mass",
+  "tier_ev": "reported",
+  "tier_src": "https://churchdwight.com/our-brands/consumer-brands/",
+  "tier_note": "Church & Dwight markets OxiClean, Arm & Hammer, Kaboom and Xtra as national brands sold through grocery, mass, drug and dollar channels; evidenced by Church & Dwight's own consumer-brands page, which names OxiClean, Arm & Hammer, Kaboom, Xtra, Scrub Free, Orange Glo and Clean Shower.",
+  "substitutes": [
+   {
+    "name": "OxiClean Triple Action Versatile Stain Remover, Free",
+    "tier": "mass",
+    "note": "Same brand family, same shelf, same price band. A fragrance-free oxygen powder that the manufacturer markets for carpets as well as laundry, so a household can treat the same stain without the fragrance class (two disclosed components here, one of them an EU CMR)."
+   },
+   {
+    "name": "Great Value Carpet & Upholstery Cleaner Oxy",
+    "tier": "grocery",
+    "note": "Lower price, same aisle, same oxygen-based carpet job. A store brand, so this is the price substitute rather than the fragrance-avoiding one; it carries its own fragrance."
+   }
+  ],
+  "no_substitute_known": null,
+  "no_substitute_note": null,
+  "exposure": 3,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://www.indexbox.io/store/united-states-carpet-cleaning-products-market-analysis-forecast-size-trends-and-insights/",
+  "exposure_basis": "Derived, not measured. Searched for a product-level US household figure for OxiClean Carpet Stain Remover (the manufacturer filing, the brand site, a general web search) and found none. IndexBox's US Carpet Cleaning Products page puts residential cleaning, including DIY carpet cleaning and retail purchases, at an estimated 35 to 40 percent of total product volume, with consumers favouring spot and stain removers. Estimate is that residential base times a mid-tier brand share, rounded to one significant figure, and set below the corpus's Resolve carpet spot remover record because Resolve holds the larger share of the carpet stain-remover segment.",
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "full",
+  "disclosure_note": null,
+  "added": "2026-10-14",
+  "owner_ev": "verified",
+  "owner_src": "https://churchdwight.com/our-brands/consumer-brands/",
+  "updated": "2026-10-14"
  }
 ]
