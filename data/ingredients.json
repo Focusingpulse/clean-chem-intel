@@ -7733,5 +7733,29 @@
   "note": "Named only by function on Aiken Chemical's California SB-258 disclosure for Purple Power, with no CAS number and no chemical identity. No PubChem record exists for a functional description, so no grade is assigned and the entry is recorded unclassified rather than guessed -- the same convention already used here for 'Proprietary Surfactant' and 'Proprietary Chelating Agent'. This is NOT a finding that the substance is non-hazardous; it is a finding that the maker does not disclose it. The product's own SDS names only sodium silicate as a hazardous component, so the inhibitor is not among the components Aiken treats as hazardous.",
   "s": "Corrosion inhibitor named only by function; identity withheld as proprietary, CAS not available.",
   "added": "2026-10-14"
+ },
+ "Diethylene Glycol Monohexyl Ether": {
+  "s": "Diethylene Glycol Monohexyl Ether. Named on a Church & Dwight California SB-258 ingredient disclosure, read 2026-10-15.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-15 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Triisopropanolamine": {
+  "s": "Triisopropanolamine. Named on a Church & Dwight California SB-258 ingredient disclosure, read 2026-10-15.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-15 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Tromethamine": {
+  "s": "Tromethamine. Named on a Church & Dwight California SB-258 ingredient disclosure, read 2026-10-15.",
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the 2026-10-15 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
  }
 }
