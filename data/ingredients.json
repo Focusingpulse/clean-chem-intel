@@ -7757,5 +7757,44 @@
   "gr": {},
   "impacts": [],
   "note": "Added by the 2026-10-15 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Organic Acid Ester Salt": {
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Disclosed by 3M in the SDS composition section for Scotchgard Fabric Water Shield at 1-5% by weight, and named ONLY by chemical class -- the SDS marks the entry 'Trade Secret' with no CAS number and no identity. No PubChem record can exist for a class description, so no grade is assigned and the entry is recorded unclassified rather than guessed. This is a functional disclosure with no identity at all, the same shape as 'Proprietary Surfactant' elsewhere in the corpus, and it is the transparency engine's whole subject in one line: a component present at up to 5% that the maker declines to name.",
+  "s": "Organic acid ester salt; identity withheld as trade secret, CAS not available.",
+  "added": "2026-10-15"
+ },
+ "Petroleum Gases, Liquified, Sweetened": {
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Disclosed by 3M in the SDS composition section for Scotchgard Fabric Water Shield at 3-7% by weight, with CAS 68476-86-8. PubChem returns 404 for both the name and the CAS, because this is a UVCB -- a liquefied petroleum gas fraction, not a single discrete substance -- so no discrete GHS record exists to grade. Recorded unclassified with confidence Low rather than guessed, the same convention already used here for 'Proprietary Surfactant' and 'Proprietary Corrosion Inhibitor'. This is NOT a finding that the substance is non-hazardous; it is a finding that there is no discrete record. The fraction is a short-chain alkane mix whose individual components are flammable gases; the product's other propellant, 1,1-difluoroethane, does carry a GHS record and is graded separately in this same product.",
+  "s": "Liquefied petroleum gas fraction (UVCB, CAS 68476-86-8); aerosol propellant. No discrete GHS record exists to grade.",
+  "added": "2026-10-15"
+ },
+ "Styrene Maleic Anhydride Copolymer": {
+  "ev": "Low",
+  "g": "Not Classified",
+  "gr": {},
+  "impacts": [],
+  "note": "Disclosed by 3M in the SDS composition section for Scotchgard Fabric Water Shield at 1-5% by weight, with CAS 52720-34-0. PubChem returns 404 for both the name and the CAS: this is a polymer and PubChem carries no discrete GHS classification record for it. Recorded unclassified with confidence Low rather than guessed. The polymer is the film-forming soil-release agent the treatment leaves on the fabric; its hazard profile is governed by residual monomer content, which the SDS does not disclose.",
+  "s": "Styrene/maleic anhydride copolymer (CAS 52720-34-0); film-forming soil-release polymer. No discrete GHS record.",
+  "added": "2026-10-15"
+ },
+ "Trisodium Phosphate": {
+  "ev": "High",
+  "g": "H314,H318,H315,H319,H335",
+  "gr": {
+   "derm": "F",
+   "resp": "C"
+  },
+  "impacts": [],
+  "note": "Graded from PubChem GHS (CID 24243, returned title 'Trisodium Phosphate'; the returned title was confirmed against the intended substance before the record was accepted). ECHA C&L notifier consensus: H315 (90.2%) and H319 (90.1%) -> derm C, H335 (85.1%) -> resp C; unioned with the harmonized classification block, listed without percentages, which adds H314 (skin corrosion) -> derm F and H318 (serious eye damage) -> derm D, per the house rule. H314 and H318 both clear the bar and are carried. Disclosed by Siamons International in the SDS composition section for Concrobium Mold Control at 1-5% by weight (CAS 7601-54-9).",
+  "s": "Trisodium phosphate (TSP); alkaline builder. Causes severe skin burns and serious eye damage, respiratory irritation.",
+  "added": "2026-10-15"
  }
 }

@@ -578,6 +578,15 @@
    "rule": "California's consumer-products regulation caps air fresheners in the 'double phase aerosol' category at 20 percent VOC by weight (17 CCR 94509(a)). CARB settled with Niteo Products in 2023 over Ozium Air Sanitizer exceeding that limit -- a $160,000 penalty premised on 13.32 tons of excess VOC emissions, with the company modifying the product to comply. There is no federal equivalent: the US caps VOCs in consumer products only through state rules, of which California's is the strictest and the most actively enforced.",
    "reason": "Aerosol air fresheners and sanitizers are mostly propellant and alcohol by weight -- Ozium's own SDS is 30-50% isopropanol plus 20-30% liquefied petroleum gas -- so the VOC cap is the one rule that directly limits that load, and it is enforced against the product rather than against a named ingredient. Carried because the corpus now holds the product the action was taken against.",
    "src": "https://ww2.arb.ca.gov/sites/default/files/2023-12/niteo_products_llc_sa.pdf"
+  },
+  {
+   "name": "HFC aerosol propellants (HFC-152a / 1,1-difluoroethane)",
+   "region": "us",
+   "status": "phasing down",
+   "since": "2020",
+   "rule": "The US AIM Act (2020) directs EPA to phase down HFC production and consumption 85% by 2036, and the EU F-gas Regulation (517/2014) phases HFCs down on a comparable schedule; both cover HFC-152a (GWP 138) as used as an aerosol propellant. Unlike the other entries here this is a climate restriction, not a toxicity restriction -- the propellant carries no health hazard classification, but it is a fluorinated greenhouse gas being squeezed out of consumer aerosols. Recorded because Scotchgard Fabric Water Shield, added 2026-10-15, discloses it at 1-3%.",
+   "reason": "Fluorinated greenhouse gas (GWP 138); production and consumption phased down under the Kigali Amendment, the US AIM Act and the EU F-gas Regulation.",
+   "src": "https://www.epa.gov/climate-hfcs-reduction"
   }
  ]
 }

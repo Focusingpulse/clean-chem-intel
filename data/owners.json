@@ -993,6 +993,15 @@
    "brands": [
     "Citra Solv"
    ]
+  },
+  "Siamons International Inc.": {
+   "type": "private",
+   "detail": "Siamons International Inc. (Toronto, Ontario) makes the Concrobium line of mold-control and odor products; the maker's own Safety Data Sheet names it as the responsible party and gives a Toronto address. The brand is sold through hardware and home channels in the US and Canada, with an aerosolized pack distributed under a Rust-Oleum SDS.",
+   "ev": "verified",
+   "src": "https://www.concrobium.com/",
+   "brands": [
+    "Concrobium"
+   ]
   }
  },
  "independents": {
