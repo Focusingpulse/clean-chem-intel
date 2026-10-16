@@ -1,6 +1,6 @@
 ---
 name: Product categories — the canonical taxonomy and where it came from
-description: The 14 category values the database uses, the alias map that produces them, and the two documented deviations from the CCI-006 Rev 1 spec. Presentation lane, Dolman, 2026-09-25.
+description: The 15 category values the database uses, the alias map that produces them, and the three documented deviations from the CCI-006 Rev 1 spec. Revision 2 (2026-10-16) splits Air Care out of Specialty. Presentation lane, Dolman.
 ---
 
 # Product categories — canonical taxonomy
@@ -100,3 +100,52 @@ script, so nothing is destroyed and the mapping is re-runnable.
    the next normalize run, which is the intended signal.
 3. **`Eco-Friendly` is not a category.** The eco attribute belongs in `tier` / `cert`.
    If a filter for it is wanted, it is a badge, not a chip.
+
+## Revision 2 — 2026-10-16: `Air Care` split out of Specialty
+
+Applied by `tools/normalize_categories.py` Revision 2. 14 canonical values -> **15**. 13
+records changed, all of them `cat` and nothing else (13 insertions, 13 deletions in
+`data/products.json`). Verified idempotent: two consecutive runs, second reports 0 changes.
+
+**Why it qualifies under the mandate.** When this taxonomy was set (2026-09-25) Specialty held
+essentially no air-treatment records. The exposure-driven air-care harvest of 2026-10-13, 10-14
+and 10-16 took it to **13**, which is now the largest single task inside a 42-record grab-bag.
+
+**Why it is a category and not just the biggest bucket.** Specialty's contents are all surface,
+fixture or appliance tasks: drain, oven, appliance, metal polish, degreaser, rust, bulk chemistry.
+Air Care is the only one in there whose subject is the **air** rather than a surface. That is the
+same line this document already uses (split where a bucket mixes two different cleaning tasks,
+not merely where it is large).
+
+| Category | Products | Absorbs |
+|---|---:|---|
+| Air Care | 13 | Air Freshener (added to ALIASES); 13 records enumerated by name in PRODUCT_OVERRIDES |
+| Specialty | 42 | Specialty, Essential Oil, Drain, Oven Cleaner, Degreaser (unchanged) |
+
+**What is in it, and what was deliberately left out.** Fragrance delivery (plug-in refills,
+aerosols, passive diffusers), air sanitizing, and moisture absorption. `Arm & Hammer Clean
+Scentsations Scent Booster` is a laundry product and stays in Laundry; `Mr. Clean Liquid
+Multi-Purpose Cleaner with Febreze` is a surface cleaner and stays in All-Purpose. The 13 names
+are listed in the script, so the intent is readable and the remap is reversible, exactly as the
+`Eco-Friendly` remap was done.
+
+**Candidates measured and held this fire, so a future run does not re-derive them.**
+Drain care is **9** records (Drano, Liquid-Plumr x3, Green Gobbler, The Works Power Gel,
+The Works Professional Strength, Austin's Wipe Away Professional, Glisten Disposer Care) and
+also clears the 5+ threshold. It was held, not rejected: a second unruled taxonomy addition in
+one fire is more deviation than this lane should take unilaterally, and Revision 1's deviation
+is still awaiting Trellis's read. Kitchen/appliance care sits at 6 (two oven cleaners, a
+cooktop cleaner, a disposer cleaner, a coffee-maker cleaner, a drain-adjacent appliance cleaner)
+and is the next candidate after that.
+
+**Maintenance consequence, for whoever owns the gather lane.** An air-care product added by a
+gather script will still be written with `"cat": "Specialty"` unless the script classifies it,
+and the alias map will keep it there. This split therefore decays unless new air-care records
+are given the canonical value at gather time (rule 2 above). The same is true of every split-out
+cluster, and is the reason rule 2 exists.
+
+**Scoring consequence, for Cairn.** `tools/curation_score_2026_10_04.py` holds `STR_CAT` and
+`MOUNTAIN_CAT` keyed by category. Neither has an `Air Care` key, so those 13 records take the
+caller's `4.0` default on both dimensions. `cat_map.get(cat, default)` means this cannot crash,
+but if air treatment should weigh differently for a rental turnover it needs an explicit entry.
+No scorer change was made from this lane.

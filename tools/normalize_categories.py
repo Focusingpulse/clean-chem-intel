@@ -13,6 +13,13 @@ are 5+ items and are split out here, per the clean-chem-grow RUN B mandate
 ("extend only where a real cluster exists, 5+ products"). The deviation is
 recorded in docs/presentation-categories.md and flagged to Trellis.
 
+Revision 2 (2026-10-16): a third deviation, `Air Care`, is split out of the
+Specialty remainder. Specialty held no air-treatment records when the taxonomy
+was set (three); the exposure-driven air-care harvest of 2026-10-13/14/16 took
+it to 13, which is now the largest single task inside a 55-record grab-bag and
+the only one whose subject is the air rather than a surface. Detail and the
+candidates measured-and-held are in docs/presentation-categories.md.
+
 Rules enforced:
   * every existing cat value is in ALIASES or PRODUCT_OVERRIDES, else the run
     HALTS and prints the unmapped value. A silent passthrough would let a new
@@ -73,6 +80,9 @@ ALIASES: dict[str, str] = {
     "Surface Cleaner": "Wood & Stone Care",  # both records are BMVC granite/wood care
     "Wood & Stone Care": "Wood & Stone Care",
     "Physical": "Physical",
+    # split out 2026-10-16 (deviation 3): treats the air rather than a surface
+    "Air Care": "Air Care",
+    "Air Freshener": "Air Care",
     # honest remainder
     "Specialty": "Specialty",
     "Essential Oil": "Specialty",
@@ -107,6 +117,26 @@ PRODUCT_OVERRIDES: dict[str, str] = {
     "Grove Co. Multi-Purpose": "All-Purpose",
     "Bon Ami": "Abrasive Cleanser",
     "ECOS Dishmate": "Dish Soap",
+    # Air Care (deviation 3, 2026-10-16). Enumerated by name so the remap is
+    # readable and reversible, the same way the "Eco-Friendly" remap was done.
+    # Included: every product whose job is treating the air — fragrance delivery
+    # (plug-in refills, aerosols, passive diffusers), air sanitizing, and moisture
+    # absorption. Excluded on purpose: `Arm & Hammer Clean Scentsations Scent
+    # Booster` is a laundry product and stays in Laundry; `Mr. Clean ... with
+    # Febreze` is a surface cleaner and stays in All-Purpose.
+    "Glade PlugIns Scented Oil Air Freshener Refills, Hawaiian Breeze": "Air Care",
+    "Febreze AIR Freshener, Fresh Sky": "Air Care",
+    "Air Wick Scented Oil, Ocean Spray": "Air Care",
+    "Air Wick Essential Mist Air Freshener Refill, Fresh Water": "Air Care",
+    "Air Wick Automatic Spray Refill, Fresh Linen": "Air Care",
+    "Air Wick Automatic Spray Refill, Lavender & Chamomile": "Air Care",
+    "Air Wick STICK UPS Air Freshener, Lavender & Chamomile": "Air Care",
+    "Air Wick STICK UPS Air Freshener, Sparkling Citrus": "Air Care",
+    "Glade Soft Mist Air Freshener Spray, Lavender & Vanilla": "Air Care",
+    "Glade Soft Mist Air Freshener Spray, Clean Linen": "Air Care",
+    "Arm & Hammer Deodorizing Air Freshener with Baking Soda": "Air Care",
+    "Ozium Air Sanitizer Spray, Original": "Air Care",
+    "DampRid Fragrance Free Moisture Absorber": "Air Care",
 }
 
 

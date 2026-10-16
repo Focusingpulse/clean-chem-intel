@@ -1,6 +1,6 @@
 ---
 name: EWG gap analysis — where Clean Chem Intel can be more useful than the EWG Guide
-description: What the EWG Guide to Healthy Cleaning actually covers (verified against its own pages), the six gaps that are real, and a one-line build plan for each. Presentation lane, Dolman, 2026-09-25.
+description: What the EWG Guide to Healthy Cleaning actually covers (verified against its own pages), the six gaps that are real, and a one-line build plan for each. Revision 2 (2026-10-16) adds the scale update and the finding that this tool's two relevance dimensions, turnover and mountain, carry 45 percent of its own ranking weight and render nowhere. Presentation lane, Dolman.
 ---
 
 # EWG Gap Analysis
@@ -174,3 +174,128 @@ Where we can genuinely be *more useful*, on the evidence above: completeness of 
 2. EWG's Quick Facts figure (2,109 products) and a 2020 EWG article's "more than 2,500 products" disagree. The Quick Facts figure is from EWG's own current methodology page and is the one used here.
 3. G6's framing depends on the `heritage` field being populated honestly. It is a presentation argument, not a data claim.
 4. Every build plan above defers implementation to the owner named. None of it ships without Sandra's sign-off (`docs/decisions.md`: CCI-011 is the launch gate).
+
+---
+
+# Revision 2 — 2026-10-16 (clean-chem-grow RUN B)
+
+Sections 1 to 4 are unchanged. This appends what a month of harvesting changed, and one
+structural finding that outranks the rest of the document.
+
+## 5. The scale argument moved, and it is worth re-saying
+
+| Measure | 2026-09-25 (Rev 1) | 2026-10-16 (HEAD) | EWG |
+|---|---:|---:|---:|
+| Products | 197 | **436** | 2,109 |
+| Ingredients | 330 | **777** | more than 1,000 |
+| Categories | 14 | **15** | 70+ types in nine groups |
+| Heritage records | not measured | 29 | not applicable |
+
+The product gap is still real (EWG is roughly 4.8x larger, down from 10.7x). The
+**ingredient** gap has nearly closed: 777 against "more than 1,000". That is a materially
+different sentence from the one Rev 1 could write, and it is the honest one to use. Keep
+saying depth, not size, but the depth claim is now close to a parity claim on ingredients.
+
+## 6. The gap this database owns and has not switched on
+
+This is the finding of this revision, and it is more useful than any of G1 to G6.
+
+EWG is organised by **product type** (G5). It has no notion of the home the product is used
+in, and structurally cannot: a national catalogue of 2,109 products cannot be indexed by
+"hard water at 9,000 feet" or "a house that sat empty through February".
+
+This database already computes two dimensions of exactly that kind, in
+`tools/curation_score_2026_10_04.py`:
+
+- **Turnover relevance** (`str`): how much a product matters to a short-term-rental changeover.
+- **Mountain relevance** (`mountain`): hard-water and mineral scale, wood-stove soot and
+  creosote, mildew in a home that sat closed, wood and stone surfaces, de-icer and road salt.
+
+The scorer's own weights put **0.25 on turnover and 0.20 on mountain** (against sales 0.30,
+hazard 0.15, ungraded 0.10). **Forty-five percent of this tool's ranking weight rests on two
+axes EWG cannot have at all.**
+
+**Neither one renders.** `index.template.html` contains no data reference to `mountain`, its
+`str` score, or `turnover`; the built page's only "mountain" strings are the BMVC domain in
+the schema and the CTA. The curation queue built from those weights is also stale: it was
+generated 2026-10-04 over 294 products, against 436 today.
+
+So the largest EWG-killer in this repo is not more products. It is that the differentiator is
+computed, weighted, and invisible. A visitor cannot ask "what do I use on mineral scale in a
+mountain rental", which is the exact question the tool is best placed to answer.
+
+### G7 — Render the two relevance dimensions. *(highest value; no data work needed)*
+Expose `mountain` and `str` as filter chips ("mountain homes", "rental turnover") and one
+line on the card. The data already exists; only the template holds it back. Owner: Chris/Cairn.
+This joins the standing missing-render-surface ruling as its **strongest** member, because it
+is the tool's differentiator rather than an internal annotation.
+
+### G8 — Carry the same two dimensions into the machine-readable layer.
+The `@graph` block already mirrors page counts; the AI-facing claim ("organised by the home,
+not just the product type") belongs there too. Owner: Chris/Cairn.
+
+### G9 — One page per mountain condition, framed as what a trained cleaner knows. *(extends G5)*
+Four conditions, each anchored on the sources already in this document's claims log:
+hard-water scale (Denver Water, USGS, CSU Extension), wood-stove soot and creosote (EPA Burn
+Wise), mildew in a home that sat closed (EPA moisture and mold guidance), and de-icer and road
+salt. **The angle is the operator's knowledge, never a recipe the reader performs.**
+
+The cleanest example, and it is a maintenance fact rather than a product fact: in a
+wood-heated home the biggest single lever on indoor particulate is the **flue**, not the
+cleaner on the shelf. Flue cleaning explained 16 percent of the variance in indoor PM2.5 in a
+peer-reviewed household study, and stove age was not associated with indoor PM at all. An
+ingredient database cannot say that. A person who cleans these homes for a living can.
+
+## 7. Two fields the presentation lane was told to fill, that nothing renders
+
+Recorded here because the RUN B mandate names them and a future fire should not re-discover it:
+
+- **`note`**: 269 of 436 records carry one. `p.note` renders **zero** times; the modal
+  interpolates only `cf.note`, `cr.note` and `heritage_note`. Adding plain-language product
+  context to `note` is invisible work until the field has a surface.
+- **`substitutes`**: 187 of 436 records carry one. It renders **zero** times, so a record with
+  a same-price alternative looks identical to one without.
+
+Both are the same class as G7 and are already filed as render-surface questions. Do not write
+more of either until Trellis rules the surface.
+
+## 8. What this revision did not do
+
+- **No DIY content, by rule.** Every mountain condition above is written as an operator's
+  knowledge, per the positioning rule at the top of this document.
+- **No data was graded or re-graded.** This is a presentation revision.
+- The **Air Care** category (13 records, split out of Specialty this fire) is a taxonomy
+  change under the existing RUN B mandate; it is documented in
+  `docs/presentation-categories.md` Revision 2 and flagged to Trellis.
+- The scorer's `STR_CAT` and `MOUNTAIN_CAT` maps have **no `Air Care` key**, so those records
+  take the caller's 4.0 default for both dimensions. That is not wrong, but if air treatment
+  should weigh differently for a mountain turnover it needs an explicit entry. Flagged to Cairn.
+
+## Claims log — Revision 2
+
+| # | Claim | Level | Source |
+|---|---|---|---|
+| 25 | This database holds 436 products and 777 ingredient records at HEAD 2026-10-16 | verified | data/ at HEAD, re-derived this run |
+| 26 | The curation scorer weights are sales 0.30, str 0.25, mountain 0.20, hazard 0.15, ungraded 0.10 | verified | tools/curation_score_2026_10_04.py |
+| 27 | The scorer's turnover domain keys on disinfectant, bleach, sanitizing, mold, stain, toilet/tub/shower, laundry | verified | tools/curation_score_2026_10_04.py (STR_KEYWORDS) |
+| 28 | The scorer's mountain domain keys on hard water, lime, calcium, rust, soot, creosote, wood stove, mold, mildew, granite, stone, wood, de-icer, road salt | verified | tools/curation_score_2026_10_04.py (MOUNTAIN_KEYWORDS) |
+| 29 | `curation-queue.json` was generated 2026-10-04 over 294 products ("top 30 of 218 ungraded"), against 436 today | verified | data/curation-queue.json |
+| 30 | No mountain or turnover dimension renders: the template has no data reference to either, and the built page's only "mountain" strings are the BMVC domain | verified | grep of index.template.html and index.html |
+| 31 | 269 of 436 records carry `note`; `p.note` renders 0 times (only `cf.note`, `cr.note`, `heritage_note`) | verified | data/products.json + index.template.html |
+| 32 | 187 of 436 records carry `substitutes`; it renders 0 times | verified | data/products.json + index.template.html |
+| 33 | EPA: "The key to mold control is moisture control"; dry water-damaged areas within 24-48 hours; keep indoor humidity below 60 percent, ideally 30 to 50 percent | verified | https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home |
+| 34 | EPA names woodstoves and fireplaces as combustion sources and states that benzo(a)pyrene, "which can cause cancer", attaches to small particles inhaled deep into the lung | verified | https://www.epa.gov/indoor-air-quality-iaq/sources-combustion-products |
+| 35 | Flue cleaning "explained 16% of the variance" in indoor PM2.5, and stove age was not associated with indoor PM, in a peer-reviewed household study | verified | https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9609584/fullTextXML |
+| 36 | 13 air-care records were split from Specialty into a new `Air Care` category this fire | verified | data/products.json diff, tools/normalize_categories.py Revision 2 |
+
+## Uncertainty flags — Revision 2
+
+5. Claim 30 is a grep of two files, not a render test. It says the template never reads the
+   field; it does not prove no other surface (for example the machine-readable layer in
+   `build.py`) consumes it. G8 should be checked against that layer before it is written.
+6. The 16 percent figure in claim 35 is from one study of households in a single setting. Use
+   it as the direction of the finding (maintenance over product) rather than as a precise
+   coefficient, and do not attach it to Sandra's own service area.
+7. `Air Care` as a category name is the presentation lane's proposal under the standing RUN B
+   mandate, not a ruled taxonomy value. Trellis owns that ruling; the alias map makes it
+   reversible if he rules differently.
