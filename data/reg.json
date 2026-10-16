@@ -360,7 +360,7 @@
    {
     "region": "us",
     "status": "allowed",
-    "since": "—",
+    "since": null,
     "rule": "No US federal ban or ppm cap for CMIT/MIT in household cleaning products. It remains a common in-can preservative in US carpet cleaners, detergents and hard-surface cleaners.",
     "reason": "US regulation of isothiazolinone preservatives in cleaning products is largely absent, so the same chemistry restricted in EU leave-on products is routine in US cleaners.",
     "confidence": "Medium",
