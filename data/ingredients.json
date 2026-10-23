@@ -7836,5 +7836,21 @@
   "impacts": [],
   "s": "CAS 112-03-8 (resolved against PubChem CID 8155, trimethyl(octadecyl)azanium chloride). The served SC Johnson page states the identity but not the CAS, so the CAS was resolved against the registry. No PubChem or ECHA grade applied.",
   "note": "Added by the 2026-10-16 night-shift harvest from a manufacturer's California Cleaning Product Right to Know Act disclosure. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess. It enters ungraded, which is the honest state until the grading lane reaches it."
+ },
+ "Siberian Fir Needle Oil": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from Dr. Bronner's own published ingredient list for Sal Suds. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Abies sibirica (Siberian fir) needle oil. Natural essential oil disclosed by name by the manufacturer; not yet graded against GHS."
+ },
+ "Spruce Oil": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift harvest from Dr. Bronner's own published ingredient list for Sal Suds. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. One key covers the two spruce species the manufacturer lists separately (Picea glauca white spruce branch/leaf oil and Picea mariana black spruce leaf oil); both are named in the product source prose.",
+  "s": "Spruce essential oil. Natural essential oil disclosed by name by the manufacturer; not yet graded against GHS."
  }
 }

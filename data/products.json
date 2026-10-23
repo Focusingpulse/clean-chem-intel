@@ -19172,5 +19172,56 @@
   "disclosure_note": null,
   "added": "2026-10-16",
   "updated": "2026-10-16"
+ },
+ {
+  "name": "Sal Suds Biodegradable Cleaner",
+  "brand": "Dr. Bronner's",
+  "cat": "All-Purpose",
+  "safe": "EWG Verified",
+  "ings": [
+   "Water",
+   "Sodium Lauryl Sulfate",
+   "Lauryl Glucoside",
+   "Sodium Coco-Sulfate",
+   "Sodium Benzoate",
+   "Siberian Fir Needle Oil",
+   "Spruce Oil",
+   "Citric Acid",
+   "Sodium Chloride",
+   "Limonene"
+  ],
+  "heritage": false,
+  "source": "Manufacturer's own published ingredient list on the product page, https://www.drbronner.com/products/sal-suds-biodegradable-cleaner (read 2026-10-23 via the fetch tool; the page carries an explicit Ingredients block). Listed in order: Water; Sodium Lauryl Sulfate; Lauryl Glucoside; Sodium Coco Sulfate (recorded under the existing 'Sodium Coco-Sulfate' key, the registry's spelling for CAS 68910-93-4-class entries); Sodium Benzoate; Abies Siberica (Siberian Fir) Needle Oil (new key 'Siberian Fir Needle Oil'); Picea Glauca (White Spruce) Branch/Leaf Oil and Picea Mariana (Black Spruce) Leaf Oil (both recorded under the new shared key 'Spruce Oil', both species named here); Citric Acid; Sodium Chloride; Limonene. Limonene is disclosed by the manufacturer as an ingredient in its own right here, not as a hidden fragrance component.",
+  "source_url": "https://www.drbronner.com/products/sal-suds-biodegradable-cleaner",
+  "note": "A concentrated multi-purpose cleaner used diluted for dishes, floors, laundry and counters. Entered to fill the apothecary-bulk tier, where it sits as a concentrate sold in bulk sizes, alongside the castile soap records. The fir and spruce essential oils are the scent system, disclosed by species name, which is a fuller disclosure than a 'Fragrance' line and is recorded as named keys rather than prose because the manufacturer names the substances themselves. Entered ungraded: product grading is the Sifter lane; the two new oil keys carry no grade this fire. The 'EWG Verified' string is the manufacturer's own on-page certification claim, not EWG data; taking EWG grades remains against source policy.",
+  "owner": "Dr. Bronner's",
+  "owner_ev": "reported",
+  "owner_src": "https://www.drbronner.com/blogs/ourselves/the-dr-bronners-story",
+  "tier": "apothecary-bulk",
+  "tier_ev": "reported",
+  "tier_src": "https://www.drbronner.com/products/sal-suds-biodegradable-cleaner",
+  "tier_note": "Ultra-concentrate (1 tbsp per quart dilution per the manufacturer's own dilution chart), sold in 16 oz through 1-gallon refill sizes; a bulk-chemistry purchase rather than a finished spray, like the castile soap entries in the same tier.",
+  "substitutes": [
+   {
+    "name": "Castile Soap, Peppermint",
+    "tier": "apothecary-bulk",
+    "note": "Same shelf, same concentrate economics, does the same diluted-everything job, and carries no sodium lauryl sulfate; scent comes from peppermint oil. Avoids the SLS entry point for anyone avoiding sulfate surfactants."
+   }
+  ],
+  "no_substitute_known": false,
+  "no_substitute_note": null,
+  "exposure": 6,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://www.amazon.com/Best-Sellers-All-Purpose-Household-Cleaners/zgbs/hpc/15356141",
+  "exposure_basis": "Derived, not measured. Searched for a household-penetration or category-share figure for Sal Suds itself and found none in open sources. Anchor points, both read 2026-10-23: the Amazon best-sellers page for All-Purpose Household Cleaners ranks Sal Suds at #25 in the category with about 10,100 ratings, and a 16 oz two-pack listing shows 2K+ bought in the past month; the asinsight keyword report 'dr bronner sal suds' (keyword-scoped, August 2026) puts the top tracked listing at an estimated 20,000 units/month. Estimate: a top-25-of-category organic product with five-figure review counts reaches on the order of single-digit millions of US households, rounded to one significant figure; category baseline is the IndexBox surface-cleaner figure that about 95% of US households use at least one surface cleaner per month. Estimate only.",
+  "conc": "concentrate; manufacturer dilution chart 1 tbsp per quart for all-purpose spray",
+  "conc_src": "https://www.drbronner.com/products/sal-suds-biodegradable-cleaner",
+  "conc_ev": "verified",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "full",
+  "disclosure_note": null,
+  "added": "2026-10-23",
+  "updated": "2026-10-23"
  }
 ]
