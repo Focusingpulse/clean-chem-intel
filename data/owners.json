@@ -229,11 +229,10 @@
   },
   "Dollar Tree, Inc.": {
    "type": "public (DLTR)",
-   "detail": "Owns Family Dollar and the Homeline and Power Force house brands. The FDA drug label for Power Force antibacterial hand soap names Korex Chicago LLC as the labeler of record, so the contract manufacturer is visible underneath the retail brand.",
-   "ev": "reported",
-   "src": "https://sameday.familydollar.com/store/family-dollar/products/20662818-homeline-all-purpose-cleaner-lemon-scented-1-qt",
+   "detail": "Owns the Power Force house brand, sold in Dollar Tree stores. Does NOT own Family Dollar: Dollar Tree sold Family Dollar Stores, LLC to 1959 Holdings, LLC on 2025-07-05 (SEC 10-K, completed sale, ~$793M cash generated). The FDA drug label for Power Force antibacterial hand soap names Korex Chicago LLC as the labeler of record, so the contract manufacturer is visible underneath the retail brand.",
+   "ev": "verified",
+   "src": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000025/dltr-20260131.htm",
    "brands": [
-    "Homeline",
     "Power Force"
    ]
   },
@@ -1001,6 +1000,18 @@
    "src": "https://www.concrobium.com/",
    "brands": [
     "Concrobium"
+   ]
+  },
+  "1959 Holdings, LLC": {
+   "type": "private",
+   "detail": "Owns Family Dollar Stores, LLC since 2025-07-05, when Dollar Tree completed its sale (SEC 10-K; the business was divested for ~$1.0075B base price under the Membership Interest Purchase Agreement dated 2025-03-25). Backed by Brigade Capital Management, Macellum Capital Management, and Arkhouse Management Co. Owns the Family Dollar house brands, including Homeline and the Family Beauty (FB) personal-care line. Family Dollar operates more than 7,500 stores nationwide, headquartered in Chesapeake, Virginia.",
+   "ev": "reported",
+   "src": "https://www.businesswire.com/news/home/20250707435568/en/Family-Dollar-Starts-New-Chapter-as-a-Standalone-Private-Company",
+   "brands": [
+    "Family Dollar",
+    "Homeline",
+    "Family Beauty",
+    "FB"
    ]
   }
  },

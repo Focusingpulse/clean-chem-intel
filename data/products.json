@@ -6603,8 +6603,8 @@
   "added": "2026-09-25",
   "updated": "2026-09-25",
   "owner": "Dollar Tree, Inc.",
-  "owner_ev": "reported",
-  "owner_src": "https://sameday.familydollar.com/store/family-dollar/products/20662818-homeline-all-purpose-cleaner-lemon-scented-1-qt",
+  "owner_ev": "verified",
+  "owner_src": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000025/dltr-20260131.htm",
   "tier": "dollar-store",
   "tier_ev": "reported",
   "substitutes": [
@@ -19223,5 +19223,58 @@
   "disclosure_note": null,
   "added": "2026-10-23",
   "updated": "2026-10-23"
+ },
+ {
+  "name": "FB Hydrating Hand Sanitizer Gel",
+  "brand": "FB",
+  "cat": "Hand Soap",
+  "safe": null,
+  "ings": [
+   "Alcohol",
+   "Water",
+   "Glycerin",
+   "Fragrance",
+   "Blue 1",
+   "Yellow 5"
+  ],
+  "heritage": false,
+  "source": "FDA OTC drug label, DailyMed SPL setid 4f261746-37e9-7b30-e063-6294a90a9224, NDC 55319-782, labeler Family Dollar Services, LLC. Active ingredient: Ethyl Alcohol 70% (antiseptic; recorded under the existing generic 'Alcohol' key, which covers ethanol). Inactive ingredients, verbatim: water, glycerin, fragrance, blue 1 (CI 42090), yellow 5 (CI 19140).",
+  "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f261746-37e9-7b30-e063-6294a90a9224",
+  "note": "A dollar-store hand sanitizer that discloses a full ingredient list because it is an FDA OTC drug, not because the retailer chose to. Another instance of the standing dollar-store finding: the tier discloses exactly where a federal regulator forces it to and nowhere else. Entered ungraded; product grading is the Sifter lane. The label carries no published volume or concentration for the inactive ingredients.",
+  "owner": "1959 Holdings, LLC",
+  "owner_ev": "reported",
+  "owner_src": "https://www.businesswire.com/news/home/20250707435568/en/Family-Dollar-Starts-New-Chapter-as-a-Standalone-Private-Company",
+  "tier": "dollar-store",
+  "tier_ev": "reported",
+  "tier_src": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f261746-37e9-7b30-e063-6294a90a9224",
+  "tier_note": "FB is the Family Beauty house line of Family Dollar; sold at dollar-store price points in more than 7,500 Family Dollar stores.",
+  "substitutes": [
+   {
+    "name": "Power Force Antibacterial Hand Soap",
+    "tier": "dollar-store",
+    "note": "Same tier, same shelf economics, also a fully disclosed FDA drug label. If the goal is clean hands at a sink rather than sanitizer on the go, soap and water avoids the 70% alcohol skin-drying entry point."
+   }
+  ],
+  "no_substitute_known": false,
+  "no_substitute_note": null,
+  "exposure": 6,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://www.businesswire.com/news/home/20250707435568/en/Family-Dollar-Starts-New-Chapter-as-a-Standalone-Private-Company",
+  "exposure_basis": "Derived, not measured. Searched for a per-product sales or household-penetration figure for FB hand sanitizer and found none in open sources. Anchor: Family Dollar operates more than 7,500 stores nationwide serving its neighborhood-discount base (company statement, 2025-07-07). A staple personal-care item stocked across a 7,500-store chain plausibly reaches on the order of single-digit millions of US households, rounded to one significant figure. Estimate only.",
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": null,
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "full",
+  "disclosure_note": "The FDA drug label discloses the active at a stated concentration (Ethyl Alcohol 70%) and the full inactive list by name, but carries no percentages for the inactives.",
+  "claim_review": {
+   "ev": "reported",
+   "src": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f261746-37e9-7b30-e063-6294a90a9224",
+   "result": "no_manufacturer_safety_claim_located",
+   "note": "The label makes antiseptic efficacy claims ('help reduce bacteria on the skin') regulated under the OTC monograph, not household safety or health claims. No safety claim was located beyond standard FDA drug warnings."
+  },
+  "added": "2026-10-24",
+  "updated": "2026-10-24"
  }
 ]
