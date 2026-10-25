@@ -19276,5 +19276,66 @@
   },
   "added": "2026-10-24",
   "updated": "2026-10-24"
+ },
+ {
+  "name": "Bowl Fresh Automatic Toilet Bowl Cleaner Tablets with Bleach, 2 ct",
+  "brand": "Bowl Fresh",
+  "cat": "Bathroom",
+  "safe": null,
+  "ings": [
+   "Sodium Sulfate",
+   "Sodium Borate",
+   "Sodium (C10-16) Alkylbenzenesulfonate",
+   "Cellulose Gum",
+   "Hydroxyethylcellulose",
+   "Water",
+   "Sodium Perborate",
+   "Trideceth-3",
+   "Sodium Chloride",
+   "Sodium Ferrocyanide",
+   "Colorant",
+   "Aluminum Sulfate",
+   "Tetrasodium EDTA",
+   "Citric Acid",
+   "PEG"
+  ],
+  "heritage": false,
+  "source": "Willert Home Products ingredient declaration for Bowl Fresh Automatic Toilet Bowl Cleaner Tablets with Bleach, read from the served page on the CVS Spanish-locale host es.cvs.com in the vendorIngredientsParagraph field. This is the manufacturer's list published by the retailer that lists the product. Seventeen lines served; two transcription artifacts recorded rather than smoothed: 'Sodium, Chloride' is one substance split by a stray comma, and 'Blue 1' is the generic dye line, which maps to the registry's colorant key. The line that distinguishes this record from the plain tablet is Sodium Perborate, an oxygen bleach. Read today from the served page.",
+  "source_url": "https://es.cvs.com/shop/bowl-fresh-automatic-toilet-bowl-cleaner-tablets-with-bleach-2-ct-prodid-823266",
+  "note": "The in-tank toilet tablet with oxygen bleach. Same effervescent-tablet formula family as the Ty-D-Bol tablet in this registry: sodium sulfate and sodium borate as the bulk, a linear alkylbenzene sulfonate surfactant, cellulose binders, ferrocyanide anti-caking, trideceth-3 wetter, aluminum sulfate, tetrasodium EDTA chelator, citric acid and PEG. What this one adds is sodium perborate, an oxygen bleach and a boron compound, so the borate question is doubled rather than introduced. A household avoiding borates reads this whole class twice.",
+  "tier": "mass",
+  "tier_ev": "reported",
+  "tier_src": "https://tydbol.com/about/",
+  "tier_note": "Value brand of Willert Home Products, whose own brand page names Bowl Fresh in the family alongside Ty-D-Bol. Willert's site describes the same retail footprint as Ty-D-Bol (home improvement, discount, drug, hardware and grocery stores), so the tier is the broad mass value channel rather than any one shelf. The listing examined is the CVS one.",
+  "substitutes": [
+   {
+    "name": "Seventh Generation Toilet Bowl Cleaner, Emerald Cypress & Fir",
+    "tier": "mass",
+    "note": "Same aisle, comparable price, and no borate of either kind, which is the line this record is substituted for. It carries EWG top-rated and EPA Safer Choice."
+   },
+   {
+    "name": "Ecover Toilet Bowl Cleaner Pine Fresh",
+    "tier": "mass",
+    "note": "Borax-free toilet cleaner at a grocery price; EPA Safer Choice and EWG top-rated, so it is the same-price answer for a household avoiding the tablet's sodium borate and sodium perborate."
+   }
+  ],
+  "no_substitute_known": null,
+  "no_substitute_note": null,
+  "exposure": 3,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://www.indexbox.io/store/united-states-toilet-cleaning-products-market-analysis-forecast-size-trends-and-insights/",
+  "exposure_basis": "Derived, not measured. Searched for a product-level or brand-level US household figure for Bowl Fresh tablets (the CVS listing and a general web search) and found none. The served CVS listing carries 73 customer reviews at 4.78, read today from the served page, which evidences active retail presence but not household penetration. IndexBox's US toilet-cleaning page states residential households are roughly 55-60% of category volume across about 130 million households, so toilet cleaners are near-universal, but in-tank tablets are one format inside that category and a fraction of households use them. The estimate stops at category penetration times the tablet format's small share, because nothing more specific is published.",
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "full",
+  "disclosure_note": null,
+  "added": "2026-10-25",
+  "updated": "2026-10-25",
+  "owner": "Willert Home Products",
+  "owner_ev": "verified",
+  "owner_src": "https://tydbol.com/about/"
  }
 ]

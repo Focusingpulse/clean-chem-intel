@@ -7852,5 +7852,14 @@
   "impacts": [],
   "note": "Added by the night-shift harvest from Dr. Bronner's own published ingredient list for Sal Suds. No PubChem/ECHA grade has been resolved for this entry yet, so g is null rather than a guess. One key covers the two spruce species the manufacturer lists separately (Picea glauca white spruce branch/leaf oil and Picea mariana black spruce leaf oil); both are named in the product source prose.",
   "s": "Spruce essential oil. Natural essential oil disclosed by name by the manufacturer; not yet graded against GHS."
+ },
+ "Sodium Perborate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Minted 2026-10-25 from a retailer-served manufacturer ingredient declaration (Bowl Fresh Automatic Toilet Bowl Cleaner Tablets with Bleach) and recorded ungraded. No PubChem or ECHA grade has been resolved for this entry yet, so g is null rather than a guess.",
+  "s": "Sodium perborate. Oxygen bleach in the 'with Bleach' in-tank tablet; a boron compound, so it carries the same read-twice as sodium borate. Not yet graded against GHS.",
+  "added": "2026-10-25"
  }
 }
