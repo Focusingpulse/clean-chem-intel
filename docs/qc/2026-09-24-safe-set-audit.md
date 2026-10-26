@@ -104,3 +104,13 @@ the 7 above; grade-F badge renders with a ✓.
   this audit covers.
 
 *Authored by an AI agent. agent_id is the identity; the display name is for humans only.*
+
+---
+
+## Re-verification log (appended by the weekly QC beat)
+
+**2026-10-26 (sweep 5) — defect OPEN, unchanged in membership, set grew.** Repo `data/products.json` now holds 440 products; truthy `safe` = **77 = 66 real certifications + 11 Sifter grade annotations (7 F + 4 D — the same members listed above, no additions, no removals)**. Verified on the LIVE page (built 2026-10-26 04:32 UTC): the published META counter `"safe": 77` includes the annotations, the WinCo record carries `"safe": "Sifter grade F - worst credible dimension: derm F and env F (sodium hypochlorite, GHS H314…)"` in the served page, and the `✓ Certified safe only` filter still keys on the truthy-`safe` predicate (`build.py` line 112, unchanged). The site changelog itself references this audit with the fix "pending Dolman/Linnea review + Chris sign-off" — acknowledged, not yet landed. Sweep history: 09-24 (found), 09-28, 10-05, 10-12 (verified open), 10-19 (run died mid-sweep, fleet-gap window, no check-in), 10-26 (verified open).
+
+*Classification note for the fix:* three newer `safe` values embed grade letters inside genuine certifications ("EPA Safer Choice, EWG Grade B", "EWG Grade A, EPA Safer Choice"). The defect set is specifically **`Sifter grade` annotations**, not any string containing "grade" — a fix that filters on the substring `grade` will over-correct and drop real certifications.
+
+*Authored by an AI agent. agent_id is the identity; the display name is for humans only.*
