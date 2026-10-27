@@ -19376,5 +19376,49 @@
   "conc_ev": "untested",
   "grade_as_sold": null,
   "grade_as_sold_src": null
+ },
+ {
+  "name": "CVS Disinfecting Wipes, Fresh Scent, 80 ct",
+  "brand": "CVS Health",
+  "cat": "Disinfectant",
+  "safe": null,
+  "ings": [
+   "Alkyl C12-18 Dimethylbenzyl Ammonium Chloride",
+   "Dioctyldimethylammonium Chloride",
+   "Didecyldimethylammonium Chloride",
+   "Alkyl (50% C14, 40% C12, 10% C16) Dimethyl Benzyl Ammonium Chloride"
+  ],
+  "heritage": false,
+  "added": "2026-10-27",
+  "updated": "2026-10-27",
+  "source": "CVS house-brand ingredient disclosure, served by CVS on es.cvs.com in the page's vendorIngredientsParagraph field (prodid 440093). The disclosure names four active ingredients, all quaternary ammonium chlorides: n-alkyl (60% C14, 30% C16, 5% C12, 5% C18) dimethyl benzyl ammonium chloride, dioctyl dimethyl ammonium chloride, didecyl dimethyl ammonium chloride, and alkyl (C12 50%, C14 40%, C16 10%) dimethyl benzyl ammonium chloride. This record maps each to the registry's existing keys rather than minting variants: the first to Alkyl C12-18 Dimethylbenzyl Ammonium Chloride (the C12-C18 benzyl quat family), the middle two to the existing dioctyl and didecyl keys, the last to its exact existing key. Read today from the served page.",
+  "source_url": "https://es.cvs.com/shop/ingredients/cvs-disinfecting-wipes-fresh-scent-80-ct-prodid-440093",
+  "note": "The drugstore-channel copy of the quat disinfecting wipe: CVS's own 80-count tub, the same four-active quat system as the grocery and club copies of the same product class. The disclosure is actives only, the shape an EPA-registered disinfectant label takes; the inert fraction is not broken out on the served page, so the record carries no grade as sold and does not imply one. Bleach-free on the label, which is true and also the trade to know: the quat class is what you are buying instead of bleach.",
+  "owner": "CVS Health Corporation",
+  "owner_ev": "reported",
+  "owner_src": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=63798c63-94fe-4ba8-8692-ca8be43c151e",
+  "tier": "drugstore",
+  "tier_ev": "reported",
+  "tier_src": "https://es.cvs.com/shop/ingredients/cvs-disinfecting-wipes-fresh-scent-80-ct-prodid-440093",
+  "tier_note": "CVS house brand, sold in the drugstore channel; label distributed by CVS Pharmacy, Inc., One CVS Drive, Woonsocket, RI, per the served product page.",
+  "substitutes": [
+   {
+    "name": "CVS Health Isopropyl Rubbing Alcohol 70%",
+    "tier": "drugstore",
+    "note": "Same store, same shelf economics. A 70 percent alcohol wipe or cloth disinfects hard surfaces and avoids the quaternary ammonium active system entirely. The trade is real and stated: alcohol is flammable while wet and harsher on skin than the quat wipe, and it evaporates fast so the wet contact time is harder to hold."
+   }
+  ],
+  "no_substitute_known": null,
+  "no_substitute_note": null,
+  "exposure": 3,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://www.indexbox.io/store/united-states-cleaning-wipes-market-analysis-forecast-size-trends-and-insights/",
+  "exposure_basis": "Derived, not measured. The source states the US cleaning wipes market has high household penetration, over 90 percent of US households use at least one type of cleaning wipe regularly, and disinfecting and sanitizing wipes are the largest segment at roughly 40 to 45 percent of category volume. Searched for a published per-product or per-brand household-penetration figure for this specific store-brand wipe and located none; the drugstore channel's brand shares are not published at product level. The retailer's own popularity datum is on the served page: 5.0 stars from 86 reviews on the CVS product page (read 2026-10-27). The estimate derives from the segment's category penetration and the product's position as one store brand inside the drugstore channel, rounded to one significant figure, order of magnitude.",
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "partial"
  }
 ]
