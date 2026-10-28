@@ -19420,5 +19420,52 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "partial"
+ },
+ {
+  "name": "Total Home Earth Essentials Cleaning Vinegar, 64 fl oz",
+  "brand": "Total Home",
+  "cat": "All-Purpose",
+  "safe": null,
+  "ings": [
+   "Distilled White Vinegar",
+   "Water",
+   "Hydrogen Peroxide",
+   "Videt Q3",
+   "Dodecylbenzene Sulfonic Acid",
+   "Fragrance",
+   "Phosphoric Acid"
+  ],
+  "heritage": false,
+  "added": "2026-10-28",
+  "updated": "2026-10-28",
+  "source": "CVS house-brand ingredient disclosure, served by CVS on es.cvs.com in the page's vendorIngredientsParagraph field (prodid 102363), read directly today. Actives: distilled white vinegar, water. Inactives: water, hydrogen peroxide, Videt Q3, dodecylbenzene sulfonic acid, fragrance, phosphoric acid. This is the rare store-brand page that serves a complete list rather than actives only, so the record carries the full list. Videt Q3 is a trade-named nonionic surfactant (Vitech International) and is minted as its own ungraded key rather than mapped to a guessed family; phosphoric acid is likewise minted ungraded. Distilled White Vinegar maps to the registry's existing key.",
+  "source_url": "https://es.cvs.com/shop/ingredients/total-home-earth-essentials-cleaning-vinegar-64-fl-oz-prodid-102363",
+  "note": "The drugstore shelf copy of cleaning vinegar: acid cleaning with a fragrance and surfactant load added. What a buyer is actually getting is dilute acetic acid, and the vinegar is the active; the rest is scent, a wetting surfactant, a scale-removing mineral acid and peroxide. The same job is done by plain 5 percent distilled white vinegar at a lower price with none of the additives, which is the substitution to know about.",
+  "owner": "CVS Health Corporation",
+  "owner_ev": "reported",
+  "owner_src": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=63798c63-94fe-4ba8-8692-ca8be43c151e",
+  "tier": "drugstore",
+  "tier_ev": "reported",
+  "tier_src": "https://es.cvs.com/shop/ingredients/total-home-earth-essentials-cleaning-vinegar-64-fl-oz-prodid-102363",
+  "tier_note": "CVS house brand (Total Home line), sold in the drugstore channel; distributed by CVS Pharmacy, Inc., One CVS Drive, Woonsocket, RI, per the served product page.",
+  "substitutes": [
+   {
+    "name": "Distilled White Vinegar (5%)",
+    "tier": "apothecary-bulk",
+    "note": "Same active acid at a lower price. Plain 5 percent distilled white vinegar does the acid-cleaning job this product does and avoids the added fragrance, phosphoric acid, dodecylbenzene sulfonic acid and Videt Q3 surfactant entirely. The trade is real: no surfactant means less wetting on greasy soils, and no scent unless you add none."
+   }
+  ],
+  "no_substitute_known": null,
+  "no_substitute_note": null,
+  "exposure": 2,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://www.indexbox.io/store/united-states-household-surface-cleaners-market-analysis-forecast-size-trends-and-insights/",
+  "exposure_basis": "Derived, not measured. The source states approximately 95 percent of US households use at least one surface cleaner per month, with specialised cleaners (bathroom, kitchen, glass, floor) at roughly 30 to 35 percent of value; cleaning vinegar is a niche inside that. Searched for a published household-penetration figure for cleaning vinegar as a subcategory and for this store brand specifically and located none. The retailer's own popularity datum is on the served page: 4.5 stars from 46 reviews (read 2026-10-28). The estimate derives from the niche's position inside a near-universal category, rounded to one significant figure, order of magnitude.",
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "full"
  }
 ]
