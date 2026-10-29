@@ -19467,5 +19467,53 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "full"
+ },
+ {
+  "name": "Lysol All Purpose Cleaner, Lemon Breeze Scent, 32 oz",
+  "brand": "Lysol",
+  "cat": "All-Purpose",
+  "safe": null,
+  "ings": [
+   "Quaternary Ammonium",
+   "Ethanolamine",
+   "Fragrance",
+   "Lauramine Oxide",
+   "Phenoxyisopropanol",
+   "Trisodium Dicarboxymethyl Alaninate",
+   "Colorant",
+   "Water"
+  ],
+  "heritage": false,
+  "added": "2026-10-29",
+  "updated": "2026-10-29",
+  "source": "CVS listing page serving the manufacturer's full drug-facts-style disclosure in vendorIngredientsParagraph (prodid 1010692), read directly today. Actives: two alkyl dimethyl benzyl ammonium chlorides with their carbon-chain distributions stated (0.0860 percent C12-heavy and 0.0216 percent C14-heavy). Inactives: colorant, ethanolamine, fragrance, lauramine oxide, phenoxyisopropanol, trisodium dicarboxymethyl alaninate, water. Both quats map to the registry's existing Quaternary Ammonium key; the chain distributions stay in this source note rather than minting variant keys.",
+  "source_url": "https://es.cvs.com/shop/lysol-all-purpose-cleaner-lemon-breeze-scent-32-oz-prodid-1010692",
+  "note": "A leading national all-purpose cleaner whose hazard is the disinfectant itself: the two quaternary ammonium actives carry H314 corrosive derm on the ingredient entry, and the rest of the list is wetting and scent chemistry around them. Disclosed with actives percentages, which is more than most surface cleaners publish. The quat dose here is low (roughly 0.11 percent combined) but the derm grade belongs to the ingredient class, and this product is the class's widest front door into homes.",
+  "owner": "Reckitt",
+  "owner_ev": "verified",
+  "owner_src": "https://www.reckitt.com/our-brands/",
+  "tier": "mass",
+  "tier_ev": "reported",
+  "tier_src": "https://www.reckitt.com/our-brands/",
+  "tier_note": "National mass-market brand (Reckitt Powerbrand), sold in the drugstore channel at CVS at 6.99 dollars for 32 oz; market-position vocabulary, not a single retail channel.",
+  "substitutes": [
+   {
+    "name": "Seventh Generation All Purpose Cleaner, Free & Clear",
+    "tier": "grocery",
+    "note": "A quat-free, fragrance-free all-purpose cleaner that does the same everyday surface cleaning with non-corrosive surfactants. It avoids the quaternary ammonium derm hazard entirely and the added fragrance, at a similar shelf price. The trade is real: it cleans, it does not disinfect, and it does not claim to."
+   }
+  ],
+  "no_substitute_known": null,
+  "no_substitute_note": null,
+  "exposure": 8,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://www.indexbox.io/store/united-states-household-surface-cleaners-market-analysis-forecast-size-trends-and-insights/",
+  "exposure_basis": "Derived, not measured. Searched for a published per-product US household-penetration figure for Lysol All Purpose Cleaner and located none; brand shares for Reckitt are published at company level, not per SKU. Channel datum read directly today on the served CVS listing: 4.9 stars from 1029 reviews at 6.99 dollars (schema.org aggregateRating, read 2026-10-29), which qualifies as a popularity signal for one retailer, not national share. The estimate therefore derives from category penetration (approximately 95 percent of US households use at least one surface cleaner per month, IndexBox) and this product's position as a leading national all-purpose brand whose flagship scent sits in Amazon's Best Sellers for the category. Rounded to one significant figure, order of magnitude, and it stops at brand level.",
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "full"
  }
 ]
