@@ -4,19 +4,19 @@ description: Live database counts for Clean Chem Intel — regenerated from data
 
 # Clean Chem Intel — Live Counts
 
-_Updated: 2026-10-23 04:37 UTC_
+_Updated: 2026-10-29 16:01 UTC_
 
 | Metric | Count |
 |---|---:|
-| **Products** | 437 |
+| **Products** | 443 |
 | — Graded (safe set) | 77 |
-| — Ungraded (safe null) | 360 |
+| — Ungraded (safe null) | 366 |
 | — Heritage | 29 |
-| **Ingredients** | 779 |
+| **Ingredients** | 782 |
 | **Regulatory entries** | 29 |
 
 ## Sources of products
-curated: 131, summit brands' own california cleaning product right to know act (sb-258) ingredient-disclosure index, https://summitbrands.com/ingredients/, read 2026-10-09 (http 200, 302,814 bytes). the index carries one table per product giving ingredient name, cas number, functionality and the sb-258 fragrance allergen list number. the line below is that product's table, copied as served.: 5, walmart ingredient disclosure (california cleaning right to know): 3, whole foods market household-cleaner ingredient disclosure (ca sb-258): 3
+curated: 131, summit brands' own california cleaning product right to know act (sb-258) ingredient-disclosure index, https://summitbrands.com/ingredients/, read 2026-10-09 (http 200, 302,814 bytes). the index carries one table per product giving ingredient name, cas number, functionality and the sb-258 fragrance allergen list number. the line below is that product's table, copied as served.: 5, whole foods market household-cleaner ingredient disclosure (ca sb-258): 3, procter & gamble smartlabel ingredient disclosure: 3
 
 ## Note
 - Raw product count grows mainly from **curated additions** (Dolman's lane, Mon/Wed/Fri).
