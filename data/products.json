@@ -19515,5 +19515,50 @@
   "grade_as_sold": null,
   "grade_as_sold_src": null,
   "strength_disclosure": "full"
+ },
+ {
+  "name": "Pine-Sol All Purpose Cleaner, Original Pine, 175 fl oz",
+  "brand": "Pine-Sol",
+  "cat": "All-Purpose",
+  "safe": null,
+  "ings": [
+   "Water",
+   "PEG/PPG/Propylheptyl Ether",
+   "C10-12 Alcohol Ethoxylates",
+   "Glycolic Acid",
+   "Sodium Secondary C13-18 Alkyl Sulfonate",
+   "Xanthan Gum",
+   "Caramel",
+   "Sodium Sulfate",
+   "Methoxyacetic Acid",
+   "Formic Acid",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "added": "2026-10-30",
+  "updated": "2026-10-30",
+  "source": "Pine-Sol's own SmartLabel disclosure page for the Original Pine 175 fl oz bottle (labelinsight product 6094208, information updated 8/13/2024 by Pine-Sol), read directly today. Complete intentionally-added list: water, PEG/PPG propylheptyl ether, C10-12 alcohol ethoxylates, glycolic acid, sodium secondary C13-18 alkyl sulfonate, xanthan gum, caramel, sodium sulfate (DL), methoxyacetic acid (DL), formic acid (DL), fragrance. The page then names the fragrance components hexyl cinnamal, d-limonene, acetophenone and myrcene (each DL-marked except hexyl cinnamal); per the standing fragrance-components discipline they are recorded here rather than minted as ingredient keys. DL marks the California Cleaning Product Right to Know Act designated list and EU Annex III fragrance allergens. The formula contains no pine oil despite the name.",
+  "source_url": "https://smartlabel.labelinsight.com/product/6094208/ingredients",
+  "note": "The 1929 pine-oil cleaner, disclosed as a modern synthetic-surfactant formula: the pine smell is now fragrance chemistry, not pine oil. The hazard that stands out is not the surfactants but the small print: formic acid carries an F derm grade on its registry entry (here a trace pH adjuster alongside glycolic acid), and methoxyacetic acid carries California's designated-list marker. Same price shelf, same mop bucket, one of the most recognized cleaner names in the country.",
+  "owner": "Clorox",
+  "owner_ev": "verified",
+  "owner_src": "https://www.thecloroxcompany.com/brands/",
+  "tier": "mass",
+  "tier_ev": "reported",
+  "tier_src": "https://www.thecloroxcompany.com/brands/",
+  "tier_note": "National mass-market brand line (The Clorox Company), sold in grocery, mass and drugstore channels; market-position vocabulary, not a single retail channel.",
+  "substitutes": [
+   {
+    "name": "Seventh Generation All Purpose Cleaner, Free & Clear",
+    "tier": "grocery",
+    "note": "A fragrance-free multi-surface cleaner at a similar shelf price that does the same surface cleaning with surfactants and citric acid. It avoids the added fragrance (the allergen and endocrine flag on this list) and the designated-list acids entirely. The trade is honest: neither product disinfects, and this one does not smell like a pine forest."
+   }
+  ],
+  "no_substitute_known": null,
+  "no_substitute_note": null,
+  "exposure": 6,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://www.indexbox.io/store/united-states-household-surface-cleaners-market-analysis-forecast-size-trends-and-insights",
+  "exposure_basis": "Searched for a published per-product US household penetration figure for Pine-Sol Original; none located in the open sources, so the estimate is derived from category penetration (approximately 95 percent of US households use at least one surface cleaner per month, IndexBox US Household Surface Cleaners) times brand position (Pine-Sol is a leading multi-surface and floor cleaner line in national retail). Rounded to one significant figure."
  }
 ]
