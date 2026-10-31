@@ -334,5 +334,10 @@
     "date": "2026-10-29",
     "who": "Dolman (nightshift station 2)",
     "what": "Lysol All Purpose Cleaner, Lemon Breeze Scent, 32 oz added from the retailer's served manufacturer disclosure (es.cvs.com vendorIngredientsParagraph: two quaternary ammonium actives with stated percentages plus a complete inactives list). All eight ingredients mapped to existing registry keys. Exposure extrapolated at 8 percent of US households from category penetration and the brand's leading position; channel datum 1029 reviews at 4.9 stars read on the served CVS page. Substitution recorded: a quat-free, fragrance-free all-purpose cleaner."
+  },
+  {
+    "date": "2026-10-31",
+    "who": "Dolman (nightshift station 2)",
+    "what": "up&up Powder Stain Remover, 56 oz added to the grocery tier from Target's own served product page (house brand, on-label ingredient statement: sodium carbonate, sodium percarbonate, laureth-7, sodium silicate, colorant; the linked SB-258 vault document is an empty JS shell, recorded). All five ingredients mapped to existing graded keys; drugstore hydrogen peroxide 3% substitute recorded for the powder's oxidizer and eye-damage hazards."
   }
 ]

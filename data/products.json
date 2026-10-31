@@ -19560,5 +19560,50 @@
   "exposure_ev": "extrapolated",
   "exposure_src": "https://www.indexbox.io/store/united-states-household-surface-cleaners-market-analysis-forecast-size-trends-and-insights",
   "exposure_basis": "Searched for a published per-product US household penetration figure for Pine-Sol Original; none located in the open sources, so the estimate is derived from category penetration (approximately 95 percent of US households use at least one surface cleaner per month, IndexBox US Household Surface Cleaners) times brand position (Pine-Sol is a leading multi-surface and floor cleaner line in national retail). Rounded to one significant figure."
+ },
+ {
+  "name": "up&up Powder Stain Remover, 56 oz",
+  "brand": "up&up",
+  "cat": "Stain & Odor",
+  "ings": [
+   "Sodium Carbonate",
+   "Sodium Percarbonate",
+   "Laureth-7",
+   "Sodium Silicate",
+   "Colorant"
+  ],
+  "conc": null,
+  "conc_ev": "untested",
+  "conc_src": null,
+  "exposure": 2,
+  "exposure_ev": "extrapolated",
+  "exposure_basis": "Derived, not measured. Searched for a per-product or brand-level US household figure for the up&up powder stain remover (the Target product page, a general web search) and located none; value-brand shares are not published. IndexBox's US Laundry & Home Products page states category household penetration above 98 percent and private-label and retail-brand products at an estimated 18-22 percent of unit volume in laundry care. This is a single SKU of one retailer's house brand sold only through Target, so the estimate stays at the low end of the private-label slice of a heavily penetrated category. Channel datum read on the served page: 1,322 reviews at 4.5 stars. Rounded to one significant figure.",
+  "exposure_src": "https://www.indexbox.io/store/united-states-laundry-home-products-market-analysis-forecast-size-trends-and-insights/",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "heritage": false,
+  "owner": "Target Corporation",
+  "owner_ev": "reported",
+  "owner_src": "https://www.target.com/p/lemon-all-purpose-disinfecting-cleaner-without-bleach-32oz-up-38-up-8482/-/A-90283206",
+  "safe": null,
+  "source": "up&up is Target's own house brand, so the retailer's served product page is the manufacturer's published disclosure. On-label ingredient statement read directly on the served page 2026-10-31: sodium carbonate, sodium percarbonate, laureth-7, sodium silicate, colorant. Five intentionally-added ingredients, no fragrance, no phosphates. The page's linked California SB-258 disclosure document (digitalcontent.target.com vault CLOUD_9d737b34) returns an empty JavaScript shell (a #selected-ingredients div with no content, populated by a postMessage helper script) and yielded no machine-readable list; the on-label statement on the served page is the complete disclosure in hand. A manufacturer SDS PDF is linked on the same page. All five ingredients mapped to existing graded registry keys; percarbonate is the label's sodium carbonate peroxide.",
+  "source_url": "https://www.target.com/p/powder-stain-remover-56oz-up-38-up-8482/-/A-81069446",
+  "strength_disclosure": "full",
+  "tier": "grocery",
+  "tier_ev": "reported",
+  "tier_note": "Target house brand, sold only through Target's grocery and mass channels.",
+  "tier_src": "https://www.target.com/p/powder-stain-remover-56oz-up-38-up-8482/-/A-81069446",
+  "substitutes": [
+   {
+    "name": "Hydrogen Peroxide 3% Solution",
+    "note": "Same oxygen-based stain chemistry in a ready-diluted liquid, available at the same price point in any drugstore or grocery aisle. Avoids the concentrated-powder hazards: sodium percarbonate carries H272 (oxidizer), H302 (harmful if swallowed) and H318 (serious eye damage), and the powder form puts those in a dust you breathe while scooping. A 3% liquid is the same active family at a fraction of the concentration, and it also drops the sodium silicate, which carries H314 (corrosive).",
+    "tier": "drugstore"
+   }
+  ],
+  "no_substitute_known": null,
+  "no_substitute_note": null,
+  "note": null,
+  "added": "2026-10-31",
+  "updated": "2026-10-31"
  }
 ]
