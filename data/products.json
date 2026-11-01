@@ -19605,5 +19605,54 @@
   "note": null,
   "added": "2026-10-31",
   "updated": "2026-10-31"
+ },
+ {
+  "name": "Scrubbing Bubbles Bathroom Grime Fighter Trigger",
+  "brand": "Scrubbing Bubbles",
+  "cat": "Bathroom",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Quaternary Ammonium Compounds",
+   "Diisopropanolamine",
+   "Lauramine Oxide",
+   "Isotridecanol Ethoxylated",
+   "Tetrasodium Iminodisuccinate",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "source": "S.C. Johnson's own ingredient disclosure page, https://whatsinsidescjohnson.com/en-us/brands/scrubbingbubbles/multi-surface/disinfectant-grime-fighter-trigger, read 2026-11-01 in full through the fetch tool (the host returns HTTP 429 to a plain curl fetch, the same not-machine-readable class already recorded for this host). The page publishes the California ingredient disclosure for the trigger (non-aerosol) version: one active category, Quaternary Ammonium Compounds (a registered disinfectant product, so the active is the pesticidal component), plus six other ingredients, Water (liquid base), Diisopropanolamine (pH adjuster), Lauryl Dimethyl Amine Oxide (cleaning agent, mapped to the existing Lauramine Oxide key for the same substance, dodecyldimethylamine oxide), Isotridecanol Ethoxylated (cleaning agent), Tetrasodium Iminodisuccinate (chelator) and Fragrance. Fragrance components disclosed by the manufacturer (dipropylene glycol, orange peel oil, grapefruit peel oil, linalool, 2,6-dimethyl-7-octen-2-ol, ethyl vanillin, methylbenzyl acetate, 2,4,6-trimethyl-4-phenyl-1,3-dioxane, hexyl cinnamal, citronellol, several marked on the manufacturer's own skin-allergen list) are recorded in this prose only, not as ingredient keys, per the standing discipline. The trigger version was chosen over the aerosol deliberately: the aerosol's own SDS carries an isobutane propellant at 5 to 10 percent that the disclosure page does not list, a partial-disclosure shape, while the trigger's disclosed list is the complete formula.",
+  "source_url": "https://whatsinsidescjohnson.com/en-us/brands/scrubbingbubbles/multi-surface/disinfectant-grime-fighter-trigger",
+  "note": "The disinfecting trigger version of the mainstream bathroom cleaner, entered so the corpus carries this widely advertised quat chemistry with a real disclosure behind it. The 2026-08-18 heritage stub record Scrubbing Bubbles (SC Johnson) remains alongside this fuller record. Entered ungraded: product grading is the Sifter lane.",
+  "owner": "SC Johnson",
+  "tier": "mass",
+  "tier_ev": "reported",
+  "tier_src": "https://www.scjohnson.com/en/our-brands",
+  "tier_note": "National SC Johnson brand sold through grocery, mass and drug channels.",
+  "substitutes": [
+   {
+    "name": "Bathroom Cleaner Spray, Unscented",
+    "tier": "natural",
+    "note": "Same job at a similar price. Avoids the registered quaternary ammonium disinfectant actives and the added fragrance with its disclosed skin allergens; the natural-tier cleaner is fragrance free."
+   }
+  ],
+  "no_substitute_known": null,
+  "no_substitute_note": null,
+  "exposure": 4,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://www.indexbox.io/store/united-states-household-surface-cleaners-market-analysis-forecast-size-trends-and-insights/",
+  "exposure_basis": "Derived, not measured. Searched for a product-level or brand-level US household figure for the Scrubbing Bubbles Bathroom Grime Fighter (the SC Johnson brand page, the disclosure page, and a general web search) and found none. IndexBox's US Household Surface Cleaners page states approximately 95 percent of US households use at least one surface cleaner product per month and puts specialised cleaners at 30 to 35 percent of value with bathroom the largest sub-segment; Scrubbing Bubbles is a leading, heavily advertised bathroom brand, so the estimate is category penetration times the bathroom share times a leading brand share, rounded to one significant figure.",
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "full",
+  "disclosure_note": null,
+  "added": "2026-11-01",
+  "owner_ev": "verified",
+  "owner_src": "https://www.prnewswire.com/news-releases/sc-johnson-signs-agreement-to-acquire-method-and-ecover-300519849.html",
+  "updated": "2026-11-01",
+  "grade_note": null
  }
 ]
