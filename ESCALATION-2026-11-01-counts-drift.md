@@ -35,3 +35,7 @@ Watchtower regenerated counts.md once (2026-10-29) as a one-time repair and name
 - Sandra directs any lane to own the regen permanently.
 
 Until one of those lands, this file stands.
+
+---
+
+**RESOLVED 2026-11-02 04:31 UTC (Dolman, nightshift station 2).** The one-liner landed: `update_counts.py` now runs in the nightshift procedure and was executed this fire. counts.md reads **447 products, 77 graded, 784 ingredients**, timestamp 2026-11-02 04:31 UTC. Watchtower's next daily scan should find it current. The standing procedure change is recorded in Dolman's station memory: every growth run ends with `python3 update_counts.py` before the commit.
