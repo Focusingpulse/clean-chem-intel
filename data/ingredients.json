@@ -7893,5 +7893,29 @@
   "gr": {},
   "impacts": [],
   "note": "Minted 2026-10-30 from Pine-Sol's own SmartLabel disclosure for Original Pine, where it carries the DL marker for the California Cleaning Product Right to Know Act designated list. Methoxyacetic acid is the active metabolite of ethylene glycol monomethyl ether and is studied as a reproductive toxicant; no GHS classification was resolved for this entry in this fire, so g is null rather than a guessed grade. The DL flag is on the served page, the reproductive note is background chemistry, and the two are recorded separately."
+ },
+ "Polyethylene Glycol Monophenyl Ether": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-11-03) from a Febreze SmartLabel disclosure. The disclosed CAS 9004-78-8 is the CAS registry number for the poly(oxy-1,2-ethanediyl) alpha-(nonylphenyl)-omega-hydroxy- polymer, i.e. the nonylphenol ethoxylate family, which sits on the California Cleaning Product Right to Know Act designated list; P&G lists it under the name polyethylene glycol monophenyl ether. Not yet graded against GHS, so g is null rather than a guess.",
+  "s": "CAS 9004-78-8 as disclosed by P&G SmartLabel for Febreze Fabric Refresher, read 2026-11-03; not yet graded against GHS."
+ },
+ "Sodium Maleate": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-11-03) from a Febreze SmartLabel disclosure; disclosed pH-adjuster use. Not yet graded against GHS, so g is null rather than a guess.",
+  "s": "CAS 371-47-1 / 3105-55-3 as disclosed by P&G SmartLabel for Febreze Fabric Refresher, read 2026-11-03; not yet graded against GHS."
+ },
+ "PEI-700": {
+  "ev": "Low",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "Added by the night-shift spectrum harvest (2026-11-03) from a Febreze SmartLabel disclosure. PEI-700 is a polyethyleneimine trade name (CAS 9002-98-6), disclosed purpose odor magnet. Not yet graded against GHS, so g is null rather than a guess.",
+  "s": "CAS 9002-98-6 (polyethyleneimine) as disclosed by P&G SmartLabel for Febreze Fabric Refresher, read 2026-11-03; not yet graded against GHS."
  }
 }

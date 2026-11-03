@@ -19702,5 +19702,49 @@
   "owner_src": "https://www.reckitt.com/our-brands/",
   "updated": "2026-11-02",
   "grade_note": null
+ },
+ {
+  "name": "Febreze Odor-Fighting Fabric Refresher, Spring & Renewal, 27 fl oz",
+  "brand": "Febreze",
+  "cat": "Air Care",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Alcohol Denat.",
+   "Polyethylene Glycol Monophenyl Ether",
+   "PEG-60 Hydrogenated Castor Oil",
+   "Hydroxypropyl Cyclodextrin",
+   "Fragrance",
+   "PEG-11 Methyl Ether Dimethicone",
+   "Sodium Maleate",
+   "PEI-700",
+   "Didecyldimonium Chloride",
+   "Sodium Citrate",
+   "Benzisothiazolinone"
+  ],
+  "heritage": false,
+  "source": "Procter & Gamble SmartLabel ingredient disclosure",
+  "source_url": "https://az-na-smartlabel-prod-functionapp-api.pgcloud.com/api/getproductdetails?gtin=00037000197607&locale=en-US",
+  "note": "The original Febreze format: an odor eliminator sprayed onto upholstery, carpets and other soft surfaces, not into the air. Complete base formula from the manufacturer's own disclosure, every line carrying a CAS except Fragrance. The fragrance line resolves to 17 disclosed components (recorded in source prose per the standing fragrance discipline, single key in ings): hexyl cinnamal and limonene are EU-listed fragrance allergens and P&G flags three components of concern (hexyl cinnamal, limonene, 2-methylpropanoic acid 2-phenoxyethyl ester). Benzisothiazolinone is a preservative and a recognized skin sensitizer; didecyldimonium chloride is a quaternary ammonium compound disclosed here as a fabric-penetration aid, not an antimicrobial claim. Entered ungraded: product grading is the Sifter lane. Three new ingredient keys minted (Polyethylene Glycol Monophenyl Ether, Sodium Maleate, PEI-700), all ungraded.",
+  "owner": "Procter & Gamble",
+  "owner_ev": "verified",
+  "owner_src": "https://us.pg.com/brands/",
+  "tier": "mass",
+  "tier_ev": "reported",
+  "tier_src": "https://simporter.com/trends/plug-in-air-freshener/",
+  "tier_note": "Mass-market national brand; market-position vocabulary, not a retail channel.",
+  "substitutes": [
+   {
+    "name": "Febreze Odor-Fighting Fabric Refresher, Unscented, 23.6 fl oz",
+    "tier": "mass",
+    "note": "Same-price unscented variant of the same product (GTIN 00030772089088, disclosed by P&G as 100 percent perfume-free). Avoids the 17-component fragrance including the two EU-listed allergens hexyl cinnamal and limonene. Does NOT avoid benzisothiazolinone or the quat; the base chemistry is unchanged."
+   }
+  ],
+  "no_substitute_known": null,
+  "no_substitute_note": null,
+  "exposure": 8,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://indexbox.io/industry/united-states-air-fresheners-candles-market-analysis-forecast-size-trends-and-insights/",
+  "exposure_basis": "Derived, not measured; no product-level household figure exists. The parent home-fragrance category reaches household penetration above 85 percent for at least one format (IndexBox, 2026), Febreze is the leading US air-care brand (21.5 percent share of plug-in air fresheners, Simporter September 2026, a sibling subcategory named only as brand-position evidence), and this is Febreze's original flagship format, among the most widely sold fabric deodorizers in the US. Channel datum: the unscented 27 oz sibling lists 1,782 Amazon reviews at 4.6 stars. Rounded to 8 percent of US households, same extrapolated band as the Febreze AIR sibling record, pending direct data."
  }
 ]
