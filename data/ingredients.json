@@ -7917,5 +7917,13 @@
   "impacts": [],
   "note": "Added by the night-shift spectrum harvest (2026-11-03) from a Febreze SmartLabel disclosure. PEI-700 is a polyethyleneimine trade name (CAS 9002-98-6), disclosed purpose odor magnet. Not yet graded against GHS, so g is null rather than a guess.",
   "s": "CAS 9002-98-6 (polyethyleneimine) as disclosed by P&G SmartLabel for Febreze Fabric Refresher, read 2026-11-03; not yet graded against GHS."
+ },
+ "PEG-10 Sorbitan Laurate": {
+  "ev": "Unknown",
+  "g": null,
+  "gr": {},
+  "impacts": [],
+  "note": "CAS 9005-64-5. Nonionic surfactant (PEGylated sorbitan ester) disclosed by Target's SB-258 filing as a surfactant. No graded source located; entered ungraded rather than guessed.",
+  "s": "Entered ungraded: no hazard source located."
  }
 }

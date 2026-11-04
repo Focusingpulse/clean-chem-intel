@@ -184,11 +184,12 @@
   },
   "Target Corporation": {
    "type": "public (TGT)",
-   "detail": "Owns the up&up house brand.",
+   "detail": "Owns the up&up and Everspring house brands.",
    "ev": "reported",
    "src": "https://www.target.com/p/lemon-all-purpose-disinfecting-cleaner-without-bleach-32oz-up-38-up-8482/-/A-90283206",
    "brands": [
-    "up&up"
+    "up&up",
+    "Everspring"
    ]
   },
   "WinCo Foods, LLC": {

@@ -19746,5 +19746,43 @@
   "exposure_ev": "extrapolated",
   "exposure_src": "https://indexbox.io/industry/united-states-air-fresheners-candles-market-analysis-forecast-size-trends-and-insights/",
   "exposure_basis": "Derived, not measured; no product-level household figure exists. The parent home-fragrance category reaches household penetration above 85 percent for at least one format (IndexBox, 2026), Febreze is the leading US air-care brand (21.5 percent share of plug-in air fresheners, Simporter September 2026, a sibling subcategory named only as brand-position evidence), and this is Febreze's original flagship format, among the most widely sold fabric deodorizers in the US. Channel datum: the unscented 27 oz sibling lists 1,782 Amazon reviews at 4.6 stars. Rounded to 8 percent of US households, same extrapolated band as the Febreze AIR sibling record, pending direct data."
+ },
+ {
+  "name": "Mandarin & Ginger Granite & Stone Cleaner, 28 fl oz, Everspring",
+  "brand": "Everspring",
+  "cat": "Wood & Stone Care",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Caprylyl/Capryl Glucoside",
+   "PEG-10 Sorbitan Laurate",
+   "Citric Acid",
+   "Sodium Citrate",
+   "Fragrance"
+  ],
+  "heritage": false,
+  "source": "Target California SB-258 ingredient disclosure (Everspring is Target's house natural brand; the served vault document is the manufacturer's own filing)",
+  "source_url": "https://digitalcontent.target.com/vault/1782432000/CLOUD_7a3e7950-0710-4465-b45c-cc6ba381b7e0.html",
+  "note": "The granite and stone cleaner Sandra herself uses, and the first Everspring record in the corpus. Complete served disclosure read directly (HTTP 200): five intentionally-added ingredients, every line carrying a CAS. The fragrance line resolves to eight named components plus four withheld, recorded in source prose per the standing fragrance discipline, single Fragrance key in ings: cineole (470-82-6), citral (5392-40-5, EU-listed allergen), citronellyl acetate (150-84-5), d-limonene (5989-27-5, EU-listed allergen), eugenol (97-53-0, EU-listed allergen), geraniol (106-24-1, EU-listed allergen), geranyl acetate (105-87-3), linalyl acetate (115-95-7, EU-listed allergen); four further fragrance components are withheld by the filer and recorded as such, not smoothed. Honest tension stated plainly: the formula carries citric acid, a pH adjuster, in a product marketed for stone, where acid sensitivity is the classic concern; the concentration is not disclosed. One new ingredient key minted (PEG-10 Sorbitan Laurate), ungraded. Entered ungraded: product grading is the Sifter lane.",
+  "owner": "Target Corporation",
+  "owner_ev": "reported",
+  "owner_src": "https://www.target.com/p/lemon-all-purpose-disinfecting-cleaner-without-bleach-32oz-up-38-up-8482/-/A-90283206",
+  "tier": "grocery",
+  "tier_ev": "reported",
+  "tier_src": "https://www.target.com/p/mandarin-38-ginger-granite-38-stone-cleaner-28-fl-oz-everspring-8482/-/A-75663210",
+  "tier_note": "Target house natural brand, sold only through Target's grocery and mass channels.",
+  "substitutes": [
+   {
+    "name": "Unscented Free & Clear All Purpose Cleaner, 28 fl oz, Everspring",
+    "tier": "grocery",
+    "note": "Same-brand, same-price ($3.39) fragrance-free variant on the same shelf, disclosed unscented on the served Target page. Avoids the eight-component fragrance including the five EU-listed allergens (citral, d-limonene, eugenol, geraniol, linalyl acetate). Check the surface first: it is an all-purpose cleaner, not stone-rated, so confirm suitability on the manufacturer page before using it on granite."
+   }
+  ],
+  "no_substitute_known": null,
+  "no_substitute_note": null,
+  "exposure": 1,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://indexbox.io/industry/united-states-household-surface-cleaners-market-analysis-forecast-size-trends-and-insights/",
+  "exposure_basis": "Derived, not measured. Searched for a per-product or brand-level US household figure for the Everspring granite and stone cleaner (the Target product page, a general web search) and located none. IndexBox's US Household Surface Cleaners page states approximately 95 percent of US households use at least one surface cleaner product per month, with specialised cleaners (bathroom, kitchen, glass, floor) at an estimated 30-35 percent of category value and the stone/granite specialty a smaller sub-segment of that. This is a single SKU of one retailer's house brand sold only through Target, so the estimate sits at the low end of the private-label slice of a specialty sub-segment. Channel datum read on the served page: 491 reviews at 4.52 stars. Rounded to one significant figure."
  }
 ]
