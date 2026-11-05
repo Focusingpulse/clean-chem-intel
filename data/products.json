@@ -19784,5 +19784,44 @@
   "exposure_ev": "extrapolated",
   "exposure_src": "https://indexbox.io/industry/united-states-household-surface-cleaners-market-analysis-forecast-size-trends-and-insights/",
   "exposure_basis": "Derived, not measured. Searched for a per-product or brand-level US household figure for the Everspring granite and stone cleaner (the Target product page, a general web search) and located none. IndexBox's US Household Surface Cleaners page states approximately 95 percent of US households use at least one surface cleaner product per month, with specialised cleaners (bathroom, kitchen, glass, floor) at an estimated 30-35 percent of category value and the stone/granite specialty a smaller sub-segment of that. This is a single SKU of one retailer's house brand sold only through Target, so the estimate sits at the low end of the private-label slice of a specialty sub-segment. Channel datum read on the served page: 491 reviews at 4.52 stars. Rounded to one significant figure."
+ },
+ {
+  "name": "Free & Clear Unscented Concentrated Laundry Detergent Pacs, 30.3 oz, up&up",
+  "brand": "up&up",
+  "cat": "Laundry",
+  "safe": null,
+  "ings": [
+   "Alcohol Ethoxylate",
+   "Sodium Laureth Sulfate",
+   "Glycerin",
+   "Propylene Glycol",
+   "MEA C10-16 Alkylbenzenesulfonate",
+   "Ethanol",
+   "Fatty Acids, Coconut Oil, Sodium Salts"
+  ],
+  "heritage": false,
+  "source": "Target California SB-258 vault Safety Data Sheet for Up & Up Free & Clear Laundry Detergent Pacs (revision 003.0, issued 2022-02-01, distributor Target Corporation), Section 3 composition read directly from the served PDF",
+  "source_url": "https://digitalcontent.target.com/vault/1668556800/CLOUD_bf974e4b-1f41-48b6-8214-4d590a3ff3e1.pdf",
+  "note": "First up&up laundry detergent record in the corpus, closing a house-brand gap: up&up laundry coverage was bleach only, with no laundry detergent in any format, liquid or pac (the up&up Ultimate Dishwasher Detergent Packs record is a dish product, not laundry). The SDS Section 3 discloses seven hazardous components with CAS numbers and concentration ranges: alcohols C12-15 ethoxylated 7EO at 20-30 percent (the lead ingredient), sodium laureth sulfate 10-20 percent, glycerol and propylene glycol, benzenesulfonic acid mono-C10-16-alkyl derivatives compounded with ethanolamine (the MEA alkylbenzenesulfonate, CAS 68910-32-7) at 5-10 percent, ethanol 1-5 percent, and coconut-oil fatty acid sodium salts 1-5 percent. Disclosed limit stated plainly: Section 3 itemizes the hazardous composition only, so non-hazardous minor components (enzyme blends, the water-soluble film, preservatives below the one percent cut-off) are not named by this document; that is a disclosure limit of the SDS route, recorded rather than smoothed. The Free & Clear line carries no synthetic fragrance and no dye per the manufacturer claims on the served product page, and the SDS discloses no fragrance component, consistent. No antimicrobial claim is made (rule 1). GHS classification on the SDS: skin irritation 2, serious eye irritation 2A, flammable liquid 3. Entered ungraded; product grading is the Sifter lane. All seven ingredient keys already exist in the registry; no new keys minted.",
+  "owner": "Target Corporation",
+  "owner_ev": "reported",
+  "owner_src": "https://www.target.com/p/lemon-all-purpose-disinfecting-cleaner-without-bleach-32oz-up-38-up-8482/-/A-90283206",
+  "tier": "grocery",
+  "tier_ev": "reported",
+  "tier_src": "https://www.target.com/p/laundry-detergent-packs-free-38-clear-42ct-up-38-up-8482/-/A-89926419",
+  "tier_note": "up&up is Target's mainline house brand, sold only through Target's grocery and mass channel. This is the fragrance-free pac variant of the line.",
+  "substitutes": [
+   {
+    "name": "Earth Breeze Laundry Detergent Sheets, Fragrance Free",
+    "tier": "natural",
+    "note": "Comparable per-load cost, fragrance-free like the pac itself. Avoids the irritant surfactant load this SDS discloses (C12-15 alcohol ethoxylate at 20-30 percent and sodium laureth sulfate at 10-20 percent, both skin and eye irritants per the SDS classification) and the ethanolamine-salt sulfonate; sheet format also removes the water-soluble film pac. Not a lower price point; say so plainly."
+   }
+  ],
+  "no_substitute_known": null,
+  "no_substitute_note": null,
+  "exposure": 2,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://indexbox.io/industry/united-states-laundry-home-products-market-analysis-forecast-size-trends-and-insights/",
+  "exposure_basis": "Derived, not measured. Searched for a product- or brand-level US household figure for up&up laundry pacs (the Target product page, a general web search) and located none. IndexBox's US Laundry & Home Products page states private-label and retail-brand products hold 18-22 percent of unit volume in laundry care. up&up is the house brand of a single national retailer rather than the whole private-label slice, and this is one fragrance-free format within that brand, so the estimate is a fraction of the private-label band, rounded to one significant figure. Channel datum read on the served page: 486 reviews at 4.55 stars on the 42-count size."
  }
 ]
