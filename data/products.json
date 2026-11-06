@@ -19823,5 +19823,54 @@
   "exposure_ev": "extrapolated",
   "exposure_src": "https://indexbox.io/industry/united-states-laundry-home-products-market-analysis-forecast-size-trends-and-insights/",
   "exposure_basis": "Derived, not measured. Searched for a product- or brand-level US household figure for up&up laundry pacs (the Target product page, a general web search) and located none. IndexBox's US Laundry & Home Products page states private-label and retail-brand products hold 18-22 percent of unit volume in laundry care. up&up is the house brand of a single national retailer rather than the whole private-label slice, and this is one fragrance-free format within that brand, so the estimate is a fraction of the private-label band, rounded to one significant figure. Channel datum read on the served page: 486 reviews at 4.55 stars on the 42-count size."
+ },
+ {
+  "name": "Palmolive Ultra Strength Original Liquid Dish Soap",
+  "brand": "Palmolive",
+  "cat": "Dish Soap",
+  "safe": null,
+  "ings": [
+   "Water",
+   "Sodium Dodecylbenzenesulfonate",
+   "Sodium Laureth Sulfate",
+   "Lauramidopropylamine Oxide",
+   "Alcohol Denat.",
+   "C9-11 Pareth-8",
+   "Poloxamer 124",
+   "Fragrance",
+   "Tetrasodium Glutamate Diacetate",
+   "Methylisothiazolinone",
+   "Benzisothiazolinone",
+   "Colorant"
+  ],
+  "heritage": false,
+  "source": "Manufacturer disclosure panel served through the CVS ingredients route (prodid 948474), read directly 2026-11-06, HTTP 200; the identical 12-line list is disclosed on the manufacturer's own palmolive.com product page and on Giant Food's served ingredient section. The label states supply-chain alternates, recorded per the mapping rule: Sodium Laureth Sulfate OR Sodium C10-16 Alketh Sulfate is recorded under the existing graded Sodium Laureth Sulfate key, with the C10-16 alketh sulfate alternate named here as a substance of the same alkyl-ether-sulfate family as the registry's SODIUM C10-16 ALKETH-2 SULFATE key and not minted because the label leaves the ethoxylation degree unspecified; C9-11 Alketh-8 OR Deceth-8 is recorded under the existing C9-11 Pareth-8 key, the INCI name for the same C9-11 alcohol 8-EO ethoxylate, with Deceth-8 named here as the alternate.",
+  "source_url": "https://es.cvs.com/shop/ingredients/palmolive-ultra-strength-liquid-dish-soap-original-20-fl-oz-prodid-948474",
+  "added": "2026-11-06",
+  "updated": "2026-11-06",
+  "note": "The signature green dish soap and the corpus's first Palmolive-branded dish record with a full formula, closing the coverage gap for the number-two US dish brand (15.8 percent of the liquid dish soap category, simporter October 2026, read directly). The hazard load sits in the preservative pair methylisothiazolinone and benzisothiazolinone, both High-evidence skin sensitizers, plus the Sodium Laureth Sulfate and Sodium Dodecylbenzenesulfonate irritant surfactants. Disclosed warnings: may irritate eyes, do not mix with other household cleaners, do not use in automatic dishwashers. No antimicrobial claim made: the 99.9 percent figure is grease removal, stated as grease and not as bacteria. No concentration bands are published on this disclosure.",
+  "owner": "Colgate-Palmolive",
+  "owner_ev": "reported",
+  "owner_src": "https://www.whobrands.com/blog/20-cleaning-product-brands-owned-by-3-companies",
+  "tier": "mass",
+  "tier_ev": "reported",
+  "tier_src": "https://es.cvs.com/shop/ingredients/palmolive-ultra-strength-liquid-dish-soap-original-20-fl-oz-prodid-948474",
+  "substitutes": [
+   {
+    "name": "Seventh Generation Dish Liquid, Free & Clear",
+    "tier": "grocery",
+    "note": "Fragrance-free and isothiazolinone-free at a grocery-aisle price. Avoids the methylisothiazolinone and benzisothiazolinone preservative pair and the undisclosed fragrance block; that preservative pair is the hazard reason to switch."
+   }
+  ],
+  "exposure": 15,
+  "exposure_ev": "extrapolated",
+  "exposure_src": "https://simporter.com/trends/liquid-dish-soap/",
+  "conc": null,
+  "conc_src": null,
+  "conc_ev": "untested",
+  "grade_as_sold": null,
+  "grade_as_sold_src": null,
+  "strength_disclosure": "not_reviewed",
+  "exposure_basis": "Searched for a published per-product US household figure; none exists. Extrapolated: liquid dish soap is owned by above 98 percent of US households (IndexBox US Laundry & Home Products, category penetration verified verbatim 2026-09-28 on the sibling dish records) times Palmolive's 15.8 percent share of the liquid dish soap category (simporter.com, October 2026 period, served page read directly 2026-11-06: Dawn 32.5 percent, Private Label 18.2 percent, Palmolive 15.8 percent). Rounded down to 15; brand share is a value share, not a household count."
  }
 ]
